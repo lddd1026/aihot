@@ -276,6 +276,7 @@ def enrich_stage(
             "blacklist": pre.stats.dropped_blacklist,
             "offtopic": pre.stats.dropped_offtopic,
             "duplicate": pre.stats.dropped_duplicate,
+            "topic": pre.stats.dropped_topic,
         },
         samples=pre.stats.dropped_samples,
         clusters=len(clustering.clusters),
@@ -312,6 +313,11 @@ def enrich_stage(
                     "clusters": outcome.clusters,
                     "enriched": outcome.enriched,
                     "filtered": outcome.filtered,
+                    # 预筛剔除细分（可观测性：主题剔除也要有数字）
+                    "dropped_blacklist": outcome.dropped.get("blacklist", 0),
+                    "dropped_offtopic": outcome.dropped.get("offtopic", 0),
+                    "dropped_topic": outcome.dropped.get("topic", 0),
+                    "dropped_duplicate": outcome.dropped.get("duplicate", 0),
                     **outcome.llm_stats,
                 },
             )

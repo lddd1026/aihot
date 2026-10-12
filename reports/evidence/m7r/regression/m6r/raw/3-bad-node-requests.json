@@ -1,0 +1,10 @@
+[
+  {
+    "method": "CONNECT",
+    "path": "www.gstatic.com:443"
+  },
+  {
+    "method": "CONNECT",
+    "path": "api.github.com:443"
+  }
+]

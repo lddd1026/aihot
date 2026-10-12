@@ -1,0 +1,27 @@
+[
+  {
+    "suite": "m7r_prefilter",
+    "rc": 0,
+    "seconds": 2.4
+  },
+  {
+    "suite": "m7r_compose_rank",
+    "rc": 0,
+    "seconds": 0.6
+  },
+  {
+    "suite": "m7r_e2e",
+    "rc": 0,
+    "seconds": 9.6
+  },
+  {
+    "suite": "m7r_docs",
+    "rc": 0,
+    "seconds": 0.6
+  },
+  {
+    "suite": "m7r_regression",
+    "rc": 0,
+    "seconds": 50.4
+  }
+]

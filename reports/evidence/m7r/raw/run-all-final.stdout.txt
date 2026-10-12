@@ -1,0 +1,7 @@
+[PASS] m7r_prefilter rc=0 (2.4s)
+[PASS] m7r_compose_rank rc=0 (0.6s)
+[PASS] m7r_e2e rc=0 (9.6s)
+[PASS] m7r_docs rc=0 (0.6s)
+[PASS] m7r_regression rc=0 (50.4s)
+TOTAL: 5 passed / 0 failed
+RC=0

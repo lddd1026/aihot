@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 
@@ -134,6 +135,41 @@ def test_build_digest_from_db_respects_top_n_and_briefs(tmp_path: Path) -> None:
     digest = runner.build_digest_from_db(cfg, digest_date=date(2026, 9, 24), top_n=5)
     assert len(digest.top_items) == 5
     assert len(digest.briefs) == 2
+
+
+def test_enrich_run_record_includes_topic_drops(tmp_path: Path) -> None:
+    """M7-2：预筛剔除细分（含主题剔除）必须写进 enrich 的运行记录。"""
+    cfg = load_cfg(tmp_path)
+    now = datetime.now(UTC)
+    with Store(cfg.app.data_dir / "aihot.db") as store:
+        store.save_items(
+            [
+                RawItem(
+                    source_id="s1",
+                    title="OpenAI 发布新模型",
+                    url="https://example.com/keep",
+                    published_at=now,
+                ),
+                RawItem(
+                    source_id="s1",
+                    title="英伟达洽谈收购某开源模型初创公司",
+                    url="https://example.com/drop",
+                    published_at=now,
+                ),
+            ]
+        )
+
+    outcome = runner.enrich_stage(cfg, no_llm=True)
+
+    assert outcome.kept == 1
+    assert outcome.dropped["topic"] == 1
+    with Store(cfg.app.data_dir / "aihot.db") as store:
+        rows = store.runs_since(now - timedelta(hours=1))
+    enrich_rows = [row for row in rows if '"enrich"' in row["stage_stats"]]
+    assert enrich_rows
+    stats = json.loads(enrich_rows[-1]["stage_stats"])
+    assert stats["dropped_topic"] == 1
+    assert stats["dropped_offtopic"] == 0
 
 
 def test_render_outputs_without_image(tmp_path: Path) -> None:

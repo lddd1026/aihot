@@ -23,7 +23,7 @@ BASE_TIME = datetime(2026, 9, 24, 8, 0, tzinfo=UTC)
 def make_news(
     title: str,
     *,
-    category: str = "行业动态",
+    category: str = "模型发布",
     importance: int = 60,
     mention: int = 1,
     source_ids: list[str] | None = None,
@@ -69,6 +69,26 @@ class TestPublishable:
 
     def test_normal_kept(self) -> None:
         assert is_publishable(make_news("x")) is True
+
+    def test_excluded_categories_not_publishable(self) -> None:
+        """开发者向：硬件/商业/政策类（LLM 会归入这些分类）不进日报。"""
+        for category in ("行业动态", "融资商业", "政策监管"):
+            assert is_publishable(make_news("x", category=category, importance=95)) is False
+
+    def test_dev_categories_publishable(self) -> None:
+        for category in ("模型发布", "开源工具", "研究突破", "产品更新"):
+            assert is_publishable(make_news("x", category=category, importance=60)) is True
+
+    def test_excluded_categories_kept_out_of_digest(self) -> None:
+        items = [
+            make_news("技术新闻", category="模型发布", importance=90),
+            make_news("收购消息", category="行业动态", importance=99),
+            make_news("融资消息", category="融资商业", importance=99),
+            make_news("监管消息", category="政策监管", importance=99),
+        ]
+        digest = compose_digest(rank_items(items), digest_date=date(2026, 10, 12), top_n=12)
+        assert [item.cn_title for item in digest.top_items] == ["技术新闻"]
+        assert digest.briefs == []
 
 
 class TestComposeDigest:

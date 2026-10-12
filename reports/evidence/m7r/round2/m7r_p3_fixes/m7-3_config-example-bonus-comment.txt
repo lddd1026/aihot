@@ -1,0 +1,22 @@
+interest_bonus:                        # 兴趣加成（按分类；可为负数 = 降权）
+      # 开发者向：技术类加权，硬件/商业/政策类压到负分
+      模型发布: 10
+      开源工具: 10
+      研究突破: 8
+      产品更新: 6
+      行业动态: -20
+      融资商业: -30
+      政策监管: -15
+
+sources:
+  # ============ 第一批（M1）============
+  - id: qbitai
+    name: 量子位
+    type: rss
+    url: https://www.qbitai.com/feed
+    enabled: true
+    weight: 1.0
+
+  - id: infoq_cn
+    name: InfoQ 中文
+  

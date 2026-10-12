@@ -1,0 +1,50 @@
+[
+  {
+    "suite": "m5r_alert",
+    "passed": 7,
+    "failed": 0,
+    "file": "m5r_alert.json"
+  },
+  {
+    "suite": "m5r_bat_local",
+    "passed": 10,
+    "failed": 0,
+    "file": "m5r_bat_local.json"
+  },
+  {
+    "suite": "m5r_fetch",
+    "passed": 10,
+    "failed": 0,
+    "file": "m5r_fetch.json"
+  },
+  {
+    "suite": "m5r_preflight",
+    "passed": 9,
+    "failed": 0,
+    "file": "m5r_preflight.json"
+  },
+  {
+    "suite": "m5r_render_alert",
+    "passed": 4,
+    "failed": 0,
+    "file": "m5r_render_alert.json"
+  },
+  {
+    "suite": "m5r_report",
+    "passed": 9,
+    "failed": 0,
+    "file": "m5r_report.json"
+  },
+  {
+    "suite": "m5r_round2_proxy",
+    "passed": 13,
+    "failed": 0,
+    "file": "m5r_round2_proxy.json"
+  },
+  {
+    "suite": "m5r_skip",
+    "passed": 14,
+    "failed": 0,
+    "file": "m5r_skip.json"
+  }
+]

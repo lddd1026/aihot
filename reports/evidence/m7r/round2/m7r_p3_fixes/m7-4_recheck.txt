@@ -1,0 +1,33 @@
+最近 24h 原始条目: 78
+预筛结果: 保留 64 | 垃圾 0 | 非AI 13 | 主题不符 1 | 重复 0
+
+-- 被主题排除的标题（最多 20 条）--
+  [X] Nvidia in talks to acquire US ‘open’ model start-up Reflection AI
+
+-- 新规则下的日报（2026-10-12）--
+精选 12 条 / 简讯 12 条 / 论文 0 条
+   1. [开源工具] AirLLM：单张 4GB GPU 运行 70B 模型推理（github_trending_page）
+   2. [开源工具] rea：用智能体逆向分析应用与二进制文件（github_trending_page）
+   3. [开源工具] PyTorch：Python 张量与动态神经网络框架（github_trending_page）
+   4. [开源工具] iPhone-use：让 Codex 通过 USB 操作真实 iPhone（github_trending）
+   5. [模型发布] 智谱发布新模型，速度达 490 tokens/s（qbitai）
+   6. [模型发布] Decision 3.0 发布：0.6B 至 27B 开源多模态决策模型（reddit_ai）
+   7. [研究突破] 华为 AI 靠 RSI 通关 25 款游戏，操作次数比人类少 56%（qbitai）
+   8. [开源工具] OpenMed 3.0 发布：Apache-2.0 临床 AI 工具包，完全本地运行（reddit_ai）
+   9. [开源工具] 单张 RTX 3090 上 Qwen 3.8 27B 达 140 tok/s，KL 散度 0.0009（reddit_ai）
+  10. [研究突破] 六张 3090 上用 vLLM 部署 Qwen3.8-Flash-Next 的实测数据（reddit_ai）
+  11. [开源工具] 开源 AI 排行榜：查看本机可运行的最佳模型（reddit_ai）
+  12. [开源工具] EXL3-QLoRA：在 ExLlamaV3 量化模型上直接训练（reddit_ai）
+  --- 简讯 ---
+   - [开源工具] ARTEX：AI 自主渗透测试系统，百度 agent+ 攻防挑战赛冠军项目
+   - [开源工具] diagram-design：面向 Claude Code、Codex 等工具的编辑级图表设计
+   - [开源工具] aurelio-finance：带 AI 财务顾问的开源个人理财应用
+   - [开源工具] anatomy：为真实机器与复杂系统生成交互式等距插图的 Agent 技能
+   - [开源工具] strix-llama 新分支 rdna35-perf：128k 上下文下提示处理较 Vulkan 提升 21–54%
+   - [开源工具] 128GB Mac 运行 341GB 模型：两处 macOS 修复使首 token 快 8 倍
+   - [模型发布] nace-ai 开源 drex1.5 9B，称在 jev-bench 0.3.1 上为最佳 9B 以下决策模型
+   - [研究突破] Qwen3.8-27B 上的位精确投机解码：单卡 106 t/s
+   - [研究突破] 世界动作模型对比 VLA：机器人领域迎来 GPT-2 时刻
+   - [开源工具] 将 RoBERTa AI 文本检测器压缩至 97MB 以在浏览器端运行
+   - [模型发布] AuroraIMG-6M 发布：仅 600 万参数的文生图模型
+   - [开源工具] EasyWhisperUI 3.0 发布：支持主流 GPU 的一键 Whisper 界面

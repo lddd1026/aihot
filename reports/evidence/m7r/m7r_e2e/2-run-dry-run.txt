@@ -1,0 +1,16 @@
+$ python -m aihot run --dry-run --no-image --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-e2e\config.yaml
+exit=0 (4.0s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-e2e\config.yaml
+20:27:43 INFO aihot.sources: 信息源完成: fake_feed，8 条（21 ms）
+
+① 采集: 1/1 源成功，抓取 8 条 → 新增 0 条
+② 加工: 8 条 → 预筛保留 6 → 6 簇；LLM 批次 2（失败 0）· 成本 ¥0.0018
+③ 日报: 2026-10-12 · 精选 4 条 + 简讯 0 条 · 综述 33 字
+④ 渲染: 纯文字（未渲染长图） · 企微分片 1 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+
+--- stderr ---

@@ -1,0 +1,78 @@
+{
+  "suite": "m7r_p3_fixes",
+  "passed": 13,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "P3-2a fetch 落库 6 条混合条目 rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "P3-2a enrich 预筛摘要行并列显示「主题不符 N」（垃圾/与AI无关/主题不符/批内重复）",
+      "ok": true,
+      "detail": "输入 6 → 保留 3（垃圾 1 · 与 AI 无关 0 · 主题不符 2 · 批内重复 0）"
+    },
+    {
+      "item": "P3-2b 样本行仍打印 [主题不符（硬件/商业）] 具体标题",
+      "ok": true,
+      "detail": "输入 6 → 保留 3（垃圾 1 · 与 AI 无关 0 · 主题不符 2 · 批内重复 0）"
+    },
+    {
+      "item": "P3-2c 非 dry-run enrich rc=0 并写回",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "P3-2d runs 表 enrich 记录 stage_stats 带 dropped_* 细分且数值正确",
+      "ok": true,
+      "detail": "stage_stats={'dropped_blacklist': 1, 'dropped_offtopic': 0, 'dropped_topic': 2, 'dropped_duplicate': 0, 'prefilter_kept': 3}"
+    },
+    {
+      "item": "P3-1 README / DESIGN §3.8 / PLAN v1.5 口径统一为「三道过滤 + 一层排序加权」",
+      "ok": true,
+      "detail": "README=True DESIGN=True PLAN=True"
+    },
+    {
+      "item": "P3-1b 三处不再出现旧口径「三层过滤」",
+      "ok": true,
+      "detail": "旧口径残留=[]"
+    },
+    {
+      "item": "P3-3a config.example.yaml 注释注明「整体替换、需列全分类」",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "item": "P3-3b README / DESIGN 同步注明整体替换语义",
+      "ok": true,
+      "detail": "README=True DESIGN=True"
+    },
+    {
+      "item": "P3-3c 行为与文档一致：部分配置为整体替换（未列分类不保留默认加成）",
+      "ok": true,
+      "detail": "loaded={'模型发布': 20.0}（默认全集=['产品更新', '开源工具', '政策监管', '模型发布', '研究突破', '融资商业', '行业动态']）"
+    },
+    {
+      "item": "P3-4a 真实数据复核证据落盘且内容与记述一致（78 条 / 主题不符 1 / 工程内容在报）",
+      "ok": true,
+      "detail": "证据文件=2026-10-12-recheck.txt（1593 字节）"
+    },
+    {
+      "item": "P3-4b PLAN v1.5 引用该证据路径",
+      "ok": true,
+      "detail": "引用命中=True"
+    },
+    {
+      "item": "P3-回归1 pytest 全绿且用例数为 408",
+      "ok": true,
+      "detail": "rc=0；passed=408；failed=0；65.8s"
+    },
+    {
+      "item": "P3-回归2 ruff check . 零告警",
+      "ok": true,
+      "detail": "rc=0；All checks passed!"
+    }
+  ],
+  "notes": []
+}

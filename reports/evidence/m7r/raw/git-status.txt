@@ -1,0 +1,61 @@
+ M DESIGN.md
+ M PLAN.md
+ M README.md
+ M config.example.yaml
+ M docs/PROJECT-REVIEW.md
+ M reports/evidence/m5r/round3/m5r_alert.json
+ M reports/evidence/m5r/round3/m5r_alert/1-alert-fallback-email.txt
+ M reports/evidence/m5r/round3/m5r_alert/2-alert-fallback-file.txt
+ M reports/evidence/m5r/round3/m5r_alert/4-alert-email-auth-fail.txt
+ M "reports/evidence/m5r/round3/m5r_alert/6.1 \351\202\256\344\273\266\345\217\257\347\224\250\357\274\232alert rc=0 \345\271\266\346\263\250\346\230\216\351\202\256\344\273\266\351\200\232\351\201\223.txt"
+ M "reports/evidence/m5r/round3/m5r_alert/6.4 \351\200\232\351\201\223\345\205\250\347\201\255\357\274\232rc=1 \344\270\224\350\276\223\345\207\272\345\220\253\343\200\214\346\234\252\345\220\257\347\224\250\343\200\215\344\270\216\343\200\214\346\234\254\345\234\260\345\205\234\345\272\225\343\200\215\357\274\210P2-1 \344\277\256\345\244\215\351\252\214\350\257\201\357\274\211.txt"
+ M reports/evidence/m5r/round3/m5r_bat_local.json
+ M reports/evidence/m5r/round3/m5r_bat_local/1-bat-dryrun-success.txt
+ M "reports/evidence/m5r/round3/m5r_bat_local/8.4 \351\242\204\346\243\200\346\227\240 [ERR]\357\274\210\344\273\243\347\220\206\346\234\252\345\220\257\347\224\250 _ LLM \345\201\207\346\234\215\345\212\241 OK\357\274\211.txt"
+ M reports/evidence/m5r/round3/m5r_fetch.json
+ M reports/evidence/m5r/round3/m5r_fetch/1-fetch-via-proxy.txt
+ M reports/evidence/m5r/round3/m5r_fetch/1b-fetch-proxy-health-check-fails.txt
+ M reports/evidence/m5r/round3/m5r_fetch/2-fetch-degraded-direct.txt
+ M reports/evidence/m5r/round3/m5r_fetch/3-fetch-all-failed.txt
+ M "reports/evidence/m5r/round3/m5r_fetch/3.3 \345\201\207\344\273\243\347\220\206\350\256\260\345\275\225\344\272\206\347\273\235\345\257\271 URI \345\275\242\345\274\217\347\232\204 GET\357\274\210\350\257\201\346\230\216\346\265\201\351\207\217\347\241\256\345\256\236\347\273\217\344\273\243\347\220\206\357\274\211.txt"
+ M "reports/evidence/m5r/round3/m5r_fetch/4.1 \344\273\243\347\220\206\345\235\217\347\253\257\345\217\243\346\227\266 fetch --dry-run rc=0\357\274\210\344\270\215\350\267\263\350\277\207\343\200\201\344\270\215\346\225\264\344\275\223\345\244\261\350\264\245\357\274\211.txt"
+ M "reports/evidence/m5r/round3/m5r_fetch/4.5 \351\231\215\347\272\247\344\270\215\347\255\211\344\272\216\350\260\216\346\212\245\357\274\232\346\272\220\344\271\237\344\270\215\345\217\257\350\276\276\346\227\266 rc=1 \344\270\224\346\217\220\347\244\272\345\205\250\351\203\250\345\244\261\350\264\245.txt"
+ M reports/evidence/m5r/round3/m5r_preflight.json
+ M reports/evidence/m5r/round3/m5r_preflight/1-check-quick-proxy-down.txt
+ M "reports/evidence/m5r/round3/m5r_preflight/1.1 \344\273\243\347\220\206\346\214\207\345\220\221\345\235\217\347\253\257\345\217\243\346\227\266 check --quick \351\200\200\345\207\272\347\240\201=0\357\274\210\344\270\215\346\213\246\346\210\252\350\277\220\350\241\214\357\274\211.txt"
+ M reports/evidence/m5r/round3/m5r_preflight/2-check-quick-llm-down.txt
+ M "reports/evidence/m5r/round3/m5r_preflight/2.3 \345\201\207\346\234\215\345\212\241\345\205\263\351\227\255\345\220\216 check --quick \351\200\200\345\207\272\347\240\201=1\357\274\210\344\270\215\346\230\257\345\201\207\350\243\205\346\210\220\345\212\237\357\274\211.txt"
+ M reports/evidence/m5r/round3/m5r_report/0-skip-command.txt
+ M "reports/evidence/m5r/round3/m5r_report/7.1 \347\234\237\345\256\236 skip \345\221\275\344\273\244 rc=0 \344\270\224\345\206\231\345\205\245 1 \346\235\241 skipped \350\256\260\345\275\225.txt"
+ M reports/evidence/m5r/round3/m5r_round2_proxy/1-check-quick-env-proxy-ignored.txt
+ M reports/evidence/m5r/round3/m5r_round2_proxy/3-p21-alert-and-skip.txt
+ M "reports/evidence/m5r/round3/m5r_round2_proxy/R2.1 \347\216\257\345\242\203 HTTPS_PROXY_HTTP_PROXY_ALL_PROXY \344\270\272\345\235\217\347\253\257\345\217\243\346\227\266 check --quick \344\273\215 rc=0 \344\270\224 LLM [OK ].txt"
+ M reports/evidence/m5r/round3/m5r_skip.json
+ M reports/evidence/m5r/round3/m5r_skip/1-bat-skip-email.txt
+ M reports/evidence/m5r/round3/m5r_skip/2-bat-skip-local-file.txt
+ M reports/evidence/m5r/round3/m5r_skip/3-bat-skip-broken-config.txt
+ M "reports/evidence/m5r/round3/m5r_skip/5.3 runs \350\241\250\345\207\272\347\216\260 status='skipped' \350\256\260\345\275\225.txt"
+ M reports/evidence/m5r/round3/raw/1-fake-proxy-requests.json
+ M reports/evidence/m5r/round3/run-all-summary.json
+ M reports/evidence/m5r/round3/run-m5r_alert.log
+ M reports/evidence/m5r/round3/run-m5r_bat_local.log
+ M reports/evidence/m5r/round3/run-m5r_fetch.log
+ M reports/evidence/m5r/round3/run-m5r_preflight.log
+ M reports/evidence/m5r/round3/run-m5r_skip.log
+ M src/aihot/config.py
+ M src/aihot/pipeline/prefilter.py
+ M src/aihot/pipeline/prompts.py
+ M src/aihot/presentation/compose.py
+ M src/aihot/runner.py
+ M tests/unit/test_compose.py
+ M tests/unit/test_config.py
+ M tests/unit/test_prefilter.py
+?? reports/M7-test-report.md
+?? reports/evidence/m7r/
+?? tests/independent/m7r_compose_rank.py
+?? tests/independent/m7r_docs.py
+?? tests/independent/m7r_e2e.py
+?? tests/independent/m7r_prefilter.py
+?? tests/independent/m7r_regression.py
+?? tests/independent/m7r_run_all.py
+?? tests/independent/m7r_support.py

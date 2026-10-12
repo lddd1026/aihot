@@ -1,0 +1,42 @@
+$ python -m aihot enrich --dry-run --top 10 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-e2e\config.yaml
+exit=0 (3.4s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-e2e\config.yaml
+
+待加工: 8 条（上限 200）
+
+预筛:
+  输入 8 → 保留 6（垃圾 0 · 与 AI 无关 0 · 主题不符 2 · 批内重复 0）
+    [主题不符（硬件/商业）] 台积电 2nm 晶圆产能被 AI 公司预订一空
+    [主题不符（硬件/商业）] AI startup raises $50M to reinvent search
+
+聚类: 6 条 → 6 簇（多源簇 0 · 最大簇 1 条）
+
+Top 6:
+   1. [ 65.1] (模型发布) Qwen3-Coder 发布：面向智能体的开源代码模型
+      第 3 条夹具摘要：开发者向内容验证。
+      提及 1 条 · 来源 1 家
+   2. [ 62.3] (开源工具) AirLLM 新版发布：单卡 4GB GPU 跑 70B 大模型
+      第 1 条夹具摘要：开发者向内容验证。
+      提及 1 条 · 来源 1 家
+   3. [ 62.3] (开源工具) vLLM 推理优化：PagedAttention 让吞吐提升 3 倍
+      第 2 条夹具摘要：开发者向内容验证。
+      提及 1 条 · 来源 1 家
+   4. [ 52.1] (研究突破) 从 0 搭建 RAG 评测流水线：踩坑与经验
+      第 4 条夹具摘要：开发者向内容验证。
+      提及 1 条 · 来源 1 家
+   5. [ -6.2] (行业动态) RTX 5090 涨价，AI 公司抢购高端显卡
+      第 5 条夹具摘要：开发者向内容验证。
+      提及 1 条 · 来源 1 家
+   6. [-16.2] (融资商业) Mistral AI partners with EuroCloud in multi-year cloud dea…
+      第 1 条夹具摘要：开发者向内容验证。
+      提及 1 条 · 来源 1 家
+
+今日综述: 今日综述：开源推理框架与模型发布活跃，工程实践与评测方法值得关注。
+
+LLM: 批次 2（失败 0）· token 300+150 · 成本约 ¥0.0018
+
+（dry-run，未写库）
+
+--- stderr ---

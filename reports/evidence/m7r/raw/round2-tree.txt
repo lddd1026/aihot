@@ -1,0 +1,15 @@
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes.json
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\regression
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-1_design-3.8.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-1_plan-v1.5-row.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-1_readme-block.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-2_1-fetch.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-2_2-enrich-dry-run.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-2_3-enrich-persist.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-2_4-enrich-stage-stats.json
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-3_config-example-bonus-comment.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-3_partial-bonus-loaded.json
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\m7-4_recheck.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\regression_pytest.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\round2\m7r_p3_fixes\regression_ruff.txt

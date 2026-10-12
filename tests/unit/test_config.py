@@ -344,7 +344,10 @@ def test_pipeline_defaults(tmp_path: Path) -> None:
     assert cfg.pipeline.enrich.max_items == 200
     assert cfg.pipeline.enrich.time_budget_seconds == 600
     assert cfg.pipeline.prefilter.use_builtin_blacklist is True
-    assert cfg.pipeline.rank.interest_bonus["模型发布"] == 8.0
+    assert cfg.pipeline.prefilter.use_builtin_exclude is True
+    assert cfg.pipeline.prefilter.exclude_keywords == ()
+    assert cfg.pipeline.rank.interest_bonus["模型发布"] == 10.0
+    assert cfg.pipeline.rank.interest_bonus["行业动态"] == -20.0
     assert cfg.source_weights["qbitai"] == 1.0
 
 

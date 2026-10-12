@@ -1,0 +1,11 @@
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-bat-local-broken\broken-struct.yaml
+
+[ERR] 配置校验未通过（5 个问题）:
+  1. app.window_hours 必须是 1~168 的整数，实际: 0
+  2. llm.base_url 必须是 http(s) 地址，实际: 'not-a-url'
+  3. llm.model 不能为空
+  4. sources 必须是非空列表
+  5. push.wecom.webhook 格式不正确，应以 https://qyapi.weixin.qq.com/ 开头
+
+--- stderr ---

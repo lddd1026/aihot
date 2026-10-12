@@ -1,0 +1,11 @@
+  [PASS] 7.1 pytest 全绿（rc=0，无 failed）: rc=0；passed=408；failed=0；49.7s
+  [PASS] 7.2 pytest 用例数与任务书一致（P3 修复后 408）: 实际 passed=408（P3 复验声明 408）
+  [PASS] 7.3 ruff check . 零告警: rc=0；输出=All checks passed!
+  [PASS] 7.4 m5r 套件回归全部 rc=0: 套件 8 个；rc=[0, 0, 0, 0, 0, 0, 0, 0]；检查项 76 passed / 0 failed；复用既有 summary（未重跑）
+  [PASS] 7.5 m6r 套件回归全部 rc=0: 套件 7 个；rc=[0, 0, 0, 0, 0, 0, 0]；检查项 106 passed / 0 failed；复用既有 summary（未重跑）
+  [PASS] 7.6 真实库 / 真实日报存档未被本轮全部测试改动: db 条目=1240 digests=21
+  [NOTE] 适配说明：既有 m5r/m6r 夹具未使用「行业动态」分类造日报（该分类本轮起不可发布），套件零改动；m5r 的 m4_alert 回归按 localhost-only 约束跳过。
+
+== m7r_regression: 6 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m7r\m7r_regression.json
+
+--- stderr ---

@@ -1,0 +1,3 @@
+模块清单行: | | `github_trending` | GitHub Trending 页解析（**当日全站热榜**，与 Search API 互补） |
+难点表行: | GitHub Trending 页 | 页面结构会变、无官方接口、偶发 403/429 | **双源互补**：① Search API（`created:>日期 sort=stars`，结构化且稳定）；② Trending 页解析（当日热榜，重试 + 单源隔离兜底，2026-10 重新引入） |
+仍含『改用 Search API』=False

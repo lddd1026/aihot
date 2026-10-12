@@ -151,6 +151,79 @@ class TestBlacklist:
         assert prefilter_items([make_item("foo bar AI")], cfg).stats.kept == 0
 
 
+class TestTopicExclude:
+    """主题排除（开发者向日报：不收录硬件资讯与公司间商业消息）。"""
+
+    def test_business_news_dropped_zh(self, tmp_path: Path) -> None:
+        cfg = load_cfg(tmp_path)
+        result = prefilter_items(
+            [make_item("英伟达洽谈收购开源模型初创公司 Reflection AI")], cfg
+        )
+        assert result.items == []
+        assert result.stats.dropped_topic == 1
+        assert result.stats.dropped_samples["主题不符（硬件/商业）"]
+
+    def test_business_news_dropped_en(self, tmp_path: Path) -> None:
+        cfg = load_cfg(tmp_path)
+        items = [
+            make_item("AI startup raises $50M to build coding agents"),
+            make_item("OpenAI acquires a design tool startup"),
+            make_item("Anthropic reports record revenue in Q3"),
+        ]
+        result = prefilter_items(items, cfg)
+        assert result.items == []
+        assert result.stats.dropped_topic == 3
+
+    def test_hardware_news_dropped(self, tmp_path: Path) -> None:
+        cfg = load_cfg(tmp_path)
+        items = [
+            make_item("台积电 2nm 晶圆产能被 AI 芯片订单挤爆"),
+            make_item("某厂商发布液冷散热方案，面向智算中心"),
+            make_item("英伟达数据中心业务营收创新高"),
+        ]
+        result = prefilter_items(items, cfg)
+        assert result.items == []
+        assert result.stats.dropped_topic == 3
+
+    def test_dev_content_with_gpu_mention_kept(self, tmp_path: Path) -> None:
+        """关键护栏：出现 GPU/显存/型号名的工程内容不能被误杀（交给 LLM 语义层判断）。"""
+        cfg = load_cfg(tmp_path)
+        items = [
+            make_item("AirLLM：单卡 4GB GPU 跑 70B 模型"),
+            make_item("vLLM 推理引擎优化：吞吐提升 2 倍，支持多卡并行"),
+            make_item("Qwen 发布可在消费级显卡运行的小模型"),
+            make_item("单张 RTX 3090 上 Qwen 27B 达 140 tok/s，KL 散度 0.0009"),
+        ]
+        result = prefilter_items(items, cfg)
+        assert len(result.items) == 4
+        assert result.stats.dropped_topic == 0
+
+    def test_custom_exclude_adds_to_builtin(self, tmp_path: Path) -> None:
+        text = BASE_CONFIG.replace(
+            "  prefilter:\n    gate_sources: [hackernews]",
+            "  prefilter:\n    gate_sources: [hackernews]\n"
+            '    exclude_keywords: ["web3"]',
+        )
+        cfg = load_cfg(tmp_path, text)
+        # 内置排除仍生效
+        assert prefilter_items([make_item("某公司完成 B 轮融资")], cfg).stats.kept == 0
+        # 自定义词也生效
+        assert prefilter_items([make_item("web3 AI 平台发布")], cfg).stats.kept == 0
+        # 正常技术新闻不受影响
+        assert prefilter_items([make_item("新开源 Agent 框架发布")], cfg).stats.kept == 1
+
+    def test_builtin_exclude_can_be_disabled(self, tmp_path: Path) -> None:
+        text = BASE_CONFIG.replace(
+            "  prefilter:\n    gate_sources: [hackernews]",
+            "  prefilter:\n    gate_sources: [hackernews]\n"
+            "    use_builtin_exclude: false\n"
+            '    exclude_keywords: ["web3"]',
+        )
+        cfg = load_cfg(tmp_path, text)
+        assert prefilter_items([make_item("某公司完成 B 轮融资")], cfg).stats.kept == 1
+        assert prefilter_items([make_item("web3 AI 平台发布")], cfg).stats.kept == 0
+
+
 class TestBatchDedup:
     def test_same_url_same_source_dropped_once(self, tmp_path: Path) -> None:
         cfg = load_cfg(tmp_path)

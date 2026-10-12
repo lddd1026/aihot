@@ -1,0 +1,24 @@
+[
+  {
+    "method": "GET",
+    "path": "http://127.0.0.1:10586/generate_204",
+    "headers": {
+      "Host": "127.0.0.1:10586",
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate",
+      "Connection": "keep-alive",
+      "User-Agent": "python-httpx/0.28.1"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "http://127.0.0.1:1/feed.xml",
+    "headers": {
+      "Host": "127.0.0.1:1",
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate",
+      "Connection": "keep-alive",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    }
+  }
+]

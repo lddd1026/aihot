@@ -1,0 +1,30 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-round2-p3\config.yaml
+exit=0 (1.4s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-round2-p3\config.yaml
+20:25:51 INFO aihot.sources: 信息源完成: fake_feed，6 条（30 ms）
+
+采集窗口: 最近 24 小时（起始 2026-10-11T20:25:51+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] fake_feed          6 条（30 ms）
+
+合计: 抓取 6 条 → 新增 6 条（去重 0 条）→ 库内共 6 条
+
+最新条目预览（前 6 条）:
+   1. [fake_feed] AirLLM 更新：单卡 4GB GPU 跑 70B 大模型
+      https://example.com/m7r/round2/1（10-12 20:09）
+   2. [fake_feed] vLLM 推理优化实践：吞吐提升 3 倍
+      https://example.com/m7r/round2/2（10-12 20:08）
+   3. [fake_feed] 从 0 搭建 RAG 评测流水线：踩坑与经验
+      https://example.com/m7r/round2/3（10-12 20:07）
+   4. [fake_feed] 台积电 2nm 晶圆产能被 AI 公司预订一空
+      https://example.com/m7r/round2/4（10-12 20:06）
+   5. [fake_feed] AI startup raises $50M to reinvent search
+      https://example.com/m7r/round2/5（10-12 20:05）
+   6. [fake_feed] AI 大厂招聘算法工程师，简历投递内推
+      https://example.com/m7r/round2/6（10-12 20:04）
+
+--- stderr ---

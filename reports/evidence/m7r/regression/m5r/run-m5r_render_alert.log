@@ -1,0 +1,8 @@
+  [PASS] 8b.1 渲染失败 outcome.status=failed: status=failed
+  [PASS] 8b.2 渲染失败告警在直连语义下真的到达企微（本地假服务收到）: alert_texts=1
+  [PASS] 8b.3 仅长图降级（status=partial，文字已送达）时无告警（记录 M4 遗留 P2-6 现状）: status=partial；新增告警=0（M4 报告 P2-6 仍未解决）
+  [PASS] 8b.4 真实库/存档未被本套件改动: 真实库快照一致
+
+== m5r_render_alert: 4 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_render_alert.json
+
+--- stderr ---

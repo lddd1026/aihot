@@ -19,10 +19,15 @@ VALID_SOURCE_TYPES = frozenset(
 )
 VALID_LOG_LEVELS = frozenset({"DEBUG", "INFO", "WARNING", "ERROR"})
 DEFAULT_GATE_SOURCES = ("hackernews",)
+# 开发者向默认权重：技术类加权；硬件/商业/政策类压到负分（配合 prefilter 与日报组装的三层过滤）
 DEFAULT_INTEREST_BONUS: dict[str, float] = {
-    "模型发布": 8.0,
-    "产品更新": 5.0,
-    "开源工具": 5.0,
+    "模型发布": 10.0,
+    "开源工具": 10.0,
+    "研究突破": 8.0,
+    "产品更新": 6.0,
+    "行业动态": -20.0,
+    "融资商业": -30.0,
+    "政策监管": -15.0,
 }
 DEFAULT_TITLE_SIMILARITY = 88.0
 DEFAULT_MAX_HOURS_APART = 72
@@ -105,6 +110,9 @@ class PrefilterConfig:
     blacklist_keywords: tuple[str, ...]
     extra_ai_keywords: tuple[str, ...]
     use_builtin_blacklist: bool = True
+    # 主题排除（硬件 / 公司间商业消息）：内置一份高精度模式，可用配置追加
+    exclude_keywords: tuple[str, ...] = ()
+    use_builtin_exclude: bool = True
 
 
 @dataclass(frozen=True, slots=True)
@@ -275,7 +283,7 @@ def _validate_pipeline(raw: dict[str, Any], errors: list[str]) -> None:
     enrich = pipeline.get("enrich") if isinstance(pipeline.get("enrich"), dict) else {}
     rank = pipeline.get("rank") if isinstance(pipeline.get("rank"), dict) else {}
 
-    for key in ("gate_sources", "blacklist_keywords", "extra_ai_keywords"):
+    for key in ("gate_sources", "blacklist_keywords", "extra_ai_keywords", "exclude_keywords"):
         value = prefilter.get(key)
         if value is not None and (
             not isinstance(value, list) or any(not isinstance(entry, str) for entry in value)
@@ -314,6 +322,11 @@ def _validate_pipeline(raw: dict[str, Any], errors: list[str]) -> None:
         errors,
         "pipeline.prefilter.use_builtin_blacklist",
         prefilter.get("use_builtin_blacklist"),
+    )
+    _check_bool(
+        errors,
+        "pipeline.prefilter.use_builtin_exclude",
+        prefilter.get("use_builtin_exclude"),
     )
     _check_number(
         errors,
@@ -543,6 +556,8 @@ def _build_pipeline(raw: dict[str, Any]) -> PipelineConfig:
             blacklist_keywords=_string_tuple(prefilter_raw.get("blacklist_keywords")),
             extra_ai_keywords=_string_tuple(prefilter_raw.get("extra_ai_keywords")),
             use_builtin_blacklist=bool(prefilter_raw.get("use_builtin_blacklist", True)),
+            exclude_keywords=_string_tuple(prefilter_raw.get("exclude_keywords")),
+            use_builtin_exclude=bool(prefilter_raw.get("use_builtin_exclude", True)),
         ),
         dedup=DedupConfig(
             title_similarity=float(dedup_raw.get("title_similarity", DEFAULT_TITLE_SIMILARITY)),

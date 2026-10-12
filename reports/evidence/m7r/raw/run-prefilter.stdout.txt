@@ -1,0 +1,19 @@
+  [PASS] 1.1 混合批次统计：total/dropped_topic/kept 与期望一致: total=33 dropped_topic=13 kept=20（期望 total=33 dropped_topic=13 kept=20）
+  [PASS] 1.2 逐条期望核对：13 类硬件/商业剔除 + 20 类工程保留全部一致: 不一致 0 条（详见 1-topic-matrix.json）
+  [PASS] 1.3 剔除样本：原因键与样本标题正确（≤5 条截断）: 样本=['台积电 2nm 晶圆产能被 AI 公司预订一空', '液冷散热方案成为新一代数据中心标配', 'Nvidia data center revenue jumps 40% on AI demand', 'AI server racks sold out as chip makers ramp up output', '固态硬盘价格走高，AI 训练集群采购承压']
+  [PASS] 1.4 剔除计数 dropped_topic 精确等于硬件/商业标题数: dropped_topic=13 期望=13
+  [PASS] 1.5 保留集恰为工程标题集合（顺序保持）: 保留 20 条；首条=AirLLM：单卡 4GB GPU 跑 70B 大模型
+  [PASS] 2.1 误杀护栏：GPU/显存/型号名工程条目（含新构反例）全部保留: 护栏样本 20 条全部保留：AirLLM：单卡 4GB GPU 跑 70B 大模型(keep)；单张 RTX 3090 上 Qwen 27B 达 140 tok/s(keep)；vLLM 推理优化实践：PagedAttention 吞吐提升 3 倍(keep)；可在消费级显卡运行的小模型：4GB 显存跑 7B(keep) …
+  [PASS] 2.2 同批次正对照：硬件/商业仍被剔除（排除“模式整体失效”假象）: 正对照 13 条全部剔除
+  [PASS] 3.1 默认配置：内置 exclude 生效（硬件剔除），未命中自定义的 web3 标题保留: dropped_topic=1 kept=['web3 钱包与 AI 智能体的结合实践']
+  [PASS] 3.2 exclude_keywords 追加生效：内置硬件 + 自定义 web3 同时剔除: dropped_topic=2 kept=0
+  [PASS] 3.3 use_builtin_exclude=false：仅自定义生效（内置硬件词放行）: dropped_topic=1 kept=['台积电 2nm 晶圆产能被 AI 公司预订一空']
+  [PASS] 3.4 配置校验接受新键（exclude_keywords / use_builtin_exclude）: loaded: ('web3',) use_builtin_exclude=False
+  [PASS] 3.5 配置校验报错：exclude_keywords 为字符串: accepted=False；报错片段命中=True（pipeline.prefilter.exclude_keywords 必须是字符串列表（可为空列表））
+  [PASS] 3.5 配置校验报错：exclude_keywords 含非字符串: accepted=False；报错片段命中=True（pipeline.prefilter.exclude_keywords 必须是字符串列表（可为空列表））
+  [PASS] 3.5 配置校验报错：use_builtin_exclude 为字符串: accepted=False；报错片段命中=True（pipeline.prefilter.use_builtin_exclude 必须是布尔值 true/false，实际: 'false'）
+  [PASS] 3.5 配置校验报错：use_builtin_exclude 为数字: accepted=False；报错片段命中=True（pipeline.prefilter.use_builtin_exclude 必须是布尔值 true/false，实际: 1）
+  [PASS] 3.6 CLI check：新键合法配置 rc=0 且结构校验通过: rc=0
+  [PASS] 3.7 CLI check：错误类型 rc=3 且报错点名 use_builtin_exclude: rc=3；片段=1. pipeline.prefilter.use_builtin_exclude 必须是布尔值 true/false，实际: 'false'
+
+== m7r_prefilter: 17 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m7r\m7r_prefilter.json

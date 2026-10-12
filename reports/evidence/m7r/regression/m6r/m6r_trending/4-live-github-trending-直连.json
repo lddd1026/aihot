@@ -1,0 +1,137 @@
+[
+  {
+    "title": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "raw_summary": "Reverse engineer anything with agents, from app behavior down to native binaries. ｜ 语言 TypeScript｜star 132,184｜今日 +45,495｜fork 29,541",
+    "extra": {
+      "kind": "repo",
+      "stars": 132184,
+      "stars_today": 45495,
+      "upvotes": 132184,
+      "forks": 29541,
+      "language": "TypeScript",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "bilawalsidhu/gods-eye-view",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "raw_summary": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. ｜ 语言 JavaScript｜star 52,647｜今日 +1,903｜fork 10,492",
+    "extra": {
+      "kind": "repo",
+      "stars": 52647,
+      "stars_today": 1903,
+      "upvotes": 52647,
+      "forks": 10492,
+      "language": "JavaScript",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "raw_summary": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. ｜ 语言 TypeScript｜star 26,810｜今日 +485｜fork 1,923",
+    "extra": {
+      "kind": "repo",
+      "stars": 26810,
+      "stars_today": 485,
+      "upvotes": 26810,
+      "forks": 1923,
+      "language": "TypeScript",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "storytold/artcraft",
+    "url": "https://github.com/storytold/artcraft",
+    "raw_summary": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers ｜ 语言 Rust｜star 19,939｜今日 +4,106｜fork 3,243",
+    "extra": {
+      "kind": "repo",
+      "stars": 19939,
+      "stars_today": 4106,
+      "upvotes": 19939,
+      "forks": 3243,
+      "language": "Rust",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "open-webui/open-webui",
+    "url": "https://github.com/open-webui/open-webui",
+    "raw_summary": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...) ｜ 语言 Python｜star 154,430｜今日 +142｜fork 22,613",
+    "extra": {
+      "kind": "repo",
+      "stars": 154430,
+      "stars_today": 142,
+      "upvotes": 154430,
+      "forks": 22613,
+      "language": "Python",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "raw_summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. ｜ 语言 HTML｜star 51,665｜今日 +2,100｜fork 3,262",
+    "extra": {
+      "kind": "repo",
+      "stars": 51665,
+      "stars_today": 2100,
+      "upvotes": 51665,
+      "forks": 3262,
+      "language": "HTML",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "lyogavin/airllm",
+    "url": "https://github.com/lyogavin/airllm",
+    "raw_summary": "AirLLM 70B inference with single 4GB GPU ｜ 语言 Jupyter Notebook｜star 37,003｜今日 +886｜fork 3,846",
+    "extra": {
+      "kind": "repo",
+      "stars": 37003,
+      "stars_today": 886,
+      "upvotes": 37003,
+      "forks": 3846,
+      "language": "Jupyter Notebook",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "microsoft/BitNet",
+    "url": "https://github.com/microsoft/BitNet",
+    "raw_summary": "Official inference framework for 1-bit LLMs ｜ 语言 C++｜star 40,735｜今日 +195｜fork 3,798",
+    "extra": {
+      "kind": "repo",
+      "stars": 40735,
+      "stars_today": 195,
+      "upvotes": 40735,
+      "forks": 3798,
+      "language": "C++",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "Alishahryar1/free-claude-code",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "raw_summary": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly) ｜ 语言 Python｜star 58,297｜今日 +506｜fork 9,257",
+    "extra": {
+      "kind": "repo",
+      "stars": 58297,
+      "stars_today": 506,
+      "upvotes": 58297,
+      "forks": 9257,
+      "language": "Python",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  }
+]

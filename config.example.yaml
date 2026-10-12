@@ -49,6 +49,9 @@ pipeline:
     blacklist_keywords: []                 # 追加垃圾词（正则，叠加在内置黑名单之上）
     extra_ai_keywords: []                  # 追加 AI 关键词（正则）
     use_builtin_blacklist: true            # false = 只用自己写的 blacklist_keywords
+    exclude_keywords: []                   # 追加"不收录主题"（正则，叠加在内置排除之上）
+    use_builtin_exclude: true              # 内置排除：硬件资讯（显卡/晶圆/数据中心…）与
+                                           # 公司间商业消息（融资/收购/财报/人事）——开发者向日报不收录
   dedup:
     title_similarity: 88                   # 标题相似度阈值（0~100，越大越保守）
     max_hours_apart: 72                    # 超过该时间差不再合并
@@ -59,10 +62,15 @@ pipeline:
     price_input_per_million: 2.0           # 输入价格（元/百万 token）
     price_output_per_million: 8.0          # 输出价格（元/百万 token）
   rank:
-    interest_bonus:                        # 兴趣加成（按分类）
-      模型发布: 8
-      产品更新: 5
-      开源工具: 5
+    interest_bonus:                        # 兴趣加成（按分类；可为负数 = 降权；整体替换语义，建议列全分类）
+      # 开发者向：技术类加权，硬件/商业/政策类压到负分
+      模型发布: 10
+      开源工具: 10
+      研究突破: 8
+      产品更新: 6
+      行业动态: -20
+      融资商业: -30
+      政策监管: -15
 
 sources:
   # ============ 第一批（M1）============

@@ -1,0 +1,44 @@
+[
+  {
+    "suite": "m6r_degrade_alert",
+    "passed": 5,
+    "failed": 0,
+    "file": "m6r_degrade_alert.json"
+  },
+  {
+    "suite": "m6r_degrade_e2e",
+    "passed": 12,
+    "failed": 0,
+    "file": "m6r_degrade_e2e.json"
+  },
+  {
+    "suite": "m6r_health_latency",
+    "passed": 2,
+    "failed": 0,
+    "file": "m6r_health_latency.json"
+  },
+  {
+    "suite": "m6r_p2_fixes",
+    "passed": 25,
+    "failed": 0,
+    "file": "m6r_p2_fixes.json"
+  },
+  {
+    "suite": "m6r_proxy_health",
+    "passed": 15,
+    "failed": 0,
+    "file": "m6r_proxy_health.json"
+  },
+  {
+    "suite": "m6r_regression",
+    "passed": 5,
+    "failed": 0,
+    "file": "m6r_regression.json"
+  },
+  {
+    "suite": "m6r_trending",
+    "passed": 42,
+    "failed": 0,
+    "file": "m6r_trending.json"
+  }
+]

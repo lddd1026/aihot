@@ -1,0 +1,10 @@
+$ python -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-config-cli\bad.yaml
+exit=3 (0.7s)
+--- stdout ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-config-cli\bad.yaml
+
+[ERR] 配置校验未通过（1 个问题）:
+  1. pipeline.prefilter.use_builtin_exclude 必须是布尔值 true/false，实际: 'false'
+
+--- stderr ---

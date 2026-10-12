@@ -1,0 +1,52 @@
+  [PASS] 3.1 健康检查通过（假代理 204）时代理被使用：proxy_mode=proxy: proxy_mode=proxy
+  [PASS] 3.2 目标端口关闭仍抓到 8 条（只可能经假代理）: fake_feed 抓取条数=8（目标 http://127.0.0.1:1/feed.xml 是关闭端口）
+  [PASS] 3.3 假代理记录了绝对 URI 形式的 GET（证明流量确实经代理）: proxied_get_paths=['http://127.0.0.1:10586/generate_204', 'http://127.0.0.1:1/feed.xml']
+  [PASS] 3.4（行为变更）健康探测无法通过时不再使用该代理：只经代理可达的源失败、rc=1: rc=1；代理收到的绝对 URI=[]
+  [PASS] 4.1 代理坏端口时 fetch --dry-run rc=0（不跳过、不整体失败）: rc=0
+  [PASS] 4.2 直连可达的源真的抓到了 8 条: 条数=8；假 RSS 命中=1
+  [PASS] 4.3 输出含'降级为直连'日志（用户可知情）: 20:10:16 WARNING aihot.runner: 代理不可用或节点异常（http://127.0.0.1:1），本次采集降级为直连：国内源照常，墙外源将失败
+  [PASS] 4.4 非 dry-run 时才落库（dry-run 未创建数据库文件）: db exists=False
+  [PASS] 4.5 降级不等于谎报：源也不可达时 rc=1 且提示全部失败: rc=1
+  [PASS] 4.6 真实库/存档未被本套件改动: 真实库快照一致
+
+== m5r_fetch: 10 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch.json
+
+--- stderr ---
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 4615)
+Traceback (most recent call last):
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 438, in handle
+    self.handle_one_request()
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 4618)
+Traceback (most recent call last):
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 438, in handle
+    self.handle_one_request()
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+----------------------------------------

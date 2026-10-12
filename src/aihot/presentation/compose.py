@@ -11,6 +11,8 @@ from aihot.pipeline.rank import RankedItem
 BRIEF_COUNT = 12
 NOISE_CATEGORY = "其他"
 NOISE_MAX_IMPORTANCE = 15
+# 开发者向日报不收录的分类（硬件/商业/政策类会被 LLM 归入这些分类）
+EXCLUDED_CATEGORIES = frozenset({"融资商业", "政策监管", "行业动态"})
 PAPER_KIND = "paper"
 PAPER_LIMIT = 2
 REPO_KIND = "repo"
@@ -45,8 +47,8 @@ class DigestStats:
 
 
 def is_publishable(item: NewsItem) -> bool:
-    """是否适合进入日报：排除被过滤项与明显噪音（非 AI/纯营销）。"""
-    if item.category == "过滤":
+    """是否适合进入日报：排除被过滤项、主题不符分类与明显噪音（非 AI/纯营销）。"""
+    if item.category == "过滤" or item.category in EXCLUDED_CATEGORIES:
         return False
     if item.category == NOISE_CATEGORY and item.importance <= NOISE_MAX_IMPORTANCE:
         return False

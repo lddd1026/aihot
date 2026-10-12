@@ -1,0 +1,19 @@
+=== m5r ===
+m5r_alert: 7 pass / 0 fail
+m5r_bat_local: 10 pass / 0 fail
+m5r_fetch: 10 pass / 0 fail
+m5r_preflight: 9 pass / 0 fail
+m5r_render_alert: 4 pass / 0 fail
+m5r_report: 9 pass / 0 fail
+m5r_round2_proxy: 13 pass / 0 fail
+m5r_skip: 14 pass / 0 fail
+TOTAL m5r: 76 pass / 0 fail
+=== m6r ===
+m6r_degrade_alert: 5 pass / 0 fail
+m6r_degrade_e2e: 12 pass / 0 fail
+m6r_health_latency: 2 pass / 0 fail
+m6r_p2_fixes: 25 pass / 0 fail
+m6r_proxy_health: 15 pass / 0 fail
+m6r_regression: 5 pass / 0 fail
+m6r_trending: 42 pass / 0 fail
+TOTAL m6r: 106 pass / 0 fail

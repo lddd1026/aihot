@@ -1,0 +1,8 @@
+status=ok
+delivered=True
+fetch.proxy_mode=degraded
+errors=[]
+wecom text 条数=1
+alert 文本=['⚠️ aihot 告警：运行降级提示\n- 代理不可用，今日已降级为直连采集（部分墙外源缺失，日报照常发送）']
+markdown 条数=1
+llm POST=2

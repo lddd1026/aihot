@@ -1,0 +1,1 @@
+[{'run_id': '20261012T121035-f90c2c', 'status': 'skipped', 'stage_stats': '{"stage": "skip", "reason": "preflight failed: LLM or WeCom unreachable. Today\'s digest was skipped. See logs\\\\run_daily.log"}', 'error': ''}]

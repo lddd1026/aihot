@@ -410,6 +410,7 @@ def _cmd_enrich(args: argparse.Namespace) -> int:
         f"  输入 {outcome.pending} → 保留 {outcome.kept}"
         f"（垃圾 {outcome.dropped.get('blacklist', 0)}"
         f" · 与 AI 无关 {outcome.dropped.get('offtopic', 0)}"
+        f" · 主题不符 {outcome.dropped.get('topic', 0)}"
         f" · 批内重复 {outcome.dropped.get('duplicate', 0)}）"
     )
     for reason, samples in outcome.samples.items():

@@ -1,0 +1,95 @@
+ reports/evidence/m5r/round3/m5r_alert.json         |   4 +-
+ .../round3/m5r_alert/1-alert-fallback-email.txt    |   6 +-
+ .../m5r/round3/m5r_alert/2-alert-fallback-file.txt |   6 +-
+ .../round3/m5r_alert/4-alert-email-auth-fail.txt   |   4 +-
+ ...02\256\344\273\266\351\200\232\351\201\223.txt" |   6 +-
+ ...44\215\351\252\214\350\257\201\357\274\211.txt" |   4 +-
+ reports/evidence/m5r/round3/m5r_bat_local.json     |   2 +-
+ .../round3/m5r_bat_local/1-bat-dryrun-success.txt  |  14 +--
+ ...207\346\234\215\345\212\241 OK\357\274\211.txt" |  10 +-
+ reports/evidence/m5r/round3/m5r_fetch.json         |   4 +-
+ .../m5r/round3/m5r_fetch/1-fetch-via-proxy.txt     |   2 +-
+ .../1b-fetch-proxy-health-check-fails.txt          |  12 +--
+ .../round3/m5r_fetch/2-fetch-degraded-direct.txt   |  26 ++---
+ .../m5r/round3/m5r_fetch/3-fetch-all-failed.txt    |  12 +--
+ ...73\217\344\273\243\347\220\206\357\274\211.txt" |   2 +-
+ ...75\223\345\244\261\350\264\245\357\274\211.txt" |  26 ++---
+ ...05\250\351\203\250\345\244\261\350\264\245.txt" |  12 +--
+ reports/evidence/m5r/round3/m5r_preflight.json     |   6 +-
+ .../m5r_preflight/1-check-quick-proxy-down.txt     | 112 +++++++------------
+ ...10\252\350\277\220\350\241\214\357\274\211.txt" | 112 +++++++------------
+ .../m5r_preflight/2-check-quick-llm-down.txt       | 118 +++++++--------------
+ ...43\205\346\210\220\345\212\237\357\274\211.txt" | 118 +++++++--------------
+ .../m5r/round3/m5r_report/0-skip-command.txt       |   2 +-
+ ...6\235\241 skipped \350\256\260\345\275\225.txt" |   2 +-
+ .../1-check-quick-env-proxy-ignored.txt            |   6 +-
+ .../m5r_round2_proxy/3-p21-alert-and-skip.txt      |   4 +-
+ ...k \344\273\215 rc=0 \344\270\224 LLM [OK ].txt" |   6 +-
+ reports/evidence/m5r/round3/m5r_skip.json          |   6 +-
+ .../m5r/round3/m5r_skip/1-bat-skip-email.txt       |  12 +--
+ .../m5r/round3/m5r_skip/2-bat-skip-local-file.txt  |  14 +--
+ .../round3/m5r_skip/3-bat-skip-broken-config.txt   |   6 +-
+ ... status='skipped' \350\256\260\345\275\225.txt" |   2 +-
+ .../m5r/round3/raw/1-fake-proxy-requests.json      |   4 +-
+ reports/evidence/m5r/round3/run-all-summary.json   |  16 +--
+ reports/evidence/m5r/round3/run-m5r_alert.log      |   4 +-
+ reports/evidence/m5r/round3/run-m5r_bat_local.log  |   2 +-
+ reports/evidence/m5r/round3/run-m5r_fetch.log      |   8 +-
+ reports/evidence/m5r/round3/run-m5r_preflight.log  |   6 +-
+ reports/evidence/m5r/round3/run-m5r_skip.log       |   6 +-
+ 39 files changed, 292 insertions(+), 432 deletions(-)
+diff --git a/reports/evidence/m5r/round3/run-all-summary.json b/reports/evidence/m5r/round3/run-all-summary.json
+index c2ea508..c7e673f 100644
+--- a/reports/evidence/m5r/round3/run-all-summary.json
++++ b/reports/evidence/m5r/round3/run-all-summary.json
+@@ -2,41 +2,41 @@
+   {
+     "suite": "m5r_preflight",
+     "rc": 0,
+-    "seconds": 9.9
++    "seconds": 9.7
+   },
+   {
+     "suite": "m5r_fetch",
+     "rc": 0,
+-    "seconds": 24.7
++    "seconds": 23.5
+   },
+   {
+     "suite": "m5r_skip",
+     "rc": 0,
+-    "seconds": 18.2
++    "seconds": 19.8
+   },
+   {
+     "suite": "m5r_alert",
+     "rc": 0,
+-    "seconds": 4.9
++    "seconds": 5.5
+   },
+   {
+     "suite": "m5r_report",
+     "rc": 0,
+-    "seconds": 4.4
++    "seconds": 4.3
+   },
+   {
+     "suite": "m5r_render_alert",
+     "rc": 0,
+-    "seconds": 2.7
++    "seconds": 2.4
+   },
+   {
+     "suite": "m5r_bat_local",
+     "rc": 0,
+-    "seconds": 37.6
++    "seconds": 8.5
+   },
+   {
+     "suite": "m5r_round2_proxy",
+     "rc": 0,
+-    "seconds": 14.6
++    "seconds": 15.3
+   }
+ ]
+\ No newline at end of file

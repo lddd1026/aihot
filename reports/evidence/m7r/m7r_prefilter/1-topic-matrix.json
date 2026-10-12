@@ -1,0 +1,233 @@
+[
+  {
+    "kind": "hardware",
+    "title": "台积电 2nm 晶圆产能被 AI 公司预订一空",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "hardware",
+    "title": "液冷散热方案成为新一代数据中心标配",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "hardware",
+    "title": "Nvidia data center revenue jumps 40% on AI demand",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "hardware",
+    "title": "AI server racks sold out as chip makers ramp up output",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "hardware",
+    "title": "固态硬盘价格走高，AI 训练集群采购承压",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "hardware",
+    "title": "显卡涨价潮：新一代旗舰价格创新高",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "business",
+    "title": "英伟达洽谈收购一家 AI 芯片初创公司",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "business",
+    "title": "AI startup raises $50M to build autonomous agents",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "business",
+    "title": "OpenAI acquires robotics startup in an all-stock deal",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "business",
+    "title": "某大模型公司完成 B 轮融资，估值 120 亿元",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "business",
+    "title": "Meta 财报：AI 部门营收不及预期，宣布裁员",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "business",
+    "title": "Anthropic's valuation doubles in a new funding round",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "business",
+    "title": "国内 AI 芯片公司启动 IPO 招股",
+    "expect": "drop",
+    "actual": "drop",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "AirLLM：单卡 4GB GPU 跑 70B 大模型",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "单张 RTX 3090 上 Qwen 27B 达 140 tok/s",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "vLLM 推理优化实践：PagedAttention 吞吐提升 3 倍",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "可在消费级显卡运行的小模型：4GB 显存跑 7B",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "在 8 张 A100 上训练 13B 模型的工程笔记",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "用 llama.cpp 量化部署：MacBook 统一内存跑 70B",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "How we cut inference cost by 80% with KV cache reuse",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "从 0 搭建 RAG 评测流水线：踩坑与经验",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "NVIDIA CUDA 显存优化：让大模型推理快 2 倍",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "DeepSeek 蒸馏小模型实战：显存不够也能微调",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "消费级 GPU 的 TPOT 对比：3090 vs 4090 vs A6000",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering",
+    "title": "用 4 张 4090 复现 70B 推理的踩坑记录",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "如何在单张 2080 Ti 上训练 LoRA：省钱路线",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "手机端侧小模型实测：8GB 内存跑 3B 全流程",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "用 RTX 4090 做多卡推理的性价比分析",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "国产显卡运行 DeepSeek 蒸馏模型初体验",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "A100 与 H100 显存带宽对比：推理到底差多少",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "我们在服务器上部署 vLLM 的经验：并发调优",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "显存不足？试试梯度检查点与分页优化器",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  },
+  {
+    "kind": "engineering-extra",
+    "title": "Serving 70B on a single 4090: VRAM tricks we learned",
+    "expect": "keep",
+    "actual": "keep",
+    "ok": true
+  }
+]

@@ -1,0 +1,14 @@
+  [PASS] 8.1 README「内容范围」表：收录/不收录与三道过滤+一层排序加权机制句齐全（含整体替换说明）: 缺失=[]
+  [PASS] 8.2 DESIGN §3.8：四道机制（规则/语义/组装/排序）与实现符号一一对应: 缺失=[]
+  [PASS] 8.3 DESIGN §3.8 四层描述完整（①规则 ②LLM ③组装 ④排序）: 四个序号标记齐全
+  [PASS] 8.4 PLAN 附录 A v1.5 变更记录：四层要点与实现一致: 行内容命中=True；①②③④计数=4
+  [PASS] 8.5 配置模板与真实配置均含新键（exclude_keywords / use_builtin_exclude）: example=['blacklist_keywords', 'exclude_keywords', 'extra_ai_keywords', 'gate_sources', 'use_builtin_blacklist', 'use_builtin_exclude']；real=['blacklist_keywords', 'exclude_keywords', 'extra_ai_keywords', 'gate_sources', 'use_builtin_blacklist', 'use_builtin_exclude']
+  [PASS] 8.6 配置示例/真实配置的 interest_bonus 与代码默认值一致: example={'模型发布': 10, '开源工具': 10, '研究突破': 8, '产品更新': 6, '行业动态': -20, '融资商业': -30, '政策监管': -15} real={'模型发布': 10, '开源工具': 10, '研究突破': 8, '产品更新': 6, '行业动态': -20, '融资商业': -30, '政策监管': -15} default={'模型发布': 10.0, '开源工具': 10.0, '研究突破': 8.0, '产品更新': 6.0, '行业动态': -20.0, '融资商业': -30.0, '政策监管': -15.0}
+  [PASS] 8.7 「裸词显卡/GPU/芯片不入排除表」的文档承诺与代码事实一致: 排除表含显卡次数=2（仅 显卡价格/显卡涨价）；含 GPU=False；含裸芯片=False；文档护栏描述=True
+  [PASS] 8.8 提示词与文档承诺一致（LLM 层：硬件/商业 → 行业动态/融资商业 + 低 importance）: ENRICH_SYSTEM / DIGEST_SUMMARY_SYSTEM 含内容政策
+  [PASS] 8.9 组装层排除集合与文档一致（行业动态/融资商业/政策监管）: EXCLUDED_CATEGORIES=['政策监管', '融资商业', '行业动态']
+  [PASS] 8.10 PLAN v1.5 真实数据复核证据存在且与记述一致（78 条→主题不符 1、工程内容在报）: 证据文件=2026-10-12-recheck.txt；PLAN 引用=True
+  [PASS] 8.11 interest_bonus「整体替换」语义：文档已说明且行为一致: 文档说明=True；部分配置仅保留 1 类=True
+  [NOTE] 口径已统一：README/DESIGN/PLAN 均为「三道过滤 + 一层排序加权」，与此前 P3-1 建议一致。
+
+== m7r_docs: 11 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m7r\m7r_docs.json

@@ -1,0 +1,23 @@
+E501 Line too long (103 > 100)
+  --> tests\independent\m7r_docs.py:60:62
+   |
+58 |     ]
+59 |     suite.check(
+60 |         "8.1 README「内容范围」表：收录/不收录与「三道过滤+一层排序加权」机制句齐全（含整体替换说明）",
+   |                                                                                                      ^^
+61 |         all(token in readme_block for token in readme_requirements),
+62 |         "缺失=" + str([t for t in readme_requirements if t not in readme_block]),
+   |
+
+E501 Line too long (108 > 100)
+   --> tests\independent\m7r_docs.py:207:75
+    |
+205 |     }
+206 |     if all(labels.values()):
+207 |         suite.note("口径已统一：README/DESIGN/PLAN 均为「三道过滤 + 一层排序加权」，与此前 P3-1 建议一致。")
+    |                                                                                                     ^^^^^^^^
+208 |     else:
+209 |         suite.note(f"P3（措辞）：三份文档口径未完全统一：{labels}")
+    |
+
+Found 2 errors.

@@ -1,0 +1,32 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-round2-p3\config.yaml
+exit=0 (0.7s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-round2-p3\config.yaml
+
+待加工: 6 条（上限 200）
+
+预筛:
+  输入 6 → 保留 3（垃圾 1 · 与 AI 无关 0 · 主题不符 2 · 批内重复 0）
+    [主题不符（硬件/商业）] 台积电 2nm 晶圆产能被 AI 公司预订一空
+    [主题不符（硬件/商业）] AI startup raises $50M to reinvent search
+    [垃圾内容] AI 大厂招聘算法工程师，简历投递内推
+
+聚类: 3 条 → 3 簇（多源簇 0 · 最大簇 1 条）
+
+Top 3:
+   1. [ 24.8] (其他) AirLLM 更新：单卡 4GB GPU 跑 70B 大模型
+      m7r round2 fixture
+      提及 1 条 · 来源 1 家
+   2. [ 24.8] (其他) vLLM 推理优化实践：吞吐提升 3 倍
+      m7r round2 fixture
+      提及 1 条 · 来源 1 家
+   3. [ 24.8] (其他) 从 0 搭建 RAG 评测流水线：踩坑与经验
+      m7r round2 fixture
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 0（失败 0）· token 0+0 · 成本约 ¥0.0000
+
+已写回: 3 条加工 · 3 条标记为过滤
+
+--- stderr ---

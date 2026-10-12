@@ -1,8 +1,10 @@
-"""预筛：AI 相关性门槛 + 垃圾过滤 + 批内去重。
+"""预筛：AI 相关性门槛 + 垃圾过滤 + 主题排除 + 批内去重。
 
 设计要点：
 - 只对「通用科技源」（配置里的 gate_sources）做 AI 关键词门槛，AI 专属源直接放行
 - 黑名单过滤招聘/课程/促销/活动报名类内容
+- **主题排除**：硬件资讯（显卡/晶圆/数据中心…）与公司间商业消息（融资/收购/财报/人事）
+  不收录（开发者向日报），内置高精度模式 + 配置可追加
 - 所有规则可被配置覆盖，不硬编码在流程里
 """
 
@@ -25,6 +27,23 @@ DEFAULT_BLACKLIST_PATTERNS: tuple[str, ...] = (
     r"赞助|广告位|sponsored|advertisement",
     r"门票|agenda revealed|last chance|days left|tickets? (?:are )?(?:on sale|available)",
     r"活动预告|直播预告|报名开启|邀您参加|敬请期待.*直播",
+)
+
+# ---------- 内置主题排除（硬件资讯 / 公司间商业消息） ----------
+# 设计取舍：只列「高精度」模式——宁可漏掉几条，也不要误杀开发向内容
+# （例如「单卡 4GB GPU 跑 70B 模型」是工程内容，不能因为出现 GPU 就丢掉）
+DEFAULT_EXCLUDE_PATTERNS: tuple[str, ...] = (
+    # 公司间商业消息：融资 / 收购 / 财报 / 人事
+    r"收购|并购|竞购|融资|估值|领投|跟投|战略投资|天使轮|上市|IPO|招股|财报|营收|净利润|"
+    r"亏损扩大|裁员|离职|卸任|出任|任命|高管变动|市值|股价",
+    r"\bacqui(?:re|res|red|sition|ring)\b|\bmergers?\b|\bIPO\b|\bvaluation\b|\bearnings\b|"
+    r"\brevenue\b|\blayoffs?\b|\bfunding round\b|\bpartnership\b|\braise[sd]?\b.{0,12}\$\d",
+    # 硬件基建：只列"高精度"词。GPU 型号名（RTX 3090 等）不在此列——
+    # 很多工程实测贴会写型号（"单卡 RTX 3090 跑 140 tok/s"），交给 LLM 语义层判断
+    r"晶圆|光刻|制程工艺|数据中心|液冷|散热器|主板|算力租赁|智算中心|超算中心|"
+    r"服务器出货|内存条|固态硬盘|机箱|电源供应器|显卡价格|显卡涨价",
+    r"\bgraphics cards?\b|\bsemiconductors?\b|\bwafer\b|"
+    r"\bdata cent(?:er|re)s?\b|\bcooling systems?\b|\bserver racks?\b|\bchip makers?\b",
 )
 
 # ---------- 内置 AI 关键词（通用源必须命中其一） ----------
@@ -141,6 +160,7 @@ class PrefilterStats:
     dropped_blacklist: int = 0
     dropped_offtopic: int = 0
     dropped_duplicate: int = 0
+    dropped_topic: int = 0
     dropped_samples: dict[str, list[str]] = field(default_factory=dict)
 
     def sample(self, reason: str, title: str, limit: int = 5) -> None:
@@ -179,7 +199,12 @@ def prefilter_items(
         blacklist_patterns = DEFAULT_BLACKLIST_PATTERNS + tuple(settings.blacklist_keywords)
     else:
         blacklist_patterns = tuple(settings.blacklist_keywords)
+    if settings.use_builtin_exclude:
+        exclude_patterns = DEFAULT_EXCLUDE_PATTERNS + tuple(settings.exclude_keywords)
+    else:
+        exclude_patterns = tuple(settings.exclude_keywords)
     blacklist = compile_patterns(blacklist_patterns)
+    exclude = compile_patterns(exclude_patterns)
     ai_patterns = compile_patterns(
         DEFAULT_AI_KEYWORDS_EN + tuple(settings.extra_ai_keywords)
     )
@@ -201,6 +226,10 @@ def prefilter_items(
         if _matches(blacklist, text):
             stats.dropped_blacklist += 1
             stats.sample("垃圾内容", item.title)
+            continue
+        if _matches(exclude, text):
+            stats.dropped_topic += 1
+            stats.sample("主题不符（硬件/商业）", item.title)
             continue
         if item.source_id in gate_sources and not _is_ai_related(
             text, ai_patterns, ai_chinese

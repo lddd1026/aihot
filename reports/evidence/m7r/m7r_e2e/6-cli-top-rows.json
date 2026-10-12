@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "score": 65.1,
+      "category": "模型发布"
+    },
+    {
+      "score": 62.3,
+      "category": "开源工具"
+    },
+    {
+      "score": 62.3,
+      "category": "开源工具"
+    },
+    {
+      "score": 52.1,
+      "category": "研究突破"
+    },
+    {
+      "score": -6.2,
+      "category": "行业动态"
+    },
+    {
+      "score": -16.2,
+      "category": "融资商业"
+    }
+  ]
+}

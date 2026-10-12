@@ -406,3 +406,41 @@ def test_alert_command_prints_fallback_hint(
     assert "未启用" in output
     assert "本地兜底" in output
     assert (tmp_path / "logs" / "ALERTS.log").exists()
+
+
+def test_enrich_output_shows_topic_drops(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    """M7-2：预筛摘要行必须显示「主题不符」计数（可观测性）。"""
+    from datetime import UTC, datetime
+
+    from aihot.models import RawItem
+    from aihot.store import Store
+
+    data_dir = tmp_path / "data"
+    path = write_config(
+        tmp_path,
+        ENRICH_CONFIG.format(
+            data_dir=data_dir.as_posix(), log_dir=(tmp_path / "logs").as_posix()
+        ),
+    )
+    with Store(data_dir / "aihot.db") as store:
+        store.save_items(
+            [
+                RawItem(
+                    source_id="s1",
+                    title="OpenAI 发布新模型",
+                    url="https://example.com/keep",
+                    published_at=datetime.now(UTC),
+                ),
+                RawItem(
+                    source_id="s1",
+                    title="某公司完成 B 轮融资",
+                    url="https://example.com/drop",
+                    published_at=datetime.now(UTC),
+                ),
+            ]
+        )
+
+    assert main(["enrich", "--no-llm", "--dry-run", "--config", str(path)]) == 0
+    assert "主题不符 1" in capsys.readouterr().out

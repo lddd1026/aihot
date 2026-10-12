@@ -1,0 +1,6 @@
+$ python -m aihot skip --reason M5R 夹具：预检 LLM 不可达（真实 skip 命令写入） --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-report\config.yaml
+exit=0 (0.8s)
+--- stdout ---
+[OK] 已记录跳过（通道: 本地文件(ALERTS.log)）
+
+--- stderr ---

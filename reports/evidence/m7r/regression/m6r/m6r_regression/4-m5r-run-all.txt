@@ -1,0 +1,12 @@
+rc=0
+[NOTE] 按 AIHOT_M5R_SKIP_M4_ALERT=1 跳过 m4_alert 回归（会直连真实域名）
+[PASS] m5r_preflight rc=0 (9.8s)
+[PASS] m5r_fetch rc=0 (23.9s)
+[PASS] m5r_skip rc=0 (18.1s)
+[PASS] m5r_alert rc=0 (5.0s)
+[PASS] m5r_report rc=0 (4.6s)
+[PASS] m5r_render_alert rc=0 (2.5s)
+[PASS] m5r_bat_local rc=0 (9.3s)
+[PASS] m5r_round2_proxy rc=0 (15.3s)
+TOTAL: 8 passed / 0 failed
+

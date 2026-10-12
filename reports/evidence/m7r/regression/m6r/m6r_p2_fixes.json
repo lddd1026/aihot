@@ -1,0 +1,133 @@
+{
+  "suite": "m6r_p2_fixes",
+  "passed": 25,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "R2-1.1 /sponsors、/orgs、/settings、/login（含大小写变体）全部被丢弃",
+      "ok": true,
+      "detail": "解析出的仓库=['sponsors-x/real-repo', 'foo/sponsors', 'acme-org/model-lab']"
+    },
+    {
+      "item": "R2-1.2 不误伤：sponsors-x/real-repo 与 foo/sponsors 保留（精确匹配 owner）",
+      "ok": true,
+      "detail": "解析出的仓库=['sponsors-x/real-repo', 'foo/sponsors', 'acme-org/model-lab']"
+    },
+    {
+      "item": "R2-1.3 正常仓库照常解析（acme-org/model-lab）",
+      "ok": true,
+      "detail": "解析出的仓库=['sponsors-x/real-repo', 'foo/sponsors', 'acme-org/model-lab']"
+    },
+    {
+      "item": "R2-1.4 反证：页面只剩保留前缀行 → 抛 SourceError（不产出脏数据）",
+      "ok": true,
+      "detail": "SourceError: 趋势条目全部解析失败（页面结构可能已变化）"
+    },
+    {
+      "item": "R2-2.2 limit=2 → 解析成功的 2 条（旧语义下 limit=2 只会出 1 条）",
+      "ok": true,
+      "detail": "limit=2 得 ['acme-org/model-lab', 'solo-dev/blobber']"
+    },
+    {
+      "item": "R2-2.1 limit=1 → 解析成功的 1 条（旧语义下 limit=2 只会出 1 条）",
+      "ok": true,
+      "detail": "limit=1 得 ['acme-org/model-lab']"
+    },
+    {
+      "item": "R2-2.3 limit=3 → 解析成功的 3 条（旧语义下 limit=2 只会出 1 条）",
+      "ok": true,
+      "detail": "limit=3 得 ['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk']"
+    },
+    {
+      "item": "R2-2.4 limit=4 → 解析成功的 4 条（旧语义下 limit=2 只会出 1 条）",
+      "ok": true,
+      "detail": "limit=4 得 ['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']"
+    },
+    {
+      "item": "R2-2.0 limit=0 → 解析成功的 4 条（旧语义下 limit=2 只会出 1 条）",
+      "ok": true,
+      "detail": "limit=0 得 ['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']"
+    },
+    {
+      "item": "R2-2.999 limit=999 → 解析成功的 4 条（旧语义下 limit=2 只会出 1 条）",
+      "ok": true,
+      "detail": "limit=999 得 ['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']"
+    },
+    {
+      "item": "R2-2.25 limit=25 → 解析成功的 4 条（旧语义下 limit=2 只会出 1 条）",
+      "ok": true,
+      "detail": "limit=25 得 ['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']"
+    },
+    {
+      "item": "R2-2.8 反证：页面全是坏行 → SourceError（不被 limit 掩盖）",
+      "ok": true,
+      "detail": "SourceError: 趋势条目全部解析失败（页面结构可能已变化）"
+    },
+    {
+      "item": "R2-3.1 真实探测点配置：gstatic 204 + api.github.com/rate_limit（403 也算可达）",
+      "ok": true,
+      "detail": "PROXY_HEALTH_PROBES=(('https://www.gstatic.com/generate_204', frozenset({200, 204})), ('https://api.github.com/rate_limit', frozenset({200, 403, 204})))"
+    },
+    {
+      "item": "R2-3.2 第一探测点失败、第二点通过 → proxy_healthy True、resolve_proxy 用代理",
+      "ok": true,
+      "detail": "healthy=True；resolve=('http://127.0.0.1:7953', 'proxy')；代理收到=['http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two', 'http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two']"
+    },
+    {
+      "item": "R2-3.3 两个探测点都被尝试且顺序正确（2 次健康检查 × 2 个探测点 = 4 次）",
+      "ok": true,
+      "detail": "代理收到=['http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two', 'http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two']"
+    },
+    {
+      "item": "R2-3.4 403 语义：声明可接受(200/204/403) → True；严格集(200/204) → False 并降级",
+      "ok": true,
+      "detail": "lenient=True；strict=False；resolve=(None, 'degraded')"
+    },
+    {
+      "item": "R2-3.5 全部探测点失败（403/500）→ proxy_healthy False、resolve_proxy 降级",
+      "ok": true,
+      "detail": "healthy=False；resolve=(None, 'degraded')；代理收到=['http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two', 'http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two']"
+    },
+    {
+      "item": "R2-3.6 第一点通过即短路（只发 1 次探测）",
+      "ok": true,
+      "detail": "healthy=True；代理收到=['http://127.0.0.1:9/probe-one']"
+    },
+    {
+      "item": "R2-3.7 反证：真实常量 + 坏节点 → False（两个探测点都被尝试、都失败）",
+      "ok": true,
+      "detail": "healthy=False；resolve=(None, 'degraded')；CONNECT 次数=4；耗时=1.68s"
+    },
+    {
+      "item": "R2-3.8 probe_proxy：多探测点通过 → [OK ]「可连接且节点健康」",
+      "ok": true,
+      "detail": "[OK ] 127.0.0.1:7985 可连接且节点健康"
+    },
+    {
+      "item": "R2-3.9 probe_proxy：多探测点全失败 → [WARN]「端口可连接但节点异常」(fatal=False)",
+      "ok": true,
+      "detail": "[WARN] 端口可连接但节点异常（健康检查失败，将降级为直连，墙外源可能缺失）"
+    },
+    {
+      "item": "R2-4.1 DESIGN.md §2.2 模块清单已加入 github_trending（与 registry 一致）",
+      "ok": true,
+      "detail": "| | `github_trending` | GitHub Trending 页解析（**当日全站热榜**，与 Search API 互补） |"
+    },
+    {
+      "item": "R2-4.2 DESIGN.md §4.4 已改为双源互补，且不再写『改用 Search API』",
+      "ok": true,
+      "detail": "| GitHub Trending 页 | 页面结构会变、无官方接口、偶发 403/429 | **双源互补**：① Search API（`created:>日期 sort=stars`，结构化且稳定）；② Trending 页解析（当日热榜，重试 + 单源隔离兜底，2026-10 重新引入） |"
+    },
+    {
+      "item": "R2-4.3 文档描述与实现一致（三个要点：当日热榜 / 重试+单源隔离 / 2026-10 重新引入）",
+      "ok": true,
+      "detail": "| GitHub Trending 页 | 页面结构会变、无官方接口、偶发 403/429 | **双源互补**：① Search API（`created:>日期 sort=stars`，结构化且稳定）；② Trending 页解析（当日热榜，重试 + 单源隔离兜底，2026-10 重新引入） |"
+    },
+    {
+      "item": "R2-5 真实库/存档未被本套件改动",
+      "ok": true,
+      "detail": "真实库快照一致"
+    }
+  ],
+  "notes": []
+}

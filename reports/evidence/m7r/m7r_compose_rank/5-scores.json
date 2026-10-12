@@ -1,0 +1,36 @@
+{
+  "interest_bonus": {
+    "模型发布": 10.0,
+    "开源工具": 10.0,
+    "研究突破": 8.0,
+    "产品更新": 6.0,
+    "行业动态": -20.0,
+    "融资商业": -30.0,
+    "政策监管": -15.0
+  },
+  "pairs": [
+    {
+      "tech": 62.33,
+      "business": 22.33,
+      "diff": 40.0
+    },
+    {
+      "business_99": 32.78,
+      "tech_60": 49.33
+    }
+  ],
+  "tech_breakdown": {
+    "importance": 44.0,
+    "cross_source": 0.0,
+    "community": 0.0,
+    "source_weight": 8.33,
+    "interest_bonus": 10.0
+  },
+  "business_breakdown": {
+    "importance": 44.0,
+    "cross_source": 0.0,
+    "community": 0.0,
+    "source_weight": 8.33,
+    "interest_bonus": -30.0
+  }
+}

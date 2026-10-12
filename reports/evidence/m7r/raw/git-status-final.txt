@@ -1,0 +1,27 @@
+ M DESIGN.md
+ M PLAN.md
+ M README.md
+ M config.example.yaml
+ M docs/PROJECT-REVIEW.md
+ M src/aihot/cli.py
+ M src/aihot/config.py
+ M src/aihot/pipeline/prefilter.py
+ M src/aihot/pipeline/prompts.py
+ M src/aihot/presentation/compose.py
+ M src/aihot/runner.py
+ M tests/unit/test_cli.py
+ M tests/unit/test_compose.py
+ M tests/unit/test_config.py
+ M tests/unit/test_prefilter.py
+ M tests/unit/test_runner.py
+?? docs/evidence/content-policy/
+?? reports/M7-test-report.md
+?? reports/evidence/m7r/
+?? tests/independent/m7r_compose_rank.py
+?? tests/independent/m7r_docs.py
+?? tests/independent/m7r_e2e.py
+?? tests/independent/m7r_p3_fixes.py
+?? tests/independent/m7r_prefilter.py
+?? tests/independent/m7r_regression.py
+?? tests/independent/m7r_run_all.py
+?? tests/independent/m7r_support.py

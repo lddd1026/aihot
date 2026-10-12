@@ -1,0 +1,34 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-e2e\config.yaml
+exit=0 (1.2s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m7r-e2e\config.yaml
+20:27:42 INFO aihot.sources: 信息源完成: fake_feed，8 条（43 ms）
+
+采集窗口: 最近 24 小时（起始 2026-10-11T20:27:41+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] fake_feed          8 条（43 ms）
+
+合计: 抓取 8 条 → 新增 8 条（去重 0 条）→ 库内共 8 条
+
+最新条目预览（前 8 条）:
+   1. [fake_feed] AirLLM 新版发布：单卡 4GB GPU 跑 70B 大模型
+      https://example.com/m7r/e2e/1（10-12 20:16）
+   2. [fake_feed] vLLM 推理优化：PagedAttention 让吞吐提升 3 倍
+      https://example.com/m7r/e2e/2（10-12 20:15）
+   3. [fake_feed] Qwen3-Coder 发布：面向智能体的开源代码模型
+      https://example.com/m7r/e2e/3（10-12 20:14）
+   4. [fake_feed] 从 0 搭建 RAG 评测流水线：踩坑与经验
+      https://example.com/m7r/e2e/4（10-12 20:13）
+   5. [fake_feed] 台积电 2nm 晶圆产能被 AI 公司预订一空
+      https://example.com/m7r/e2e/5（10-12 20:12）
+   6. [fake_feed] AI startup raises $50M to reinvent search
+      https://example.com/m7r/e2e/6（10-12 20:11）
+   7. [fake_feed] RTX 5090 涨价，AI 公司抢购高端显卡
+      https://example.com/m7r/e2e/7（10-12 20:10）
+   8. [fake_feed] Mistral AI partners with EuroCloud in multi-year cloud deal
+      https://example.com/m7r/e2e/8（10-12 20:09）
+
+--- stderr ---

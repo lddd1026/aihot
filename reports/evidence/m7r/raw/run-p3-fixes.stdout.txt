@@ -1,0 +1,17 @@
+  [PASS] P3-2a fetch 钀藉簱 6 鏉℃贩鍚堟潯鐩?rc=0: rc=0
+  [PASS] P3-2a enrich 棰勭瓫鎽樿琛屽苟鍒楁樉绀恒€屼富棰樹笉绗?N銆嶏紙鍨冨溇/涓嶢I鏃犲叧/涓婚涓嶇/鎵瑰唴閲嶅锛? 杈撳叆 6 鈫?淇濈暀 3锛堝瀮鍦?1 路 涓?AI 鏃犲叧 0 路 涓婚涓嶇 2 路 鎵瑰唴閲嶅 0锛?
+  [PASS] P3-2b 鏍锋湰琛屼粛鎵撳嵃 [涓婚涓嶇锛堢‖浠?鍟嗕笟锛塢 鍏蜂綋鏍囬: 杈撳叆 6 鈫?淇濈暀 3锛堝瀮鍦?1 路 涓?AI 鏃犲叧 0 路 涓婚涓嶇 2 路 鎵瑰唴閲嶅 0锛?
+  [PASS] P3-2c 闈?dry-run enrich rc=0 骞跺啓鍥? rc=0
+  [PASS] P3-2d runs 琛?enrich 璁板綍 stage_stats 甯?dropped_* 缁嗗垎涓旀暟鍊兼纭? stage_stats={'dropped_blacklist': 1, 'dropped_offtopic': 0, 'dropped_topic': 2, 'dropped_duplicate': 0, 'prefilter_kept': 3}
+  [PASS] P3-1 README / DESIGN 搂3.8 / PLAN v1.5 鍙ｅ緞缁熶竴涓恒€屼笁閬撹繃婊?+ 涓€灞傛帓搴忓姞鏉冦€? README=True DESIGN=True PLAN=True
+  [PASS] P3-1b 涓夊涓嶅啀鍑虹幇鏃у彛寰勩€屼笁灞傝繃婊ゃ€? 鏃у彛寰勬畫鐣?[]
+  [FAIL] P3-3a config.example.yaml 娉ㄩ噴娉ㄦ槑銆屾暣浣撴浛鎹€侀渶鍒楀叏鍒嗙被銆? 
+  [PASS] P3-3b README / DESIGN 鍚屾娉ㄦ槑鏁翠綋鏇挎崲璇箟: README=True DESIGN=True
+  [PASS] P3-3c 琛屼负涓庢枃妗ｄ竴鑷达細閮ㄥ垎閰嶇疆涓烘暣浣撴浛鎹紙鏈垪鍒嗙被涓嶄繚鐣欓粯璁ゅ姞鎴愶級: loaded={'妯″瀷鍙戝竷': 20.0}锛堥粯璁ゅ叏闆?['浜у搧鏇存柊', '寮€婧愬伐鍏?, '鏀跨瓥鐩戠', '妯″瀷鍙戝竷', '鐮旂┒绐佺牬', '铻嶈祫鍟嗕笟', '琛屼笟鍔ㄦ€?]锛?
+  [PASS] P3-4a 鐪熷疄鏁版嵁澶嶆牳璇佹嵁钀界洏涓斿唴瀹逛笌璁拌堪涓€鑷达紙78 鏉?/ 涓婚涓嶇 1 / 宸ョ▼鍐呭鍦ㄦ姤锛? 璇佹嵁鏂囦欢=2026-10-12-recheck.txt锛?593 瀛楄妭锛?
+  [PASS] P3-4b PLAN v1.5 寮曠敤璇ヨ瘉鎹矾寰? 寮曠敤鍛戒腑=True
+  [PASS] P3-鍥炲綊1 pytest 鍏ㄧ豢涓旂敤渚嬫暟涓?408: rc=0锛沺assed=408锛沠ailed=0锛?5.8s
+  [PASS] P3-鍥炲綊2 ruff check . 闆跺憡璀? rc=0锛汚ll checks passed!
+
+== m7r_p3_fixes: 13 passed / 1 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m7r\round2\m7r_p3_fixes.json
+RC=1

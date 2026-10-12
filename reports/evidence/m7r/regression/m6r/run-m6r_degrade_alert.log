@@ -1,0 +1,10 @@
+  [PASS] 7.1 降级自动推送「运行降级提示」到企微（含降级说明）: alert 文本=['⚠️ aihot 告警：运行降级提示\n- 代理不可用，今日已降级为直连采集（部分墙外源缺失，日报照常发送）']
+  [PASS] 7.2 降级不阻断出报：日报本身也送达（delivered=True）: delivered=True；digest=有；errors=[]
+  [PASS] 7.3 假 LLM 确实被调用（本轮是完整 run，不是空转）: POST=2；proxy_mode=degraded
+  [PASS] 7.4 假节点收到了 https 健康探测（CONNECT），说明降级判定确有依据: 假节点请求=[{'method': 'CONNECT', 'path': 'www.gstatic.com:443'}, {'method': 'CONNECT', 'path': 'api.github.com:443'}]
+  [PASS] 7.5 真实库/存档未被本套件改动: 真实库快照一致
+
+== m6r_degrade_alert: 5 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_alert.json
+
+--- stderr ---
+代理不可用或节点异常（http://127.0.0.1:3709），本次采集降级为直连：国内源照常，墙外源将失败

@@ -1,0 +1,163 @@
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_compose_rank
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_compose_rank.json
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_docs
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_docs.json
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e.json
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_prefilter
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_prefilter.json
+D:\信息收集整理\aihot\reports\evidence\m7r\raw
+D:\信息收集整理\aihot\reports\evidence\m7r\regression
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_compose_rank\4-digest-sections.json
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_compose_rank\5-scores.json
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_docs\1-readme-content-range.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_docs\2-design-3.8.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_docs\3-plan-v1.5-row.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e\1-fetch.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e\2-run-dry-run.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e\3-digest-archive.md
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e\4-enrich-system-prompt.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e\4-summary-system-prompt.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e\5-enrich-top.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_e2e\6-cli-top-rows.json
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_prefilter\1-topic-matrix.json
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_prefilter\3.6-cli-check-good.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_prefilter\3.7-cli-check-bad.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\m7r_prefilter\summary.json
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\evidence-tree.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\ruff-m7r.log
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\ruff-prefilter.log
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\run-compose-rank.stdout.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\run-docs.stdout.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\run-e2e.stdout.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\run-prefilter.stdout.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\raw\suite-counts.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r-run-all.stdout.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r-run-all-2.stdout.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r-run-all.stdout.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\pytest.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\ruff.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_alert
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_alert.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_bat_local
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_bat_local.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_preflight
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_preflight.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_render_alert
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_render_alert.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_round2_proxy
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_round2_proxy.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\raw
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-all-summary.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_alert.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_bat_local.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_fetch.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_preflight.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_render_alert.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_report.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_round2_proxy.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\run-m5r_skip.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_alert\1-alert-fallback-email.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_alert\2-alert-fallback-file.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_alert\4-alert-email-auth-fail.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_alert\6.1 邮件可用：alert rc=0 并注明邮件通道.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_alert\6.4 通道全灭：rc=1 且输出含「未启用」与「本地兜底」（P2-1 修复验证）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_bat_local\1-bat-dryrun-success.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_bat_local\2-broken-syntax.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_bat_local\3-broken-struct.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_bat_local\8.4 预检无 [ERR]（代理未启用 _ LLM 假服务 OK）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch\1-fetch-via-proxy.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch\1b-fetch-proxy-health-check-fails.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch\2-fetch-degraded-direct.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch\3-fetch-all-failed.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch\3.3 假代理记录了绝对 URI 形式的 GET（证明流量确实经代理）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch\4.1 代理坏端口时 fetch --dry-run rc=0（不跳过、不整体失败）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_fetch\4.5 降级不等于谎报：源也不可达时 rc=1 且提示全部失败.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_preflight\1-check-quick-proxy-down.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_preflight\1.1 代理指向坏端口时 check --quick 退出码=0（不拦截运行）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_preflight\2-check-quick-llm-down.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_preflight\2.3 假服务关闭后 check --quick 退出码=1（不是假装成功）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_render_alert\1-render-fail-alert.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_render_alert\2-partial-image-degrade.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_render_alert\8b.2 渲染失败告警在直连语义下真的到达企微（本地假服务收到）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report\0-skip-command.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report\1-report-after-seed.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report\2-report-after-seed.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report\3-report-same-day-mixed.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report\7.1 真实 skip 命令 rc=0 且写入 1 条 skipped 记录.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report\7.2 跳过日显示为「跳过 + 原因」（今天 + 昨天）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_report\7.8 同一天既有跳过又有成功 → 按「已送达」计，不计入跳过_缺失.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_round2_proxy\1-check-quick-env-proxy-ignored.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_round2_proxy\2-send-alert-wecom-down-email.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_round2_proxy\3-p21-alert-and-skip.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_round2_proxy\R2.1 环境 HTTPS_PROXY_HTTP_PROXY_ALL_PROXY 为坏端口时 check --quick 仍 rc=0 且 LLM [OK ].txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_round2_proxy\R2.2 环境代理坏端口下 probe_wecom 仍到达本地假企微（忽略环境代理）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip\1-bat-skip-email.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip\2-bat-skip-local-file.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip\3-bat-skip-broken-config.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip\5.0 staged run_daily.bat 与项目 bat 字节一致（sha256 记录）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip\5.3 runs 表出现 status='skipped' 记录.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\m5r_skip\5.5 告警已尝试发送：本地假 SMTP 收到跳过告警（含原因）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m5r\raw\1-fake-proxy-requests.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_alert
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_alert.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_health_latency
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_health_latency.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_p2_fixes
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_p2_fixes.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_proxy_health
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_proxy_health.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_regression
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_regression.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\raw
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-all-summary.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-m6r_degrade_alert.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-m6r_degrade_e2e.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-m6r_health_latency.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-m6r_p2_fixes.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-m6r_proxy_health.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-m6r_regression.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\run-m6r_trending.log
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_alert\1-run-all-degraded.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_alert\2-alerts-log.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e\1-fetch-degraded-bad-node.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e\1b-bad-node-requests.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e\2-check-quick-bad-node.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e\3-check-quick-llm-down.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e\4-check-quick-port-closed.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_degrade_e2e\5-fetch-port-closed.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_health_latency\1-hanging-node-latency.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_p2_fixes\p21-live-owners.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_p2_fixes\p21-titles.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_p2_fixes\p23-real-const-bad-node.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_p2_fixes\p23-requests-second-probe-rescues.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_p2_fixes\p24-design-lines.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_proxy_health\4.1 假代理返回 204 → proxy_healthy() True（且流量确实经过代理）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_proxy_health\4.4-fetch-via-healthy-proxy.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_proxy_health\4.5 假代理一律返回 403（节点坏） → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_proxy_health\4.6 假代理一律返回 500（上游故障） → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_proxy_health\4.7 假代理接受连接后立即断开 → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_regression\1-pytest.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_regression\2-ruff.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_regression\3-m5r_fetch.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_regression\4-m5r-run-all.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_regression\4b-m5r-run-all-summary.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending\1-items.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending\1-raw-summaries.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending\2-isolation-items.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending\2.6 坏源失败被隔离：另一个源照常产出 6 条.txt
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending\2b-sponsors-link-probe.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\m6r_trending\4-live-github-trending-直连.json
+D:\信息收集整理\aihot\reports\evidence\m7r\regression\m6r\raw\3-bad-node-requests.json
