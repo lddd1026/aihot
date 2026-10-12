@@ -451,4 +451,12 @@ git status                                  # 看是否漏了文档改动
 .venv\Scripts\python.exe scripts\publish_gate.py   # 发布闸门：扫描待提交文件里的密钥/个人邮箱
 ```
 
+**自动闸门（推荐先装一次）**：
+
+```powershell
+git config core.hooksPath scripts/git-hooks   # 启用版本化的 pre-commit hook
+```
+
+装好后每次 `git commit` 都会自动跑发布闸门；命中真实密钥/个人邮箱会**直接拒绝提交**（确需跳过用 `--no-verify`，不推荐）。
+
 **版本号规则**：`PLAN.md` 附录 A 的变更记录按 v1.x 递增；行为变化必须写清"改了什么、为什么、影响范围"。

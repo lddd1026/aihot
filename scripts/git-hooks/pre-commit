@@ -1,0 +1,21 @@
+#!/bin/sh
+# aihot 发布闸门（pre-commit hook）
+#
+# 安装：git config core.hooksPath scripts/git-hooks
+# 作用：提交前自动扫描「待提交文件」里的真实密钥与个人邮箱（见 scripts/publish_gate.py）
+# 跳过：git commit --no-verify（不推荐）
+
+root="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+cd "$root" || exit 0
+
+python=".venv/Scripts/python.exe"
+[ -x "$python" ] || python=".venv/bin/python"
+[ -x "$python" ] || exit 0  # 没有项目 venv 时跳过（不阻塞开发）
+
+if ! "$python" scripts/publish_gate.py; then
+    echo ""
+    echo "[aihot] 发布闸门未通过：请先脱敏（邮箱 → example@qq.com）或移出敏感文件。"
+    echo "        确需跳过：git commit --no-verify（不推荐）"
+    exit 1
+fi
+exit 0
