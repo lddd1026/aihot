@@ -159,7 +159,7 @@ def fetch_stage(
     proxy, proxy_mode = resolve_proxy(cfg.proxy.enabled, cfg.proxy.url)
     if proxy_mode == "degraded":
         logger.warning(
-            "代理不可用（%s），本次采集降级为直连：国内源照常，墙外源将失败",
+            "代理不可用或节点异常（%s），本次采集降级为直连：国内源照常，墙外源将失败",
             cfg.proxy.url,
         )
         http = HttpClient(proxy=None, retries=DEGRADED_RETRIES, timeout=DEGRADED_TIMEOUT)

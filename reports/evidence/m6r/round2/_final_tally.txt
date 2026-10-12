@@ -1,0 +1,8 @@
+m6r_p2_fixes 26 passed / 0 failed; notes: 0
+m6r_trending 43 passed / 0 failed; notes: 1
+m6r_proxy_health 15 passed / 0 failed; notes: 1
+m6r_degrade_e2e 12 passed / 0 failed; notes: 0
+m6r_degrade_alert 5 passed / 0 failed; notes: 0
+m6r_health_latency 2 passed / 0 failed; notes: 1
+m6r_regression 5 passed / 0 failed; notes: 0
+TOTAL round2: 108 passed / 0 failed

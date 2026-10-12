@@ -75,7 +75,7 @@ powershell -ExecutionPolicy Bypass -File scripts\unregister_task.ps1
 
 | 场景 | 行为 |
 |---|---|
-| 代理不可用（Clash 没开） | 采集**自动降级为直连**（短超时），国内源照常出报，并推送一条「运行降级提示」 |
+| 代理不可用（Clash 没开 / 端口开着但节点坏） | **健康检查**判定后自动降级为直连（短超时），国内源照常出报，并推送一条「运行降级提示」 |
 | 单个信息源失败 | 单源隔离，不影响其他源（`runs` 表记录 `sources_failed`） |
 | 长图渲染失败 | 降级为纯文字推送（正文会带 ⚠️ 提示） |
 | 企微推送失败 | 自动转**邮件**补发；两者都失败才记为未送达并告警 |
@@ -96,7 +96,7 @@ powershell -ExecutionPolicy Bypass -File scripts\unregister_task.ps1
 | 想看看今天长什么样 | `aihot run --dry-run`（不推送，产出文件） |
 | 想看某天存档 | `aihot preview --date 2026-09-24` |
 | 成本异常 | `runs` 表的 `cost_cny` 字段；想零成本调试用 `aihot enrich --no-llm` |
-| 代理没开 | **无需手动处理**：采集自动降级直连（国内源照常），会收到一条降级提示 |
+| 代理没开 / 节点坏 | **无需手动处理**：健康检查判定后自动降级直连（国内源照常），会收到一条降级提示；`aihot check --quick` 会显示"端口可连接但节点异常" |
 | 完全重来一天 | 删掉该日 `data\digests\*.jpg/md/html`，再 `aihot run`（已推送过则用 `resend`） |
 
 ## 运维速查
@@ -118,7 +118,8 @@ powershell -ExecutionPolicy Bypass -File scripts\unregister_task.ps1
 | 官方发布 | OpenAI News、Google DeepMind、Anthropic News | RSS / 网页解析 |
 | 社区 | Hacker News、Reddit（LocalLLaMA + MachineLearning） | API / RSS |
 | 论文 | arXiv（cs.AI/cs.CL/cs.LG，日报「论文精选」每天 ≤2 篇） | 官方 API |
-| 开源项目 | **GitHub 近 7 天增长最快项目**（按 star 排序，精选区最多 4 条） | 官方 Search API |
+| 开源项目 | **GitHub 近 7 天增长最快项目**（近 7 天新建 + star 最多；精选区最多 4 条） | 官方 Search API |
+| 开源项目 | **GitHub 当日热榜**（当天 star 增速最快；网页解析，偶发 403/超时属预期） | Trending 页 |
 | 待启用 | Hugging Face Daily Papers（本机 IP 持续 429） | — |
 
 > 机器之心站点已改版为「数据服务」落地页，暂无可抓列表；VentureBeat/DeepMind/Anthropic/Reddit 需要代理。
@@ -194,3 +195,6 @@ aihot/
 | M3 | 呈现 + 推送（端到端） | ✅ 通过独立门禁（`reports/M3-test-report.md`） |
 | M4 | 自动化 + 运维加固 | ✅ 通过独立门禁（`reports/M4-test-report.md`） |
 | M5 | 稳定性观察期 | ⚠️ 第 1 轮未通过（代理静默失败）→ 已修复（`docs/M5-观察期报告.md`，含独立复验 `reports/M5-fix-test-report.md`），**第 2 轮观察中**（2026-10-12 起） |
+
+> **文档同步规则**：任何改动必须同步更新 README / DESIGN / PLAN / docs（清单见 `PLAN.md` 附录 B）。
+> 项目复盘（个人贡献/核心问题/方案设计/技术取舍/验证方式/实际结果）见 `docs/PROJECT-REVIEW.md`。

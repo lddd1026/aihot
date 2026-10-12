@@ -1,0 +1,9 @@
+  [PASS] 6.1 pytest 全绿（rc=0，0 失败，用例数 ≥390）: rc=0；passed=393；failed=0
+  [PASS] 6.2 ruff check . 零告警（rc=0 且无输出）: rc=0；输出=All checks passed!
+  [PASS] 6.3 适配后的 m5r_fetch 通过（代理健康检查语义已更新，无旧断言残留）: rc=0；尾部=----------------------------------------
+  [PASS] 6.4 m5r 全量套件全部 rc=0（含 preflight/fetch/round2 等 8 套件）: rc=0；套件结果=[('m5r_preflight', 0), ('m5r_fetch', 0), ('m5r_skip', 0), ('m5r_alert', 0), ('m5r_report', 0), ('m5r_render_alert', 0), ('m5r_bat_local', 0), ('m5r_round2_proxy', 0)]
+  [PASS] 6.5 真实库/存档未被本套件改动: 真实库快照一致
+
+== m6r_regression: 5 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m6r\round2\m6r_regression.json
+
+--- stderr ---

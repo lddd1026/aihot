@@ -1,0 +1,8 @@
+src/aihot/checks.py:13: from aihot.net import HttpClient, proxy_healthy, resolve_proxy
+src/aihot/checks.py:19: _PROBE_ERRORS = (httpx.HTTPError, httpx.InvalidURL, ValueError, OSError)
+src/aihot/checks.py:75:     except _PROBE_ERRORS as exc:
+src/aihot/checks.py:84:     if not proxy_healthy(cfg.proxy.url):
+src/aihot/checks.py:88:             "绔彛鍙繛鎺ヤ絾鑺傜偣寮傚父锛堝仴搴锋鏌ュけ璐ワ紝灏嗛檷绾т负鐩磋繛锛屽澶栨簮鍙兘缂哄け锛?,
+src/aihot/checks.py:92:     return CheckResult("浠ｇ悊", True, f"{host}:{port} 鍙繛鎺ヤ笖鑺傜偣鍋ュ悍", _elapsed_ms(start))
+src/aihot/checks.py:113:     except _PROBE_ERRORS as exc:
+src/aihot/checks.py:162:     except _PROBE_ERRORS as exc:

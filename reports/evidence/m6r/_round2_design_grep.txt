@@ -1,0 +1,2 @@
+DESIGN.md:92: | | `github_trending` | GitHub Trending 椤佃В鏋愶紙**褰撴棩鍏ㄧ珯鐑**锛屼笌 Search API 浜掕ˉ锛?|
+DESIGN.md:284: | GitHub Trending 椤?| 椤甸潰缁撴瀯浼氬彉銆佹棤瀹樻柟鎺ュ彛銆佸伓鍙?403/429 | **鍙屾簮浜掕ˉ**锛氣憼 Search API锛坄created:>鏃ユ湡 sort=stars`锛岀粨鏋勫寲涓旂ǔ瀹氾級锛涒憽 Trending 椤佃В鏋愶紙褰撴棩鐑锛岄噸璇?+ 鍗曟簮闅旂鍏滃簳锛?026-10 閲嶆柊寮曞叆锛?|

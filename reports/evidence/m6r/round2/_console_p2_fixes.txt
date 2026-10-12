@@ -1,0 +1,28 @@
+  [PASS] R2-1.1 /sponsors銆?orgs銆?settings銆?login锛堝惈澶у皬鍐欏彉浣擄級鍏ㄩ儴琚涪寮? 瑙ｆ瀽鍑虹殑浠撳簱=['sponsors-x/real-repo', 'foo/sponsors', 'acme-org/model-lab']
+  [PASS] R2-1.2 涓嶈浼わ細sponsors-x/real-repo 涓?foo/sponsors 淇濈暀锛堢簿纭尮閰?owner锛? 瑙ｆ瀽鍑虹殑浠撳簱=['sponsors-x/real-repo', 'foo/sponsors', 'acme-org/model-lab']
+  [PASS] R2-1.3 姝ｅ父浠撳簱鐓у父瑙ｆ瀽锛坅cme-org/model-lab锛? 瑙ｆ瀽鍑虹殑浠撳簱=['sponsors-x/real-repo', 'foo/sponsors', 'acme-org/model-lab']
+  [PASS] R2-1.4 鍙嶈瘉锛氶〉闈㈠彧鍓╀繚鐣欏墠缂€琛?鈫?鎶?SourceError锛堜笉浜у嚭鑴忔暟鎹級: SourceError: 瓒嬪娍鏉＄洰鍏ㄩ儴瑙ｆ瀽澶辫触锛堥〉闈㈢粨鏋勫彲鑳藉凡鍙樺寲锛?
+  [PASS] R2-1.5 鐪熷疄椤甸潰璇潃鏍稿锛氭棤浠讳綍鐪熷疄 owner 鎾炰笂淇濈暀鍚嶅崟锛堥浂璇潃锛? owner 鏁?8锛涙挒鍚嶅崟=鏃?
+  [PASS] R2-2.2 limit=2 鈫?瑙ｆ瀽鎴愬姛鐨?2 鏉★紙鏃ц涔変笅 limit=2 鍙細鍑?1 鏉★級: limit=2 寰?['acme-org/model-lab', 'solo-dev/blobber']
+  [PASS] R2-2.1 limit=1 鈫?瑙ｆ瀽鎴愬姛鐨?1 鏉★紙鏃ц涔変笅 limit=2 鍙細鍑?1 鏉★級: limit=1 寰?['acme-org/model-lab']
+  [PASS] R2-2.3 limit=3 鈫?瑙ｆ瀽鎴愬姛鐨?3 鏉★紙鏃ц涔変笅 limit=2 鍙細鍑?1 鏉★級: limit=3 寰?['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk']
+  [PASS] R2-2.4 limit=4 鈫?瑙ｆ瀽鎴愬姛鐨?4 鏉★紙鏃ц涔変笅 limit=2 鍙細鍑?1 鏉★級: limit=4 寰?['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']
+  [PASS] R2-2.0 limit=0 鈫?瑙ｆ瀽鎴愬姛鐨?4 鏉★紙鏃ц涔変笅 limit=2 鍙細鍑?1 鏉★級: limit=0 寰?['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']
+  [PASS] R2-2.999 limit=999 鈫?瑙ｆ瀽鎴愬姛鐨?4 鏉★紙鏃ц涔変笅 limit=2 鍙細鍑?1 鏉★級: limit=999 寰?['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']
+  [PASS] R2-2.25 limit=25 鈫?瑙ｆ瀽鎴愬姛鐨?4 鏉★紙鏃ц涔変笅 limit=2 鍙細鍑?1 鏉★級: limit=25 寰?['acme-org/model-lab', 'solo-dev/blobber', 'tail-org/agent-desk', 'extra-org/rag-notes']
+  [PASS] R2-2.8 鍙嶈瘉锛氶〉闈㈠叏鏄潖琛?鈫?SourceError锛堜笉琚?limit 鎺╃洊锛? SourceError: 瓒嬪娍鏉＄洰鍏ㄩ儴瑙ｆ瀽澶辫触锛堥〉闈㈢粨鏋勫彲鑳藉凡鍙樺寲锛?
+  [PASS] R2-3.1 鐪熷疄鎺㈡祴鐐归厤缃細gstatic 204 + api.github.com/rate_limit锛?03 涔熺畻鍙揪锛? PROXY_HEALTH_PROBES=(('https://www.gstatic.com/generate_204', frozenset({200, 204})), ('https://api.github.com/rate_limit', frozenset({200, 403, 204})))
+  [PASS] R2-3.2 绗竴鎺㈡祴鐐瑰け璐ャ€佺浜岀偣閫氳繃 鈫?proxy_healthy True銆乺esolve_proxy 鐢ㄤ唬鐞? healthy=True锛況esolve=('http://127.0.0.1:1915', 'proxy')锛涗唬鐞嗘敹鍒?['http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two', 'http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two']
+  [PASS] R2-3.3 涓や釜鎺㈡祴鐐归兘琚皾璇曚笖椤哄簭姝ｇ‘锛? 娆″仴搴锋鏌?脳 2 涓帰娴嬬偣 = 4 娆★級: 浠ｇ悊鏀跺埌=['http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two', 'http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two']
+  [PASS] R2-3.4 403 璇箟锛氬０鏄庡彲鎺ュ彈(200/204/403) 鈫?True锛涗弗鏍奸泦(200/204) 鈫?False 骞堕檷绾? lenient=True锛泂trict=False锛況esolve=(None, 'degraded')
+  [PASS] R2-3.5 鍏ㄩ儴鎺㈡祴鐐瑰け璐ワ紙403/500锛夆啋 proxy_healthy False銆乺esolve_proxy 闄嶇骇: healthy=False锛況esolve=(None, 'degraded')锛涗唬鐞嗘敹鍒?['http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two', 'http://127.0.0.1:9/probe-one', 'http://127.0.0.1:9/probe-two']
+  [PASS] R2-3.6 绗竴鐐归€氳繃鍗崇煭璺紙鍙彂 1 娆℃帰娴嬶級: healthy=True锛涗唬鐞嗘敹鍒?['http://127.0.0.1:9/probe-one']
+  [PASS] R2-3.7 鍙嶈瘉锛氱湡瀹炲父閲?+ 鍧忚妭鐐?鈫?False锛堜袱涓帰娴嬬偣閮借灏濊瘯銆侀兘澶辫触锛? healthy=False锛況esolve=(None, 'degraded')锛汣ONNECT 娆℃暟=4锛涜€楁椂=1.65s
+  [PASS] R2-3.8 probe_proxy锛氬鎺㈡祴鐐归€氳繃 鈫?[OK ]銆屽彲杩炴帴涓旇妭鐐瑰仴搴枫€? [OK ] 127.0.0.1:13684 鍙繛鎺ヤ笖鑺傜偣鍋ュ悍
+  [PASS] R2-3.9 probe_proxy锛氬鎺㈡祴鐐瑰叏澶辫触 鈫?[WARN]銆岀鍙ｅ彲杩炴帴浣嗚妭鐐瑰紓甯搞€?fatal=False): [WARN] 绔彛鍙繛鎺ヤ絾鑺傜偣寮傚父锛堝仴搴锋鏌ュけ璐ワ紝灏嗛檷绾т负鐩磋繛锛屽澶栨簮鍙兘缂哄け锛?
+  [PASS] R2-4.1 DESIGN.md 搂2.2 妯″潡娓呭崟宸插姞鍏?github_trending锛堜笌 registry 涓€鑷达級: | | `github_trending` | GitHub Trending 椤佃В鏋愶紙**褰撴棩鍏ㄧ珯鐑**锛屼笌 Search API 浜掕ˉ锛?|
+  [PASS] R2-4.2 DESIGN.md 搂4.4 宸叉敼涓哄弻婧愪簰琛ワ紝涓斾笉鍐嶅啓銆庢敼鐢?Search API銆? | GitHub Trending 椤?| 椤甸潰缁撴瀯浼氬彉銆佹棤瀹樻柟鎺ュ彛銆佸伓鍙?403/429 | **鍙屾簮浜掕ˉ**锛氣憼 Search API锛坄created:>鏃ユ湡 sort=stars`锛岀粨鏋勫寲涓旂ǔ瀹氾級锛涒憽 Trending 椤佃В鏋愶紙褰撴棩鐑锛岄噸璇?+ 鍗曟簮闅旂鍏滃簳锛?026-10 閲嶆柊寮曞叆锛?|
+  [PASS] R2-4.3 鏂囨。鎻忚堪涓庡疄鐜颁竴鑷达紙涓変釜瑕佺偣锛氬綋鏃ョ儹姒?/ 閲嶈瘯+鍗曟簮闅旂 / 2026-10 閲嶆柊寮曞叆锛? | GitHub Trending 椤?| 椤甸潰缁撴瀯浼氬彉銆佹棤瀹樻柟鎺ュ彛銆佸伓鍙?403/429 | **鍙屾簮浜掕ˉ**锛氣憼 Search API锛坄created:>鏃ユ湡 sort=stars`锛岀粨鏋勫寲涓旂ǔ瀹氾級锛涒憽 Trending 椤佃В鏋愶紙褰撴棩鐑锛岄噸璇?+ 鍗曟簮闅旂鍏滃簳锛?026-10 閲嶆柊寮曞叆锛?|
+  [PASS] R2-5 鐪熷疄搴?瀛樻。鏈鏈浠舵敼鍔? 鐪熷疄搴撳揩鐓т竴鑷?
+
+== m6r_p2_fixes: 26 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m6r\round2\m6r_p2_fixes.json

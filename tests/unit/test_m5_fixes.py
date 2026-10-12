@@ -21,11 +21,12 @@ import httpx
 import pytest
 
 from aihot import checks, runner
+from aihot import net as net_module
 from aihot.checks import CheckResult, run_quick_checks, split_failures
 from aihot.config import Config, load_config
 from aihot.delivery import NotifyError
 from aihot.models import RunRecord
-from aihot.net import proxy_reachable, resolve_proxy
+from aihot.net import proxy_healthy, proxy_reachable, resolve_proxy
 from aihot.sources.registry import CollectResult
 from aihot.store import Store
 
@@ -109,8 +110,10 @@ def test_resolve_proxy_unreachable_degrades() -> None:
     assert mode == "degraded"
 
 
-def test_resolve_proxy_reachable() -> None:
+def test_resolve_proxy_reachable(monkeypatch: pytest.MonkeyPatch) -> None:
+    """TCP 可连 + 健康检查通过 → 使用代理（健康检查单独测，见下一组用例）。"""
     server, port = open_port()
+    monkeypatch.setattr(net_module, "proxy_healthy", lambda *a, **k: True)
     try:
         assert proxy_reachable(f"http://127.0.0.1:{port}", timeout=0.5) is True
         proxy, mode = resolve_proxy(True, f"http://127.0.0.1:{port}", timeout=0.5)
@@ -118,6 +121,99 @@ def test_resolve_proxy_reachable() -> None:
         server.close()
     assert proxy == f"http://127.0.0.1:{port}"
     assert mode == "proxy"
+
+
+def test_resolve_proxy_degrades_when_node_broken(monkeypatch: pytest.MonkeyPatch) -> None:
+    """M5R2：Clash 端口开着但节点坏 → 必须降级直连，而不是让所有源陪葬。"""
+    monkeypatch.setattr(net_module, "proxy_reachable", lambda *a, **k: True)
+    monkeypatch.setattr(net_module, "proxy_healthy", lambda *a, **k: False)
+    assert resolve_proxy(True, "http://127.0.0.1:7897") == (None, "degraded")
+
+
+def test_resolve_proxy_uses_proxy_when_healthy(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(net_module, "proxy_reachable", lambda *a, **k: True)
+    monkeypatch.setattr(net_module, "proxy_healthy", lambda *a, **k: True)
+    assert resolve_proxy(True, "http://127.0.0.1:7897") == (
+        "http://127.0.0.1:7897",
+        "proxy",
+    )
+
+
+def _patch_httpx_client(
+    monkeypatch: pytest.MonkeyPatch,
+    *,
+    statuses: dict[str, int] | None = None,
+    default_status: int = 204,
+    error: Exception | None = None,
+):
+    """把 net 模块里的 httpx.Client 换成假客户端（避免真实外呼），并记录参数。
+
+    statuses: 按 URL 子串匹配返回不同状态码，例如 {"gstatic": 502}。
+    """
+    captured: dict = {}
+    rules = statuses or {}
+
+    class FakeClient:
+        def __init__(self, **kwargs: object) -> None:
+            captured.update(kwargs)
+
+        def __enter__(self) -> FakeClient:
+            return self
+
+        def __exit__(self, *exc_info: object) -> bool:
+            return False
+
+        def get(self, url: str) -> httpx.Response:
+            if error is not None:
+                raise error
+            status = default_status
+            for key, value in rules.items():
+                if key in url:
+                    status = value
+            return httpx.Response(status, request=httpx.Request("GET", url))
+
+    monkeypatch.setattr(net_module.httpx, "Client", FakeClient)
+    return captured
+
+
+def test_proxy_healthy_ok_on_204(monkeypatch: pytest.MonkeyPatch) -> None:
+    captured = _patch_httpx_client(monkeypatch, default_status=204)
+    assert proxy_healthy("http://127.0.0.1:7897") is True
+    assert captured.get("proxy") == "http://127.0.0.1:7897"
+    assert captured.get("trust_env") is False
+
+
+def test_proxy_healthy_second_probe_rescues(monkeypatch: pytest.MonkeyPatch) -> None:
+    """P2-3：第一个探测点失败（如 gstatic 被污染），第二个通过也算健康。"""
+    _patch_httpx_client(
+        monkeypatch, statuses={"gstatic": 502, "api.github.com": 200}, default_status=502
+    )
+    assert proxy_healthy("http://127.0.0.1:7897") is True
+
+
+def test_proxy_healthy_false_when_all_probes_fail(monkeypatch: pytest.MonkeyPatch) -> None:
+    _patch_httpx_client(monkeypatch, default_status=502)
+    assert proxy_healthy("http://127.0.0.1:7897") is False
+
+
+def test_proxy_healthy_false_on_network_error(monkeypatch: pytest.MonkeyPatch) -> None:
+    _patch_httpx_client(monkeypatch, error=httpx.ConnectError("boom"))
+    assert proxy_healthy("http://127.0.0.1:7897") is False
+
+
+def test_probe_proxy_reports_broken_node(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """端口通但节点坏 → 可降级 + 文案说明原因。"""
+    server, port = open_port()
+    cfg = load_cfg(tmp_path, proxy_enabled=True, proxy_url=f"http://127.0.0.1:{port}")
+    monkeypatch.setattr(checks, "proxy_healthy", lambda *a, **k: False)
+    try:
+        result = checks.probe_proxy(cfg)
+    finally:
+        server.close()
+    assert result is not None
+    assert result.ok is False
+    assert result.fatal is False
+    assert "节点异常" in result.detail
 
 
 def test_fetch_stage_degrades_to_direct(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:

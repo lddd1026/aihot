@@ -1,0 +1,7 @@
+bad_node
+[
+  {
+    "method": "CONNECT",
+    "path": "www.gstatic.com:443"
+  }
+]

@@ -1,0 +1,16 @@
+def db_query(db_path: Path, sql: str, params: tuple[Any, ...] = ()) -> list[dict[str, Any]]:
+    if not Path(db_path).exists():
+        return []
+    conn = sqlite3.connect(f"file:{Path(db_path).as_posix()}?mode=ro", uri=True)
+    conn.row_factory = sqlite3.Row
+    try:
+        return [dict(row) for row in conn.execute(sql, params).fetchall()]
+    finally:
+        conn.close()
+
+def db_one(db_path: Path, sql: str, params: tuple[Any, ...] = ()) -> Any:
+    rows = db_query(db_path, sql, params)
+    if not rows:
+        return None
+    return next(iter(rows[0].values()))
+

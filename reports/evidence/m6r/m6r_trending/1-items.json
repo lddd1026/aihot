@@ -1,0 +1,82 @@
+[
+  {
+    "source_id": "github_trending_page",
+    "title": "acme-org/model-lab",
+    "url": "https://github.com/acme-org/model-lab",
+    "published_at": "2026-10-12T09:35:15.855222+00:00",
+    "raw_summary": "A tiny inference engine & toolkit for LLMs ｜ 语言 Python｜star 124,887｜今日 +25,599｜fork 8,123",
+    "lang": "en",
+    "extra": {
+      "kind": "repo",
+      "stars": 124887,
+      "stars_today": 25599,
+      "upvotes": 124887,
+      "forks": 8123,
+      "language": "Python",
+      "trending_period": "daily",
+      "source_page": "trending"
+    },
+    "fetched_at": "2026-10-12T09:35:15.855222+00:00",
+    "url_hash": "75fd69469491d531e5e5cd45bd5a4c95e894ddc2"
+  },
+  {
+    "source_id": "github_trending_page",
+    "title": "solo-dev/blobber",
+    "url": "https://github.com/solo-dev/blobber",
+    "published_at": "2026-10-12T09:35:15.855222+00:00",
+    "raw_summary": "star 5｜今日 +7",
+    "lang": "en",
+    "extra": {
+      "kind": "repo",
+      "stars": 5,
+      "stars_today": 7,
+      "upvotes": 5,
+      "forks": 0,
+      "language": "",
+      "trending_period": "daily",
+      "source_page": "trending"
+    },
+    "fetched_at": "2026-10-12T09:35:15.855222+00:00",
+    "url_hash": "3fd8fb54d2ebccc2e28308b758baeba0c236ad56"
+  },
+  {
+    "source_id": "github_trending_page",
+    "title": "tail-org/agent-desk",
+    "url": "https://github.com/tail-org/agent-desk",
+    "published_at": "2026-10-12T09:35:15.855222+00:00",
+    "raw_summary": "Agent workspace ｜ 语言 TypeScript｜star 3,001｜今日 +1,234｜fork 210",
+    "lang": "en",
+    "extra": {
+      "kind": "repo",
+      "stars": 3001,
+      "stars_today": 1234,
+      "upvotes": 3001,
+      "forks": 210,
+      "language": "TypeScript",
+      "trending_period": "daily",
+      "source_page": "trending"
+    },
+    "fetched_at": "2026-10-12T09:35:15.855222+00:00",
+    "url_hash": "261e42b50837d9ab2f91ec1871c0cd09d8261504"
+  },
+  {
+    "source_id": "github_trending_page",
+    "title": "extra-org/rag-notes",
+    "url": "https://github.com/extra-org/rag-notes",
+    "published_at": "2026-10-12T09:35:15.855222+00:00",
+    "raw_summary": "RAG notes ｜ 今日 +42",
+    "lang": "en",
+    "extra": {
+      "kind": "repo",
+      "stars": 0,
+      "stars_today": 42,
+      "upvotes": 0,
+      "forks": 0,
+      "language": "",
+      "trending_period": "daily",
+      "source_page": "trending"
+    },
+    "fetched_at": "2026-10-12T09:35:15.855222+00:00",
+    "url_hash": "c580002cf19a952497729e35e4c9d4770e5931be"
+  }
+]

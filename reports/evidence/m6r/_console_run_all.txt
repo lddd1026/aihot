@@ -1,0 +1,6 @@
+[PASS] m6r_trending rc=0 (21.8s)
+[PASS] m6r_proxy_health rc=0 (40.0s)
+[PASS] m6r_degrade_e2e rc=0 (20.8s)
+[PASS] m6r_degrade_alert rc=0 (9.2s)
+[PASS] m6r_regression rc=0 (186.4s)
+TOTAL: 5 passed / 0 failed

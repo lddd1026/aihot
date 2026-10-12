@@ -1,0 +1,4 @@
+healthy=False
+resolve=(None, 'degraded')
+requests=[{'method': 'CONNECT', 'path': 'www.gstatic.com:443'}, {'method': 'CONNECT', 'path': 'api.github.com:443'}, {'method': 'CONNECT', 'path': 'www.gstatic.com:443'}, {'method': 'CONNECT', 'path': 'api.github.com:443'}]
+elapsed=1.65s（真实常量：两次探测都走代理）

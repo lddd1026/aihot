@@ -1,0 +1,85 @@
+{
+  "suite": "m6r_proxy_health",
+  "passed": 15,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "4.1 假代理返回 204 → proxy_healthy() True（且流量确实经过代理）",
+      "ok": true,
+      "detail": "healthy=True；代理收到的绝对 URI=['http://127.0.0.1:9/generate_204', 'http://127.0.0.1:9/generate_204']"
+    },
+    {
+      "item": "4.2 健康代理 → resolve_proxy() 返回 (url, 'proxy')",
+      "ok": true,
+      "detail": "proxy=http://127.0.0.1:6409；mode=proxy"
+    },
+    {
+      "item": "4.3 健康代理 → checks.probe_proxy 为 [OK ]「可连接且节点健康」",
+      "ok": true,
+      "detail": "mark=[OK ]；detail=127.0.0.1:6409 可连接且节点健康"
+    },
+    {
+      "item": "4.4 健康代理时 fetch_stage 走代理：proxy_mode=proxy 且目标端口关闭仍抓到 3 条",
+      "ok": true,
+      "detail": "proxy_mode=proxy；items=3；stats=[('fake_feed', True, 3)]"
+    },
+    {
+      "item": "4.5 假代理一律返回 403（节点坏） → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）",
+      "ok": true,
+      "detail": "reachable=True；healthy=False；mode=degraded；proxy=None"
+    },
+    {
+      "item": "4.6 假代理一律返回 500（上游故障） → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）",
+      "ok": true,
+      "detail": "reachable=True；healthy=False；mode=degraded；proxy=None"
+    },
+    {
+      "item": "4.7 假代理接受连接后立即断开 → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）",
+      "ok": true,
+      "detail": "reachable=True；healthy=False；mode=degraded；proxy=None"
+    },
+    {
+      "item": "4.8 端口关闭 → proxy_reachable False、resolve_proxy 降级（不是报错）",
+      "ok": true,
+      "detail": "resolve_proxy=(None, 'degraded')"
+    },
+    {
+      "item": "4.9 enabled=False → direct（不做任何探测）",
+      "ok": true,
+      "detail": "enabled=False → direct"
+    },
+    {
+      "item": "4.10 空地址 → direct（不误用代理）",
+      "ok": true,
+      "detail": "proxy=None mode=direct"
+    },
+    {
+      "item": "4.11 check_health=False 退化为纯 TCP 探测（逃生门：不发健康探测请求）",
+      "ok": true,
+      "detail": "mode=proxy；代理收到的 HTTP 请求=[]"
+    },
+    {
+      "item": "4.12 端口通但节点坏 → probe_proxy [WARN]「端口可连接但节点异常」、fatal=False",
+      "ok": true,
+      "detail": "mark=[WARN]；detail=端口可连接但节点异常（健康检查失败，将降级为直连，墙外源可能缺失）"
+    },
+    {
+      "item": "4.13 run_quick_checks 中代理项为可降级 WARN（不是致命 ERR）",
+      "ok": true,
+      "detail": "items=[('代理', '[WARN]'), ('LLM API', '[ERR]')]"
+    },
+    {
+      "item": "4.14 节点坏 + 源只能经代理到达 → proxy_mode=degraded 且源全失败（不谎报成功）",
+      "ok": true,
+      "detail": "proxy_mode=degraded；all_failed=True；items=0"
+    },
+    {
+      "item": "4.16 真实库/存档未被本套件改动",
+      "ok": true,
+      "detail": "真实库快照一致"
+    }
+  ],
+  "notes": [
+    "本机真实代理 http://127.0.0.1:7897：TCP 可连=True。按约束未让 proxy_healthy() 去请求 gstatic（第三方域名），因此真实代理的『节点健康』未在本轮验证；见报告『测试保真度与风险』。"
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "suite": "m6r_p2_fixes",
+    "rc": 0,
+    "seconds": 29.1
+  },
+  {
+    "suite": "m6r_trending",
+    "rc": 0,
+    "seconds": 17.8
+  },
+  {
+    "suite": "m6r_proxy_health",
+    "rc": 0,
+    "seconds": 45.6
+  },
+  {
+    "suite": "m6r_degrade_e2e",
+    "rc": 0,
+    "seconds": 20.6
+  },
+  {
+    "suite": "m6r_degrade_alert",
+    "rc": 0,
+    "seconds": 10.2
+  },
+  {
+    "suite": "m6r_health_latency",
+    "rc": 0,
+    "seconds": 5.4
+  },
+  {
+    "suite": "m6r_regression",
+    "rc": 0,
+    "seconds": 317.6
+  }
+]

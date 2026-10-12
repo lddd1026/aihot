@@ -1,0 +1,3 @@
+rc 0 stdout bytes 81 stderr bytes 0
+STDOUT TAIL: '...............................                                          [100%]\r\n'
+STDERR TAIL: ''

@@ -1,0 +1,7 @@
+  [PASS] R2-3.10 节点挂起：健康检查 False；耗时 ≥探测点数×timeout（都试过）且 ≤探测点数×2×timeout+1.5（整体有界）: healthy=False；elapsed=4.75s；探测点数=2；单点实测≈2.37s（timeout=1.0s）
+  [NOTE] P3 观察：默认 PROXY_HEALTH_TIMEOUT=5s 时，节点挂起（接受连接但不响应）会让健康检查最坏耗时 ≈20s（实测单点≈2×timeout、2 个探测点；原单点探测 ≈10s）。属预检/采集一次的固定开销，不影响正确性；若在意可降低超时或减少探测点。
+  [PASS] R2-3.11 真实库/存档未被本套件改动: 真实库快照一致
+
+== m6r_health_latency: 2 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m6r\round2\m6r_health_latency.json
+
+--- stderr ---

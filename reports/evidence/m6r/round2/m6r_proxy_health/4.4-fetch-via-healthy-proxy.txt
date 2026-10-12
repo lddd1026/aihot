@@ -1,0 +1,9 @@
+目标源=http://127.0.0.1:1/feed.xml
+代理收到的请求=
+{'method': 'GET', 'path': 'http://127.0.0.1:9/generate_204'}
+{'method': 'GET', 'path': 'http://127.0.0.1:9/generate_204'}
+{'method': 'GET', 'path': 'http://127.0.0.1:9/generate_204'}
+{'method': 'GET', 'path': 'http://127.0.0.1:9/generate_204'}
+{'method': 'GET', 'path': 'http://127.0.0.1:1/feed.xml'}
+
+items=['M5 独立验收假新闻 1：模型与工具更新（proxyhealth）', 'M5 独立验收假新闻 2：模型与工具更新（proxyhealth）', 'M5 独立验收假新闻 3：模型与工具更新（proxyhealth）']

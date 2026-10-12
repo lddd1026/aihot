@@ -1,0 +1,50 @@
+  [PASS] 1.1 页面 6 行（2 行 href 不可用）→ 只产出 4 条 RawItem: 条数=4；类型=['RawItem', 'RawItem', 'RawItem', 'RawItem']
+  [PASS] 1.2 请求带 since=daily（period 生效）: 请求=['/trending?since=daily']
+  [PASS] 1.1a 第1行 title/url 正确: title='acme-org/model-lab' url='https://github.com/acme-org/model-lab'
+  [PASS] 1.1b 第1行语言/star/今日star/fork 进入 extra: extra={language:'Python', stars:124887, stars_today:25599, forks:8123}
+  [PASS] 1.1c 第1行描述进入 raw_summary、kind=repo: raw_summary='A tiny inference engine & toolkit for LLMs ｜ 语言 Python｜star 124,887｜今日 +25,599｜fork 8,123'；kind='repo'；upvotes=124887
+  [PASS] 1.2a 第2行 title/url 正确: title='solo-dev/blobber' url='https://github.com/solo-dev/blobber'
+  [PASS] 1.2b 第2行语言/star/今日star/fork 进入 extra: extra={language:'', stars:5, stars_today:7, forks:0}
+  [PASS] 1.2c 第2行描述进入 raw_summary、kind=repo: raw_summary='star 5｜今日 +7'；kind='repo'；upvotes=5
+  [PASS] 1.3a 第3行 title/url 正确: title='tail-org/agent-desk' url='https://github.com/tail-org/agent-desk'
+  [PASS] 1.3b 第3行语言/star/今日star/fork 进入 extra: extra={language:'TypeScript', stars:3001, stars_today:1234, forks:210}
+  [PASS] 1.3c 第3行描述进入 raw_summary、kind=repo: raw_summary='Agent workspace ｜ 语言 TypeScript｜star 3,001｜今日 +1,234｜fork 210'；kind='repo'；upvotes=3001
+  [PASS] 1.4a 第4行 title/url 正确: title='extra-org/rag-notes' url='https://github.com/extra-org/rag-notes'
+  [PASS] 1.4b 第4行语言/star/今日star/fork 进入 extra: extra={language:'', stars:0, stars_today:42, forks:0}
+  [PASS] 1.4c 第4行描述进入 raw_summary、kind=repo: raw_summary='RAG notes ｜ 今日 +42'；kind='repo'；upvotes=0
+  [PASS] 1.5 描述被清洗（去标签、还原实体）: A tiny inference engine & toolkit for LLMs ｜ 语言 Python｜star 124,887｜今日 +25,599｜fork 8,123
+  [PASS] 1.6 published 用发现时间（在窗口内，非页面数据）: published=2026-10-12T09:35:15.855222+00:00
+  [PASS] 1.7 raw_summary 含元信息（语言/star/今日/fork 中文标注）: A tiny inference engine & toolkit for LLMs ｜ 语言 Python｜star 124,887｜今日 +25,599｜fork 8,123
+  [PASS] 1.8 limit=2 → 2 条: limit=2 得 2 条
+  [PASS] 1.8 limit=3（第 3 行不可解析，占用了额度） → 2 条: limit=3 得 2 条
+  [PASS] 1.8 limit=0 归一为默认 12（非 1） → 4 条: limit=0 得 4 条
+  [PASS] 1.8 limit=25 上限内不越界 → 4 条: limit=25 得 4 条
+  [PASS] 1.8 limit=999 被夹到 25（页面只有 4 条有效行） → 4 条: limit=999 得 4 条
+  [PASS] 1.9 period=weekly 传递为 since=weekly: 请求=['/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=weekly']
+  [PASS] 1.10 非法 period 回退 daily（不崩溃）: 请求=['/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=weekly', '/trending?since=daily']
+  [PASS] 2.1 页面无条目（空页） → 抛 SourceError 且信息可诊断: raised=SourceError；detail=页面未匹配到趋势条目（article.Box-row），可能被拦截或已改版
+  [PASS] 2.2 结构改版（article 类名变了） → 抛 SourceError 且信息可诊断: raised=SourceError；detail=页面未匹配到趋势条目（article.Box-row），可能被拦截或已改版
+  [PASS] 2.3 条目全不可解析（href 全是多级路径） → 抛 SourceError 且信息可诊断: raised=SourceError；detail=趋势条目全部解析失败（页面结构可能已变化）
+  [PASS] 2.4 HTTP 403（被拦截） → 抛 SourceError 且信息可诊断: raised=SourceError；detail=请求失败: 403
+  [NOTE] P2 观察：h2 链接为 /sponsors/xxx（两段路径）时会被当作仓库 （得到 'sponsors/acme-org'）。真实 Trending 页 h2 恒为 /owner/repo，仅在页面结构大变时才会误报；已记录为 P2（防御性校验缺失）。
+  [PASS] 2.5 build_adapters 识别 github_trending 类型（不落 skipped）: adapters=['github_trending_page', 'fake_feed']；skipped=[]
+  [PASS] 2.6 坏源失败被隔离：另一个源照常产出 6 条: trending.ok=False err=SourceError: 请求失败: 403；rss.ok=True count=6
+  [PASS] 2.7 fetch_stage（dry-run）部分失败仍返回条目，proxy_mode=direct: failed=['github_trending_page']；items=6；proxy_mode=direct
+  [PASS] 2.8 失败源错误信息进入统计（可诊断，不是静默）: SourceError: 请求失败: 403
+  [PASS] 3.1 适配器独立运行只产出 RawItem，且不创建数据库/日志/任何文件: items=4；data_adapter_only 文件=无；db exists=False
+  [PASS] 3.2 适配器运行期间未调用 LLM（假 LLM 0 请求）: POST=0，/models=0
+  [PASS] 3.3 适配器运行期间未推送企微（假企微 0 请求）: text=0 image=0
+  [PASS] 3.4 适配器源码不导入 存储/推送/LLM 模块（静态核对）: 命中导入=无
+  [PASS] 3.5 配置校验接受 type=github_trending（并保留 extra）: type=github_trending；extra={'period': 'daily', 'limit': 12}
+  [PASS] 3.6 ADAPTER_TYPES 注册了 github_trending: ADAPTER_TYPES=['arxiv', 'github', 'github_trending', 'hackernews', 'hf_papers', 'html', 'rss']
+  [PASS] 3.7 未知类型被拒绝（ConfigError，且报错列出可选类型）: raised=ConfigError；errors=["sources[0] (id=github_trending_page): type 不支持 'github_trending_v2'（可选: arxiv, github, github_trending, hackernews, hf_papers, html, reddit, rss）"]
+  [PASS] 1.11 config.example.yaml 的新源合法（enabled/period/limit 齐全，整体校验无错）: errors=[]；entry={'id': 'github_trending_page', 'name': 'GitHub 当日热榜', 'type': 'github_trending', 'url': 'https://github.com/trending', 'enabled': True, 'weight': 0.9, 'extra': {'period': 'daily', 'limit': 12}}
+  [PASS] 1.12 真实 config.yaml 已启用该源且整体校验无错（未修改文件）: errors=[]；entry={'id': 'github_trending_page', 'name': 'GitHub 当日热榜', 'type': 'github_trending', 'url': 'https://github.com/trending', 'enabled': True, 'weight': 0.9, 'extra': {'period': 'daily', 'limit': 12}}
+  [PASS] 1.13 真实 https://github.com/trending 只读解析成功（直连，≥5 条，字段齐全）: 条数=8；样例=['morluto/rea', 'boykopovar/AnyPS5', 'storytold/artcraft']
+  [PASS] 3.8 真实库/存档未被本套件改动: 真实库快照一致
+
+== m6r_trending: 43 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m6r\m6r_trending.json
+
+--- stderr ---
+信息源失败: github_trending_page（SourceError: 请求失败: 403）
+信息源失败: github_trending_page（SourceError: 请求失败: 403）

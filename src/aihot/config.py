@@ -15,7 +15,7 @@ import yaml
 from aihot.utils import redact_text
 
 VALID_SOURCE_TYPES = frozenset(
-    {"rss", "hackernews", "reddit", "arxiv", "hf_papers", "html", "github"}
+    {"rss", "hackernews", "reddit", "arxiv", "hf_papers", "html", "github", "github_trending"}
 )
 VALID_LOG_LEVELS = frozenset({"DEBUG", "INFO", "WARNING", "ERROR"})
 DEFAULT_GATE_SOURCES = ("hackernews",)

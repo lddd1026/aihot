@@ -1,0 +1,11 @@
+E501 Line too long (109 > 100)
+   --> tests\independent\m6r_trending.py:294:101
+    |
+293 |     # ---------- 澹版槑 3锛氫笉瓒婄晫锛堜笉鍐欏簱 / 涓嶆帹閫?/ 涓嶈皟 LLM锛?----------
+294 |     with m6.FakeTrendingSite() as site, m6.m4.FakeLLMProbe() as llm, m6.m5.RecordedWeComProbe("ok") as wecom:
+    |                                                                                                     ^^^^^^^^^
+295 |         data_dir = ws / "data-adapter-only"
+296 |         source = SourceConfig(
+    |
+
+Found 1 error.

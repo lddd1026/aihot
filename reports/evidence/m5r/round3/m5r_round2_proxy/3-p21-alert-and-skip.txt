@@ -1,0 +1,20 @@
+$ python -m aihot alert --message M5R-第2轮-直连复验-20261012 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-round2-p21\config.yaml
+exit=1 (0.7s)
+--- stdout ---
+[WARN] 告警未送达：可用通道均失败或未启用，已写入本地兜底（本地文件(ALERTS.log)）
+
+--- stderr ---
+
+=== skip ===
+$ python -m aihot skip --reason M5 第2轮复验：M5R-第2轮-直连复验-20261012 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-round2-p21\config.yaml
+exit=0 (0.7s)
+--- stdout ---
+[OK] 已记录跳过（通道: 本地文件(ALERTS.log)）
+
+--- stderr ---
+
+[2026-10-12T18:13:36+08:00] 运维消息
+  - M5R-第2轮-直连复验-20261012
+[2026-10-12T18:13:37+08:00] 今日运行已跳过
+  - M5 第2轮复验：M5R-第2轮-直连复验-20261012
+  - 详情见 logs\run_daily.log

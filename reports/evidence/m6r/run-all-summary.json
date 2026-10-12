@@ -1,0 +1,27 @@
+[
+  {
+    "suite": "m6r_trending",
+    "rc": 0,
+    "seconds": 21.8
+  },
+  {
+    "suite": "m6r_proxy_health",
+    "rc": 0,
+    "seconds": 40.0
+  },
+  {
+    "suite": "m6r_degrade_e2e",
+    "rc": 0,
+    "seconds": 20.8
+  },
+  {
+    "suite": "m6r_degrade_alert",
+    "rc": 0,
+    "seconds": 9.2
+  },
+  {
+    "suite": "m6r_regression",
+    "rc": 0,
+    "seconds": 186.4
+  }
+]

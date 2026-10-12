@@ -1,0 +1,22 @@
+def real_state_snapshot() -> dict[str, Any]:
+    """鐪熷疄搴?+ 鐪熷疄鏃ユ姤瀛樻。鐩綍蹇収锛堣瘉鏄庢祴璇曟湭鏀瑰姩锛夈€?""
+    snapshot: dict[str, Any] = {"db": {}, "digests": {}}
+    if REAL_DB.exists():
+        stat = REAL_DB.stat()
+        snapshot["db"] = {
+            "bytes": stat.st_size,
+            "mtime": stat.st_mtime,
+            "items": db_one(REAL_DB, "SELECT COUNT(*) FROM items"),
+            "enriched": db_one(REAL_DB, "SELECT COUNT(*) FROM items WHERE enriched_at IS NOT NULL"),
+            "runs": db_one(REAL_DB, "SELECT COUNT(*) FROM runs"),
+            "clusters": db_one(REAL_DB, "SELECT COUNT(*) FROM clusters"),
+            "digests": db_one(REAL_DB, "SELECT COUNT(*) FROM digests"),
+        }
+    if REAL_DIGESTS.exists():
+        snapshot["digests"] = {
+            path.name: {"bytes": path.stat().st_size, "mtime": path.stat().st_mtime}
+            for path in sorted(REAL_DIGESTS.iterdir())
+            if path.is_file()
+        }
+    return snapshot
+

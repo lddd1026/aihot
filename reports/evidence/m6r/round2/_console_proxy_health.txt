@@ -1,0 +1,21 @@
+浠ｇ悊涓嶅彲鐢ㄦ垨鑺傜偣寮傚父锛坔ttp://127.0.0.1:9286锛夛紝鏈閲囬泦闄嶇骇涓虹洿杩烇細鍥藉唴婧愮収甯革紝澧欏婧愬皢澶辫触
+璇锋眰鏈€缁堝け璐? http://127.0.0.1:1/feed.xml锛圕onnectError: [WinError 10061] 鐢变簬鐩爣璁＄畻鏈虹Н鏋佹嫆缁濓紝鏃犳硶杩炴帴銆傦級
+淇℃伅婧愬け璐? fake_feed锛圫ourceError: 璇锋眰澶辫触: ConnectError: [WinError 10061] 鐢变簬鐩爣璁＄畻鏈虹Н鏋佹嫆缁濓紝鏃犳硶杩炴帴銆傦級
+  [PASS] 4.1 鍋囦唬鐞嗚繑鍥?204 鈫?proxy_healthy() True锛堜笖娴侀噺纭疄缁忚繃浠ｇ悊锛? healthy=True锛涗唬鐞嗘敹鍒扮殑缁濆 URI=['http://127.0.0.1:9/generate_204', 'http://127.0.0.1:9/generate_204']
+  [PASS] 4.2 鍋ュ悍浠ｇ悊 鈫?resolve_proxy() 杩斿洖 (url, 'proxy'): proxy=http://127.0.0.1:14035锛沵ode=proxy
+  [PASS] 4.3 鍋ュ悍浠ｇ悊 鈫?checks.probe_proxy 涓?[OK ]銆屽彲杩炴帴涓旇妭鐐瑰仴搴枫€? mark=[OK ]锛沝etail=127.0.0.1:14035 鍙繛鎺ヤ笖鑺傜偣鍋ュ悍
+  [PASS] 4.4 鍋ュ悍浠ｇ悊鏃?fetch_stage 璧颁唬鐞嗭細proxy_mode=proxy 涓旂洰鏍囩鍙ｅ叧闂粛鎶撳埌 3 鏉? proxy_mode=proxy锛沬tems=3锛泂tats=[('fake_feed', True, 3)]
+  [PASS] 4.5 鍋囦唬鐞嗕竴寰嬭繑鍥?403锛堣妭鐐瑰潖锛?鈫?proxy_healthy() False銆乺esolve_proxy 闄嶇骇锛圱CP 鍙繛=True锛? reachable=True锛沨ealthy=False锛沵ode=degraded锛沺roxy=None
+  [PASS] 4.6 鍋囦唬鐞嗕竴寰嬭繑鍥?500锛堜笂娓告晠闅滐級 鈫?proxy_healthy() False銆乺esolve_proxy 闄嶇骇锛圱CP 鍙繛=True锛? reachable=True锛沨ealthy=False锛沵ode=degraded锛沺roxy=None
+  [PASS] 4.7 鍋囦唬鐞嗘帴鍙楄繛鎺ュ悗绔嬪嵆鏂紑 鈫?proxy_healthy() False銆乺esolve_proxy 闄嶇骇锛圱CP 鍙繛=True锛? reachable=True锛沨ealthy=False锛沵ode=degraded锛沺roxy=None
+  [PASS] 4.8 绔彛鍏抽棴 鈫?proxy_reachable False銆乺esolve_proxy 闄嶇骇锛堜笉鏄姤閿欙級: resolve_proxy=(None, 'degraded')
+  [PASS] 4.9 enabled=False 鈫?direct锛堜笉鍋氫换浣曟帰娴嬶級: enabled=False 鈫?direct
+  [PASS] 4.10 绌哄湴鍧€ 鈫?direct锛堜笉璇敤浠ｇ悊锛? proxy=None mode=direct
+  [PASS] 4.11 check_health=False 閫€鍖栦负绾?TCP 鎺㈡祴锛堥€冪敓闂細涓嶅彂鍋ュ悍鎺㈡祴璇锋眰锛? mode=proxy锛涗唬鐞嗘敹鍒扮殑 HTTP 璇锋眰=[]
+  [PASS] 4.12 绔彛閫氫絾鑺傜偣鍧?鈫?probe_proxy [WARN]銆岀鍙ｅ彲杩炴帴浣嗚妭鐐瑰紓甯搞€嶃€乫atal=False: mark=[WARN]锛沝etail=绔彛鍙繛鎺ヤ絾鑺傜偣寮傚父锛堝仴搴锋鏌ュけ璐ワ紝灏嗛檷绾т负鐩磋繛锛屽澶栨簮鍙兘缂哄け锛?
+  [PASS] 4.13 run_quick_checks 涓唬鐞嗛」涓哄彲闄嶇骇 WARN锛堜笉鏄嚧鍛?ERR锛? items=[('浠ｇ悊', '[WARN]'), ('LLM API', '[ERR]')]
+  [PASS] 4.14 鑺傜偣鍧?+ 婧愬彧鑳界粡浠ｇ悊鍒拌揪 鈫?proxy_mode=degraded 涓旀簮鍏ㄥけ璐ワ紙涓嶈皫鎶ユ垚鍔燂級: proxy_mode=degraded锛沘ll_failed=True锛沬tems=0
+  [NOTE] 鏈満鐪熷疄浠ｇ悊 http://127.0.0.1:7897锛歍CP 鍙繛=True銆傛寜绾︽潫鏈 proxy_healthy() 鍘昏姹?gstatic锛堢涓夋柟鍩熷悕锛夛紝鍥犳鐪熷疄浠ｇ悊鐨勩€庤妭鐐瑰仴搴枫€忔湭鍦ㄦ湰杞獙璇侊紱瑙佹姤鍛娿€庢祴璇曚繚鐪熷害涓庨闄┿€忋€?
+  [PASS] 4.16 鐪熷疄搴?瀛樻。鏈鏈浠舵敼鍔? 鐪熷疄搴撳揩鐓т竴鑷?
+
+== m6r_proxy_health: 15 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m6r\round2\m6r_proxy_health.json

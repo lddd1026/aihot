@@ -1,0 +1,47 @@
+== DESIGN.md 80-100 ==
+80 | | `store` | SQLite锛氭潯鐩€佷簨浠剁皣銆佹棩鎶ュ瓨妗ｃ€佽繍琛岃褰曪紱骞傜瓑鍐欏叆 |
+81 | | `net` | 缁熶竴 HTTP 瀹㈡埛绔細娴忚鍣?UA銆佷唬鐞嗐€佽秴鏃躲€?xx/**429 閲嶈瘯**銆佸け璐ヤ笉鎶涘紓甯?|
+82 | | `utils` | URL 瑙勮寖鍖栥€佹枃鏈竻娲椼€佹椂闂村鐞嗐€?*瀵嗛挜鑴辨晱** |
+83 | | `logging_setup` | JSON lines 鏃ュ織 + **鍙屽眰瀵嗛挜鑴辨晱**锛堣繃婊ゅ櫒 + 鏍煎紡鍖栧櫒锛?|
+84 | | `checks` | 璇婃柇鎺㈡祴锛氫唬鐞?/ 浼佷笟寰俊 / LLM / 鍚勪俊鎭簮鍋ュ悍搴?|
+85 | | `reporting` | SLO 鎶ュ憡锛氶€佽揪鐜囥€佸噯鐐圭巼銆佸箓绛夈€佹垚鏈€佽€楁椂銆佸瓨妗ｅ畬鏁存€?|
+86 | **S 閲囬泦** | `sources.base` + `registry` | 閫傞厤鍣ㄦ帴鍙?+ 娉ㄥ唽琛?+ 骞跺彂璋冨害 + **鍗曟簮澶辫触闅旂** |
+87 | | `rss` | 閫氱敤 RSS/Atom锛堣鐩?8 涓簮锛?|
+88 | | `hackernews` | HN Algolia API锛坧oints/璇勮鏁颁綔鐑害淇″彿锛?|
+89 | | `arxiv` | arXiv Atom API锛堣鏂囷紝甯﹀垎绫?浣滆€咃級 |
+90 | | `html` | **閫氱敤 CSS 閫夋嫨鍣ㄨВ鏋愬櫒**锛堟柊绔欑偣闆朵唬鐮佹帴鍏ワ級 |
+91 | | `github` | GitHub Search API锛堣繎鏈熷闀挎渶蹇殑椤圭洰锛?|
+92 | | `hf_papers` | Hugging Face Daily Papers锛堝綋鍓嶅洜闄愭祦鍋滅敤锛?|
+93 | **P 鍔犲伐** | `prefilter` | AI 鐩稿叧鎬ч棬妲?+ 鍨冨溇杩囨护 + 鎵瑰唴鍘婚噸 |
+94 | | `dedup` | 浜嬩欢鑱氱被锛歎RL 绮剧‘ + 鏍囬鐩镐技搴﹀苟鏌ラ泦 + 鐗堟湰鍙锋姢鏍?|
+95 | | `enrich` | **鍏ㄩ」鐩敮涓€璋冪敤 LLM 鐨勫湴鏂?*锛氭壒閲忓姞宸ャ€丣SON 瀹归敊銆佺紦瀛樸€佹垚鏈?鏃堕棿鎶ゆ爮 |
+96 | | `prompts` | 鎻愮ず璇嶆ā鏉匡紙鐙珛浜庝唬鐮侊紝渚夸簬璋冧紭锛?|
+97 | | `rank` | 缁煎悎鐑害鎺掑簭 |
+98 | **R 鍛堢幇** | `compose` | 缁勮鏃ユ姤锛氳鏂囩簿閫?+ Top N + 绠€璁紝鍚?GitHub 椤圭洰鏁伴噺闄愭祦 |
+99 | | `render_text` | 浼佸井 markdown锛堣嚜鍔ㄥ垎鐗囷級+ 閭欢 HTML + 瀛樻。 md |
+100 | | `render_image` | Jinja2 鈫?**绯荤粺 Edge 鎴浘** 鈫?JPEG锛堥檷璐?+ 鑷姩鎷嗗浘锛?|
+
+== README.md 108-130 ==
+108 .venv\Scripts\python.exe -m aihot report --days 14            # 绋冲畾鎬ф姤鍛婏紙SLO 瀵圭収锛?
+109 .venv\Scripts\python.exe -m aihot report --days 14 --json     # 鍚屼笂锛孞SON 杈撳嚭
+110 ```
+111 
+112 ## 淇℃伅婧?
+113 
+114 | 绫诲埆 | 婧?| 璇存槑 |
+115 |---|---|---|
+116 | 涓枃濯掍綋 | 閲忓瓙浣嶃€両nfoQ 涓枃 | RSS |
+117 | 鑻辨枃濯掍綋 | TechCrunch AI銆乀he Verge AI銆乂entureBeat AI銆丮eta 宸ョ▼鍗氬 | RSS |
+118 | 瀹樻柟鍙戝竷 | OpenAI News銆丟oogle DeepMind銆丄nthropic News | RSS / 缃戦〉瑙ｆ瀽 |
+119 | 绀惧尯 | Hacker News銆丷eddit锛圠ocalLLaMA + MachineLearning锛?| API / RSS |
+120 | 璁烘枃 | arXiv锛坈s.AI/cs.CL/cs.LG锛屾棩鎶ャ€岃鏂囩簿閫夈€嶆瘡澶?鈮? 绡囷級 | 瀹樻柟 API |
+121 | 寮€婧愰」鐩?| **GitHub 杩?7 澶╁闀挎渶蹇」鐩?*锛堣繎 7 澶╂柊寤?+ star 鏈€澶氾紱绮鹃€夊尯鏈€澶?4 鏉★級 | 瀹樻柟 Search API |
+122 | 寮€婧愰」鐩?| **GitHub 褰撴棩鐑**锛堝綋澶?star 澧為€熸渶蹇紱缃戦〉瑙ｆ瀽锛屽伓鍙?403/瓒呮椂灞為鏈燂級 | Trending 椤?|
+123 | 寰呭惎鐢?| Hugging Face Daily Papers锛堟湰鏈?IP 鎸佺画 429锛?| 鈥?|
+124 
+125 > 鏈哄櫒涔嬪績绔欑偣宸叉敼鐗堜负銆屾暟鎹湇鍔°€嶈惤鍦伴〉锛屾殏鏃犲彲鎶撳垪琛紱VentureBeat/DeepMind/Anthropic/Reddit 闇€瑕佷唬鐞嗐€?
+126 
+127 ## 甯哥敤鍛戒护
+128 
+129 ```powershell
+130 # 閰嶇疆涓庤繛閫氭€ц嚜妫€锛堢绾匡級

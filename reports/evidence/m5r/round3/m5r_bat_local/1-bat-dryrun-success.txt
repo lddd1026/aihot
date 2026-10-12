@@ -1,0 +1,45 @@
+ 
+===== 2026-10-12 18:12:46.21 preflight ===== 
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\m5r-bat-local\config.yaml
+18:12:47 INFO aihot.cli: check 通过: 启用源 1/1, wecom=False, email=False
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\m5r-bat-local\data
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\m5r-bat-local\logs
+  代理      : 未启用
+
+信息源（1/1 启用）:
+  [on ] fake_feed          Fake
+
+推送通道:
+  [off] 企业微信机器人
+  [off] 邮件（example@qq.com）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [WARN] 企业微信 webhook 未配置（推送前需补齐）
+  [OK ] 邮箱 SMTP 授权码 已配置
+
+警告:
+  [WARN] 没有启用任何推送渠道：日报将只落盘、不发送
+
+快速预检（关键依赖）:
+  [OK ] LLM API: HTTP 200（鉴权通过）（630 ms）
+===== 2026-10-12 18:12:47.86 run ===== 
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\m5r-bat-local\config.yaml
+18:12:49 INFO aihot.sources: 信息源完成: fake_feed，8 条（19 ms）
+
+① 采集: 1/1 源成功，抓取 8 条 → 新增 0 条
+③ 日报: 2026-10-12 · 精选 0 条 + 简讯 0 条 · 无综述
+④ 渲染: 长图 1 张（2026-10-12.jpg 33 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+[2026-10-12 18:13:21.28] exit=0 

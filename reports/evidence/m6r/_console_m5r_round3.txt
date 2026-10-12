@@ -1,0 +1,10 @@
+[NOTE] 鎸?AIHOT_M5R_SKIP_M4_ALERT=1 璺宠繃 m4_alert 鍥炲綊锛堜細鐩磋繛鐪熷疄鍩熷悕锛?
+[PASS] m5r_preflight rc=0 (11.0s)
+[PASS] m5r_fetch rc=0 (26.7s)
+[PASS] m5r_skip rc=0 (22.4s)
+[PASS] m5r_alert rc=0 (6.9s)
+[PASS] m5r_report rc=0 (6.6s)
+[PASS] m5r_render_alert rc=0 (3.1s)
+[PASS] m5r_bat_local rc=0 (15.2s)
+[PASS] m5r_round2_proxy rc=0 (18.2s)
+TOTAL: 8 passed / 0 failed

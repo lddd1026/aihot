@@ -1,0 +1,5 @@
+  [PASS] R2-3.10 鑺傜偣鎸傝捣锛氬仴搴锋鏌?False锛涜€楁椂 鈮ユ帰娴嬬偣鏁懊梩imeout锛堥兘璇曡繃锛変笖 鈮ゆ帰娴嬬偣鏁懊?脳timeout+1.5锛堟暣浣撴湁鐣岋級: healthy=False锛沞lapsed=3.90s锛涙帰娴嬬偣鏁?2锛涘崟鐐瑰疄娴嬧増1.95s锛坱imeout=1.0s锛?
+  [NOTE] P3 瑙傚療锛氶粯璁?PROXY_HEALTH_TIMEOUT=5s 鏃讹紝鑺傜偣鎸傝捣锛堟帴鍙楄繛鎺ヤ絾涓嶅搷搴旓級浼氳鍋ュ悍妫€鏌ユ渶鍧忚€楁椂 鈮?0s锛堝疄娴嬪崟鐐光増2脳timeout锛? 涓帰娴嬬偣锛涘師鍗曠偣鎺㈡祴 鈮?0s锛夈€傚睘棰勬/閲囬泦涓€娆＄殑鍥哄畾寮€閿€锛屼笉褰卞搷姝ｇ‘鎬э紱鑻ュ湪鎰忓彲闄嶄綆瓒呮椂鎴栧噺灏戞帰娴嬬偣銆?
+  [PASS] R2-3.11 鐪熷疄搴?瀛樻。鏈鏈浠舵敼鍔? 鐪熷疄搴撳揩鐓т竴鑷?
+
+== m6r_health_latency: 2 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m6r\round2\m6r_health_latency.json

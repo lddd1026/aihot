@@ -15,6 +15,7 @@ from aihot.net import HttpClient
 from aihot.sources.arxiv import ArxivAdapter
 from aihot.sources.base import SourceAdapter, SourceError
 from aihot.sources.github import GithubAdapter
+from aihot.sources.github_trending import GithubTrendingAdapter
 from aihot.sources.hackernews import HackerNewsAdapter
 from aihot.sources.hf_papers import HfPapersAdapter
 from aihot.sources.html import HtmlAdapter
@@ -29,6 +30,7 @@ ADAPTER_TYPES: dict[str, type[SourceAdapter]] = {
     HtmlAdapter.type: HtmlAdapter,
     HfPapersAdapter.type: HfPapersAdapter,
     GithubAdapter.type: GithubAdapter,
+    GithubTrendingAdapter.type: GithubTrendingAdapter,
 }
 
 

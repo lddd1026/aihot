@@ -147,6 +147,19 @@ sources:
       min_stars: 100       # 低于该 star 数不取
       # token: ""          # 可选：填 GitHub token 提高限流额度
 
+  # GitHub 当日热榜（网页解析版）：与上面的 Search API 源互补
+  # - Search API = "近 N 天新建 + star 最多"（增长最快的新项目）
+  # - 本源 = "今日全站热榜"（当天 star 增速最快的项目）
+  # 页面偶发 429/403/超时属预期：有重试 + 单源失败隔离，不影响整体日报
+  - id: github_trending_page
+    name: GitHub 当日热榜
+    type: github_trending
+    url: https://github.com/trending
+    enabled: true
+    weight: 0.9
+    extra:
+      period: daily        # daily / weekly / monthly
+      limit: 12            # 取热榜前 N 个
   # ---- 以下源需要代理可用（Clash 节点正常）后再开启 ----
   - id: venturebeat_ai
     name: VentureBeat AI

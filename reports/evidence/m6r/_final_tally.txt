@@ -1,0 +1,12 @@
+m6r_trending: 43 passed / 0 failed  notes=1
+   NOTE: P2 瑙傚療锛歨2 閾炬帴涓?/sponsors/xxx锛堜袱娈佃矾寰勶級鏃朵細琚綋浣滀粨搴?锛堝緱鍒?'sponsors/acme-org'锛夈€傜湡瀹?Trending 椤?h2 鎭掍负 /owner/repo锛屼粎鍦ㄩ〉闈㈢粨鏋勫ぇ鍙樻椂鎵嶄細璇姤锛涘凡璁板綍涓?P2锛堥槻寰℃€ф牎楠岀己澶憋級銆?
+m6r_proxy_health: 15 passed / 0 failed  notes=1
+   NOTE: 鏈満鐪熷疄浠ｇ悊 http://127.0.0.1:7897锛歍CP 鍙繛=True銆傛寜绾︽潫鏈 proxy_healthy() 鍘昏姹?gstatic锛堢涓夋柟鍩熷悕锛夛紝鍥犳鐪熷疄浠ｇ悊鐨勩€庤妭鐐瑰仴搴枫€忔湭鍦ㄦ湰杞獙璇侊紱瑙佹姤鍛娿€庢祴璇曚繚鐪熷害涓庨闄┿€忋€?
+m6r_degrade_e2e: 12 passed / 0 failed  notes=0
+m6r_degrade_alert: 5 passed / 0 failed  notes=0
+m6r_regression: 5 passed / 0 failed  notes=0
+TOTAL m6r: 80 passed / 0 failed
+m5r round3: [('m5r_preflight', 0), ('m5r_fetch', 0), ('m5r_skip', 0), ('m5r_alert', 0), ('m5r_report', 0), ('m5r_render_alert', 0), ('m5r_bat_local', 0), ('m5r_round2_proxy', 0)]
+pytest tail: 390 passed in 59.85s
+ruff: rc=0
+All checks passed!

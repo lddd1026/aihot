@@ -1,0 +1,122 @@
+[
+  {
+    "title": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "raw_summary": "Reverse engineer anything with agents, from app behavior down to native binaries. ｜ 语言 TypeScript｜star 127,883｜今日 +25,599｜fork 28,637",
+    "extra": {
+      "kind": "repo",
+      "stars": 127883,
+      "stars_today": 25599,
+      "upvotes": 127883,
+      "forks": 28637,
+      "language": "TypeScript",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "boykopovar/AnyPS5",
+    "url": "https://github.com/boykopovar/AnyPS5",
+    "raw_summary": "Tool for automatic PS5 executables porting to Linux and Windows ｜ 语言 C++｜star 31,371｜今日 +3,952｜fork 2,693",
+    "extra": {
+      "kind": "repo",
+      "stars": 31371,
+      "stars_today": 3952,
+      "upvotes": 31371,
+      "forks": 2693,
+      "language": "C++",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "storytold/artcraft",
+    "url": "https://github.com/storytold/artcraft",
+    "raw_summary": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers ｜ 语言 Rust｜star 19,593｜今日 +2,957｜fork 3,176",
+    "extra": {
+      "kind": "repo",
+      "stars": 19593,
+      "stars_today": 2957,
+      "upvotes": 19593,
+      "forks": 3176,
+      "language": "Rust",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "raw_summary": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop. ｜ 语言 HTML｜star 51,429｜今日 +1,083｜fork 3,250",
+    "extra": {
+      "kind": "repo",
+      "stars": 51429,
+      "stars_today": 1083,
+      "upvotes": 51429,
+      "forks": 3250,
+      "language": "HTML",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "bilawalsidhu/gods-eye-view",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "raw_summary": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. ｜ 语言 JavaScript｜star 52,487｜今日 +886｜fork 10,469",
+    "extra": {
+      "kind": "repo",
+      "stars": 52487,
+      "stars_today": 886,
+      "upvotes": 52487,
+      "forks": 10469,
+      "language": "JavaScript",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "pytorch/pytorch",
+    "url": "https://github.com/pytorch/pytorch",
+    "raw_summary": "Tensors and Dynamic neural networks in Python with strong GPU acceleration ｜ 语言 Python｜star 104,692｜今日 +315｜fork 32,186",
+    "extra": {
+      "kind": "repo",
+      "stars": 104692,
+      "stars_today": 315,
+      "upvotes": 104692,
+      "forks": 32186,
+      "language": "Python",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "lyogavin/airllm",
+    "url": "https://github.com/lyogavin/airllm",
+    "raw_summary": "AirLLM 70B inference with single 4GB GPU ｜ 语言 Jupyter Notebook｜star 36,908｜今日 +548｜fork 3,839",
+    "extra": {
+      "kind": "repo",
+      "stars": 36908,
+      "stars_today": 548,
+      "upvotes": 36908,
+      "forks": 3839,
+      "language": "Jupyter Notebook",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  },
+  {
+    "title": "chrislgarry/Apollo-11",
+    "url": "https://github.com/chrislgarry/Apollo-11",
+    "raw_summary": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules. ｜ 语言 Assembly｜star 74,497｜今日 +466｜fork 8,118",
+    "extra": {
+      "kind": "repo",
+      "stars": 74497,
+      "stars_today": 466,
+      "upvotes": 74497,
+      "forks": 8118,
+      "language": "Assembly",
+      "trending_period": "daily",
+      "source_page": "trending"
+    }
+  }
+]

@@ -1,0 +1,3 @@
+真实页面 h2 链接 owner（8 个）: ['bilawalsidhu', 'boykopovar', 'cathrynlavery', 'chrislgarry', 'lyogavin', 'morluto', 'pytorch', 'storytold']
+撞上保留名单的 owner: 无
+RESERVED_OWNERS=['about', 'apps', 'collections', 'contact', 'enterprise', 'explore', 'features', 'login', 'marketplace', 'new', 'notifications', 'orgs', 'pricing', 'search', 'security', 'settings', 'signup', 'site', 'sponsors', 'topics', 'trending']

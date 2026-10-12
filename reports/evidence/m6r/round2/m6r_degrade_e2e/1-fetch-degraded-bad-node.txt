@@ -1,0 +1,39 @@
+$ python -m aihot fetch --dry-run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m6r-degrade\config.yaml
+exit=0 (3.1s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m6r-degrade\config.yaml
+18:07:47 WARNING aihot.runner: 代理不可用或节点异常（http://127.0.0.1:12056），本次采集降级为直连：国内源照常，墙外源将失败
+18:07:47 INFO aihot.sources: 信息源完成: fake_feed，5 条（19 ms）
+18:07:47 INFO aihot.sources: 信息源完成: fake_feed_b，4 条（20 ms）
+
+采集窗口: 最近 24 小时（起始 2026-10-11T18:07:45+08:00）
+信息源  : 2 个
+
+采集结果:
+  [OK ] fake_feed          5 条（19 ms）
+  [OK ] fake_feed_b        4 条（20 ms）
+
+合计: 抓取 9 条（dry-run，不写库）
+
+最新条目预览（前 9 条）:
+   1. [fake_feed] M5 独立验收假新闻 1：模型与工具更新（degrade-a）
+      https://example.com/degrade-a/1（10-12 17:36）
+   2. [fake_feed_b] M5 独立验收假新闻 1：模型与工具更新（degrade-b）
+      https://example.com/degrade-b/1（10-12 17:36）
+   3. [fake_feed] M5 独立验收假新闻 2：模型与工具更新（degrade-a）
+      https://example.com/degrade-a/2（10-12 17:35）
+   4. [fake_feed_b] M5 独立验收假新闻 2：模型与工具更新（degrade-b）
+      https://example.com/degrade-b/2（10-12 17:35）
+   5. [fake_feed] M5 独立验收假新闻 3：模型与工具更新（degrade-a）
+      https://example.com/degrade-a/3（10-12 17:34）
+   6. [fake_feed_b] M5 独立验收假新闻 3：模型与工具更新（degrade-b）
+      https://example.com/degrade-b/3（10-12 17:34）
+   7. [fake_feed] M5 独立验收假新闻 4：模型与工具更新（degrade-a）
+      https://example.com/degrade-a/4（10-12 17:33）
+   8. [fake_feed_b] M5 独立验收假新闻 4：模型与工具更新（degrade-b）
+      https://example.com/degrade-b/4（10-12 17:33）
+   9. [fake_feed] M5 独立验收假新闻 5：模型与工具更新（degrade-a）
+      https://example.com/degrade-a/5（10-12 17:32）
+
+--- stderr ---

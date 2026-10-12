@@ -1,0 +1,8 @@
+浠ｇ悊涓嶅彲鐢ㄦ垨鑺傜偣寮傚父锛坔ttp://127.0.0.1:8419锛夛紝鏈閲囬泦闄嶇骇涓虹洿杩烇細鍥藉唴婧愮収甯革紝澧欏婧愬皢澶辫触
+  [PASS] 7.1 闄嶇骇鑷姩鎺ㄩ€併€岃繍琛岄檷绾ф彁绀恒€嶅埌浼佸井锛堝惈闄嶇骇璇存槑锛? alert 鏂囨湰=['鈿狅笍 aihot 鍛婅锛氳繍琛岄檷绾ф彁绀篭n- 浠ｇ悊涓嶅彲鐢紝浠婃棩宸查檷绾т负鐩磋繛閲囬泦锛堥儴鍒嗗澶栨簮缂哄け锛屾棩鎶ョ収甯稿彂閫侊級']
+  [PASS] 7.2 闄嶇骇涓嶉樆鏂嚭鎶ワ細鏃ユ姤鏈韩涔熼€佽揪锛坉elivered=True锛? delivered=True锛沝igest=鏈夛紱errors=[]
+  [PASS] 7.3 鍋?LLM 纭疄琚皟鐢紙鏈疆鏄畬鏁?run锛屼笉鏄┖杞級: POST=2锛沺roxy_mode=degraded
+  [PASS] 7.4 鍋囪妭鐐规敹鍒颁簡 https 鍋ュ悍鎺㈡祴锛圕ONNECT锛夛紝璇存槑闄嶇骇鍒ゅ畾纭湁渚濇嵁: 鍋囪妭鐐硅姹?[{'method': 'CONNECT', 'path': 'www.gstatic.com:443'}]
+  [PASS] 7.5 鐪熷疄搴?瀛樻。鏈鏈浠舵敼鍔? 鐪熷疄搴撳揩鐓т竴鑷?
+
+== m6r_degrade_alert: 5 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m6r\m6r_degrade_alert.json

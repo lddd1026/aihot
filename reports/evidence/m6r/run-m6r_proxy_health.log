@@ -1,0 +1,23 @@
+  [PASS] 4.1 假代理返回 204 → proxy_healthy() True（且流量确实经过代理）: healthy=True；代理收到的绝对 URI=['http://127.0.0.1:9/generate_204', 'http://127.0.0.1:9/generate_204']
+  [PASS] 4.2 健康代理 → resolve_proxy() 返回 (url, 'proxy'): proxy=http://127.0.0.1:7506；mode=proxy
+  [PASS] 4.3 健康代理 → checks.probe_proxy 为 [OK ]「可连接且节点健康」: mark=[OK ]；detail=127.0.0.1:7506 可连接且节点健康
+  [PASS] 4.4 健康代理时 fetch_stage 走代理：proxy_mode=proxy 且目标端口关闭仍抓到 3 条: proxy_mode=proxy；items=3；stats=[('fake_feed', True, 3)]
+  [PASS] 4.5 假代理一律返回 403（节点坏） → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）: reachable=True；healthy=False；mode=degraded；proxy=None
+  [PASS] 4.6 假代理一律返回 500（上游故障） → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）: reachable=True；healthy=False；mode=degraded；proxy=None
+  [PASS] 4.7 假代理接受连接后立即断开 → proxy_healthy() False、resolve_proxy 降级（TCP 可连=True）: reachable=True；healthy=False；mode=degraded；proxy=None
+  [PASS] 4.8 端口关闭 → proxy_reachable False、resolve_proxy 降级（不是报错）: resolve_proxy=(None, 'degraded')
+  [PASS] 4.9 enabled=False → direct（不做任何探测）: enabled=False → direct
+  [PASS] 4.10 空地址 → direct（不误用代理）: proxy=None mode=direct
+  [PASS] 4.11 check_health=False 退化为纯 TCP 探测（逃生门：不发健康探测请求）: mode=proxy；代理收到的 HTTP 请求=[]
+  [PASS] 4.12 端口通但节点坏 → probe_proxy [WARN]「端口可连接但节点异常」、fatal=False: mark=[WARN]；detail=端口可连接但节点异常（健康检查失败，将降级为直连，墙外源可能缺失）
+  [PASS] 4.13 run_quick_checks 中代理项为可降级 WARN（不是致命 ERR）: items=[('代理', '[WARN]'), ('LLM API', '[ERR]')]
+  [PASS] 4.14 节点坏 + 源只能经代理到达 → proxy_mode=degraded 且源全失败（不谎报成功）: proxy_mode=degraded；all_failed=True；items=0
+  [NOTE] 本机真实代理 http://127.0.0.1:7897：TCP 可连=True。按约束未让 proxy_healthy() 去请求 gstatic（第三方域名），因此真实代理的『节点健康』未在本轮验证；见报告『测试保真度与风险』。
+  [PASS] 4.16 真实库/存档未被本套件改动: 真实库快照一致
+
+== m6r_proxy_health: 15 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m6r\m6r_proxy_health.json
+
+--- stderr ---
+代理不可用或节点异常（http://127.0.0.1:7557），本次采集降级为直连：国内源照常，墙外源将失败
+请求最终失败: http://127.0.0.1:1/feed.xml（ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+信息源失败: fake_feed（SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）

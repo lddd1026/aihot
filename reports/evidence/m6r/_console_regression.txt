@@ -1,0 +1,7 @@
+  [PASS] 6.1 pytest 鍏ㄧ豢锛坮c=0锛? 澶辫触锛岀敤渚嬫暟 鈮?90锛? rc=0锛沺assed=390锛沠ailed=0
+  [PASS] 6.2 ruff check . 闆跺憡璀︼紙rc=0 涓旀棤杈撳嚭锛? rc=0锛涜緭鍑?All checks passed!
+  [PASS] 6.3 閫傞厤鍚庣殑 m5r_fetch 閫氳繃锛堜唬鐞嗗仴搴锋鏌ヨ涔夊凡鏇存柊锛屾棤鏃ф柇瑷€娈嬬暀锛? rc=0锛涘熬閮?----------------------------------------
+  [PASS] 6.4 m5r 鍏ㄩ噺濂椾欢鍏ㄩ儴 rc=0锛堝惈 preflight/fetch/round2 绛?8 濂椾欢锛? rc=0锛涘浠剁粨鏋?[('m5r_preflight', 0), ('m5r_fetch', 0), ('m5r_skip', 0), ('m5r_alert', 0), ('m5r_report', 0), ('m5r_render_alert', 0), ('m5r_bat_local', 0), ('m5r_round2_proxy', 0)]
+  [PASS] 6.5 鐪熷疄搴?瀛樻。鏈鏈浠舵敼鍔? 鐪熷疄搴撳揩鐓т竴鑷?
+
+== m6r_regression: 5 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m6r\m6r_regression.json

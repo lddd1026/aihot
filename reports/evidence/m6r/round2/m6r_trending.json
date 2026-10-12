@@ -1,0 +1,225 @@
+{
+  "suite": "m6r_trending",
+  "passed": 43,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "1.1 页面 6 行（2 行 href 不可用）→ 只产出 4 条 RawItem",
+      "ok": true,
+      "detail": "条数=4；类型=['RawItem', 'RawItem', 'RawItem', 'RawItem']"
+    },
+    {
+      "item": "1.2 请求带 since=daily（period 生效）",
+      "ok": true,
+      "detail": "请求=['/trending?since=daily']"
+    },
+    {
+      "item": "1.1a 第1行 title/url 正确",
+      "ok": true,
+      "detail": "title='acme-org/model-lab' url='https://github.com/acme-org/model-lab'"
+    },
+    {
+      "item": "1.1b 第1行语言/star/今日star/fork 进入 extra",
+      "ok": true,
+      "detail": "extra={language:'Python', stars:124887, stars_today:25599, forks:8123}"
+    },
+    {
+      "item": "1.1c 第1行描述进入 raw_summary、kind=repo",
+      "ok": true,
+      "detail": "raw_summary='A tiny inference engine & toolkit for LLMs ｜ 语言 Python｜star 124,887｜今日 +25,599｜fork 8,123'；kind='repo'；upvotes=124887"
+    },
+    {
+      "item": "1.2a 第2行 title/url 正确",
+      "ok": true,
+      "detail": "title='solo-dev/blobber' url='https://github.com/solo-dev/blobber'"
+    },
+    {
+      "item": "1.2b 第2行语言/star/今日star/fork 进入 extra",
+      "ok": true,
+      "detail": "extra={language:'', stars:5, stars_today:7, forks:0}"
+    },
+    {
+      "item": "1.2c 第2行描述进入 raw_summary、kind=repo",
+      "ok": true,
+      "detail": "raw_summary='star 5｜今日 +7'；kind='repo'；upvotes=5"
+    },
+    {
+      "item": "1.3a 第3行 title/url 正确",
+      "ok": true,
+      "detail": "title='tail-org/agent-desk' url='https://github.com/tail-org/agent-desk'"
+    },
+    {
+      "item": "1.3b 第3行语言/star/今日star/fork 进入 extra",
+      "ok": true,
+      "detail": "extra={language:'TypeScript', stars:3001, stars_today:1234, forks:210}"
+    },
+    {
+      "item": "1.3c 第3行描述进入 raw_summary、kind=repo",
+      "ok": true,
+      "detail": "raw_summary='Agent workspace ｜ 语言 TypeScript｜star 3,001｜今日 +1,234｜fork 210'；kind='repo'；upvotes=3001"
+    },
+    {
+      "item": "1.4a 第4行 title/url 正确",
+      "ok": true,
+      "detail": "title='extra-org/rag-notes' url='https://github.com/extra-org/rag-notes'"
+    },
+    {
+      "item": "1.4b 第4行语言/star/今日star/fork 进入 extra",
+      "ok": true,
+      "detail": "extra={language:'', stars:0, stars_today:42, forks:0}"
+    },
+    {
+      "item": "1.4c 第4行描述进入 raw_summary、kind=repo",
+      "ok": true,
+      "detail": "raw_summary='RAG notes ｜ 今日 +42'；kind='repo'；upvotes=0"
+    },
+    {
+      "item": "1.5 描述被清洗（去标签、还原实体）",
+      "ok": true,
+      "detail": "A tiny inference engine & toolkit for LLMs ｜ 语言 Python｜star 124,887｜今日 +25,599｜fork 8,123"
+    },
+    {
+      "item": "1.6 published 用发现时间（在窗口内，非页面数据）",
+      "ok": true,
+      "detail": "published=2026-10-12T10:06:41.895619+00:00"
+    },
+    {
+      "item": "1.7 raw_summary 含元信息（语言/star/今日/fork 中文标注）",
+      "ok": true,
+      "detail": "A tiny inference engine & toolkit for LLMs ｜ 语言 Python｜star 124,887｜今日 +25,599｜fork 8,123"
+    },
+    {
+      "item": "1.8 limit=2 → 2 条",
+      "ok": true,
+      "detail": "limit=2 得 2 条"
+    },
+    {
+      "item": "1.8 limit=3（P2-2 修复后：坏行不占额度，出 3 条） → 3 条",
+      "ok": true,
+      "detail": "limit=3 得 3 条"
+    },
+    {
+      "item": "1.8 limit=0 归一为默认 12（非 1） → 4 条",
+      "ok": true,
+      "detail": "limit=0 得 4 条"
+    },
+    {
+      "item": "1.8 limit=25 上限内不越界 → 4 条",
+      "ok": true,
+      "detail": "limit=25 得 4 条"
+    },
+    {
+      "item": "1.8 limit=999 被夹到 25（页面只有 4 条有效行） → 4 条",
+      "ok": true,
+      "detail": "limit=999 得 4 条"
+    },
+    {
+      "item": "1.9 period=weekly 传递为 since=weekly",
+      "ok": true,
+      "detail": "请求=['/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=weekly']"
+    },
+    {
+      "item": "1.10 非法 period 回退 daily（不崩溃）",
+      "ok": true,
+      "detail": "请求=['/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=daily', '/trending?since=weekly', '/trending?since=daily']"
+    },
+    {
+      "item": "2.1 页面无条目（空页） → 抛 SourceError 且信息可诊断",
+      "ok": true,
+      "detail": "raised=SourceError；detail=页面未匹配到趋势条目（article.Box-row），可能被拦截或已改版"
+    },
+    {
+      "item": "2.2 结构改版（article 类名变了） → 抛 SourceError 且信息可诊断",
+      "ok": true,
+      "detail": "raised=SourceError；detail=页面未匹配到趋势条目（article.Box-row），可能被拦截或已改版"
+    },
+    {
+      "item": "2.3 条目全不可解析（href 全是多级路径） → 抛 SourceError 且信息可诊断",
+      "ok": true,
+      "detail": "raised=SourceError；detail=趋势条目全部解析失败（页面结构可能已变化）"
+    },
+    {
+      "item": "2.4 HTTP 403（被拦截） → 抛 SourceError 且信息可诊断",
+      "ok": true,
+      "detail": "raised=SourceError；detail=请求失败: 403"
+    },
+    {
+      "item": "2.5 build_adapters 识别 github_trending 类型（不落 skipped）",
+      "ok": true,
+      "detail": "adapters=['github_trending_page', 'fake_feed']；skipped=[]"
+    },
+    {
+      "item": "2.6 坏源失败被隔离：另一个源照常产出 6 条",
+      "ok": true,
+      "detail": "trending.ok=False err=SourceError: 请求失败: 403；rss.ok=True count=6"
+    },
+    {
+      "item": "2.7 fetch_stage（dry-run）部分失败仍返回条目，proxy_mode=direct",
+      "ok": true,
+      "detail": "failed=['github_trending_page']；items=6；proxy_mode=direct"
+    },
+    {
+      "item": "2.8 失败源错误信息进入统计（可诊断，不是静默）",
+      "ok": true,
+      "detail": "SourceError: 请求失败: 403"
+    },
+    {
+      "item": "3.1 适配器独立运行只产出 RawItem，且不创建数据库/日志/任何文件",
+      "ok": true,
+      "detail": "items=4；data_adapter_only 文件=无；db exists=False"
+    },
+    {
+      "item": "3.2 适配器运行期间未调用 LLM（假 LLM 0 请求）",
+      "ok": true,
+      "detail": "POST=0，/models=0"
+    },
+    {
+      "item": "3.3 适配器运行期间未推送企微（假企微 0 请求）",
+      "ok": true,
+      "detail": "text=0 image=0"
+    },
+    {
+      "item": "3.4 适配器源码不导入 存储/推送/LLM 模块（静态核对）",
+      "ok": true,
+      "detail": "命中导入=无"
+    },
+    {
+      "item": "3.5 配置校验接受 type=github_trending（并保留 extra）",
+      "ok": true,
+      "detail": "type=github_trending；extra={'period': 'daily', 'limit': 12}"
+    },
+    {
+      "item": "3.6 ADAPTER_TYPES 注册了 github_trending",
+      "ok": true,
+      "detail": "ADAPTER_TYPES=['arxiv', 'github', 'github_trending', 'hackernews', 'hf_papers', 'html', 'rss']"
+    },
+    {
+      "item": "3.7 未知类型被拒绝（ConfigError，且报错列出可选类型）",
+      "ok": true,
+      "detail": "raised=ConfigError；errors=[\"sources[0] (id=github_trending_page): type 不支持 'github_trending_v2'（可选: arxiv, github, github_trending, hackernews, hf_papers, html, reddit, rss）\"]"
+    },
+    {
+      "item": "1.11 config.example.yaml 的新源合法（enabled/period/limit 齐全，整体校验无错）",
+      "ok": true,
+      "detail": "errors=[]；entry={'id': 'github_trending_page', 'name': 'GitHub 当日热榜', 'type': 'github_trending', 'url': 'https://github.com/trending', 'enabled': True, 'weight': 0.9, 'extra': {'period': 'daily', 'limit': 12}}"
+    },
+    {
+      "item": "1.12 真实 config.yaml 已启用该源且整体校验无错（未修改文件）",
+      "ok": true,
+      "detail": "errors=[]；entry={'id': 'github_trending_page', 'name': 'GitHub 当日热榜', 'type': 'github_trending', 'url': 'https://github.com/trending', 'enabled': True, 'weight': 0.9, 'extra': {'period': 'daily', 'limit': 12}}"
+    },
+    {
+      "item": "1.13 真实 https://github.com/trending 只读解析成功（直连，≥5 条，字段齐全）",
+      "ok": true,
+      "detail": "条数=8；样例=['morluto/rea', 'boykopovar/AnyPS5', 'storytold/artcraft']"
+    },
+    {
+      "item": "3.8 真实库/存档未被本套件改动",
+      "ok": true,
+      "detail": "真实库快照一致"
+    }
+  ],
+  "notes": [
+    "P2-1 已修复：/sponsors/xxx（两段非仓库路径）被 RESERVED_OWNERS 排除，未产出条目（趋势条目全部解析失败（页面结构可能已变化））"
+  ]
+}

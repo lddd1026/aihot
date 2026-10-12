@@ -1,0 +1,8 @@
+[PASS] m6r_p2_fixes rc=0 (29.1s)
+[PASS] m6r_trending rc=0 (17.8s)
+[PASS] m6r_proxy_health rc=0 (45.6s)
+[PASS] m6r_degrade_e2e rc=0 (20.6s)
+[PASS] m6r_degrade_alert rc=0 (10.2s)
+[PASS] m6r_health_latency rc=0 (5.4s)
+[PASS] m6r_regression rc=0 (317.6s)
+TOTAL: 7 passed / 0 failed

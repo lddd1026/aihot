@@ -1,0 +1,241 @@
+E501 Line too long (109 > 100)
+ --> tests\independent\m6r_proxy_health.py:5:78
+  |
+3 | 鍏抽敭鐐癸細
+4 | - 姝ｄ緥锛氬亣浠ｇ悊瀵规帰娴嬭姹傝繑鍥?204 鈫?proxy_healthy() True 鈫?resolve_proxy() 鐢ㄤ唬鐞嗭紙mode=proxy锛夛紱
+5 | - 鍙嶄緥锛堜笉璁?姘歌繙鎴愬姛"锛夛細403 / 500 / 杩炴帴鍚庢柇寮€ / 绔彛鍏抽棴 鈫?False 鈫?resolve_proxy() 闄嶇骇锛坢ode=degraded锛夛紱
+  |                                                                                                     ^^^^^^^^^
+6 | - 绔彛閫氫絾鑺傜偣鍧忥細proxy_reachable() True 鑰?proxy_healthy() False锛堣繖姝ｆ槸鏈疆瑕佽瘑鍒殑鍦烘櫙锛夛紱
+7 | - 鍙﹀瑕嗙洊锛氭湭鍚敤 / 绌哄湴鍧€ 鈫?direct锛沜heck_health=False 閫€鍖栦负绾?TCP 鎺㈡祴锛堜繚鐣欑殑閫冪敓闂級锛?  |
+
+SIM117 Use a single `with` statement with multiple contexts instead of nested `with` statements
+  --> tests\independent\m6r_proxy_health.py:47:5
+   |
+46 |       # ---------- 4.1 姝ｄ緥锛氬亣浠ｇ悊 204 鈫?health True锛宺esolve 鐢ㄤ唬鐞?----------
+47 | /     with m6.FakeNodeProxy("healthy") as good:
+48 | |         with mock.patch.object(net, "PROXY_HEALTH_URL", m6.HEALTH_PROBE):
+   | |_________________________________________________________________________^
+49 |               healthy = proxy_healthy(good.url)
+50 |               proxy, mode = resolve_proxy(True, good.url)
+   |
+help: Combine `with` statements
+
+E501 Line too long (107 > 100)
+  --> tests\independent\m6r_proxy_health.py:77:95
+   |
+75 |             suite.check(
+76 |                 "4.3 鍋ュ悍浠ｇ悊 鈫?checks.probe_proxy 涓?[OK ]銆屽彲杩炴帴涓旇妭鐐瑰仴搴枫€?,
+77 |                 result is not None and result.ok and result.name == "浠ｇ悊" and "鑺傜偣鍋ュ悍" in result.detail,
+   |                                                                                                     ^^^^^^^
+78 |                 f"mark={result.mark if result else None}锛沝etail={result.detail if result else None}",
+79 |             )
+   |
+
+E501 Line too long (102 > 100)
+  --> tests\independent\m6r_proxy_health.py:78:100
+   |
+76 |                 "4.3 鍋ュ悍浠ｇ悊 鈫?checks.probe_proxy 涓?[OK ]銆屽彲杩炴帴涓旇妭鐐瑰仴搴枫€?,
+77 |                 result is not None and result.ok and result.name == "浠ｇ悊" and "鑺傜偣鍋ュ悍" in result.detail,
+78 |                 f"mark={result.mark if result else None}锛沝etail={result.detail if result else None}",
+   |                                                                                                     ^^
+79 |             )
+80 |             checks_marks.append(result.detail)
+   |
+
+E501 Line too long (111 > 100)
+   --> tests\independent\m6r_proxy_health.py:113:101
+    |
+111 |                     "鐩爣婧?" + m6.DEAD_FEED + "\n浠ｇ悊鏀跺埌鐨勮姹?\n"
+112 |                     + "\n".join(str(row) for row in good.requests)
+113 |                     + f"\n\nitems={[i.title for i in outcome.new_items]}\nfake_trending={fake_trending['id']}",
+    |                                                                                                     ^^^^^^^^^^^
+114 |                 )
+    |
+
+E501 Line too long (105 > 100)
+   --> tests\independent\m6r_proxy_health.py:181:77
+    |
+179 |         result = probe_proxy(cfg_bad)
+180 |         suite.check(
+181 |             "4.12 绔彛閫氫絾鑺傜偣鍧?鈫?probe_proxy [WARN]銆岀鍙ｅ彲杩炴帴浣嗚妭鐐瑰紓甯搞€嶏紝涓?fatal=False锛堜笉闃绘柇锛?,
+    |                                                                                                      ^^^^
+182 |             result is not None
+183 |             and not result.ok
+    |
+
+E501 Line too long (107 > 100)
+  --> tests\independent\m6r_support.py:56:101
+   |
+54 | ROW_FULL = """
+55 |   <article class="Box-row">
+56 |     <div class="float-sm-right d-inline-block"><span class="float-sm-right">25,599 stars today</span></div>
+   |                                                                                                     ^^^^^^^
+57 |     <h2 class="h3 lh-condensed">
+58 |       <a href="/acme-org/model-lab">acme-org / model-lab</a>
+   |
+
+E501 Line too long (105 > 100)
+  --> tests\independent\m6r_support.py:60:101
+   |
+58 |       <a href="/acme-org/model-lab">acme-org / model-lab</a>
+59 |     </h2>
+60 |     <p class="col-9 color-fg-muted my-1 pr-4">A <em>tiny</em> inference engine &amp; toolkit for LLMs</p>
+   |                                                                                                     ^^^^^
+61 |     <div class="f6 color-fg-muted mt-2">
+62 |       <span class="d-inline-block ml-0 mr-3" itemprop="programmingLanguage">Python</span>
+   |
+
+E501 Line too long (109 > 100)
+  --> tests\independent\m6r_support.py:83:101
+   |
+81 | ROW_ABSOLUTE_HREF = """
+82 |   <article class="Box-row">
+83 |     <h2 class="h3 lh-condensed"><a href="https://github.com/absolute/elsewhere">absolute / elsewhere</a></h2>
+   |                                                                                                     ^^^^^^^^^
+84 |     <p class="col-9">缁濆 URL锛岄潪 /owner/repo</p>
+85 |     <span class="float-sm-right">99 stars today</span>
+   |
+
+E501 Line too long (101 > 100)
+   --> tests\independent\m6r_support.py:101:101
+    |
+ 99 | ROW_DEEP_HREF = """
+100 |   <article class="Box-row">
+101 |     <h2 class="h3 lh-condensed"><a href="/acme-org/model-lab/tree/main">acme-org / model-lab</a></h2>
+    |                                                                                                     ^
+102 |     <p>瀛愮洰褰曢摼鎺?/p>
+103 |   </article>
+    |
+
+E501 Line too long (114 > 100)
+   --> tests\independent\m6r_support.py:145:101
+    |
+143 |         return body
+144 |     return (
+145 |         "<!DOCTYPE html>\n<html lang=\"en\">\n<head><title>Trending repositories on GitHub today</title></head>\n"
+    |                                                                                                     ^^^^^^^^^^^^^^
+146 |         "<body>\n<div class=\"application-main\">\n"
+147 |         "<div class=\"Box\">\n  <div class=\"Box-header\"><h1>Trending</h1></div>\n"
+    |
+
+E501 Line too long (104 > 100)
+   --> tests\independent\m6r_support.py:263:101
+    |
+261 |     """
+262 |
+263 |     def __init__(self, mode: str = "healthy", *, body: bytes = b"ok", health_status: int = 204) -> None:
+    |                                                                                                     ^^^^
+264 |         self.mode = mode
+265 |         self.body = body
+    |
+
+E501 Line too long (103 > 100)
+ --> tests\independent\m6r_trending.py:3:77
+  |
+1 | """M6 澹版槑 1+2+3 鐙珛楠屾敹锛氭柊澧炰俊鎭簮 github_trending_page锛圙itHub 褰撴棩鐑锛岀綉椤佃В鏋愶級銆?2 |
+3 | 澹版槑 1锛氬す鍏烽〉闈㈣兘姝ｇ‘瑙ｆ瀽锛氫粨搴撳悕 / URL / 璇█ / 鎬?star / 浠婃棩 star / 鎻忚堪 鈫?RawItem 涓?raw_summary锛?  |                                                                                                     ^^^
+4 |          extra.kind == "repo"锛沺eriod / limit / 鍧忚璺宠繃绛夎竟鐣屻€?5 | 澹版槑 2锛氬閿欌€斺€旀棤鏉＄洰 / 缁撴瀯鏀圭増 / HTTP 403 鈫?SourceError锛涗笖涓嶅奖鍝嶅叾浠栨簮锛堝崟婧愰殧绂伙級銆?  |
+
+E501 Line too long (102 > 100)
+  --> tests\independent\m6r_trending.py:8:70
+   |
+ 6 | 澹版槑 3锛氫笉瓒婄晫鈥斺€斿彧浜у嚭 RawItem锛堜笉鍐欏簱 / 涓嶆帹閫?/ 涓嶈皟 LLM锛夛紱閰嶇疆鏍￠獙鎺ュ彈 github_trending銆? 7 |          鎷掔粷鏈煡绫诲瀷锛涚湡瀹?config.yaml / config.example.yaml 鐨勬柊婧愰厤缃悎娉曘€? 8 | 锛堝彲閫夛級瀵?https://github.com/trending 鍋氫竴娆″彧璇?GET锛岄獙璇佺湡瀹為〉闈粛鑳借В鏋愶紙缃戠粶涓嶅彲鐢ㄦ椂璁颁负 NOTE锛夈€?   |                                                                                                     ^^
+ 9 |
+10 | 璺戞硶: .venv\\Scripts\\python.exe tests\\independent\\m6r_trending.py
+   |
+
+E501 Line too long (134 > 100)
+  --> tests\independent\m6r_trending.py:34:101
+   |
+34 | def make_adapter(url: str, *, period: str = "daily", limit: int = 12, adapter_type: str = "github_trending") -> GithubTrendingAdapter:
+   |                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+35 |     source = SourceConfig(
+36 |         id="github_trending_page",
+   |
+
+E501 Line too long (157 > 100)
+   --> tests\independent\m6r_trending.py:174:91
+    |
+172 | 鈥?173 | 鈥e), 200, "鏈尮閰嶅埌瓒嬪娍鏉＄洰"),
+174 | 鈥?<article class=\"TrendCard\"><a href=\"/a/b\">a/b</a></article>"]), 200, "鏈尮閰嶅埌瓒嬪娍鏉＄洰"),
+    |                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+175 | 鈥html([m6.ROW_DEEP_HREF, m6.ROW_DEEP_HREF]), 200, "鍏ㄩ儴瑙ｆ瀽澶辫触"),
+176 | 鈥?澶辫触"),
+    |
+
+E501 Line too long (129 > 100)
+   --> tests\independent\m6r_trending.py:175:86
+    |
+173 | 鈥l([], wrap=True), 200, "鏈尮閰嶅埌瓒嬪娍鏉＄洰"),
+174 | 鈥ending_html(["<article class=\"TrendCard\"><a href=\"/a/b\">a/b</a></article>"]), 200, "鏈尮閰嶅埌瓒嬪娍鏉＄洰"),
+175 | 鈥? m6.trending_html([m6.ROW_DEEP_HREF, m6.ROW_DEEP_HREF]), 200, "鍏ㄩ儴瑙ｆ瀽澶辫触"),
+    |                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+176 | 鈥l(), 403, "璇锋眰澶辫触"),
+177 | 鈥?    |
+
+E501 Line too long (107 > 100)
+   --> tests\independent\m6r_trending.py:208:101
+    |
+206 |     suite.evidence_json(
+207 |         "2b-sponsors-link-probe.json",
+208 |         [{"title": item.title, "url": item.url, "kind": item.extra.get("kind")} for item in sponsor_items],
+    |                                                                                                     ^^^^^^^
+209 |     )
+210 |     if sponsor_items:
+    |
+
+E501 Line too long (110 > 100)
+   --> tests\independent\m6r_trending.py:250:101
+    |
+248 |             and stats["fake_feed"].count == 6
+249 |             and len(collected.items) == 6,
+250 |             f"trending.ok={stats['github_trending_page'].ok} err={stats['github_trending_page'].error[:60]}锛?
+    |                                                                                                     ^^^^^^^^^^
+251 |             f"rss.ok={stats['fake_feed'].ok} count={stats['fake_feed'].count}",
+252 |             evidence=m6.dump_ok("stats", [dataclasses.asdict(s) for s in collected.stats]),
+    |
+
+E501 Line too long (109 > 100)
+   --> tests\independent\m6r_trending.py:273:101
+    |
+272 |     # ---------- 澹版槑 3锛氫笉瓒婄晫锛堜笉鍐欏簱 / 涓嶆帹閫?/ 涓嶈皟 LLM锛?----------
+273 |     with m6.FakeTrendingSite() as site, m6.m4.FakeLLMProbe() as llm, m6.m5.RecordedWeComProbe("ok") as wecom:
+    |                                                                                                     ^^^^^^^^^
+274 |         data_dir = ws / "data-adapter-only"
+275 |         source = SourceConfig(
+    |
+
+E501 Line too long (115 > 100)
+   --> tests\independent\m6r_trending.py:307:101
+    |
+305 |         )
+306 |         source_text = Path("src/aihot/sources/github_trending.py").read_text(encoding="utf-8")
+307 |         forbidden = re.findall(r"(?:from|import)\s+(aihot\.(?:store|delivery|pipeline|checks)[\w.]*)", source_text)
+    |                                                                                                     ^^^^^^^^^^^^^^^
+308 |         suite.check(
+309 |             "3.4 閫傞厤鍣ㄦ簮鐮佷笉瀵煎叆 瀛樺偍/鎺ㄩ€?LLM 妯″潡锛堥潤鎬佹牳瀵癸級",
+    |
+
+E501 Line too long (113 > 100)
+   --> tests\independent\m6r_trending.py:353:101
+    |
+351 |     example = yaml.safe_load(Path("config.example.yaml").read_text(encoding="utf-8"))
+352 |     example_errors, _ = validate(example)
+353 |     example_source = next((s for s in example.get("sources", []) if s.get("id") == "github_trending_page"), None)
+    |                                                                                                     ^^^^^^^^^^^^^
+354 |     suite.check(
+355 |         "1.11 config.example.yaml 鐨勬柊婧愬悎娉曪紙enabled/period/limit 榻愬叏锛屾暣浣撴牎楠屾棤閿欙級",
+    |
+
+E501 Line too long (107 > 100)
+   --> tests\independent\m6r_trending.py:365:101
+    |
+363 |     )
+364 |     real = yaml.safe_load(Path("config.yaml").read_text(encoding="utf-8"))
+365 |     real_source = next((s for s in real.get("sources", []) if s.get("id") == "github_trending_page"), None)
+    |                                                                                                     ^^^^^^^
+366 |     real_errors, _ = validate(real)
+367 |     suite.check(
+    |
+
+Found 30 errors (7 fixed, 23 remaining).

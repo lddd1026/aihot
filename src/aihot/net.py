@@ -25,6 +25,14 @@ MAX_RETRY_AFTER = 30.0
 logger = logging.getLogger("aihot.net")
 
 PROXY_PROBE_TIMEOUT = 2.0
+# 功能性健康检查：多探测点，任一通过即视为"节点健康"（避免单点误判导致全量降级）
+# - gstatic 204：国内不可直连、体积最小的通用探测点
+# - GitHub rate_limit：与主要用途（墙外源）直接相关；403（限流）也算"能到达"
+PROXY_HEALTH_PROBES: tuple[tuple[str, frozenset[int]], ...] = (
+    ("https://www.gstatic.com/generate_204", frozenset({200, 204})),
+    ("https://api.github.com/rate_limit", frozenset({200, 204, 403})),
+)
+PROXY_HEALTH_TIMEOUT = 5.0
 
 
 def proxy_reachable(url: str, *, timeout: float = PROXY_PROBE_TIMEOUT) -> bool:
@@ -41,21 +49,45 @@ def proxy_reachable(url: str, *, timeout: float = PROXY_PROBE_TIMEOUT) -> bool:
         return False
 
 
+def proxy_healthy(url: str, *, timeout: float = PROXY_HEALTH_TIMEOUT) -> bool:
+    """功能性健康检查：端口能连 ≠ 节点可用。
+
+    依次尝试多个轻量探测点，**任一成功即视为健康**；全部失败才判定异常。
+    用于识别「Clash 开着但节点已坏」——此时所有走代理的请求都会 TLS 失败，
+    应当降级为直连而不是让整个采集陪葬。
+    """
+    for probe_url, ok_status in PROXY_HEALTH_PROBES:
+        try:
+            with httpx.Client(proxy=url, timeout=timeout, trust_env=False) as client:
+                response = client.get(probe_url)
+        except (httpx.HTTPError, OSError):
+            continue
+        if response.status_code in ok_status:
+            return True
+    return False
+
+
 def resolve_proxy(
-    enabled: bool, url: str, *, timeout: float = PROXY_PROBE_TIMEOUT
+    enabled: bool,
+    url: str,
+    *,
+    timeout: float = PROXY_PROBE_TIMEOUT,
+    check_health: bool = True,
 ) -> tuple[str | None, str]:
     """决定本次采集使用的代理，返回 (代理地址或 None, 模式)。
 
     模式取值：
     - ``direct``   未启用代理（或未配置地址）
-    - ``proxy``    代理可用
-    - ``degraded`` 代理已配置但当前不可用 → **降级为直连**，不阻断整体运行
+    - ``proxy``    代理可用且健康检查通过
+    - ``degraded`` 代理不可用 / 节点异常 → **降级为直连**，不阻断整体运行
     """
     if not (enabled and url):
         return None, "direct"
-    if proxy_reachable(url, timeout=timeout):
-        return url, "proxy"
-    return None, "degraded"
+    if not proxy_reachable(url, timeout=timeout):
+        return None, "degraded"
+    if check_health and not proxy_healthy(url):
+        return None, "degraded"
+    return url, "proxy"
 
 
 @dataclass(frozen=True, slots=True)

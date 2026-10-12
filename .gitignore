@@ -13,6 +13,8 @@ config.yaml
 
 # 运行产物
 data/*.db
+data/*.db-wal
+data/*.db-shm
 data/digests/
 logs/*.log
 logs/*.log.*

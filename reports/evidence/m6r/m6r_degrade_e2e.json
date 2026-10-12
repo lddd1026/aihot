@@ -1,0 +1,68 @@
+{
+  "suite": "m6r_degrade_e2e",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "5.1 节点坏（端口通）时 fetch --dry-run rc=0 且两个本地源都抓到条目",
+      "ok": true,
+      "detail": "rc=0；抓取分布={'fake_feed': 5, 'fake_feed_b': 4}"
+    },
+    {
+      "item": "5.2 输出含「降级为直连」（用户可知情，不静默）",
+      "ok": true,
+      "detail": "17:36:18 WARNING aihot.runner: 代理不可用或节点异常（http://127.0.0.1:7568），本次采集降级为直连：国内源照常，墙外源将失败"
+    },
+    {
+      "item": "5.3 降级日志点名了坏代理地址与「节点异常」",
+      "ok": true,
+      "detail": "17:36:18 WARNING aihot.runner: 代理不可用或节点异常（http://127.0.0.1:7568），本次采集降级为直连：国内源照常，墙外源将失败"
+    },
+    {
+      "item": "5.4 dry-run 未创建数据库（仍不落库）",
+      "ok": true,
+      "detail": "db exists=False"
+    },
+    {
+      "item": "5.5 假节点确实收到了探测请求（说明体检真的做了，不是跳过）",
+      "ok": true,
+      "detail": "假节点收到的请求=[{'method': 'CONNECT', 'path': 'www.gstatic.com:443'}]"
+    },
+    {
+      "item": "5.6 节点坏时 check --quick rc=0（可降级失败不阻断）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "5.7 代理项为 [WARN] 且提示「端口可连接但节点异常」",
+      "ok": true,
+      "detail": "[WARN] 代理: 端口可连接但节点异常（健康检查失败，将降级为直连，墙外源可能缺失）（1267 ms）"
+    },
+    {
+      "item": "5.8 LLM 项仍 [OK ]（直连本地假 LLM，未被坏节点牵连）",
+      "ok": true,
+      "detail": "[OK ] LLM API: HTTP 200（鉴权通过）（623 ms）"
+    },
+    {
+      "item": "5.9 反证：假 LLM 关闭后 check --quick rc=1 且 LLM 项 [ERR]",
+      "ok": true,
+      "detail": "rc=1；[ERR] LLM API: 请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（2714 ms）"
+    },
+    {
+      "item": "5.10 端口关闭：rc=0、代理项 [WARN]「连接失败」且含「降级」",
+      "ok": true,
+      "detail": "[WARN] 代理: 连接失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（将降级为直连，墙外源可能缺失）（2050 ms）"
+    },
+    {
+      "item": "5.11 端口关闭：fetch --dry-run rc=0 且抓到 5 条（老行为不回退）",
+      "ok": true,
+      "detail": "rc=0；抓取={'fake_feed': 5}"
+    },
+    {
+      "item": "5.12 真实库/存档未被本套件改动",
+      "ok": true,
+      "detail": "真实库快照一致"
+    }
+  ],
+  "notes": []
+}

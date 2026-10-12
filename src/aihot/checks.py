@@ -10,7 +10,7 @@ from urllib.parse import urlsplit
 import httpx
 
 from aihot.config import Config, SourceConfig
-from aihot.net import HttpClient, resolve_proxy
+from aihot.net import HttpClient, proxy_healthy, resolve_proxy
 
 TIMEOUT_SECONDS = 10.0
 # qyapi 的 key 失效错误码（HTTP 状态码仍是 200，必须看 errcode）
@@ -80,7 +80,16 @@ def probe_proxy(cfg: Config) -> CheckResult | None:
             _elapsed_ms(start),
             fatal=False,
         )
-    return CheckResult("代理", True, f"{host}:{port} 可连接", _elapsed_ms(start))
+    # 端口通了再验证节点是否真的能出网（区分"Clash 开着但节点已坏"）
+    if not proxy_healthy(cfg.proxy.url):
+        return CheckResult(
+            "代理",
+            False,
+            "端口可连接但节点异常（健康检查失败，将降级为直连，墙外源可能缺失）",
+            _elapsed_ms(start),
+            fatal=False,
+        )
+    return CheckResult("代理", True, f"{host}:{port} 可连接且节点健康", _elapsed_ms(start))
 
 
 def probe_wecom(cfg: Config) -> CheckResult | None:

@@ -1,0 +1,42 @@
+ 
+===== 2026-10-12 18:12:15.92 preflight ===== 
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\m5r-skip-a\config.yaml
+18:12:16 INFO aihot.cli: check 通过: 启用源 1/1, wecom=False, email=True
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\m5r-skip-a\data
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\m5r-skip-a\logs
+  代理      : http://127.0.0.1:1
+
+信息源（1/1 启用）:
+  [on ] fake_feed          Fake
+
+推送通道:
+  [off] 企业微信机器人
+  [on ] 邮件（sender@example.com）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [WARN] 企业微信 webhook 未配置（推送前需补齐）
+  [OK ] 邮箱 SMTP 授权码 已配置
+
+快速预检（关键依赖）:
+  [WARN] 代理: 连接失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（将降级为直连，墙外源可能缺失）（2048 ms）
+  [ERR] LLM API: 请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（2578 ms）
+
+[WARN] 1 项可降级失败：代理不可用时自动降级为直连，继续运行
+
+[ERR] 预检存在 1 个致命失败项，今日运行可能受影响
+[2026-10-12 18:12:21.46] PREFLIGHT FAILED - skip today 
+18:12:22 INFO aihot.delivery.email: 邮件已发送至 receiver@example.com
+18:12:22 INFO aihot.runner: 告警已发送（邮件）: 今日运行已跳过
+[OK] 已记录跳过（通道: 邮件）
+
+--- ALERTS.log ---
+（无 ALERTS.log）
