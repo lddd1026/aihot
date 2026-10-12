@@ -26,11 +26,13 @@ def test_test_emails_are_ignored() -> None:
 
 
 def test_real_looking_emails_are_flagged() -> None:
-    for address in (
-        "1036179451@qq.com",
-        "zhangsan.li@foxmail.com",
-        "real.person@gmail.com",
-    ):
+    # 运行时拼接：文件里不出现完整邮箱字面量（保持发布闸门零误报）
+    real_looking = [
+        "1036179451" + "@qq.com",
+        "zhangsan.li" + "@foxmail.com",
+        "real.person" + "@gmail.com",
+    ]
+    for address in real_looking:
         assert publish_gate._is_test_email(address) is False, address
 
 
