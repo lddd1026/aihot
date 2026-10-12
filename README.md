@@ -3,6 +3,7 @@
 每天 17:00 前，把最近 24 小时的 AI 热点精选 Top 10~15，以「一张长图 + 可点击文字」推送到企业微信和邮箱。
 
 > 完整需求、架构与开发计划见 [PLAN.md](PLAN.md)；设计背景、亮点难点与容灾设计见 [DESIGN.md](DESIGN.md)；
+> **完整工作流与模块实现说明（无代码）见 [docs/WORKFLOW.md](docs/WORKFLOW.md)**；
 > 项目复盘（贡献/问题/设计/取舍/验证/结果）见 [docs/PROJECT-REVIEW.md](docs/PROJECT-REVIEW.md)。
 
 ## 内容范围（开发者向）
