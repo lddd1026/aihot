@@ -1,0 +1,15 @@
+$ python -m aihot resend --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\config.yaml --channel email
+exit=0 (5.7s)
+--- stdout ---
+aihot resend · 补发某期日报
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\config.yaml
+11:36:51 INFO aihot.delivery.email: 邮件已发送至 receiver@example.com
+
+日报日期: 2026-09-25，渠道: email
+  markdown : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.md
+  image    : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.jpg
+  html     : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.html
+
+[OK] 补发完成
+
+--- stderr ---

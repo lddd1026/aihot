@@ -1,0 +1,21 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-partial\config.yaml
+exit=0 (19.2s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-partial\config.yaml
+11:47:33 INFO aihot.sources: 信息源完成: good_feed，12 条（40 ms）
+11:47:42 WARNING aihot.net: 请求最终失败: http://127.0.0.1:1/feed（ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+11:47:42 WARNING aihot.sources: 信息源失败: dead_source（SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+11:47:50 INFO aihot.delivery.wecom: 图片消息（2026-09-25.jpg）已发送（请求体 611306 字节）
+11:47:50 INFO aihot.delivery.wecom: markdown 消息已发送（请求体 3190 字节）
+
+① 采集: 1/2 源成功，抓取 12 条 → 新增 12 条
+   [ERR] dead_source: SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+② 加工: 12 条 → 预筛保留 12 → 12 簇；LLM 批次 3（失败 0）· 成本 ¥0.0024
+③ 日报: 2026-09-25 · 精选 12 条 + 简讯 0 条 · 综述 93 字
+④ 渲染: 长图 1 张（2026-09-25.jpg 447 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 企业微信 ✅ · 邮件未启用
+
+状态: ok
+
+--- stderr ---

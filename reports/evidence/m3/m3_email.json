@@ -1,0 +1,88 @@
+{
+  "suite": "m3_email",
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "5.1 主题/发件人/收件人正确",
+      "ok": true,
+      "detail": "subject=AI 热点日报 · 2026-09-24 to=receiver@example.com"
+    },
+    {
+      "item": "5.2 STARTTLS 连接 + 登录成功",
+      "ok": true,
+      "detail": "auth=[{'user': 'sender@example.com', 'password_len': 14, 'tls': True}]"
+    },
+    {
+      "item": "5.3 无内嵌图（attach_image=false）",
+      "ok": true,
+      "detail": "content_types=['multipart/alternative', 'text/plain', 'text/html']"
+    },
+    {
+      "item": "5.4 含纯文本兜底 + HTML 正文",
+      "ok": true,
+      "detail": "plain='本邮件为 HTML 格式，请使用支持 HTML 的邮件客户端查看。\\r\\n'"
+    },
+    {
+      "item": "5.5 multipart/related 内嵌图 cid 匹配",
+      "ok": true,
+      "detail": "images=[('image/jpeg', 'digest-image-1')]"
+    },
+    {
+      "item": "5.6 内嵌图字节与文件一致",
+      "ok": true,
+      "detail": "sent=314342 file=314342"
+    },
+    {
+      "item": "5.7 内嵌图 Content-Type 为 image/jpeg",
+      "ok": true,
+      "detail": "ctype=image/jpeg filename=2026-09-24.jpg"
+    },
+    {
+      "item": "5.8 SMTP_SSL 路径可用 + 多收件人",
+      "ok": true,
+      "detail": "to=receiver@example.com, second@example.com tls=True"
+    },
+    {
+      "item": "5.9 认证失败 → NotifyError",
+      "ok": true,
+      "detail": "SMTP 连接或登录失败: SMTPAuthenticationError: (535, b'5.7.8 Authentication failed')"
+    },
+    {
+      "item": "5.10 收件人为空 → NotifyError",
+      "ok": true,
+      "detail": "收件地址为空"
+    },
+    {
+      "item": "5.11 连接失败 → NotifyError",
+      "ok": true,
+      "detail": "SMTP 连接或登录失败: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。"
+    },
+    {
+      "item": "5.12 编排层：deliver_digest 邮件发送成功（0 错误）",
+      "ok": true,
+      "detail": "errors=[]"
+    },
+    {
+      "item": "5.13 编排层：主题含日报日期 + HTML 含综述与全部 Top 链接",
+      "ok": true,
+      "detail": "subject=AI 热点日报 · 2026-09-24 links=16 missing=[]"
+    },
+    {
+      "item": "5.14 编排层：attach_image=true → 内嵌图 cid 与 HTML 一致",
+      "ok": true,
+      "detail": "images=1 cid=digest-image-1"
+    },
+    {
+      "item": "5.15 编排层：attach_image=false → 无内嵌图",
+      "ok": true,
+      "detail": "content_types=['multipart/alternative', 'text/plain', 'text/html']"
+    },
+    {
+      "item": "5.16 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}"
+    }
+  ],
+  "notes": []
+}

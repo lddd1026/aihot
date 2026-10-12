@@ -1,0 +1,164 @@
+ hackernews，52 条（2550 ms）
+10:58:54 INFO aihot.sources: 信息源完成: venturebeat_ai，0 条（3907 ms）
+10:58:54 INFO aihot.sources: 信息源完成: deepmind_blog，1 条（3377 ms）
+10:58:55 INFO aihot.sources: 信息源完成: meta_eng，0 条（1080 ms）
+10:58:59 INFO aihot.sources: 信息源完成: openai_news，0 条（8925 ms）
+10:58:59 INFO aihot.sources: 信息源完成: anthropic_news，0 条（6416 ms）
+10:59:03 INFO aihot.sources: 信息源完成: arxiv，60 条（7664 ms）
+10:59:05 INFO aihot.sources: 信息源完成: reddit_ai，50 条（11064 ms）
+10:59:06 INFO aihot.sources: 信息源完成: theverge_ai，10 条（15835 ms）
+
+① 采集: 12/12 源成功，抓取 210 条 → 新增 0 条
+② 加工: 187 条 → 预筛保留 137 → 136 簇；LLM 批次 0（失败 0）· 成本 ¥0.0000
+③ 日报: 2026-09-25 · 精选 12 条 + 简讯 12 条 · 无综述
+④ 渲染: 长图 1 张（2026-09-25.jpg 612 KB） · 企微分片 2 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+[2026-09-25 10:59:10.85] exit=0 
+ 
+===== 2026-09-25 11:08:02.80 preflight ===== 
+aihot check · 配置与连通性自检
+配置文件: D:\信息收集整理\aihot\config.yaml
+11:08:03 INFO aihot.cli: check 通过: 启用源 12/14, wecom=True, email=True
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : D:\信息收集整理\aihot\data
+  日志目录  : D:\信息收集整理\aihot\logs
+  代理      : http://127.0.0.1:7897
+
+信息源（12/14 启用）:
+  [on ] qbitai             量子位
+  [on ] infoq_cn           InfoQ 中文
+  [on ] techcrunch_ai      TechCrunch AI
+  [on ] openai_news        OpenAI News
+  [on ] hackernews         Hacker News
+  [off] jiqizhixin         机器之心
+  [on ] theverge_ai        The Verge AI
+  [on ] venturebeat_ai     VentureBeat AI
+  [on ] deepmind_blog      Google DeepMind
+  [on ] anthropic_news     Anthropic News
+  [on ] meta_eng           Meta 工程博客
+  [on ] reddit_ai          Reddit（LocalLLaMA + MachineLearning）
+  [off] hf_papers          Hugging Face Daily Papers
+  [on ] arxiv              arXiv 论文
+
+推送通道:
+  [on ] 企业微信机器人
+  [on ] 邮件（example@qq.com）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [OK ] 企业微信 webhook 已配置
+  [OK ] 邮箱 SMTP 授权码 已配置
+
+快速预检（关键依赖）:
+  [OK ] 代理: 127.0.0.1:7897 可连接（5 ms）
+  [OK ] 企业微信 webhook: HTTP 200（接口可达）（1280 ms）
+  [OK ] LLM API: HTTP 200（鉴权通过）（1158 ms）
+===== 2026-09-25 11:08:06.20 run ===== 
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-bat-real-root\config.yaml
+11:08:08 INFO aihot.sources: 信息源完成: qbitai，7 条（156 ms）
+11:08:08 INFO aihot.sources: 信息源完成: infoq_cn，15 条（164 ms）
+11:08:09 INFO aihot.sources: 信息源完成: theverge_ai，10 条（783 ms）
+11:08:09 INFO aihot.sources: 信息源完成: venturebeat_ai，0 条（797 ms）
+11:08:09 INFO aihot.sources: 信息源完成: techcrunch_ai，15 条（1242 ms）
+11:08:10 INFO aihot.sources: 信息源完成: hackernews，52 条（2482 ms）
+11:08:12 INFO aihot.sources: 信息源完成: openai_news，0 条（4165 ms）
+11:08:12 INFO aihot.sources: 信息源完成: deepmind_blog，1 条（3278 ms）
+11:08:12 INFO aihot.sources: 信息源完成: meta_eng，0 条（3302 ms）
+11:08:12 INFO aihot.sources: 信息源完成: anthropic_news，0 条（3628 ms）
+11:08:15 INFO aihot.sources: 信息源完成: reddit_ai，50 条（4500 ms）
+11:09:18 WARNING aihot.net: 请求最终失败: http://export.arxiv.org/api/query（ReadTimeout: The read operation timed out）
+11:09:18 WARNING aihot.sources: 信息源失败: arxiv（SourceError: 请求失败: ReadTimeout: The read operation timed out）
+
+① 采集: 11/12 源成功，抓取 150 条 → 新增 0 条
+   [ERR] arxiv: SourceError: 请求失败: ReadTimeout: The read operation timed out
+② 加工: 187 条 → 预筛保留 137 → 136 簇；LLM 批次 0（失败 0）· 成本 ¥0.0000
+③ 日报: 2026-09-25 · 精选 12 条 + 简讯 12 条 · 无综述
+④ 渲染: 长图 1 张（2026-09-25.jpg 612 KB） · 企微分片 2 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+[2026-09-25 11:09:25.24] exit=0 
+ 
+===== 2026-09-25 11:17:49.22 preflight ===== 
+aihot check · 配置与连通性自检
+配置文件: D:\信息收集整理\aihot\config.yaml
+11:17:50 INFO aihot.cli: check 通过: 启用源 12/14, wecom=True, email=True
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : D:\信息收集整理\aihot\data
+  日志目录  : D:\信息收集整理\aihot\logs
+  代理      : http://127.0.0.1:7897
+
+信息源（12/14 启用）:
+  [on ] qbitai             量子位
+  [on ] infoq_cn           InfoQ 中文
+  [on ] techcrunch_ai      TechCrunch AI
+  [on ] openai_news        OpenAI News
+  [on ] hackernews         Hacker News
+  [off] jiqizhixin         机器之心
+  [on ] theverge_ai        The Verge AI
+  [on ] venturebeat_ai     VentureBeat AI
+  [on ] deepmind_blog      Google DeepMind
+  [on ] anthropic_news     Anthropic News
+  [on ] meta_eng           Meta 工程博客
+  [on ] reddit_ai          Reddit（LocalLLaMA + MachineLearning）
+  [off] hf_papers          Hugging Face Daily Papers
+  [on ] arxiv              arXiv 论文
+
+推送通道:
+  [on ] 企业微信机器人
+  [on ] 邮件（example@qq.com）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [OK ] 企业微信 webhook 已配置
+  [OK ] 邮箱 SMTP 授权码 已配置
+
+快速预检（关键依赖）:
+  [OK ] 代理: 127.0.0.1:7897 可连接（4 ms）
+  [OK ] 企业微信 webhook: HTTP 200（接口可达）（1287 ms）
+  [OK ] LLM API: HTTP 200（鉴权通过）（1082 ms）
+===== 2026-09-25 11:17:52.48 run ===== 
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-bat-real-root\config.yaml
+11:17:54 INFO aihot.sources: 信息源完成: qbitai，7 条（131 ms）
+11:17:54 INFO aihot.sources: 信息源完成: infoq_cn，15 条（160 ms）
+11:17:55 INFO aihot.sources: 信息源完成: techcrunch_ai，15 条（1040 ms）
+11:17:55 INFO aihot.sources: 信息源完成: venturebeat_ai，0 条（1019 ms）
+11:17:55 INFO aihot.sources: 信息源完成: theverge_ai，10 条（1090 ms）
+11:17:56 INFO aihot.sources: 信息源完成: hackernews，52 条（2003 ms）
+11:17:56 INFO aihot.sources: 信息源完成: meta_eng，0 条（944 ms）
+11:17:56 INFO aihot.sources: 信息源完成: openai_news，0 条（2690 ms）
+11:17:56 INFO aihot.sources: 信息源完成: deepmind_blog，1 条（1685 ms）
+11:17:57 INFO aihot.sources: 信息源完成: anthropic_news，0 条（2037 ms）
+11:18:00 INFO aihot.sources: 信息源完成: reddit_ai，50 条（4146 ms）
+11:19:02 WARNING aihot.net: 请求最终失败: http://export.arxiv.org/api/query（ReadTimeout: The read operation timed out）
+11:19:02 WARNING aihot.sources: 信息源失败: arxiv（SourceError: 请求失败: ReadTimeout: The read operation timed out）
+
+① 采集: 11/12 源成功，抓取 150 条 → 新增 0 条
+   [ERR] arxiv: SourceError: 请求失败: ReadTimeout: The read operation timed out
+② 加工: 187 条 → 预筛保留 137 → 136 簇；LLM 批次 0（失败 0）· 成本 ¥0.0000
+③ 日报: 2026-09-25 · 精选 12 条 + 简讯 12 条 · 无综述
+④ 渲染: 长图 1 张（2026-09-25.jpg 612 KB） · 企微分片 2 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+[2026-09-25 11:19:07.73] exit=0 
+
+--- stdout ---
+
+--- stderr ---

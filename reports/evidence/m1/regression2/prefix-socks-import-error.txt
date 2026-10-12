@@ -1,0 +1,131 @@
+=== check ===
+rc=0
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-ytagf9k7\config.yaml
+21:32:09 INFO aihot.cli: check 通过: 启用源 1/1, wecom=False, email=False
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-ytagf9k7\data
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-ytagf9k7\logs
+  代理      : socks5://127.0.0.1:1080
+
+信息源（1/1 启用）:
+  [on ] good               good
+
+推送通道:
+  [off] 企业微信机器人
+  [off] 邮件（未配置）
+
+密钥状态:
+  [WARN] LLM API key 未配置（M2 加工阶段前需补齐）
+  [WARN] 企业微信 webhook 未配置（推送前需补齐）
+  [WARN] 邮箱 SMTP 授权码 未配置（邮件推送前需补齐）
+
+警告:
+  [WARN] llm.api_key 未配置：M2 加工阶段前需补齐（或设置环境变量 AIHOT_LLM_KEY）
+  [WARN] 没有启用任何推送渠道：日报将只落盘、不发送
+
+
+=== check --net ===
+rc=1
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-ytagf9k7\config.yaml
+21:32:10 INFO aihot.cli: check 通过: 启用源 1/1, wecom=False, email=False
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-ytagf9k7\data
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-ytagf9k7\logs
+  代理      : socks5://127.0.0.1:1080
+
+信息源（1/1 启用）:
+  [on ] good               good
+
+推送通道:
+  [off] 企业微信机器人
+  [off] 邮件（未配置）
+
+密钥状态:
+  [WARN] LLM API key 未配置（M2 加工阶段前需补齐）
+  [WARN] 企业微信 webhook 未配置（推送前需补齐）
+  [WARN] 邮箱 SMTP 授权码 未配置（邮件推送前需补齐）
+
+警告:
+  [WARN] llm.api_key 未配置：M2 加工阶段前需补齐（或设置环境变量 AIHOT_LLM_KEY）
+  [WARN] 没有启用任何推送渠道：日报将只落盘、不发送
+
+网络探测:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\信息收集整理\aihot\src\aihot\__main__.py", line 6, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 110, in main
+    return _cmd_check(args)
+           ^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 165, in _cmd_check
+    results = run_net_checks(cfg)
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\checks.py", line 142, in run_net_checks
+    result = probe(cfg)
+             ^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\checks.py", line 90, in probe_llm
+    response = httpx.get(
+               ^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_api.py", line 195, in get
+    return request(
+           ^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_api.py", line 102, in request
+    with Client(
+         ^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 700, in __init__
+    else self._init_proxy_transport(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 750, in _init_proxy_transport
+    return HTTPTransport(
+           ^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_transports\default.py", line 191, in __init__
+    raise ImportError(
+ImportError: Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.
+
+=== fetch --dry-run ===
+rc=1
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-ytagf9k7\config.yaml
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\信息收集整理\aihot\src\aihot\__main__.py", line 6, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 112, in main
+    return _cmd_fetch(args)
+           ^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 192, in _cmd_fetch
+    http = HttpClient(proxy=proxy, retries=2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\net.py", line 56, in __init__
+    self._client = httpx.Client(
+                   ^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 700, in __init__
+    else self._init_proxy_transport(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 750, in _init_proxy_transport
+    return HTTPTransport(
+           ^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_transports\default.py", line 191, in __init__
+    raise ImportError(
+ImportError: Using SOCKS proxy, but the 'socksio' package is not installed. Make sure to install httpx using `pip install httpx[socks]`.
+

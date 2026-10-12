@@ -1,0 +1,18 @@
+  [PASS] 5.1 主题/发件人/收件人正确: subject=AI 热点日报 · 2026-09-24 to=receiver@example.com
+  [PASS] 5.2 STARTTLS 连接 + 登录成功: auth=[{'user': 'sender@example.com', 'password_len': 14, 'tls': True}]
+  [PASS] 5.3 无内嵌图（attach_image=false）: content_types=['multipart/alternative', 'text/plain', 'text/html']
+  [PASS] 5.4 含纯文本兜底 + HTML 正文: plain='本邮件为 HTML 格式，请使用支持 HTML 的邮件客户端查看。\r\n'
+  [PASS] 5.5 multipart/related 内嵌图 cid 匹配: images=[('image/jpeg', 'digest-image-1')]
+  [PASS] 5.6 内嵌图字节与文件一致: sent=314342 file=314342
+  [PASS] 5.7 内嵌图 Content-Type 为 image/jpeg: ctype=image/jpeg filename=2026-09-24.jpg
+  [PASS] 5.8 SMTP_SSL 路径可用 + 多收件人: to=receiver@example.com, second@example.com tls=True
+  [PASS] 5.9 认证失败 → NotifyError: SMTP 连接或登录失败: SMTPAuthenticationError: (535, b'5.7.8 Authentication failed')
+  [PASS] 5.10 收件人为空 → NotifyError: 收件地址为空
+  [PASS] 5.11 连接失败 → NotifyError: SMTP 连接或登录失败: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  [PASS] 5.12 编排层：deliver_digest 邮件发送成功（0 错误）: errors=[]
+  [PASS] 5.13 编排层：主题含日报日期 + HTML 含综述与全部 Top 链接: subject=AI 热点日报 · 2026-09-24 links=16 missing=[]
+  [PASS] 5.14 编排层：attach_image=true → 内嵌图 cid 与 HTML 一致: images=1 cid=digest-image-1
+  [PASS] 5.15 编排层：attach_image=false → 无内嵌图: content_types=['multipart/alternative', 'text/plain', 'text/html']
+  [PASS] 5.16 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}
+
+== m3_email: 16 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m3\m3_email.json

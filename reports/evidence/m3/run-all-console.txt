@@ -1,0 +1,154 @@
+真实库快照（前）: {"db": {"bytes": 258048, "mtime": 1790244091.1376078, "items": 176, "enriched": 176, "runs": 5, "clusters": 101, "digests": 1}, "digests": {"2026-09-24.html": {"bytes": 17691, "mtime": 1790244091.1292517}, "2026-09-24.jpg": {"bytes": 791070, "mtime": 1790244090.593691}, "2026-09-24.md": {"bytes": 6572, "mtime": 1790244091.1272497}}}
+
+--- M3 ---
+  PASS         m3_infra_probe.py          exit=0    9/9       8.0s
+  PASS         m3_compose.py              exit=0    19/19     1.3s
+  PASS         m3_render_text.py          exit=0    23/23     1.0s
+  PASS         m3_render_image.py         exit=0    14/14     36.9s
+  PASS         m3_render_image_edges.py   exit=0    7/7       32.3s
+  FAIL(P2已知)   m3_wecom.py                exit=1    22/24     21.5s
+  PASS         m3_email.py                exit=0    16/16     14.9s
+  PASS         m3_e2e.py                  exit=0    22/22     40.0s
+  PASS         m3_degrade.py              exit=0    16/16     40.5s
+  PASS         m3_idempotent.py           exit=0    11/11     36.9s
+  FAIL(P2已知)   m3_cli.py                  exit=1    23/27     79.3s
+  PASS         m3_toolchain.py            exit=0    10/10     39.6s
+
+--- M0 ---
+  PASS         m0_blackbox.py             exit=0    105/105   115.4s
+  PASS         m0_inprocess.py            exit=0    13/13     1.6s
+  PASS         m0_secret_scan.py          exit=0    13/13     32.1s
+  FAIL         m0_yaml_error_probe.py     exit=1    5/6       5.7s
+  PASS         m0_issue_redaction_probe.py exit=0    4/4       4.0s
+  PASS         m0_round3_probe.py         exit=0    10/10     9.2s
+
+--- M1 ---
+  OBSERVE      m1_revision.py             exit=0    ?         0.4s
+  OBSERVE      m1_real_db_state.py        exit=0    ?         0.4s
+  OBSERVE      m1_recon.py                exit=0    ?         4.3s
+  FAIL         m1_acceptance.py           exit=1    18/19     51.8s
+  PASS         m1_adversarial.py          exit=0    11/11     28.1s
+  PASS         m1_url_edges.py            exit=0    4/4       2.7s
+  PASS         m1_net_store_units.py      exit=0    19/19     8.0s
+  PASS         m1_contracts.py            exit=0    6/6       7.4s
+  PASS         m1_check_net.py            exit=0    6/6       12.9s
+  PASS         m1_proxy_bad_port_repro.py exit=0    4/4       40.5s
+  PASS         m1_socks_probe.py          exit=0    4/4       22.3s
+  PASS         m1_slow_source.py          exit=0    1/1       65.3s
+  PASS         m1_perf.py                 exit=0    6/6       10.8s
+  FAIL         m1_regression.py           exit=1    8/9       212.3s
+
+--- M2 ---
+  ?            m2_prefilter.py            exit=0    ?         5.2s
+  ?            m2_dedup.py                exit=0    ?         15.3s
+  ?            m2_llm_robust.py           exit=0    ?         128.6s
+  ?            m2_cache.py                exit=1    ?         12.7s
+  ?            m2_cost.py                 exit=1    ?         11.8s
+  ?            m2_rank.py                 exit=0    ?         4.3s
+  ?            m2_cli.py                  exit=0    ?         25.9s
+  ?            m2_real_llm.py             exit=0    ?         7.6s
+  ?            m2_perf.py                 exit=0    ?         18.1s
+  ?            m2r2_d1.py                 exit=1    ?         16.2s
+  ?            m2r2_accuracy.py           exit=0    ?         3.0s
+  ?            m2r2_d2.py                 exit=0    ?         9.1s
+  ?            m2r2_p2.py                 exit=1    ?         114.4s
+  ?            m2r3_p2.py                 exit=0    ?         3.0s
+  ?            m2r3_real_db.py            exit=0    ?         0.8s
+  ?            m2_regression.py           exit=1    ?         664.6s
+
+--- INFO ---
+  INFO         m2_translation_sample.py   exit=0    -         0.2s
+  INFO         m2_dbview.py               exit=0    -         0.2s
+  INFO         m2_dedup_probe.py          exit=0    -         2.4s
+
+总脚本 51；硬失败 22；真实库未变=True
+硬失败清单:
+  - m0_yaml_error_probe.py: [PASS] bad_anchor: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True
+[FAIL] bad_alias: rc=3, leaks=['M0YAMLKEY0123456789abcdef'], partial=无, traceback=False, 隐藏提示=True
+
+== SUMMARY: 5/6 passed ==
+  - m1_revision.py:   c35572823323   16885  src\aihot\store.py
+  607fb330762b    4821  src\aihot\utils.py
+  bd089952d42b     968  pyproject.toml
+  d037065fd9ca    5403  config.example.yaml
+  - m1_real_db_state.py:   20260924T013405-eded6d ok 2026-09-24T01:34:05.009377+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 0, "skipped": []}
+  20260924T031218-cdcbf3 ok 2026-09-24T03:12:18.882606+00:00 stats={"stage": "enrich", "pending": 176, "prefilter_kept": 105, "clusters": 101, "enriched": 105, "filtered": 71, "refine_calls": 0, "refine_failed": 0, "refine_reje
+
+[evidence] D:\信息收集整理\aihot\reports\evidence\m1\real-db-readonly-state.txt
+  - m1_recon.py: techcrunch_ai   200 17552 bytes 707 ms
+openai_news     200 750033 bytes 869 ms
+hackernews      200 1007 bytes 938 ms
+[{"id": "qbitai", "status": 200, "bytes": 6735, "ms": 827}, {"id": "infoq_cn", "status": 200, "bytes": 13562, "ms": 536}, {"id": "techcrunch_ai", "status": 200, "bytes": 17552, "ms": 707}, {"id": "openai_news", "status": 200, "bytes": 750033, "ms": 869}, {"id": "hackernews", "status": 200, "bytes": 1007, "ms": 938}]
+  - m1_acceptance.py:   [PASS] 8g-非法--limit=2: --limit -1 → rc=2（期望 2）
+  [PASS] guard:real-db-untouched: 真实库快照前={'exists': 1, 'items': 176, 'unique_keys': 176, 'runs': 5} 后={'exists': 1, 'items': 176, 'unique_keys': 176, 'runs': 5}
+
+== acceptance: 18 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\acceptance.json
+  - m1_regression.py:   [PASS] 11c-m0_round3_probe.py: exit=0 SUMMARY=10/10（M0 基线 10/10，12.5s）
+  [PASS] 11d-config.example开箱校验: rc=0（期望 0）
+
+== regression: 8 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\regression.json
+  - m2_prefilter.py:   [PASS] 1i-CLI路径淘汰数与独立复算一致: CLI 标记过滤 71 条（独立复算淘汰 71 条）；enriched_at 非空 176/176
+  [PASS] 1z-真实库只读守护: items=176（测试开始时 176）
+
+== prefilter: 12 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\prefilter.json
+  - m2_dedup.py: == 真实库只读守护 ==
+  [PASS] 2z-真实库只读守护: items=176（开始时 176）
+
+== dedup: 16 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\dedup.json
+  - m2_llm_robust.py:   File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------
+  - m2_cache.py:   [PASS] 4g-dry-run 未消耗队列（随后真实运行仍加工 12 条）: rc=0，enriched_at 非空=12/12
+  [PASS] 4z-真实库只读守护: items=176（开始时 176）
+
+== cache: 7 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\cache.json
+  - m2_cost.py:   [FAIL] 5c-上限小于单批成本：仅首批执行且标记 hit: 批次=1 请求=2 成本=¥0.4（说明：上限检查在批次前，故首批必然执行；剩余条目降级不丢）
+  [PASS] 5z-真实库只读守护: items=176（开始时 176）
+
+== cost: 6 passed / 3 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\cost.json
+  - m2_rank.py:   [PASS] 6p-同分时更新的优先: 首位=new
+  [PASS] 6z-真实库只读守护: items=176（开始时 176）
+
+== rank: 17 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\rank.json
+  - m2_cli.py:   [PASS] 7d-缺失 pipeline 段可用默认值: rc=0
+  [PASS] 7z-真实库只读守护: items=176（开始时 176）
+
+== cli: 26 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\cli.json
+  - m2_real_llm.py:   [PASS] 8g-摘要非空且为中文: 摘要非空且含中文=True
+  [PASS] 8z-真实库只读守护: items=176（开始时 176）
+
+== real-llm: 7 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\real-llm.json
+  - m2_perf.py:   [PASS] 8d-max_items 截断保护（25 条库，上限 10）: 输出「待加工: 10 条（上限 10）」，库内仅前 10 条被加工
+  [PASS] 8z-真实库只读守护: items=176（开始时 176）
+
+== perf: 5 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\perf.json
+  - m2r2_d1.py:   [PASS] 1e-不相关组被拒（相似度 <55）: 相似度(1,3)=24.6（<55），accepted=[[1], [3]]
+  [PASS] 1z-真实库只读守护: items=176（开始时 176）
+
+== d1: 14 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\d1.json
+  - m2r2_accuracy.py:   [PASS] 2z-真实库只读守护: items=176（开始时 176）
+  [NOTE] 样本集：54 条 / 1431 对；真实库副本：105 条 → 101 簇
+
+== accuracy: 7 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\accuracy.json
+  - m2r2_d2.py:   [PASS] 3z-真实库 mention_count 与条目数一致: 不一致簇=无
+  [PASS] 3z-真实库只读守护（items 未变）: items=176（开始时 176）
+
+== d2: 16 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\d2.json
+  - m2r2_p2.py:   [PASS] 4d-日志记录停止原因: 日志含「已达加工时间上限」=True
+  [PASS] 4z-真实库只读守护: items=176（开始时 176）
+
+== p2: 18 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\p2.json
+  - m2r3_p2.py:   [PASS] 5b-基础计数正确（enriched=2/filtered=0）: enriched=2 filtered=0 kept=2
+  [PASS] 5z-真实库只读守护: items=176（开始时 176）
+
+== p2-supplement: 10 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\p2-supplement.json
+  - m2r3_real_db.py:   [PASS] 6c-无超大簇（旧版过度合并残留已清除）: 最大簇=3 条；单条目簇=99 个
+  [PASS] 6z-真实库只读守护: items=176
+
+== real-db: 7 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\real-db.json
+  - m2_regression.py:   [PASS] 9h-ruff/pytest 输出无真实密钥: 命中=无
+  [PASS] 9z-真实库未被测试改动: items=176 runs=5 clusters=101 max_id=176（开始时一致：True）
+
+== regression: 24 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression.json
+摘要 → D:\信息收集整理\aihot\reports\evidence\m3\run-all-summary.json

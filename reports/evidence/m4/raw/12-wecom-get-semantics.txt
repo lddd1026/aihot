@@ -1,0 +1,3 @@
+real webhook: <len=89 sha1=ea62b6f6>
+real GET  : {'status': 200, 'errcode': 93017, 'errmsg': 'invalid json request, wrong json format, hint: [1790302466199953611920851], from ip: 36.163.179.160, more info at https://open.work.weixin.qq.com/devtool/query?e=93017'}
+bogus GET : {'status': 200, 'errcode': 93000, 'errmsg': 'invalid webhook url, hint: [1790302467552653059376837], from ip: 36.163.179.160, more info at https://open.work.weixin.qq.com/devtool/query?e=93000'}

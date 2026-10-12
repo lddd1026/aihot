@@ -1,0 +1,21 @@
+  [PASS] 2.1 run_daily.bat 鏈娴嬭瘯鏀瑰姩锛坰ha256 璁板綍锛? sha256=31d0a17aa1450fe6鈥?
+  [PASS] 2.2 staged run_daily.bat 涓庣湡瀹?bat 瀛楄妭涓€鑷? C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\success\run_daily.bat
+  [PASS] 2.3 bat 閫€鍑虹爜 = 0: rc=0 (14.5s)
+  [PASS] 2.4 鏃ュ織鍚妫€ + 杩愯 + exit=0: log 娈佃惤榻愬叏
+  [PASS] 2.5 棰勬涓夐」锛堜唬鐞?浼佸井/LLM锛夊潎 OK: 棰勬鏃?ERR
+  [PASS] 2.6 dry-run 浜у嚭鏃ユ姤涓変欢濂楋紙涓嶆帹閫侊級: files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']
+  [PASS] 2.7 dry-run 鏈悜浼佸井鎺ㄩ€佷换浣曟秷鎭紙浠呮湁棰勬 GET锛? POST 娑堟伅鏁?0
+  [PASS] 2.8 棰勬澶辫触閫€鍑虹爜 = 2: rc=2
+  [PASS] 2.9 鏃ュ織鏍囪 PREFLIGHT FAILED 涓旇烦杩囪繍琛? 鏃?run 娈?
+  [PASS] 2.10 棰勬澶辫触宸插彂浼佸井鍛婅: text_requests=1
+  [FAIL] 2.11 棰勬澶辫触鍛婅鏂囨鍙锛堝惈涓枃璇存槑锛? body='???????LLM / ???? / ?? ??????????????????? logs\\run_daily.log'锛坆at 婧愭枃浠朵腑涓枃宸茶鏇挎崲涓?? 鍙凤級
+  [PASS] 2.12 棰勬澶辫触鏈骇鐢熸暟鎹洰褰?鍗婃垚鍝佹棩鎶? data-nope exists=False
+  [PASS] 2.13 鐪熷疄鏍圭洰褰?bat 鍏ㄩ摼璺?rc=0锛堢湡瀹為厤缃妫€ + 涓存椂閰嶇疆杩愯锛? rc=0 (78.7s)
+  [PASS] 2.14 鐪熷疄婧愰噰闆嗘垚鍔燂紙鈮?1/12锛屽崟婧愮灛鏃跺け璐ヨ闅旂锛? 閲囬泦=11/12锛屾柊澧?0
+  [PASS] 2.15 鐪熷疄鏍圭洰褰?bat 鏃ュ織鍐欏叆 logs\run_daily.log: log 鏈熬='鏃ユ姤: 2026-09-25 路 绮鹃€?12 鏉?+ 绠€璁?12 鏉?路 鏃犵患杩癨n鈶?娓叉煋: 闀垮浘 1 寮狅紙2026-09-25.jpg 612 KB锛?路 浼佸井鍒嗙墖 2 路 md/html 宸插瓨妗n鈶?鎺ㄩ€? 宸茶烦杩囷紙dry-run锛塡n\n鐘舵€? ok\n[2026-09-25 11:19:07.73] exit=0 \n'
+  [PASS] 2.16 YAML 璇硶鎹熷潖 鈫?rc=3 涓斾笉鎶?traceback: rc=3
+  [PASS] 2.17 缁撴瀯闈炴硶锛堟棤婧?鍧?URL/鏃?key锛夆啋 rc=3: rc=3
+  [PASS] 2.18 鐪熷疄 data/digests 鏈鏀瑰姩锛堟枃浠跺悕+澶у皬+mtime锛? digests=['2026-09-24.html', '2026-09-24.jpg', '2026-09-24.md', '2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']
+  [PASS] 2.19 鐪熷疄搴撳揩鐓у墠鍚庝竴鑷达紙bat 鍙拷鍔犳棩蹇楋級: db 蹇収涓€鑷?
+
+== m4_bat: 18 passed / 1 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_bat.json

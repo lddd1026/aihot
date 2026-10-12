@@ -1,0 +1,205 @@
+{
+  "suite": "m4_adapters",
+  "passed": 39,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "6.1 arXiv 分类参数拼接正确",
+      "ok": true,
+      "detail": "search_query='cat:cs.AI OR cat:cs.LG'"
+    },
+    {
+      "item": "6.2 arXiv 排序参数正确",
+      "ok": true,
+      "detail": "sortBy=submittedDate sortOrder=descending"
+    },
+    {
+      "item": "6.3 arXiv max_results 透传",
+      "ok": true,
+      "detail": "max_results=60"
+    },
+    {
+      "item": "6.4 arXiv 时间窗口过滤（10 天前丢弃）",
+      "ok": true,
+      "detail": "共 10 条，无 2609.09000"
+    },
+    {
+      "item": "6.5 arXiv 边界时刻（published==since）保留",
+      "ok": true,
+      "detail": "boundary=1"
+    },
+    {
+      "item": "6.6 arXiv 无 published 时回退 updated",
+      "ok": true,
+      "detail": "published_at=2026-09-24 12:00:00+00:00"
+    },
+    {
+      "item": "6.7 arXiv extra.kind=paper",
+      "ok": true,
+      "detail": "kind='paper'"
+    },
+    {
+      "item": "6.8 arXiv extra.authors/author_count",
+      "ok": true,
+      "detail": "authors=['Author 1A', 'Author 1B'] count=2"
+    },
+    {
+      "item": "6.9 arXiv extra.categories",
+      "ok": true,
+      "detail": "categories=['cs.AI', 'cs.CL']"
+    },
+    {
+      "item": "6.10 arXiv extra.arxiv_id",
+      "ok": true,
+      "detail": "arxiv_id='2609.10001v1'"
+    },
+    {
+      "item": "6.11 arXiv 摘要去除 HTML 并保留文本",
+      "ok": true,
+      "detail": "summary='Abstract 1 for independent verification.'"
+    },
+    {
+      "item": "6.12 arXiv 语言识别 en",
+      "ok": true,
+      "detail": "lang=en"
+    },
+    {
+      "item": "6.13 arXiv 请求头使用浏览器 UA",
+      "ok": true,
+      "detail": "UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64"
+    },
+    {
+      "item": "6.14 arXiv 默认分类 cs.AI/cs.CL/cs.LG",
+      "ok": true,
+      "detail": "search_query='cat:cs.AI OR cat:cs.CL OR cat:cs.LG'"
+    },
+    {
+      "item": "6.15 arXiv max_results 上限裁剪到 200",
+      "ok": true,
+      "detail": "max_results=200"
+    },
+    {
+      "item": "6.16 arXiv 空 feed 抛 SourceError",
+      "ok": true,
+      "detail": "SourceError: arXiv 返回为空（无条目）"
+    },
+    {
+      "item": "6.17 arXiv HTTP 500 抛 SourceError",
+      "ok": true,
+      "detail": "SourceError: 请求失败: HTTP 500"
+    },
+    {
+      "item": "6.18 HTML link_pattern 过滤（/blog/ 被排除）",
+      "ok": true,
+      "detail": "urls=['http://127.0.0.1:10387/news/one', 'http://127.0.0.1:10387/news/two', 'http://127.0.0.1:10387/news/nolinkselector']"
+    },
+    {
+      "item": "6.19 HTML 相对链接补全为绝对地址",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:10387/news/one"
+    },
+    {
+      "item": "6.20 HTML title_selector 命中",
+      "ok": true,
+      "detail": "title='First Story'"
+    },
+    {
+      "item": "6.21 HTML 标题回退到链接文本",
+      "ok": true,
+      "detail": "title='Second Story'"
+    },
+    {
+      "item": "6.22 HTML time_attr 解析 published_at",
+      "ok": true,
+      "detail": "published_at=2026-09-25 00:30:00+00:00"
+    },
+    {
+      "item": "6.23 HTML time 文本解析 published_at",
+      "ok": true,
+      "detail": "published_at=2026-09-25 02:00:00+00:00"
+    },
+    {
+      "item": "6.24 HTML 无链接条目被跳过",
+      "ok": true,
+      "detail": "titles=['First Story', 'Second Story', 'No link match']"
+    },
+    {
+      "item": "6.25 HTML item_selector 匹配为空抛 SourceError",
+      "ok": true,
+      "detail": "SourceError: 选择器未匹配到任何条目：article.nope"
+    },
+    {
+      "item": "6.26 HTML HTTP 404 抛 SourceError",
+      "ok": true,
+      "detail": "SourceError: 请求失败: 404"
+    },
+    {
+      "item": "6.27 HTML 缺省 time 选择器仍能解析",
+      "ok": true,
+      "detail": "items=4"
+    },
+    {
+      "item": "6.28 HF 非字典/缺字段条目不崩溃且被跳过",
+      "ok": true,
+      "detail": "items=2 titles=['HF Featured Paper', 'Upvotes as string']"
+    },
+    {
+      "item": "6.29 HF kind=paper 且 URL 正确",
+      "ok": true,
+      "detail": "kind=paper url=https://huggingface.co/papers/2609.77777"
+    },
+    {
+      "item": "6.30 HF upvotes 入 extra",
+      "ok": true,
+      "detail": "upvotes=42"
+    },
+    {
+      "item": "6.31 HF 时间用入选日而非论文投稿日",
+      "ok": true,
+      "detail": "published_at=2026-09-25 01:00:00+00:00 paper_published_at=2026-09-01T00:00:00.000Z"
+    },
+    {
+      "item": "6.32 HF upvotes 字符串转 int",
+      "ok": true,
+      "detail": "upvotes=17"
+    },
+    {
+      "item": "6.33 HF 入选日非法时回退当前时间",
+      "ok": true,
+      "detail": "published_at=2026-09-25 03:46:05.974827+00:00"
+    },
+    {
+      "item": "6.34 HF limit 参数透传（30）",
+      "ok": true,
+      "detail": "query={'limit': '30'}"
+    },
+    {
+      "item": "6.35 HF 非列表 payload 抛 SourceError",
+      "ok": true,
+      "detail": "SourceError: 响应结构异常（不是列表）"
+    },
+    {
+      "item": "6.36 HF 空列表返回空（不报错）",
+      "ok": true,
+      "detail": "items=[]"
+    },
+    {
+      "item": "6.37 HF limit 上限裁剪到 100",
+      "ok": true,
+      "detail": "query={'limit': '100'}"
+    },
+    {
+      "item": "6.38 HF HTTP 429 抛 SourceError（不再无限重试）",
+      "ok": true,
+      "detail": "SourceError: 请求失败: HTTP 429"
+    },
+    {
+      "item": "6.39 HF 适配器请求头 UA 为浏览器 UA",
+      "ok": true,
+      "detail": "UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64"
+    }
+  ],
+  "notes": [
+    "link_selector 匹配为空会抛 SourceError: link_selector 未匹配到任何链接：a.no-such-class"
+  ]
+}

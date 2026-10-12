@@ -1,0 +1,51 @@
+$ python -m aihot check --quick --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-wecom-json-array\config.yaml
+exit=1 (1.5s)
+--- stdout ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-wecom-json-array\config.yaml
+11:41:35 INFO aihot.cli: check 通过: 启用源 1/1, wecom=True, email=False
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-wecom-json-array\data
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-wecom-json-array\logs
+  代理      : 未启用
+
+信息源（1/1 启用）:
+  [on ] qbitai             量子位
+
+推送通道:
+  [on ] 企业微信机器人
+  [off] 邮件（sender@example.com）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [OK ] 企业微信 webhook 已配置
+  [OK ] 邮箱 SMTP 授权码 已配置
+
+快速预检（关键依赖）:
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\信息收集整理\aihot\src\aihot\__main__.py", line 6, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 167, in main
+    return handler(args)
+           ^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 232, in _cmd_check
+    results = run_quick_checks(cfg)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\checks.py", line 182, in run_quick_checks
+    result = probe(cfg)
+             ^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\checks.py", line 92, in probe_wecom
+    errcode = int(body.get("errcode") or 0)
+                  ^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'

@@ -1,0 +1,6 @@
+$ python -m aihot alert --message M4-独立告警哨兵-20260925 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-alert-errcode\config.yaml
+exit=1 (1.1s)
+--- stdout ---
+[ERR] 告警发送失败: 文本消息发送失败: errcode=93000 errmsg=invalid webhook key
+
+--- stderr ---

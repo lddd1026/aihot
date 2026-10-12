@@ -1,0 +1,13 @@
+  [PASS] adv-空feed: rc=0 落库=1（空源应计 0 条且不失败）
+  [PASS] adv-非法XML/HTML/空响应/断连: rc=0 4 个坏源全部 [ERR] 且好源落库 1 条
+  [PASS] adv-超大feed(4000条): rc=0 落库=4000 唯一=4000 feed=1233KB 耗时=3.9s
+  [PASS] adv-不可达域名: rc=0 坏源隔离，好源落库=1
+  [PASS] adv-HN缺少hits/非对象响应: rc=0 两类坏响应均被隔离为失败
+  [PASS] adv-HN字段缺失容错+extra热度信号: rc=0 落库标题=['hn-complete', 'hn-created-at-i', 'hn-no-url-nor-objectid'] points=42 comments=7
+  [PASS] adv-URL规范化(utm/锚点/大小写/尾斜杠/默认端口/多参数排序): 落库 5 条 URL=['http://example.com/Plain', 'https://example.com/Article?a=1&b=2', 'https://example.com/Path', 'https://example.com/Secure', 'https://example.com/a%20b']
+  [PASS] adv-缺title/link/date+坏日期+HTML清洗: rc=0 保留=['bad-date', 'future', 'html-title', 'no-date'] 丢弃=3条 无日期条目落库为当前时间=True script清洗后摘要='visible text'
+  [PASS] adv-SQL注入式标题/emoji/超长标题: rc=0 落库=3条 items表仍在=True 最长标题=1000字符（100k 原标题被 clean_html 截断为 1000）
+  [PASS] adv-同源内重复条目(尾斜杠/大小写/锚点)去重: 3 条重复链接落库=1 条，保留 URL=https://dups.example/x
+  [PASS] adv-GBK编码源中文不乱码: rc=0 落库标题=['中文标题测试']
+
+== adversarial: 11 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\adversarial.json

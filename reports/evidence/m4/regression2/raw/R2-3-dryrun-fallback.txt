@@ -1,0 +1,15 @@
+$ python -m aihot run --dry-run --top 3 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-dryrun-fallback\config.yaml
+exit=0 (9.0s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-dryrun-fallback\config.yaml
+11:42:06 INFO aihot.sources: 信息源完成: fake_feed，1 条（36 ms）
+
+① 采集: 1/1 源成功，抓取 1 条 → 新增 0 条
+③ 日报: 2026-09-25 · 精选 3 条 + 简讯 4 条 · 综述 93 字
+④ 渲染: 长图 1 张（2026-09-25.jpg 155 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+
+--- stderr ---

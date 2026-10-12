@@ -1,0 +1,26 @@
+ 
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-bat-real-root\config.yaml
+11:08:08 INFO aihot.sources: 信息源完成: qbitai，7 条（156 ms）
+11:08:08 INFO aihot.sources: 信息源完成: infoq_cn，15 条（164 ms）
+11:08:09 INFO aihot.sources: 信息源完成: theverge_ai，10 条（783 ms）
+11:08:09 INFO aihot.sources: 信息源完成: venturebeat_ai，0 条（797 ms）
+11:08:09 INFO aihot.sources: 信息源完成: techcrunch_ai，15 条（1242 ms）
+11:08:10 INFO aihot.sources: 信息源完成: hackernews，52 条（2482 ms）
+11:08:12 INFO aihot.sources: 信息源完成: openai_news，0 条（4165 ms）
+11:08:12 INFO aihot.sources: 信息源完成: deepmind_blog，1 条（3278 ms）
+11:08:12 INFO aihot.sources: 信息源完成: meta_eng，0 条（3302 ms）
+11:08:12 INFO aihot.sources: 信息源完成: anthropic_news，0 条（3628 ms）
+11:08:15 INFO aihot.sources: 信息源完成: reddit_ai，50 条（4500 ms）
+11:09:18 WARNING aihot.net: 请求最终失败: http://export.arxiv.org/api/query（ReadTimeout: The read operation timed out）
+11:09:18 WARNING aihot.sources: 信息源失败: arxiv（SourceError: 请求失败: ReadTimeout: The read operation timed out）
+
+① 采集: 11/12 源成功，抓取 150 条 → 新增 0 条
+   [ERR] arxiv: SourceError: 请求失败: ReadTimeout: The read operation timed out
+② 加工: 187 条 → 预筛保留 137 → 136 簇；LLM 批次 0（失败 0）· 成本 ¥0.0000
+③ 日报: 2026-09-25 · 精选 12 条 + 简讯 12 条 · 无综述
+④ 渲染: 长图 1 张（2026-09-25.jpg 612 KB） · 企微分片 2 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+[2026-09-25 11:09:25.24] exit=0 

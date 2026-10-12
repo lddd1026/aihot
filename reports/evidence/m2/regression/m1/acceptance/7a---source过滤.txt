@@ -1,0 +1,13 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t5-pu3gz6q3\config.yaml
+12:09:25 INFO aihot.sources: 信息源完成: s1，2 条（42 ms）
+12:09:25 INFO aihot.sources: 信息源完成: s3，1 条（43 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:09:23+08:00）
+信息源  : 2 个
+
+采集结果:
+  [OK ] s1                 2 条（42 ms）
+  [OK ] s3                 1 条（43 ms）
+
+合计: 抓取 3 条 → 新增 3 条（去重 0 条）→ 库内共 3 条

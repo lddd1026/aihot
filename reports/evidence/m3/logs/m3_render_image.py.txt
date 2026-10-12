@@ -1,0 +1,13 @@
+  [PASS] 3.1 常规日报产出 1 张图: paths=['2026-09-24.jpg'] (4.9s)
+  [PASS] 3.2 JPEG 格式与宽度 1080px: width=1080 height=3795 bytes=494115
+  [PASS] 3.3 体积 ≤ 2MB: bytes=494115 (483 KB)
+  [PASS] 3.4 真实 2MB 阈值下：超长日报（50 条）自动拆成 2 张且各张合规: paths=['2026-09-24-1.jpg', '2026-09-24-2.jpg'] sizes=[1973468, 1861017] (15.5s)
+图片体积超限，尝试下一套方案: 2026-09-24.jpg 超过 2048 KB
+Traceback (most recent call last):
+  File "D:\信息收集整理\aihot\tests\independent\m3_render_image.py", line 329, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\tests\independent\m3_render_image.py", line 156, in main
+    mega_views_top, mega_views_briefs = build_views(mega_digest)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

@@ -1,0 +1,18 @@
+  [PASS] 5.0 staged run_daily.bat 与项目 bat 字节一致（sha256 记录）: sha256=355bca17b30a2b9e…
+  [PASS] 5.1 预检致命项失败时 bat 退出码=2: rc=2（6.4s）
+  [PASS] 5.2 bat 未进入 run 段，且标记 PREFLIGHT FAILED: 无 run 段
+  [PASS] 5.3 runs 表出现 status='skipped' 记录: skipped 行数=1；全部状态=['skipped']
+  [PASS] 5.4 跳过记录含跳过原因（stage_stats.reason）: {"stage": "skip", "reason": "preflight failed: LLM or WeCom unreachable. Today's digest was skipped. See logs\\run_daily.log"}
+  [PASS] 5.5 告警已尝试发送：本地假 SMTP 收到跳过告警（含原因）: messages=1
+  [PASS] 5.6 跳过后没有产生日报半成品（无 digests 产物）: digests=[]
+  [PASS] 5.6b 邮件送达成功时不应同时写本地 ALERTS.log: ALERTS.log exists=False
+  [PASS] 5.7 告警通道全灭时 bat 仍不进入 run 段（rc=2）: rc=2
+  [PASS] 5.8 跳过后告警降级写本地 logs/ALERTS.log（绝不静默）: ALERTS.log 存在=True；内容="[2026-10-12T11:45:53+08:00] 今日运行已跳过\n  - preflight failed: LLM or WeCom unreachable. Today's digest was skipped. See logs\\run_daily.log\n  - 详情见 logs\\ru"
+  [PASS] 5.9 告警全灭时跳过记录仍写入 runs 表（skipped + 原因）: 状态=['skipped']
+  [PASS] 5.10 配置损坏时 bat 仍跳过运行（rc=2，无 run 段）: rc=2
+  [PASS] 5.11 配置损坏时跳过原因兜底写入 logs/ALERTS.log: 内容="[2026-10-12T11:45:55] 跳过运行（配置不可用）\n  - preflight failed: LLM or WeCom unreachable. Today's digest was skipped. See logs\\run_daily.log\n"
+  [PASS] 5.12 真实库/存档未被本套件改动: 真实库快照一致
+
+== m5r_skip: 14 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m5r\round2\m5r_skip.json
+
+--- stderr ---

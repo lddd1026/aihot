@@ -1,0 +1,41 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\perf-real\config.yaml --limit 400 --top 5
+exit=0 (8.4s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\perf-real\config.yaml
+
+待加工: 363 条（上限 400）
+
+预筛:
+  输入 363 → 保留 242（垃圾 11 · 与 AI 无关 110 · 批内重复 0）
+    [与 AI 无关] GitLab Outage
+    [与 AI 无关] Back and shoulder surgery is often worse than …
+    [垃圾内容] Bring your co-founder, partner, or colleague a…
+    [垃圾内容] Meet the next wave of VCs judging Startup Batt…
+
+聚类: 242 条 → 237 簇（多源簇 2 · 最大簇 3 条）
+
+Top 5:
+   1. [ 64.6] (模型发布) 中文标题 15
+      一句话摘要
+      提及 2 条 · 来源 1 家
+   2. [ 64.3] (模型发布) 中文标题 5
+      一句话摘要
+      提及 3 条 · 来源 3 家
+   3. [ 62.7] (模型发布) 中文标题 2
+      一句话摘要
+      提及 3 条 · 来源 2 家
+   4. [ 61.9] (模型发布) 中文标题 6
+      一句话摘要
+      提及 1 条 · 来源 1 家
+   5. [ 61.4] (模型发布) 中文标题 5
+      一句话摘要
+      提及 1 条 · 来源 1 家
+
+今日综述: {"items": []}
+
+LLM: 批次 16（失败 0）· token 136000+25500 · 成本约 ¥0.4760
+
+已写回: 242 条加工 · 121 条标记为过滤
+
+--- stderr ---

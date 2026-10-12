@@ -1,0 +1,122 @@
+{
+  "suite": "m4r2_fixes",
+  "passed": 20,
+  "failed": 2,
+  "checks": [
+    {
+      "item": "R2-1.1 假企微 errcode=93000 → check rc=1 且提示 key 失效",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "R2-1.2 探测只发 GET，未向 webhook POST 任何消息",
+      "ok": true,
+      "detail": "POST 记录=0"
+    },
+    {
+      "item": "R2-1.3 假企微 errcode=93017 → check rc=0（key 有效，GET 体非法属预期）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "R2-1.4 假企微 errcode=0 → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "R2-1.5 企微响应非 JSON → 保守判定可达（rc=0）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "R2-1.6 企微返回 JSON 数组（畸形体）→ 不裸 traceback",
+      "ok": false,
+      "detail": "rc=1 traceback=True"
+    },
+    {
+      "item": "R2-1.7 真实 qyapi + 假 key → rc=1（上轮 P1-1 复现用例已转绿）",
+      "ok": true,
+      "detail": "rc=1；webhook=<len=89 sha1=5157c92e>"
+    },
+    {
+      "item": "R2-1.8 真实 qyapi + 真实 key → rc=0（GET 仅探测，未发消息）",
+      "ok": true,
+      "detail": "rc=0；webhook=<len=89 sha1=ea62b6f6>"
+    },
+    {
+      "item": "R2-2.1 RenderError → status=failed + 企微告警（含「渲染失败」）",
+      "ok": true,
+      "detail": "status=failed alerts=1 errors=['渲染失败: R2 独立测试：模拟渲染失败']"
+    },
+    {
+      "item": "R2-2.2 长图降级（image_error）→ 期望有告警（信息项）",
+      "ok": false,
+      "detail": "status=partial errors=['长图渲染失败（已降级文字）: R2 独立测试：模拟长图失败'] 新告警=0"
+    },
+    {
+      "item": "R2-2.3 存档异常 → 编排层兜底（输出运行摘要、status=failed、无未捕获崩溃）",
+      "ok": true,
+      "detail": "rc=1（traceback 仅出现在 logger.exception 日志中）"
+    },
+    {
+      "item": "R2-2.4 存档异常 → 企微收到「生成异常」告警",
+      "ok": true,
+      "detail": "新告警=1"
+    },
+    {
+      "item": "R2-2.5 存档异常 → runs 记录为 failed（不再误记 ok）",
+      "ok": true,
+      "detail": "run_status=failed"
+    },
+    {
+      "item": "R2-3.1 run_daily.bat 全 ASCII 且 CRLF",
+      "ok": true,
+      "detail": "bytes=1188 crlf=31"
+    },
+    {
+      "item": "R2-3.2 预检失败 rc=2 且告警文案为可读英文（无 ? 乱码）",
+      "ok": true,
+      "detail": "rc=2；body=\"Daily preflight FAILED (LLM / WeCom / proxy unreachable). Today's digest was skipped. See logs\\\\run_daily.log\""
+    },
+    {
+      "item": "R2-3.3 arxiv 探测自动补 search_query/max_results 且判定 OK",
+      "ok": true,
+      "detail": "results=[('源 arxiv', True, 'HTTP 200（探测）')] query={'search_query': 'cat:cs.AI', 'max_results': '1'}"
+    },
+    {
+      "item": "R2-3.4 真实 arxiv 探测不再因缺参数误报（成功或受限流，不出现 400）",
+      "ok": true,
+      "detail": "探测行='[ERR] 源 arxiv: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)（2094 ms）'"
+    },
+    {
+      "item": "R2-3.5 run --dry-run 无新条目 → 回落到库内已加工条目（精选 3 条）",
+      "ok": true,
+      "detail": [
+        "③ 日报: 2026-09-25 · 精选 3 条 + 简讯 4 条 · 综述 93 字"
+      ]
+    },
+    {
+      "item": "R2-3.6 回落日报内容来自数据库（md 存档含种子标题）",
+      "ok": true,
+      "detail": "files=['2026-09-25.md']"
+    },
+    {
+      "item": "R2-3.7 分片触顶时末片含可见省略提示",
+      "ok": true,
+      "detail": "parts=10 末片提示=True"
+    },
+    {
+      "item": "R2-3.8 加提示后每片仍 ≤4096 字节",
+      "ok": true,
+      "detail": "max=3928 sizes=[3093, 3855, 3855, 3855, 3855, 3855, 3855, 3855, 3855, 3928]"
+    },
+    {
+      "item": "R2-3.9 link_selector 零匹配 → 抛 SourceError",
+      "ok": true,
+      "detail": "SourceError: link_selector 未匹配到任何链接：a.no-such"
+    }
+  ],
+  "notes": [
+    "真实 arxiv 探测：rc=1 '[ERR] 源 arxiv: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)（2094 ms）'（如遇 429 属远端限流）"
+  ]
+}

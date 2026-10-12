@@ -1,0 +1,78 @@
+{
+  "suite": "m4_alert",
+  "passed": 12,
+  "failed": 2,
+  "checks": [
+    {
+      "item": "4.1 alert 发送成功 rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "4.2 收到 msgtype=text 告警消息",
+      "ok": true,
+      "detail": "text_requests=1"
+    },
+    {
+      "item": "4.3 告警正文含哨兵文本与告警标识",
+      "ok": true,
+      "detail": "content='⚠️ aihot 告警\\nM4-独立告警哨兵-20260925'"
+    },
+    {
+      "item": "4.4 告警未走 markdown（msgtype 正确）",
+      "ok": true,
+      "detail": "markdown=0"
+    },
+    {
+      "item": "4.5 企微未启用时 alert rc=1 且提示明确",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "4.6 企微 errcode 非 0 时 alert rc=1",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "4.7 推送失败 run 不崩溃（rc=0/partial）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "4.8 推送失败触发了 runner._alert 文本告警",
+      "ok": true,
+      "detail": "alert_texts=1"
+    },
+    {
+      "item": "4.9 告警正文含错误明细",
+      "ok": true,
+      "detail": "⚠️ aihot 告警：日报推送失败\n- 企业微信图片(2026-09-25.jpg): 图片消息（2026-09-25.jpg）发送失败: errcode=93000 errmsg=invalid webhook key\n- 企业微信文字"
+    },
+    {
+      "item": "4.10 渲染失败 outcome.status=failed",
+      "ok": true,
+      "detail": "status=failed"
+    },
+    {
+      "item": "4.11 渲染失败触发 runner._alert（期望符合「失败必有告警」）",
+      "ok": false,
+      "detail": "alert_texts=0；details=['渲染失败: 独立测试：模拟渲染失败']"
+    },
+    {
+      "item": "4.12 finally 仍写入 failed run 记录",
+      "ok": true,
+      "detail": "failed_runs=1"
+    },
+    {
+      "item": "4.13 长图降级（partial）是否告警（期望「渲染失败需告警」）",
+      "ok": false,
+      "detail": "status=partial errors=['长图渲染失败（已降级文字）: 独立测试：模拟长图失败'] alerts=0"
+    },
+    {
+      "item": "4.14 本套件未改动真实库/存档",
+      "ok": true,
+      "detail": "真实库快照前后一致"
+    }
+  ],
+  "notes": []
+}

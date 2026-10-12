@@ -1,0 +1,33 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-perf-pwe3_yvv\config.yaml
+12:18:41 INFO aihot.sources: 信息源完成: qbitai，7 条（128 ms）
+12:18:41 INFO aihot.sources: 信息源完成: infoq_cn，15 条（157 ms）
+12:18:42 INFO aihot.sources: 信息源完成: techcrunch_ai，15 条（1243 ms）
+12:18:42 INFO aihot.sources: 信息源完成: theverge_ai，10 条（1305 ms）
+12:18:42 INFO aihot.sources: 信息源完成: openai_news，0 条（1457 ms）
+12:18:42 INFO aihot.sources: 信息源完成: venturebeat_ai，0 条（1313 ms）
+12:18:42 INFO aihot.sources: 信息源完成: hackernews，52 条（1802 ms）
+12:18:43 INFO aihot.sources: 信息源完成: deepmind_blog，1 条（1243 ms）
+12:18:43 INFO aihot.sources: 信息源完成: meta_eng，0 条（1224 ms）
+12:18:43 INFO aihot.sources: 信息源完成: anthropic_news，0 条（1296 ms）
+12:18:46 INFO aihot.sources: 信息源完成: arxiv，60 条（3497 ms）
+12:18:55 INFO aihot.sources: 信息源完成: reddit_ai，50 条（12440 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:18:39+08:00）
+信息源  : 12 个
+
+采集结果:
+  [OK ] anthropic_news     0 条（1296 ms）
+  [OK ] arxiv              60 条（3497 ms）
+  [OK ] deepmind_blog      1 条（1243 ms）
+  [OK ] hackernews         52 条（1802 ms）
+  [OK ] infoq_cn           15 条（157 ms）
+  [OK ] meta_eng           0 条（1224 ms）
+  [OK ] openai_news        0 条（1457 ms）
+  [OK ] qbitai             7 条（128 ms）
+  [OK ] reddit_ai          50 条（12440 ms）
+  [OK ] techcrunch_ai      15 条（1243 ms）
+  [OK ] theverge_ai        10 条（1305 ms）
+  [OK ] venturebeat_ai     0 条（1313 ms）
+
+合计: 抓取 210 条 → 新增 77 条（去重 133 条）→ 库内共 210 条

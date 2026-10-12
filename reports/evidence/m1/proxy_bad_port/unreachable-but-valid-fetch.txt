@@ -1,0 +1,18 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-proxy-qy92740u\config-unreachable-but-valid.yaml --dry-run
+exit=1 (0.6s)
+--- stdout ---
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\信息收集整理\aihot\src\aihot\__main__.py", line 3, in <module>
+    from aihot.cli import main
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 19, in <module>
+    from aihot.sources import build_adapters, collect_all
+  File "D:\信息收集整理\aihot\src\aihot\sources\__init__.py", line 3, in <module>
+    from aihot.sources.base import SourceAdapter, SourceError
+  File "D:\信息收集整理\aihot\src\aihot\sources\base.py", line 15, in <module>
+    logger = logging.getLogger("aihot.sources")
+             ^^^^^^^
+NameError: name 'logging' is not defined. Did you forget to import 'logging'?

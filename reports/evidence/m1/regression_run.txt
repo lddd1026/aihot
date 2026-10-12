@@ -1,0 +1,12 @@
+  [NOTE] M1 前旧证据快照: D:\信息收集整理\aihot\reports\evidence\m1\regression\pre-m1-snapshot（已存在则跳过）
+  [PASS] 11a-ruff零告警: exit=0（0.2s）输出='All checks passed!'
+  [PASS] 11b-pytest全绿: exit=0 passed=102 failed=0 errors=0（2.3s）
+  [FAIL] 11c-m0_blackbox.py: exit=1 SUMMARY=104/105（M0 基线 105/105，93.3s） 新增失败=['net-proxy-bad-port']
+  [PASS] 11c-m0_inprocess.py: exit=0 SUMMARY=13/13（M0 基线 13/13，1.7s）
+  [PASS] 11c-m0_secret_scan.py: exit=0 SUMMARY=13/13（M0 基线 13/13，18.1s）
+  [PASS] 11c-m0_yaml_error_probe.py: exit=1 SUMMARY=5/6（M0 基线 5/6，4.3s） M0 已接受遗留=['bad_alias']
+  [PASS] 11c-m0_issue_redaction_probe.py: exit=1 SUMMARY=3/4（M0 基线 3/4，3.0s） M0 已接受遗留=['webhook_in_proxy_url']
+  [PASS] 11c-m0_round3_probe.py: exit=0 SUMMARY=10/10（M0 基线 10/10，7.2s）
+  [PASS] 11d-config.example开箱校验: rc=0（期望 0）
+
+== regression: 8 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\regression.json

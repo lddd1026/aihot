@@ -1,0 +1,18 @@
+  [PASS] 4.1 alert 鍙戦€佹垚鍔?rc=0: rc=0
+  [PASS] 4.2 鏀跺埌 msgtype=text 鍛婅娑堟伅: text_requests=1
+  [PASS] 4.3 鍛婅姝ｆ枃鍚摠鍏垫枃鏈笌鍛婅鏍囪瘑: content='鈿狅笍 aihot 鍛婅\nM4-鐙珛鍛婅鍝ㄥ叺-20260925'
+  [PASS] 4.4 鍛婅鏈蛋 markdown锛坢sgtype 姝ｇ‘锛? markdown=0
+  [PASS] 4.5 浼佸井鏈惎鐢ㄦ椂 alert rc=1 涓旀彁绀烘槑纭? rc=1
+  [PASS] 4.6 浼佸井 errcode 闈?0 鏃?alert rc=1: rc=1
+  [PASS] 4.7 鎺ㄩ€佸け璐?run 涓嶅穿婧冿紙rc=0/partial锛? rc=0
+  [PASS] 4.8 鎺ㄩ€佸け璐ヨЕ鍙戜簡 runner._alert 鏂囨湰鍛婅: alert_texts=1
+  [PASS] 4.9 鍛婅姝ｆ枃鍚敊璇槑缁? 鈿狅笍 aihot 鍛婅锛氭棩鎶ユ帹閫佸け璐?
+- 浼佷笟寰俊鍥剧墖(2026-09-25.jpg): 鍥剧墖娑堟伅锛?026-09-25.jpg锛夊彂閫佸け璐? errcode=93000 errmsg=invalid webhook key
+- 浼佷笟寰俊鏂囧瓧
+  [PASS] 4.10 娓叉煋澶辫触 outcome.status=failed: status=failed
+  [FAIL] 4.11 娓叉煋澶辫触瑙﹀彂 runner._alert锛堟湡鏈涚鍚堛€屽け璐ュ繀鏈夊憡璀︺€嶏級: alert_texts=0锛沝etails=['娓叉煋澶辫触: 鐙珛娴嬭瘯锛氭ā鎷熸覆鏌撳け璐?]
+  [PASS] 4.12 finally 浠嶅啓鍏?failed run 璁板綍: failed_runs=1
+  [FAIL] 4.13 闀垮浘闄嶇骇锛坧artial锛夋槸鍚﹀憡璀︼紙鏈熸湜銆屾覆鏌撳け璐ラ渶鍛婅銆嶏級: status=partial errors=['闀垮浘娓叉煋澶辫触锛堝凡闄嶇骇鏂囧瓧锛? 鐙珛娴嬭瘯锛氭ā鎷熼暱鍥惧け璐?] alerts=0
+  [PASS] 4.14 鏈浠舵湭鏀瑰姩鐪熷疄搴?瀛樻。: 鐪熷疄搴撳揩鐓у墠鍚庝竴鑷?
+
+== m4_alert: 12 passed / 2 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_alert.json

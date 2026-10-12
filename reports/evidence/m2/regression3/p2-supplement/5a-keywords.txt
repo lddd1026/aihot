@@ -1,0 +1,34 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r3-p2-5a\config.yaml --limit 20 --top 1
+exit=0 (0.8s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r3-p2-5a\config.yaml
+
+待加工: 6 条（上限 20）
+
+预筛:
+  输入 6 → 保留 5（垃圾 0 · 与 AI 无关 1 · 批内重复 0）
+    [与 AI 无关] Rust 1.99 released with faster builds
+
+聚类: 5 条 → 4 簇（多源簇 0 · 最大簇 2 条）
+
+Top 1:
+   1. [ 29.8] (其他) Intel launches new NPUs for laptops
+      提及 2 条 · 来源 1 家
+
+已写回: 5 条加工 · 1 条标记为过滤 · 4 个事件簇
+
+--- stderr ---
+
+{
+  "kept": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "dropped": [
+    "5"
+  ]
+}

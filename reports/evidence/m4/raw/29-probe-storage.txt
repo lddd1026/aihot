@@ -1,0 +1,4 @@
+  [FAIL] 瀛樻。鐩爣琚枃浠跺崰鐢細鏃犺８ traceback: rc=1 traceback=True
+  [FAIL] 瀛樻。寮傚父鏃舵湁浼佸井鍛婅: text_requests=0
+
+== m4_probe_storage_error: 0 passed / 2 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_probe_storage_error.json

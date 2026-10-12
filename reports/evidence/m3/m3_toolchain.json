@@ -1,0 +1,58 @@
+{
+  "suite": "m3_toolchain",
+  "passed": 9,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "9.1 ruff check . → exit 0（零告警）",
+      "ok": true,
+      "detail": "exit=0 stdout='All checks passed!'"
+    },
+    {
+      "item": "9.2 pytest 全绿（记录实际通过数）",
+      "ok": true,
+      "detail": "exit=0 323 passed in 34.60s"
+    },
+    {
+      "item": "9.3 pytest 通过数与开发者声明（293）一致",
+      "ok": false,
+      "detail": "实际 passed=323 期望=293"
+    },
+    {
+      "item": "9.4 真实配置三项密钥均已配置（扫描前提成立）",
+      "ok": true,
+      "detail": "配置齐全={'llm.api_key': True, 'wecom.webhook': True, 'email.password': True}"
+    },
+    {
+      "item": "9.5 真实密钥未出现在 M3 证据/日志中",
+      "ok": true,
+      "detail": "hits={'llm.api_key': 0, 'wecom.webhook': 0, 'email.password': 0}"
+    },
+    {
+      "item": "9.6 扫描器正向对照（能命中证据中的假密钥，证明扫描有效）",
+      "ok": true,
+      "detail": "control_hits={'sk-fake-000000000000': 4, 'fake-auth-code': 4, 'fake-key-123456': 4}"
+    },
+    {
+      "item": "9.7 邮件授权码未出现在任何 M3 证据/控制台样本",
+      "ok": true,
+      "detail": "hits=0"
+    },
+    {
+      "item": "9.8 config.example.yaml 密钥字段为空（LLM key/webhook/password）",
+      "ok": true,
+      "detail": "三个字段均为空"
+    },
+    {
+      "item": "9.9 真实库与 data/digests 未改动（快照一致）",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2} digests=6 个文件"
+    },
+    {
+      "item": "9.10 check 输出不泄漏假密钥（正向对照）",
+      "ok": true,
+      "detail": "rc=0"
+    }
+  ],
+  "notes": []
+}

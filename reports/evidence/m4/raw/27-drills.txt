@@ -1,0 +1,22 @@
+  [PASS] 9.1 閮ㄥ垎婧愬け璐ワ細run rc=0 涓旇緭鍑烘樉绀?1/2 婧愭垚鍔? rc=0
+  [PASS] 9.2 閮ㄥ垎婧愬け璐ワ細鏃ユ姤涓変欢濂楀凡浜у嚭: files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']
+  [PASS] 9.3 閮ㄥ垎婧愬け璐ワ細鍥?+ markdown 鍧囨帹閫佹垚鍔? markdown=1 image=1
+  [PASS] 9.4 閮ㄥ垎婧愬け璐ワ細runs 琛?run=ok / fetch=partial: run=ok fetch=partial
+  [PASS] 9.5 閮ㄥ垎婧愬け璐ユ湭瑙﹀彂澶辫触鍛婅: text=0
+  [PASS] 9.6 鍏ㄩ儴婧愬け璐ワ細rc=1 涓旂姸鎬?failed: rc=1
+  [PASS] 9.7 鍏ㄩ儴婧愬け璐ワ細鍙戝嚭浼佸井鍛婅涓斿惈鍘熷洜: text=1
+  [PASS] 9.8 鍏ㄩ儴婧愬け璐ワ細鏈帹浠讳綍鏃ユ姤锛堝浘/markdown 鍧囦负 0锛? markdown=0 image=0
+  [PASS] 9.9 鍏ㄩ儴婧愬け璐ワ細鏈骇鐢熷崐鎴愬搧鏃ユ姤涓?digests 琛? digests_dir=False
+  [PASS] 9.10 鍏ㄩ儴婧愬け璐ワ細LLM 鏈璋冪敤锛堝け璐ュ嵆姝級: llm_calls=0
+  [PASS] 9.11 鏂綉锛堟簮涓嶅彲杈撅級锛歳c=1銆佺姸鎬?failed銆佸彂鍑哄憡璀? rc=1 text=1
+  [PASS] 9.11b 鏂綉锛氭湭鎺ㄧ┖鏃ユ姤: markdown=0 image=0
+  [PASS] 9.12 LLM key 澶辨晥锛氶檷绾ц繍琛屼笉宕╂簝锛坮c=0锛? rc=0
+  [PASS] 9.13 LLM key 澶辨晥锛氭壒娆″け璐ュ彲瑙佷笖鏉＄洰鎸夊師鏂囬檷绾? 鎵规澶辫触鏄剧ず=鏄紱markdown 鍚師鏂囨爣棰?鏄?
+  [PASS] 9.14 LLM key 澶辨晥锛氭棩鎶ヤ粛瀹屾暣钀界洏锛堜笁浠跺锛? files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']
+  [NOTE] LLM 鍏ㄥけ璐ユ椂 enrich 杩愯璁板綍 status=failed锛坮un 璁板綍涓?ok锛?
+  [PASS] 9.15 閰嶇疆鎹熷潖锛歳c=3 涓旀棤 traceback: rc=3
+  [PASS] 9.16 閰嶇疆鎹熷潖锛氭湭瑙︾缃戠粶锛坵ebhook 0 璇锋眰锛? requests=0
+  [PASS] 9.17 閰嶇疆鎹熷潖锛氭湭浜х敓鏁版嵁鐩綍/鏃ユ姤: data 涓嶅瓨鍦?
+  [PASS] 9.18 鍏ㄩ儴婕旂粌鏈敼鍔ㄧ湡瀹炲簱/瀛樻。: 鐪熷疄鐘舵€佷竴鑷?
+
+== m4_drills: 19 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_drills.json

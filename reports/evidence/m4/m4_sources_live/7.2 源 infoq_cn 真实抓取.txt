@@ -1,0 +1,17 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: D:\信息收集整理\aihot\config.yaml
+11:09:39 INFO aihot.sources: 信息源完成: infoq_cn，15 条（177 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:09:37+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] infoq_cn           15 条（177 ms）
+
+合计: 抓取 15 条（dry-run，不写库）
+
+最新条目预览（前 2 条）:
+   1. [infoq_cn] 每周下载量约 16 万，仍处 Alpha 的 TanStack Charts 为什么火了？
+      https://www.infoq.cn/article/OUcL9autU0dg1BIt6bib（09-25 18:10）
+   2. [infoq_cn] 当 Vibe Coding 撞上企业级现实：真实工程中的 AI 效能之路｜QCon上海
+      https://www.infoq.cn/article/QQk3wiolU1VScH3u0P7T（09-25 18:00）

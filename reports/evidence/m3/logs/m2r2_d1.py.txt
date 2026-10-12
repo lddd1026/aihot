@@ -1,0 +1,26 @@
+== 1a 默认配置（llm_refine 缺省） ==
+  [FAIL] 1a-默认配置不调用 LLM 精修: rc=0，LLM 请求=2（仅 1 次条目加工），输出含「LLM 精修后」=False
+  [PASS] 1a-runs 记录 refine_calls=0（默认关闭）: refine_calls=0 refine_rejected=0
+  [PASS] 1a-零合并（10 条 → 10 簇）: 簇数=10，逐簇条目数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+== 1b high 置信度但互不相关 ==
+  [PASS] 1b-规则拆散（10 条 → 10 簇，零合并）: 簇数=10，逐簇条目数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  [PASS] 1b-refine_rejected>0 且计入 runs: refine_calls=1 refine_rejected=1
+  [PASS] 1b-日志/输出可见拒绝原因: stdout/log 含「聚类精修被规则拒绝」=True
+
+== 1c medium 置信度 ==
+  [PASS] 1c-medium 不合并且 refine_rejected=0: 簇数=10，refine_calls=1，refine_rejected=0
+
+== 1d 真正相关的组 ==
+  [PASS] 1d-规则层本不合并（相似度在 55~88 之间）: 规则层聚类=聚类: 2 条 → 2 簇（期望 2 条 → 2 簇）
+  [PASS] 1d-精修正常合并为 1 簇（mention=2）: 簇数=1，clusters=[{'cluster_id': 1, 'mention_count': 2, 'items': 2}]
+  [PASS] 1d-本次无规则拒绝: refine_calls=1 refine_rejected=0
+
+== 1e 模块级校验 ==
+  [PASS] 1e-混合组拆成连通分量: accepted=[[1, 2], [3]] rejections=['组内缺少相似链（3 条 → 拆为 2 组）: OpenAI 发布 GPT-6 Sol 模型']
+  [PASS] 1e-单组超过 4 条直接拆散: accepted=[[1], [4], [5], [6], [2]]（5 组）rejections=['分组过大（5 条 > 4）: OpenAI 发布 GPT-6 Sol 模型']
+  [PASS] 1e-相关组放行（相似度 ≥55）: accepted=[[1, 2], [5]] rejections=[]；相似度(1,2)=94.4
+  [PASS] 1e-不相关组被拒（相似度 <55）: 相似度(1,3)=24.6（<55），accepted=[[1], [3]]
+  [PASS] 1z-真实库只读守护: items=363（开始时 363）
+
+== d1: 14 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\d1.json

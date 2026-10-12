@@ -1,0 +1,161 @@
+{
+  "db": "D:\\信息收集整理\\aihot\\data\\aihot.db",
+  "items_count": 176,
+  "clusters_count": 64,
+  "digests_count": 0,
+  "runs_count": 4,
+  "enriched": 176,
+  "pending": 0,
+  "by_source": [
+    {
+      "source_id": "hackernews",
+      "n": 105
+    },
+    {
+      "source_id": "infoq_cn",
+      "n": 23
+    },
+    {
+      "source_id": "openai_news",
+      "n": 10
+    },
+    {
+      "source_id": "qbitai",
+      "n": 11
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "n": 27
+    }
+  ],
+  "by_category": [
+    {
+      "category": "过滤",
+      "n": 72
+    },
+    {
+      "category": "行业动态",
+      "n": 38
+    },
+    {
+      "category": "模型发布",
+      "n": 18
+    },
+    {
+      "category": "产品更新",
+      "n": 16
+    },
+    {
+      "category": "开源工具",
+      "n": 8
+    },
+    {
+      "category": "其他",
+      "n": 8
+    },
+    {
+      "category": "政策监管",
+      "n": 6
+    },
+    {
+      "category": "融资商业",
+      "n": 5
+    },
+    {
+      "category": "研究突破",
+      "n": 5
+    }
+  ],
+  "clusters_top": [
+    {
+      "cluster_id": 7,
+      "mention_count": 11,
+      "source_ids": "[\"hackernews\", \"openai_news\", \"techcrunch_ai\"]",
+      "canonical_title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005"
+    },
+    {
+      "cluster_id": 4,
+      "mention_count": 8,
+      "source_ids": "[\"hackernews\", \"infoq_cn\", \"qbitai\", \"techcrunch_ai\"]",
+      "canonical_title": "Jev Can't Be Calibrated"
+    },
+    {
+      "cluster_id": 1,
+      "mention_count": 4,
+      "source_ids": "[\"hackernews\", \"techcrunch_ai\"]",
+      "canonical_title": "ArXiv receives multiyear commitments to support it as an independent nonprofit"
+    },
+    {
+      "cluster_id": 17,
+      "mention_count": 4,
+      "source_ids": "[\"hackernews\", \"infoq_cn\", \"techcrunch_ai\"]",
+      "canonical_title": "Claude Opus 5.5"
+    },
+    {
+      "cluster_id": 6,
+      "mention_count": 3,
+      "source_ids": "[\"hackernews\"]",
+      "canonical_title": "The Economics of Open-Weight Inference"
+    },
+    {
+      "cluster_id": 15,
+      "mention_count": 3,
+      "source_ids": "[\"hackernews\", \"techcrunch_ai\"]",
+      "canonical_title": "16-bit Intel 8088 chip (c. 1985)"
+    },
+    {
+      "cluster_id": 2,
+      "mention_count": 2,
+      "source_ids": "[\"hackernews\", \"infoq_cn\"]",
+      "canonical_title": "Netflix 重构 Conductor，以支持每月 4.2 亿次的工作流执行以及 10 倍规模的工作流"
+    },
+    {
+      "cluster_id": 3,
+      "mention_count": 2,
+      "source_ids": "[\"hackernews\"]",
+      "canonical_title": "Show HN: Training a model to identify AI web content from structure alone"
+    },
+    {
+      "cluster_id": 5,
+      "mention_count": 2,
+      "source_ids": "[\"hackernews\", \"infoq_cn\"]",
+      "canonical_title": "People Training OpenAI's AI Fired for Using AI to Train the AI"
+    },
+    {
+      "cluster_id": 8,
+      "mention_count": 2,
+      "source_ids": "[\"hackernews\"]",
+      "canonical_title": "Stanford R&DE Uses AI to Race Swap Students for Advertising"
+    },
+    {
+      "cluster_id": 9,
+      "mention_count": 2,
+      "source_ids": "[\"infoq_cn\"]",
+      "canonical_title": "AI Coding 贡献率超 90%，需求交付却只快了 10%：菜鸟如何用 Agent 托管端到端交付？"
+    },
+    {
+      "cluster_id": 10,
+      "mention_count": 2,
+      "source_ids": "[\"infoq_cn\"]",
+      "canonical_title": "从 AI 工具到经营智能体：快手分销增长 Agent 实践"
+    },
+    {
+      "cluster_id": 11,
+      "mention_count": 2,
+      "source_ids": "[\"hackernews\", \"techcrunch_ai\"]",
+      "canonical_title": "AstroForge is putting AI in command of its next spacecraft"
+    },
+    {
+      "cluster_id": 12,
+      "mention_count": 2,
+      "source_ids": "[\"hackernews\", \"infoq_cn\"]",
+      "canonical_title": "Vacate a drone restriction that criminalized recording immigration agents"
+    },
+    {
+      "cluster_id": 13,
+      "mention_count": 2,
+      "source_ids": "[\"infoq_cn\"]",
+      "canonical_title": "Meta 开源 Astryx：面向 Agent 的 React 设计系统"
+    }
+  ]
+}

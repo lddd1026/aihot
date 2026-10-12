@@ -1,0 +1,147 @@
+{
+  "suite": "m3_cli",
+  "passed": 27,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "8.1 根 --help → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.1 run --help → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.1 preview --help → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.1 resend --help → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.1 version → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.1 check（临时配置） → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.2 run --top -1 → rc=2 且无 traceback",
+      "ok": true,
+      "detail": "rc=2 stderr_head=['usage: aihot run [-h] [--dry-run] [--no-llm] [--no-image] [--top TOP]']"
+    },
+    {
+      "item": "8.2 run --top abc → rc=2 且无 traceback",
+      "ok": true,
+      "detail": "rc=2 stderr_head=['usage: aihot run [-h] [--dry-run] [--no-llm] [--no-image] [--top TOP]']"
+    },
+    {
+      "item": "8.2 run 未知选项 → rc=2 且无 traceback",
+      "ok": true,
+      "detail": "rc=2 stderr_head=['usage: aihot [-h] [--config CONFIG] [--debug] [--version] 命令 ...']"
+    },
+    {
+      "item": "8.2 resend --channel bogus → rc=2 且无 traceback",
+      "ok": true,
+      "detail": "rc=2 stderr_head=['usage: aihot resend [-h] [--date YYYY-MM-DD] [--channel {all,wecom,email}]']"
+    },
+    {
+      "item": "8.2 未知子命令 → rc=2 且无 traceback",
+      "ok": true,
+      "detail": "rc=2 stderr_head=['usage: aihot [-h] [--config CONFIG] [--debug] [--version] 命令 ...']"
+    },
+    {
+      "item": "8.3 preview --date not-a-date：不崩溃且给出可操作错误",
+      "ok": true,
+      "detail": "rc=1 traceback=False stderr_head=[]"
+    },
+    {
+      "item": "8.4 preview --date 2026-13-45：不崩溃且给出可操作错误",
+      "ok": true,
+      "detail": "rc=1 traceback=False"
+    },
+    {
+      "item": "8.3 resend --date not-a-date：不崩溃且给出可操作错误",
+      "ok": true,
+      "detail": "rc=1 traceback=False stderr_head=[]"
+    },
+    {
+      "item": "8.4 resend --date 2026-13-45：不崩溃且给出可操作错误",
+      "ok": true,
+      "detail": "rc=1 traceback=False"
+    },
+    {
+      "item": "8.5 配置缺失 → rc=3 且无 traceback",
+      "ok": true,
+      "detail": "rc=3"
+    },
+    {
+      "item": "8.6 preview 无存档日期：改用库内数据重新组装（rc=0，不崩溃）",
+      "ok": true,
+      "detail": "rc=0 提示=True"
+    },
+    {
+      "item": "8.7 preview 默认日期：rc=0 且展示三件套文件",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.8 run --no-image：纯文字渲染（无 jpg，md/html 正常）",
+      "ok": true,
+      "detail": "rc=0 files=['2026-09-25.html', '2026-09-25.md']"
+    },
+    {
+      "item": "8.9 run --top 3：日报精选 3 条",
+      "ok": true,
+      "detail": [
+        "③ 日报: 2026-09-25 · 精选 3 条 + 简讯 4 条 · 无综述"
+      ]
+    },
+    {
+      "item": "8.10 run --top 0：回退配置 top_n=5",
+      "ok": true,
+      "detail": [
+        "③ 日报: 2026-09-25 · 精选 5 条 + 简讯 2 条 · 无综述"
+      ]
+    },
+    {
+      "item": "8.11 --config 在前 → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.11 --debug 在后 → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "8.12 resend --channel wecom（无存档）→ rc=1 且提示明确",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "8.12 resend --channel email（无存档）→ rc=1 且提示明确",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "8.12 resend --channel all（无存档）→ rc=1 且提示明确",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "8.13 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}"
+    }
+  ],
+  "notes": []
+}

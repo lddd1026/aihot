@@ -1,0 +1,16 @@
+[
+  {
+    "source_id": "jiqizhixin",
+    "mode": "in-process(disabled)",
+    "ok": false,
+    "count": 0,
+    "detail": "SourceError: 选择器未匹配到任何条目：li, article"
+  },
+  {
+    "source_id": "hf_papers",
+    "mode": "in-process(disabled)",
+    "ok": false,
+    "count": 0,
+    "detail": "SourceError: 请求失败: HTTP 429"
+  }
+]

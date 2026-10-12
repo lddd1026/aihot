@@ -1,0 +1,20 @@
+[
+  {
+    "cluster_id": 8,
+    "members": [
+      "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+      "Claude Opus 5.5",
+      "Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 GPT-6 Astra 便宜 80%"
+    ],
+    "verdict": "合理（同一发布事件：3 家来源）"
+  },
+  {
+    "cluster_id": 79,
+    "members": [
+      "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
+      "Introducing GPT-6 Sol and Luna",
+      "GPT-6 Sol and Luna"
+    ],
+    "verdict": "合理（同一发布事件：3 家来源）"
+  }
+]

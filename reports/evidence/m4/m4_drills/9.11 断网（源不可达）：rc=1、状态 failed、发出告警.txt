@@ -1,0 +1,17 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-offline\config.yaml
+exit=1 (4.3s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-offline\config.yaml
+11:07:16 WARNING aihot.net: 请求最终失败: http://offline.invalid/feed（ConnectError: [Errno 11001] getaddrinfo failed）
+11:07:16 WARNING aihot.sources: 信息源失败: offline_source（SourceError: 请求失败: ConnectError: [Errno 11001] getaddrinfo failed）
+11:07:16 INFO aihot.delivery.wecom: 文本消息已发送（请求体 111 字节）
+
+① 采集: 0/1 源成功，抓取 0 条 → 新增 0 条
+   [ERR] offline_source: SourceError: 请求失败: ConnectError: [Errno 11001] getaddrinfo failed
+
+  [WARN] 全部信息源采集失败
+
+状态: failed
+
+--- stderr ---

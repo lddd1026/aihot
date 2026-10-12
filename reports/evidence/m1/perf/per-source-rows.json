@@ -1,0 +1,27 @@
+[
+  {
+    "source_id": "arxiv",
+    "n": 60,
+    "oldest": "2026-09-24T16:11:21+00:00"
+  },
+  {
+    "source_id": "deepmind_blog",
+    "n": 1,
+    "oldest": "2026-09-24T16:20:39+00:00"
+  },
+  {
+    "source_id": "infoq_cn",
+    "n": 15,
+    "oldest": "2026-09-24T09:05:00+00:00"
+  },
+  {
+    "source_id": "qbitai",
+    "n": 7,
+    "oldest": "2026-09-24T05:19:55+00:00"
+  },
+  {
+    "source_id": "reddit_ai",
+    "n": 50,
+    "oldest": "2026-09-24T16:11:15+00:00"
+  }
+]

@@ -1,0 +1,15 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\idempotent\config.yaml --dry-run
+exit=0 (8.1s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\idempotent\config.yaml
+11:38:02 INFO aihot.sources: 信息源完成: fake_feed，10 条（31 ms）
+
+① 采集: 1/1 源成功，抓取 10 条 → 新增 0 条
+③ 日报: 2026-09-25 · 精选 10 条 + 简讯 0 条 · 综述 93 字
+④ 渲染: 长图 1 张（2026-09-25.jpg 385 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+
+--- stderr ---

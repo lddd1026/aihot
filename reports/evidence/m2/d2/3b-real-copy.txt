@@ -1,0 +1,52 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3b\config.yaml --limit 20 --top 1
+exit=0 (1.0s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3b\config.yaml
+
+待加工: 20 条（上限 20）
+
+预筛:
+  输入 20 → 保留 10（垃圾 1 · 与 AI 无关 9 · 批内重复 0）
+    [与 AI 无关] GitLab Outage
+    [与 AI 无关] Back and shoulder surgery is often worse than …
+    [垃圾内容] Bring your co-founder, partner, or colleague a…
+
+聚类: 10 条 → 10 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 33.1] (其他) Show HN: Koi.rest – watch some fish and regain your balanc…
+      Hi there. My name is Paul. I’m a developer, an explorer and I’ve got ADH…
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 0（失败 0）· token 0+0 · 成本约 ¥0.0000
+
+已写回: 10 条加工 · 10 条标记为过滤
+
+--- stderr ---
+
+
+{
+  "before": {
+    "count": 101,
+    "max_id": 101
+  },
+  "after": {
+    "count": 111,
+    "max_id": 111,
+    "new_ids": [
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111
+    ]
+  },
+  "mismatched": [],
+  "dangling": []
+}

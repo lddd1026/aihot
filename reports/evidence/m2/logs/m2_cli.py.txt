@@ -1,0 +1,34 @@
+  [PASS] 7a-免费可用（rc=0、零 LLM 调用、未写库）: rc=0，LLM 请求=0，enriched_at 非空=0
+  [PASS] 7a-输出含预筛与聚类统计: stdout 含预筛/聚类/Top 段落
+  [PASS] 7a-no-llm 指向不可达 LLM 也能跑（零调用）: rc=0（--no-llm 不触碰 LLM 端点，指向 127.0.0.1:1 仍成功）
+  [PASS] 7b-非法参数 --limit -1 → rc=2: rc=2（期望 2）：          [--config CONFIG] [--debug]
+aihot enrich: error: argument --limit: 不能为负数，实际: -1
+  [PASS] 7b-非法参数 --top -1 → rc=2: rc=2（期望 2）：            [--config CONFIG] [--debug]
+aihot enrich: error: argument --top: 不能为负数，实际: -1
+  [PASS] 7b-非法参数 --limit abc → rc=2: rc=2（期望 2）：       [--config CONFIG] [--debug]
+aihot enrich: error: argument --limit: 必须是整数，实际: 'abc'
+  [PASS] 7b-非法参数 --top abc → rc=2: rc=2（期望 2）：         [--config CONFIG] [--debug]
+aihot enrich: error: argument --top: 必须是整数，实际: 'abc'
+  [PASS] 7b-非法参数 --limit 1.5 → rc=2: rc=2（期望 2）：       [--config CONFIG] [--debug]
+aihot enrich: error: argument --limit: 必须是整数，实际: '1.5'
+  [PASS] 7b-非法参数 --top 1e9 → rc=2: rc=2（期望 2）：         [--config CONFIG] [--debug]
+aihot enrich: error: argument --top: 必须是整数，实际: '1e9'
+  [PASS] 7b-边界值 --limit 0/--top 0 合法: rc=0（limit 0=用配置上限，top 0=不打印）
+  [PASS] 7c-gate_sources 非列表 → rc=3: rc=3（期望 3）
+  [PASS] 7c-title_similarity=-1 → rc=3: rc=3（期望 3）
+  [PASS] 7c-title_similarity=101 → rc=3: rc=3（期望 3）
+  [PASS] 7c-title_similarity=abc → rc=3: rc=3（期望 3）
+  [PASS] 7c-max_hours_apart=0 → rc=3: rc=3（期望 3）
+  [PASS] 7c-max_hours_apart=721 → rc=3: rc=3（期望 3）
+  [PASS] 7c-llm_refine='false' 字符串 → rc=3: rc=3（期望 3）
+  [PASS] 7c-enrich.max_items=0 → rc=3: rc=3（期望 3）
+  [PASS] 7c-enrich.max_items=2001 → rc=3: rc=3（期望 3）
+  [PASS] 7c-price_input=-1 → rc=3: rc=3（期望 3）
+  [PASS] 7c-price_output=10001 → rc=3: rc=3（期望 3）
+  [PASS] 7c-interest_bonus 非映射 → rc=3: rc=3（期望 3）
+  [PASS] 7c-interest_bonus 值非数字 → rc=3: rc=3（期望 3）
+  [PASS] 7c-合法边界值通过（rc=0）: 4 组边界配置 rc=[0, 0, 0, 0]
+  [PASS] 7d-缺失 pipeline 段可用默认值: rc=0
+  [PASS] 7z-真实库只读守护: items=176（开始时 176）
+
+== cli: 26 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\cli.json

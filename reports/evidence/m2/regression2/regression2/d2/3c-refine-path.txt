@@ -1,0 +1,103 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3c\config.yaml --limit 20 --top 1
+exit=0 (0.7s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3c\config.yaml
+
+待加工: 6 条（上限 20）
+
+预筛:
+  输入 6 → 保留 6（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 6 条 → 6 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 26.5] (其他) Anthropic releases Claude Opus 6
+      summary 1
+      提及 1 条 · 来源 1 家
+
+已写回: 6 条加工 · 0 条标记为过滤 · 6 个事件簇
+
+--- stderr ---
+
+
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3c\config.yaml --limit 20 --top 1
+exit=0 (2.8s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3c\config.yaml
+
+待加工: 4 条（上限 20）
+
+预筛:
+  输入 4 → 保留 4（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 4 条 → 4 簇（多源簇 0 · 最大簇 1 条）
+11:07:59 INFO aihot.enrich: 聚类精修完成: 4 → 3 簇（跨源簇 1）
+  LLM 精修后: 3 簇
+
+Top 1:
+   1. [ 44.2] (行业动态) 中文标题 3
+      摘要
+      提及 2 条 · 来源 2 家
+
+LLM: 批次 1（失败 0）· token 200+100 · 成本约 ¥0.0012
+
+已写回: 4 条加工 · 0 条标记为过滤 · 3 个事件簇
+
+--- stderr ---
+
+
+{
+  "first": {
+    "cluster_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "max_id": 6,
+    "count": 6,
+    "dangling": [],
+    "mismatched": []
+  },
+  "after": {
+    "cluster_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "max_id": 6,
+    "count": 6,
+    "dangling": [],
+    "mismatched": [
+      {
+        "cluster_id": 1,
+        "mention_count": 1,
+        "items": 2
+      },
+      {
+        "cluster_id": 2,
+        "mention_count": 1,
+        "items": 2
+      },
+      {
+        "cluster_id": 3,
+        "mention_count": 2,
+        "items": 3
+      }
+    ]
+  },
+  "new_assign": {
+    "https://example.com/r2d2/7": 2,
+    "https://example.com/r2d2/8": 1,
+    "https://example.com/r2d2/rel-1": 3,
+    "https://example.com/r2d2/rel-2": 3
+  },
+  "listing_used_global_ids": true
+}

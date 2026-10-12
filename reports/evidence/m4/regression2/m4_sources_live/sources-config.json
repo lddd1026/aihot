@@ -1,0 +1,100 @@
+[
+  {
+    "id": "qbitai",
+    "name": "量子位",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://www.qbitai.com/feed"
+  },
+  {
+    "id": "infoq_cn",
+    "name": "InfoQ 中文",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://www.infoq.cn/feed"
+  },
+  {
+    "id": "techcrunch_ai",
+    "name": "TechCrunch AI",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://techcrunch.com/category/artificial-intelligence/feed/"
+  },
+  {
+    "id": "openai_news",
+    "name": "OpenAI News",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://openai.com/news/rss.xml"
+  },
+  {
+    "id": "hackernews",
+    "name": "Hacker News",
+    "type": "hackernews",
+    "enabled": true,
+    "url": "https://hn.algolia.com/api/v1/search_by_date"
+  },
+  {
+    "id": "jiqizhixin",
+    "name": "机器之心",
+    "type": "html",
+    "enabled": false,
+    "url": "https://www.jiqizhixin.com/"
+  },
+  {
+    "id": "theverge_ai",
+    "name": "The Verge AI",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+  },
+  {
+    "id": "venturebeat_ai",
+    "name": "VentureBeat AI",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://venturebeat.com/category/ai/feed/"
+  },
+  {
+    "id": "deepmind_blog",
+    "name": "Google DeepMind",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://deepmind.google/blog/rss.xml"
+  },
+  {
+    "id": "anthropic_news",
+    "name": "Anthropic News",
+    "type": "html",
+    "enabled": true,
+    "url": "https://www.anthropic.com/news"
+  },
+  {
+    "id": "meta_eng",
+    "name": "Meta 工程博客",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://engineering.fb.com/feed/"
+  },
+  {
+    "id": "reddit_ai",
+    "name": "Reddit（LocalLLaMA + MachineLearning）",
+    "type": "rss",
+    "enabled": true,
+    "url": "https://www.reddit.com/r/LocalLLaMA+MachineLearning/new/.rss?limit=50"
+  },
+  {
+    "id": "hf_papers",
+    "name": "Hugging Face Daily Papers",
+    "type": "hf_papers",
+    "enabled": false,
+    "url": "https://huggingface.co/api/daily_papers"
+  },
+  {
+    "id": "arxiv",
+    "name": "arXiv 论文",
+    "type": "arxiv",
+    "enabled": true,
+    "url": "http://export.arxiv.org/api/query"
+  }
+]

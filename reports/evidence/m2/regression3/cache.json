@@ -1,0 +1,48 @@
+{
+  "suite": "cache",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "4a-首轮加工并调用 LLM",
+      "ok": true,
+      "detail": "rc=0，LLM 请求=2（期望 2 批）"
+    },
+    {
+      "item": "4b-队列清空",
+      "ok": true,
+      "detail": "enriched_at 非空=12/12（10 加工 + 2 过滤标记）"
+    },
+    {
+      "item": "4c-第二轮零 LLM 调用",
+      "ok": true,
+      "detail": "第二轮 LLM 请求=0，输出含「没有待加工的条目」=True"
+    },
+    {
+      "item": "4d-预筛淘汰条目已标记且不回队",
+      "ok": true,
+      "detail": "过滤条目=['hire', 'offtopic']；第二轮输出无任何 LLM 调用（见 4c）"
+    },
+    {
+      "item": "4e-dry-run 不写库",
+      "ok": true,
+      "detail": "rc=0；items 前后一致=True；clusters 0→0；dry-run 仍调用 LLM 2 次（未写库）"
+    },
+    {
+      "item": "4f-dry-run 输出声明",
+      "ok": true,
+      "detail": "输出含「（dry-run，未写库）」"
+    },
+    {
+      "item": "4g-dry-run 未消耗队列（随后真实运行仍加工 12 条）",
+      "ok": true,
+      "detail": "rc=0，enriched_at 非空=12/12"
+    },
+    {
+      "item": "4z-真实库只读守护",
+      "ok": true,
+      "detail": "items=176（开始时 176）"
+    }
+  ],
+  "notes": []
+}

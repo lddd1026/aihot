@@ -1,0 +1,14 @@
+# 行尾策略
+* text=auto
+
+# 字节敏感脚本：原样存储，不做任何转换
+# - run_daily.bat 必须 ASCII + CRLF（cmd.exe 兼容）
+# - scripts/*.ps1 必须 UTF-8 BOM（Windows 任务计划兼容）
+*.bat -text
+*.ps1 -text
+
+# 二进制
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.db   binary

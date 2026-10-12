@@ -1,0 +1,103 @@
+{
+  "suite": "acceptance",
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "1-单源失败隔离",
+      "ok": true,
+      "detail": "rc=0 库内=3 runs.status=partial sources_ok/failed=2/1"
+    },
+    {
+      "item": "2-连跑3次幂等",
+      "ok": true,
+      "detail": "新增序列=[3, 0, 0] 库内序列=[3, 3, 3] 唯一键=3 runs=3"
+    },
+    {
+      "item": "3-时间窗口",
+      "ok": true,
+      "detail": "窗口1h: 4条✓；窗口24h: 6条✓；窗口168h: 7条✓；默认窗口✓"
+    },
+    {
+      "item": "6-dry-run不写库",
+      "ok": true,
+      "detail": "dry-run 前=0/runs=0 后=0/runs=0；随后真实运行落库=2 runs=1"
+    },
+    {
+      "item": "7a---source过滤",
+      "ok": true,
+      "detail": "rc=0 落库源=['s1', 's3'] 条数=3"
+    },
+    {
+      "item": "7b---source未知ID",
+      "ok": true,
+      "detail": "rc=1（期望 1）"
+    },
+    {
+      "item": "5c-同URL跨源不覆盖",
+      "ok": true,
+      "detail": "全量落库=5（唯一=5）同一URL行数=2"
+    },
+    {
+      "item": "5a-四张表",
+      "ok": true,
+      "detail": "tables=['clusters', 'digests', 'items', 'runs', 'sqlite_sequence']"
+    },
+    {
+      "item": "5b-字段完整+extra合法JSON",
+      "ok": true,
+      "detail": "检查 5 行，问题 0 个"
+    },
+    {
+      "item": "5c-url_hash与URL一致",
+      "ok": true,
+      "detail": "不一致行: 无"
+    },
+    {
+      "item": "5d-UNIQUE(source_id,url_hash)生效",
+      "ok": true,
+      "detail": "唯一索引列=[('source_id', 'url_hash')] 重复插入被拒=True"
+    },
+    {
+      "item": "8a-全部源失败=1",
+      "ok": true,
+      "detail": "rc=1 runs.status=failed"
+    },
+    {
+      "item": "8b-配置错误=3",
+      "ok": true,
+      "detail": "缺失配置 rc=3，坏 YAML rc=3（期望均 3）"
+    },
+    {
+      "item": "8c-用法错误=2",
+      "ok": true,
+      "detail": "未知参数 rc=2，非法取值 rc=2，未知命令 rc=2（期望均 2）"
+    },
+    {
+      "item": "8d-无启用源=1",
+      "ok": true,
+      "detail": "rc=1（期望 1）"
+    },
+    {
+      "item": "8e-dry-run全部失败=1",
+      "ok": true,
+      "detail": "rc=1（期望 1）"
+    },
+    {
+      "item": "8f-非法--window-hours=2",
+      "ok": true,
+      "detail": "0/-5/169/abc 的 rc={'0': 2, '-5': 2, '169': 2, 'abc': 2}（期望均 2）"
+    },
+    {
+      "item": "8g-非法--limit=2",
+      "ok": true,
+      "detail": "--limit -1 → rc=2（期望 2）"
+    },
+    {
+      "item": "guard:real-db-untouched",
+      "ok": true,
+      "detail": "真实库快照前={'exists': 1, 'items': 106, 'unique_keys': 106, 'runs': 2} 后={'exists': 1, 'items': 106, 'unique_keys': 106, 'runs': 2}"
+    }
+  ],
+  "notes": []
+}

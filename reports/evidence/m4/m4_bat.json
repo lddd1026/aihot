@@ -1,0 +1,103 @@
+{
+  "suite": "m4_bat",
+  "passed": 18,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "2.1 run_daily.bat 未被测试改动（sha256 记录）",
+      "ok": true,
+      "detail": "sha256=31d0a17aa1450fe6…"
+    },
+    {
+      "item": "2.2 staged run_daily.bat 与真实 bat 字节一致",
+      "ok": true,
+      "detail": "C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m3-tests\\m4-bat\\success\\run_daily.bat"
+    },
+    {
+      "item": "2.3 bat 退出码 = 0",
+      "ok": true,
+      "detail": "rc=0 (14.5s)"
+    },
+    {
+      "item": "2.4 日志含预检 + 运行 + exit=0",
+      "ok": true,
+      "detail": "log 段落齐全"
+    },
+    {
+      "item": "2.5 预检三项（代理/企微/LLM）均 OK",
+      "ok": true,
+      "detail": "预检无 ERR"
+    },
+    {
+      "item": "2.6 dry-run 产出日报三件套（不推送）",
+      "ok": true,
+      "detail": "files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']"
+    },
+    {
+      "item": "2.7 dry-run 未向企微推送任何消息（仅有预检 GET）",
+      "ok": true,
+      "detail": "POST 消息数=0"
+    },
+    {
+      "item": "2.8 预检失败退出码 = 2",
+      "ok": true,
+      "detail": "rc=2"
+    },
+    {
+      "item": "2.9 日志标记 PREFLIGHT FAILED 且跳过运行",
+      "ok": true,
+      "detail": "无 run 段"
+    },
+    {
+      "item": "2.10 预检失败已发企微告警",
+      "ok": true,
+      "detail": "text_requests=1"
+    },
+    {
+      "item": "2.11 预检失败告警文案可读（含中文说明）",
+      "ok": false,
+      "detail": "body='???????LLM / ???? / ?? ??????????????????? logs\\\\run_daily.log'（bat 源文件中中文已被替换为 ? 号）"
+    },
+    {
+      "item": "2.12 预检失败未产生数据目录/半成品日报",
+      "ok": true,
+      "detail": "data-nope exists=False"
+    },
+    {
+      "item": "2.13 真实根目录 bat 全链路 rc=0（真实配置预检 + 临时配置运行）",
+      "ok": true,
+      "detail": "rc=0 (78.7s)"
+    },
+    {
+      "item": "2.14 真实源采集成功（≥11/12，单源瞬时失败被隔离）",
+      "ok": true,
+      "detail": "采集=11/12，新增=0"
+    },
+    {
+      "item": "2.15 真实根目录 bat 日志写入 logs\\run_daily.log",
+      "ok": true,
+      "detail": "log 末尾='日报: 2026-09-25 · 精选 12 条 + 简讯 12 条 · 无综述\\n④ 渲染: 长图 1 张（2026-09-25.jpg 612 KB） · 企微分片 2 · md/html 已存档\\n⑤ 推送: 已跳过（dry-run）\\n\\n状态: ok\\n[2026-09-25 11:19:07.73] exit=0 \\n'"
+    },
+    {
+      "item": "2.16 YAML 语法损坏 → rc=3 且不抛 traceback",
+      "ok": true,
+      "detail": "rc=3"
+    },
+    {
+      "item": "2.17 结构非法（无源/坏 URL/无 key）→ rc=3",
+      "ok": true,
+      "detail": "rc=3"
+    },
+    {
+      "item": "2.18 真实 data/digests 未被改动（文件名+大小+mtime）",
+      "ok": true,
+      "detail": "digests=['2026-09-24.html', '2026-09-24.jpg', '2026-09-24.md', '2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']"
+    },
+    {
+      "item": "2.19 真实库快照前后一致（bat 只追加日志）",
+      "ok": true,
+      "detail": "db 快照一致"
+    }
+  ],
+  "notes": []
+}

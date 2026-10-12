@@ -1,0 +1,5 @@
+{
+  "normal": "https://ok.example/normal",
+  "protocol-relative": "http://cdn.example/asset",
+  "relative": "http://127.0.0.1:1628/relative/path"
+}

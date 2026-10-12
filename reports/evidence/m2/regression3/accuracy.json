@@ -1,0 +1,47 @@
+{
+  "suite": "accuracy",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "2a-默认配置对级准确率 ≥90%",
+      "ok": true,
+      "detail": "样本 54 条 / 1431 对：accuracy=99.79%，precision=100.0%，recall=87.5%（TP=21 FP=0 FN=3 TN=1407）"
+    },
+    {
+      "item": "2a-9 组近重复全部合并",
+      "ok": true,
+      "detail": "未合并=[]"
+    },
+    {
+      "item": "2a-24 条独立事件无跨事件合并（除已知 P2-2 型）",
+      "ok": true,
+      "detail": "FP 对数=[]（若为 Meta Llama-4/5 属已知 P2-2）"
+    },
+    {
+      "item": "2a-无超大簇（≤4 条）",
+      "ok": true,
+      "detail": "最大簇=3 条"
+    },
+    {
+      "item": "2b-真实库副本（默认配置）多条目簇人工复核",
+      "ok": true,
+      "detail": "105 条 → 101 簇；多条目簇 2 个（cluster 8: Claude Opus 5.5 Intelligence, Performanc / Claude Opus 5.5 / Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 ；cluster 79: OpenAI launches GPT-6 Sol and Luna, boas / Introducing GPT-6 Sol and Luna / GPT-6 Sol and Luna），成员均同属一个事件"
+    },
+    {
+      "item": "2b-真实库副本无超大簇/无跨事件合并",
+      "ok": true,
+      "detail": "最大簇=3 条"
+    },
+    {
+      "item": "2z-真实库只读守护",
+      "ok": true,
+      "detail": "items=176（开始时 176）"
+    }
+  ],
+  "notes": [
+    "改写措辞组（默认规则层预期不合并，属召回缺口）: {\"p01\": false, \"p02\": false, \"p03\": false}",
+    "真实库副本多条目簇正类对数=6",
+    "样本集：54 条 / 1431 对；真实库副本：105 条 → 101 簇"
+  ]
+}

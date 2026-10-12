@@ -1,0 +1,276 @@
+{
+  "items": [
+    {
+      "title": "DeepSeek 发布 V5 模型，推理成本下降一半",
+      "truth": "g01"
+    },
+    {
+      "title": "DeepSeek 发布 V5 模型，推理成本下降一半（更新）",
+      "truth": "g01"
+    },
+    {
+      "title": "DeepSeek 发布 V5 模型，推理成本下降一半 | 量子位",
+      "truth": "g01"
+    },
+    {
+      "title": "Anthropic 发布 Claude Opus 6，价格更低",
+      "truth": "g02"
+    },
+    {
+      "title": "Anthropic 发布 Claude Opus 6，价格更低（附评测）",
+      "truth": "g02"
+    },
+    {
+      "title": "Anthropic 发布 Claude Opus 6，价格更低 | TechCrunch",
+      "truth": "g02"
+    },
+    {
+      "title": "马斯克宣布 xAI 完成 200 亿美元融资",
+      "truth": "g03"
+    },
+    {
+      "title": "马斯克宣布 xAI 完成 200 亿美元融资（官方公告）",
+      "truth": "g03"
+    },
+    {
+      "title": "马斯克宣布 xAI 完成 200 亿美元融资 | Hacker News",
+      "truth": "g03"
+    },
+    {
+      "title": "华为发布昇腾 920 芯片，算力翻倍",
+      "truth": "g04"
+    },
+    {
+      "title": "华为发布昇腾 920 芯片，算力翻倍（含规格）",
+      "truth": "g04"
+    },
+    {
+      "title": "华为发布昇腾 920 芯片，算力翻倍｜InfoQ",
+      "truth": "g04"
+    },
+    {
+      "title": "微软开源 Agent 框架 Magentic 2",
+      "truth": "g05"
+    },
+    {
+      "title": "微软开源 Agent 框架 Magentic 2（GitHub 已上线）",
+      "truth": "g05"
+    },
+    {
+      "title": "微软开源 Agent 框架 Magentic 2 | 机器之心",
+      "truth": "g05"
+    },
+    {
+      "title": "阿里云发布通义千问 4，支持 1M 上下文",
+      "truth": "g06"
+    },
+    {
+      "title": "阿里云发布通义千问 4，支持 1M 上下文（实测）",
+      "truth": "g06"
+    },
+    {
+      "title": "阿里云发布通义千问 4，支持 1M 上下文 | 量子位",
+      "truth": "g06"
+    },
+    {
+      "title": "百度文心 5 发布，免费开放",
+      "truth": "g07"
+    },
+    {
+      "title": "百度文心 5 发布，免费开放（更新）",
+      "truth": "g07"
+    },
+    {
+      "title": "英伟达发布 Rubin 架构 GPU，性能提升三倍",
+      "truth": "g08"
+    },
+    {
+      "title": "英伟达发布 Rubin 架构 GPU，性能提升三倍（附参数）",
+      "truth": "g08"
+    },
+    {
+      "title": "腾讯混元 3 开源，权重已上传 Hugging Face",
+      "truth": "g09"
+    },
+    {
+      "title": "腾讯混元 3 开源，权重已上传 Hugging Face | 量子位",
+      "truth": "g09"
+    },
+    {
+      "title": "GitHub 新推出 Copilot 代码评审功能（公开预览）",
+      "truth": "p01"
+    },
+    {
+      "title": "GitHub 上线 Copilot 代码评审功能，进入公开预览阶段",
+      "truth": "p01"
+    },
+    {
+      "title": "字节跳动调整 AI 团队架构，成立模型与智能体两个中心",
+      "truth": "p02"
+    },
+    {
+      "title": "字节重组 AI 部门：模型中心与智能体中心并行",
+      "truth": "p02"
+    },
+    {
+      "title": "美团发布 LongCat-2 长上下文模型，窗口 500 万 token",
+      "truth": "p03"
+    },
+    {
+      "title": "Meituan ships LongCat-2 with a 5M token window",
+      "truth": "p03"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6 Sol",
+      "truth": "s00"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6 Luna",
+      "truth": "s01"
+    },
+    {
+      "title": "Meta 开源 Llama-4 系列",
+      "truth": "s02"
+    },
+    {
+      "title": "Meta 开源 Llama-5 系列",
+      "truth": "s03"
+    },
+    {
+      "title": "欧盟通过 AI 责任法案，2027 年生效",
+      "truth": "s04"
+    },
+    {
+      "title": "Redis 8.2 发布，内置向量检索",
+      "truth": "s05"
+    },
+    {
+      "title": "PostgreSQL 19 发布，逻辑复制延迟下降 90%",
+      "truth": "s06"
+    },
+    {
+      "title": "商汤发布日日新 6.0 大模型",
+      "truth": "s07"
+    },
+    {
+      "title": "OpenAI 与沃尔玛合作，AI 导购覆盖 5000 家门店",
+      "truth": "s08"
+    },
+    {
+      "title": "Perplexity 收购短视频搜索公司 Shine",
+      "truth": "s09"
+    },
+    {
+      "title": "菜鸟开源端到端交付 Agent 框架",
+      "truth": "s10"
+    },
+    {
+      "title": "Linux 6.19 合并 zram 性能优化补丁",
+      "truth": "s11"
+    },
+    {
+      "title": "智谱发布 GLM-6 并开源权重",
+      "truth": "s12"
+    },
+    {
+      "title": "Stability AI 更换 CEO，聚焦视频生成",
+      "truth": "s13"
+    },
+    {
+      "title": "快手公布可灵 4.0 视频生成技术细节",
+      "truth": "s14"
+    },
+    {
+      "title": "Cloudflare 推出 AI 爬虫付费抓取通道",
+      "truth": "s15"
+    },
+    {
+      "title": "上海发布具身智能产业政策，三年投入 300 亿",
+      "truth": "s16"
+    },
+    {
+      "title": "OpenAI 为 GPT-6 推出企业级审计日志",
+      "truth": "s17"
+    },
+    {
+      "title": "Anthropic 与制药公司合作推进 AI 药物发现",
+      "truth": "s18"
+    },
+    {
+      "title": "京东发布言犀 5，聚焦客服 Agent",
+      "truth": "s19"
+    },
+    {
+      "title": "Show HN: 我用 Rust 写了一个本地向量数据库",
+      "truth": "s20"
+    },
+    {
+      "title": "月之暗面发布 Kimi K3，上下文 200 万 token",
+      "truth": "s21"
+    },
+    {
+      "title": "Google DeepMind 开源 AlphaFold 4 权重",
+      "truth": "s22"
+    },
+    {
+      "title": "字节跳动开源分布式训练框架 ByteTrain",
+      "truth": "s23"
+    }
+  ],
+  "cluster_assign": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 4,
+    "11": 4,
+    "12": 4,
+    "13": 5,
+    "14": 5,
+    "15": 5,
+    "16": 6,
+    "17": 6,
+    "18": 6,
+    "19": 7,
+    "20": 7,
+    "21": 8,
+    "22": 8,
+    "23": 9,
+    "24": 9,
+    "25": 10,
+    "26": 11,
+    "27": 12,
+    "28": 13,
+    "29": 14,
+    "30": 15,
+    "31": 16,
+    "32": 17,
+    "33": 18,
+    "34": 19,
+    "35": 20,
+    "36": 21,
+    "37": 22,
+    "38": 23,
+    "39": 24,
+    "40": 25,
+    "41": 26,
+    "42": 27,
+    "43": 28,
+    "44": 29,
+    "45": 30,
+    "46": 31,
+    "47": 32,
+    "48": 33,
+    "49": 34,
+    "50": 35,
+    "51": 36,
+    "52": 37,
+    "53": 38,
+    "54": 39
+  }
+}

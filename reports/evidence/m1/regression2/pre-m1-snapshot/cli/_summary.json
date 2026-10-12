@@ -1,0 +1,527 @@
+[
+  {
+    "name": "cli-help-long",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-help-sub",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-version-cmd",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-version-flag",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-no-args",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-unknown-cmd",
+    "ok": true,
+    "detail": "rc=2"
+  },
+  {
+    "name": "cli-unknown-opt",
+    "ok": true,
+    "detail": "rc=2"
+  },
+  {
+    "name": "cli-config-missing",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "cli-config-is-dir",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "cli-config-after",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-config-before",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-config-both-positions",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-debug-after",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-debug-before",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-config-no-value",
+    "ok": true,
+    "detail": "rc=2"
+  },
+  {
+    "name": "cli-check-positional",
+    "ok": true,
+    "detail": "rc=2"
+  },
+  {
+    "name": "cli-exe-version",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-exe-check",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "cli-redirect-utf8",
+    "ok": true,
+    "detail": "rc=0, utf-8 解码成功, emoji 在输出中=True"
+  },
+  {
+    "name": "config-valid-base",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-llm-required-minimal",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bad-yaml",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-top-level-scalar",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-top-level-list",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-empty-file",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-comments-only",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-missing-id",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-duplicate-id",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-invalid-url",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-unsupported-type",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-missing-type",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-wecom-no-webhook",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-wecom-bad-format",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-email-missing-creds",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-email-bad-addr",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-email-bad-port",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bad-timezone",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-window-hours-zero",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-window-hours-169",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-window-hours-bool",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-window-hours-str",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-top-n-zero",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-top-n-51",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-top-n-bool",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bad-log-level",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-proxy-enabled-empty",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-proxy-bad-scheme",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-sources-missing",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-sources-empty",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-sources-dict",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-source-item-scalar",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-source-missing-url",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-weight-zero",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-weight-11",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-weight-bool",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-weight-str",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-bad-base-url",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-empty-model",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-batch-zero",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-batch-51",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-batch-bool",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-cost-zero",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-cost-str",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-llm-cost-bool",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-app-section-list",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-push-section-list",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-section-null",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-crlf",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-unicode-name",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-long-name",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-yaml-tab",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-extra-map",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-source-disabled-flag",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-bool-str-proxy",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bool-str-wecom",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bool-str-email",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bool-str-source",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bool-str-use-ssl",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-bool-int-source",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-type-data-dir-int",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-type-log-dir-list",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-type-smtp-port-str-disabled",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-type-to-addrs-string",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-type-to-addrs-mixed",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-type-extra-list",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-valid-yaml-native-bools",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-valid-email-disabled-typed",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-valid-no-push-no-proxy-omitted-bools",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-bom",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-dup-top-keys",
+    "ok": true,
+    "detail": "实际 rc=0（行为记录）"
+  },
+  {
+    "name": "config-email-disabled-bad-port",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-extra-string",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-extra-list",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-enabled-quoted-false",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-log_dir-is-file",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-data_dir-is-file",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "config-relative-dirs",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "config-env-secrets",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "net-wecom-fake-ok",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "net-llm-auth-fail",
+    "ok": true,
+    "detail": "rc=1"
+  },
+  {
+    "name": "net-llm-unreachable",
+    "ok": true,
+    "detail": "rc=1"
+  },
+  {
+    "name": "net-proxy-bad-port",
+    "ok": true,
+    "detail": "rc=3"
+  },
+  {
+    "name": "net-llm-invalid-url",
+    "ok": true,
+    "detail": "rc=1"
+  },
+  {
+    "name": "fix-d6-proxy-credentials-masked",
+    "ok": true,
+    "detail": "rc=0"
+  },
+  {
+    "name": "fix-d8-example-out-of-box",
+    "ok": true,
+    "detail": "rc=0"
+  }
+]

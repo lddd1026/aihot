@@ -1,0 +1,19 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-slow-rlout31u\config.yaml --limit 0
+exit=0 (65.8s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-slow-rlout31u\config.yaml
+11:51:04 INFO aihot.sources: 信息源完成: good，1 条（23 ms）
+11:52:07 WARNING aihot.net: 请求最终失败: http://127.0.0.1:10620/hang（ReadTimeout: timed out）
+11:52:07 WARNING aihot.sources: 信息源失败: hang（SourceError: 请求失败: ReadTimeout: timed out）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:51:02+08:00）
+信息源  : 2 个
+
+采集结果:
+  [OK ] good               1 条（23 ms）
+  [ERR] hang               SourceError: 请求失败: ReadTimeout: timed out（63057 ms）
+
+合计: 抓取 1 条 → 新增 1 条（去重 0 条）→ 库内共 1 条
+
+--- stderr ---

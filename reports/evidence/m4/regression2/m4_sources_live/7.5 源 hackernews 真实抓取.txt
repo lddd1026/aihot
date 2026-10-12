@@ -1,0 +1,17 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: D:\信息收集整理\aihot\config.yaml
+11:50:24 INFO aihot.sources: 信息源完成: hackernews，53 条（1568 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:50:22+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] hackernews         53 条（1568 ms）
+
+合计: 抓取 53 条（dry-run，不写库）
+
+最新条目预览（前 2 条）:
+   1. [hackernews] Apple iPhone 4 “Antennagate” Q&A (2010) [video]
+      https://www.youtube.com/watch?v=BiN5ERktXz0（09-24 22:35）
+   2. [hackernews] Parsing Expression Grammar vs. Regexes: Building Org Parser in Lisp, E…
+      https://jointhefreeworld.org/blog/articles/lisps/parsing-expression-grammar-lisp-org-convert-to-html/index.html（09-24 20:10）

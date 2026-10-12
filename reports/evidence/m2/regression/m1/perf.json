@@ -1,0 +1,40 @@
+{
+  "suite": "perf",
+  "passed": 6,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "4-5源全量采集2分钟内",
+      "ok": true,
+      "detail": "实测 7.3s（阈值 120s），源 12/12 OK，抓取 210 条 → 新增 210 条（批内/跨源去重 0）→ 库内 210 条，runs.status=ok"
+    },
+    {
+      "item": "5-真实数据字段完整+extra合法JSON",
+      "ok": true,
+      "detail": "检查 210 行，问题 0 个"
+    },
+    {
+      "item": "5-HN条目extra含points/评论数",
+      "ok": true,
+      "detail": "HN 抽样 3 条，extra 键包含 points/num_comments/hn_id/hn_url=True"
+    },
+    {
+      "item": "2-真实数据二次采集幂等",
+      "ok": true,
+      "detail": "二次新增=0 条（期间真实新发布可能>0），唯一键=210 总=210"
+    },
+    {
+      "item": "4b-真实config dry-run真实库零写入",
+      "ok": true,
+      "detail": "rc=0 真实库快照 363/9 → 363/9"
+    },
+    {
+      "item": "4c-真实运行输出不含密钥",
+      "ok": true,
+      "detail": "扫描 2 个真实密钥：泄漏 无"
+    }
+  ],
+  "notes": [
+    "真实启用源 12 个: ['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews', 'theverge_ai', 'venturebeat_ai', 'deepmind_blog', 'anthropic_news', 'meta_eng', 'reddit_ai', 'arxiv']"
+  ]
+}

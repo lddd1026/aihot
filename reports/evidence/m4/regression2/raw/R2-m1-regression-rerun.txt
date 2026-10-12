@@ -1,0 +1,12 @@
+  [NOTE] 鏃ц瘉鎹揩鐓? D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m1\pre-m1-snapshot锛堝凡瀛樺湪鍒欒烦杩囷級
+  [PASS] 11a-ruff闆跺憡璀? exit=0锛?.3s锛夎緭鍑?'All checks passed!'
+  [PASS] 11b-pytest鍏ㄧ豢: exit=0 passed=323 failed=0 errors=0锛?2.2s锛?
+  [FAIL] 11c-m0_blackbox.py: exit=1 SUMMARY=104/105锛圡0 鍩虹嚎 105/105锛?37.5s锛?鏂板澶辫触=['net-wecom-fake-ok']
+  [PASS] 11c-m0_inprocess.py: exit=0 SUMMARY=13/13锛圡0 鍩虹嚎 13/13锛?.1s锛?
+  [PASS] 11c-m0_secret_scan.py: exit=0 SUMMARY=13/13锛圡0 鍩虹嚎 13/13锛?1.0s锛?
+  [PASS] 11c-m0_yaml_error_probe.py: exit=1 SUMMARY=5/6锛圡0 鍩虹嚎 5/6锛?.4s锛?M0 宸叉帴鍙楅仐鐣?['bad_alias']
+  [PASS] 11c-m0_issue_redaction_probe.py: exit=0 SUMMARY=4/4锛圡0 鍩虹嚎 3/4锛?.5s锛?M0 宸叉帴鍙楅仐鐣?['webhook_in_proxy_url'] 鏈疆宸叉仮澶?['webhook_in_proxy_url']
+  [PASS] 11c-m0_round3_probe.py: exit=0 SUMMARY=10/10锛圡0 鍩虹嚎 10/10锛?1.2s锛?
+  [PASS] 11d-config.example寮€绠辨牎楠? rc=0锛堟湡鏈?0锛?
+
+== regression: 8 passed / 1 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m1\regression.json

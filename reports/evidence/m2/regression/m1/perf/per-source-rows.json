@@ -1,0 +1,42 @@
+[
+  {
+    "source_id": "arxiv",
+    "n": 60,
+    "oldest": "2026-09-24T16:11:21+00:00"
+  },
+  {
+    "source_id": "deepmind_blog",
+    "n": 1,
+    "oldest": "2026-09-24T16:20:39+00:00"
+  },
+  {
+    "source_id": "hackernews",
+    "n": 52,
+    "oldest": "2026-09-24T04:20:59+00:00"
+  },
+  {
+    "source_id": "infoq_cn",
+    "n": 15,
+    "oldest": "2026-09-24T09:05:00+00:00"
+  },
+  {
+    "source_id": "qbitai",
+    "n": 7,
+    "oldest": "2026-09-24T05:19:55+00:00"
+  },
+  {
+    "source_id": "reddit_ai",
+    "n": 50,
+    "oldest": "2026-09-24T16:09:30+00:00"
+  },
+  {
+    "source_id": "techcrunch_ai",
+    "n": 15,
+    "oldest": "2026-09-24T12:54:19+00:00"
+  },
+  {
+    "source_id": "theverge_ai",
+    "n": 10,
+    "oldest": "2026-09-24T14:15:05+00:00"
+  }
+]

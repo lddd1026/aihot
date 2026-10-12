@@ -1,0 +1,9 @@
+{
+  "method": "真实小样本 token/条 × 每日条数 × 配置单价",
+  "per_item_prompt_tokens": 147.66666666666666,
+  "per_item_completion_tokens": 118.0,
+  "daily_items": 200,
+  "estimated_daily_cost_cny": 0.2479,
+  "estimated_daily_cost_cny_400_items": 0.4957,
+  "actual_sample_cost_cny": 0.0074
+}

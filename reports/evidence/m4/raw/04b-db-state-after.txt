@@ -1,0 +1,17 @@
+tables: ['items', 'sqlite_sequence', 'clusters', 'digests', 'runs']
+items total: 363
+unenriched total: 187
+unenriched last24h(utc): 169
+items kind=paper: 60
+runs (latest 15):
+  20260925T015411-9a0927 | partial | {"stage": "fetch", "window_hours": 24, "sources_ok": 11, "sources_failed": 3, "fetched": 161, "saved": 1, "skipped": []}
+  20260925T014947-ddc92e | ok | {"stage": "fetch", "window_hours": 24, "sources_ok": 8, "sources_failed": 0, "fetched": 160, "saved": 130, "skipped": []}
+  20260924T124347-114f1d | partial | {"stage": "fetch", "window_hours": 24, "sources_ok": 6, "sources_failed": 2, "fetched": 53, "saved": 1, "skipped": []}
+  20260924T124232-c76346 | partial | {"stage": "fetch", "window_hours": 24, "sources_ok": 6, "sources_failed": 2, "fetched": 117, "saved": 55, "skipped": []}
+  20260924T031218-cdcbf3 | ok | {"stage": "enrich", "pending": 176, "prefilter_kept": 105, "clusters": 101, "enriched": 105, "filtered": 71, "refine_calls": 0, "refine_failed": 0, "refine_rejected": 0, "batches": 7, "succeeded": 101
+  20260924T013405-eded6d | ok | {"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 0, "skipped": []}
+  20260924T012756-1a7300 | ok | {"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 70, "skipped": []}
+  20260923T124344-259fe2 | ok | {"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 107, "saved": 1, "skipped": []}
+  20260923T124051-8449bb | ok | {"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 105, "skipped": []}
+digests total: 2
+digest dates (latest 5): ['2026-09-25', '2026-09-24']

@@ -1,0 +1,12 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-p6mxex3p\email-bad-addr.yaml
+EXIT CODE: 3
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-p6mxex3p\email-bad-addr.yaml
+
+[ERR] 配置校验未通过（2 个问题）:
+  1. push.email.from_addr 不是有效邮箱，实际: 'not-an-email'
+  2. push.email.to_addrs 含无效邮箱: 'bad@'
+
+--- STDERR ---
+

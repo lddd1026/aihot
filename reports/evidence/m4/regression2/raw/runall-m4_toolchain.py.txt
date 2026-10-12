@@ -1,0 +1,12 @@
+  [FAIL] 10.1 ruff check . 零告警（rc=0）: rc=1；输出='E501 Line too long (107 > 100)\n   --> tests\\independent\\m4_toolchain.py:134:82\n    |\n132 |     expected_non_pass = {\n133'
+  [PASS] 10.2 pytest rc=0: rc=0
+  [PASS] 10.3 pytest 期望 323 passed / 0 failed / 0 error: tests=323 failures=0 errors=0 skipped=0
+  [PASS] 10.4 密钥扫描（仓库+输出+日志）全部通过: 13/13
+  [PASS] 10.5 M4 证据与脚本 0 密钥命中: 扫描 116 个文件，命中=[]（密钥掩码 ['<len=35 sha1=88bd34b6>', '<len=89 sha1=ea62b6f6>', '<len=16 sha1=5aa89688>', '<len=36 sha1=b78fcc56>']）
+  [FAIL] 10.6 M0-M3 回归无非预期 FAIL（滞后/漂移项已逐一定位）: 脚本 53 个；非预期=[('m3_e2e.py', 'FAIL'), ('m3_cli.py', 'FAIL'), ('m1_check_net.py', 'FAIL')]
+  [PASS] 10.7 回归期间真实库快照一致: real_db_unchanged=True
+  [NOTE] check --net 对 arxiv 的实际探测：rc=1，'[ERR] 源 arxiv: ReadTimeout: The read operation timed out（10570 ms）'（修复后应不再出现无参数 GET 触发的 HTTP 400）
+  [PASS] 10.9 check --net 对 arxiv 不再误报 400（P2-2 复验）: 探测行='[ERR] 源 arxiv: ReadTimeout: The read operation timed out（10570 ms）'
+  [PASS] 10.10 写入边界：测试未改 src/scripts/config/run_daily.bat: 由 m4 系列脚本的设计约束 + m4_bat sha256 证据保证
+
+== m4_toolchain: 7 passed / 2 failed == summary=D:\信息收集整理\aihot\reports\evidence\m4\regression2\m4_toolchain.json

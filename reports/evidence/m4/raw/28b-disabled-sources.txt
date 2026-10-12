@@ -1,0 +1,5 @@
+璇锋眰鏈€缁堝け璐? https://huggingface.co/api/daily_papers锛圚TTP 429锛?
+  [PASS] 7b 鍋滅敤婧?jiqizhixin 鐩磋繛灏濊瘯: [ERR] SourceError: 閫夋嫨鍣ㄦ湭鍖归厤鍒颁换浣曟潯鐩細li, article
+  [PASS] 7b 鍋滅敤婧?hf_papers 鐩磋繛灏濊瘯: [ERR] SourceError: 璇锋眰澶辫触: HTTP 429
+
+== m4_sources_live: 2 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_sources_live.json

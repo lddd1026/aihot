@@ -1,0 +1,18 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\cli\config.yaml --dry-run --top 3
+exit=0 (22.2s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\cli\config.yaml
+11:39:33 INFO aihot.sources: 信息源完成: qbitai，7 条（108 ms）
+11:39:41 INFO openai._base_client: Retrying request in 0.498823 seconds (retry 1 of 2)
+11:39:44 INFO openai._base_client: Retrying request in 0.815795 seconds (retry 2 of 2)
+11:39:48 WARNING aihot.enrich: 综述生成失败: InternalServerError: Error code: 502
+
+① 采集: 1/1 源成功，抓取 7 条 → 新增 0 条
+③ 日报: 2026-09-25 · 精选 3 条 + 简讯 4 条 · 无综述
+④ 渲染: 长图 1 张（2026-09-25.jpg 94 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 已跳过（dry-run）
+
+状态: ok
+
+--- stderr ---

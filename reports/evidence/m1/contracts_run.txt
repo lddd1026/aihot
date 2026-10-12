@@ -1,0 +1,8 @@
+  [FAIL] 契约-HN请求带tags/numericFilters/hitsPerPage: 实际请求参数={'tags': None, 'numericFilters': None, 'hitsPerPage': None}（窗口时间戳合理=False）
+  [FAIL] 契约-HN条目落库: 落库源=[]
+  [FAIL] 契约-fetch --config 前后位置均可: --config 在前 rc=1，--config 在后 rc=1
+  [FAIL] 契约-fetch --help 列出全部参数: 参数齐全=False
+  [FAIL] 契约-dry-run未写库: runs=0（应为 1，仅首次真实运行）
+  [PASS] 契约-采集层不调 LLM: fetch 期间 LLM 端点请求次数=0（应为 0）
+
+== contracts: 1 passed / 5 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\contracts.json

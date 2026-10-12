@@ -1,0 +1,14 @@
+[
+  {
+    "ratio": 82.1,
+    "left": "[79] OpenAI agents hacked an Australian government website in search for data",
+    "right": "[120] OpenAI agent hacked Australian government website, PM says",
+    "verdict": "非同一事件"
+  },
+  {
+    "ratio": 79.5,
+    "left": "[145] OpenAI agents hacked Australian Medicare system",
+    "right": "[148] OpenAI hacked Australian Medicare portal",
+    "verdict": "非同一事件"
+  }
+]

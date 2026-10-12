@@ -1,0 +1,13 @@
+  [PASS] 7.1 真实 skip 命令 rc=0 且写入 1 条 skipped 记录: rc=0；skipped_rows=1
+  [PASS] 7.2 跳过日显示为「跳过 + 原因」（今天 + 昨天）: skipped_days=['2026-10-11', '2026-10-12']
+  [PASS] 7.3 只有完全没有记录的日子计入「缺 N 天」（仅今天-4）: missing_days=['2026-10-08']
+  [PASS] 7.4 文本头显示「其中跳过 2 天」与「缺 1 天」: header=有运行记录: 4 天（其中跳过 2 天）（缺 1 天）
+  [PASS] 7.5 运行了但没送达的日子归入「未送达」而非「跳过」/「缺失」: failed_days=['2026-10-09']
+  [PASS] 7.6 文本报告含跳过明细段，且原因可读: 跳过明细段落齐全
+  [PASS] 7.7 送达日统计不被跳过干扰（delivered_days=1）: delivered_days=1
+  [PASS] 7.8 同一天既有跳过又有成功 → 按「已送达」计，不计入跳过/缺失: skipped=['2026-10-11', '2026-10-12']；missing=['2026-10-08']
+  [PASS] 7.9 真实库/存档未被本套件改动: 真实库快照一致
+
+== m5r_report: 9 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m5r\m5r_report.json
+
+--- stderr ---

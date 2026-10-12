@@ -1,0 +1,42 @@
+[
+  {
+    "suite": "m5r_preflight",
+    "rc": 0,
+    "seconds": 16.3
+  },
+  {
+    "suite": "m5r_fetch",
+    "rc": 0,
+    "seconds": 14.0
+  },
+  {
+    "suite": "m5r_skip",
+    "rc": 0,
+    "seconds": 18.7
+  },
+  {
+    "suite": "m5r_alert",
+    "rc": 0,
+    "seconds": 11.3
+  },
+  {
+    "suite": "m5r_report",
+    "rc": 0,
+    "seconds": 3.4
+  },
+  {
+    "suite": "m5r_render_alert",
+    "rc": 0,
+    "seconds": 1.3
+  },
+  {
+    "suite": "m5r_bat_local",
+    "rc": 0,
+    "seconds": 6.6
+  },
+  {
+    "suite": "m4_alert_regression",
+    "rc": 1,
+    "seconds": 9.6
+  }
+]

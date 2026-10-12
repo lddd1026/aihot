@@ -1,0 +1,51 @@
+===== --window-hours 1 =====
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t3-1-wfa5gwnj\config.yaml
+11:46:34 INFO aihot.sources: 信息源完成: windowed，4 条（29 ms）
+
+采集窗口: 最近 1 小时（起始 2026-09-25T10:46:32+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] windowed           4 条（29 ms）
+
+合计: 抓取 4 条 → 新增 4 条（去重 0 条）→ 库内共 4 条
+
+===== --window-hours 24 =====
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t3-24-lun8_a96\config.yaml
+11:46:38 INFO aihot.sources: 信息源完成: windowed，6 条（60 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:46:35+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] windowed           6 条（60 ms）
+
+合计: 抓取 6 条 → 新增 6 条（去重 0 条）→ 库内共 6 条
+
+===== --window-hours 168 =====
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t3-168-qdph6dbv\config.yaml
+11:46:41 INFO aihot.sources: 信息源完成: windowed，7 条（34 ms）
+
+采集窗口: 最近 168 小时（起始 2026-09-18T11:46:39+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] windowed           7 条（34 ms）
+
+合计: 抓取 7 条 → 新增 7 条（去重 0 条）→ 库内共 7 条
+
+===== 默认窗口 24h =====
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t3-default-icbwxwx8\config.yaml
+11:46:44 INFO aihot.sources: 信息源完成: windowed，6 条（30 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:46:42+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] windowed           6 条（30 ms）
+
+合计: 抓取 6 条 → 新增 6 条（去重 0 条）→ 库内共 6 条

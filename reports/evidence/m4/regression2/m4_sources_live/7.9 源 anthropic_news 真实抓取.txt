@@ -1,0 +1,13 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: D:\信息收集整理\aihot\config.yaml
+11:50:37 INFO aihot.sources: 信息源完成: anthropic_news，0 条（2347 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:50:34+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] anthropic_news     0 条（2347 ms）
+
+合计: 抓取 0 条（dry-run，不写库）
+
+（没有新条目）

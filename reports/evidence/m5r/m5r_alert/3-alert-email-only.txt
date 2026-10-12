@@ -1,0 +1,8 @@
+$ python -m aihot alert --message M5R-独立告警哨兵-20261012 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-alert-email-only\config.yaml
+exit=0 (0.6s)
+--- stdout ---
+11:32:42 INFO aihot.delivery.email: 邮件已发送至 receiver@example.com
+11:32:42 INFO aihot.runner: 告警已发送（邮件）: 运维消息
+[OK] 告警已发送（邮件）
+
+--- stderr ---

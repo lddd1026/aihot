@@ -1,0 +1,84 @@
+$ python -m aihot preview --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\config.yaml
+exit=0 (5.5s)
+--- stdout ---
+aihot preview · 重新渲染某期日报（不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\config.yaml
+
+日报日期: 2026-09-25（精选 12 条）
+  markdown : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.md
+  image    : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.jpg
+  html     : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.html
+
+—— 企微 markdown 预览 ——
+📌 **2026年9月25日 星期五 AI 热点日报**
+
+**今日综述**
+今日 AI 领域以模型发布与开源工具为主：多家厂商更新了推理模型与端侧方案，开源社区发布了新的推理框架；研究侧出现了关于长上下文与多模态对齐的新进展，产业侧则集中在算力供给与合规落地上。
+
+**🔥 今日必读**
+
+**1. [假 LLM 生成标题 1：AI 模型与工具更新](https://example.com/news/1)**
+这是第 1 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**2. [假 LLM 生成标题 1：AI 模型与工具更新](https://example.com/news/6)**
+这是第 1 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**3. [假 LLM 生成标题 1：AI 模型与工具更新](https://example.com/news/11)**
+这是第 1 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**4. [假 LLM 生成标题 1：AI 模型与工具更新](https://example.com/news/16)**
+这是第 1 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**5. [假 LLM 生成标题 2：AI 模型与工具更新](https://example.com/news/2)**
+这是第 2 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**6. [假 LLM 生成标题 2：AI 模型与工具更新](https://example.com/news/7)**
+这是第 2 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**7. [假 LLM 生成标题 2：AI 模型与工具更新](https://example.com/news/12)**
+这是第 2 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**8. [假 LLM 生成标题 2：AI 模型与工具更新](https://example.com/news/17)**
+这是第 2 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**9. [假 LLM 生成标题 4：AI 模型与工具更新](https://example.com/news/4)**
+这是第 4 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**10. [假 LLM 生成标题 4：AI 模型与工具更新](https://example.com/news/9)**
+这是第 4 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**11. [假 LLM 生成标题 4：AI 模型与工具更新](https://example.com/news/14)**
+这是第 4 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**12. [假 LLM 生成标题 3：AI 模型与工具更新](https://example.com/news/3)**
+这是第 3 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 开源工具 · 单篇报道
+
+**📎 其他值得一看**
+
+• [假 LLM 生成标题 3：AI 模型与工具更新](https://example.com/news/8)（开源工具）
+
+• [假 LLM 生成标题 3：AI 模型与工具更新](https://example.com/news/13)（开源工具）
+
+• [假 LLM 生成标题 3：AI 模型与工具更新](https://example.com/news/18)（开源工具）
+
+• [假 LLM 生成标题 5：AI 模型与工具更新](https://example.com/news/5)（模型发布）
+
+• [假 LLM 生成标题 5：AI 模型与工具更新](https://example.com/news/10)（模型发布）
+
+• [假 LLM 生成标题 5：AI 模型与工具更新](https://example.com/news/15)（模型发布）
+
+<font color="comment">共扫描 18 条 · 精选 12 条 · 由 DeepSeek 生成</font>
+
+--- stderr ---

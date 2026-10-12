@@ -1,0 +1,32 @@
+[
+  {
+    "case": "unclosed_quote",
+    "error": "while scanning a quoted scalar",
+    "leaks_secret": false
+  },
+  {
+    "case": "unclosed_bracket",
+    "error": "while parsing a flow sequence",
+    "leaks_secret": true
+  },
+  {
+    "case": "tab_indent",
+    "error": "while scanning for the next token",
+    "leaks_secret": false
+  },
+  {
+    "case": "extra_colon",
+    "error": "mapping values are not allowed here",
+    "leaks_secret": true
+  },
+  {
+    "case": "bad_anchor",
+    "error": "while parsing a flow sequence",
+    "leaks_secret": true
+  },
+  {
+    "case": "bad_alias",
+    "error": "found undefined alias 'M0FAKEKEY0123456789abcdef'",
+    "leaks_secret": true
+  }
+]

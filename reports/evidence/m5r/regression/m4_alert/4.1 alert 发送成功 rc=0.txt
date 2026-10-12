@@ -1,0 +1,8 @@
+$ python -m aihot alert --message M4-独立告警哨兵-20260925 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-alert-cli\config.yaml
+exit=0 (0.7s)
+--- stdout ---
+11:32:58 INFO aihot.delivery.wecom: 文本消息已发送（请求体 108 字节）
+11:32:58 INFO aihot.runner: 告警已发送（企业微信）: 运维消息
+[OK] 告警已发送（企业微信）
+
+--- stderr ---

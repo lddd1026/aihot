@@ -1,0 +1,347 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\independent\m1_acceptance.py:17:1
+   |
+15 |   sys.path.insert(0, str(Path(__file__).resolve().parent))
+16 |
+17 | / from m1_support import (  # noqa: E402
+18 | |     PROJECT,
+19 | |     TEMPROOT,
+20 | |     LocalServer,
+21 | |     Payload,
+22 | |     Suite,
+23 | |     ago,
+24 | |     db_counts,
+25 | |     db_query,
+26 | |     run_cli,
+27 | |     rss_xml,
+28 | |     source,
+29 | |     table_names,
+30 | |     titles,
+31 | |     write_config,
+32 | | )
+   | |_^
+33 |
+34 |   REAL_DB = PROJECT / "data" / "aihot.db"
+   |
+help: Organize imports
+   |
+25 |     db_query,
+26 +     rss_xml,
+27 |     run_cli,
+   -     rss_xml,
+28 |     source,
+   |
+
+E501 Line too long (104 > 100)
+   --> tests\independent\m1_acceptance.py:284:99
+    |
+282 |         "6-dry-run不写库",
+283 |         ok,
+284 |         f"dry-run 前={before['items']}/runs={before['runs']} 后={after['items']}/runs={after['runs']}；"
+    |                                                                                                     ^^^^
+285 |         f"随后真实运行落库={final['items']} runs={final['runs']}",
+286 |         evidence=f"--- dry-run ---\n{dry.stdout}\n--- 真实运行 ---\n{real.stdout}",
+    |
+
+E501 Line too long (102 > 100)
+   --> tests\independent\m1_acceptance.py:394:101
+    |
+392 |     unique_cols = []
+393 |     for name in unique_names:
+394 |         unique_cols.append(tuple(row["name"] for row in db_query(db, f"PRAGMA index_info('{name}')")))
+    |                                                                                                     ^^
+395 |     has_unique = ("source_id", "url_hash") in unique_cols
+396 |     import sqlite3
+    |
+
+E501 Line too long (103 > 100)
+   --> tests\independent\m1_acceptance.py:506:81
+    |
+504 |     neg_count = db_counts(ws_neg / "data" / "aihot.db")["items"]
+505 |     suite.note(
+506 |         f"--window-hours 0：rc={zero.rc}，实际落库 {zero_count} 条（若静默回退到配置 24h 则为 6 条）；"
+    |                                                                                                     ^^^
+507 |         f"--window-hours -5：rc={neg.rc}，落库 {neg_count} 条"
+508 |     )
+    |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\independent\m1_adversarial.py:17:1
+   |
+15 |   sys.path.insert(0, str(Path(__file__).resolve().parent))
+16 |
+17 | / from m1_support import (  # noqa: E402
+18 | |     TEMPROOT,
+19 | |     LocalServer,
+20 | |     Payload,
+21 | |     Suite,
+22 | |     ago,
+23 | |     db_counts,
+24 | |     db_query,
+25 | |     run_cli,
+26 | |     rss_xml,
+27 | |     source,
+28 | |     titles,
+29 | |     write_config,
+30 | | )
+   | |_^
+31 |
+32 |   JSON_CT = "application/json; charset=utf-8"
+   |
+help: Organize imports
+   |
+24 |     db_query,
+25 +     rss_xml,
+26 |     run_cli,
+   -     rss_xml,
+27 |     source,
+   |
+
+E501 Line too long (104 > 100)
+   --> tests\independent\m1_adversarial.py:167:101
+    |
+166 |     nasty_entries = [
+167 |         {"title": "'); DROP TABLE items;--", "link": "https://nasty.example/sql", "date": ago(hours=1)},
+    |                                                                                                     ^^^^
+168 |         {"title": "🧠🔥 Emoji 标题 test", "link": "https://nasty.example/emoji", "date": ago(hours=1)},
+169 |         {"title": "A" * 100_000, "link": "https://nasty.example/long", "date": ago(hours=1)},
+    |
+
+E501 Line too long (103 > 100)
+   --> tests\independent\m1_adversarial.py:168:97
+    |
+166 |     nasty_entries = [
+167 |         {"title": "'); DROP TABLE items;--", "link": "https://nasty.example/sql", "date": ago(hours=1)},
+168 |         {"title": "🧠🔥 Emoji 标题 test", "link": "https://nasty.example/emoji", "date": ago(hours=1)},
+    |                                                                                                     ^^^
+169 |         {"title": "A" * 100_000, "link": "https://nasty.example/long", "date": ago(hours=1)},
+170 |     ]
+    |
+
+E501 Line too long (104 > 100)
+   --> tests\independent\m1_adversarial.py:384:87
+    |
+382 |         ok,
+383 |         f"rc={result.rc} 落库={len(got)}条 items表仍在={bool(tables)} "
+384 |         f"最长标题={max((len(t) for t in got), default=0)}字符（100k 原标题被 clean_html 截断为 1000）",
+    |                                                                                                     ^^^^
+385 |         evidence=result.stdout[-1500:],
+386 |     )
+    |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\independent\m1_check_net.py:14:1
+   |
+12 |   sys.path.insert(0, str(Path(__file__).resolve().parent))
+13 |
+14 | / from m1_support import (  # noqa: E402
+15 | |     PROJECT,
+16 | |     TEMPROOT,
+17 | |     LocalServer,
+18 | |     Payload,
+19 | |     Suite,
+20 | |     ago,
+21 | |     db_counts,
+22 | |     run_cli,
+23 | |     rss_xml,
+24 | |     source,
+25 | |     write_config,
+26 | | )
+   | |_^
+27 |
+28 |   REAL_CONFIG = PROJECT / "config.yaml"
+   |
+help: Organize imports
+   |
+21 |     db_counts,
+22 +     rss_xml,
+23 |     run_cli,
+   -     rss_xml,
+24 |     source,
+   |
+
+E501 Line too long (105 > 100)
+  --> tests\independent\m1_check_net.py:82:78
+   |
+80 |         "9a-逐源OK/ERR+失败退出码1",
+81 |         ok,
+82 |         f"rc={result.rc}（期望 1）好源 OK、坏源 ERR、未启用源不进入探测行（探测 {len(probe_lines)} 行）",
+   |                                                                                                      ^^^^
+83 |         evidence=result.stdout,
+84 |     )
+   |
+
+E501 Line too long (117 > 100)
+   --> tests\independent\m1_check_net.py:127:101
+    |
+125 |     result = run_cli(["check", "--net", "--config", str(REAL_CONFIG)], timeout=180)
+126 |     after = db_counts(REAL_DB)
+127 |     source_lines = [line for line in result.stdout.splitlines() if line.strip().startswith(("[OK ] 源", "[ERR] 源"))]
+    |                                                                                                      ^^^^^^^^^^^^^^^^
+128 |     expected_ids = ("qbitai", "infoq_cn", "techcrunch_ai", "openai_news", "hackernews")
+129 |     covered = [sid for sid in expected_ids if any(sid in line for line in source_lines)]
+    |
+
+E501 Line too long (107 > 100)
+  --> tests\independent\m1_perf.py:53:101
+   |
+51 |     result = run_cli(["fetch", "--config", str(cfg), "--limit", "10"], timeout=180)
+52 |     stats = [
+53 |         {"mark": match.group(1), "id": match.group(2), "detail": match.group(3), "ms": int(match.group(4))}
+   |                                                                                                     ^^^^^^^
+54 |         for match in LINE_RE.finditer(result.stdout)
+55 |     ]
+   |
+
+E501 Line too long (124 > 100)
+  --> tests\independent\m1_perf.py:67:101
+   |
+65 |         and len(stats) == len(enabled)
+66 |         and len(ok_sources) == len(enabled)
+67 |         and stage.get("fetched") == sum(int(stat["detail"].split(" ")[0]) for stat in stats if stat["mark"].strip() == "OK")
+   |                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^
+68 |         and counts["items"] == stage.get("saved", -1),
+69 |         f"实测 {result.seconds:.1f}s（阈值 120s），源 {len(ok_sources)}/{len(enabled)} OK，"
+   |
+
+E501 Line too long (112 > 100)
+  --> tests\independent\m1_perf.py:71:96
+   |
+69 |         f"实测 {result.seconds:.1f}s（阈值 120s），源 {len(ok_sources)}/{len(enabled)} OK，"
+70 |         f"抓取 {stage.get('fetched')} 条 → 新增 {stage.get('saved')} 条（批内/跨源去重 "
+71 |         f"{stage.get('fetched', 0) - stage.get('saved', 0)}）→ 库内 {counts['items']} 条，runs.status={status}",
+   |                                                                                                     ^^^^^^^^^^^^
+72 |         evidence=result.text,
+73 |     )
+   |
+
+E501 Line too long (104 > 100)
+  --> tests\independent\m1_perf.py:97:101
+   |
+96 |     per_source = db_query(
+97 |         db, "SELECT source_id, COUNT(*) AS n, MIN(published_at) AS oldest FROM items GROUP BY source_id"
+   |                                                                                                     ^^^^
+98 |     )
+99 |     suite.evidence_json("per-source-rows.json", per_source)
+   |
+
+E501 Line too long (104 > 100)
+   --> tests\independent\m1_perf.py:116:101
+    |
+114 |     suite.check(
+115 |         "2-真实数据二次采集幂等",
+116 |         second.rc == 0 and after["items"] == after["unique_keys"] and after["items"] >= counts["items"],
+    |                                                                                                     ^^^^
+117 |         f"二次新增={second_saved} 条（期间真实新发布可能>0），唯一键={after['unique_keys']} 总={after['items']}",
+118 |         evidence=second.stdout,
+    |
+
+E501 Line too long (113 > 100)
+   --> tests\independent\m1_perf.py:117:80
+    |
+115 |         "2-真实数据二次采集幂等",
+116 |         second.rc == 0 and after["items"] == after["unique_keys"] and after["items"] >= counts["items"],
+117 |         f"二次新增={second_saved} 条（期间真实新发布可能>0），唯一键={after['unique_keys']} 总={after['items']}",
+    |                                                                                                     ^^^^^^^^^^^^^
+118 |         evidence=second.stdout,
+119 |     )
+    |
+
+E501 Line too long (102 > 100)
+   --> tests\independent\m1_perf.py:132:101
+    |
+130 |     )
+131 |     secrets = _real_secrets()
+132 |     leaked = [name for name, value in secrets.items() if value and value in (dry.stdout + dry.stderr)]
+    |                                                                                                     ^^
+133 |     suite.check(
+134 |         "4c-真实运行输出不含密钥",
+    |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\independent\m1_slow_source.py:15:1
+   |
+13 |   sys.path.insert(0, str(Path(__file__).resolve().parent))
+14 |
+15 | / from m1_support import (  # noqa: E402
+16 | |     TEMPROOT,
+17 | |     LocalServer,
+18 | |     Payload,
+19 | |     Suite,
+20 | |     ago,
+21 | |     db_counts,
+22 | |     db_query,
+23 | |     run_cli,
+24 | |     rss_xml,
+25 | |     source,
+26 | |     write_config,
+27 | | )
+   | |_^
+help: Organize imports
+   |
+22 |     db_query,
+23 +     rss_xml,
+24 |     run_cli,
+   -     rss_xml,
+25 |     source,
+   |
+
+E501 Line too long (102 > 100)
+  --> tests\independent\m1_slow_source.py:41:101
+   |
+39 |     server.routes["/good"] = lambda q: Payload(
+40 |         200,
+41 |         rss_xml([{"title": "good-while-hang", "link": "https://ok.example/1", "date": ago(hours=1)}]),
+   |                                                                                                     ^^
+42 |     )
+43 |     try:
+   |
+
+E501 Line too long (134 > 100)
+   --> tests\independent\m1_support.py:155:101
+    |
+153 |     @property
+154 |     def text(self) -> str:
+155 |         return f"$ {self.command}\nexit={self.rc} ({self.seconds:.1f}s)\n--- stdout ---\n{self.stdout}\n--- stderr ---\n{self.stderr}"
+    |                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\independent\m1_url_edges.py:11:1
+   |
+ 9 |   sys.path.insert(0, str(Path(__file__).resolve().parent))
+10 |
+11 | / from m1_support import (  # noqa: E402
+12 | |     TEMPROOT,
+13 | |     LocalServer,
+14 | |     Payload,
+15 | |     Suite,
+16 | |     ago,
+17 | |     db_query,
+18 | |     run_cli,
+19 | |     rss_xml,
+20 | |     source,
+21 | |     write_config,
+22 | | )
+   | |_^
+help: Organize imports
+   |
+17 |     db_query,
+18 +     rss_xml,
+19 |     run_cli,
+   -     rss_xml,
+20 |     source,
+   |
+
+E501 Line too long (103 > 100)
+  --> tests\independent\m1_url_edges.py:44:101
+   |
+42 |         cfg = write_config(workspace, [source("weird", server.url("/weird"))])
+43 |         result = run_cli(["fetch", "--config", str(cfg), "--limit", "0"])
+44 |         rows = db_query(workspace / "data" / "aihot.db", "SELECT title, url FROM items ORDER BY title")
+   |                                                                                                     ^^^
+45 |         observed = {row["title"]: row["url"] for row in rows}
+46 |         suite.check(
+   |
+
+Found 23 errors.
+[*] 5 fixable with the `--fix` option.

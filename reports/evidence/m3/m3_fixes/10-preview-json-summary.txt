@@ -1,0 +1,45 @@
+$ python -m aihot preview --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\fixes\config.yaml --no-image
+exit=0 (1.4s)
+--- stdout ---
+aihot preview · 重新渲染某期日报（不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\fixes\config.yaml
+
+日报日期: 2026-09-25（精选 6 条）
+  markdown : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\fixes\data\digests\2026-09-25.md
+  html     : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\fixes\data\digests\2026-09-25.html
+
+—— 企微 markdown 预览 ——
+📌 **2026年9月25日 星期五 AI 热点日报**
+
+**今日综述**
+今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进展齐头并进。
+
+**🔥 今日必读**
+
+**1. [假 LLM 生成标题 1：AI 模型与工具更新](https://example.com/fix/1)**
+这是第 1 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**2. [假 LLM 生成标题 1：AI 模型与工具更新](https://example.com/fix/6)**
+这是第 1 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**3. [假 LLM 生成标题 2：AI 模型与工具更新](https://example.com/fix/2)**
+这是第 2 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**4. [假 LLM 生成标题 4：AI 模型与工具更新](https://example.com/fix/4)**
+这是第 4 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+**5. [假 LLM 生成标题 3：AI 模型与工具更新](https://example.com/fix/3)**
+这是第 3 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 开源工具 · 单篇报道
+
+**6. [假 LLM 生成标题 5：AI 模型与工具更新](https://example.com/fix/5)**
+这是第 5 条假摘要，用于独立验证渲染与推送链路，不涉及真实内容。
+🏷 模型发布 · 单篇报道
+
+<font color="comment">共扫描 6 条 · 精选 6 条 · 由 DeepSeek 生成</font>
+
+--- stderr ---

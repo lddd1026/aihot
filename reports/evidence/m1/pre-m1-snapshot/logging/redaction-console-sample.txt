@@ -1,0 +1,10 @@
+21:51:46 INFO aihot.test: plain ***
+21:51:46 INFO aihot.test: dict ***
+21:51:46 INFO aihot.test: kwargs
+21:51:46 INFO aihot.test: object ***
+21:51:46 INFO aihot.test: bytes b'sk-***'
+21:51:46 ERROR aihot.test: failed
+Traceback (most recent call last):
+  File "D:\信息收集整理\aihot\tests\independent\m0_inprocess.py", line 79, in test_redaction_and_json_lines
+    raise RuntimeError(f"boom {SECRET}")
+RuntimeError: boom ***

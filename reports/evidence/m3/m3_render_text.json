@@ -1,0 +1,123 @@
+{
+  "suite": "m3_render_text",
+  "passed": 22,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "2.1 分片数量与字节上限",
+      "ok": true,
+      "detail": "parts=1 sizes=[3761] (内部上限 3800)"
+    },
+    {
+      "item": "2.2 首片含日期标题",
+      "ok": true,
+      "detail": "📌 **2026年9月24日 星期四 AI 热点日报**"
+    },
+    {
+      "item": "2.3 含今日综述",
+      "ok": true,
+      "detail": "summary_in=True"
+    },
+    {
+      "item": "2.4 综述为完整原文（未被截断/JSON 包装）",
+      "ok": true,
+      "detail": "len=42"
+    },
+    {
+      "item": "2.5 Top 条目链接全部存在",
+      "ok": true,
+      "detail": "missing=[]"
+    },
+    {
+      "item": "2.6 简讯链接全部存在",
+      "ok": true,
+      "detail": "missing=[]"
+    },
+    {
+      "item": "2.7 markdown 可点击语法 [标题](链接)",
+      "ok": true,
+      "detail": "links=24 期望≥24"
+    },
+    {
+      "item": "2.8 序号与分类标签",
+      "ok": true,
+      "detail": "包含编号/标签/分节"
+    },
+    {
+      "item": "2.9 续片带续接标题（多片时）",
+      "ok": true,
+      "detail": "parts=1"
+    },
+    {
+      "item": "2.10 统计页脚与 stats 一致",
+      "ok": true,
+      "detail": "页脚统计命中"
+    },
+    {
+      "item": "2.11 极端长文：每条消息 ≤ 4096 字节",
+      "ok": true,
+      "detail": "parts=10 max=3928 sizes=[51, 3857, 78, 3855, 3855, 3855, 3855, 3855, 3855, 3928]"
+    },
+    {
+      "item": "2.12 极端长文：全部链接仍在（截断不丢 URL）",
+      "ok": false,
+      "detail": "missing=['https://example.com/news/208', 'https://example.com/news/209', 'https://example.com/news/210', 'https://example.com/news/211', 'https://example.com/news/212']"
+    },
+    {
+      "item": "2.13 极端长文：发生截断时保留省略号标记",
+      "ok": true,
+      "detail": "ellipsis=True"
+    },
+    {
+      "item": "2.14 邮件 HTML 结构（doctype/html/head/body）",
+      "ok": true,
+      "detail": "bytes=15087"
+    },
+    {
+      "item": "2.15 attach_image=false → 不含内嵌图 cid",
+      "ok": true,
+      "detail": "cid=False img=False"
+    },
+    {
+      "item": "2.16 邮件含综述与全部 Top 标题",
+      "ok": true,
+      "detail": "综述+Top 标题命中"
+    },
+    {
+      "item": "2.17 邮件含全部简讯标题与链接",
+      "ok": true,
+      "detail": "briefs=12"
+    },
+    {
+      "item": "2.18 邮件页脚统计与 stats 一致",
+      "ok": true,
+      "detail": "统计命中"
+    },
+    {
+      "item": "2.19 image_cid 传入时内嵌图占位正确",
+      "ok": true,
+      "detail": "cid 命中"
+    },
+    {
+      "item": "2.20 邮件 HTML 转义（无脚本注入）",
+      "ok": true,
+      "detail": "script_raw=False escaped=True"
+    },
+    {
+      "item": "2.21 存档 md 含标题/综述/全部链接/统计",
+      "ok": true,
+      "detail": "bytes=3740"
+    },
+    {
+      "item": "2.22 save_digest_files 写出 md 且 digest.files 更新",
+      "ok": true,
+      "detail": "files={'markdown': 'C:\\\\Users\\\\LEGION\\\\AppData\\\\Local\\\\Temp\\\\aihot-m3-tests\\\\work\\\\render-text-files\\\\digests\\\\2026-09-24.md'}"
+    },
+    {
+      "item": "2.23 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}"
+    }
+  ],
+  "notes": []
+}

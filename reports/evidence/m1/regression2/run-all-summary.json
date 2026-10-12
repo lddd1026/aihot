@@ -1,0 +1,165 @@
+{
+  "generated": "2026-09-23 21:52:22",
+  "results": [
+    {
+      "script": "m1_revision.py",
+      "exit": 0,
+      "passed": "?",
+      "verdict": "OBSERVE",
+      "seconds": 0.3,
+      "tail": "  a357578ddfba    4006  src\\aihot\\sources\\registry.py\n  19772345b4f2    2370  src\\aihot\\sources\\rss.py\n  78879eb28b09    7631  src\\aihot\\store.py\n  607fb330762b    4821  src\\aihot\\utils.py\n  bd089952d42b     968  pyproject.toml\n  5d4495967d53    4114  config.example.yaml"
+    },
+    {
+      "script": "m1_real_db_state.py",
+      "exit": 0,
+      "passed": "?",
+      "verdict": "OBSERVE",
+      "seconds": 0.3,
+      "tail": "  openai_news: 4 (2026-09-22T18:00:00+00:00 → 2026-09-23T13:00:00+00:00)\nruns_detail:\n  20260923T124051-8449bb ok 2026-09-23T12:40:51.083007+00:00 stats={\"stage\": \"fetch\", \"window_hours\": 24, \"sources_ok\": 5, \"sources_failed\": 0, \"fetched\": 106, \"saved\": 105, \"skipped\": []}\n  20260923T124344-259fe2 ok 2026-09-23T12:43:44.842824+00:00 stats={\"stage\": \"fetch\", \"window_hours\": 24, \"sources_ok\": 5, \"sources_failed\": 0, \"fetched\": 107, \"saved\": 1, \"skipped\": []}\n\n[evidence] D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\real-db-readonly-state.txt"
+    },
+    {
+      "script": "m1_recon.py",
+      "exit": 0,
+      "passed": "?",
+      "verdict": "OBSERVE",
+      "seconds": 9.6,
+      "tail": "qbitai          200 6532 bytes 1568 ms\ninfoq_cn        200 13558 bytes 1537 ms\ntechcrunch_ai   200 18628 bytes 1581 ms\nopenai_news     200 745359 bytes 2152 ms\nhackernews      200 1038 bytes 2353 ms\n[{\"id\": \"qbitai\", \"status\": 200, \"bytes\": 6532, \"ms\": 1568}, {\"id\": \"infoq_cn\", \"status\": 200, \"bytes\": 13558, \"ms\": 1537}, {\"id\": \"techcrunch_ai\", \"status\": 200, \"bytes\": 18628, \"ms\": 1581}, {\"id\": \"openai_news\", \"status\": 200, \"bytes\": 745359, \"ms\": 2152}, {\"id\": \"hackernews\", \"status\": 200, \"bytes\": 1038, \"ms\": 2353}]"
+    },
+    {
+      "script": "m1_acceptance.py",
+      "exit": 1,
+      "passed": "18/19",
+      "verdict": "FAIL",
+      "seconds": 59.3,
+      "tail": "  [PASS] 8e-dry-run全部失败=1: rc=1（期望 1）\n  [PASS] 8f-非法--window-hours=2: 0/-5/169/abc 的 rc={'0': 2, '-5': 2, '169': 2, 'abc': 2}（期望均 2）\n  [PASS] 8g-非法--limit=2: --limit -1 → rc=2（期望 2）\n  [PASS] guard:real-db-untouched: 真实库快照前={'exists': 1, 'items': 106, 'unique_keys': 106, 'runs': 2} 后={'exists': 1, 'items': 106, 'unique_keys': 106, 'runs': 2}\n\n== acceptance: 18 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\acceptance.json"
+    },
+    {
+      "script": "m1_adversarial.py",
+      "exit": 0,
+      "passed": "11/11",
+      "verdict": "PASS",
+      "seconds": 33.2,
+      "tail": "  [PASS] adv-缺title/link/date+坏日期+HTML清洗: rc=0 保留=['bad-date', 'future', 'html-title', 'no-date'] 丢弃=3条 无日期条目落库为当前时间=True script清洗后摘要='visible text'\n  [PASS] adv-SQL注入式标题/emoji/超长标题: rc=0 落库=3条 items表仍在=True 最长标题=1000字符（100k 原标题被 clean_html 截断为 1000）\n  [PASS] adv-同源内重复条目(尾斜杠/大小写/锚点)去重: 3 条重复链接落库=1 条，保留 URL=https://dups.example/x\n  [PASS] adv-GBK编码源中文不乱码: rc=0 落库标题=['中文标题测试']\n\n== adversarial: 11 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\adversarial.json"
+    },
+    {
+      "script": "m1_url_edges.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 3.0,
+      "tail": "[PASS] URL边界-非http(s)/含空白链接被丢弃: javascript:/mailto:/含空格文本 已丢弃=True，落库非 http(s) 条目=无\n  [PASS] URL边界-相对链接按源地址补全: relative → 'http://127.0.0.1:7391/relative/path'（源地址 http://127.0.0.1:7391/）\n  [PASS] URL边界-协议相对链接补全 scheme: //cdn.example/asset → 'http://cdn.example/asset'\n  [PASS] URL边界-正常链接不受影响: normal → 'https://ok.example/normal'\n\n== url_edges: 4 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\url_edges.json"
+    },
+    {
+      "script": "m1_net_store_units.py",
+      "exit": 0,
+      "passed": "19/19",
+      "verdict": "PASS",
+      "seconds": 11.7,
+      "tail": "  [NOTE] normalize_url 原始输出（白名单在 sources.base 层生效）：{'javascript:alert(1)': 'javascript:alert(1)', 'not a url': 'https:not a url'}\n\n== units: 19 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\units.json\n请求最终失败: http://127.0.0.1:10035/slow（ReadTimeout: timed out）\n请求最终失败: http://aihot-m1-invalid-9f3a.invalid/feed（HTTP 502）\n请求最终失败: http://127.0.0.1:10035/json500（HTTP 500）"
+    },
+    {
+      "script": "m1_contracts.py",
+      "exit": 0,
+      "passed": "6/6",
+      "verdict": "PASS",
+      "seconds": 8.1,
+      "tail": "  [PASS] 契约-fetch --config 前后位置均可: --config 在前 rc=0，--config 在后 rc=0\n  [PASS] 契约-fetch --help 列出全部参数: 参数齐全=True\n  [PASS] 契约-dry-run未写库: runs=1（应为 1，仅首次真实运行）\n  [PASS] 契约-采集层不调 LLM: fetch 期间 LLM 端点请求次数=0（应为 0）\n\n== contracts: 6 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\contracts.json"
+    },
+    {
+      "script": "m1_check_net.py",
+      "exit": 0,
+      "passed": "6/6",
+      "verdict": "PASS",
+      "seconds": 19.7,
+      "tail": "  [PASS] 9c-多坏源全部报告: rc=1 [ERR] 行数=3\n  [PASS] 9d-真实配置逐源健康度: rc=0（期望 0）覆盖启用源=['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews'] 共 5 行\n  [PASS] 9e-真实库只读未变: 探测前后 items/runs 快照一致: 106/2\n  [PASS] 9f-check --net 输出不含真实密钥: 扫描 3 个真实密钥字段：泄漏 无\n\n== check_net: 6 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\check_net.json"
+    },
+    {
+      "script": "m1_proxy_bad_port_repro.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 34.1,
+      "tail": "[PASS] 复验-非法proxy.url干净报配置错误(rc=3): 6 个非法变体：rc 全为 3=True，无 traceback=True\n  [PASS] 复验-错误信息可操作(含 proxy.url 与示例): 全部变体提示含 'proxy.url'=True\n  [PASS] 复验-合法但不可达代理仍走[ERR]代理: check --net rc=1（期望 1，含[ERR]代理=True）；fetch rc=1（期望 1）\n  [PASS] 复验-非法IPv6代理 check 摘要不崩溃(D5): rc=3（期望 3）含 traceback=False\n\n== proxy_bad_port: 4 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\proxy_bad_port.json"
+    },
+    {
+      "script": "m1_socks_probe.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 21.3,
+      "tail": "[PASS] socks5-check 配置校验 rc=0 且无导入错误: rc=0（期望 0），ImportError/Traceback=无\n  [PASS] socks5-check --net 代理不可达=干净[ERR]: rc=1（期望 1），含[ERR]代理=True，ImportError/Traceback=无\n  [PASS] socks5-fetch 代理不可达=干净失败: rc=1（期望 1），ImportError/Traceback=无\n  [PASS] socks5-依赖可用（socksio 已安装）: import socksio 成功（pyproject 已声明 socksio>=1.0,<2）\n\n== socks5: 4 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\socks5.json"
+    },
+    {
+      "script": "m1_slow_source.py",
+      "exit": 0,
+      "passed": "1/1",
+      "verdict": "PASS",
+      "seconds": 66.2,
+      "tail": "[PASS] adv-挂起源超时隔离: rc=0 耗时=65.5s（3 次 20s 超时+退避；未无限等待） 好源落库=1 runs.status=partial\n\n== slow_source: 1 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\slow_source.json"
+    },
+    {
+      "script": "m1_perf.py",
+      "exit": 0,
+      "passed": "6/6",
+      "verdict": "PASS",
+      "seconds": 12.1,
+      "tail": "  [PASS] 5-HN条目extra含points/评论数: HN 抽样 3 条，extra 键包含 points/num_comments/hn_id/hn_url=True\n  [PASS] 2-真实数据二次采集幂等: 二次新增=0 条（期间真实新发布可能>0），唯一键=103 总=103\n  [PASS] 4b-真实config dry-run真实库零写入: rc=0 真实库快照 106/2 → 106/2\n  [PASS] 4c-真实运行输出不含密钥: 扫描 2 个真实密钥：泄漏 无\n\n== perf: 6 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\perf.json"
+    },
+    {
+      "script": "m1_regression.py",
+      "exit": 1,
+      "passed": "4/9",
+      "verdict": "FAIL",
+      "seconds": 137.7,
+      "tail": "  [PASS] 11c-m0_yaml_error_probe.py: exit=1 SUMMARY=5/6（M0 基线 5/6，4.2s） M0 已接受遗留=['bad_alias']\n  [FAIL] 11c-m0_issue_redaction_probe.py: exit=0 SUMMARY=4/4（M0 基线 3/4，2.7s） 新增失败=['<证据缺失>'] M0 已接受遗留=['webhook_in_proxy_url'] 本轮已恢复=['webhook_in_proxy_url']\n  [FAIL] 11c-m0_round3_probe.py: exit=0 SUMMARY=10/10（M0 基线 10/10，7.1s） 新增失败=['<证据缺失>']\n  [PASS] 11d-config.example开箱校验: rc=0（期望 0）\n\n== regression: 4 passed / 5 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression2\\regression.json"
+    },
+    {
+      "script": "m0_blackbox.py",
+      "exit": 0,
+      "passed": "105/105",
+      "verdict": "PASS",
+      "seconds": 96.0,
+      "tail": "[PASS] net-proxy-bad-port :: rc=3\n[PASS] net-llm-invalid-url :: rc=1\n[PASS] fix-d6-proxy-credentials-masked :: rc=0\n[PASS] fix-d8-example-out-of-box :: rc=0\n\n== SUMMARY: 105/105 passed =="
+    },
+    {
+      "script": "m0_inprocess.py",
+      "exit": 0,
+      "passed": "13/13",
+      "verdict": "PASS",
+      "seconds": 1.7,
+      "tail": "[PASS] chinese-emoji-json-roundtrip :: msg='一致'\n[PASS] redact-text-patterns :: 全部命中\n[PASS] observation-extra-handler :: 额外插入的未过滤 handler（顺序最前）会写出明文，属调用方责任，非产品缺陷\n[PASS] probe-error-text-redacted :: masked=ConnectError: All connection attempts failed for ***\n\n== SUMMARY: 13/13 passed =="
+    },
+    {
+      "script": "m0_secret_scan.py",
+      "exit": 0,
+      "passed": "13/13",
+      "verdict": "PASS",
+      "seconds": 19.4,
+      "tail": "[PASS] log-file-no-partial-plaintext :: 部分命中: 无\n[PASS] example-config-no-secrets :: 三个密钥字段均为空\n[PASS] malformed-yaml-console-no-leak :: rc=3, 完整泄漏=无\n[PASS] malformed-yaml-console-no-partial-leak :: 部分泄漏(20字符窗口命中数)=无\n\n== SUMMARY: 13/13 passed =="
+    },
+    {
+      "script": "m0_yaml_error_probe.py",
+      "exit": 1,
+      "passed": "5/6",
+      "verdict": "CHECK",
+      "seconds": 4.3,
+      "tail": "[PASS] unclosed_quote: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True\n[PASS] tab_indent: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True\n[PASS] bad_anchor: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True\n[FAIL] bad_alias: rc=3, leaks=['M0YAMLKEY0123456789abcdef'], partial=无, traceback=False, 隐藏提示=True\n\n== SUMMARY: 5/6 passed =="
+    },
+    {
+      "script": "m0_issue_redaction_probe.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 3.1,
+      "tail": "     1. sources[0] (id=a): url 必须是 http(s) 地址，实际: 'sk-***'\n[PASS] webhook_in_proxy_url: rc=3（期望 3）, leaks=无, 脱敏标记=False\n[PASS] webhook_url_in_proxy_url: rc=0（期望 0）, leaks=无, 脱敏标记=True\n     代理      : https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=***\n\n== SUMMARY: 4/4 passed =="
+    },
+    {
+      "script": "m0_round3_probe.py",
+      "exit": 0,
+      "passed": "10/10",
+      "verdict": "PASS",
+      "seconds": 7.7,
+      "tail": "[PASS] d6r-webhook-url-in-proxy-masked :: rc=0, key 泄漏=否, key=***=在\n[PASS] d6r-bare-key-invalid-url-observation :: rc=3, 裸密钥回显=否（ConfigError 路径观察项）\n[PASS] d7r-no-llm-section-errors :: rc=3, 提示 base_url=是, model=是\n[PASS] d7r-valid-config-ok :: rc=0（期望 0）\n\n== SUMMARY: 10/10 passed =="
+    }
+  ]
+}

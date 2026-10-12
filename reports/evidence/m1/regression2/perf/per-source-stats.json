@@ -1,0 +1,32 @@
+[
+  {
+    "mark": "OK ",
+    "id": "hackernews",
+    "detail": "59 条",
+    "ms": 1840
+  },
+  {
+    "mark": "OK ",
+    "id": "infoq_cn",
+    "detail": "17 条",
+    "ms": 143
+  },
+  {
+    "mark": "OK ",
+    "id": "openai_news",
+    "detail": "4 条",
+    "ms": 1297
+  },
+  {
+    "mark": "OK ",
+    "id": "qbitai",
+    "detail": "10 条",
+    "ms": 104
+  },
+  {
+    "mark": "OK ",
+    "id": "techcrunch_ai",
+    "detail": "14 条",
+    "ms": 687
+  }
+]

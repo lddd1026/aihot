@@ -1,0 +1,34 @@
+$ python -m aihot fetch --dry-run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-fetch-proxy\config.yaml
+exit=0 (1.5s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-fetch-proxy\config.yaml
+11:32:03 INFO aihot.sources: 信息源完成: fake_feed，8 条（36 ms）
+
+采集窗口: 最近 24 小时（起始 2026-10-11T11:32:02+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] fake_feed          8 条（36 ms）
+
+合计: 抓取 8 条（dry-run，不写库）
+
+最新条目预览（前 8 条）:
+   1. [fake_feed] M5 独立验收假新闻 1：模型与工具更新（fetch）
+      https://example.com/fetch/1（10-12 11:01）
+   2. [fake_feed] M5 独立验收假新闻 2：模型与工具更新（fetch）
+      https://example.com/fetch/2（10-12 11:00）
+   3. [fake_feed] M5 独立验收假新闻 3：模型与工具更新（fetch）
+      https://example.com/fetch/3（10-12 10:59）
+   4. [fake_feed] M5 独立验收假新闻 4：模型与工具更新（fetch）
+      https://example.com/fetch/4（10-12 10:58）
+   5. [fake_feed] M5 独立验收假新闻 5：模型与工具更新（fetch）
+      https://example.com/fetch/5（10-12 10:57）
+   6. [fake_feed] M5 独立验收假新闻 6：模型与工具更新（fetch）
+      https://example.com/fetch/6（10-12 10:56）
+   7. [fake_feed] M5 独立验收假新闻 7：模型与工具更新（fetch）
+      https://example.com/fetch/7（10-12 10:55）
+   8. [fake_feed] M5 独立验收假新闻 8：模型与工具更新（fetch）
+      https://example.com/fetch/8（10-12 10:54）
+
+--- stderr ---

@@ -1,0 +1,30 @@
+{
+  "top": [
+    "DB 正常 1",
+    "DB 正常 2",
+    "DB 正常 3",
+    "DB 正常 4",
+    "DB 正常 5"
+  ],
+  "briefs": [
+    "DB 正常 6",
+    "DB 正常 7",
+    "DB 正常 8",
+    "DB 正常 9",
+    "DB 正常 10",
+    "DB 正常 11",
+    "DB 正常 12",
+    "DB 高分其他"
+  ],
+  "stats": {
+    "scanned": 14,
+    "kept": 14,
+    "clusters": 14,
+    "selected": 5,
+    "briefs": 8,
+    "sources": 1,
+    "cost_cny": 0.0,
+    "papers": 0
+  },
+  "publishable_count": 10
+}

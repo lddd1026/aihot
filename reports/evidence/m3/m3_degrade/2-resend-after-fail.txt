@@ -1,0 +1,17 @@
+$ python -m aihot resend --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\degrade\cfg-resend.yaml
+exit=0 (7.0s)
+--- stdout ---
+aihot resend · 补发某期日报
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\degrade\cfg-resend.yaml
+11:37:31 INFO aihot.delivery.wecom: 图片消息（2026-09-25.jpg）已发送（请求体 611306 字节）
+11:37:31 INFO aihot.delivery.wecom: markdown 消息已发送（请求体 3190 字节）
+11:37:31 INFO aihot.delivery.email: 邮件已发送至 receiver@example.com
+
+日报日期: 2026-09-25，渠道: all
+  markdown : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\degrade\data-resend\digests\2026-09-25.md
+  image    : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\degrade\data-resend\digests\2026-09-25.jpg
+  html     : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\degrade\data-resend\digests\2026-09-25.html
+
+[OK] 补发完成
+
+--- stderr ---

@@ -1,0 +1,80 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3a\config.yaml --limit 20 --top 1
+exit=0 (0.8s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3a\config.yaml
+
+待加工: 6 条（上限 20）
+
+预筛:
+  输入 6 → 保留 6（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 6 条 → 6 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 26.5] (其他) Anthropic releases Claude Opus 6
+      summary 1
+      提及 1 条 · 来源 1 家
+
+已写回: 6 条加工 · 0 条标记为过滤 · 6 个事件簇
+
+--- stderr ---
+
+
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3a\config.yaml --limit 20 --top 1
+exit=0 (0.8s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-d2-3a\config.yaml
+
+待加工: 4 条（上限 20）
+
+预筛:
+  输入 4 → 保留 4（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 4 条 → 4 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 26.5] (其他) Nvidia unveils Rubin GPU
+      summary 2
+      提及 1 条 · 来源 1 家
+
+已写回: 4 条加工 · 0 条标记为过滤 · 4 个事件簇
+
+--- stderr ---
+
+
+{
+  "first": {
+    "cluster_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "max_id": 6,
+    "count": 6,
+    "dangling": [],
+    "mismatched": []
+  },
+  "second": {
+    "cluster_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "max_id": 10,
+    "count": 10,
+    "dangling": [],
+    "mismatched": []
+  }
+}

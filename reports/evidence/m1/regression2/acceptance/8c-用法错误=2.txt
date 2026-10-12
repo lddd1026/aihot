@@ -1,0 +1,7 @@
+--- 未知参数 ---
+usage: aihot [-h] [--config CONFIG] [--debug] [--version] 命令 ...
+aihot: error: unrecognized arguments: --bogus-flag
+
+--- 未知命令 ---
+usage: aihot [-h] [--config CONFIG] [--debug] [--version] 命令 ...
+aihot: error: argument 命令: invalid choice: 'frobnicate' (choose from check, fetch, version)

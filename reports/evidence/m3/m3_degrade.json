@@ -1,0 +1,88 @@
+{
+  "suite": "m3_degrade",
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "6.1 渲染失败：image_paths 为空且记录 image_error（不抛异常）",
+      "ok": true,
+      "detail": "image_error=图片体积超限（降质与拆图后仍失败）: 2026-09-24-1.jpg 超过 2048 KB"
+    },
+    {
+      "item": "6.2 渲染失败：md/html 三件套仍落盘",
+      "ok": true,
+      "detail": "files=['html', 'markdown']"
+    },
+    {
+      "item": "6.3 渲染失败：纯文字推送继续（无图、有文）且内容完整",
+      "ok": true,
+      "detail": "errors=[] markdown=7 Top 前 12 条链接完整=True"
+    },
+    {
+      "item": "6.4 渲染失败：邮件照常发送（渠道独立）",
+      "ok": true,
+      "detail": "emails=1"
+    },
+    {
+      "item": "6.5 注入渲染失败：run_all 不崩溃且错误可见",
+      "ok": true,
+      "detail": "status=partial errors=['长图渲染失败（已降级文字）: 注入的渲染失败']"
+    },
+    {
+      "item": "6.6 注入渲染失败：文字渲染结果不受影响",
+      "ok": true,
+      "detail": "parts=1 email_html=1174"
+    },
+    {
+      "item": "6.7 推送失败：run 不崩溃（rc=0/partial）且错误可见",
+      "ok": true,
+      "detail": "rc=0 (10.8s)"
+    },
+    {
+      "item": "6.8 推送失败：邮件渠道仍送达（独立降级）",
+      "ok": true,
+      "detail": "emails=1"
+    },
+    {
+      "item": "6.9 推送失败：日报已存档（三件套 + digests 行）",
+      "ok": true,
+      "detail": "files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']"
+    },
+    {
+      "item": "6.10 resend 补发成功：图 + markdown 均送达",
+      "ok": true,
+      "detail": "rc=0 images=2 markdown=2"
+    },
+    {
+      "item": "6.11 resend 不重跑 LLM（计数不变）",
+      "ok": true,
+      "detail": "llm_before=4 llm_after=4"
+    },
+    {
+      "item": "6.12 失败前邮件内容与日报一致（内容不丢）",
+      "ok": true,
+      "detail": "subject=AI 热点日报 · 2026-09-25"
+    },
+    {
+      "item": "6.13 邮件失败：企微照常送达、错误被记录（不崩溃）",
+      "ok": true,
+      "detail": "errors=[\"邮件: SMTP 连接或登录失败: SMTPAuthenticationError: (535, b'5.7.8 Authentication failed')\"] markdown=1"
+    },
+    {
+      "item": "6.14 LLM 全失败：仍生成日报并推送（原文降级，不崩溃）",
+      "ok": true,
+      "detail": "rc=0 digests=1 markdown=1"
+    },
+    {
+      "item": "6.15 LLM 全失败：推送内容含条目链接（内容不丢）",
+      "ok": true,
+      "detail": "markdown=1"
+    },
+    {
+      "item": "6.16 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}"
+    }
+  ],
+  "notes": []
+}

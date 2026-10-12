@@ -1,0 +1,58 @@
+{
+  "suite": "p2-supplement",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "5a-过门槛：('hackernews', 'Intel launches new NPU for laptops')",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "5a-过门槛：('hackernews', 'Intel launches new NPUs for laptops')",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "5a-过门槛：('hackernews', 'Show HN: Npunlock – Run custom C kernels for Intel NPUs')",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "5a-过门槛：('hackernews', 'MLOps platforms compared for 2026')",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "5a-过门槛：('hackernews', 'A survey of VLM architectures')",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "5a-控制组仍淘汰（无 AI 关键词）",
+      "ok": true,
+      "detail": "Rust 1.99 淘汰=True"
+    },
+    {
+      "item": "5b---no-llm 统计字段齐备（与 LLM 路径同构）",
+      "ok": true,
+      "detail": "缺失字段=无；no_llm=True"
+    },
+    {
+      "item": "5b---no-llm 成本/批次为 0 且可读",
+      "ok": true,
+      "detail": "cost=0.0 batches=0 succeeded=0 tokens=0"
+    },
+    {
+      "item": "5b-基础计数正确（enriched=2/filtered=0）",
+      "ok": true,
+      "detail": "enriched=2 filtered=0 kept=2"
+    },
+    {
+      "item": "5z-真实库只读守护",
+      "ok": true,
+      "detail": "items=176（开始时 176）"
+    }
+  ],
+  "notes": []
+}

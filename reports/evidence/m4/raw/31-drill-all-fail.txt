@@ -1,0 +1,20 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-all-fail\config.yaml
+exit=1 (10.3s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-all-fail\config.yaml
+11:07:11 WARNING aihot.net: 请求最终失败: http://127.0.0.1:1/feed2（ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+11:07:11 WARNING aihot.net: 请求最终失败: http://127.0.0.1:1/feed（ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+11:07:11 WARNING aihot.sources: 信息源失败: dead_source2（SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+11:07:11 WARNING aihot.sources: 信息源失败: dead_source（SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+11:07:11 INFO aihot.delivery.wecom: 文本消息已发送（请求体 111 字节）
+
+① 采集: 0/2 源成功，抓取 0 条 → 新增 0 条
+   [ERR] dead_source: SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+   [ERR] dead_source2: SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+  [WARN] 全部信息源采集失败
+
+状态: failed
+
+--- stderr ---

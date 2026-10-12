@@ -1,0 +1,103 @@
+{
+  "suite": "regression2/p2",
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "4a-过门槛：Nvidia unveils Rubin GPU",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "4a-过门槛：Nvidia unveils Rubin GPUs",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "4a-过门槛：Google starts deploying TPU v8 for training",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "4a-过门槛：Google starts deploying TPUs v8 for training",
+      "ok": true,
+      "detail": "保留=True"
+    },
+    {
+      "item": "4a-控制组仍被淘汰（无 AI 关键词）",
+      "ok": true,
+      "detail": "Rust 1.99 淘汰=True"
+    },
+    {
+      "item": "4b-缺省：内置+自定义都生效",
+      "ok": true,
+      "detail": "淘汰=['0', '1']（期望 ['0','1']：招聘+辟谣）"
+    },
+    {
+      "item": "4b-true：内置+自定义都生效",
+      "ok": true,
+      "detail": "淘汰=['0', '1']"
+    },
+    {
+      "item": "4b-false：仅自定义词生效（招聘不再淘汰）",
+      "ok": true,
+      "detail": "淘汰=['1']（期望 ['1']：仅辟谣）"
+    },
+    {
+      "item": "4b-false+空自定义：黑名单整体停用",
+      "ok": true,
+      "detail": "淘汰=[]（期望 []）"
+    },
+    {
+      "item": "4c-runs 含 stage=enrich 记录",
+      "ok": true,
+      "detail": "enrich 记录数=1，stage=enrich，status=ok"
+    },
+    {
+      "item": "4c-成本字段可读且与假 usage 一致",
+      "ok": true,
+      "detail": "cost_cny=0.006（期望 0.006），token=1000+500，batches=1 succeeded=3"
+    },
+    {
+      "item": "4c-统计字段齐备",
+      "ok": true,
+      "detail": "缺失字段=无"
+    },
+    {
+      "item": "4c---no-llm 也写 runs（no_llm=true 且有基础字段）",
+      "ok": true,
+      "detail": "no_llm=True enriched=2 cost=None batches=None（观察项：--no-llm 不写 LLM 统计字段）"
+    },
+    {
+      "item": "4d-越界 time_budget_seconds → rc=3",
+      "ok": true,
+      "detail": "坏值 rc=[(59, 3), (7201, 3), ('abc', 3), (60.5, 3)]"
+    },
+    {
+      "item": "4d-边界值 60/7200 合法",
+      "ok": true,
+      "detail": "边界 rc=[(60, 0), (7200, 0)]"
+    },
+    {
+      "item": "4d-超时停止后续批次（time_budget_hit=true）",
+      "ok": true,
+      "detail": "time_budget_hit=True，batches=2（3 批中执行 2 批，耗时 65s）"
+    },
+    {
+      "item": "4d-不丢数据（3 条全部落库，1 条降级原文）",
+      "ok": true,
+      "detail": "enriched=3，降级条目=1（期望 1），rc=0"
+    },
+    {
+      "item": "4d-日志记录停止原因",
+      "ok": true,
+      "detail": "日志含「已达加工时间上限」=True"
+    },
+    {
+      "item": "4z-真实库只读守护",
+      "ok": true,
+      "detail": "items=176（开始时 176）"
+    }
+  ],
+  "notes": []
+}

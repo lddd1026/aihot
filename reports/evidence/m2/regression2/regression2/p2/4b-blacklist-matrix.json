@@ -1,0 +1,26 @@
+{
+  "default": {
+    "dropped_indexes": [
+      "0",
+      "1"
+    ],
+    "rc": 0
+  },
+  "true": {
+    "dropped_indexes": [
+      "0",
+      "1"
+    ],
+    "rc": 0
+  },
+  "false": {
+    "dropped_indexes": [
+      "1"
+    ],
+    "rc": 0
+  },
+  "false-empty": {
+    "dropped_indexes": [],
+    "rc": 0
+  }
+}

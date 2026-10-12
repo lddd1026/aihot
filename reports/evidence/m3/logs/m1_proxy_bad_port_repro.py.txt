@@ -1,0 +1,6 @@
+  [PASS] 复验-非法proxy.url干净报配置错误(rc=3): 6 个非法变体：rc 全为 3=True，无 traceback=True
+  [PASS] 复验-错误信息可操作(含 proxy.url 与示例): 全部变体提示含 'proxy.url'=True
+  [PASS] 复验-合法但不可达代理仍走[ERR]代理: check --net rc=1（期望 1，含[ERR]代理=True）；fetch rc=1（期望 1）
+  [PASS] 复验-非法IPv6代理 check 摘要不崩溃(D5): rc=3（期望 3）含 traceback=False
+
+== proxy_bad_port: 4 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\proxy_bad_port.json

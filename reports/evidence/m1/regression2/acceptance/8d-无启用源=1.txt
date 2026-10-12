@@ -1,0 +1,4 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t7-noenabled-fcr_b1h6\config.yaml
+
+[ERR] 没有可用的信息源（检查 sources 配置或 --source 参数）

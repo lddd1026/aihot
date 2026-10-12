@@ -1,0 +1,6 @@
+{"ts": "2026-09-24T11:02:46+08:00", "level": "INFO", "logger": "aihot.test", "msg": "plain ***"}
+{"ts": "2026-09-24T11:02:46+08:00", "level": "INFO", "logger": "aihot.test", "msg": "dict ***"}
+{"ts": "2026-09-24T11:02:46+08:00", "level": "INFO", "logger": "aihot.test", "msg": "kwargs", "stage": "m0", "source_id": "***", "count": 1}
+{"ts": "2026-09-24T11:02:46+08:00", "level": "INFO", "logger": "aihot.test", "msg": "object ***"}
+{"ts": "2026-09-24T11:02:46+08:00", "level": "INFO", "logger": "aihot.test", "msg": "bytes b'sk-***'"}
+{"ts": "2026-09-24T11:02:46+08:00", "level": "ERROR", "logger": "aihot.test", "msg": "failed", "exc": "Traceback (most recent call last):\n  File \"D:\\信息收集整理\\aihot\\tests\\independent\\m0_inprocess.py\", line 79, in test_redaction_and_json_lines\n    raise RuntimeError(f\"boom {SECRET}\")\nRuntimeError: boom ***"}

@@ -1,0 +1,78 @@
+{
+  "sample": {
+    "items": 6,
+    "ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rc": 0,
+    "prompt_tokens": 886,
+    "completion_tokens": 708,
+    "cost_cny": 0.0074,
+    "cost_per_item_cny": 0.001233,
+    "estimated_daily_200_items_cny": 0.2467,
+    "estimated_daily_400_items_cny": 0.4933,
+    "prompt_tokens_per_item": 147.66666666666666,
+    "completion_tokens_per_item": 118.0,
+    "translated_items": 6,
+    "written": 6,
+    "rows": [
+      {
+        "source_id": "qbitai",
+        "title": "联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧",
+        "cn_title": "联想天禧AI亮相阿里云栖大会，将超级组织能力落地端侧",
+        "cn_summary": "联想在阿里云栖大会展示天禧AI及全场景多端产品矩阵，推动AI能力向端侧设备部署。",
+        "category": "产品更新",
+        "importance": 45
+      },
+      {
+        "source_id": "qbitai",
+        "title": "让Token生产更高效：异构混推的关键技术演进与创新实践",
+        "cn_title": "商汤大装置分享异构混推技术演进与创新实践",
+        "cn_summary": "商汤大装置介绍异构混合推理的关键技术演进，旨在提升Token生成效率。",
+        "category": "行业动态",
+        "importance": 40
+      },
+      {
+        "source_id": "qbitai",
+        "title": "汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”",
+        "cn_title": "汇智智能发布Hellome：国内首个FDE直连智能体服务平台",
+        "cn_summary": "汇智智能推出Hellome平台，通过FDE直连智能体服务将企业AI交付周期压缩至周级别。",
+        "category": "产品更新",
+        "importance": 55
+      },
+      {
+        "source_id": "qbitai",
+        "title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+        "cn_title": "达卯科技完成新一轮融资，聚焦算电协同软件层",
+        "cn_summary": "达卯科技完成新一轮融资，定位算电协同核心软件层，目标打造该领域的操作系统级平台。",
+        "category": "融资商业",
+        "importance": 35
+      },
+      {
+        "source_id": "qbitai",
+        "title": "它石智航顶尖团队引领中国具身智能率先迈入规模化落地阶段",
+        "cn_title": "它石智航团队推动中国具身智能进入规模化落地阶段",
+        "cn_summary": "它石智航宣布将扩大研发团队并加快生产基地布局，以提升具身智能机器人交付能力。",
+        "category": "行业动态",
+        "importance": 40
+      },
+      {
+        "source_id": "qbitai",
+        "title": "斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”",
+        "cn_title": "斑马智能发布端模型AutoOmni 2.0，让元神AI更懂“我的世界”",
+        "cn_summary": "斑马智能在云栖大会发布全模态端侧大模型AutoOmni 2.0-23B-A3B，提升元神AI的场景理解能力。",
+        "category": "模型发布",
+        "importance": 60
+      }
+    ]
+  },
+  "translation": {
+    "sample": 20,
+    "passed": 19
+  }
+}

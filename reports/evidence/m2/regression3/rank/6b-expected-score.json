@@ -1,0 +1,104 @@
+{
+  "标题1": {
+    "score": 65.83,
+    "terms": {
+      "importance": 49.5,
+      "cross": 0.0,
+      "community": 0.0,
+      "source": 8.33
+    },
+    "bonus": 8.0,
+    "importance": 90,
+    "category": "模型发布",
+    "mention": 1,
+    "community": 0.0,
+    "source": "qbitai",
+    "source_weight": 1.0,
+    "members": 1
+  },
+  "标题2": {
+    "score": 21.0,
+    "terms": {
+      "importance": 11.0,
+      "cross": 0.0,
+      "community": 0.0,
+      "source": 10.0
+    },
+    "bonus": 0.0,
+    "importance": 20,
+    "category": "行业动态",
+    "mention": 1,
+    "community": 0.0,
+    "source": "openai_news",
+    "source_weight": 1.2,
+    "members": 1
+  },
+  "标题3": {
+    "score": 50.83,
+    "terms": {
+      "importance": 27.5,
+      "cross": 13.33,
+      "community": 0.0,
+      "source": 10.0
+    },
+    "bonus": 0.0,
+    "importance": 50,
+    "category": "研究突破",
+    "mention": 3,
+    "community": 0.0,
+    "source": "openai_news",
+    "source_weight": 1.2,
+    "members": 3
+  },
+  "标题4": {
+    "score": 61.84,
+    "terms": {
+      "importance": 33.0,
+      "cross": 0.0,
+      "community": 14.17,
+      "source": 6.67
+    },
+    "bonus": 8.0,
+    "importance": 60,
+    "category": "模型发布",
+    "mention": 1,
+    "community": 0.9446,
+    "source": "hackernews",
+    "source_weight": 0.8,
+    "members": 1
+  },
+  "标题5": {
+    "score": 48.0,
+    "terms": {
+      "importance": 33.0,
+      "cross": 0.0,
+      "community": 0.0,
+      "source": 10.0
+    },
+    "bonus": 5.0,
+    "importance": 60,
+    "category": "产品更新",
+    "mention": 1,
+    "community": 0.0,
+    "source": "openai_news",
+    "source_weight": 1.2,
+    "members": 1
+  },
+  "标题6": {
+    "score": 50.17,
+    "terms": {
+      "importance": 38.5,
+      "cross": 0.0,
+      "community": 0.0,
+      "source": 6.67
+    },
+    "bonus": 5.0,
+    "importance": 70,
+    "category": "开源工具",
+    "mention": 1,
+    "community": 0.0,
+    "source": "hackernews",
+    "source_weight": 0.8,
+    "members": 1
+  }
+}

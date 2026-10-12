@@ -1,0 +1,11 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-adv-messy-jdw73fpj\config.yaml
+12:10:39 INFO aihot.sources: 信息源完成: messy，4 条（35 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:10:37+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] messy              4 条（35 ms）
+
+合计: 抓取 4 条 → 新增 4 条（去重 0 条）→ 库内共 4 条

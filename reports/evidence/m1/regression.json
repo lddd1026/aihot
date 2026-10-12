@@ -1,0 +1,53 @@
+{
+  "suite": "regression",
+  "passed": 8,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "11a-ruff零告警",
+      "ok": true,
+      "detail": "exit=0（0.3s）输出='All checks passed!'"
+    },
+    {
+      "item": "11b-pytest全绿",
+      "ok": true,
+      "detail": "exit=0 passed=323 failed=0 errors=0（22.2s）"
+    },
+    {
+      "item": "11c-m0_blackbox.py",
+      "ok": false,
+      "detail": "exit=1 SUMMARY=104/105（M0 基线 105/105，137.5s） 新增失败=['net-wecom-fake-ok']"
+    },
+    {
+      "item": "11c-m0_inprocess.py",
+      "ok": true,
+      "detail": "exit=0 SUMMARY=13/13（M0 基线 13/13，2.1s）"
+    },
+    {
+      "item": "11c-m0_secret_scan.py",
+      "ok": true,
+      "detail": "exit=0 SUMMARY=13/13（M0 基线 13/13，51.0s）"
+    },
+    {
+      "item": "11c-m0_yaml_error_probe.py",
+      "ok": true,
+      "detail": "exit=1 SUMMARY=5/6（M0 基线 5/6，6.4s） M0 已接受遗留=['bad_alias']"
+    },
+    {
+      "item": "11c-m0_issue_redaction_probe.py",
+      "ok": true,
+      "detail": "exit=0 SUMMARY=4/4（M0 基线 3/4，4.5s） M0 已接受遗留=['webhook_in_proxy_url'] 本轮已恢复=['webhook_in_proxy_url']"
+    },
+    {
+      "item": "11c-m0_round3_probe.py",
+      "ok": true,
+      "detail": "exit=0 SUMMARY=10/10（M0 基线 10/10，11.2s）"
+    },
+    {
+      "item": "11d-config.example开箱校验",
+      "ok": true,
+      "detail": "rc=0（期望 0）"
+    }
+  ],
+  "notes": []
+}

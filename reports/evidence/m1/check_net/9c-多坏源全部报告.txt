@@ -1,0 +1,38 @@
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-netmulti-y4lbtyap\config.yaml
+12:19:11 INFO aihot.cli: check 通过: 启用源 2/2, wecom=False, email=False
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-netmulti-y4lbtyap\data
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-netmulti-y4lbtyap\logs
+  代理      : 未启用
+
+信息源（2/2 启用）:
+  [on ] bad500             bad500
+  [on ] notfound           notfound
+
+推送通道:
+  [off] 企业微信机器人
+  [off] 邮件（未配置）
+
+密钥状态:
+  [WARN] LLM API key 未配置（M2 加工阶段前需补齐）
+  [WARN] 企业微信 webhook 未配置（推送前需补齐）
+  [WARN] 邮箱 SMTP 授权码 未配置（邮件推送前需补齐）
+
+警告:
+  [WARN] llm.api_key 未配置：M2 加工阶段前需补齐（或设置环境变量 AIHOT_LLM_KEY）
+  [WARN] 没有启用任何推送渠道：日报将只落盘、不发送
+
+网络探测:
+12:19:15 WARNING aihot.net: 请求最终失败: http://127.0.0.1:3009/bad500（HTTP 500）
+  [OK ] LLM API: HTTP 401（未配置 key，仅探测可达性）（1663 ms）
+  [ERR] 源 bad500: HTTP 500（6 ms）
+  [ERR] 源 notfound: HTTP 404（4 ms）
+
+[ERR] 网络探测存在 2 个失败项，请检查网络/代理/配置

@@ -1,0 +1,43 @@
+===== m0_yaml_error_probe.py.txt (1 FAIL)
+   [FAIL] bad_alias: rc=3, leaks=['M0YAMLKEY0123456789abcdef'], partial=鏃? traceback=False, 闅愯棌鎻愮ず=True
+===== m1_check_net.py.txt (1 FAIL)
+   [FAIL] 9d-鐪熷疄閰嶇疆閫愭簮鍋ュ悍搴? rc=1锛堟湡鏈?0锛夎鐩栧惎鐢ㄦ簮=['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews'] 鍏?12 琛?
+===== m1_regression.py.txt (1 FAIL)
+   [FAIL] 11a-ruff闆跺憡璀? exit=1锛?.4s锛夎緭鍑?'F401 [*] `json` imported but unused\n  --> tests\\independent\\m4_adapters.py:9:8\n '
+===== m1_regression_rerun.txt (1 FAIL)
+   [FAIL] 11a-ruff闆跺憡璀? exit=1锛?.4s锛夎緭鍑?'E501 Line too long (113 > 100)\n  --> tests\\independent\\m3_summary_check.py:14:10'
+===== m2_cache.py.txt (1 FAIL)
+   [FAIL] 4a-棣栬疆鍔犲伐骞惰皟鐢?LLM: rc=0锛孡LM 璇锋眰=3锛堟湡鏈?2 鎵癸級
+===== m2_cost.py.txt (3 FAIL)
+   [FAIL] 5a-鎴愭湰鏍哥畻锛? 鎵?usage 100k/50k锛? token=200100+100050锛孋LI 鎴愭湰=楼1.2006锛岀嫭绔嬪绠?楼1.2000
+   [FAIL] 5b-瓒呬笂闄愬仠姝㈠悗缁壒娆? 鎵规=2锛堟湡鏈?2锛塋LM 璇锋眰=3锛涙垚鏈?楼0.6锛堥檺棰?0.3锛?
+   [FAIL] 5c-涓婇檺灏忎簬鍗曟壒鎴愭湰锛氫粎棣栨壒鎵ц涓旀爣璁?hit: 鎵规=1 璇锋眰=2 鎴愭湰=楼0.4锛堣鏄庯細涓婇檺妫€鏌ュ湪鎵规鍓嶏紝鏁呴鎵瑰繀鐒舵墽琛岋紱鍓╀綑鏉＄洰闄嶇骇涓嶄涪锛?
+===== m2_dedup.py.txt (1 FAIL)
+   [FAIL] 2k-瑙勫垯灞傜湡瀹炲鏉＄洰绨囧噯纭巼: 3 涓鏉＄洰绨囷紝浜哄伐鏍搁獙鍚堢悊 2 涓紱鏄庣粏瑙佽瘉鎹?
+===== m2_regression.py.txt (2 FAIL)
+   [FAIL] 9a-ruff check . 闆跺憡璀? exit=1锛?.4s锛塅401 [*] `json` imported but unused
+   [FAIL] 9d-m1_check_net.py: exit=1 5/6锛圡1 鍩虹嚎 6/6锛?0.3s锛?
+===== m2r2_accuracy.py.txt (1 FAIL)
+   [FAIL] 2b-鐪熷疄搴撳壇鏈紙榛樿閰嶇疆锛夊鏉＄洰绨囦汉宸ュ鏍? 242 鏉?鈫?237 绨囷紱澶氭潯鐩皣 3 涓紙cluster 120: OpenAI agent hacked Australian governmen / Australia says OpenAI agent hacked into 锛沜luster 137: Claude Opus 5.5 Intelligence, Performanc / Claude Opus 5.5 / Claude Opus 5.5 鍙戝竷锛氫竴澶╁唴杩佺Щ 68 涓囪浠ｇ爜锛屽崟浠诲姟鎴愭湰姣?锛沜luster 215: OpenAI launches GPT-6 Sol and Luna, boas / Introducing GPT-6 Sol and Luna / GPT-6 Sol and Luna锛夛紝鎴愬憳鍧囧悓灞炰竴涓簨浠?
+===== m2r2_d1.py.txt (1 FAIL)
+   [FAIL] 1a-榛樿閰嶇疆涓嶈皟鐢?LLM 绮句慨: rc=0锛孡LM 璇锋眰=2锛堜粎 1 娆℃潯鐩姞宸ワ級锛岃緭鍑哄惈銆孡LM 绮句慨鍚庛€?False
+===== m2r2_d2.py.txt (1 FAIL)
+   [FAIL] 3b-鐪熷疄搴撳壇鏈柊绨囩紪鍙?> 鍘嗗彶鏈€澶? 鍘嗗彶 max_id=101锛屾柊澧?10 绨囷細[102, 103, 104, 105, 106, 107, 108, 109, 110, 111]锛堟湡鏈涘潎 > 101锛?
+===== m2r2_p2.py.txt (1 FAIL)
+   [FAIL] 4c-鎴愭湰瀛楁鍙涓斾笌鍋?usage 涓€鑷? cost_cny=0.0066锛堟湡鏈?0.006锛夛紝token=1100+550锛宐atches=1 succeeded=3
+===== m2r3_real_db.py.txt (1 FAIL)
+   [FAIL] 6a-璁℃暟锛歩tems=176 / 宸插鐞?176 / 寰呭鐞?0: items=363 enriched=176 pending=187 锛堣繃婊ゆ爣璁?71 = 176-105 鍔犲伐锛?
+===== m3_cli.py.txt (2 FAIL)
+   [FAIL] 8.9 run --top 3锛氭棩鎶ョ簿閫?3 鏉? ['鈶?鏃ユ姤: 2026-09-25 路 绮鹃€?0 鏉?+ 绠€璁?0 鏉?路 鏃犵患杩?]
+   [FAIL] 8.10 run --top 0锛氬洖閫€閰嶇疆 top_n=5: ['鈶?鏃ユ姤: 2026-09-25 路 绮鹃€?0 鏉?+ 绠€璁?0 鏉?路 鏃犵患杩?]
+===== m3_dryrun_db.py.txt (1 FAIL)
+   [FAIL] probe.3 dry-run 鏈啓鍏ヤ换浣曡: items=None runs=None
+===== m3_e2e.py.txt (1 FAIL)
+   [FAIL] 6.18 run --top 3锛氭棩鎶ョ簿閫?3 鏉?+ 绠€璁彇婊?12 鏉★紙BRIEF_COUNT 涓婇檺锛? ['鈶?鏃ユ姤: 2026-09-25 路 绮鹃€?0 鏉?+ 绠€璁?0 鏉?路 鏃犵患杩?]
+===== m3_infra_probe.py.txt (1 FAIL)
+   [FAIL] fake-service-churn: 6.43s
+===== m3_render_text.py.txt (1 FAIL)
+   [FAIL] 2.12 鏋佺闀挎枃锛氬叏閮ㄩ摼鎺ヤ粛鍦紙鎴柇涓嶄涪 URL锛? missing=['https://example.com/news/208', 'https://example.com/news/209', 'https://example.com/news/210', 'https://example.com/news/211', 'https://example.com/news/212']
+===== m3_toolchain.py.txt (2 FAIL)
+   [FAIL] 9.1 ruff check . 鈫?exit 0锛堥浂鍛婅锛? exit=1 stdout='I001 [*] Import block is un-sorted or un-formatted\n  --> tests\\independent\\m4_net.py:17:1\n   |\n15 |   sys.path.insert(0,'
+   [FAIL] 9.3 pytest 閫氳繃鏁颁笌寮€鍙戣€呭０鏄庯紙293锛変竴鑷? 瀹為檯 passed=314 鏈熸湜=293

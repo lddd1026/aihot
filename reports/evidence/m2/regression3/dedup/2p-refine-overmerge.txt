@@ -1,0 +1,105 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-refine\config.yaml --limit 20 --top 2
+exit=0 (3.2s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-refine\config.yaml
+
+待加工: 10 条（上限 20）
+
+预筛:
+  输入 10 → 保留 10（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 10 条 → 10 簇（多源簇 0 · 最大簇 1 条）
+11:41:43 WARNING aihot.enrich: 聚类精修被规则拒绝: 组内缺少相似链（10 条 → 拆为 10 组）: OpenAI ships GPT-6 Sol
+  LLM 精修后: 10 簇
+
+Top 2:
+   1. [ 37.5] (行业动态) 中文标题 2
+      摘要
+      提及 1 条 · 来源 1 家
+   2. [ 37.5] (行业动态) 中文标题 6
+      摘要
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 1（失败 0）· token 200+100 · 成本约 ¥0.0012
+  [WARN] 最近错误: 聚类精修被规则拒绝: 组内缺少相似链（10 条 → 拆为 10 组）: OpenAI ships GPT-6 Sol
+
+已写回: 10 条加工 · 0 条标记为过滤 · 10 个事件簇
+
+--- stderr ---
+
+LLM 请求=2
+{
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "mention_count": 1,
+      "item_hashes": "[\"5eaa8b772174c9af65cc3474c6568af141760b1d\"]"
+    },
+    {
+      "cluster_id": 2,
+      "mention_count": 1,
+      "item_hashes": "[\"2cf1b13c84196d1d1a1644b58d582d3eb3769697\"]"
+    },
+    {
+      "cluster_id": 3,
+      "mention_count": 1,
+      "item_hashes": "[\"a89eb97767d0dfb08c9c0372b710ee1dd4ffe78f\"]"
+    },
+    {
+      "cluster_id": 4,
+      "mention_count": 1,
+      "item_hashes": "[\"b4a8d520a2d2bde221e10a85e7e291a74b0d92c7\"]"
+    },
+    {
+      "cluster_id": 5,
+      "mention_count": 1,
+      "item_hashes": "[\"5a2a9ea1c18883db7b34e9b548cc0681f86af86d\"]"
+    },
+    {
+      "cluster_id": 6,
+      "mention_count": 1,
+      "item_hashes": "[\"f501dbfb06b133a001291eb1d4079450de2f5562\"]"
+    },
+    {
+      "cluster_id": 7,
+      "mention_count": 1,
+      "item_hashes": "[\"a14a2cb2afec24f0b50db8c1ec34c16875130121\"]"
+    },
+    {
+      "cluster_id": 8,
+      "mention_count": 1,
+      "item_hashes": "[\"cdc663ddc33a824667643a3e417bc0c06214d492\"]"
+    },
+    {
+      "cluster_id": 9,
+      "mention_count": 1,
+      "item_hashes": "[\"2fa1319a0cff7faa235599b18884ed58311d1ff3\"]"
+    },
+    {
+      "cluster_id": 10,
+      "mention_count": 1,
+      "item_hashes": "[\"558a6b9fd9656bcf78cbeb5cb530275a5b947f73\"]"
+    }
+  ],
+  "run_stats": {
+    "stage": "enrich",
+    "pending": 10,
+    "prefilter_kept": 10,
+    "clusters": 10,
+    "enriched": 10,
+    "filtered": 0,
+    "refine_calls": 1,
+    "refine_failed": 0,
+    "refine_rejected": 1,
+    "batches": 1,
+    "succeeded": 10,
+    "failed_batches": 0,
+    "fallback_items": 0,
+    "prompt_tokens": 200,
+    "completion_tokens": 100,
+    "cost_cny": 0.0012,
+    "cost_limit_hit": false,
+    "time_budget_hit": false
+  }
+}

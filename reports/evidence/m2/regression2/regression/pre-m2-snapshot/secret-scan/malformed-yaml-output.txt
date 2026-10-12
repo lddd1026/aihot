@@ -1,0 +1,9 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-broken-fgj91az8\config.yaml
+EXIT CODE: 3
+（以下为脱敏后的原始输出）
+--- STDOUT+STDERR ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-broken-fgj91az8\config.yaml
+
+[ERR] 配置校验未通过（1 个问题）:
+  1. YAML 解析失败: mapping values are not allowed here（第 28 行，第 105 列，已隐藏原文以防泄露密钥）

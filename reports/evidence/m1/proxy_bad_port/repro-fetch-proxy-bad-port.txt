@@ -1,0 +1,48 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-proxy-yy7ivutc\config.yaml --dry-run
+exit=1 (0.9s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-proxy-yy7ivutc\config.yaml
+
+--- stderr ---
+Traceback (most recent call last):
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urlparse.py", line 409, in normalize_port
+    port_as_int = int(port)
+                  ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'abc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\信息收集整理\aihot\src\aihot\__main__.py", line 6, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 84, in main
+    return _cmd_fetch(args)
+           ^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 163, in _cmd_fetch
+    http = HttpClient(proxy=proxy, retries=2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\net.py", line 55, in __init__
+    self._client = httpx.Client(
+                   ^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 686, in __init__
+    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 250, in _get_proxy_map
+    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy
+            ^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_config.py", line 210, in __init__
+    url = URL(url)
+          ^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urls.py", line 117, in __init__
+    self._uri_reference = urlparse(url, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urlparse.py", line 321, in urlparse
+    parsed_port: int | None = normalize_port(port, scheme)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urlparse.py", line 411, in normalize_port
+    raise InvalidURL(f"Invalid port: {port!r}")
+httpx.InvalidURL: Invalid port: 'abc'

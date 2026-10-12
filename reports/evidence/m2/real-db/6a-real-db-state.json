@@ -1,0 +1,13 @@
+{
+  "items": 363,
+  "enriched": 176,
+  "pending": 187,
+  "filtered": 71,
+  "clusters": 101,
+  "max_cluster_id": 101,
+  "min_cluster_id": 1,
+  "dangling": 0,
+  "mention_mismatch": 0,
+  "bad_clusters": [],
+  "empty_clusters": []
+}

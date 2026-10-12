@@ -1,0 +1,22 @@
+  [PASS] 4.1 alert 发送成功 rc=0: rc=0
+  [PASS] 4.2 收到 msgtype=text 告警消息: text_requests=1
+  [PASS] 4.3 告警正文含哨兵文本与告警标识: content='⚠️ aihot 告警：运维消息\n- M4-独立告警哨兵-20260925'
+  [PASS] 4.4 告警未走 markdown（msgtype 正确）: markdown=0
+  [FAIL] 4.5 企微未启用时 alert rc=1 且提示明确: rc=1
+  [PASS] 4.6 企微 errcode 非 0 时 alert rc=1: rc=1
+  [PASS] 4.7 推送失败 run 不崩溃（rc=0/partial）: rc=0
+  [PASS] 4.8 推送失败触发了 runner._alert 文本告警: alert_texts=1
+  [PASS] 4.9 告警正文含错误明细: ⚠️ aihot 告警：日报推送失败
+- 企业微信图片(2026-10-12.jpg): 图片消息（2026-10-12.jpg）发送失败: errcode=93000 errmsg=invalid webhook key
+- 企业微信文字
+  [PASS] 4.10 渲染失败 outcome.status=failed: status=failed
+  [FAIL] 4.11 渲染失败触发 runner._alert（期望符合「失败必有告警」）: alert_texts=0；details=['渲染失败: 独立测试：模拟渲染失败']
+  [PASS] 4.12 finally 仍写入 failed run 记录: failed_runs=1
+  [FAIL] 4.13 长图降级（partial）是否告警（期望「渲染失败需告警」）: status=partial errors=['长图渲染失败（已降级文字）: 独立测试：模拟长图失败', '企业微信文字第1片: markdown 消息发送失败: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)'] alerts=0
+  [PASS] 4.14 本套件未改动真实库/存档: 真实库快照前后一致
+
+== m4_alert: 11 passed / 3 failed == summary=D:\信息收集整理\aihot\reports\evidence\m5r\regression\m4_alert.json
+
+--- stderr ---
+告警通道失败: 企业微信: 文本消息发送失败: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)
+告警通道失败: 企业微信: 文本消息发送失败: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)

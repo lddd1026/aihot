@@ -1,0 +1,15 @@
+== 5a 词表（NPU/NPUs/MLOps/VLM） ==
+  [PASS] 5a-过门槛：('hackernews', 'Intel launches new NPU for laptops'): 保留=True
+  [PASS] 5a-过门槛：('hackernews', 'Intel launches new NPUs for laptops'): 保留=True
+  [PASS] 5a-过门槛：('hackernews', 'Show HN: Npunlock – Run custom C kernels for Intel NPUs'): 保留=True
+  [PASS] 5a-过门槛：('hackernews', 'MLOps platforms compared for 2026'): 保留=True
+  [PASS] 5a-过门槛：('hackernews', 'A survey of VLM architectures'): 保留=True
+  [PASS] 5a-控制组仍淘汰（无 AI 关键词）: Rust 1.99 淘汰=True
+
+== 5b --no-llm runs 字段完整性 ==
+  [PASS] 5b---no-llm 统计字段齐备（与 LLM 路径同构）: 缺失字段=无；no_llm=True
+  [PASS] 5b---no-llm 成本/批次为 0 且可读: cost=0.0 batches=0 succeeded=0 tokens=0
+  [PASS] 5b-基础计数正确（enriched=2/filtered=0）: enriched=2 filtered=0 kept=2
+  [PASS] 5z-真实库只读守护: items=363（开始时 363）
+
+== p2-supplement: 10 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\p2-supplement.json

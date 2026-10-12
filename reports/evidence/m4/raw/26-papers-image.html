@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: #f2f3f5; color: #1f2329;
+  }
+  .page { width: 1080px; background: #ffffff; padding: 56px 64px 40px; }
+  .header { border-bottom: 3px solid #1f2329; padding-bottom: 20px; margin-bottom: 32px; }
+  .brand { font-size: 46px; font-weight: 700; letter-spacing: 1px; }
+  .meta-line { margin-top: 10px; font-size: 24px; color: #646a73; }
+  .section-title { font-size: 30px; font-weight: 700; margin: 36px 0 20px; }
+  .summary {
+    background: #f7f8fa; border-left: 8px solid #3370ff; border-radius: 10px;
+    padding: 26px 30px; font-size: 27px; line-height: 1.75; color: #2b2f36;
+  }
+  .item { display: flex; gap: 22px; padding: 26px 0; border-bottom: 1px solid #eef0f3; }
+  .item:last-child { border-bottom: none; }
+  .rank {
+    flex: 0 0 56px; height: 56px; border-radius: 12px; background: #3370ff; color: #fff;
+    font-size: 30px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  }
+  .rank.top3 { background: #e5484d; }
+  .body { flex: 1; }
+  .title { font-size: 33px; font-weight: 700; line-height: 1.45; }
+  .desc { margin-top: 12px; font-size: 25px; line-height: 1.7; color: #4e5969; }
+  .tags { margin-top: 14px; display: flex; align-items: center; gap: 14px; font-size: 22px; color: #8a9099; }
+  .tag { background: #eef4ff; color: #3370ff; border-radius: 6px; padding: 4px 14px; font-weight: 600; }
+  .briefs { list-style: none; }
+  .briefs li { font-size: 25px; line-height: 1.9; padding-left: 30px; position: relative; color: #2b2f36; }
+  .paper { padding: 18px 0; border-bottom: 1px dashed #e5e8ef; }
+  .paper:last-child { border-bottom: none; }
+  .paper-title { font-size: 29px; font-weight: 700; line-height: 1.5; color: #1f2329; }
+  .paper-desc { margin-top: 10px; font-size: 23px; line-height: 1.7; color: #4e5969; }
+  .paper-note { margin-top: 10px; font-size: 21px; color: #7b61ff; font-weight: 600; }
+  .briefs li::before { content: "•"; position: absolute; left: 8px; color: #3370ff; font-weight: 700; }
+  .briefs .tag { margin-left: 10px; font-size: 20px; padding: 2px 10px; }
+  .footer {
+    margin-top: 40px; padding-top: 22px; border-top: 1px solid #eef0f3;
+    font-size: 22px; color: #8a9099; display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="brand">🤖 AI 热点日报</div>
+    <div class="meta-line">2026年9月25日 星期五 · 第 3 期</div>
+  </div>
+
+  <div class="section-title">📌 今日综述</div>
+  <div class="summary">今日综述：用于论文板块验证的独立测试文本。</div>
+
+  <div class="section-title">🔥 今日必读</div>
+  <div class="item">
+    <div class="rank top3">1</div>
+    <div class="body">
+      <div class="title">普通新闻标题 20：模型与产品更新</div>
+<div class="desc">第 20 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank top3">2</div>
+    <div class="body">
+      <div class="title">普通新闻标题 5：模型与产品更新</div>
+<div class="desc">第 5 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank top3">3</div>
+    <div class="body">
+      <div class="title">普通新闻标题 25：模型与产品更新</div>
+<div class="desc">第 25 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">4</div>
+    <div class="body">
+      <div class="title">普通新闻标题 10：模型与产品更新</div>
+<div class="desc">第 10 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">5</div>
+    <div class="body">
+      <div class="title">普通新闻标题 30：模型与产品更新</div>
+<div class="desc">第 30 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">6</div>
+    <div class="body">
+      <div class="title">普通新闻标题 15：模型与产品更新</div>
+<div class="desc">第 15 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">7</div>
+    <div class="body">
+      <div class="title">普通新闻标题 1：模型与产品更新</div>
+<div class="desc">第 1 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">8</div>
+    <div class="body">
+      <div class="title">普通新闻标题 21：模型与产品更新</div>
+<div class="desc">第 21 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">9</div>
+    <div class="body">
+      <div class="title">普通新闻标题 6：模型与产品更新</div>
+<div class="desc">第 6 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">10</div>
+    <div class="body">
+      <div class="title">普通新闻标题 26：模型与产品更新</div>
+<div class="desc">第 26 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">11</div>
+    <div class="body">
+      <div class="title">普通新闻标题 11：模型与产品更新</div>
+<div class="desc">第 11 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="rank">12</div>
+    <div class="body">
+      <div class="title">普通新闻标题 16：模型与产品更新</div>
+<div class="desc">第 16 条普通条目摘要。</div>      <div class="tags">
+        <span class="tag">模型发布</span>
+        <span>单篇报道</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">🔬 论文精选</div>
+  <div class="paper">
+    <div class="paper-title">论文精选独立验证 Paper 5</div>
+<div class="paper-desc">第 5 篇论文摘要：用于验证论文板块渲染。</div>    <div class="paper-note">Hugging Face</div>
+  </div>
+  <div class="paper">
+    <div class="paper-title">论文精选独立验证 Paper 6</div>
+<div class="paper-desc">第 6 篇论文摘要：用于验证论文板块渲染。</div>    <div class="paper-note">Hugging Face</div>
+  </div>
+
+  <div class="section-title">📎 其他值得一看</div>
+  <ul class="briefs">
+    <li>普通新闻标题 2：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 22：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 7：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 27：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 12：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 17：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 3：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 23：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 8：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 28：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 13：模型与产品更新<span class="tag">模型发布</span></li>
+    <li>普通新闻标题 18：模型与产品更新<span class="tag">模型发布</span></li>
+  </ul>
+
+  <div class="footer">
+    <span>共扫描 0 条 · 筛出 0 个事件 · 精选 12 条</span>
+    <span>aihot × DeepSeek</span>
+  </div>
+</div>
+</body>
+</html>

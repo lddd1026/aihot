@@ -1,0 +1,20 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\信息收集整理\aihot
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collected 132 items
+
+tests\unit\test_cli.py ...............                                   [ 11%]
+tests\unit\test_config.py ....................................           [ 38%]
+tests\unit\test_logging.py .......                                       [ 43%]
+tests\unit\test_net.py .........                                         [ 50%]
+tests\unit\test_registry.py ....                                         [ 53%]
+tests\unit\test_sources_base.py ............                             [ 62%]
+tests\unit\test_sources_hackernews.py ...                                [ 65%]
+tests\unit\test_sources_rss.py .....                                     [ 68%]
+tests\unit\test_store.py ..........                                      [ 76%]
+tests\unit\test_utils.py ...............................                 [100%]
+
+============================= 132 passed in 1.90s =============================

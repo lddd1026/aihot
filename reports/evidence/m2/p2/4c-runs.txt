@@ -1,0 +1,97 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4c\config.yaml --limit 20 --top 1
+exit=0 (4.3s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4c\config.yaml
+
+待加工: 3 条（上限 20）
+
+预筛:
+  输入 3 → 保留 3（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 3 条 → 3 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 51.0] (模型发布) 标题 2
+      摘要
+      提及 1 条 · 来源 1 家
+
+今日综述: {"items": []}
+
+LLM: 批次 1（失败 0）· token 1100+550 · 成本约 ¥0.0066
+
+已写回: 3 条加工 · 0 条标记为过滤
+
+--- stderr ---
+
+
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4c\config.yaml --limit 20 --top 1
+exit=0 (1.0s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4c\config.yaml
+
+待加工: 2 条（上限 20）
+
+预筛:
+  输入 2 → 保留 2（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 2 条 → 2 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 26.5] (其他) Mistral launches Le Chat Enterprise
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 0（失败 0）· token 0+0 · 成本约 ¥0.0000
+
+已写回: 2 条加工 · 0 条标记为过滤
+
+--- stderr ---
+
+[
+  {
+    "run_id": "20260925T040303-726409",
+    "status": "ok",
+    "stage": "enrich",
+    "pending": 3,
+    "prefilter_kept": 3,
+    "clusters": 3,
+    "enriched": 3,
+    "filtered": 0,
+    "refine_calls": 0,
+    "refine_failed": 0,
+    "refine_rejected": 0,
+    "batches": 1,
+    "succeeded": 3,
+    "failed_batches": 0,
+    "fallback_items": 0,
+    "prompt_tokens": 1100,
+    "completion_tokens": 550,
+    "cost_cny": 0.0066,
+    "cost_limit_hit": false,
+    "time_budget_hit": false
+  },
+  {
+    "run_id": "20260925T040304-d8d7fc",
+    "status": "ok",
+    "stage": "enrich",
+    "pending": 2,
+    "prefilter_kept": 2,
+    "clusters": 2,
+    "enriched": 2,
+    "filtered": 0,
+    "no_llm": true,
+    "refine_calls": 0,
+    "refine_failed": 0,
+    "refine_rejected": 0,
+    "batches": 0,
+    "succeeded": 0,
+    "failed_batches": 0,
+    "fallback_items": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "cost_cny": 0.0,
+    "cost_limit_hit": false,
+    "time_budget_hit": false
+  }
+]

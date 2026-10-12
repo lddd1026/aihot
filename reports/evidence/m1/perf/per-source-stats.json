@@ -1,0 +1,74 @@
+[
+  {
+    "mark": "OK ",
+    "id": "anthropic_news",
+    "detail": "0 条",
+    "ms": 2466
+  },
+  {
+    "mark": "OK ",
+    "id": "arxiv",
+    "detail": "60 条",
+    "ms": 2580
+  },
+  {
+    "mark": "OK ",
+    "id": "deepmind_blog",
+    "detail": "1 条",
+    "ms": 1638
+  },
+  {
+    "mark": "ERR",
+    "id": "hackernews",
+    "detail": "SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
+    "ms": 31865
+  },
+  {
+    "mark": "OK ",
+    "id": "infoq_cn",
+    "detail": "15 条",
+    "ms": 182
+  },
+  {
+    "mark": "OK ",
+    "id": "meta_eng",
+    "detail": "0 条",
+    "ms": 2334
+  },
+  {
+    "mark": "ERR",
+    "id": "openai_news",
+    "detail": "SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
+    "ms": 31872
+  },
+  {
+    "mark": "OK ",
+    "id": "qbitai",
+    "detail": "7 条",
+    "ms": 146
+  },
+  {
+    "mark": "OK ",
+    "id": "reddit_ai",
+    "detail": "50 条",
+    "ms": 6368
+  },
+  {
+    "mark": "ERR",
+    "id": "techcrunch_ai",
+    "detail": "SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
+    "ms": 31860
+  },
+  {
+    "mark": "ERR",
+    "id": "theverge_ai",
+    "detail": "SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
+    "ms": 31732
+  },
+  {
+    "mark": "ERR",
+    "id": "venturebeat_ai",
+    "detail": "SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)",
+    "ms": 31700
+  }
+]

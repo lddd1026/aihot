@@ -1,0 +1,38 @@
+$ python -m aihot --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-contract-obw4walw\config.yaml fetch --dry-run --limit 0
+exit=0 (2.2s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-contract-obw4walw\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:45:14+08:00）
+信息源  : 2 个
+
+21:45:15 INFO aihot.sources: 信息源完成: hn，1 条（11 ms）
+21:45:15 INFO aihot.sources: 信息源完成: good，1 条（19 ms）
+采集结果:
+  [OK ] good               1 条（19 ms）
+  [OK ] hn                 1 条（11 ms）
+
+合计: 抓取 2 条（dry-run，不写库）
+
+--- stderr ---
+
+
+$ python -m aihot fetch --dry-run --limit 0 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-contract-obw4walw\config.yaml
+exit=0 (2.2s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-contract-obw4walw\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:45:16+08:00）
+信息源  : 2 个
+
+21:45:18 INFO aihot.sources: 信息源完成: hn，1 条（12 ms）
+21:45:18 INFO aihot.sources: 信息源完成: good，1 条（21 ms）
+采集结果:
+  [OK ] good               1 条（21 ms）
+  [OK ] hn                 1 条（12 ms）
+
+合计: 抓取 2 条（dry-run，不写库）
+
+--- stderr ---

@@ -1,0 +1,11 @@
+usage: aihot fetch [-h] [--source ID] [--window-hours N] [--dry-run]
+                   [--limit LIMIT] [--config CONFIG] [--debug]
+
+options:
+  -h, --help        show this help message and exit
+  --source ID       只采集指定源（可重复）
+  --window-hours N  覆盖采集窗口（1~168 小时）
+  --dry-run         只抓取展示，不写库
+  --limit LIMIT     预览条数（默认 10）
+  --config CONFIG   配置文件路径（默认 config.yaml）
+  --debug           输出 DEBUG 日志

@@ -1,0 +1,67 @@
+[
+  {
+    "name": "real-cli-plain-no-secret",
+    "ok": true,
+    "detail": "rc=0, 完整泄漏=无"
+  },
+  {
+    "name": "real-cli-plain-no-partial-secret",
+    "ok": true,
+    "detail": "部分泄漏(20字符窗口命中数)=无"
+  },
+  {
+    "name": "real-cli-debug-no-secret",
+    "ok": true,
+    "detail": "rc=0, 完整泄漏=无"
+  },
+  {
+    "name": "real-cli-debug-no-partial-secret",
+    "ok": true,
+    "detail": "部分泄漏(20字符窗口命中数)=无"
+  },
+  {
+    "name": "real-cli-net-no-secret",
+    "ok": true,
+    "detail": "rc=1, 完整泄漏=无"
+  },
+  {
+    "name": "real-cli-net-no-partial-secret",
+    "ok": true,
+    "detail": "部分泄漏(20字符窗口命中数)=无"
+  },
+  {
+    "name": "repo-scan-no-plaintext",
+    "ok": true,
+    "detail": "扫描 2351 个文件；命中: 无"
+  },
+  {
+    "name": "repo-scan-no-partial-plaintext",
+    "ok": true,
+    "detail": "部分命中: 无"
+  },
+  {
+    "name": "log-file-no-plaintext",
+    "ok": true,
+    "detail": "logs/aihot.log 行数=578, 完整命中: 无"
+  },
+  {
+    "name": "log-file-no-partial-plaintext",
+    "ok": true,
+    "detail": "部分命中: 无"
+  },
+  {
+    "name": "example-config-no-secrets",
+    "ok": true,
+    "detail": "三个密钥字段均为空"
+  },
+  {
+    "name": "malformed-yaml-console-no-leak",
+    "ok": true,
+    "detail": "rc=3, 完整泄漏=无"
+  },
+  {
+    "name": "malformed-yaml-console-no-partial-leak",
+    "ok": true,
+    "detail": "部分泄漏(20字符窗口命中数)=无"
+  }
+]

@@ -1,0 +1,7 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot version
+EXIT CODE: 0
+--- STDOUT ---
+aihot 0.1.0
+
+--- STDERR ---
+

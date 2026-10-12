@@ -1,0 +1,105 @@
+{
+  "suite": "units",
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "net-超时返回错误不抛异常",
+      "ok": true,
+      "detail": "ok=False error='ReadTimeout: timed out' 耗时=0.51s（timeout=0.5s）"
+    },
+    {
+      "item": "net-5xx重试退避后成功",
+      "ok": true,
+      "detail": "ok=True 请求次数=3 耗时=0.32s（退避 0.1+0.2）"
+    },
+    {
+      "item": "net-4xx不重试",
+      "ok": true,
+      "detail": "status=404 请求次数=1"
+    },
+    {
+      "item": "net-DNS失败返回错误不抛异常",
+      "ok": true,
+      "detail": "ok=False error='HTTP 502'"
+    },
+    {
+      "item": "net-非JSON与5xx的get_json语义",
+      "ok": true,
+      "detail": "非法JSON error='JSON 解析失败: Expecting value: line 1 colum'，500 error='HTTP 500'"
+    },
+    {
+      "item": "net-非法代理地址抛清晰ValueError(D1)",
+      "ok": true,
+      "detail": "异常信息=\"HTTP 客户端初始化失败（请检查代理地址）: Invalid port: 'abc'\""
+    },
+    {
+      "item": "store-filter_new幂等",
+      "ok": true,
+      "detail": "首次新增=3 二次新增=0 filter_new再次=0 库内=3"
+    },
+    {
+      "item": "store-批内去重(保留(源,URL)唯一)",
+      "ok": true,
+      "detail": "输入 3 条（其中 1 条批内重复）→ 通过 3 条"
+    },
+    {
+      "item": "store-同URL不同源互不影响",
+      "ok": true,
+      "detail": "新源新增=1（同 URL 不同 source_id 应视为新条目）"
+    },
+    {
+      "item": "store-四表+WAL+唯一索引",
+      "ok": true,
+      "detail": "tables=['clusters', 'digests', 'items', 'runs', 'sqlite_sequence'] journal_mode=wal unique索引=['sqlite_autoindex_items_1']"
+    },
+    {
+      "item": "store-runs记录完整(JSON可解析)",
+      "ok": true,
+      "detail": "status=partial stage_stats={\"stage\": \"fetch\", \"fetched\": 12, \"中文键\": \"值\"}"
+    },
+    {
+      "item": "store-naive datetime 按UTC解释",
+      "ok": true,
+      "detail": "输入 2026-01-01T00:00:00 → 存储 2026-01-01T00:00:00+00:00（期望 2026-01-01T00:00:00+00:00）"
+    },
+    {
+      "item": "store-2万条批量<5s",
+      "ok": true,
+      "detail": "新增=20000 再过滤=0 写=1.19s 查=0.98s/复核=0.95s 总量=20005"
+    },
+    {
+      "item": "utils-normalize_url",
+      "ok": true,
+      "detail": "11 例，不符合 0 例"
+    },
+    {
+      "item": "utils-url_hash稳定",
+      "ok": true,
+      "detail": "等价 URL 哈希一致=True，不同 URL 哈希不同=True"
+    },
+    {
+      "item": "utils-parse_datetime",
+      "ok": true,
+      "detail": "None→None，垃圾串→None，naive按UTC，带时区换算；naive结果=2026-09-23 10:00:00+00:00"
+    },
+    {
+      "item": "utils-within_window",
+      "ok": true,
+      "detail": "None→False，1h前→True，25h前→False"
+    },
+    {
+      "item": "utils-detect_lang",
+      "ok": true,
+      "detail": "中文→zh，英文→en"
+    },
+    {
+      "item": "utils-URL白名单与相对补全(D3)",
+      "ok": true,
+      "detail": "白名单 {'https://e.com/a': True, 'javascript:alert(1)': True, 'mailto:a@b.com': True, 'https:not a url': True, 'https://e.com/a b': True, '': True}；补全 {'/x/y': True, '//cdn.e.com/a': True, 'https://other.com/z': True, 'rel/path': True}"
+    }
+  ],
+  "notes": [
+    "normalize_url 原始输出（白名单在 sources.base 层生效）：{'javascript:alert(1)': 'javascript:alert(1)', 'not a url': 'https:not a url'}"
+  ]
+}

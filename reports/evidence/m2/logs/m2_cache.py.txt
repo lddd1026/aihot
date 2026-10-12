@@ -1,0 +1,10 @@
+  [PASS] 4a-首轮加工并调用 LLM: rc=0，LLM 请求=2（期望 2 批）
+  [PASS] 4b-队列清空: enriched_at 非空=12/12（10 加工 + 2 过滤标记）
+  [PASS] 4c-第二轮零 LLM 调用: 第二轮 LLM 请求=0，输出含「没有待加工的条目」=True
+  [PASS] 4d-预筛淘汰条目已标记且不回队: 过滤条目=['hire', 'offtopic']；第二轮输出无任何 LLM 调用（见 4c）
+  [PASS] 4e-dry-run 不写库: rc=0；items 前后一致=True；clusters 0→0；dry-run 仍调用 LLM 2 次（未写库）
+  [PASS] 4f-dry-run 输出声明: 输出含「（dry-run，未写库）」
+  [PASS] 4g-dry-run 未消耗队列（随后真实运行仍加工 12 条）: rc=0，enriched_at 非空=12/12
+  [PASS] 4z-真实库只读守护: items=176（开始时 176）
+
+== cache: 8 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\cache.json

@@ -1,0 +1,3 @@
+usage: aihot fetch [-h] [--source ID] [--window-hours N] [--dry-run]
+                   [--limit LIMIT] [--config CONFIG] [--debug]
+aihot fetch: error: argument --limit: 不能为负数，实际: -1

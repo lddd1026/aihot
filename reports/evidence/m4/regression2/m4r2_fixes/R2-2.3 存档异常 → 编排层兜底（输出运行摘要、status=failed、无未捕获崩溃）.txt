@@ -1,0 +1,31 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-storage\config.yaml --no-llm
+exit=1 (1.8s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4r2-storage\config.yaml
+11:41:49 INFO aihot.sources: 信息源完成: fake，4 条（31 ms）
+11:41:49 ERROR aihot.runner: 日报生成出现未预期异常
+Traceback (most recent call last):
+  File "D:\信息收集整理\aihot\src\aihot\runner.py", line 486, in run_all
+    outcome.rendered = render_outputs(cfg, outcome.digest, with_image=with_image)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\runner.py", line 393, in render_outputs
+    rendered.image_paths = render_images(digest, out_dir)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\presentation\render_image.py", line 132, in render_images
+    out_dir.mkdir(parents=True, exist_ok=True)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m3-tests\\work\\m4r2-storage\\data\\digests'
+11:41:49 INFO aihot.delivery.wecom: 文本消息已发送（请求体 278 字节）
+
+① 采集: 1/1 源成功，抓取 4 条 → 新增 4 条
+② 加工: 4 条 → 预筛保留 4 → 1 簇；LLM 批次 0（失败 0）· 成本 ¥0.0000
+③ 日报: 2026-09-25 · 精选 4 条 + 简讯 0 条 · 无综述
+⑤ 推送: 企业微信 ⚠️ · 邮件未启用
+
+  [WARN] FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m3-tests\\work\\m4r2-storage\\data\\digests'
+
+状态: failed
+
+--- stderr ---

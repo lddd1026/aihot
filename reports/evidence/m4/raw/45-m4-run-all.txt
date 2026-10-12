@@ -1,0 +1,12 @@
+PASS         m4_net                     31/31
+PASS         m4_adapters                39/39
+KNOWN(P1/P2) m4_checks                  11/13  澶辫触椤?['3.7 浼佸井 errcode=93000锛堝亣鏈嶅姟鍝ㄥ叺锛夆啋 鏈熸湜 rc=1', '3.8 浼佸井 webhook key 鏃犳晥锛堢湡瀹?qyapi锛夆啋 鏈熸湜 rc=1']
+KNOWN(P1/P2) m4_alert                   12/14  澶辫触椤?['4.11 娓叉煋澶辫触瑙﹀彂 runner._alert锛堟湡鏈涚鍚堛€屽け璐ュ繀鏈夊憡璀︺€嶏級', '4.13 闀垮浘闄嶇骇锛坧artial锛夋槸鍚﹀憡璀︼紙鏈熸湜銆屾覆鏌撳け璐ラ渶鍛婅銆嶏級']
+PASS         m4_drills                  19/19
+PASS         m4_papers                  11/11
+KNOWN(P1/P2) m4_bat                     18/19  澶辫触椤?['2.11 棰勬澶辫触鍛婅鏂囨鍙锛堝惈涓枃璇存槑锛?]
+PASS         m4_sources_live            14/14
+KNOWN(P1/P2) m4_probe_storage_error     0/2  澶辫触椤?['瀛樻。鐩爣琚枃浠跺崰鐢細鏃犺８ traceback', '瀛樻。寮傚父鏃舵湁浼佸井鍛婅']
+PASS         m4_toolchain               9/9
+
+鍚堣 164 passed / 7 failed锛涢潪棰勬湡 FAIL 濂椾欢=[]

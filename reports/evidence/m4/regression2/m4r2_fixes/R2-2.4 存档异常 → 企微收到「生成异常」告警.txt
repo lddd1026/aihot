@@ -1,0 +1,1 @@
+["⚠️ aihot 告警：日报生成异常\n- FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\\\Users\\\\LEGION\\\\AppData\\\\Local\\\\Temp\\\\aihot-m3-tests\\\\work\\\\m4r2-storage\\\\data\\\\digests'"]

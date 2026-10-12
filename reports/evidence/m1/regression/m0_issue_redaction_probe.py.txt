@@ -1,0 +1,9 @@
+[PASS] webhook_in_timezone: rc=3（期望 3）, leaks=无, 脱敏标记=True
+[PASS] sk_key_in_source_url: rc=3（期望 3）, leaks=无, 脱敏标记=True
+     1. sources[0] (id=a): url 必须是 http(s) 地址，实际: 'sk-***'
+[FAIL] webhook_in_proxy_url: rc=3（期望 3）, leaks=['M0WRONGFIELD0123456789abcdef'], 脱敏标记=False
+     1. proxy.url 必须以 http(s):// 或 socks5:// 开头，实际: 'not-a-url-M0WRONGFIELD0123456789abcdef'
+[PASS] webhook_url_in_proxy_url: rc=0（期望 0）, leaks=无, 脱敏标记=True
+     代理      : https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=***
+
+== SUMMARY: 3/4 passed ==

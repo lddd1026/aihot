@@ -1,0 +1,9 @@
+{
+  "total_items": 363,
+  "seconds": 8.4,
+  "llm_calls": 17,
+  "rc": 0,
+  "enriched": 363,
+  "filtered": 121,
+  "clusters": 237
+}

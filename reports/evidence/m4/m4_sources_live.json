@@ -1,0 +1,81 @@
+{
+  "suite": "m4_sources_live",
+  "passed": 14,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "7.1 源 qbitai 真实抓取",
+      "ok": true,
+      "detail": "[OK] 7 条（2.7s）"
+    },
+    {
+      "item": "7.2 源 infoq_cn 真实抓取",
+      "ok": true,
+      "detail": "[OK] 15 条（2.6s）"
+    },
+    {
+      "item": "7.3 源 techcrunch_ai 真实抓取",
+      "ok": true,
+      "detail": "[OK] 15 条（4.1s）"
+    },
+    {
+      "item": "7.4 源 openai_news 真实抓取",
+      "ok": true,
+      "detail": "[OK] 0 条（15.8s）"
+    },
+    {
+      "item": "7.5 源 hackernews 真实抓取",
+      "ok": true,
+      "detail": "[OK] 52 条（4.1s）"
+    },
+    {
+      "item": "7.6 源 theverge_ai 真实抓取",
+      "ok": true,
+      "detail": "[OK] 10 条（2.6s）"
+    },
+    {
+      "item": "7.7 源 venturebeat_ai 真实抓取",
+      "ok": true,
+      "detail": "[OK] 0 条（3.3s）"
+    },
+    {
+      "item": "7.8 源 deepmind_blog 真实抓取",
+      "ok": true,
+      "detail": "[OK] 1 条（2.8s）"
+    },
+    {
+      "item": "7.9 源 anthropic_news 真实抓取",
+      "ok": true,
+      "detail": "[OK] 0 条（3.3s）"
+    },
+    {
+      "item": "7.10 源 meta_eng 真实抓取",
+      "ok": true,
+      "detail": "[OK] 0 条（3.3s）"
+    },
+    {
+      "item": "7.11 源 reddit_ai 真实抓取",
+      "ok": true,
+      "detail": "[OK] 50 条（7.4s）"
+    },
+    {
+      "item": "7.12 源 arxiv 真实抓取",
+      "ok": true,
+      "detail": "[ERR] SourceError: 请求失败: HTTP 429（65.7s）"
+    },
+    {
+      "item": "7.13 源 jiqizhixin（停用源直连尝试）",
+      "ok": true,
+      "detail": "[ERR] SourceError: 选择器未匹配到任何条目：li, article"
+    },
+    {
+      "item": "7.14 源 hf_papers（停用源直连尝试）",
+      "ok": true,
+      "detail": "[ERR] SourceError: 请求失败: HTTP 429"
+    }
+  ],
+  "notes": [
+    "配置共 14 个源：启用 12 个 ['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews', 'theverge_ai', 'venturebeat_ai', 'deepmind_blog', 'anthropic_news', 'meta_eng', 'reddit_ai', 'arxiv']；停用 2 个 ['jiqizhixin', 'hf_papers']",
+    "真实抓取汇总：启用源 11/12 成功；含停用源共 11/14"
+  ]
+}

@@ -1,0 +1,12 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-adv-gbk-p68vmcr4\config.yaml
+12:10:48 WARNING aihot.sources.rss: 源 gbk 解析存在告警（仍使用 1 条）: document declared as gbk, but parsed as utf-8
+12:10:48 INFO aihot.sources: 信息源完成: gbk，1 条（29 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:10:46+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] gbk                1 条（29 ms）
+
+合计: 抓取 1 条 → 新增 1 条（去重 0 条）→ 库内共 1 条

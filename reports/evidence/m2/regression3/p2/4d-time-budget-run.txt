@@ -1,0 +1,49 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4d-run\config.yaml --limit 20 --top 1
+exit=0 (65.0s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4d-run\config.yaml
+
+待加工: 3 条（上限 20）
+
+预筛:
+  输入 3 → 保留 3（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 3 条 → 3 簇（多源簇 0 · 最大簇 1 条）
+11:46:41 WARNING aihot.enrich: 已达加工时间上限 60 秒，停止后续批次
+
+Top 1:
+   1. [ 51.0] (模型发布) 标题
+      摘要
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 2（失败 0）· token 200+100 · 成本约 ¥0.0012
+
+已写回: 3 条加工 · 0 条标记为过滤 · 3 个事件簇
+
+--- stderr ---
+
+[
+  {
+    "run_id": "20260924T034536-ff9502",
+    "status": "ok",
+    "stage": "enrich",
+    "pending": 3,
+    "prefilter_kept": 3,
+    "clusters": 3,
+    "enriched": 3,
+    "filtered": 0,
+    "refine_calls": 0,
+    "refine_failed": 0,
+    "refine_rejected": 0,
+    "batches": 2,
+    "succeeded": 2,
+    "failed_batches": 0,
+    "fallback_items": 1,
+    "prompt_tokens": 200,
+    "completion_tokens": 100,
+    "cost_cny": 0.0012,
+    "cost_limit_hit": false,
+    "time_budget_hit": true
+  }
+]

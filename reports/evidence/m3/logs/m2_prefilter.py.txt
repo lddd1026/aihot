@@ -1,0 +1,18 @@
+== case A/B：门控与垃圾过滤（enrich --no-llm，黑盒） ==
+  [PASS] 1a-命令成功且打印预筛行: $ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\prefilter-gate-hn\config.yaml --limit 50 --top 8 exit=0 (1.0s) --- stdout ---
+  [PASS] 1b-门控仅对gate_sources生效: gate=[hackernews]：hn-rust 淘汰=True，qbit-os(非门控) 保留=True，hn-gpt6(命中关键词) 保留=True
+  [PASS] 1c-垃圾过滤覆盖所有源: 招聘/课程/webinar/促销 4 条全部淘汰=True
+  [PASS] 1d-淘汰集合与独立判定一致: 实际淘汰=['hn-ad', 'hn-rust', 'oa-webinar', 'qbit-course', 'qbit-hire']；期望淘汰=['hn-ad', 'hn-rust', 'oa-webinar', 'qbit-course', 'qbit-hire']
+== case C：gate_sources: [] 禁用门槛（黑盒） ==
+  [PASS] 1j-空列表禁用AI门槛: gate=[]：hn-rust（无 AI 关键词）保留=True
+  [PASS] 1k-空门槛不影响垃圾过滤: gate=[] 淘汰集合=['hn-ad', 'oa-webinar', 'qbit-course', 'qbit-hire']
+== case D：批内去重与门控语义（模块级复算） ==
+  [PASS] 1e-批内重复去重: 去重 1，保留 1（说明：CLI 路径因 items 唯一键不可达，此项为模块级行为）
+  [PASS] 1f-门控源无关键词被淘汰（模块级）: dropped_offtopic=1
+  [PASS] 1g-空gate_sources放行（模块级）: gate_sources=() → dropped_offtopic=0，kept=1
+== case E：真实数据抽样核验（全量淘汰项人工复核） ==
+  [PASS] 1h-真实数据预筛误杀率: 库内 363 条 → 淘汰 121 条（垃圾 11 · 与AI无关 110 · 批内重复 0），人工核验误杀 11 条，误杀率 9.1%（占全库 3.0%；阈值为 ≤10%，超出升级 P1）
+  [PASS] 1i-CLI路径淘汰数与独立复算一致: CLI 标记过滤 121 条（独立复算淘汰 121 条）；enriched_at 非空 363/363
+  [PASS] 1z-真实库只读守护: items=363（测试开始时 363）
+
+== prefilter: 12 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\prefilter.json

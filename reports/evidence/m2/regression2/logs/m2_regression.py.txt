@@ -1,0 +1,28 @@
+  [NOTE] M0 证据快照: D:\信息收集整理\aihot\reports\evidence\m2\regression2\regression\pre-m2-snapshot（已存在则跳过；M0 脚本本轮会覆盖 live 目录）
+  [PASS] 9a-ruff check . 零告警: exit=0（0.3s）All checks passed!
+  [PASS] 9b-pytest 全绿: passed=236 failed=0 errors=0（3.4s）
+  [PASS] 9c-m0_blackbox.py: exit=0 passed=105/105（M0 基线 105/105，86.7s）
+  [PASS] 9c-m0_inprocess.py: exit=0 passed=13/13（M0 基线 13/13，1.6s）
+  [PASS] 9c-m0_secret_scan.py: exit=0 passed=13/13（M0 基线 13/13，25.0s）
+  [PASS] 9c-m0_yaml_error_probe.py: exit=1 passed=5/6（M0 基线 5/6，4.2s） 已接受遗留=['bad_alias']
+  [PASS] 9c-m0_issue_redaction_probe.py: exit=0 passed=4/4（M0 基线 4/4，2.9s）
+  [PASS] 9c-m0_round3_probe.py: exit=0 passed=10/10（M0 基线 10/10，7.2s）
+  [PASS] 9d-m1_acceptance.py: exit=0 19/19（M1 基线 18/19，42.9s）
+  [PASS] 9d-m1_adversarial.py: exit=0 11/11（M1 基线 11/11，23.1s）
+  [PASS] 9d-m1_url_edges.py: exit=0 4/4（M1 基线 4/4，2.1s）
+  [PASS] 9d-m1_net_store_units.py: exit=0 19/19（M1 基线 19/19，6.7s）
+  [PASS] 9d-m1_contracts.py: exit=0 6/6（M1 基线 6/6，5.1s）
+  [PASS] 9d-m1_check_net.py: exit=0 6/6（M1 基线 6/6，10.6s）
+  [PASS] 9d-m1_proxy_bad_port_repro.py: exit=0 4/4（M1 基线 4/4，33.3s）
+  [PASS] 9d-m1_socks_probe.py: exit=0 4/4（M1 基线 4/4，20.6s）
+  [PASS] 9d-m1_slow_source.py: exit=0 1/1（M1 基线 1/1，64.9s）
+  [PASS] 9d-m1_perf.py: exit=0 6/6（M1 基线 6/6，7.7s）
+  [PASS] 9e-m1_real_db_state.py（信息脚本）: exit=0（0.3s）
+  [PASS] 9e-m1_recon.py（信息脚本）: exit=0（4.3s）
+  [PASS] 9e-m1_revision.py（信息脚本）: exit=0（0.3s）
+  [PASS] 9f-config.example.yaml 开箱校验: rc=0（期望 0）
+  [PASS] 9g-证据/测试脚本无真实密钥: 扫描 2 个真实密钥模式，命中文件=无
+  [PASS] 9h-ruff/pytest 输出无真实密钥: 命中=无
+  [PASS] 9z-真实库未被测试改动: items=176 runs=4 clusters=64 max_id=176（开始时一致：True）
+
+== regression: 25 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression2\regression.json

@@ -1,0 +1,27 @@
+  [PASS] 4.1 图片 base64 解码 == 文件字节: bytes=2054 raw_len=2822
+  [PASS] 4.2 图片 md5 == 文件 md5: md5=5c496d72a9c4fe85f4931480203cee97
+  [PASS] 4.3 真实 JPEG：base64+md5 与文件一致: size=250088 md5=bc2a5bbd3a84…
+  [PASS] 4.4 发送顺序：先图后文: order=['image', 'markdown']
+  [PASS] 4.5 每条 markdown ≤4096 字节: parts=1 sizes=[3761]
+  [PASS] 4.6 送达内容与渲染分片逐字一致: parts=1
+  [PASS] 4.7 单轮条数 ≤20（限流）: 总条数=2（图 1 + 文 1）
+  [PASS] 4.8 极端内容：每条 ≤4096 字节: parts=10 max=3928
+  [PASS] 4.9 极端内容：总条数 ≤20（含图）: 总条数=11（图 1 + 文 10）
+  [PASS] 4.10 >2MB 图片被拒: NotifyError: 图片超过 2MB（2097153 字节）: big.jpg
+  [PASS] 4.11 图片文件缺失被拒: NotifyError: 图片读取失败: [Errno 2] No such file or directory: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\aih
+  [PASS] 4.12 >4096B markdown 被拒: NotifyError: markdown 超过 4096 字节（5000），应在渲染阶段分片
+  [PASS] 4.13 空 webhook 被拒: NotifyError: 企业微信 webhook 未配置
+  [PASS] 4.14 errcode≠0 → NotifyError: NotifyError: markdown 消息发送失败: errcode=93000 errmsg=invalid webhook key
+  [PASS] 4.14 HTTP 502 → NotifyError: NotifyError: markdown 消息发送失败: HTTP 502
+  [PASS] 4.14 非 JSON 响应 → NotifyError: NotifyError: markdown 消息发送失败: 响应不是合法 JSON
+  [PASS] 4.14 连接被服务端断开 → NotifyError: NotifyError: markdown 消息发送失败: HTTP 502
+  [PASS] 4.15 连接失败 → NotifyError: NotifyError: markdown 消息发送失败: HTTP 502
+  [PASS] 4.16 企微失败：deliver_digest 不抛异常且记录错误: errors=['企业微信文字第1片: markdown 消息发送失败: errcode=93000 errmsg=invalid webhook key']
+  [PASS] 4.17 企微失败不影响邮件渠道（独立降级）: email_messages=1
+  [PASS] 4.18 企微失败后日报已存档（内容不丢）: files=['markdown', 'html']
+  [PASS] 4.19 图片发送被拒 → 记录错误不崩溃: errors=['企业微信图片(2026-09-24.jpg): 图片消息（2026-09-24.jpg）发送失败: errcode=93000 errmsg=image rejected']
+  [PASS] 4.20 观测：图片失败后文字推送是否继续（不阻断）: 图片请求=1 文字请求=1/1（0 表示被图片失败阻断）
+  [PASS] 4.21 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}
+
+== m3_wecom: 24 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m3\m3_wecom.json
+企微分片过多（21 片），仅发送前 10 片

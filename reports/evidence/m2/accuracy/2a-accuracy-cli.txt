@@ -1,0 +1,26 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-acc-sample\config.yaml --limit 200 --top 3
+exit=0 (1.0s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-acc-sample\config.yaml
+
+待加工: 54 条（上限 200）
+
+预筛:
+  输入 54 → 保留 54（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 54 条 → 39 簇（多源簇 9 · 最大簇 3 条）
+
+Top 3:
+   1. [ 39.8] (其他) DeepSeek 发布 V5 模型，推理成本下降一半（更新）
+      提及 3 条 · 来源 3 家
+   2. [ 39.8] (其他) Anthropic 发布 Claude Opus 6，价格更低（附评测）
+      提及 3 条 · 来源 3 家
+   3. [ 39.8] (其他) 马斯克宣布 xAI 完成 200 亿美元融资（官方公告）
+      提及 3 条 · 来源 3 家
+
+LLM: 批次 0（失败 0）· token 0+0 · 成本约 ¥0.0000
+
+已写回: 54 条加工 · 0 条标记为过滤
+
+--- stderr ---

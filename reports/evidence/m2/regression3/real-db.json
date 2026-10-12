@@ -1,0 +1,43 @@
+{
+  "suite": "real-db",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "6a-计数：items=176 / 已处理=176 / 待处理=0",
+      "ok": true,
+      "detail": "items=176 enriched=176 pending=0 （过滤标记 71 = 176-105 加工）"
+    },
+    {
+      "item": "6a-簇：101 个 / max_cluster_id=101 / 全局单调起点",
+      "ok": true,
+      "detail": "clusters=101 max=101 min=1"
+    },
+    {
+      "item": "6a-悬空引用=0",
+      "ok": true,
+      "detail": "悬空=0"
+    },
+    {
+      "item": "6a-mention_count 与实际条目数不一致=0",
+      "ok": true,
+      "detail": "不一致=0，空簇=无"
+    },
+    {
+      "item": "6b-多条目簇仅 2 个且人工核验为同一事件",
+      "ok": true,
+      "detail": "多条目簇=2；明细=[[\"Claude Opus 5.5\", \"Claude Opus 5.5 Intelligence, Perfor\", \"Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务\"], [\"OpenAI launches GPT-6 Sol and Luna, \", \"Introducing GPT-6 Sol and Luna\", \"GPT-6 Sol and Luna\"]]"
+    },
+    {
+      "item": "6c-无超大簇（旧版过度合并残留已清除）",
+      "ok": true,
+      "detail": "最大簇=3 条；单条目簇=99 个"
+    },
+    {
+      "item": "6z-真实库只读守护",
+      "ok": true,
+      "detail": "items=176"
+    }
+  ],
+  "notes": []
+}

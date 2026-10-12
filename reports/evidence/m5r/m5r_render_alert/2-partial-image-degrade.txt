@@ -1,0 +1,3 @@
+status=partial
+errors=['长图渲染失败（已降级文字）: M5R 独立测试：模拟长图失败']
+new_alerts=0

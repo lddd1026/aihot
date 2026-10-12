@@ -1,0 +1,19 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t7-allfail-vlzpmlyg\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:59:11+08:00）
+信息源  : 2 个
+
+21:59:16 WARNING aihot.net: 请求最终失败: http://127.0.0.1:1160/bad500（HTTP 500）
+21:59:16 WARNING aihot.sources: 信息源失败: bad500（SourceError: 请求失败: HTTP 500）
+21:59:27 WARNING aihot.net: 请求最终失败: http://127.0.0.1:11335/feed（HTTP 502）
+21:59:27 WARNING aihot.sources: 信息源失败: refused（SourceError: 请求失败: HTTP 502）
+采集结果:
+  [ERR] bad500             SourceError: 请求失败: HTTP 500（3021 ms）
+  [ERR] refused            SourceError: 请求失败: HTTP 502（13958 ms）
+
+合计: 抓取 0 条 → 新增 0 条（去重 0 条）→ 库内共 0 条
+
+（没有新条目）
+
+[ERR] 全部信息源采集失败，请检查网络或源可用性

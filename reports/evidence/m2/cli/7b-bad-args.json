@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "args": [
+        "--limit",
+        "-1"
+      ],
+      "rc": 2,
+      "stderr_tail": "ch [-h] [--limit LIMIT] [--top TOP] [--no-llm] [--dry-run]\r\n                    [--config CONFIG] [--debug]\r\naihot enrich: error: argument --limit: 不能为负数，实际: -1"
+    },
+    {
+      "args": [
+        "--top",
+        "-1"
+      ],
+      "rc": 2,
+      "stderr_tail": "rich [-h] [--limit LIMIT] [--top TOP] [--no-llm] [--dry-run]\r\n                    [--config CONFIG] [--debug]\r\naihot enrich: error: argument --top: 不能为负数，实际: -1"
+    },
+    {
+      "args": [
+        "--limit",
+        "abc"
+      ],
+      "rc": 2,
+      "stderr_tail": "[-h] [--limit LIMIT] [--top TOP] [--no-llm] [--dry-run]\r\n                    [--config CONFIG] [--debug]\r\naihot enrich: error: argument --limit: 必须是整数，实际: 'abc'"
+    },
+    {
+      "args": [
+        "--top",
+        "abc"
+      ],
+      "rc": 2,
+      "stderr_tail": "h [-h] [--limit LIMIT] [--top TOP] [--no-llm] [--dry-run]\r\n                    [--config CONFIG] [--debug]\r\naihot enrich: error: argument --top: 必须是整数，实际: 'abc'"
+    },
+    {
+      "args": [
+        "--limit",
+        "1.5"
+      ],
+      "rc": 2,
+      "stderr_tail": "[-h] [--limit LIMIT] [--top TOP] [--no-llm] [--dry-run]\r\n                    [--config CONFIG] [--debug]\r\naihot enrich: error: argument --limit: 必须是整数，实际: '1.5'"
+    },
+    {
+      "args": [
+        "--top",
+        "1e9"
+      ],
+      "rc": 2,
+      "stderr_tail": "h [-h] [--limit LIMIT] [--top TOP] [--no-llm] [--dry-run]\r\n                    [--config CONFIG] [--debug]\r\naihot enrich: error: argument --top: 必须是整数，实际: '1e9'"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "mark": "OK ",
+    "id": "anthropic_news",
+    "detail": "0 条",
+    "ms": 1024
+  },
+  {
+    "mark": "OK ",
+    "id": "arxiv",
+    "detail": "60 条",
+    "ms": 2001
+  },
+  {
+    "mark": "OK ",
+    "id": "deepmind_blog",
+    "detail": "1 条",
+    "ms": 890
+  },
+  {
+    "mark": "OK ",
+    "id": "hackernews",
+    "detail": "52 条",
+    "ms": 1313
+  },
+  {
+    "mark": "OK ",
+    "id": "infoq_cn",
+    "detail": "15 条",
+    "ms": 173
+  },
+  {
+    "mark": "OK ",
+    "id": "meta_eng",
+    "detail": "0 条",
+    "ms": 1411
+  },
+  {
+    "mark": "OK ",
+    "id": "openai_news",
+    "detail": "0 条",
+    "ms": 2482
+  },
+  {
+    "mark": "OK ",
+    "id": "qbitai",
+    "detail": "7 条",
+    "ms": 136
+  },
+  {
+    "mark": "OK ",
+    "id": "reddit_ai",
+    "detail": "50 条",
+    "ms": 3155
+  },
+  {
+    "mark": "OK ",
+    "id": "techcrunch_ai",
+    "detail": "15 条",
+    "ms": 772
+  },
+  {
+    "mark": "OK ",
+    "id": "theverge_ai",
+    "detail": "10 条",
+    "ms": 680
+  },
+  {
+    "mark": "OK ",
+    "id": "venturebeat_ai",
+    "detail": "0 条",
+    "ms": 1063
+  }
+]

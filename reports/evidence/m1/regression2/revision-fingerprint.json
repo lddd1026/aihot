@@ -1,0 +1,87 @@
+{
+  "config.example.yaml": {
+    "mtime": "2026-09-23T19:05:55",
+    "sha256": "5d4495967d5339717548cf4bb714c7833c608ef5fddd706cab92d0e8221a75e9",
+    "size": 4114
+  },
+  "pyproject.toml": {
+    "mtime": "2026-09-23T21:33:44",
+    "sha256": "bd089952d42b4e9e6454ed64eb3a9f88c2b4f937f457becb09e94e85cc2a8265",
+    "size": 968
+  },
+  "src\\aihot\\__init__.py": {
+    "mtime": "2026-09-23T18:36:32",
+    "sha256": "d7e3b66ad8108d123e088252eed2e8af4d9f06961dde09b257c398d5e9066e6b",
+    "size": 63
+  },
+  "src\\aihot\\__main__.py": {
+    "mtime": "2026-09-23T18:36:32",
+    "sha256": "ed50bbd69f7a3981f165a656946d8dd3cff8cd6a55694d14d5e5f8ba8e67a5c4",
+    "size": 117
+  },
+  "src\\aihot\\checks.py": {
+    "mtime": "2026-09-23T21:24:40",
+    "sha256": "2a49e2d2fc02367cbf32cba9c39fc16ecb4aa7ca2939fe01a42bd152119b5bbe",
+    "size": 5310
+  },
+  "src\\aihot\\cli.py": {
+    "mtime": "2026-09-23T21:24:57",
+    "sha256": "64c269fa2617850ef47f9243b2e0a69a579f9b423a9bd77283529c416e1e9d1c",
+    "size": 12172
+  },
+  "src\\aihot\\config.py": {
+    "mtime": "2026-09-23T21:23:46",
+    "sha256": "a878eb78cb2350903ccf266c73d51f8b171be64e7fef980eab2d5d3c34d777c0",
+    "size": 16463
+  },
+  "src\\aihot\\logging_setup.py": {
+    "mtime": "2026-09-23T18:41:42",
+    "sha256": "8631c471ff048dbce4084374dbc05f884cffc816b3cc36ab77e199c898d51266",
+    "size": 4228
+  },
+  "src\\aihot\\models.py": {
+    "mtime": "2026-09-23T18:39:52",
+    "sha256": "dea9470ccb738411564796b02e8591ea86b4b4a4dd1299b85e491e0cb90b07fc",
+    "size": 1913
+  },
+  "src\\aihot\\net.py": {
+    "mtime": "2026-09-23T21:33:44",
+    "sha256": "e2fbc460224264cb83854157ccdaebc7ff97abc5c9edff48dc50b7e6e371da5d",
+    "size": 3909
+  },
+  "src\\aihot\\sources\\__init__.py": {
+    "mtime": "2026-09-23T20:39:14",
+    "sha256": "7c8e5e9a1c954d0ea7940ffdb8bd0fb8ecfb3e6fd96f3329cb7f4d35da4ba332",
+    "size": 391
+  },
+  "src\\aihot\\sources\\base.py": {
+    "mtime": "2026-09-23T21:25:22",
+    "sha256": "f84fd2866e35d92a7e676cd429070ef9380591e333c478cd7311eee1d9596e1a",
+    "size": 2910
+  },
+  "src\\aihot\\sources\\hackernews.py": {
+    "mtime": "2026-09-23T20:42:16",
+    "sha256": "f01e864a05e0c54f0ce1d64970147e74f22390fc3896a0822b74762937709dbb",
+    "size": 2904
+  },
+  "src\\aihot\\sources\\registry.py": {
+    "mtime": "2026-09-23T20:41:08",
+    "sha256": "a357578ddfba3079c003b839361e94637de1a9a2ad33f6d8ea5230ca899465ad",
+    "size": 4006
+  },
+  "src\\aihot\\sources\\rss.py": {
+    "mtime": "2026-09-23T20:43:29",
+    "sha256": "19772345b4f2a3de90a1b3efa78f330ac7ff64f9dbb9e37c2aeb02bd20d4ee26",
+    "size": 2370
+  },
+  "src\\aihot\\store.py": {
+    "mtime": "2026-09-23T21:24:40",
+    "sha256": "78879eb28b097f52004c5a41afc37e7956f9a96d4bb268d9f8855219244cda0c",
+    "size": 7631
+  },
+  "src\\aihot\\utils.py": {
+    "mtime": "2026-09-23T21:23:45",
+    "sha256": "607fb330762ba99979c7dcb4ec354ed0242c4d0c6e9072092a683df4b268df2c",
+    "size": 4821
+  }
+}

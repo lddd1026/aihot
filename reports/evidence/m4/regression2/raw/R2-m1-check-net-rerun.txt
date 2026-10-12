@@ -1,0 +1,8 @@
+  [PASS] 9a-閫愭簮OK/ERR+澶辫触閫€鍑虹爜1: rc=1锛堟湡鏈?1锛夊ソ婧?OK銆佸潖婧?ERR銆佹湭鍚敤婧愪笉杩涘叆鎺㈡祴琛岋紙鎺㈡祴 3 琛岋級
+  [PASS] 9b-鍏ㄩ€氳繃閫€鍑虹爜0: rc=0锛堟湡鏈?0锛?
+  [PASS] 9c-澶氬潖婧愬叏閮ㄦ姤鍛? rc=1 [ERR] 琛屾暟=3
+  [PASS] 9d-鐪熷疄閰嶇疆閫愭簮鍋ュ悍搴? rc=0锛堟湡鏈?0锛夎鐩栧惎鐢ㄦ簮=['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews'] 鍏?12 琛?
+  [PASS] 9e-鐪熷疄搴撳彧璇绘湭鍙? 鎺㈡祴鍓嶅悗 items/runs 蹇収涓€鑷? 363/9
+  [PASS] 9f-check --net 杈撳嚭涓嶅惈鐪熷疄瀵嗛挜: 鎵弿 3 涓湡瀹炲瘑閽ュ瓧娈碉細娉勬紡 鏃?
+
+== check_net: 6 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m1\check_net.json

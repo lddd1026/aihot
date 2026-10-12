@@ -1,0 +1,46 @@
+$ python -m aihot preview --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\cli\config.yaml --date 1999-01-01
+exit=0 (5.7s)
+--- stdout ---
+aihot preview · 重新渲染某期日报（不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\cli\config.yaml
+（没有 1999-01-01 的存档，改用数据库最近窗口重新组装）
+
+日报日期: 1999-01-01（精选 5 条）
+  markdown : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\cli\data\digests\1999-01-01.md
+  image    : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\cli\data\digests\1999-01-01.jpg
+  html     : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\cli\data\digests\1999-01-01.html
+
+—— 企微 markdown 预览 ——
+📌 **1999年1月1日 星期五 AI 热点日报**
+
+**🔥 今日必读**
+
+**1. [CLI 测试条目 1](https://example.com/cli/1)**
+摘要 1
+🏷 模型发布 · 单篇报道
+
+**2. [CLI 测试条目 2](https://example.com/cli/2)**
+摘要 2
+🏷 模型发布 · 单篇报道
+
+**3. [CLI 测试条目 3](https://example.com/cli/3)**
+摘要 3
+🏷 模型发布 · 单篇报道
+
+**4. [CLI 测试条目 4](https://example.com/cli/4)**
+摘要 4
+🏷 模型发布 · 单篇报道
+
+**5. [CLI 测试条目 5](https://example.com/cli/5)**
+摘要 5
+🏷 模型发布 · 单篇报道
+
+**📎 其他值得一看**
+
+• [CLI 测试条目 6](https://example.com/cli/6)（模型发布）
+
+• [CLI 测试条目 7](https://example.com/cli/7)（模型发布）
+
+<font color="comment">共扫描 7 条 · 精选 5 条 · 由 DeepSeek 生成</font>
+
+--- stderr ---

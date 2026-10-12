@@ -1,0 +1,83 @@
+{
+  "suite": "d1",
+  "passed": 14,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "1a-默认配置不调用 LLM 精修",
+      "ok": false,
+      "detail": "rc=0，LLM 请求=2（仅 1 次条目加工），输出含「LLM 精修后」=False"
+    },
+    {
+      "item": "1a-runs 记录 refine_calls=0（默认关闭）",
+      "ok": true,
+      "detail": "refine_calls=0 refine_rejected=0"
+    },
+    {
+      "item": "1a-零合并（10 条 → 10 簇）",
+      "ok": true,
+      "detail": "簇数=10，逐簇条目数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+    },
+    {
+      "item": "1b-规则拆散（10 条 → 10 簇，零合并）",
+      "ok": true,
+      "detail": "簇数=10，逐簇条目数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+    },
+    {
+      "item": "1b-refine_rejected>0 且计入 runs",
+      "ok": true,
+      "detail": "refine_calls=1 refine_rejected=1"
+    },
+    {
+      "item": "1b-日志/输出可见拒绝原因",
+      "ok": true,
+      "detail": "stdout/log 含「聚类精修被规则拒绝」=True"
+    },
+    {
+      "item": "1c-medium 不合并且 refine_rejected=0",
+      "ok": true,
+      "detail": "簇数=10，refine_calls=1，refine_rejected=0"
+    },
+    {
+      "item": "1d-规则层本不合并（相似度在 55~88 之间）",
+      "ok": true,
+      "detail": "规则层聚类=聚类: 2 条 → 2 簇（期望 2 条 → 2 簇）"
+    },
+    {
+      "item": "1d-精修正常合并为 1 簇（mention=2）",
+      "ok": true,
+      "detail": "簇数=1，clusters=[{'cluster_id': 1, 'mention_count': 2, 'items': 2}]"
+    },
+    {
+      "item": "1d-本次无规则拒绝",
+      "ok": true,
+      "detail": "refine_calls=1 refine_rejected=0"
+    },
+    {
+      "item": "1e-混合组拆成连通分量",
+      "ok": true,
+      "detail": "accepted=[[1, 2], [3]] rejections=['组内缺少相似链（3 条 → 拆为 2 组）: OpenAI 发布 GPT-6 Sol 模型']"
+    },
+    {
+      "item": "1e-单组超过 4 条直接拆散",
+      "ok": true,
+      "detail": "accepted=[[1], [4], [5], [6], [2]]（5 组）rejections=['分组过大（5 条 > 4）: OpenAI 发布 GPT-6 Sol 模型']"
+    },
+    {
+      "item": "1e-相关组放行（相似度 ≥55）",
+      "ok": true,
+      "detail": "accepted=[[1, 2], [5]] rejections=[]；相似度(1,2)=94.4"
+    },
+    {
+      "item": "1e-不相关组被拒（相似度 <55）",
+      "ok": true,
+      "detail": "相似度(1,3)=24.6（<55），accepted=[[1], [3]]"
+    },
+    {
+      "item": "1z-真实库只读守护",
+      "ok": true,
+      "detail": "items=363（开始时 363）"
+    }
+  ],
+  "notes": []
+}

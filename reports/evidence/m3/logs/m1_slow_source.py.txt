@@ -1,0 +1,3 @@
+  [PASS] adv-挂起源超时隔离: rc=0 耗时=65.8s（3 次 20s 超时+退避；未无限等待） 好源落库=1 runs.status=partial
+
+== slow_source: 1 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\slow_source.json

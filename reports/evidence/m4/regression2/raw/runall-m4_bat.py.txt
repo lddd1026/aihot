@@ -1,0 +1,21 @@
+  [PASS] 2.1 run_daily.bat 未被测试改动（sha256 记录）: sha256=98816fe3067b4397…
+  [PASS] 2.2 staged run_daily.bat 与真实 bat 字节一致: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\success\run_daily.bat
+  [PASS] 2.3 bat 退出码 = 0: rc=0 (14.6s)
+  [PASS] 2.4 日志含预检 + 运行 + exit=0: log 段落齐全
+  [PASS] 2.5 预检三项（代理/企微/LLM）均 OK: 预检无 ERR
+  [PASS] 2.6 dry-run 产出日报三件套（不推送）: files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']
+  [PASS] 2.7 dry-run 未向企微推送任何消息（仅有预检 GET）: POST 消息数=0
+  [PASS] 2.8 预检失败退出码 = 2: rc=2
+  [PASS] 2.9 日志标记 PREFLIGHT FAILED 且跳过运行: 无 run 段
+  [PASS] 2.10 预检失败已发企微告警: text_requests=1
+  [PASS] 2.11 预检失败告警文案可读（ASCII 英文，无 ? 乱码）: body="Daily preflight FAILED (LLM / WeCom / proxy unreachable). Today's digest was skipped. See logs\\run_daily.log"
+  [PASS] 2.12 预检失败未产生数据目录/半成品日报: data-nope exists=False
+  [PASS] 2.13 真实根目录 bat 全链路 rc=0（真实配置预检 + 临时配置运行）: rc=0 (76.4s)
+  [PASS] 2.14 真实源采集成功（≥11/12，单源瞬时失败被隔离）: 采集=11/12，新增=0
+  [PASS] 2.15 真实根目录 bat 日志写入 logs\run_daily.log: log 末尾='日报: 2026-09-25 · 精选 12 条 + 简讯 12 条 · 无综述\n④ 渲染: 长图 1 张（2026-09-25.jpg 612 KB） · 企微分片 2 · md/html 已存档\n⑤ 推送: 已跳过（dry-run）\n\n状态: ok\n[2026-09-25 11:50:06.21] exit=0 \n'
+  [PASS] 2.16 YAML 语法损坏 → rc=3 且不抛 traceback: rc=3
+  [PASS] 2.17 结构非法（无源/坏 URL/无 key）→ rc=3: rc=3
+  [PASS] 2.18 真实 data/digests 未被改动（文件名+大小+mtime）: digests=['2026-09-24.html', '2026-09-24.jpg', '2026-09-24.md', '2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']
+  [PASS] 2.19 真实库快照前后一致（bat 只追加日志）: db 快照一致
+
+== m4_bat: 19 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m4\regression2\m4_bat.json

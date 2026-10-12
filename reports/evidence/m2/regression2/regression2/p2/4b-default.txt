@@ -1,0 +1,22 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4b-default\config.yaml --limit 20 --top 1
+exit=0 (0.8s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4b-default\config.yaml
+
+待加工: 3 条（上限 20）
+
+预筛:
+  输入 3 → 保留 1（垃圾 2 · 与 AI 无关 0 · 批内重复 0）
+    [垃圾内容] 招聘｜大模型算法工程师（北京）
+    [垃圾内容] 辟谣：网传某大模型将暂停服务
+
+聚类: 1 条 → 1 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 24.8] (其他) OpenAI 发布 GPT-6 Sol 模型说明
+      提及 1 条 · 来源 1 家
+
+已写回: 1 条加工 · 2 条标记为过滤 · 1 个事件簇
+
+--- stderr ---

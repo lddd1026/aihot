@@ -1,0 +1,58 @@
+{
+  "suite": "m5r_bat_local",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "8.1 staged run_daily.bat 与真实 bat 字节一致",
+      "ok": true,
+      "detail": "sha256=355bca17b30a2b9e…"
+    },
+    {
+      "item": "8.2 bat 成功路径退出码=0",
+      "ok": true,
+      "detail": "rc=0（4.8s）"
+    },
+    {
+      "item": "8.3 日志含预检 + run 段 + exit=0",
+      "ok": true,
+      "detail": "三段齐全"
+    },
+    {
+      "item": "8.4 预检无 [ERR]（代理未启用 / LLM 假服务 OK）",
+      "ok": true,
+      "detail": "OK=3 ERR=0"
+    },
+    {
+      "item": "8.5 dry-run 产出日报三件套（md/html/jpg，不推送）",
+      "ok": true,
+      "detail": "files=['2026-10-12.html', '2026-10-12.jpg', '2026-10-12.md']"
+    },
+    {
+      "item": "8.6 dry-run 未推送任何消息（日志明确「已跳过（dry-run）」）",
+      "ok": true,
+      "detail": "推送段=已跳过（dry-run）"
+    },
+    {
+      "item": "8.7 YAML 语法损坏 → rc=3 且不抛 traceback",
+      "ok": true,
+      "detail": "rc=3"
+    },
+    {
+      "item": "8.8 结构非法（无源/坏 URL/无 key）→ rc=3",
+      "ok": true,
+      "detail": "rc=3"
+    },
+    {
+      "item": "8.9 真实 data/digests 未被改动（文件名+大小+mtime）",
+      "ok": true,
+      "detail": "digests=['2026-09-24.html', '2026-09-24.jpg', '2026-09-24.md', '2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md', '2026-09-29.html', '2026-09-29.jpg', '2026-09-29.md', '2026-10-05.html', '2026-10-05.jpg', '2026-10-05.md', '2026-10-07.html', '2026-10-07.jpg', '2026-10-07.md', '2026-10-08.html', '2026-10-08.jpg', '2026-10-08.md']"
+    },
+    {
+      "item": "8.10 真实库快照前后一致（bat 只追加日志）",
+      "ok": true,
+      "detail": "db 快照一致"
+    }
+  ],
+  "notes": []
+}

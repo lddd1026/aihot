@@ -1,0 +1,72 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\llm-robust-bad-category\config.yaml --limit 50 --top 2
+exit=0 (4.4s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\llm-robust-bad-category\config.yaml
+
+待加工: 5 条（上限 50）
+
+预筛:
+  输入 5 → 保留 5（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 5 条 → 5 簇（多源簇 0 · 最大簇 1 条）
+
+Top 2:
+   1. [ 56.7] (其他) 中文标题
+      中文摘要
+      提及 1 条 · 来源 1 家
+   2. [ 56.7] (其他) 中文标题
+      中文摘要
+      提及 1 条 · 来源 1 家
+
+今日综述: {"items": []}
+
+LLM: 批次 1（失败 0）· token 200+100 · 成本约 ¥0.0012
+
+已写回: 5 条加工 · 0 条标记为过滤
+
+--- stderr ---
+
+--- llm requests: 2 ---
+[
+  {
+    "title": "OpenAI ships GPT-6 Sol to all users（第 1 条）",
+    "cn_title": "中文标题",
+    "cn_summary": "中文摘要",
+    "category": "其他",
+    "importance": 88,
+    "enriched_at": "2026-09-25T03:58:54.533863+00:00"
+  },
+  {
+    "title": "Anthropic releases Claude Opus 6（第 2 条）",
+    "cn_title": "中文标题",
+    "cn_summary": "中文摘要",
+    "category": "其他",
+    "importance": 88,
+    "enriched_at": "2026-09-25T03:58:54.533863+00:00"
+  },
+  {
+    "title": "Meta open-sources Llama-9 family（第 3 条）",
+    "cn_title": "中文标题",
+    "cn_summary": "中文摘要",
+    "category": "其他",
+    "importance": 88,
+    "enriched_at": "2026-09-25T03:58:54.533863+00:00"
+  },
+  {
+    "title": "DeepSeek publishes V5 technical report（第 4 条）",
+    "cn_title": "中文标题",
+    "cn_summary": "中文摘要",
+    "category": "其他",
+    "importance": 88,
+    "enriched_at": "2026-09-25T03:58:54.533863+00:00"
+  },
+  {
+    "title": "Google announces Gemini 8 Ultra（第 5 条）",
+    "cn_title": "中文标题",
+    "cn_summary": "中文摘要",
+    "category": "其他",
+    "importance": 88,
+    "enriched_at": "2026-09-25T03:58:54.533863+00:00"
+  }
+]

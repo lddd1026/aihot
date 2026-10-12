@@ -1,0 +1,26 @@
+浼佸井鍒嗙墖杩囧锛?4 鐗囷級锛屼粎鍙戦€佸墠 10 鐗?
+  [PASS] R2-1.1 鍋囦紒寰?errcode=93000 鈫?check rc=1 涓旀彁绀?key 澶辨晥: rc=1
+  [PASS] R2-1.2 鎺㈡祴鍙彂 GET锛屾湭鍚?webhook POST 浠讳綍娑堟伅: POST 璁板綍=0
+  [PASS] R2-1.3 鍋囦紒寰?errcode=93017 鈫?check rc=0锛坘ey 鏈夋晥锛孏ET 浣撻潪娉曞睘棰勬湡锛? rc=0
+  [PASS] R2-1.4 鍋囦紒寰?errcode=0 鈫?rc=0: rc=0
+  [PASS] R2-1.5 浼佸井鍝嶅簲闈?JSON 鈫?淇濆畧鍒ゅ畾鍙揪锛坮c=0锛? rc=0
+  [FAIL] R2-1.6 浼佸井杩斿洖 JSON 鏁扮粍锛堢暩褰綋锛夆啋 涓嶈８ traceback: rc=1 traceback=True
+  [PASS] R2-1.7 鐪熷疄 qyapi + 鍋?key 鈫?rc=1锛堜笂杞?P1-1 澶嶇幇鐢ㄤ緥宸茶浆缁匡級: rc=1锛泈ebhook=<len=89 sha1=5157c92e>
+  [PASS] R2-1.8 鐪熷疄 qyapi + 鐪熷疄 key 鈫?rc=0锛圙ET 浠呮帰娴嬶紝鏈彂娑堟伅锛? rc=0锛泈ebhook=<len=89 sha1=ea62b6f6>
+  [PASS] R2-2.1 RenderError 鈫?status=failed + 浼佸井鍛婅锛堝惈銆屾覆鏌撳け璐ャ€嶏級: status=failed alerts=1 errors=['娓叉煋澶辫触: R2 鐙珛娴嬭瘯锛氭ā鎷熸覆鏌撳け璐?]
+  [FAIL] R2-2.2 闀垮浘闄嶇骇锛坕mage_error锛夆啋 鏈熸湜鏈夊憡璀︼紙淇℃伅椤癸級: status=partial errors=['闀垮浘娓叉煋澶辫触锛堝凡闄嶇骇鏂囧瓧锛? R2 鐙珛娴嬭瘯锛氭ā鎷熼暱鍥惧け璐?] 鏂板憡璀?0
+  [PASS] R2-2.3 瀛樻。寮傚父 鈫?缂栨帓灞傚厹搴曪紙杈撳嚭杩愯鎽樿銆乻tatus=failed銆佹棤鏈崟鑾峰穿婧冿級: rc=1锛坱raceback 浠呭嚭鐜板湪 logger.exception 鏃ュ織涓級
+  [PASS] R2-2.4 瀛樻。寮傚父 鈫?浼佸井鏀跺埌銆岀敓鎴愬紓甯搞€嶅憡璀? 鏂板憡璀?1
+  [PASS] R2-2.5 瀛樻。寮傚父 鈫?runs 璁板綍涓?failed锛堜笉鍐嶈璁?ok锛? run_status=failed
+  [PASS] R2-3.1 run_daily.bat 鍏?ASCII 涓?CRLF: bytes=1188 crlf=31
+  [PASS] R2-3.2 棰勬澶辫触 rc=2 涓斿憡璀︽枃妗堜负鍙鑻辨枃锛堟棤 ? 涔辩爜锛? rc=2锛沚ody="Daily preflight FAILED (LLM / WeCom / proxy unreachable). Today's digest was skipped. See logs\\run_daily.log"
+  [PASS] R2-3.3 arxiv 鎺㈡祴鑷姩琛?search_query/max_results 涓斿垽瀹?OK: results=[('婧?arxiv', True, 'HTTP 200锛堟帰娴嬶級')] query={'search_query': 'cat:cs.AI', 'max_results': '1'}
+  [NOTE] 鐪熷疄 arxiv 鎺㈡祴锛歳c=1 '[ERR] 婧?arxiv: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)锛?094 ms锛?锛堝閬?429 灞炶繙绔檺娴侊級
+  [PASS] R2-3.4 鐪熷疄 arxiv 鎺㈡祴涓嶅啀鍥犵己鍙傛暟璇姤锛堟垚鍔熸垨鍙楅檺娴侊紝涓嶅嚭鐜?400锛? 鎺㈡祴琛?'[ERR] 婧?arxiv: ConnectError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)锛?094 ms锛?
+  [PASS] R2-3.5 run --dry-run 鏃犳柊鏉＄洰 鈫?鍥炶惤鍒板簱鍐呭凡鍔犲伐鏉＄洰锛堢簿閫?3 鏉★級: ['鈶?鏃ユ姤: 2026-09-25 路 绮鹃€?3 鏉?+ 绠€璁?4 鏉?路 缁艰堪 93 瀛?]
+  [PASS] R2-3.6 鍥炶惤鏃ユ姤鍐呭鏉ヨ嚜鏁版嵁搴擄紙md 瀛樻。鍚瀛愭爣棰橈級: files=['2026-09-25.md']
+  [PASS] R2-3.7 鍒嗙墖瑙﹂《鏃舵湯鐗囧惈鍙鐪佺暐鎻愮ず: parts=10 鏈墖鎻愮ず=True
+  [PASS] R2-3.8 鍔犳彁绀哄悗姣忕墖浠?鈮?096 瀛楄妭: max=3928 sizes=[3093, 3855, 3855, 3855, 3855, 3855, 3855, 3855, 3855, 3928]
+  [PASS] R2-3.9 link_selector 闆跺尮閰?鈫?鎶?SourceError: SourceError: link_selector 鏈尮閰嶅埌浠讳綍閾炬帴锛歛.no-such
+
+== m4r2_fixes: 20 passed / 2 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\regression2\m4r2_fixes.json

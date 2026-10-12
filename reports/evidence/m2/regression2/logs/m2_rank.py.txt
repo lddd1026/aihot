@@ -1,0 +1,19 @@
+  [PASS] 6a-命令成功: rc=0
+  [PASS] 6b-Top条数与加工条数: 打印 Top 6 条，库内加工 6 条（3 条 DeepSeek 合并为 1 簇）
+  [PASS] 6c-打印分数=独立复算分数: 6 条全部一致
+  [PASS] 6d-Top 按分数降序: 分数序列=[65.8, 61.8, 50.8, 50.2, 48.0, 21.0]
+  [PASS] 6e-importance 主导（90 vs 20 → 重要性项差 38.5）: 标题1=65.83（{'importance': 49.5, 'cross': 0.0, 'community': 0.0, 'source': 8.33} +8.0） vs 标题2=21.0；重要性项差=38.50（理论 38.5）
+  [PASS] 6f-跨源加成（mention 3 → 跨源项 13.33）: 标题3 mention=3，跨源项=13.33（=20×(2/3)），总分=50.83
+  [PASS] 6g-社区热度（HN points=1000/comments=200）: 标题4 community=0.9446（社区项=14.17），标题5 community=0.0（社区项=0）
+  [PASS] 6h-源权重（openai_news 1.2 > qbitai 1.0 > hackernews 0.8）: 1.2 达上限（0.10×100=10 分），0.8 仅得 6.67 分
+  [PASS] 6i-兴趣加成（模型发布 +8 / 产品更新 +5 / 开源工具 +5）: 分类来自 LLM，加成来自配置 pipeline.rank.interest_bonus
+  [PASS] 6j-Top 顺序符合预期: 实际顺序=['标题1', '标题4', '标题3', '标题6', '标题5', '标题2']（预期首位 标题1、末位 标题2）
+  [PASS] 6k-满分条目分项（importance 100 → 55，源权重 1.0 → 8.33，加成 8）: score=71.33，breakdown={'importance': 55.0, 'cross_source': 0.0, 'community': 0.0, 'source_weight': 8.33, 'interest_bonus': 8.0}
+  [PASS] 6l-importance>100 被截断: score=63.33
+  [PASS] 6m-importance<0 被截断: score=8.33
+  [PASS] 6n-源权重上限 1.2（→10 分）: source_weight=99 → score=10.0
+  [PASS] 6o-select_top(<=0) 返回空: select_top([], 5)=[]，select_top([], 0)=[]
+  [PASS] 6p-同分时更新的优先: 首位=new
+  [PASS] 6z-真实库只读守护: items=176（开始时 176）
+
+== rank: 17 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression2\rank.json

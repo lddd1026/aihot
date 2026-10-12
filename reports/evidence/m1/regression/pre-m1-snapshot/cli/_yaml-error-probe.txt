@@ -1,0 +1,6 @@
+[PASS] unclosed_quote: leaks_secret=False | while scanning a quoted scalar
+[FAIL] unclosed_bracket: leaks_secret=True | while parsing a flow sequence
+[PASS] tab_indent: leaks_secret=False | while scanning for the next token
+[FAIL] extra_colon: leaks_secret=True | mapping values are not allowed here
+[FAIL] bad_anchor: leaks_secret=True | while parsing a flow sequence
+[FAIL] bad_alias: leaks_secret=True | found undefined alias 'M0FAKEKEY0123456789abcdef'

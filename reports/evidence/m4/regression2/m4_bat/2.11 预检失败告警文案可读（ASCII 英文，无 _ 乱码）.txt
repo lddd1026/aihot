@@ -1,0 +1,2 @@
+⚠️ aihot 告警
+Daily preflight FAILED (LLM / WeCom / proxy unreachable). Today's digest was skipped. See logs\run_daily.log

@@ -1,0 +1,13 @@
+$ python -m aihot alert --message M5R-独立告警哨兵-20261012 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-alert-file\config.yaml
+exit=1 (4.7s)
+--- stdout ---
+11:32:42 ERROR aihot.runner: 告警通道失败: 企业微信: 文本消息发送失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+11:32:42 ERROR aihot.runner: 告警通道失败: 邮件: SMTP 连接或登录失败: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+[ERR] 告警发送失败: 企业微信: 文本消息发送失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+[ERR] 告警发送失败: 邮件: SMTP 连接或登录失败: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+--- stderr ---
+
+--- ALERTS.log ---
+[2026-10-12T11:32:42+08:00] 运维消息
+  - M5R-独立告警哨兵-20261012

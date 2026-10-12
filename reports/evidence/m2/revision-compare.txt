@@ -1,0 +1,6 @@
+captured_at=2026-09-24T11:41:25
+files=24→24
+overall_same=True
+stored=39efbe26258f7502658fa7faa69078b743954649be72cb7c90163e5be5e9255d
+current=39efbe26258f7502658fa7faa69078b743954649be72cb7c90163e5be5e9255d
+changed=none

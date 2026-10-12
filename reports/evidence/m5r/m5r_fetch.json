@@ -1,0 +1,53 @@
+{
+  "suite": "m5r_fetch",
+  "passed": 9,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "3.1 代理可用时 fetch --dry-run rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "3.2 目标端口关闭仍抓到 8 条（只可能经假代理）",
+      "ok": true,
+      "detail": "fake_feed 抓取条数=8（目标 http://127.0.0.1:1/feed.xml 是关闭端口）"
+    },
+    {
+      "item": "3.3 假代理记录了绝对 URI 形式的 GET（证明流量确实经代理）",
+      "ok": true,
+      "detail": "proxied_get_paths=['http://127.0.0.1:1/feed.xml']"
+    },
+    {
+      "item": "4.1 代理坏端口时 fetch --dry-run rc=0（不跳过、不整体失败）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "4.2 直连可达的源真的抓到了 8 条",
+      "ok": true,
+      "detail": "条数=8；假 RSS 命中=1"
+    },
+    {
+      "item": "4.3 输出含'降级为直连'日志（用户可知情）",
+      "ok": true,
+      "detail": "11:32:06 WARNING aihot.runner: 代理不可用（http://127.0.0.1:1），本次采集降级为直连：国内源照常，墙外源将失败"
+    },
+    {
+      "item": "4.4 非 dry-run 时才落库（dry-run 未创建数据库文件）",
+      "ok": true,
+      "detail": "db exists=False"
+    },
+    {
+      "item": "4.5 降级不等于谎报：源也不可达时 rc=1 且提示全部失败",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "4.6 真实库/存档未被本套件改动",
+      "ok": true,
+      "detail": "真实库快照一致"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,11 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-up42ujw4\proxy-enabled-empty.yaml
+EXIT CODE: 3
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-up42ujw4\proxy-enabled-empty.yaml
+
+[ERR] 配置校验未通过（1 个问题）:
+  1. proxy.enabled 为 true 但 proxy.url 为空
+
+--- STDERR ---
+

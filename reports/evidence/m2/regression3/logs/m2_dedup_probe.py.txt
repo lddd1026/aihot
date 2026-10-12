@@ -1,0 +1,48 @@
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-probe\config.yaml
+
+待加工: 176 条（上限 400）
+
+预筛:
+  输入 176 → 保留 105（垃圾 6 · 与 AI 无关 65 · 批内重复 0）
+    [与 AI 无关] Meta VR Glasses
+    [与 AI 无关] Linux support is coming to Snapdragon X2 Serie…
+    [垃圾内容] 3 days left to save up to $200 and make impact…
+    [垃圾内容] TechCrunch Founder Summit’s agenda revealed: U…
+
+聚类: 105 条 → 101 簇（多源簇 2 · 最大簇 3 条）
+
+Top 1:
+   1. [ 39.8] (其他) Introducing GPT-6 Sol and Luna
+      Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to …
+      提及 3 条 · 来源 3 家
+
+已写回: 105 条加工 · 71 条标记为过滤 · 101 个事件簇
+
+
+簇总数=101，多条目簇=2
+
+--- cluster 8 (3) ---
+    hackernews | Claude Opus 5.5
+    hackernews | Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)
+    infoq_cn | Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 GPT-6 Astra 便宜 80%
+
+--- cluster 79 (3) ---
+    techcrunch_ai | OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes
+    openai_news | Introducing GPT-6 Sol and Luna
+    hackernews | GPT-6 Sol and Luna
+
+写入 C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-probe\clusters.json
+真实库: D:\信息收集整理\aihot\data\aihot.db
+
+=== 生产库（含 LLM 精修）多条目簇 ===
+
+--- prod cluster 8 (3) ---
+    hackernews | Claude Opus 5.5
+    hackernews | Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)
+    infoq_cn | Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 GPT-6 Astra 便宜 80%
+
+--- prod cluster 79 (3) ---
+    techcrunch_ai | OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes
+    openai_news | Introducing GPT-6 Sol and Luna
+    hackernews | GPT-6 Sol and Luna

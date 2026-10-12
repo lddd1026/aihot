@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: #f2f3f5; color: #1f2329;
+  }
+  .page { width: 1080px; background: #ffffff; padding: 56px 64px 40px; }
+  .header { border-bottom: 3px solid #1f2329; padding-bottom: 20px; margin-bottom: 32px; }
+  .brand { font-size: 46px; font-weight: 700; letter-spacing: 1px; }
+  .meta-line { margin-top: 10px; font-size: 24px; color: #646a73; }
+  .section-title { font-size: 30px; font-weight: 700; margin: 36px 0 20px; }
+  .summary {
+    background: #f7f8fa; border-left: 8px solid #3370ff; border-radius: 10px;
+    padding: 26px 30px; font-size: 27px; line-height: 1.75; color: #2b2f36;
+  }
+  .item { display: flex; gap: 22px; padding: 26px 0; border-bottom: 1px solid #eef0f3; }
+  .item:last-child { border-bottom: none; }
+  .rank {
+    flex: 0 0 56px; height: 56px; border-radius: 12px; background: #3370ff; color: #fff;
+    font-size: 30px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  }
+  .rank.top3 { background: #e5484d; }
+  .body { flex: 1; }
+  .title { font-size: 33px; font-weight: 700; line-height: 1.45; }
+  .desc { margin-top: 12px; font-size: 25px; line-height: 1.7; color: #4e5969; }
+  .tags { margin-top: 14px; display: flex; align-items: center; gap: 14px; font-size: 22px; color: #8a9099; }
+  .tag { background: #eef4ff; color: #3370ff; border-radius: 6px; padding: 4px 14px; font-weight: 600; }
+  .briefs { list-style: none; }
+  .briefs li { font-size: 25px; line-height: 1.9; padding-left: 30px; position: relative; color: #2b2f36; }
+  .paper { padding: 18px 0; border-bottom: 1px dashed #e5e8ef; }
+  .paper:last-child { border-bottom: none; }
+  .paper-title { font-size: 29px; font-weight: 700; line-height: 1.5; color: #1f2329; }
+  .paper-desc { margin-top: 10px; font-size: 23px; line-height: 1.7; color: #4e5969; }
+  .paper-note { margin-top: 10px; font-size: 21px; color: #7b61ff; font-weight: 600; }
+  .briefs li::before { content: "•"; position: absolute; left: 8px; color: #3370ff; font-weight: 700; }
+  .briefs .tag { margin-left: 10px; font-size: 20px; padding: 2px 10px; }
+  .footer {
+    margin-top: 40px; padding-top: 22px; border-top: 1px solid #eef0f3;
+    font-size: 22px; color: #8a9099; display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="brand">🤖 AI 热点日报</div>
+    <div class="meta-line">{{ date_text }} · 第 {{ issue_no }} 期{{ part_suffix }}</div>
+  </div>
+
+  {% if show_summary and summary %}
+  <div class="section-title">📌 今日综述</div>
+  <div class="summary">{{ summary }}</div>
+  {% endif %}
+
+  {% if top_items %}
+  <div class="section-title">🔥 今日必读</div>
+  {% for item in top_items %}
+  <div class="item">
+    <div class="rank{% if loop.index <= 3 %} top3{% endif %}">{{ loop.index }}</div>
+    <div class="body">
+      <div class="title">{{ item.title }}</div>
+      {% if item.summary %}<div class="desc">{{ item.summary }}</div>{% endif %}
+      <div class="tags">
+        <span class="tag">{{ item.category }}</span>
+        <span>{{ item.mention_text }}</span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if papers %}
+  <div class="section-title">🔬 论文精选</div>
+  {% for item in papers %}
+  <div class="paper">
+    <div class="paper-title">{{ item.title }}</div>
+    {% if item.summary %}<div class="paper-desc">{{ item.summary }}</div>{% endif %}
+    <div class="paper-note">{{ item.note }}</div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if briefs %}
+  <div class="section-title">📎 其他值得一看</div>
+  <ul class="briefs">
+    {% for item in briefs %}
+    <li>{{ item.title }}<span class="tag">{{ item.category }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="footer">
+    <span>共扫描 {{ stats.scanned }} 条 · 筛出 {{ stats.clusters }} 个事件 · 精选 {{ stats.selected }} 条</span>
+    <span>aihot × DeepSeek</span>
+  </div>
+</div>
+</body>
+</html>

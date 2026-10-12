@@ -1,0 +1,44 @@
+璇锋眰鏈€缁堝け璐? http://127.0.0.1:5809/api/query锛圚TTP 500锛?
+璇锋眰鏈€缁堝け璐? http://127.0.0.1:5846/api/daily_papers锛圚TTP 429锛?
+  [PASS] 6.1 arXiv 鍒嗙被鍙傛暟鎷兼帴姝ｇ‘: search_query='cat:cs.AI OR cat:cs.LG'
+  [PASS] 6.2 arXiv 鎺掑簭鍙傛暟姝ｇ‘: sortBy=submittedDate sortOrder=descending
+  [PASS] 6.3 arXiv max_results 閫忎紶: max_results=60
+  [PASS] 6.4 arXiv 鏃堕棿绐楀彛杩囨护锛?0 澶╁墠涓㈠純锛? 鍏?10 鏉★紝鏃?2609.09000
+  [PASS] 6.5 arXiv 杈圭晫鏃跺埢锛坧ublished==since锛変繚鐣? boundary=1
+  [PASS] 6.6 arXiv 鏃?published 鏃跺洖閫€ updated: published_at=2026-09-24 12:00:00+00:00
+  [PASS] 6.7 arXiv extra.kind=paper: kind='paper'
+  [PASS] 6.8 arXiv extra.authors/author_count: authors=['Author 1A', 'Author 1B'] count=2
+  [PASS] 6.9 arXiv extra.categories: categories=['cs.AI', 'cs.CL']
+  [PASS] 6.10 arXiv extra.arxiv_id: arxiv_id='2609.10001v1'
+  [PASS] 6.11 arXiv 鎽樿鍘婚櫎 HTML 骞朵繚鐣欐枃鏈? summary='Abstract 1 for independent verification.'
+  [PASS] 6.12 arXiv 璇█璇嗗埆 en: lang=en
+  [PASS] 6.13 arXiv 璇锋眰澶翠娇鐢ㄦ祻瑙堝櫒 UA: UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64
+  [PASS] 6.14 arXiv 榛樿鍒嗙被 cs.AI/cs.CL/cs.LG: search_query='cat:cs.AI OR cat:cs.CL OR cat:cs.LG'
+  [PASS] 6.15 arXiv max_results 涓婇檺瑁佸壀鍒?200: max_results=200
+  [PASS] 6.16 arXiv 绌?feed 鎶?SourceError: SourceError: arXiv 杩斿洖涓虹┖锛堟棤鏉＄洰锛?
+  [PASS] 6.17 arXiv HTTP 500 鎶?SourceError: SourceError: 璇锋眰澶辫触: HTTP 500
+  [PASS] 6.18 HTML link_pattern 杩囨护锛?blog/ 琚帓闄わ級: urls=['http://127.0.0.1:5812/news/one', 'http://127.0.0.1:5812/news/two', 'http://127.0.0.1:5812/news/nolinkselector']
+  [PASS] 6.19 HTML 鐩稿閾炬帴琛ュ叏涓虹粷瀵瑰湴鍧€: url=http://127.0.0.1:5812/news/one
+  [PASS] 6.20 HTML title_selector 鍛戒腑: title='First Story'
+  [PASS] 6.21 HTML 鏍囬鍥為€€鍒伴摼鎺ユ枃鏈? title='Second Story'
+  [PASS] 6.22 HTML time_attr 瑙ｆ瀽 published_at: published_at=2026-09-25 00:30:00+00:00
+  [PASS] 6.23 HTML time 鏂囨湰瑙ｆ瀽 published_at: published_at=2026-09-25 02:00:00+00:00
+  [PASS] 6.24 HTML 鏃犻摼鎺ユ潯鐩璺宠繃: titles=['First Story', 'Second Story', 'No link match']
+  [PASS] 6.25 HTML item_selector 鍖归厤涓虹┖鎶?SourceError: SourceError: 閫夋嫨鍣ㄦ湭鍖归厤鍒颁换浣曟潯鐩細article.nope
+  [PASS] 6.26 HTML HTTP 404 鎶?SourceError: SourceError: 璇锋眰澶辫触: 404
+  [NOTE] 瑙傚療锛歭ink_selector 鍖归厤涓虹┖鏃惰繑鍥?0 鏉′笖涓嶆姤閿欙紙閰嶇疆鍐欓敊浼氶潤榛樺彉 0 鏉★級
+  [PASS] 6.27 HTML 缂虹渷 time 閫夋嫨鍣ㄤ粛鑳借В鏋? items=4
+  [PASS] 6.28 HF 闈炲瓧鍏?缂哄瓧娈垫潯鐩笉宕╂簝涓旇璺宠繃: items=2 titles=['HF Featured Paper', 'Upvotes as string']
+  [PASS] 6.29 HF kind=paper 涓?URL 姝ｇ‘: kind=paper url=https://huggingface.co/papers/2609.77777
+  [PASS] 6.30 HF upvotes 鍏?extra: upvotes=42
+  [PASS] 6.31 HF 鏃堕棿鐢ㄥ叆閫夋棩鑰岄潪璁烘枃鎶曠鏃? published_at=2026-09-25 01:00:00+00:00 paper_published_at=2026-09-01T00:00:00.000Z
+  [PASS] 6.32 HF upvotes 瀛楃涓茶浆 int: upvotes=17
+  [PASS] 6.33 HF 鍏ラ€夋棩闈炴硶鏃跺洖閫€褰撳墠鏃堕棿: published_at=2026-09-25 03:05:48.659062+00:00
+  [PASS] 6.34 HF limit 鍙傛暟閫忎紶锛?0锛? query={'limit': '30'}
+  [PASS] 6.35 HF 闈炲垪琛?payload 鎶?SourceError: SourceError: 鍝嶅簲缁撴瀯寮傚父锛堜笉鏄垪琛級
+  [PASS] 6.36 HF 绌哄垪琛ㄨ繑鍥炵┖锛堜笉鎶ラ敊锛? items=[]
+  [PASS] 6.37 HF limit 涓婇檺瑁佸壀鍒?100: query={'limit': '100'}
+  [PASS] 6.38 HF HTTP 429 鎶?SourceError锛堜笉鍐嶆棤闄愰噸璇曪級: SourceError: 璇锋眰澶辫触: HTTP 429
+  [PASS] 6.39 HF 閫傞厤鍣ㄨ姹傚ご UA 涓烘祻瑙堝櫒 UA: UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64
+
+== m4_adapters: 39 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_adapters.json

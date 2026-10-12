@@ -1,0 +1,59 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: D:\信息收集整理\aihot\config.yaml
+11:11:39 WARNING aihot.runner: 代理不可用（http://127.0.0.1:7897），本次采集降级为直连：国内源照常，墙外源将失败
+11:11:39 INFO aihot.sources: 信息源完成: qbitai，4 条（122 ms）
+11:11:39 INFO aihot.sources: 信息源完成: infoq_cn，6 条（159 ms）
+11:11:40 INFO aihot.sources: 信息源完成: theverge_ai，2 条（385 ms）
+11:11:40 INFO aihot.sources: 信息源完成: venturebeat_ai，0 条（448 ms）
+11:11:40 INFO aihot.sources: 信息源完成: openai_news，0 条（1203 ms）
+11:11:40 INFO aihot.sources: 信息源完成: techcrunch_ai，4 条（1215 ms）
+11:11:40 INFO aihot.sources: 信息源完成: hackernews，54 条（1304 ms）
+11:11:41 INFO aihot.sources: 信息源完成: deepmind_blog，0 条（1021 ms）
+11:11:41 INFO aihot.sources: 信息源完成: meta_eng，0 条（440 ms）
+11:11:41 INFO aihot.sources: 信息源完成: anthropic_news，0 条（1317 ms）
+11:11:41 INFO aihot.sources: 信息源完成: github_trending，15 条（918 ms）
+11:11:41 INFO aihot.sources: 信息源完成: arxiv，0 条（927 ms）
+11:12:29 WARNING aihot.net: 请求最终失败: https://www.reddit.com/r/LocalLLaMA+MachineLearning/new/.rss?limit=50（ConnectTimeout: timed out）
+11:12:29 WARNING aihot.sources: 信息源失败: reddit_ai（SourceError: 请求失败: ConnectTimeout: timed out）
+
+采集窗口: 最近 24 小时（起始 2026-10-11T11:11:37+08:00）
+信息源  : 13 个
+
+采集结果:
+  [OK ] anthropic_news     0 条（1317 ms）
+  [OK ] arxiv              0 条（927 ms）
+  [OK ] deepmind_blog      0 条（1021 ms）
+  [OK ] github_trending    15 条（918 ms）
+  [OK ] hackernews         54 条（1304 ms）
+  [OK ] infoq_cn           6 条（159 ms）
+  [OK ] meta_eng           0 条（440 ms）
+  [OK ] openai_news        0 条（1203 ms）
+  [OK ] qbitai             4 条（122 ms）
+  [ERR] reddit_ai          SourceError: 请求失败: ConnectTimeout: timed out（49046 ms）
+  [OK ] techcrunch_ai      4 条（1215 ms）
+  [OK ] theverge_ai        2 条（385 ms）
+  [OK ] venturebeat_ai     0 条（448 ms）
+
+合计: 抓取 85 条（dry-run，不写库）
+
+最新条目预览（前 10 条）:
+   1. [infoq_cn] Radicle 披露了可能导致私有仓库以明文形式暴露的关键漏洞
+      https://www.infoq.cn/article/h86bNjSBdJRBYwxP4Xgt（10-12 18:15）
+   2. [infoq_cn] 阿里巴巴中国电商事业群/飞猪CTO陈烨博士已确认出席QCon上海，分享“从 Coding 到消费：AI 的下一场革命”
+      https://www.infoq.cn/article/4hYrs8ShAKPAhyzTGQ92（10-12 18:00）
+   3. [infoq_cn] Artifactory 漏洞正被积极利用，可以绕过身份验证并获取管理员权限
+      https://www.infoq.cn/article/CSNMcSceutWCGQhZcL7D（10-12 17:05）
+   4. [github_trending] storytold/wordcraft
+      https://github.com/storytold/wordcraft（10-12 11:11）
+   5. [github_trending] wheresryan22/anatomy
+      https://github.com/wheresryan22/anatomy（10-12 11:11）
+   6. [github_trending] mhtsec/ARTEX
+      https://github.com/mhtsec/ARTEX（10-12 11:11）
+   7. [github_trending] zhongerxin/iPhone-use
+      https://github.com/zhongerxin/iPhone-use（10-12 11:11）
+   8. [github_trending] storytold/gridcraft
+      https://github.com/storytold/gridcraft（10-12 11:11）
+   9. [github_trending] storytold/cadcraft
+      https://github.com/storytold/cadcraft（10-12 11:11）
+  10. [github_trending] LosaLosSantos/aurelio-finance
+      https://github.com/LosaLosSantos/aurelio-finance（10-12 11:11）

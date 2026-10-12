@@ -1,0 +1,19 @@
+  [NOTE] 配置共 14 个源：启用 12 个 ['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews', 'theverge_ai', 'venturebeat_ai', 'deepmind_blog', 'anthropic_news', 'meta_eng', 'reddit_ai', 'arxiv']；停用 2 个 ['jiqizhixin', 'hf_papers']
+  [PASS] 7.1 源 qbitai 真实抓取: [OK] 7 条（2.8s）
+  [PASS] 7.2 源 infoq_cn 真实抓取: [OK] 15 条（2.6s）
+  [PASS] 7.3 源 techcrunch_ai 真实抓取: [OK] 15 条（2.5s）
+  [PASS] 7.4 源 openai_news 真实抓取: [OK] 0 条（4.9s）
+  [PASS] 7.5 源 hackernews 真实抓取: [OK] 53 条（3.1s）
+  [PASS] 7.6 源 theverge_ai 真实抓取: [OK] 10 条（2.3s）
+  [PASS] 7.7 源 venturebeat_ai 真实抓取: [OK] 0 条（3.8s）
+  [PASS] 7.8 源 deepmind_blog 真实抓取: [OK] 1 条（2.6s）
+  [PASS] 7.9 源 anthropic_news 真实抓取: [OK] 0 条（3.9s）
+  [PASS] 7.10 源 meta_eng 真实抓取: [OK] 0 条（2.4s）
+  [PASS] 7.11 源 reddit_ai 真实抓取: [OK] 50 条（7.9s）
+  [PASS] 7.12 源 arxiv 真实抓取: [ERR] SourceError: 请求失败: ReadTimeout: The read operation timed out（66.5s）
+  [PASS] 7.13 源 jiqizhixin（停用源直连尝试）: [ERR] SourceError: 选择器未匹配到任何条目：li, article
+  [PASS] 7.14 源 hf_papers（停用源直连尝试）: [ERR] SourceError: 请求失败: HTTP 429
+  [NOTE] 真实抓取汇总：启用源 11/12 成功；含停用源共 11/14
+
+== m4_sources_live: 14 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m4\regression2\m4_sources_live.json
+请求最终失败: https://huggingface.co/api/daily_papers（HTTP 429）

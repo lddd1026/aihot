@@ -1,0 +1,30 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\prefilter-real-copy\config.yaml --limit 400 --top 3
+exit=0 (1.2s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\prefilter-real-copy\config.yaml
+
+待加工: 176 条（上限 400）
+
+预筛:
+  输入 176 → 保留 105（垃圾 6 · 与 AI 无关 65 · 批内重复 0）
+    [与 AI 无关] Meta VR Glasses
+    [与 AI 无关] Linux support is coming to Snapdragon X2 Serie…
+    [垃圾内容] 3 days left to save up to $200 and make impact…
+    [垃圾内容] TechCrunch Founder Summit’s agenda revealed: U…
+
+聚类: 105 条 → 101 簇（多源簇 2 · 最大簇 3 条）
+
+Top 3:
+   1. [ 39.8] (其他) Introducing GPT-6 Sol and Luna
+      Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to …
+      提及 3 条 · 来源 3 家
+   2. [ 38.2] (其他) Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 GPT-6 Astra 便宜 80%
+      点击查看原文>
+      提及 3 条 · 来源 2 家
+   3. [ 37.4] (其他) Claude discovers a novel enzyme system with CRISPR-like re…
+      提及 1 条 · 来源 1 家
+
+已写回: 105 条加工 · 71 条标记为过滤 · 101 个事件簇
+
+--- stderr ---

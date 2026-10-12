@@ -1,0 +1,163 @@
+{
+  "suite": "m4_net",
+  "passed": 31,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "1.1 默认 UA 为浏览器 UA",
+      "ok": true,
+      "detail": "UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    {
+      "item": "1.2 UA 不含 httpx 客户端标记",
+      "ok": true,
+      "detail": "UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    {
+      "item": "1.3 显式 UA 可覆盖",
+      "ok": true,
+      "detail": "产品常量=Mozilla/5.0 (Windows NT 10.0; Win64; x64…"
+    },
+    {
+      "item": "1.4 headers 参数覆盖默认 UA",
+      "ok": true,
+      "detail": "UA=custom-agent/1.0"
+    },
+    {
+      "item": "1.5 200 正常返回",
+      "ok": true,
+      "detail": "status=200"
+    },
+    {
+      "item": "2.1 429 两次后成功",
+      "ok": true,
+      "detail": "status=200"
+    },
+    {
+      "item": "2.2 429 触发了 3 次请求",
+      "ok": true,
+      "detail": "hits=3"
+    },
+    {
+      "item": "2.3 429 退避等待生效",
+      "ok": true,
+      "detail": "elapsed=0.484s（backoff*3=0.15）"
+    },
+    {
+      "item": "3.1 Retry-After=1 后成功",
+      "ok": true,
+      "detail": "status=200"
+    },
+    {
+      "item": "3.2 Retry-After 优先于线性退避",
+      "ok": true,
+      "detail": "elapsed=1.040s ≥ 1.0s"
+    },
+    {
+      "item": "3.3 Retry-After 生效时请求数=2",
+      "ok": true,
+      "detail": "hits=2"
+    },
+    {
+      "item": "4.1 Retry-After 封顶 30s",
+      "ok": true,
+      "detail": "delay=30.0"
+    },
+    {
+      "item": "4.2 非数字 Retry-After 回退到 3× 线性退避",
+      "ok": true,
+      "detail": "delay=0.15000000000000002"
+    },
+    {
+      "item": "4.3 429 无 Retry-After 用 3× 线性退避",
+      "ok": true,
+      "detail": "delay=0.30000000000000004"
+    },
+    {
+      "item": "4.4 5xx 无 Retry-After 用线性退避",
+      "ok": true,
+      "detail": "delay=0.1"
+    },
+    {
+      "item": "5.400 HTTP 400 不重试",
+      "ok": true,
+      "detail": "hits=1 status=400"
+    },
+    {
+      "item": "5.401 HTTP 401 不重试",
+      "ok": true,
+      "detail": "hits=1 status=401"
+    },
+    {
+      "item": "5.403 HTTP 403 不重试",
+      "ok": true,
+      "detail": "hits=1 status=403"
+    },
+    {
+      "item": "5.404 HTTP 404 不重试",
+      "ok": true,
+      "detail": "hits=1 status=404"
+    },
+    {
+      "item": "5.418 HTTP 418 不重试",
+      "ok": true,
+      "detail": "hits=1 status=418"
+    },
+    {
+      "item": "6.500 HTTP 500 重试后成功",
+      "ok": true,
+      "detail": "hits=3 status=200"
+    },
+    {
+      "item": "6.502 HTTP 502 重试后成功",
+      "ok": true,
+      "detail": "hits=3 status=200"
+    },
+    {
+      "item": "6.503 HTTP 503 重试后成功",
+      "ok": true,
+      "detail": "hits=3 status=200"
+    },
+    {
+      "item": "6.504 HTTP 504 重试后成功",
+      "ok": true,
+      "detail": "hits=3 status=200"
+    },
+    {
+      "item": "7.1 5xx 重试耗尽返回错误",
+      "ok": true,
+      "detail": "hits=4 error=HTTP 503"
+    },
+    {
+      "item": "7.2 429 重试耗尽返回错误",
+      "ok": true,
+      "detail": "hits=4 error=HTTP 429 elapsed=3.05s"
+    },
+    {
+      "item": "8.1 连接错误按 retries 重试",
+      "ok": true,
+      "detail": "elapsed=11.032s error=HTTP 502"
+    },
+    {
+      "item": "9.1 get_json 正常解析",
+      "ok": true,
+      "detail": "payload={'ok': True, 'n': 1}"
+    },
+    {
+      "item": "9.2 get_json 非 2xx 返回 None+错误",
+      "ok": true,
+      "detail": "status=404"
+    },
+    {
+      "item": "9.3 get_json 正文非 JSON 返回 None+错误",
+      "ok": true,
+      "detail": "status=200 error=JSON 解析失败: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "item": "9.3 FetchResult 失败不抛异常",
+      "ok": true,
+      "detail": "全部失败用例均返回 FetchResult"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,25 @@
+已记录 23 个文件指纹 → revision-fingerprint.json
+整体指纹 sha256=ce4a33f2f9594d4f5790bb68e657fc6a84fb544a0ada8b411cd860a1483f6d4b
+  d7e3b66ad810      63  src\aihot\__init__.py
+  ed50bbd69f7a     117  src\aihot\__main__.py
+  2a49e2d2fc02    5310  src\aihot\checks.py
+  c459a0a474b2   19964  src\aihot\cli.py
+  5068c358aebe   23462  src\aihot\config.py
+  8631c471ff04    4228  src\aihot\logging_setup.py
+  dea9470ccb73    1913  src\aihot\models.py
+  e2fbc4602242    3909  src\aihot\net.py
+  d67abb1b8a94     926  src\aihot\pipeline\__init__.py
+  e197e252b875   12559  src\aihot\pipeline\dedup.py
+  b7b28bc7bd6e   17501  src\aihot\pipeline\enrich.py
+  5c33c25cd46f    6426  src\aihot\pipeline\prefilter.py
+  5fd8546d6aa7    3889  src\aihot\pipeline\prompts.py
+  ba70125543ef    3236  src\aihot\pipeline\rank.py
+  7c8e5e9a1c95     391  src\aihot\sources\__init__.py
+  f84fd2866e35    2910  src\aihot\sources\base.py
+  f01e864a05e0    2904  src\aihot\sources\hackernews.py
+  a357578ddfba    4006  src\aihot\sources\registry.py
+  19772345b4f2    2370  src\aihot\sources\rss.py
+  8576695b226d   12375  src\aihot\store.py
+  607fb330762b    4821  src\aihot\utils.py
+  bd089952d42b     968  pyproject.toml
+  31cdcf0786ca    5318  config.example.yaml

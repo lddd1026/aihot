@@ -1,0 +1,6 @@
+  [PASS] URL边界-非http(s)/含空白链接被丢弃: javascript:/mailto:/含空格文本 已丢弃=True，落库非 http(s) 条目=无
+  [PASS] URL边界-相对链接按源地址补全: relative → 'http://127.0.0.1:1628/relative/path'（源地址 http://127.0.0.1:1628/）
+  [PASS] URL边界-协议相对链接补全 scheme: //cdn.example/asset → 'http://cdn.example/asset'
+  [PASS] URL边界-正常链接不受影响: normal → 'https://ok.example/normal'
+
+== url_edges: 4 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\url_edges.json

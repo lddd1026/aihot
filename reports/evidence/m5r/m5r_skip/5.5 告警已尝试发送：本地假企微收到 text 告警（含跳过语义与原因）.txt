@@ -1,0 +1,3 @@
+⚠️ aihot 告警：今日运行已跳过
+- preflight failed: LLM or WeCom unreachable. Today's digest was skipped. See logs\run_daily.log
+- 详情见 logs\run_daily.log

@@ -1,0 +1,1091 @@
+{
+  "total_items": 363,
+  "stats": {
+    "total": 363,
+    "kept": 242,
+    "blacklist": 11,
+    "offtopic": 110,
+    "duplicate": 0
+  },
+  "dropped": [
+    {
+      "source_id": "techcrunch_ai",
+      "title": "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
+      "published_at": "2026-09-22T23:21:49+00:00",
+      "reason": "垃圾内容",
+      "verdict": "合理",
+      "basis": "TechCrunch 活动议程/招商营销"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Five AI safety sessions every founder should have on their TechCrunch Disrupt 2026 agenda",
+      "published_at": "2026-09-22T15:00:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "合理",
+      "basis": "TechCrunch Disrupt 活动议程营销"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "TechCrunch Disrupt 2026: Aaron Edsinger brings Hello Robot’s Stretch 4 to life onstage",
+      "published_at": "2026-09-22T14:30:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "合理",
+      "basis": "TechCrunch Disrupt 展台活动宣传"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Exhibit tables added: One last chance to showcase your startup at TechCrunch Disrupt 2026",
+      "published_at": "2026-09-22T14:15:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "合理",
+      "basis": "活动招商（last chance）"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "4 days to save up to $200: Reason 2 of 5 to be at TechCrunch Disrupt 2026",
+      "published_at": "2026-09-22T14:00:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "合理",
+      "basis": "活动促销（save up to / days left）"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Z80 REPL",
+      "published_at": "2026-09-23T11:04:52+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The darker side of being a doctor",
+      "published_at": "2026-09-23T10:54:55+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Netherlands bracing for potentially devastating US sanctions against the ICC",
+      "published_at": "2026-09-23T09:09:49+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Abandoning Scientific Linux Was a Mistake",
+      "published_at": "2026-09-23T08:46:39+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "I am done with this shit",
+      "published_at": "2026-09-23T07:59:14+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "There is no epidemic of loneliness, but there is an epidemic of scurvy",
+      "published_at": "2026-09-23T06:48:37+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Grammarly will send unhinged messages to all your users if you try to cancel",
+      "published_at": "2026-09-23T04:00:43+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Data-only attacks are easier than you think (2024)",
+      "published_at": "2026-09-23T03:49:28+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Transit rewards",
+      "published_at": "2026-09-23T02:52:29+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "US criticises Australia's proposed algorithm opt-out laws as 'censorship'",
+      "published_at": "2026-09-23T02:13:52+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "主题为社交媒体算法监管，非 AI"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The UV index is not the warm sensation of sunlight on bare skin",
+      "published_at": "2026-09-22T21:06:40+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "No Sloptober",
+      "published_at": "2026-09-22T21:05:39+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "疑似 AI 生成内容（slop）文化评论，证据不足"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived",
+      "published_at": "2026-09-22T21:00:30+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "ArchiveBox v0.9 released with new native apps and 50 new plugins",
+      "published_at": "2026-09-22T20:59:18+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Diesel prices could crush Republicans in the heartland",
+      "published_at": "2026-09-22T20:13:56+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The JavaScript Midlife Crisis",
+      "published_at": "2026-09-22T19:58:47+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Native apps written in TypeScript and CSS",
+      "published_at": "2026-09-22T19:42:20+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Obscura: VPN that can't log your activity",
+      "published_at": "2026-09-22T19:40:28+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "A Faster Shortest Path Algorithm",
+      "published_at": "2026-09-22T19:24:58+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Explaining to business people why building software is still hard",
+      "published_at": "2026-09-22T19:00:40+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "SAML: A fractal of bad design",
+      "published_at": "2026-09-22T18:57:17+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "An update on how we confirm your age group on Discord",
+      "published_at": "2026-09-22T18:10:31+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "'We hacked the FBI:' Hackers say they have data on all FBI employees",
+      "published_at": "2026-09-22T17:46:02+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "German court rules Meta liable for scam ads on Facebook and Instagram",
+      "published_at": "2026-09-22T17:21:11+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "There's a high chance of devices being sold with GrapheneOS preinstalled in 2027",
+      "published_at": "2026-09-22T17:12:51+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Moving from cash to credit cards, PayPal, etc. is an ongoing privacy disaster",
+      "published_at": "2026-09-22T17:12:09+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "ASML Executive Says It Has No Sales in Europe",
+      "published_at": "2026-09-22T17:09:02+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Aging may be a program, not a breakdown",
+      "published_at": "2026-09-22T16:48:33+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "WordPress: Unauthenticated path traversal leading to conditional RCE",
+      "published_at": "2026-09-22T16:33:45+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Xbox continues its “reset” with dramatic restructuring",
+      "published_at": "2026-09-22T16:10:58+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "I asked Meta’s Muse for its filesystem and it sent me 6.8GB",
+      "published_at": "2026-09-22T15:25:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "Meta Muse 属 AI 产品讨论，关键词表未覆盖 Muse"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Meta’s Muse has a serious 0-day",
+      "published_at": "2026-09-22T14:35:15+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "同上"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Apple has added persistent 'ads' to iOS, and it's driving users crazy",
+      "published_at": "2026-09-22T14:30:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Show HN: Drop – A rootless Linux sandbox with gVisor support",
+      "published_at": "2026-09-22T13:52:47+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Texas police department ordered to close for failing to provide public benefit",
+      "published_at": "2026-09-22T13:43:37+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "3 days left to save up to $200 and make impactful connections at TechCrunch Disrupt 2026",
+      "published_at": "2026-09-23T14:00:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "合理",
+      "basis": "活动促销（save up to / days left）"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Meta VR Glasses",
+      "published_at": "2026-09-23T23:47:56+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Linux support is coming to Snapdragon X2 Series",
+      "published_at": "2026-09-23T22:38:16+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "We just shipped support for the ugliest part of HTTP: Vary",
+      "published_at": "2026-09-23T22:03:21+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "DoorDash Spent $1.4M Trying to Stop Mamdani from Becoming Mayor. Now We Know Why",
+      "published_at": "2026-09-23T19:55:14+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "LensVLM: Compressing long context as images, expanding only relevant pages",
+      "published_at": "2026-09-23T18:36:29+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "VLM 论文；关键词表未覆盖 VLM"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Swap, ZRAM, Zswap and Hibernate on NixOS",
+      "published_at": "2026-09-23T18:07:04+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "A brief history of Windows scroll bar shortcuts",
+      "published_at": "2026-09-23T18:02:08+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Making Tailscale Faster",
+      "published_at": "2026-09-23T17:49:07+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "UK military jamming other nations' satellites to defend itself, BBC told",
+      "published_at": "2026-09-23T17:45:30+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Italian parliament votes for return to nuclear energy",
+      "published_at": "2026-09-23T17:06:16+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Fertility rate dropped over 50% within 10 years in Argentina",
+      "published_at": "2026-09-23T17:04:23+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "28% of job postings on company career sites have been open over 90 days",
+      "published_at": "2026-09-23T16:35:34+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Woman Arrested, Dragged Away After Speaking About Flock at City Council Meeting",
+      "published_at": "2026-09-23T15:46:27+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "Flock 为 AI 车牌识别厂商，但文章主题是警务争议"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Radicle: Disclosure of Vulnerability in the Network Protocol",
+      "published_at": "2026-09-23T15:23:05+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Fixing the Portobello Police Station Clock",
+      "published_at": "2026-09-23T15:18:53+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Strands Harness",
+      "published_at": "2026-09-23T15:05:46+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Why is Hacker News like that?",
+      "published_at": "2026-09-23T15:05:20+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Montreal adopts bylaw banning insults against police, municipal employees",
+      "published_at": "2026-09-23T14:22:54+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Seattle City Council votes to ban surveillance pricing in sale of groceries",
+      "published_at": "2026-09-23T14:04:34+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Comma's hands-off driving tech under investigation after 2 fatal crashes",
+      "published_at": "2026-09-23T13:50:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "自动驾驶（comma.ai）；英文词表只覆盖 autonomous driving"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "It's 90 Degrees in the Arctic",
+      "published_at": "2026-09-23T13:49:54+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Socialism's Positive Rating Tops 40% for First Time",
+      "published_at": "2026-09-23T13:48:14+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The Price of Intelligence Is Falling Rapidly",
+      "published_at": "2026-09-23T13:08:59+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀（边缘）",
+      "basis": "疑似 AI/推理经济学评论"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The GitHub wiki is an anti-pattern (2022)",
+      "published_at": "2026-09-23T13:05:49+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "I don't want the details",
+      "published_at": "2026-09-23T13:04:44+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Samsung accidentally freezes its smart fridges with a software update",
+      "published_at": "2026-09-23T12:57:59+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Two Git ignore files nobody told me about",
+      "published_at": "2026-09-23T11:28:47+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Tokens too cheap to meter",
+      "published_at": "2026-09-23T09:21:17+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀（边缘）",
+      "basis": "疑似 LLM token 经济学评论"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "How often do you think about the 1893 World's Fair?",
+      "published_at": "2026-09-23T05:32:51+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Acer CEO says memory makers are hyping 2030 shortage fears to protect margins",
+      "published_at": "2026-09-23T04:00:40+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The newest ESP32 can run Linux and it's getting close to a Raspberry Pi",
+      "published_at": "2026-09-24T11:08:39+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Starlink ground station in Poland hit by fire in suspected arson attack",
+      "published_at": "2026-09-24T09:52:29+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Nokia Design Archive (2025)",
+      "published_at": "2026-09-24T09:49:33+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Microsoft tried to ban \"Microslop\", and six months later it has given up",
+      "published_at": "2026-09-24T07:57:08+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Six-year-old breaks women's world Rubik's Cube record [video]",
+      "published_at": "2026-09-24T05:07:58+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Ideas on modernizing the open-source desktop",
+      "published_at": "2026-09-24T02:52:09+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Show HN: An open-source manufacturing ERP/MES/QMS",
+      "published_at": "2026-09-24T00:45:17+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Where's the Beef?: The lab-grown-meat revolution that wasn't",
+      "published_at": "2026-09-23T21:54:07+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "White House Says Access Is a 'Privilege' in Court Filing Defending Media Ban",
+      "published_at": "2026-09-23T21:40:59+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "How can this Amazon scammer keep going, not shipping any goods?",
+      "published_at": "2026-09-23T20:19:24+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "What to do when your Waymo holds up a Secret Service motorcade",
+      "published_at": "2026-09-23T17:34:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Why 'What's Opera, Doc?' looks like that",
+      "published_at": "2026-09-23T15:37:47+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Rails World 2026 Opening Keynote [video]",
+      "published_at": "2026-09-23T15:33:33+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Bring your co-founder, partner, or colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
+      "published_at": "2026-09-24T19:15:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Meet the next wave of VCs judging Startup Battlefield 200 at TechCrunch Disrupt 2026",
+      "published_at": "2026-09-24T16:03:36+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Shield AI, Waabi, and General Motors on building AI when failure is not an option at TechCrunch Disrupt 2026",
+      "published_at": "2026-09-24T15:00:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "TechCrunch Disrupt 2026: Cal AI’s Zach Yadegari on how to create viral growth and capitalize on it",
+      "published_at": "2026-09-24T14:30:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "2 days left to save up to $200 on a TechCrunch Disrupt 2026 pass — reason 4 of 5 to attend",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "GitLab Outage",
+      "published_at": "2026-09-24T23:10:44+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Back and shoulder surgery is often worse than useless",
+      "published_at": "2026-09-24T22:15:58+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "International observers to investigate Swedish election fraud",
+      "published_at": "2026-09-24T20:55:44+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The Board Game of the Alpha Nerds (2014)",
+      "published_at": "2026-09-24T20:53:39+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "California is chasing wealth that has feet",
+      "published_at": "2026-09-24T20:34:32+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Opus 5.5 is good at explainer videos",
+      "published_at": "2026-09-24T20:28:47+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Sourcehut account takeover via build logs (XSS in ansi2html)",
+      "published_at": "2026-09-24T19:54:21+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Using LLMs to trace alchemical knowledge and decode 17th century letters",
+      "published_at": "2026-09-24T19:14:27+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "New Jersey fines data center $1.1M after drone pics expose 62 gas generators",
+      "published_at": "2026-09-24T18:38:49+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Creatine uptake enhances antitumor immunity",
+      "published_at": "2026-09-24T18:24:52+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Programming Tutorials Are Dead",
+      "published_at": "2026-09-24T18:22:10+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "If you don't have the factories, you lose the expertise",
+      "published_at": "2026-09-24T17:52:00+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "S.F. Democratic Party stands behind Flock surveillance cameras in vote",
+      "published_at": "2026-09-24T17:04:32+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Why is the liver so weirdly regenerative?",
+      "published_at": "2026-09-24T16:23:00+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Federal judge orders Texas to air condition all prisons by the end of 2029",
+      "published_at": "2026-09-24T16:15:34+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "LinkedIn wins court order blocking mass scraping of user data",
+      "published_at": "2026-09-24T16:02:52+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "GitHub has not removed malicious imitation software after 3 weeks",
+      "published_at": "2026-09-24T15:50:26+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "F-Droid 2.0",
+      "published_at": "2026-09-24T15:26:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Disney+ and Hulu raise prices by up to 13 percent after doubling profits",
+      "published_at": "2026-09-24T15:15:40+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Japanese used bookstores see 5x sales surge as books are being bought by the ton",
+      "published_at": "2026-09-24T14:51:31+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Humans Are Reading Your ChatGPT Chats, Lawsuit Claims",
+      "published_at": "2026-09-24T14:36:24+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Dynamic Abliteration: Non-Destructive Refusal Suppression via Engram Steering",
+      "published_at": "2026-09-24T14:33:52+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Unknown number of Texas voter registrations went unprocessed due to DPS error",
+      "published_at": "2026-09-24T14:32:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Forging 1024-bit RSA signatures in nearly SNFS time [pdf]",
+      "published_at": "2026-09-24T14:26:32+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Google’s Project Suncatcher to put ML infrastructure in space",
+      "published_at": "2026-09-24T13:53:29+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Is A.I. Above the Law?",
+      "published_at": "2026-09-24T13:41:43+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Owners mourn spoiled food after firmware update bricks Samsung smart fridges",
+      "published_at": "2026-09-24T12:58:08+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Two-tier encryption in the UK",
+      "published_at": "2026-09-24T10:39:19+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Nokia Design Archive (2025)",
+      "published_at": "2026-09-24T09:49:33+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Search – A small, fast WebKit browser for macOS",
+      "published_at": "2026-09-24T09:11:52+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The Year of Internal Tools",
+      "published_at": "2026-09-24T07:23:07+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Show HN: Air-gapped file encryption as self-decrypting HTML page",
+      "published_at": "2026-09-24T07:22:17+00:00",
+      "reason": "与AI无关",
+      "verdict": "合理",
+      "basis": "与 AI 无关"
+    }
+  ],
+  "wrong_drops": [
+    {
+      "source_id": "hackernews",
+      "title": "I asked Meta’s Muse for its filesystem and it sent me 6.8GB",
+      "published_at": "2026-09-22T15:25:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "Meta Muse 属 AI 产品讨论，关键词表未覆盖 Muse"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Meta’s Muse has a serious 0-day",
+      "published_at": "2026-09-22T14:35:15+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "同上"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "LensVLM: Compressing long context as images, expanding only relevant pages",
+      "published_at": "2026-09-23T18:36:29+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "VLM 论文；关键词表未覆盖 VLM"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Comma's hands-off driving tech under investigation after 2 fatal crashes",
+      "published_at": "2026-09-23T13:50:12+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀",
+      "basis": "自动驾驶（comma.ai）；英文词表只覆盖 autonomous driving"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "The Price of Intelligence Is Falling Rapidly",
+      "published_at": "2026-09-23T13:08:59+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀（边缘）",
+      "basis": "疑似 AI/推理经济学评论"
+    },
+    {
+      "source_id": "hackernews",
+      "title": "Tokens too cheap to meter",
+      "published_at": "2026-09-23T09:21:17+00:00",
+      "reason": "与AI无关",
+      "verdict": "误杀（边缘）",
+      "basis": "疑似 LLM token 经济学评论"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Bring your co-founder, partner, or colleague and get 50% off a second TechCrunch Disrupt 2026 pass",
+      "published_at": "2026-09-24T19:15:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Meet the next wave of VCs judging Startup Battlefield 200 at TechCrunch Disrupt 2026",
+      "published_at": "2026-09-24T16:03:36+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "Shield AI, Waabi, and General Motors on building AI when failure is not an option at TechCrunch Disrupt 2026",
+      "published_at": "2026-09-24T15:00:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "TechCrunch Disrupt 2026: Cal AI’s Zach Yadegari on how to create viral growth and capitalize on it",
+      "published_at": "2026-09-24T14:30:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "title": "2 days left to save up to $200 on a TechCrunch Disrupt 2026 pass — reason 4 of 5 to attend",
+      "published_at": "2026-09-24T14:00:00+00:00",
+      "reason": "垃圾内容",
+      "verdict": "误杀",
+      "basis": "垃圾词表误命中"
+    }
+  ],
+  "borderline_not_counted": {
+    "Woman Arrested, Dragged Away After Speaking About Flock at City Council Meeting": "Flock 为 AI 车牌识别厂商，但文章主题是警务争议",
+    "No Sloptober": "疑似 AI 生成内容（slop）文化评论，证据不足",
+    "US criticises Australia's proposed algorithm opt-out laws as 'censorship'": "主题为社交媒体算法监管，非 AI"
+  },
+  "samples": {
+    "垃圾内容": [
+      "TechCrunch Founder Summit’s agenda revealed: Unlock fundraising, hiring, and AI insights in Boston on November 4",
+      "Five AI safety sessions every founder should have on their TechCrunch Disrupt 2026 agenda",
+      "TechCrunch Disrupt 2026: Aaron Edsinger brings Hello Robot’s Stretch 4 to life onstage",
+      "Exhibit tables added: One last chance to showcase your startup at TechCrunch Disrupt 2026",
+      "4 days to save up to $200: Reason 2 of 5 to be at TechCrunch Disrupt 2026"
+    ],
+    "与 AI 无关": [
+      "Z80 REPL",
+      "The darker side of being a doctor",
+      "Netherlands bracing for potentially devastating US sanctions against the ICC",
+      "Abandoning Scientific Linux Was a Mistake",
+      "I am done with this shit"
+    ]
+  }
+}

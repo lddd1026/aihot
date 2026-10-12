@@ -1,0 +1,109 @@
+
+-- 3a-正常JSON --
+  [PASS] 3a-正常JSON-不崩溃: rc=0（期望 0）traceback=False LLM请求=1
+  [PASS] 3a-正常JSON-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3a-正常JSON-统计计入: 批次=1 失败=0 token=100+50 成本=¥0.0006
+  [PASS] 3a-正常JSON-成功加工: cn_title 被改写=True
+
+-- 3b-Markdown围栏包裹 --
+  [PASS] 3b-Markdown围栏包裹-不崩溃: rc=0（期望 0）traceback=False LLM请求=1
+  [PASS] 3b-Markdown围栏包裹-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3b-Markdown围栏包裹-统计计入: 批次=1 失败=0 token=100+50 成本=¥0.0006
+  [PASS] 3b-Markdown围栏包裹-成功加工: cn_title 被改写=True
+
+-- 3c-截断JSON --
+  [PASS] 3c-截断JSON-不崩溃: rc=1（期望 1）traceback=False LLM请求=1
+  [PASS] 3c-截断JSON-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3c-截断JSON-统计计入: 批次=1 失败=1 token=100+50 成本=¥0.0006
+  [PASS] 3c-截断JSON-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3d-非法JSON --
+  [PASS] 3d-非法JSON-不崩溃: rc=1（期望 1）traceback=False LLM请求=1
+  [PASS] 3d-非法JSON-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3d-非法JSON-统计计入: 批次=1 失败=1 token=100+50 成本=¥0.0006
+  [PASS] 3d-非法JSON-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3e-items为空数组 --
+  [PASS] 3e-items为空数组-不崩溃: rc=1（期望 1）traceback=False LLM请求=1
+  [PASS] 3e-items为空数组-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3e-items为空数组-统计计入: 批次=1 失败=1 token=100+50 成本=¥0.0006
+  [PASS] 3e-items为空数组-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3f-index缺失（1条无index） --
+  [PASS] 3f-index缺失（1条无index）-不崩溃: rc=1（期望 1）traceback=False LLM请求=1
+  [PASS] 3f-index缺失（1条无index）-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3f-index缺失（1条无index）-统计计入: 批次=1 失败=1 token=100+50 成本=¥0.0006
+  [PASS] 3f-index缺失（1条无index）-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3g-index重复 --
+  [PASS] 3g-index重复-不崩溃: rc=1（期望 1）traceback=False LLM请求=1
+  [PASS] 3g-index重复-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3g-index重复-统计计入: 批次=1 失败=1 token=100+50 成本=¥0.0006
+  [PASS] 3g-index重复-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3h-index越界（0与99） --
+  [PASS] 3h-index越界（0与99）-不崩溃: rc=1（期望 1）traceback=False LLM请求=1
+  [PASS] 3h-index越界（0与99）-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3h-index越界（0与99）-统计计入: 批次=1 失败=1 token=100+50 成本=¥0.0006
+  [PASS] 3h-index越界（0与99）-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3i-category非法值 --
+  [PASS] 3i-category非法值-不崩溃: rc=0（期望 0）traceback=False LLM请求=1
+  [PASS] 3i-category非法值-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3i-category非法值-统计计入: 批次=1 失败=0 token=100+50 成本=¥0.0006
+  [PASS] 3i-category非法值-成功加工: cn_title 被改写=True
+  [PASS] 3i-category非法值-category 兜底: 期望 其他，实际 ['其他']
+
+-- 3j-is_ai为false --
+  [PASS] 3j-is_ai为false-不崩溃: rc=0（期望 0）traceback=False LLM请求=1
+  [PASS] 3j-is_ai为false-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3j-is_ai为false-统计计入: 批次=1 失败=0 token=100+50 成本=¥0.0006
+  [PASS] 3j-is_ai为false-成功加工: cn_title 被改写=True
+  [PASS] 3j-is_ai为false-category 兜底: 期望 其他，实际 ['其他']
+  [PASS] 3j-is_ai为false-is_ai=false 降权: importance 最大值=15（期望 ≤15）
+
+-- 3k-HTTP500 --
+  [PASS] 3k-HTTP500-不崩溃: rc=1（期望 1）traceback=False LLM请求=3
+  [PASS] 3k-HTTP500-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3k-HTTP500-统计计入: 批次=1 失败=1 token=0+0 成本=¥0.0
+  [PASS] 3k-HTTP500-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3l-choices为空（结构异常） --
+  [PASS] 3l-choices为空（结构异常）-不崩溃: rc=1（期望 1）traceback=False LLM请求=1
+  [PASS] 3l-choices为空（结构异常）-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3l-choices为空（结构异常）-统计计入: 批次=1 失败=1 token=100+50 成本=¥0.0006
+  [PASS] 3l-choices为空（结构异常）-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3m-超时（60s 读超时后重试仍失败） --
+  [PASS] 3m-超时（60s 读超时后重试仍失败）-不崩溃: rc=1（期望 1）traceback=False LLM请求=3
+  [PASS] 3m-超时（60s 读超时后重试仍失败）-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3m-超时（60s 读超时后重试仍失败）-统计计入: 批次=1 失败=1 token=0+0 成本=¥0.0
+  [PASS] 3m-超时（60s 读超时后重试仍失败）-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+
+-- 3n-连接拒绝 --
+  [PASS] 3n-连接拒绝-不崩溃: rc=1（期望 1）traceback=False LLM请求=0
+  [PASS] 3n-连接拒绝-落库完整: items=5/5，enriched_at 全部非空=True
+  [PASS] 3n-连接拒绝-统计计入: 批次=1 失败=1 token=0+0 成本=¥0.0
+  [PASS] 3n-连接拒绝-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True
+  [PASS] 3z-真实库只读守护: items=176（开始时 176）
+
+== llm-robust: 60 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression2\llm-robust.json
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 13469)
+Traceback (most recent call last):
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "D:\信息收集整理\aihot\tests\independent\m2_support.py", line 180, in do_POST
+    self.wfile.write(body)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+----------------------------------------

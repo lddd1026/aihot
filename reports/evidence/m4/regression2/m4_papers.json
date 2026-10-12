@@ -1,0 +1,63 @@
+{
+  "suite": "m4_papers",
+  "passed": 11,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "8.1 论文精选 ≤ 2 篇/天",
+      "ok": true,
+      "detail": "papers=2"
+    },
+    {
+      "item": "8.2 论文不占 Top 名额（Top 仍 12 条且全是非论文）",
+      "ok": true,
+      "detail": "top=12 papers_in_top=0"
+    },
+    {
+      "item": "8.3 论文在 stats 中单独计数",
+      "ok": true,
+      "detail": "stats.papers=2"
+    },
+    {
+      "item": "8.4 精选 2 篇为排名最高的论文（含 HF）",
+      "ok": true,
+      "detail": "sources=['hf_papers', 'hf_papers']"
+    },
+    {
+      "item": "8.5 企微 markdown 含「🔬 论文精选」与小节条目",
+      "ok": true,
+      "detail": "parts=1"
+    },
+    {
+      "item": "8.6 企微论文条目标注来源（arXiv / Hugging Face）",
+      "ok": true,
+      "detail": "note 标注存在"
+    },
+    {
+      "item": "8.7 邮件 HTML 含「🔬 论文精选」与小节条目",
+      "ok": true,
+      "detail": "html=13880 bytes"
+    },
+    {
+      "item": "8.8 存档 markdown 含「## 论文精选」与小节条目",
+      "ok": true,
+      "detail": "archive md 齐全"
+    },
+    {
+      "item": "8.9 长图 HTML 含论文精选板块",
+      "ok": true,
+      "detail": "image html 含论文"
+    },
+    {
+      "item": "8.10 长图实际渲染成功（JPEG）",
+      "ok": true,
+      "detail": "paths=[WindowsPath('C:/Users/LEGION/AppData/Local/Temp/aihot-m3-tests/work/m4-papers-image/2026-09-25.jpg')]"
+    },
+    {
+      "item": "8.11 长图 OCR 实测识别到「论文精选」或论文标题",
+      "ok": true,
+      "detail": "ocr_chars=1628；命中论文精选=True；命中标题=['论文精选独立验证 Paper', '论文精选独立验证 Paper']"
+    }
+  ],
+  "notes": []
+}

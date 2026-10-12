@@ -1,0 +1,18 @@
+[
+  {
+    "patch": "{\"dedup\": {\"title_similarity\": 0, \"max_hours_apart\": 1}}",
+    "rc": 0
+  },
+  {
+    "patch": "{\"dedup\": {\"title_similarity\": 100, \"max_hours_apart\": 720}}",
+    "rc": 0
+  },
+  {
+    "patch": "{\"enrich\": {\"max_items\": 1, \"price_input_per_million\": 0, \"price_output_per_million\": 10000}}",
+    "rc": 0
+  },
+  {
+    "patch": "{\"rank\": {\"interest_bonus\": {}}}",
+    "rc": 0
+  }
+]

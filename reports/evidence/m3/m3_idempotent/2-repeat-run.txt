@@ -1,0 +1,15 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\idempotent\config.yaml
+exit=0 (1.6s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\idempotent\config.yaml
+11:37:59 INFO aihot.sources: 信息源完成: fake_feed，10 条（25 ms）
+11:37:59 INFO aihot.runner: 没有待加工条目，本轮不生成日报
+
+① 采集: 1/1 源成功，抓取 10 条 → 新增 0 条
+
+  [WARN] 没有待加工条目（先执行 aihot fetch）
+
+状态: partial
+
+--- stderr ---

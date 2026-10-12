@@ -1,0 +1,80 @@
+[
+  {
+    "case": "gate_sources 非列表",
+    "rc": 3,
+    "stdout_tail": "aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-0.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.prefilter.gate_sources 必须是字符串列表（可为空列表）",
+    "traceback": false
+  },
+  {
+    "case": "title_similarity=-1",
+    "rc": 3,
+    "stdout_tail": " enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-1.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.dedup.title_similarity 必须是 0~100 的数字，实际: -1",
+    "traceback": false
+  },
+  {
+    "case": "title_similarity=101",
+    "rc": 3,
+    "stdout_tail": "enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-2.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.dedup.title_similarity 必须是 0~100 的数字，实际: 101",
+    "traceback": false
+  },
+  {
+    "case": "title_similarity=abc",
+    "rc": 3,
+    "stdout_tail": "rich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-3.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.dedup.title_similarity 必须是 0~100 的数字，实际: 'abc'",
+    "traceback": false
+  },
+  {
+    "case": "max_hours_apart=0",
+    "rc": 3,
+    "stdout_tail": "ot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-4.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.dedup.max_hours_apart 必须是 1~720 的整数，实际: 0",
+    "traceback": false
+  },
+  {
+    "case": "max_hours_apart=721",
+    "rc": 3,
+    "stdout_tail": " enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-5.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.dedup.max_hours_apart 必须是 1~720 的整数，实际: 721",
+    "traceback": false
+  },
+  {
+    "case": "llm_refine='false' 字符串",
+    "rc": 3,
+    "stdout_tail": "rich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-6.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.dedup.llm_refine 必须是布尔值 true/false，实际: 'false'",
+    "traceback": false
+  },
+  {
+    "case": "enrich.max_items=0",
+    "rc": 3,
+    "stdout_tail": "aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-7.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.enrich.max_items 必须是 1~2000 的整数，实际: 0",
+    "traceback": false
+  },
+  {
+    "case": "enrich.max_items=2001",
+    "rc": 3,
+    "stdout_tail": "hot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-8.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.enrich.max_items 必须是 1~2000 的整数，实际: 2001",
+    "traceback": false
+  },
+  {
+    "case": "price_input=-1",
+    "rc": 3,
+    "stdout_tail": "AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-9.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.enrich.price_input_per_million 必须是 0~10000 的数字，实际: -1",
+    "traceback": false
+  },
+  {
+    "case": "price_output=10001",
+    "rc": 3,
+    "stdout_tail": "（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-10.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.enrich.price_output_per_million 必须是 0~10000 的数字，实际: 10001",
+    "traceback": false
+  },
+  {
+    "case": "interest_bonus 非映射",
+    "rc": 3,
+    "stdout_tail": "aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-11.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.rank.interest_bonus 必须是「分类: 数字」映射",
+    "traceback": false
+  },
+  {
+    "case": "interest_bonus 值非数字",
+    "rc": 3,
+    "stdout_tail": "ihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）\r\n配置文件: C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\cli\\bad-pipeline-12.yaml\r\n\r\n[ERR] 配置校验未通过（1 个问题）:\r\n  1. pipeline.rank.interest_bonus.模型发布 必须是数字，实际: '高'",
+    "traceback": false
+  }
+]

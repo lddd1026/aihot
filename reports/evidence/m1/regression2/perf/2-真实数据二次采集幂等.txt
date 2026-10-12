@@ -1,0 +1,19 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-perf-fu3c6j__\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:47:45+08:00）
+信息源  : 5 个
+
+21:47:47 INFO aihot.sources: 信息源完成: qbitai，10 条（107 ms）
+21:47:47 INFO aihot.sources: 信息源完成: infoq_cn，17 条（175 ms）
+21:47:47 INFO aihot.sources: 信息源完成: techcrunch_ai，14 条（285 ms）
+21:47:48 INFO aihot.sources: 信息源完成: hackernews，59 条（1083 ms）
+21:47:48 INFO aihot.sources: 信息源完成: openai_news，4 条（1492 ms）
+采集结果:
+  [OK ] hackernews         59 条（1083 ms）
+  [OK ] infoq_cn           17 条（175 ms）
+  [OK ] openai_news        4 条（1492 ms）
+  [OK ] qbitai             10 条（107 ms）
+  [OK ] techcrunch_ai      14 条（285 ms）
+
+合计: 抓取 104 条 → 新增 0 条（去重 104 条）→ 库内共 103 条

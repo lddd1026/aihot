@@ -1,0 +1,10 @@
+$ python -m aihot run --dry-run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-broken\config.yaml
+exit=3 (1.5s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 渲染, dry-run 不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-broken\config.yaml
+
+[ERR] 配置校验未通过（1 个问题）:
+  1. YAML 解析失败: expected ',' or ']', but got ':'（第 2 行，第 8 列，已隐藏原文以防泄露密钥）
+
+--- stderr ---

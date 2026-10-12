@@ -1,0 +1,239 @@
+{
+  "legacy": true,
+  "note": "修复前产生的历史遗留数据，仅作对照；默认配置下的准确率见 regression2/accuracy",
+  "multi_clusters": [
+    {
+      "cluster_id": 1,
+      "titles": [
+        "Everyone can find a reason to dislike data center construction",
+        "Anthropic says its biology lab has already found something big",
+        "ArXiv receives multiyear commitments to support it as an independent nonprofit",
+        "Claude discovers a novel enzyme system with CRISPR-like repeats"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 6,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 2,
+      "titles": [
+        "Netflix 重构 Conductor，以支持每月 4.2 亿次的工作流执行以及 10 倍规模的工作流",
+        "Cloud Agents Are Inevitable AI Prisons"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 3,
+      "titles": [
+        "Show HN: Training a model to identify AI web content from structure alone",
+        "Once Claude can measure something, it can make it faster"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 4,
+      "titles": [
+        "Jev vs Decitron：同为决策AI，为什么不是一回事？",
+        "Redis之父质疑Jev狂热！绝大多数开发者其实不需要它",
+        "Jev in 25 Lines of Python",
+        "OpenAI is well positioned to fast-follow Jev",
+        "Jev – A curation of Jev demos on X, tools, skills, and integrations",
+        "Show HN: JevBench, a reproducible benchmark for typed decision models",
+        "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials",
+        "Jev Can't Be Calibrated"
+      ],
+      "cluster_verdict": "合理",
+      "basis": "Jev 模型热议：同一波事件的不同报道（可接受）",
+      "pairs": 28,
+      "same_event_pairs": 21
+    },
+    {
+      "cluster_id": 5,
+      "titles": [
+        "2026 年的云栖，阿里给 AI 行业递了一把新尺子",
+        "People Training OpenAI's AI Fired for Using AI to Train the AI"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 6,
+      "titles": [
+        "The Economics of Open-Weight Inference",
+        "OpenAI agents hacked Australian Medicare system",
+        "OpenAI breaches Medicare, Albanese reveals"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 3,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 7,
+      "titles": [
+        "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
+        "Better prompt caching for GPT-6",
+        "Introducing GPT-6 Sol and Luna",
+        "GPT-6 Sol and Luna",
+        "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+        "ChatGPT mobile app gets voice-based agentic features",
+        "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "How invideo improves color grading 3x with GPT‑6 Astra",
+        "Introducing MentalHealthBench",
+        "VSCode's SSH Agent Is Bananas (2025)",
+        "GPT-6 Astra has gained the ability to drive a car"
+      ],
+      "cluster_verdict": "不合理",
+      "basis": "10 条 OpenAI 不同产品/事件（Sol/Luna 发布、prompt caching、MentalHealthBench、ChatGPT 语音、Enigma、车载、Harvey/invideo 案例）被并为 1 簇",
+      "pairs": 55,
+      "same_event_pairs": 3
+    },
+    {
+      "cluster_id": 8,
+      "titles": [
+        "Stanford R&DE Uses AI to Race Swap Students for Advertising",
+        "Claude's Load-Bearing Seams"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 9,
+      "titles": [
+        "AI Coding 贡献率超 90%，需求交付却只快了 10%：菜鸟如何用 Agent 托管端到端交付？",
+        "4096 张卡如何成为“一台计算机”？读懂华为的超节点布局"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 10,
+      "titles": [
+        "从 AI 工具到经营智能体：快手分销增长 Agent 实践",
+        "人人都在造世界模型，HappyWorld‑Bench 试着给出一张统一考卷"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 11,
+      "titles": [
+        "AstroForge is putting AI in command of its next spacecraft",
+        "Mercury 2.5 LLM hits 770 tokens per second"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 12,
+      "titles": [
+        "Vacate a drone restriction that criminalized recording immigration agents",
+        "Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 GPT-6 Astra 便宜 80%"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 13,
+      "titles": [
+        "Meta 开源 Astryx：面向 Agent 的 React 设计系统",
+        "从“单目感知”到“多视角立体对齐”：PrismAlign 重新定义文档结构化提取的精度上限"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 14,
+      "titles": [
+        "Writing Rust code that's fast by asking agents to make the code faster",
+        "Meta introduces camera-free AI glasses"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 15,
+      "titles": [
+        "16-bit Intel 8088 chip (c. 1985)",
+        "Everything new coming to Meta’s AI agent Muse",
+        "Meta made a Tamagotchi-like wearable for its Muse AI agent"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 3,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 16,
+      "titles": [
+        "Show HN: AI·rete·RAG – a Rete rule engine decides, RAG explains why",
+        "成立九年，中科类脑把积累装进Token工厂"
+      ],
+      "cluster_verdict": "未核验",
+      "basis": "",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 17,
+      "titles": [
+        "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
+        "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+        "Claude Opus 5.5",
+        "利用 AI 搭建内部开发者平台"
+      ],
+      "cluster_verdict": "合理",
+      "basis": "Claude Opus 5.5 发布（3 家来源）",
+      "pairs": 6,
+      "same_event_pairs": 3
+    },
+    {
+      "cluster_id": 18,
+      "titles": [
+        "Unreal Agent",
+        "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent"
+      ],
+      "cluster_verdict": "不合理",
+      "basis": "Coverage Cat 保险 与 Unreal Agent 无关事件被合并",
+      "pairs": 1,
+      "same_event_pairs": 0
+    },
+    {
+      "cluster_id": 57,
+      "titles": [
+        "YouTube will let you build your own algorithm with AI",
+        "YouTube releases new AI features for creators within its Studio app"
+      ],
+      "cluster_verdict": "合理",
+      "basis": "YouTube AI 创作者功能（同源 2 篇，同一发布）",
+      "pairs": 1,
+      "same_event_pairs": 1
+    }
+  ],
+  "pair_precision": 24.6,
+  "cluster_level_ok": 3,
+  "cluster_level_total": 19
+}

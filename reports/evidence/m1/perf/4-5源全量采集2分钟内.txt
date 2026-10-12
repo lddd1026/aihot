@@ -1,0 +1,65 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-perf-pwe3_yvv\config.yaml --limit 10
+exit=0 (41.1s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-perf-pwe3_yvv\config.yaml
+12:17:59 INFO aihot.sources: 信息源完成: qbitai，7 条（146 ms）
+12:17:59 INFO aihot.sources: 信息源完成: infoq_cn，15 条（182 ms）
+12:18:31 WARNING aihot.net: 请求最终失败: https://techcrunch.com/category/artificial-intelligence/feed/（ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.sources: 信息源失败: techcrunch_ai（SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.net: 请求最终失败: https://hn.algolia.com/api/v1/search_by_date（ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.sources: 信息源失败: hackernews（SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.net: 请求最终失败: https://openai.com/news/rss.xml（ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.sources: 信息源失败: openai_news（SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.net: 请求最终失败: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml（ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.sources: 信息源失败: theverge_ai（SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.net: 请求最终失败: https://venturebeat.com/category/ai/feed/（ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:31 WARNING aihot.sources: 信息源失败: venturebeat_ai（SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)）
+12:18:33 INFO aihot.sources: 信息源完成: deepmind_blog，1 条（1638 ms）
+12:18:33 INFO aihot.sources: 信息源完成: meta_eng，0 条（2334 ms）
+12:18:34 INFO aihot.sources: 信息源完成: anthropic_news，0 条（2466 ms）
+12:18:34 INFO aihot.sources: 信息源完成: arxiv，60 条（2580 ms）
+12:18:38 INFO aihot.sources: 信息源完成: reddit_ai，50 条（6368 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:17:58+08:00）
+信息源  : 12 个
+
+采集结果:
+  [OK ] anthropic_news     0 条（2466 ms）
+  [OK ] arxiv              60 条（2580 ms）
+  [OK ] deepmind_blog      1 条（1638 ms）
+  [ERR] hackernews         SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)（31865 ms）
+  [OK ] infoq_cn           15 条（182 ms）
+  [OK ] meta_eng           0 条（2334 ms）
+  [ERR] openai_news        SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)（31872 ms）
+  [OK ] qbitai             7 条（146 ms）
+  [OK ] reddit_ai          50 条（6368 ms）
+  [ERR] techcrunch_ai      SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)（31860 ms）
+  [ERR] theverge_ai        SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)（31732 ms）
+  [ERR] venturebeat_ai     SourceError: 请求失败: ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)（31700 ms）
+
+合计: 抓取 133 条 → 新增 133 条（去重 0 条）→ 库内共 133 条
+
+最新条目预览（前 10 条）:
+   1. [infoq_cn] 每周下载量约 16 万，仍处 Alpha 的 TanStack Charts 为什么火了？
+      https://www.infoq.cn/article/OUcL9autU0dg1BIt6bib（09-25 18:10）
+   2. [infoq_cn] 当 Vibe Coding 撞上企业级现实：真实工程中的 AI 效能之路｜QCon上海
+      https://www.infoq.cn/article/QQk3wiolU1VScH3u0P7T（09-25 18:00）
+   3. [reddit_ai] Anyone use Claude for Open Source research and notice a significant dr…
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpmr28/anyone_use_claude_for_open_source_research_and（09-25 12:17）
+   4. [reddit_ai] LLM as the OS interface
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpl8j9/llm_as_the_os_interface（09-25 10:59）
+   5. [reddit_ai] Where an agent loop runs, how it fails, and how to make a session dura…
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpl8aw/where_an_agent_loop_runs_how_it_fails_and_how_to（09-25 10:58）
+   6. [reddit_ai] M5 Ultra 80Core GLM-5.3-Flash on DwarfStar Speeds
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpkz0o/m5_ultra_80core_glm53flash_on_dwarfstar_speeds（09-25 10:45）
+   7. [reddit_ai] normalize benchmarks from different time period
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpkl3o/normalize_benchmarks_from_different_time_period（09-25 10:25）
+   8. [reddit_ai] Should I make a tamagotchi that you feed with tokens next?
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpjypk/should_i_make_a_tamagotchi_that_you_feed_with（09-25 09:55）
+   9. [reddit_ai] How much changes can you make to a paper between acceptance and camera…
+      https://www.reddit.com/r/MachineLearning/comments/1wpjumz/how_much_changes_can_you_make_to_a_paper_between（09-25 09:49）
+  10. [reddit_ai] [Research Proposal] Cognitive Sharding: A Systems Architecture for Com…
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpjt4j/research_proposal_cognitive_sharding_a_systems（09-25 09:47）
+
+--- stderr ---

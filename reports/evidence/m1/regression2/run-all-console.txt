@@ -1,0 +1,23 @@
+  OBSERVE  m1_revision.py               exit=0 ? (0.3s)
+  OBSERVE  m1_real_db_state.py          exit=0 ? (0.3s)
+  OBSERVE  m1_recon.py                  exit=0 ? (9.6s)
+  FAIL     m1_acceptance.py             exit=1 18/19 (59.3s)
+  PASS     m1_adversarial.py            exit=0 11/11 (33.2s)
+  PASS     m1_url_edges.py              exit=0 4/4 (3.0s)
+  PASS     m1_net_store_units.py        exit=0 19/19 (11.7s)
+  PASS     m1_contracts.py              exit=0 6/6 (8.1s)
+  PASS     m1_check_net.py              exit=0 6/6 (19.7s)
+  PASS     m1_proxy_bad_port_repro.py   exit=0 4/4 (34.1s)
+  PASS     m1_socks_probe.py            exit=0 4/4 (21.3s)
+  PASS     m1_slow_source.py            exit=0 1/1 (66.2s)
+  PASS     m1_perf.py                   exit=0 6/6 (12.1s)
+  FAIL     m1_regression.py             exit=1 4/9 (137.7s)
+  PASS     m0_blackbox.py               exit=0 105/105 (96.0s)
+  PASS     m0_inprocess.py              exit=0 13/13 (1.7s)
+  PASS     m0_secret_scan.py            exit=0 13/13 (19.4s)
+  CHECK    m0_yaml_error_probe.py       exit=1 5/6 (4.3s)
+  PASS     m0_issue_redaction_probe.py  exit=0 4/4 (3.1s)
+  PASS     m0_round3_probe.py           exit=0 10/10 (7.7s)
+
+总计 20 个脚本，FAIL 2 个
+摘要 → D:\信息收集整理\aihot\reports\evidence\m1\regression2\run-all-summary.json

@@ -1,0 +1,23 @@
+dry-run rc=0
+--- dry-run stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\dryrun-db\config.yaml
+11:41:40 INFO aihot.sources: 信息源完成: fake_feed，2 条（40 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:41:38+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] fake_feed          2 条（40 ms）
+
+合计: 抓取 2 条（dry-run，不写库）
+
+最新条目预览（前 2 条）:
+   1. [fake_feed] dry-run 数据库测试 AI 新闻 1
+      https://example.com/dryrun/1（09-25 11:10）
+   2. [fake_feed] dry-run 数据库测试 AI 新闻 2
+      https://example.com/dryrun/2（09-25 11:09）
+
+before={'exists': False}
+after={'exists': False}
+final={'exists': True, 'bytes': 49152, 'tables': ['items', 'sqlite_sequence', 'clusters', 'digests', 'runs'], 'items': 2, 'runs': 1}

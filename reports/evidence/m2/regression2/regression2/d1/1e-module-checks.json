@@ -1,0 +1,56 @@
+{
+  "accepted_mixed": [
+    [
+      1,
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "rejections_mixed": [
+    "组内缺少相似链（3 条 → 拆为 2 组）: OpenAI 发布 GPT-6 Sol 模型"
+  ],
+  "accepted_big": [
+    [
+      1
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      2
+    ]
+  ],
+  "rejections_big": [
+    "分组过大（5 条 > 4）: OpenAI 发布 GPT-6 Sol 模型"
+  ],
+  "accepted_ok": [
+    [
+      1,
+      2
+    ],
+    [
+      5
+    ]
+  ],
+  "accepted_low": [
+    [
+      1
+    ],
+    [
+      3
+    ]
+  ],
+  "rejections_low": [
+    "组内缺少相似链（2 条 → 拆为 2 组）: OpenAI 发布 GPT-6 Sol 模型"
+  ],
+  "sim_1_2": 94.4,
+  "sim_1_3": 24.6
+}

@@ -1,0 +1,33 @@
+
+
+MultipleInstances               : IgnoreNew
+Compatibility                   : Win7
+AllowDemandStart                : True
+AllowHardTerminate              : True
+DeleteExpiredTaskAfter          : 
+DisallowStartIfOnBatteries      : False
+Enabled                         : True
+ExecutionTimeLimit              : PT30M
+Hidden                          : False
+IdleSettings                    : MSFT_TaskIdleSettings
+NetworkSettings                 : MSFT_TaskNetworkSettings
+Priority                        : 7
+RestartCount                    : 0
+RestartInterval                 : 
+RunOnlyIfIdle                   : False
+RunOnlyIfNetworkAvailable       : False
+StartWhenAvailable              : True
+StopIfGoingOnBatteries          : False
+WakeToRun                       : True
+DisallowStartOnRemoteAppSession : False
+UseUnifiedSchedulingEngine      : True
+MaintenanceSettings             : 
+volatile                        : False
+PSComputerName                  : 
+CimClass                        : Root/Microsoft/Windows/TaskScheduler:MSFT_TaskSettings3
+CimInstanceProperties           : {AllowDemandStart, AllowHardTerminate, Compatibility, DeleteExpiredTaskAfter...}
+CimSystemProperties             : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+

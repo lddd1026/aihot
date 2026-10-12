@@ -1,0 +1,38 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\rank-run\config.yaml --limit 50 --top 8
+exit=0 (3.1s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\rank-run\config.yaml
+
+待加工: 8 条（上限 50）
+
+预筛:
+  输入 8 → 保留 8（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 8 条 → 6 簇（多源簇 1 · 最大簇 3 条）
+
+Top 6:
+   1. [ 65.8] (模型发布) 标题1
+      摘要
+      提及 1 条 · 来源 1 家
+   2. [ 61.8] (模型发布) 标题4
+      摘要
+      提及 1 条 · 来源 1 家
+   3. [ 50.8] (研究突破) 标题3
+      摘要
+      提及 3 条 · 来源 3 家
+   4. [ 50.2] (开源工具) 标题6
+      摘要
+      提及 1 条 · 来源 1 家
+   5. [ 48.0] (产品更新) 标题5
+      摘要
+      提及 1 条 · 来源 1 家
+   6. [ 21.0] (行业动态) 标题2
+      摘要
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 1（失败 0）· token 100+50 · 成本约 ¥0.0006
+
+已写回: 8 条加工 · 0 条标记为过滤 · 6 个事件簇
+
+--- stderr ---

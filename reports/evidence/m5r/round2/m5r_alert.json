@@ -1,0 +1,43 @@
+{
+  "suite": "m5r_alert",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "6.1 邮件可用：alert rc=0 并注明邮件通道",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "6.2 假 SMTP 确实收到 1 封告警邮件（含哨兵）",
+      "ok": true,
+      "detail": "messages=1"
+    },
+    {
+      "item": "6.3 邮件送达成功时不应同时写本地 ALERTS.log",
+      "ok": true,
+      "detail": "ALERTS.log exists=False"
+    },
+    {
+      "item": "6.4 通道全灭：rc=1 且输出含「未启用」与「本地兜底」（P2-1 修复验证）",
+      "ok": true,
+      "detail": "rc=1；stdout='11:45:59 ERROR aihot.runner: 告警通道失败: 邮件: SMTP 连接或登录失败: ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\\r\\n[WARN] 告警未送达：可用通道均失败或未启用，已写入本地兜底（本地文件(ALERTS.'"
+    },
+    {
+      "item": "6.5 本地兜底 logs/ALERTS.log 写入告警（含哨兵，绝不静默）",
+      "ok": true,
+      "detail": "ALERTS.log='[2026-10-12T11:45:59+08:00] 运维消息\\n  - M5R-独立告警哨兵-20261012\\n'"
+    },
+    {
+      "item": "6.7 邮件认证失败也必须兜底本地文件（不是静默）",
+      "ok": true,
+      "detail": "rc=1；ALERTS.log exists=True"
+    },
+    {
+      "item": "6.8 真实库/存档未被本套件改动",
+      "ok": true,
+      "detail": "真实库快照一致"
+    }
+  ],
+  "notes": []
+}

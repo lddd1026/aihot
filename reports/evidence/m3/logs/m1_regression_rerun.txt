@@ -1,0 +1,12 @@
+  [NOTE] 旧证据快照: D:\信息收集整理\aihot\reports\evidence\m1\pre-m1-snapshot（已存在则跳过）
+  [FAIL] 11a-ruff零告警: exit=1（0.4s）输出='E501 Line too long (113 > 100)\n  --> tests\\independent\\m3_summary_check.py:14:10'
+  [PASS] 11b-pytest全绿: exit=0 passed=293 failed=0 errors=0（40.4s）
+  [PASS] 11c-m0_blackbox.py: exit=0 SUMMARY=105/105（M0 基线 105/105，131.3s）
+  [PASS] 11c-m0_inprocess.py: exit=0 SUMMARY=13/13（M0 基线 13/13，2.1s）
+  [PASS] 11c-m0_secret_scan.py: exit=0 SUMMARY=13/13（M0 基线 13/13，25.3s）
+  [PASS] 11c-m0_yaml_error_probe.py: exit=1 SUMMARY=5/6（M0 基线 5/6，6.7s） M0 已接受遗留=['bad_alias']
+  [PASS] 11c-m0_issue_redaction_probe.py: exit=0 SUMMARY=4/4（M0 基线 3/4，5.0s） M0 已接受遗留=['webhook_in_proxy_url'] 本轮已恢复=['webhook_in_proxy_url']
+  [PASS] 11c-m0_round3_probe.py: exit=0 SUMMARY=10/10（M0 基线 10/10，12.5s）
+  [PASS] 11d-config.example开箱校验: rc=0（期望 0）
+
+== regression: 8 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\regression.json

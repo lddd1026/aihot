@@ -1,0 +1,12 @@
+PASS         m4_net                     31/31
+PASS         m4_adapters                39/39
+KNOWN(P1/P2) m4_checks                  11/13  失败项=['3.7 企微 errcode=93000（假服务哨兵）→ 期望 rc=1', '3.8 企微 webhook key 无效（真实 qyapi）→ 期望 rc=1']
+KNOWN(P1/P2) m4_alert                   12/14  失败项=['4.11 渲染失败触发 runner._alert（期望符合「失败必有告警」）', '4.13 长图降级（partial）是否告警（期望「渲染失败需告警」）']
+PASS         m4_drills                  19/19
+PASS         m4_papers                  11/11
+KNOWN(P1/P2) m4_bat                     18/19  失败项=['2.11 预检失败告警文案可读（含中文说明）']
+PASS         m4_sources_live            14/14
+KNOWN(P1/P2) m4_probe_storage_error     0/2  失败项=['存档目标被文件占用：无裸 traceback', '存档异常时有企微告警']
+PASS         m4_toolchain               9/9
+
+合计 164 passed / 7 failed；非预期 FAIL 套件=[]

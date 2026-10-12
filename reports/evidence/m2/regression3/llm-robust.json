@@ -1,0 +1,308 @@
+{
+  "suite": "llm-robust",
+  "passed": 60,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "3a-正常JSON-不崩溃",
+      "ok": true,
+      "detail": "rc=0（期望 0）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3a-正常JSON-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3a-正常JSON-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=0 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3a-正常JSON-成功加工",
+      "ok": true,
+      "detail": "cn_title 被改写=True"
+    },
+    {
+      "item": "3b-Markdown围栏包裹-不崩溃",
+      "ok": true,
+      "detail": "rc=0（期望 0）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3b-Markdown围栏包裹-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3b-Markdown围栏包裹-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=0 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3b-Markdown围栏包裹-成功加工",
+      "ok": true,
+      "detail": "cn_title 被改写=True"
+    },
+    {
+      "item": "3c-截断JSON-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3c-截断JSON-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3c-截断JSON-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3c-截断JSON-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3d-非法JSON-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3d-非法JSON-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3d-非法JSON-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3d-非法JSON-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3e-items为空数组-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3e-items为空数组-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3e-items为空数组-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3e-items为空数组-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3f-index缺失（1条无index）-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3f-index缺失（1条无index）-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3f-index缺失（1条无index）-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3f-index缺失（1条无index）-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3g-index重复-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3g-index重复-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3g-index重复-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3g-index重复-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3h-index越界（0与99）-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3h-index越界（0与99）-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3h-index越界（0与99）-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3h-index越界（0与99）-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3i-category非法值-不崩溃",
+      "ok": true,
+      "detail": "rc=0（期望 0）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3i-category非法值-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3i-category非法值-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=0 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3i-category非法值-成功加工",
+      "ok": true,
+      "detail": "cn_title 被改写=True"
+    },
+    {
+      "item": "3i-category非法值-category 兜底",
+      "ok": true,
+      "detail": "期望 其他，实际 ['其他']"
+    },
+    {
+      "item": "3j-is_ai为false-不崩溃",
+      "ok": true,
+      "detail": "rc=0（期望 0）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3j-is_ai为false-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3j-is_ai为false-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=0 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3j-is_ai为false-成功加工",
+      "ok": true,
+      "detail": "cn_title 被改写=True"
+    },
+    {
+      "item": "3j-is_ai为false-category 兜底",
+      "ok": true,
+      "detail": "期望 其他，实际 ['其他']"
+    },
+    {
+      "item": "3j-is_ai为false-is_ai=false 降权",
+      "ok": true,
+      "detail": "importance 最大值=15（期望 ≤15）"
+    },
+    {
+      "item": "3k-HTTP500-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=3"
+    },
+    {
+      "item": "3k-HTTP500-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3k-HTTP500-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=0+0 成本=¥0.0"
+    },
+    {
+      "item": "3k-HTTP500-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3l-choices为空（结构异常）-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=1"
+    },
+    {
+      "item": "3l-choices为空（结构异常）-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3l-choices为空（结构异常）-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=100+50 成本=¥0.0006"
+    },
+    {
+      "item": "3l-choices为空（结构异常）-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3m-超时（60s 读超时后重试仍失败）-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=3"
+    },
+    {
+      "item": "3m-超时（60s 读超时后重试仍失败）-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3m-超时（60s 读超时后重试仍失败）-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=0+0 成本=¥0.0"
+    },
+    {
+      "item": "3m-超时（60s 读超时后重试仍失败）-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3n-连接拒绝-不崩溃",
+      "ok": true,
+      "detail": "rc=1（期望 1）traceback=False LLM请求=0"
+    },
+    {
+      "item": "3n-连接拒绝-落库完整",
+      "ok": true,
+      "detail": "items=5/5，enriched_at 全部非空=True"
+    },
+    {
+      "item": "3n-连接拒绝-统计计入",
+      "ok": true,
+      "detail": "批次=1 失败=1 token=0+0 成本=¥0.0"
+    },
+    {
+      "item": "3n-连接拒绝-降级为原文",
+      "ok": true,
+      "detail": "全部 category=其他 且 importance=30（原文降级）=True"
+    },
+    {
+      "item": "3z-真实库只读守护",
+      "ok": true,
+      "detail": "items=176（开始时 176）"
+    }
+  ],
+  "notes": []
+}

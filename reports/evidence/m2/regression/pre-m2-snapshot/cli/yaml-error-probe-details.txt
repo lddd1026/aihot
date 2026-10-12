@@ -1,0 +1,50 @@
+以下为假密钥（M0FAKEKEY0123456789abcdef）触发的 PyYAML 原始错误信息：
+
+=== unclosed_quote: leaks_secret=False ===
+while scanning a quoted scalar
+  in "<unicode string>", line 3, column 14:
+        webhook: "https://qyapi.weixin.qq.com/x?k ... 
+                 ^
+found unexpected end of stream
+  in "<unicode string>", line 4, column 1:
+    
+    ^
+
+=== unclosed_bracket: leaks_secret=True ===
+while parsing a flow sequence
+  in "<unicode string>", line 3, column 14:
+        webhook: [https://qyapi.weixin.qq.com/x?k ... 
+                 ^
+expected ',' or ']', but got '?'
+  in "<unicode string>", line 3, column 44:
+     ... : [https://qyapi.weixin.qq.com/x?key=M0FAKEKEY0123456789abcdef
+                                         ^
+
+=== tab_indent: leaks_secret=False ===
+while scanning for the next token
+found character '\t' that cannot start any token
+  in "<unicode string>", line 4, column 1:
+    	bad: 1
+    ^
+
+=== extra_colon: leaks_secret=True ===
+mapping values are not allowed here
+  in "<unicode string>", line 3, column 73:
+     ... /x?key=M0FAKEKEY0123456789abcdef: oops
+                                         ^
+
+=== bad_anchor: leaks_secret=True ===
+while parsing a flow sequence
+  in "<unicode string>", line 3, column 41:
+     ... ook: &M0FAKEKEY0123456789abcdef [1,2
+                                         ^
+expected ',' or ']', but got '<stream end>'
+  in "<unicode string>", line 4, column 1:
+    
+    ^
+
+=== bad_alias: leaks_secret=True ===
+found undefined alias 'M0FAKEKEY0123456789abcdef'
+  in "<unicode string>", line 3, column 14:
+        webhook: *M0FAKEKEY0123456789abcdef
+                 ^

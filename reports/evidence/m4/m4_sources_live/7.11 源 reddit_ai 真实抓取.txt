@@ -1,0 +1,17 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: D:\信息收集整理\aihot\config.yaml
+11:10:26 INFO aihot.sources: 信息源完成: reddit_ai，50 条（5367 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:10:19+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] reddit_ai          50 条（5367 ms）
+
+合计: 抓取 50 条（dry-run，不写库）
+
+最新条目预览（前 2 条）:
+   1. [reddit_ai] LLM as the OS interface
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpl8j9/llm_as_the_os_interface（09-25 10:59）
+   2. [reddit_ai] Where an agent loop runs, how it fails, and how to make a session dura…
+      https://www.reddit.com/r/LocalLLaMA/comments/1wpl8aw/where_an_agent_loop_runs_how_it_fails_and_how_to（09-25 10:58）

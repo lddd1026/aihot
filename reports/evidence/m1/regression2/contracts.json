@@ -1,0 +1,38 @@
+{
+  "suite": "contracts",
+  "passed": 6,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "契约-HN请求带tags/numericFilters/hitsPerPage",
+      "ok": true,
+      "detail": "实际请求参数={'tags': ['story'], 'numericFilters': ['created_at_i>1790084712,points>30'], 'hitsPerPage': ['100']}（窗口时间戳合理=True）"
+    },
+    {
+      "item": "契约-HN条目落库",
+      "ok": true,
+      "detail": "落库源=['good', 'hn']"
+    },
+    {
+      "item": "契约-fetch --config 前后位置均可",
+      "ok": true,
+      "detail": "--config 在前 rc=0，--config 在后 rc=0"
+    },
+    {
+      "item": "契约-fetch --help 列出全部参数",
+      "ok": true,
+      "detail": "参数齐全=True"
+    },
+    {
+      "item": "契约-dry-run未写库",
+      "ok": true,
+      "detail": "runs=1（应为 1，仅首次真实运行）"
+    },
+    {
+      "item": "契约-采集层不调 LLM",
+      "ok": true,
+      "detail": "fetch 期间 LLM 端点请求次数=0（应为 0）"
+    }
+  ],
+  "notes": []
+}

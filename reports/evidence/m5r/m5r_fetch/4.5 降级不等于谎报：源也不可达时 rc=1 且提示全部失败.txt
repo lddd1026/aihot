@@ -1,0 +1,22 @@
+$ python -m aihot fetch --dry-run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-fetch-allfail\config.yaml
+exit=1 (8.1s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-fetch-allfail\config.yaml
+11:32:10 WARNING aihot.runner: 代理不可用（http://127.0.0.1:1），本次采集降级为直连：国内源照常，墙外源将失败
+11:32:15 WARNING aihot.net: 请求最终失败: http://127.0.0.1:1/feed.xml（ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+11:32:15 WARNING aihot.sources: 信息源失败: fake_feed（SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+
+采集窗口: 最近 24 小时（起始 2026-10-11T11:32:08+08:00）
+信息源  : 1 个
+
+采集结果:
+  [ERR] fake_feed          SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（5070 ms）
+
+合计: 抓取 0 条（dry-run，不写库）
+
+（没有新条目）
+
+[ERR] 全部信息源采集失败，请检查网络或源可用性
+
+--- stderr ---

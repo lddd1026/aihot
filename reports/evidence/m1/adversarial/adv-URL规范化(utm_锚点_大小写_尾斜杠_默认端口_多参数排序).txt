@@ -1,0 +1,12 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-adv-urlnorm-nrzax_x8\config.yaml
+11:48:24 WARNING aihot.sources.rss: 源 urlnorm 解析存在告警（仍使用 6 条）: <unknown>:6:53: not well-formed (invalid token)
+11:48:24 INFO aihot.sources: 信息源完成: urlnorm，6 条（44 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:48:20+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] urlnorm            6 条（44 ms）
+
+合计: 抓取 6 条 → 新增 5 条（去重 1 条）→ 库内共 5 条

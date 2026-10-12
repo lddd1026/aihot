@@ -1,0 +1,12 @@
+{
+  "run1_seconds": 8.1,
+  "llm_requests": 7,
+  "wecom_requests": 4,
+  "email_messages": 2,
+  "markdown_parts_run1": 1,
+  "markdown_sizes": [
+    3702
+  ],
+  "image_bytes": 297872,
+  "today": "2026-09-25"
+}

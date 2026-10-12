@@ -1,0 +1,78 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-stale\config.yaml --limit 3 --top 1
+exit=0 (4.6s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-stale\config.yaml
+
+待加工: 3 条（上限 3）
+
+预筛:
+  输入 3 → 保留 3（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 3 条 → 3 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 35.8] (行业动态) 中文标题 1
+      摘要
+      提及 1 条 · 来源 1 家
+
+今日综述: {"items": []}
+
+LLM: 批次 1（失败 0）· token 200+100 · 成本约 ¥0.0012
+
+已写回: 3 条加工 · 0 条标记为过滤
+
+--- stderr ---
+
+
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-stale\config.yaml --limit 5 --top 1
+exit=0 (4.8s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\dedup-stale\config.yaml
+
+待加工: 5 条（上限 5）
+
+预筛:
+  输入 5 → 保留 5（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 5 条 → 5 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 35.8] (行业动态) 中文标题 1
+      摘要
+      提及 1 条 · 来源 1 家
+
+今日综述: {"items": []}
+
+LLM: 批次 1（失败 0）· token 200+100 · 成本约 ¥0.0012
+
+已写回: 5 条加工 · 0 条标记为过滤
+
+--- stderr ---
+
+{
+  "all_cluster_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "first_batch": [
+    1,
+    2,
+    3
+  ],
+  "second_batch": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "issues": []
+}

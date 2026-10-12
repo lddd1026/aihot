@@ -1,0 +1,8 @@
+$ python -m aihot alert --message M5R-独立告警哨兵-20261012 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m5r-alert-auth-fail\config.yaml
+exit=1 (0.8s)
+--- stdout ---
+11:46:00 ERROR aihot.runner: 告警通道失败: 邮件: SMTP 连接或登录失败: SMTPAuthenticationError: (535, b'5.7.8 Authentication failed')
+[WARN] 告警未送达：可用通道均失败或未启用，已写入本地兜底（本地文件(ALERTS.log)）
+[ERR] 告警发送失败: 邮件: SMTP 连接或登录失败: SMTPAuthenticationError: (535, b'5.7.8 Authentication failed')
+
+--- stderr ---

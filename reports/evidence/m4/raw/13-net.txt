@@ -1,0 +1,36 @@
+璇锋眰鏈€缁堝け璐? http://127.0.0.1:5711/api锛圚TTP 503锛?
+璇锋眰鏈€缁堝け璐? http://127.0.0.1:5720/api锛圚TTP 429锛?
+璇锋眰鏈€缁堝け璐? http://127.0.0.1:1/never锛圚TTP 502锛?
+  [PASS] 1.1 榛樿 UA 涓烘祻瑙堝櫒 UA: UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+  [PASS] 1.2 UA 涓嶅惈 httpx 瀹㈡埛绔爣璁? UA=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+  [PASS] 1.3 鏄惧紡 UA 鍙鐩? 浜у搧甯搁噺=Mozilla/5.0 (Windows NT 10.0; Win64; x64鈥?
+  [PASS] 1.4 headers 鍙傛暟瑕嗙洊榛樿 UA: UA=custom-agent/1.0
+  [PASS] 1.5 200 姝ｅ父杩斿洖: status=200
+  [PASS] 2.1 429 涓ゆ鍚庢垚鍔? status=200
+  [PASS] 2.2 429 瑙﹀彂浜?3 娆¤姹? hits=3
+  [PASS] 2.3 429 閫€閬跨瓑寰呯敓鏁? elapsed=0.476s锛坆ackoff*3=0.15锛?
+  [PASS] 3.1 Retry-After=1 鍚庢垚鍔? status=200
+  [PASS] 3.2 Retry-After 浼樺厛浜庣嚎鎬ч€€閬? elapsed=1.020s 鈮?1.0s
+  [PASS] 3.3 Retry-After 鐢熸晥鏃惰姹傛暟=2: hits=2
+  [PASS] 4.1 Retry-After 灏侀《 30s: delay=30.0
+  [PASS] 4.2 闈炴暟瀛?Retry-After 鍥為€€鍒?3脳 绾挎€ч€€閬? delay=0.15000000000000002
+  [PASS] 4.3 429 鏃?Retry-After 鐢?3脳 绾挎€ч€€閬? delay=0.30000000000000004
+  [PASS] 4.4 5xx 鏃?Retry-After 鐢ㄧ嚎鎬ч€€閬? delay=0.1
+  [PASS] 5.400 HTTP 400 涓嶉噸璇? hits=1 status=400
+  [PASS] 5.401 HTTP 401 涓嶉噸璇? hits=1 status=401
+  [PASS] 5.403 HTTP 403 涓嶉噸璇? hits=1 status=403
+  [PASS] 5.404 HTTP 404 涓嶉噸璇? hits=1 status=404
+  [PASS] 5.418 HTTP 418 涓嶉噸璇? hits=1 status=418
+  [PASS] 6.500 HTTP 500 閲嶈瘯鍚庢垚鍔? hits=3 status=200
+  [PASS] 6.502 HTTP 502 閲嶈瘯鍚庢垚鍔? hits=3 status=200
+  [PASS] 6.503 HTTP 503 閲嶈瘯鍚庢垚鍔? hits=3 status=200
+  [PASS] 6.504 HTTP 504 閲嶈瘯鍚庢垚鍔? hits=3 status=200
+  [PASS] 7.1 5xx 閲嶈瘯鑰楀敖杩斿洖閿欒: hits=4 error=HTTP 503
+  [PASS] 7.2 429 閲嶈瘯鑰楀敖杩斿洖閿欒: hits=4 error=HTTP 429 elapsed=3.04s
+  [PASS] 8.1 杩炴帴閿欒鎸?retries 閲嶈瘯: elapsed=13.552s error=HTTP 502
+  [PASS] 9.1 get_json 姝ｅ父瑙ｆ瀽: payload={'ok': True, 'n': 1}
+  [PASS] 9.2 get_json 闈?2xx 杩斿洖 None+閿欒: status=404
+  [PASS] 9.3 get_json 姝ｆ枃闈?JSON 杩斿洖 None+閿欒: status=200 error=JSON 瑙ｆ瀽澶辫触: Expecting value: line 1 column 1 (char 0)
+  [PASS] 9.3 FetchResult 澶辫触涓嶆姏寮傚父: 鍏ㄩ儴澶辫触鐢ㄤ緥鍧囪繑鍥?FetchResult
+
+== m4_net: 31 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_net.json

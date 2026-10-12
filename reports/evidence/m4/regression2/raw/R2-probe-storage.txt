@@ -1,0 +1,4 @@
+  [PASS] 瀛樻。鐩爣琚枃浠跺崰鐢細缂栨帓灞傚厹搴曞畬鎴愶紙鏃犳湭鎹曡幏宕╂簝锛? rc=1锛坱raceback 浠呭湪 logger.exception 鏃ュ織涓級
+  [PASS] 瀛樻。寮傚父鏃舵湁浼佸井鍛婅: text_requests=1
+
+== m4_probe_storage_error: 2 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\regression2\m4_probe_storage_error.json

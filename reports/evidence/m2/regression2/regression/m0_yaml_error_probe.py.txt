@@ -1,0 +1,8 @@
+[PASS] extra_colon: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True
+[PASS] unclosed_bracket: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True
+[PASS] unclosed_quote: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True
+[PASS] tab_indent: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True
+[PASS] bad_anchor: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True
+[FAIL] bad_alias: rc=3, leaks=['M0YAMLKEY0123456789abcdef'], partial=无, traceback=False, 隐藏提示=True
+
+== SUMMARY: 5/6 passed ==

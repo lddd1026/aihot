@@ -1,0 +1,15 @@
+  [PASS] 3.1 浠ｇ悊/浼佸井/LLM 鍏ㄥ仴搴?鈫?rc=0: rc=0
+  [PASS] 3.2 閰嶇疆鏍￠獙閫氳繃涓旈妫€鍙惈 3 椤瑰叧閿緷璧? 杈撳嚭鍚牎楠岄€氳繃涓庡揩閫熼妫€娈?
+  [PASS] 3.3 --quick 涓嶆帰娴嬩俊鎭簮锛堟婧愪粛 rc=0锛? rc=0
+  [PASS] 3.3b check --net 浼氭帰娴嬫簮锛堟婧?鈫?rc=1锛? 瀵规瘮鐢ㄤ緥
+  [PASS] 3.4 LLM 401 閴存潈澶辫触 鈫?rc=1 涓旇緭鍑烘寚鏄?LLM: rc=1
+  [PASS] 3.4b LLM 502 鈫?rc=1: rc=1
+  [PASS] 3.4c LLM 绔彛涓嶅彲杩?鈫?rc=1: rc=1
+  [PASS] 3.5 浼佸井 HTTP 502 鈫?rc=1: rc=1
+  [PASS] 3.5b 浼佸井璇锋眰澶辫触锛堜唬鐞嗕笉鍙敤锛夆啋 rc=1: rc=1
+  [PASS] 3.6 浠ｇ悊绔彛涓嶅彲杩?鈫?rc=1 涓旇緭鍑烘寚鏄庝唬鐞? rc=1
+  [FAIL] 3.7 浼佸井 errcode=93000锛堝亣鏈嶅姟鍝ㄥ叺锛夆啋 鏈熸湜 rc=1: rc=0锛圚TTP 200 浣?errcode=93000锛涘綋鍓嶅疄鐜板彧鐪嬬姸鎬佺爜锛?
+  [FAIL] 3.8 浼佸井 webhook key 鏃犳晥锛堢湡瀹?qyapi锛夆啋 鏈熸湜 rc=1: rc=0锛泈ebhook=<len=89 sha1=5157c92e>锛圙ET 涓嶄骇鐢熸秷鎭級
+  [PASS] 3.9 check 杈撳嚭涓嶅惈瀵嗛挜鏄庢枃: 杈撳嚭鏃?sk- 鍓嶇紑瀵嗛挜
+
+== m4_checks: 11 passed / 2 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_checks.json

@@ -1,0 +1,13 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --help
+EXIT CODE: 0
+--- STDOUT ---
+usage: aihot check [-h] [--net] [--config CONFIG] [--debug]
+
+options:
+  -h, --help       show this help message and exit
+  --net            附加网络探测（代理/企微/LLM/信息源）
+  --config CONFIG  配置文件路径（默认 config.yaml）
+  --debug          输出 DEBUG 日志
+
+--- STDERR ---
+

@@ -1,0 +1,195 @@
+# aihot 配置文件（脱敏模板）
+# 复制为 config.yaml 后填入真实密钥。config.yaml 已被 .gitignore 排除。
+# 密钥可用两种方式提供：直接填字段，或留空字段并设置 *_env 指向的环境变量。
+
+app:
+  timezone: Asia/Shanghai      # 时区
+  window_hours: 24             # 采集时间窗口（小时）
+  top_n: 12                    # 日报精选条数
+  log_level: INFO              # DEBUG / INFO / WARNING / ERROR
+  data_dir: data               # 相对项目根目录
+  log_dir: logs
+  deliver_by: "08:00"          # 预期送达时间（准点率统计基准，HH:MM）
+
+llm:
+  provider: deepseek
+  base_url: https://api.deepseek.com
+  model: deepseek-chat
+  api_key: ""                  # 填写 sk-... 或留空并设置环境变量
+  api_key_env: AIHOT_LLM_KEY
+  batch_size: 15               # 每批送 LLM 的条目数（1~50）
+  daily_cost_limit_cny: 1.0    # 每日成本上限（元），超过将告警
+
+proxy:
+  enabled: false               # 需要访问 Reddit / Hugging Face 时改为 true
+  url: ""                      # 例如 http://127.0.0.1:7890
+
+push:
+  wecom:
+    # 使用步骤：① 填入 webhook（或设置环境变量）② 把 enabled 改为 true
+    enabled: false
+    webhook: ""                # https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=...
+    webhook_env: AIHOT_WECOM_WEBHOOK
+  email:
+    # 使用步骤：① 填好 SMTP 各项与授权码 ② 把 enabled 改为 true
+    enabled: false
+    smtp_host: smtp.qq.com
+    smtp_port: 465
+    use_ssl: true
+    username: ""               # 发件邮箱
+    password: ""               # SMTP 授权码（不是登录密码）
+    password_env: AIHOT_EMAIL_PASSWORD
+    from_addr: ""              # 发件地址，一般与 username 相同
+    to_addrs: []               # 收件地址列表
+    attach_image: false        # true = 邮件内嵌长图；false = 只发文字版
+
+pipeline:
+  prefilter:
+    gate_sources: [hackernews, reddit_ai, github_trending]   # 需要过 AI 关键词门槛的通用源
+    blacklist_keywords: []                 # 追加垃圾词（正则，叠加在内置黑名单之上）
+    extra_ai_keywords: []                  # 追加 AI 关键词（正则）
+    use_builtin_blacklist: true            # false = 只用自己写的 blacklist_keywords
+  dedup:
+    title_similarity: 88                   # 标题相似度阈值（0~100，越大越保守）
+    max_hours_apart: 72                    # 超过该时间差不再合并
+    llm_refine: false                      # LLM 跨语言事件合并（默认关闭：有误合并风险，开启前先评估）
+  enrich:
+    max_items: 200                         # 单次最多加工条数（成本护栏）
+    time_budget_seconds: 600               # 加工阶段总时限（秒），超时停止后续批次
+    price_input_per_million: 2.0           # 输入价格（元/百万 token）
+    price_output_per_million: 8.0          # 输出价格（元/百万 token）
+  rank:
+    interest_bonus:                        # 兴趣加成（按分类）
+      模型发布: 8
+      产品更新: 5
+      开源工具: 5
+
+sources:
+  # ============ 第一批（M1）============
+  - id: qbitai
+    name: 量子位
+    type: rss
+    url: https://www.qbitai.com/feed
+    enabled: true
+    weight: 1.0
+
+  - id: infoq_cn
+    name: InfoQ 中文
+    type: rss
+    url: https://www.infoq.cn/feed
+    enabled: true
+    weight: 0.9
+
+  - id: techcrunch_ai
+    name: TechCrunch AI
+    type: rss
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    enabled: true
+    weight: 1.0
+
+  - id: openai_news
+    name: OpenAI News
+    type: rss
+    url: https://openai.com/news/rss.xml
+    enabled: true
+    weight: 1.2
+
+  - id: hackernews
+    name: Hacker News
+    type: hackernews
+    url: https://hn.algolia.com/api/v1/search_by_date
+    enabled: true
+    weight: 0.8
+
+  # ============ 第二批（M4）============
+  - id: jiqizhixin
+    name: 机器之心
+    type: html
+    url: https://www.jiqizhixin.com/
+    enabled: false
+    weight: 1.0
+    extra:
+      note: 站点已改版为「数据服务」落地页，暂无可抓列表（2026-09 确认）
+
+  - id: theverge_ai
+    name: The Verge AI
+    type: rss
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    enabled: true
+    weight: 1.0
+
+  - id: meta_eng
+    name: Meta 工程博客
+    type: rss
+    url: https://engineering.fb.com/feed/
+    enabled: true
+    weight: 1.1
+
+  - id: arxiv
+    name: arXiv 论文
+    type: arxiv
+    url: http://export.arxiv.org/api/query
+    enabled: true
+    weight: 0.7
+    extra:
+      categories: [cs.AI, cs.CL, cs.LG]
+      max_results: 60
+
+  - id: github_trending
+    name: GitHub 热门项目
+    type: github
+    url: https://api.github.com/search/repositories
+    enabled: true
+    weight: 0.9
+    extra:
+      days: 7              # 只看最近 N 天创建的项目
+      limit: 15            # 取 star 最多的 N 个
+      min_stars: 100       # 低于该 star 数不取
+      # token: ""          # 可选：填 GitHub token 提高限流额度
+
+  # ---- 以下源需要代理可用（Clash 节点正常）后再开启 ----
+  - id: venturebeat_ai
+    name: VentureBeat AI
+    type: rss
+    url: https://venturebeat.com/category/ai/feed/
+    enabled: false
+    weight: 1.0
+
+  - id: deepmind_blog
+    name: Google DeepMind
+    type: rss
+    url: https://deepmind.google/blog/rss.xml
+    enabled: false
+    weight: 1.2
+
+  - id: anthropic_news
+    name: Anthropic News
+    type: html
+    url: https://www.anthropic.com/news
+    enabled: false
+    weight: 1.2
+
+  - id: reddit_localllama
+    name: Reddit r/LocalLLaMA
+    type: reddit
+    url: https://www.reddit.com/r/LocalLLaMA/new.json
+    enabled: false
+    weight: 0.8
+    extra:
+      subreddit: LocalLLaMA
+
+  - id: reddit_ml
+    name: Reddit r/MachineLearning
+    type: reddit
+    url: https://www.reddit.com/r/MachineLearning/new.json
+    enabled: false
+    weight: 0.8
+    extra:
+      subreddit: MachineLearning
+
+  - id: hf_papers
+    name: Hugging Face Daily Papers
+    type: hf_papers
+    url: https://huggingface.co/api/daily_papers
+    enabled: false
+    weight: 0.9

@@ -1,0 +1,105 @@
+{
+  "suite": "m4_drills",
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "9.1 部分源失败：run rc=0 且输出显示 1/2 源成功",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "9.2 部分源失败：日报三件套已产出",
+      "ok": true,
+      "detail": "files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']"
+    },
+    {
+      "item": "9.3 部分源失败：图 + markdown 均推送成功",
+      "ok": true,
+      "detail": "markdown=1 image=1"
+    },
+    {
+      "item": "9.4 部分源失败：runs 表 run=ok / fetch=partial",
+      "ok": true,
+      "detail": "run=ok fetch=partial"
+    },
+    {
+      "item": "9.5 部分源失败未触发失败告警",
+      "ok": true,
+      "detail": "text=0"
+    },
+    {
+      "item": "9.6 全部源失败：rc=1 且状态 failed",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "9.7 全部源失败：发出企微告警且含原因",
+      "ok": true,
+      "detail": "text=1"
+    },
+    {
+      "item": "9.8 全部源失败：未推任何日报（图/markdown 均为 0）",
+      "ok": true,
+      "detail": "markdown=0 image=0"
+    },
+    {
+      "item": "9.9 全部源失败：未产生半成品日报与 digests 行",
+      "ok": true,
+      "detail": "digests_dir=False"
+    },
+    {
+      "item": "9.10 全部源失败：LLM 未被调用（失败即止）",
+      "ok": true,
+      "detail": "llm_calls=0"
+    },
+    {
+      "item": "9.11 断网（源不可达）：rc=1、状态 failed、发出告警",
+      "ok": true,
+      "detail": "rc=1 text=1"
+    },
+    {
+      "item": "9.11b 断网：未推空日报",
+      "ok": true,
+      "detail": "markdown=0 image=0"
+    },
+    {
+      "item": "9.12 LLM key 失效：降级运行不崩溃（rc=0）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "9.13 LLM key 失效：批次失败可见且条目按原文降级",
+      "ok": true,
+      "detail": "批次失败显示=是；markdown 含原文标题=是"
+    },
+    {
+      "item": "9.14 LLM key 失效：日报仍完整落盘（三件套）",
+      "ok": true,
+      "detail": "files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']"
+    },
+    {
+      "item": "9.15 配置损坏：rc=3 且无 traceback",
+      "ok": true,
+      "detail": "rc=3"
+    },
+    {
+      "item": "9.16 配置损坏：未触碰网络（webhook 0 请求）",
+      "ok": true,
+      "detail": "requests=0"
+    },
+    {
+      "item": "9.17 配置损坏：未产生数据目录/日报",
+      "ok": true,
+      "detail": "data 不存在"
+    },
+    {
+      "item": "9.18 全部演练未改动真实库/存档",
+      "ok": true,
+      "detail": "真实状态一致"
+    }
+  ],
+  "notes": [
+    "LLM 全失败时 enrich 运行记录 status=failed（run 记录为 ok）"
+  ]
+}

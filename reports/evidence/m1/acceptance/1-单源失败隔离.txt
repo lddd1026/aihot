@@ -1,0 +1,29 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t1-wn0oakb4\config.yaml --limit 5
+exit=0 (7.3s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t1-wn0oakb4\config.yaml
+11:46:15 INFO aihot.sources: 信息源完成: good1，2 条（30 ms）
+11:46:15 INFO aihot.sources: 信息源完成: good2，1 条（30 ms）
+11:46:18 WARNING aihot.net: 请求最终失败: http://127.0.0.1:10440/bad500（HTTP 500）
+11:46:18 WARNING aihot.sources: 信息源失败: bad500（SourceError: 请求失败: HTTP 500）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:46:13+08:00）
+信息源  : 3 个
+
+采集结果:
+  [ERR] bad500             SourceError: 请求失败: HTTP 500（3045 ms）
+  [OK ] good1              2 条（30 ms）
+  [OK ] good2              1 条（30 ms）
+
+合计: 抓取 3 条 → 新增 3 条（去重 0 条）→ 库内共 3 条
+
+最新条目预览（前 3 条）:
+   1. [good1] g1-a
+      https://good.example/a（09-25 11:36）
+   2. [good1] g1-b
+      https://good.example/b（09-25 11:16）
+   3. [good2] g2-a
+      https://good.example/c（09-25 09:46）
+
+--- stderr ---

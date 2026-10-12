@@ -1,0 +1,78 @@
+{
+  "window": [
+    "2026-10-08",
+    "2026-10-12"
+  ],
+  "days": 5,
+  "delivered_days": 1,
+  "on_time_days": 1,
+  "delivery_rate": 0.2,
+  "on_time_rate": 0.2,
+  "duplicate_days": [],
+  "missing_days": [
+    "2026-10-08"
+  ],
+  "skipped_days": [
+    {
+      "day": "2026-10-11",
+      "errors": [
+        "M5R 夹具：预检代理+LLM 同时不可用（种子）"
+      ]
+    },
+    {
+      "day": "2026-10-12",
+      "errors": [
+        "M5R 夹具：预检 LLM 不可达（真实 skip 命令写入）"
+      ]
+    }
+  ],
+  "failed_days": [
+    {
+      "day": "2026-10-09",
+      "errors": [
+        "日报推送失败"
+      ]
+    }
+  ],
+  "image_fail_days": [
+    "2026-10-09"
+  ],
+  "total_cost_cny": 0.15,
+  "daily_cost_cny": 0.03,
+  "avg_duration_seconds": 65.0,
+  "max_duration_seconds": 180.0,
+  "archive_days": 0,
+  "checks": [
+    {
+      "name": "送达成功率",
+      "passed": false,
+      "detail": "1/5 = 20.0%（目标 ≥ 99%）"
+    },
+    {
+      "name": "准点率(17:30前)",
+      "passed": false,
+      "detail": "1/5 = 20.0%（目标 ≥ 95%）"
+    },
+    {
+      "name": "幂等(无重复推送)",
+      "passed": true,
+      "detail": "无重复"
+    },
+    {
+      "name": "端到端耗时",
+      "passed": true,
+      "detail": "平均 65s / 最大 180s（目标 < 25 分钟）"
+    },
+    {
+      "name": "日均成本",
+      "passed": true,
+      "detail": "¥0.030/天（目标 ≤ ¥1）"
+    },
+    {
+      "name": "存档完整(内容不丢)",
+      "passed": false,
+      "detail": "0 期存档 / 1 天送达（长期目标 ≥ 90 天）"
+    }
+  ],
+  "passed": false
+}

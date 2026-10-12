@@ -1,0 +1,8 @@
+$ python -m aihot alert --message M4-独立告警哨兵-20260925 --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-alert-errcode\config.yaml
+exit=1 (1.3s)
+--- stdout ---
+11:44:08 ERROR aihot.runner: 告警通道失败: 企业微信: 文本消息发送失败: errcode=93000 errmsg=invalid webhook url, hint: [1791776653378853434319695], from ip: 36.163.179.227, more info at https://open.work.weixin.qq.com/devtool/query?e=93000
+[WARN] 告警未送达：可用通道均失败或未启用，已写入本地兜底（本地文件(ALERTS.log)）
+[ERR] 告警发送失败: 企业微信: 文本消息发送失败: errcode=93000 errmsg=invalid webhook url, hint: [1791776653378853434319695], from ip: 36.163.179.227, more info at https://open.work.weixin.qq.com/devtool/query?e=93000
+
+--- stderr ---

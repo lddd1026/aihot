@@ -1,0 +1,4 @@
+[aihot 告警] 今日运行已跳过
+本邮件为 HTML 格式，请使用支持 HTML 的邮件客户端查看。
+
+<h3>今日运行已跳过</h3><ul><li>preflight failed: LLM or WeCom unreachable. Today&#x27;s digest was skipped. See logs\run_daily.log</li><li>详情见 logs\run_daily.log</li></ul>

@@ -1,0 +1,28 @@
+== 4a GPU/GPUs/TPU/TPUs 门槛 ==
+  [PASS] 4a-过门槛：Nvidia unveils Rubin GPU: 保留=True
+  [PASS] 4a-过门槛：Nvidia unveils Rubin GPUs: 保留=True
+  [PASS] 4a-过门槛：Google starts deploying TPU v8 for training: 保留=True
+  [PASS] 4a-过门槛：Google starts deploying TPUs v8 for training: 保留=True
+  [PASS] 4a-控制组仍被淘汰（无 AI 关键词）: Rust 1.99 淘汰=True
+
+== 4b use_builtin_blacklist 语义 ==
+  [PASS] 4b-缺省：内置+自定义都生效: 淘汰=['0', '1']（期望 ['0','1']：招聘+辟谣）
+  [PASS] 4b-true：内置+自定义都生效: 淘汰=['0', '1']
+  [PASS] 4b-false：仅自定义词生效（招聘不再淘汰）: 淘汰=['1']（期望 ['1']：仅辟谣）
+  [PASS] 4b-false+空自定义：黑名单整体停用: 淘汰=[]（期望 []）
+
+== 4c runs 表（stage=enrich + 成本） ==
+  [PASS] 4c-runs 含 stage=enrich 记录: enrich 记录数=1，stage=enrich，status=ok
+  [PASS] 4c-成本字段可读且与假 usage 一致: cost_cny=0.006（期望 0.006），token=1000+500，batches=1 succeeded=3
+  [PASS] 4c-统计字段齐备: 缺失字段=无
+  [PASS] 4c---no-llm 也写 runs（no_llm=true 且有基础字段）: no_llm=True enriched=2 cost=None batches=None（观察项：--no-llm 不写 LLM 统计字段）
+
+== 4d time_budget_seconds（含 60s 生效用例，约 1 分钟） ==
+  [PASS] 4d-越界 time_budget_seconds → rc=3: 坏值 rc=[(59, 3), (7201, 3), ('abc', 3), (60.5, 3)]
+  [PASS] 4d-边界值 60/7200 合法: 边界 rc=[(60, 0), (7200, 0)]
+  [PASS] 4d-超时停止后续批次（time_budget_hit=true）: time_budget_hit=True，batches=2（3 批中执行 2 批，耗时 65s）
+  [PASS] 4d-不丢数据（3 条全部落库，1 条降级原文）: enriched=3，降级条目=1（期望 1），rc=0
+  [PASS] 4d-日志记录停止原因: 日志含「已达加工时间上限」=True
+  [PASS] 4z-真实库只读守护: items=176（开始时 176）
+
+== regression2/p2: 19 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression2\regression2\p2.json

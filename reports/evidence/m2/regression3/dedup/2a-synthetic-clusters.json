@@ -1,0 +1,19 @@
+{
+  "https://example.com/same-url": 3,
+  "https://example.com/norm?utm_source=x": 4,
+  "https://example.com/norm/": 4,
+  "https://example.com/c1": 5,
+  "https://example.com/c2": 5,
+  "https://example.com/d1": 5,
+  "https://example.com/d2": 7,
+  "https://example.com/e1": 8,
+  "https://example.com/e2": 8,
+  "https://example.com/f1": 2,
+  "https://example.com/f2": 11,
+  "https://example.com/same-url-time": 1,
+  "https://example.com/h1": 6,
+  "https://example.com/h2": 6,
+  "https://example.com/h3": 6,
+  "https://example.com/i1": 10,
+  "https://example.com/i2": 9
+}

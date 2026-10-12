@@ -1,0 +1,15 @@
+[PASS] redaction-no-plaintext :: 文件+控制台均无明文
+[PASS] noisy-httpx-loggers-suppressed :: httpx/httpcore INFO/DEBUG 记录数=0
+[PASS] json-lines-valid :: 6 行全部可解析
+[PASS] json-extra-fields-redacted :: source_id=***
+[PASS] exception-stack-redacted :: exc 字段长度=200
+[PASS] single-handler-no-duplicate :: console 记录数=6, file 行数=6
+[PASS] setup-logging-idempotent :: root.handlers=2, 文件行数=1, 控制台行数=1
+[PASS] rotation-params :: maxBytes=5242880, backupCount=7, encoding=utf-8
+[PASS] forced-rotation :: aihot.log.1 存在=True, 当前文件大小=817371
+[PASS] chinese-emoji-json-roundtrip :: msg='一致'
+[PASS] redact-text-patterns :: 全部命中
+[PASS] observation-extra-handler :: 额外插入的未过滤 handler（顺序最前）会写出明文，属调用方责任，非产品缺陷
+[PASS] probe-error-text-redacted :: masked=ConnectError: All connection attempts failed for ***
+
+== SUMMARY: 13/13 passed ==

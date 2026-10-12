@@ -1,0 +1,31 @@
+== 合成用例（黑盒 enrich --no-llm） ==
+  [PASS] 2b-同URL必合并（跨源/标题不同/时间差30h）: 期望同簇=True，实际=True
+  [PASS] 2c-URL归一化后相同合并（utm/尾斜杠）: 期望同簇=True，实际=True
+  [PASS] 2d-标题相似度≥88合并: 期望同簇=True，实际=True
+  [PASS] 2e-Sol/Luna不同模型名不误合并: 期望同簇=True，实际=True
+  [PASS] 2f-包含关系合并（同标题+后缀）: 期望同簇=True，实际=True
+  [PASS] 2g-超max_hours_apart不合并: 期望同簇=True，实际=True
+  [PASS] 2h-同URL超时间窗仍合并: 期望同簇=True，实际=True
+  [PASS] 2i-型号版本不同不误合并（Llama-4 vs Llama-5）: 同簇=False（期望 False；第 2 轮新增版本号冲突护栏 VERSION_CONFLICT_CAP=60）
+  [PASS] 2j-三源同事件合并为1簇（mention/source 一致）: 成员 3 条 / 源 3 个 / clusters 行={'mention_count': 3, 'source_ids': '["hackernews", "openai_news", "qbitai"]'}
+
+== 真实数据规则层聚类核验（176 条 → 过滤后全量） ==
+  [PASS] 2k-规则层真实多条目簇准确率: 2 个多条目簇，人工核验合理 2 个；明细见证据
+  [PASS] 2l-规则层漏合并审计: 相似度≥78 的跨簇对 0 个（核验前 8 个），判定“应合并” 0 个
+  [NOTE] 规则层：105 条 → 101 簇，多条目簇 2，高相似跨簇对 0
+
+== 生产库（真实 LLM 精修）簇审计（只读） ==
+  [PASS] 2m-生产库簇表自洽（mention=实际条目数，hashes=实际成员集合）: 全部一致（mention=实际条目数；item_hashes 与实际成员集合一致）
+  [PASS] 2n-生产库多条目簇核验（重建后的真实数据）: 多条目簇 2 个（人工核验合理 2 个）；同事件对 6/6，对级准确率 100.0%（阈 ≥90%）
+  [NOTE] 生产库：多条目簇 2 个，对级准确率 100.0%
+
+== 跨轮 cluster_id 复用（受控复现） ==
+  [PASS] 2o-跨轮簇编号全局单调（D2 回归）: 两轮后簇编号=[1, 2, 3, 4, 5, 6, 7, 8]；第二轮新增=[4, 5, 6, 7, 8]（期望 [4,5,6,7,8]）；一致性问题=无
+
+== LLM 精修盲合并拦截（D1 回归，受控注入） ==
+  [PASS] 2p-LLM 精修盲合并已被规则拦截（D1 回归）: 簇数=10（期望 10 个单条簇），refine_rejected=1（期望 ≥1），说明：10 条互不相关被 high 置信度说成一组 → 规则按相似链拆散
+
+== 真实库只读守护 ==
+  [PASS] 2z-真实库只读守护: items=176（开始时 176）
+
+== dedup: 16 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression3\dedup.json

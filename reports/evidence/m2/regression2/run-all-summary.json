@@ -1,0 +1,160 @@
+{
+  "generated": "2026-09-24 11:07:12",
+  "real_db_before": {
+    "exists": true,
+    "bytes": 237568,
+    "items": 176,
+    "enriched": 176,
+    "runs": 4,
+    "clusters": 64,
+    "max_id": 176
+  },
+  "real_db_after": {
+    "exists": true,
+    "bytes": 237568,
+    "items": 176,
+    "enriched": 176,
+    "runs": 4,
+    "clusters": 64,
+    "max_id": 176
+  },
+  "real_db_unchanged": true,
+  "results": [
+    {
+      "script": "m2_prefilter.py",
+      "exit": 0,
+      "passed": "12/12",
+      "verdict": "PASS",
+      "seconds": 4.5,
+      "tail": "  [PASS] 1h-真实数据预筛误杀率: 库内 176 条 → 淘汰 72 条（垃圾 6 · 与AI无关 66 · 批内重复 0），人工核验误杀 7 条，误杀率 9.7%（占全库 4.0%；阈值为 ≤10%，超出升级 P1）\n  [PASS] 1i-CLI路径淘汰数与独立复算一致: CLI 标记过滤 72 条（独立复算淘汰 72 条）；enriched_at 非空 176/176\n  [PASS] 1z-真实库只读守护: items=176（测试开始时 176）\n\n== prefilter: 12 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\prefilter.json"
+    },
+    {
+      "script": "m2_dedup.py",
+      "exit": 0,
+      "passed": "16/16",
+      "verdict": "PASS",
+      "seconds": 15.2,
+      "tail": "\n== 真实库只读守护 ==\n  [PASS] 2z-真实库只读守护: items=176（开始时 176）\n\n== dedup: 16 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\dedup.json"
+    },
+    {
+      "script": "m2_llm_robust.py",
+      "exit": 0,
+      "passed": "60/60",
+      "verdict": "PASS",
+      "seconds": 128.0,
+      "tail": "    self.wfile.write(body)\n  File \"C:\\Users\\LEGION\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\socketserver.py\", line 845, in write\n    self._sock.sendall(b)\nConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。\n----------------------------------------"
+    },
+    {
+      "script": "m2_cache.py",
+      "exit": 0,
+      "passed": "8/8",
+      "verdict": "PASS",
+      "seconds": 13.3,
+      "tail": "  [PASS] 4f-dry-run 输出声明: 输出含「（dry-run，未写库）」\n  [PASS] 4g-dry-run 未消耗队列（随后真实运行仍加工 12 条）: rc=0，enriched_at 非空=12/12\n  [PASS] 4z-真实库只读守护: items=176（开始时 176）\n\n== cache: 8 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\cache.json"
+    },
+    {
+      "script": "m2_cost.py",
+      "exit": 0,
+      "passed": "9/9",
+      "verdict": "PASS",
+      "seconds": 10.9,
+      "tail": "  [PASS] 5b-写回行数与队列一致: 输出行：['已写回: 15 条加工 · 0 条标记为过滤 · 15 个事件簇']\n  [PASS] 5c-上限小于单批成本：仅首批执行且标记 hit: 批次=1 请求=1 成本=¥0.2（说明：上限检查在批次前，故首批必然执行；剩余条目降级不丢）\n  [PASS] 5z-真实库只读守护: items=176（开始时 176）\n\n== cost: 9 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\cost.json"
+    },
+    {
+      "script": "m2_rank.py",
+      "exit": 0,
+      "passed": "17/17",
+      "verdict": "PASS",
+      "seconds": 4.0,
+      "tail": "  [PASS] 6o-select_top(<=0) 返回空: select_top([], 5)=[]，select_top([], 0)=[]\n  [PASS] 6p-同分时更新的优先: 首位=new\n  [PASS] 6z-真实库只读守护: items=176（开始时 176）\n\n== rank: 17 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\rank.json"
+    },
+    {
+      "script": "m2_cli.py",
+      "exit": 0,
+      "passed": "26/26",
+      "verdict": "PASS",
+      "seconds": 20.9,
+      "tail": "  [PASS] 7c-合法边界值通过（rc=0）: 4 组边界配置 rc=[0, 0, 0, 0]\n  [PASS] 7d-缺失 pipeline 段可用默认值: rc=0\n  [PASS] 7z-真实库只读守护: items=176（开始时 176）\n\n== cli: 26 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\cli.json"
+    },
+    {
+      "script": "m2_real_llm.py",
+      "exit": 0,
+      "passed": "7/7",
+      "verdict": "PASS",
+      "seconds": 5.9,
+      "tail": "  [PASS] 8f-分类标签合法: 分类取值=['产品更新', '政策监管', '模型发布', '融资商业', '行业动态']\n  [PASS] 8g-摘要非空且为中文: 摘要非空且含中文=True\n  [PASS] 8z-真实库只读守护: items=176（开始时 176）\n\n== real-llm: 7 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\real-llm.json"
+    },
+    {
+      "script": "m2_perf.py",
+      "exit": 0,
+      "passed": "5/5",
+      "verdict": "PASS",
+      "seconds": 16.4,
+      "tail": "  [PASS] 8c-单条成本折算 < ¥1/天: 真实样本 104+92 token/条 × 200 条/天 = ¥0.1883/天（阈值 ¥1）\n  [PASS] 8d-max_items 截断保护（25 条库，上限 10）: 输出「待加工: 10 条（上限 10）」，库内仅前 10 条被加工\n  [PASS] 8z-真实库只读守护: items=176（开始时 176）\n\n== perf: 5 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\perf.json"
+    },
+    {
+      "script": "m2r2_d1.py",
+      "exit": 0,
+      "passed": "15/15",
+      "verdict": "PASS",
+      "seconds": 13.9,
+      "tail": "  [PASS] 1e-相关组放行（相似度 ≥55）: accepted=[[1, 2], [5]] rejections=[]；相似度(1,2)=94.4\n  [PASS] 1e-不相关组被拒（相似度 <55）: 相似度(1,3)=24.6（<55），accepted=[[1], [3]]\n  [PASS] 1z-真实库只读守护: items=176（开始时 176）\n\n== regression2/d1: 15 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\regression2\\d1.json"
+    },
+    {
+      "script": "m2r2_accuracy.py",
+      "exit": 0,
+      "passed": "7/7",
+      "verdict": "PASS",
+      "seconds": 2.5,
+      "tail": "  [PASS] 2b-真实库副本无超大簇/无跨事件合并: 最大簇=3 条\n  [PASS] 2z-真实库只读守护: items=176（开始时 176）\n  [NOTE] 样本集：54 条 / 1431 对；真实库副本：104 条 → 100 簇\n\n== regression2/accuracy: 7 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\regression2\\accuracy.json"
+    },
+    {
+      "script": "m2r2_d2.py",
+      "exit": 1,
+      "passed": "13/16",
+      "verdict": "FAIL",
+      "seconds": 7.1,
+      "tail": "  [PASS] 3z-真实库无悬空引用: 悬空引用=无（64 簇）\n  [PASS] 3z-真实库 mention_count 与条目数一致: 不一致簇=无\n  [PASS] 3z-真实库只读守护（items 未变）: items=176（开始时 176）\n\n== regression2/d2: 13 passed / 3 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\regression2\\d2.json"
+    },
+    {
+      "script": "m2r2_p2.py",
+      "exit": 0,
+      "passed": "19/19",
+      "verdict": "PASS",
+      "seconds": 77.9,
+      "tail": "  [PASS] 4d-不丢数据（3 条全部落库，1 条降级原文）: enriched=3，降级条目=1（期望 1），rc=0\n  [PASS] 4d-日志记录停止原因: 日志含「已达加工时间上限」=True\n  [PASS] 4z-真实库只读守护: items=176（开始时 176）\n\n== regression2/p2: 19 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\regression2\\p2.json"
+    },
+    {
+      "script": "m2_regression.py",
+      "exit": 0,
+      "passed": "25/25",
+      "verdict": "PASS",
+      "seconds": 355.8,
+      "tail": "  [PASS] 9g-证据/测试脚本无真实密钥: 扫描 2 个真实密钥模式，命中文件=无\n  [PASS] 9h-ruff/pytest 输出无真实密钥: 命中=无\n  [PASS] 9z-真实库未被测试改动: items=176 runs=4 clusters=64 max_id=176（开始时一致：True）\n\n== regression: 25 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression2\\regression.json"
+    },
+    {
+      "script": "m2_translation_sample.py",
+      "exit": 0,
+      "passed": "-",
+      "verdict": "INFO",
+      "seconds": 0.2,
+      "tail": "  EN : 斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”\n  CN : 斑马智能发布端侧全模态模型 AutoOmni 2.0\n  SUM: 斑马智能在云栖大会期间发布 AutoOmni 2.0-23B-A3B 端侧全模态大模型，用于增强其元神 AI 对场景的理解能力。\n\n真实调用候选 6 条 → D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\real-llm\\real-call-candidates.json"
+    },
+    {
+      "script": "m2_dbview.py",
+      "exit": 0,
+      "passed": "-",
+      "verdict": "INFO",
+      "seconds": 0.1,
+      "tail": "      \"source_ids\": \"[\\\"infoq_cn\\\"]\",\n      \"canonical_title\": \"Meta 开源 Astryx：面向 Agent 的 React 设计系统\"\n    }\n  ]\n}"
+    },
+    {
+      "script": "m2_dedup_probe.py",
+      "exit": 0,
+      "passed": "-",
+      "verdict": "INFO",
+      "seconds": 1.5,
+      "tail": "    hackernews | Unreal Agent\n\n--- prod cluster 57 (2) ---\n    techcrunch_ai | YouTube will let you build your own algorithm with AI\n    techcrunch_ai | YouTube releases new AI features for creators within its Studio app"
+    }
+  ]
+}

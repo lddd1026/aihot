@@ -1,0 +1,90 @@
+{
+  "generated": "2026-09-25 12:29:13",
+  "total_passed": 170,
+  "total_failed": 1,
+  "unexpected_fail_suites": [],
+  "results": [
+    {
+      "suite": "m4_net",
+      "passed": 31,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_adapters",
+      "passed": 39,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_checks",
+      "passed": 13,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_alert",
+      "passed": 13,
+      "failed": 1,
+      "failed_checks": [
+        "4.13 长图降级（partial）是否告警（期望「渲染失败需告警」）"
+      ],
+      "expected_failure": true,
+      "verdict": "KNOWN(P1/P2)"
+    },
+    {
+      "suite": "m4_drills",
+      "passed": 19,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_papers",
+      "passed": 11,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_bat",
+      "passed": 19,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_sources_live",
+      "passed": 14,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_probe_storage_error",
+      "passed": 2,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    },
+    {
+      "suite": "m4_toolchain",
+      "passed": 9,
+      "failed": 0,
+      "failed_checks": [],
+      "expected_failure": false,
+      "verdict": "PASS"
+    }
+  ]
+}

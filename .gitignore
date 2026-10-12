@@ -1,0 +1,25 @@
+# 环境
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# 缓存
+.pytest_cache/
+.ruff_cache/
+
+# 密钥与本地配置
+config.yaml
+
+# 运行产物
+data/*.db
+data/digests/
+logs/*.log
+logs/*.log.*
+
+# 测试证据（体积大）
+reports/evidence/large/
+
+# 编辑器
+.vscode/
+.idea/

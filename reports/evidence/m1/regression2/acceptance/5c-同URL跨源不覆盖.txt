@@ -1,0 +1,15 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t5-full-cwwuswrb\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:59:09+08:00）
+信息源  : 3 个
+
+21:59:11 INFO aihot.sources: 信息源完成: s2，2 条（23 ms）
+21:59:11 INFO aihot.sources: 信息源完成: s3，1 条（23 ms）
+21:59:11 INFO aihot.sources: 信息源完成: s1，2 条（26 ms）
+采集结果:
+  [OK ] s1                 2 条（26 ms）
+  [OK ] s2                 2 条（23 ms）
+  [OK ] s3                 1 条（23 ms）
+
+合计: 抓取 5 条 → 新增 5 条（去重 0 条）→ 库内共 5 条

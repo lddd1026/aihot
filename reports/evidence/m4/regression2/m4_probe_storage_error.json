@@ -1,0 +1,18 @@
+{
+  "suite": "m4_probe_storage_error",
+  "passed": 2,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "存档目标被文件占用：编排层兜底完成（无未捕获崩溃）",
+      "ok": true,
+      "detail": "rc=1（traceback 仅在 logger.exception 日志中）"
+    },
+    {
+      "item": "存档异常时有企微告警",
+      "ok": true,
+      "detail": "text_requests=1"
+    }
+  ],
+  "notes": []
+}

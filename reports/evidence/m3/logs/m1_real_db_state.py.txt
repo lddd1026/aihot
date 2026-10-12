@@ -1,0 +1,24 @@
+tables=['clusters', 'digests', 'items', 'runs', 'sqlite_sequence']
+items=363 unique_keys=363 runs=9
+by_source:
+  hackernews: 173 (2026-09-22T12:58:02+00:00 → 2026-09-24T23:10:44+00:00)
+  arxiv: 60 (2026-09-24T10:41:16+00:00 → 2026-09-24T13:42:02+00:00)
+  techcrunch_ai: 42 (2026-09-22T13:00:00+00:00 → 2026-09-24T19:15:00+00:00)
+  infoq_cn: 35 (2026-09-22T13:00:00+00:00 → 2026-09-24T18:38:59+00:00)
+  theverge_ai: 21 (2026-09-23T18:00:00+00:00 → 2026-09-24T19:59:26+00:00)
+  qbitai: 20 (2026-09-23T06:08:50+00:00 → 2026-09-24T14:20:14+00:00)
+  openai_news: 10 (2026-09-22T18:00:00+00:00 → 2026-09-23T16:00:00+00:00)
+  deepmind_blog: 1 (2026-09-24T16:20:39+00:00 → 2026-09-24T16:20:39+00:00)
+  meta_eng: 1 (2026-09-24T00:00:00+00:00 → 2026-09-24T00:00:00+00:00)
+runs_detail:
+  20260923T124051-8449bb ok 2026-09-23T12:40:51.083007+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 105, "skipped": []}
+  20260923T124344-259fe2 ok 2026-09-23T12:43:44.842824+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 107, "saved": 1, "skipped": []}
+  20260924T012756-1a7300 ok 2026-09-24T01:27:56.493888+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 70, "skipped": []}
+  20260924T013405-eded6d ok 2026-09-24T01:34:05.009377+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 0, "skipped": []}
+  20260924T031218-cdcbf3 ok 2026-09-24T03:12:18.882606+00:00 stats={"stage": "enrich", "pending": 176, "prefilter_kept": 105, "clusters": 101, "enriched": 105, "filtered": 71, "refine_calls": 0, "refine_failed": 0, "refine_reje
+  20260924T124232-c76346 partial 2026-09-24T12:42:32.902502+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 6, "sources_failed": 2, "fetched": 117, "saved": 55, "skipped": []}
+  20260924T124347-114f1d partial 2026-09-24T12:43:47.902206+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 6, "sources_failed": 2, "fetched": 53, "saved": 1, "skipped": []}
+  20260925T014947-ddc92e ok 2026-09-25T01:49:47.427847+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 8, "sources_failed": 0, "fetched": 160, "saved": 130, "skipped": []}
+  20260925T015411-9a0927 partial 2026-09-25T01:54:11.892554+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 11, "sources_failed": 3, "fetched": 161, "saved": 1, "skipped": []}
+
+[evidence] D:\信息收集整理\aihot\reports\evidence\m1\real-db-readonly-state.txt

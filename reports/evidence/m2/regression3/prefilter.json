@@ -1,0 +1,68 @@
+{
+  "suite": "prefilter",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "1a-命令成功且打印预筛行",
+      "ok": true,
+      "detail": "$ python -m aihot enrich --no-llm --config C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m2-tests\\prefilter-gate-hn\\config.yaml --limit 50 --top 8 exit=0 (0.8s) --- stdout ---"
+    },
+    {
+      "item": "1b-门控仅对gate_sources生效",
+      "ok": true,
+      "detail": "gate=[hackernews]：hn-rust 淘汰=True，qbit-os(非门控) 保留=True，hn-gpt6(命中关键词) 保留=True"
+    },
+    {
+      "item": "1c-垃圾过滤覆盖所有源",
+      "ok": true,
+      "detail": "招聘/课程/webinar/促销 4 条全部淘汰=True"
+    },
+    {
+      "item": "1d-淘汰集合与独立判定一致",
+      "ok": true,
+      "detail": "实际淘汰=['hn-ad', 'hn-rust', 'oa-webinar', 'qbit-course', 'qbit-hire']；期望淘汰=['hn-ad', 'hn-rust', 'oa-webinar', 'qbit-course', 'qbit-hire']"
+    },
+    {
+      "item": "1j-空列表禁用AI门槛",
+      "ok": true,
+      "detail": "gate=[]：hn-rust（无 AI 关键词）保留=True"
+    },
+    {
+      "item": "1k-空门槛不影响垃圾过滤",
+      "ok": true,
+      "detail": "gate=[] 淘汰集合=['hn-ad', 'oa-webinar', 'qbit-course', 'qbit-hire']"
+    },
+    {
+      "item": "1e-批内重复去重",
+      "ok": true,
+      "detail": "去重 1，保留 1（说明：CLI 路径因 items 唯一键不可达，此项为模块级行为）"
+    },
+    {
+      "item": "1f-门控源无关键词被淘汰（模块级）",
+      "ok": true,
+      "detail": "dropped_offtopic=1"
+    },
+    {
+      "item": "1g-空gate_sources放行（模块级）",
+      "ok": true,
+      "detail": "gate_sources=() → dropped_offtopic=0，kept=1"
+    },
+    {
+      "item": "1h-真实数据预筛误杀率",
+      "ok": true,
+      "detail": "库内 176 条 → 淘汰 71 条（垃圾 6 · 与AI无关 65 · 批内重复 0），人工核验误杀 6 条，误杀率 8.5%（占全库 3.4%；阈值为 ≤10%，超出升级 P1）"
+    },
+    {
+      "item": "1i-CLI路径淘汰数与独立复算一致",
+      "ok": true,
+      "detail": "CLI 标记过滤 71 条（独立复算淘汰 71 条）；enriched_at 非空 176/176"
+    },
+    {
+      "item": "1z-真实库只读守护",
+      "ok": true,
+      "detail": "items=176（测试开始时 176）"
+    }
+  ],
+  "notes": []
+}

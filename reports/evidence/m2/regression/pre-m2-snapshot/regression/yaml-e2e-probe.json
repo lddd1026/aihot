@@ -1,0 +1,58 @@
+[
+  {
+    "case": "extra_colon",
+    "rc": 3,
+    "leaks": [],
+    "partial": [],
+    "traceback": false,
+    "hidden_hint": true,
+    "ok": true
+  },
+  {
+    "case": "unclosed_bracket",
+    "rc": 3,
+    "leaks": [],
+    "partial": [],
+    "traceback": false,
+    "hidden_hint": true,
+    "ok": true
+  },
+  {
+    "case": "unclosed_quote",
+    "rc": 3,
+    "leaks": [],
+    "partial": [],
+    "traceback": false,
+    "hidden_hint": true,
+    "ok": true
+  },
+  {
+    "case": "tab_indent",
+    "rc": 3,
+    "leaks": [],
+    "partial": [],
+    "traceback": false,
+    "hidden_hint": true,
+    "ok": true
+  },
+  {
+    "case": "bad_anchor",
+    "rc": 3,
+    "leaks": [],
+    "partial": [],
+    "traceback": false,
+    "hidden_hint": true,
+    "ok": true
+  },
+  {
+    "case": "bad_alias",
+    "rc": 3,
+    "leaks": [
+      "M0YAMLKEY0123456789abcdef"
+    ],
+    "partial": [],
+    "traceback": false,
+    "hidden_hint": true,
+    "ok": false
+  }
+]

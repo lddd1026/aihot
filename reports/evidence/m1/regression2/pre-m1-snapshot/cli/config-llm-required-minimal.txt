@@ -1,0 +1,12 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ql3o3npp\llm-required-minimal.yaml
+EXIT CODE: 3
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ql3o3npp\llm-required-minimal.yaml
+
+[ERR] 配置校验未通过（2 个问题）:
+  1. llm.base_url 必须是 http(s) 地址，实际: ''
+  2. llm.model 不能为空
+
+--- STDERR ---
+

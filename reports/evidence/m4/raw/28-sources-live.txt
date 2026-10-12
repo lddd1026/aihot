@@ -1,0 +1,19 @@
+璇锋眰鏈€缁堝け璐? https://huggingface.co/api/daily_papers锛圚TTP 429锛?
+  [NOTE] 閰嶇疆鍏?14 涓簮锛氬惎鐢?12 涓?['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews', 'theverge_ai', 'venturebeat_ai', 'deepmind_blog', 'anthropic_news', 'meta_eng', 'reddit_ai', 'arxiv']锛涘仠鐢?2 涓?['jiqizhixin', 'hf_papers']
+  [PASS] 7.1 婧?qbitai 鐪熷疄鎶撳彇: [OK] 7 鏉★紙2.7s锛?
+  [PASS] 7.2 婧?infoq_cn 鐪熷疄鎶撳彇: [OK] 15 鏉★紙2.6s锛?
+  [PASS] 7.3 婧?techcrunch_ai 鐪熷疄鎶撳彇: [OK] 15 鏉★紙4.1s锛?
+  [PASS] 7.4 婧?openai_news 鐪熷疄鎶撳彇: [OK] 0 鏉★紙15.8s锛?
+  [PASS] 7.5 婧?hackernews 鐪熷疄鎶撳彇: [OK] 52 鏉★紙4.1s锛?
+  [PASS] 7.6 婧?theverge_ai 鐪熷疄鎶撳彇: [OK] 10 鏉★紙2.6s锛?
+  [PASS] 7.7 婧?venturebeat_ai 鐪熷疄鎶撳彇: [OK] 0 鏉★紙3.3s锛?
+  [PASS] 7.8 婧?deepmind_blog 鐪熷疄鎶撳彇: [OK] 1 鏉★紙2.8s锛?
+  [PASS] 7.9 婧?anthropic_news 鐪熷疄鎶撳彇: [OK] 0 鏉★紙3.3s锛?
+  [PASS] 7.10 婧?meta_eng 鐪熷疄鎶撳彇: [OK] 0 鏉★紙3.3s锛?
+  [PASS] 7.11 婧?reddit_ai 鐪熷疄鎶撳彇: [OK] 50 鏉★紙7.4s锛?
+  [PASS] 7.12 婧?arxiv 鐪熷疄鎶撳彇: [ERR] SourceError: 璇锋眰澶辫触: HTTP 429锛?5.7s锛?
+  [PASS] 7.13 婧?jiqizhixin锛堝仠鐢ㄦ簮鐩磋繛灏濊瘯锛? [ERR] SourceError: 閫夋嫨鍣ㄦ湭鍖归厤鍒颁换浣曟潯鐩細li, article
+  [PASS] 7.14 婧?hf_papers锛堝仠鐢ㄦ簮鐩磋繛灏濊瘯锛? [ERR] SourceError: 璇锋眰澶辫触: HTTP 429
+  [NOTE] 鐪熷疄鎶撳彇姹囨€伙細鍚敤婧?11/12 鎴愬姛锛涘惈鍋滅敤婧愬叡 11/14
+
+== m4_sources_live: 14 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_sources_live.json

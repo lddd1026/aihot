@@ -1,0 +1,12 @@
+PASS         m4_net                     31/31
+PASS         m4_adapters                39/39
+PASS         m4_checks                  13/13
+KNOWN(P1/P2) m4_alert                   13/14  澶辫触椤?['4.13 闀垮浘闄嶇骇锛坧artial锛夋槸鍚﹀憡璀︼紙鏈熸湜銆屾覆鏌撳け璐ラ渶鍛婅銆嶏級']
+PASS         m4_drills                  19/19
+PASS         m4_papers                  11/11
+PASS         m4_bat                     19/19
+PASS         m4_sources_live            14/14
+PASS         m4_probe_storage_error     2/2
+PASS         m4_toolchain               9/9
+
+鍚堣 170 passed / 1 failed锛涢潪棰勬湡 FAIL 濂椾欢=[]

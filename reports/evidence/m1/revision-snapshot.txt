@@ -1,0 +1,20 @@
+已记录 17 个文件指纹 → revision-fingerprint.json
+整体指纹 sha256=644aae6dcae59c813c6ef27a1670e3f4ebda238ed3a457aae1e9cb14a5d41f49
+  d7e3b66ad810      63  src\aihot\__init__.py
+  ed50bbd69f7a     117  src\aihot\__main__.py
+  2a49e2d2fc02    5310  src\aihot\checks.py
+  64c269fa2617   12172  src\aihot\cli.py
+  a878eb78cb23   16463  src\aihot\config.py
+  8631c471ff04    4228  src\aihot\logging_setup.py
+  dea9470ccb73    1913  src\aihot\models.py
+  2fd98f6da8d0    3896  src\aihot\net.py
+  7c8e5e9a1c95     391  src\aihot\sources\__init__.py
+  f84fd2866e35    2910  src\aihot\sources\base.py
+  f01e864a05e0    2904  src\aihot\sources\hackernews.py
+  a357578ddfba    4006  src\aihot\sources\registry.py
+  19772345b4f2    2370  src\aihot\sources\rss.py
+  78879eb28b09    7631  src\aihot\store.py
+  607fb330762b    4821  src\aihot\utils.py
+  ea85020f9846     945  pyproject.toml
+  5d4495967d53    4114  config.example.yaml
+All checks passed!

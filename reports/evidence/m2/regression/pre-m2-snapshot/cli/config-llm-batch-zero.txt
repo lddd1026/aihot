@@ -1,0 +1,11 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-1hkwywlt\llm-batch-zero.yaml
+EXIT CODE: 3
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-1hkwywlt\llm-batch-zero.yaml
+
+[ERR] 配置校验未通过（1 个问题）:
+  1. llm.batch_size 必须是 1~50 的整数，实际: 0
+
+--- STDERR ---
+

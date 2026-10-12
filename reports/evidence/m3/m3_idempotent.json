@@ -1,0 +1,65 @@
+{
+  "suite": "m3_idempotent",
+  "passed": 11,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "7.1 首次 run 成功并产生完整推送与存档",
+      "ok": true,
+      "detail": "snapshot={'wecom': 2, 'email': 1, 'llm': 3, 'items': 10, 'digests': 1, 'runs': 3}"
+    },
+    {
+      "item": "7.2 连续重复 run：推送数不增长（不重复推送）",
+      "ok": true,
+      "detail": "wecom 2→2 email 1→1"
+    },
+    {
+      "item": "7.3 连续重复 run：LLM 调用不增长（不重复花钱）",
+      "ok": true,
+      "detail": "llm 3→3"
+    },
+    {
+      "item": "7.4 连续重复 run：条目/日报不重复写入",
+      "ok": true,
+      "detail": "items 10→10 digests 1→1"
+    },
+    {
+      "item": "7.5 连续重复 run：runs 表按阶段留痕（run/fetch 各 +2）且状态 partial",
+      "ok": true,
+      "detail": "run=3 fetch=3 enrich=1 statuses=['partial', 'partial']"
+    },
+    {
+      "item": "7.6 dry-run：不发送 + 三件套产出",
+      "ok": true,
+      "detail": "wecom=2 email=1 files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']"
+    },
+    {
+      "item": "7.7 dry-run：不写 runs 记录",
+      "ok": true,
+      "detail": "runs 7→7"
+    },
+    {
+      "item": "7.8 dry-run 重复执行仍不发送（幂等）",
+      "ok": true,
+      "detail": "wecom=2 email=1"
+    },
+    {
+      "item": "7.9 fetch 重复执行：条目数不变（0 新增）",
+      "ok": true,
+      "detail": [
+        "合计: 抓取 10 条 → 新增 0 条（去重 10 条）→ 库内共 10 条"
+      ]
+    },
+    {
+      "item": "7.10 resend 重复执行：按补发语义每次发送（实测记录）",
+      "ok": true,
+      "detail": "wecom 2→6 email 1→3"
+    },
+    {
+      "item": "7.11 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}"
+    }
+  ],
+  "notes": []
+}

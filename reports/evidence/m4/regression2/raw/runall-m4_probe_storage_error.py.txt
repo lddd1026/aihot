@@ -1,0 +1,4 @@
+  [FAIL] 存档目标被文件占用：无裸 traceback: rc=1 traceback=True
+  [PASS] 存档异常时有企微告警: text_requests=1
+
+== m4_probe_storage_error: 1 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m4\regression2\m4_probe_storage_error.json

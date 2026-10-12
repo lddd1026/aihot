@@ -1,0 +1,53 @@
+{
+  "suite": "m3_infra",
+  "passed": 8,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "fake-llm",
+      "ok": true,
+      "detail": "requests=1"
+    },
+    {
+      "item": "fake-rss",
+      "ok": true,
+      "detail": "bytes=338 hits=1"
+    },
+    {
+      "item": "fake-wecom-http",
+      "ok": true,
+      "detail": "mode=ok"
+    },
+    {
+      "item": "fake-wecom-https",
+      "ok": true,
+      "detail": "tls=True"
+    },
+    {
+      "item": "fake-wecom-connect-proxy",
+      "ok": true,
+      "detail": "requests=1"
+    },
+    {
+      "item": "fake-smtp-starttls",
+      "ok": true,
+      "detail": "messages=1 tls=True"
+    },
+    {
+      "item": "fake-smtp-ssl",
+      "ok": true,
+      "detail": "messages=1"
+    },
+    {
+      "item": "fake-smtp-reject-auth",
+      "ok": true,
+      "detail": "SMTPAuthenticationError raised"
+    },
+    {
+      "item": "fake-service-churn",
+      "ok": false,
+      "detail": "6.85s"
+    }
+  ],
+  "notes": []
+}

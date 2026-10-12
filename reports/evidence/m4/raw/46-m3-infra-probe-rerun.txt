@@ -1,0 +1,11 @@
+  [PASS] fake-llm: requests=1
+  [PASS] fake-rss: bytes=338 hits=1
+  [PASS] fake-wecom-http: mode=ok
+  [PASS] fake-wecom-https: tls=True
+  [PASS] fake-wecom-connect-proxy: requests=1
+  [PASS] fake-smtp-starttls: messages=1 tls=True
+  [PASS] fake-smtp-ssl: messages=1
+  [PASS] fake-smtp-reject-auth: SMTPAuthenticationError raised
+  [FAIL] fake-service-churn: 6.02s
+
+== m3_infra: 8 passed / 1 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m3\m3_infra.json

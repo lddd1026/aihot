@@ -1,0 +1,19 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\idempotent\config.yaml
+exit=0 (10.8s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\idempotent\config.yaml
+11:37:49 INFO aihot.sources: 信息源完成: fake_feed，10 条（61 ms）
+11:37:57 INFO aihot.delivery.wecom: 图片消息（2026-09-25.jpg）已发送（请求体 526366 字节）
+11:37:57 INFO aihot.delivery.wecom: markdown 消息已发送（请求体 2710 字节）
+11:37:57 INFO aihot.delivery.email: 邮件已发送至 receiver@example.com
+
+① 采集: 1/1 源成功，抓取 10 条 → 新增 10 条
+② 加工: 10 条 → 预筛保留 10 → 10 簇；LLM 批次 2（失败 0）· 成本 ¥0.0018
+③ 日报: 2026-09-25 · 精选 10 条 + 简讯 0 条 · 综述 93 字
+④ 渲染: 长图 1 张（2026-09-25.jpg 385 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 企业微信 ✅ · 邮件已启用
+
+状态: ok
+
+--- stderr ---

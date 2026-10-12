@@ -1,0 +1,18 @@
+  [PASS] R2.1 环境 HTTPS_PROXY/HTTP_PROXY/ALL_PROXY 为坏端口时 check --quick 仍 rc=0 且 LLM [OK ]: rc=0；[OK ] LLM API key 已配置
+  [PASS] R2.1b 假 LLM 确实收到探测（/models 命中 ≥1）: models_probes=1
+  [PASS] R2.2 环境代理坏端口下 probe_wecom 仍到达本地假企微（忽略环境代理）: ok=True；detail=errcode=0（完全正常）
+  [PASS] R2.3 环境代理坏端口下 probe_llm 仍到达本地假 LLM: ok=True；detail=HTTP 200（鉴权通过）
+  [PASS] R2.4 环境代理坏端口下 net.HttpClient(proxy=None) 仍直连本地假 RSS: ok=True；status=200；hits=1
+  [PASS] R2.5 环境代理坏端口下 WeComNotifier 推送仍到达本地假企微: text_requests=1
+  [PASS] R2.6 反证：目标端口关闭时 probe_wecom 失败（不是永远成功）: ok=False；detail=请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+  [PASS] R2.6b 反证：目标端口关闭时 WeComNotifier 抛 NotifyError: raised=NotifyError
+  [PASS] R2.7 企微不可用（本地关闭端口）→ 自动改用邮件送达: channels=['邮件']；errors=['企业微信: 文本消息发送失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。']；messages=1
+  [PASS] P2-1 alert 渠道全灭：rc=1 且输出含「未启用」「本地兜底」（不再静默）: rc=1；stdout='[WARN] 告警未送达：可用通道均失败或未启用，已写入本地兜底（本地文件(ALERTS.log)）'
+  [PASS] P2-1b skip 路径不受影响：rc=0 且打印通道为本地文件: rc=0；stdout='[OK] 已记录跳过（通道: 本地文件(ALERTS.log)）'
+  [PASS] P2-1c 两条命令的兜底告警都写入 logs/ALERTS.log（含哨兵）: ALERTS.log 行数=5
+  [PASS] R2.9 真实库/存档未被本套件改动: 真实库快照一致
+
+== m5r_round2_proxy: 13 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m5r\round2\m5r_round2_proxy.json
+
+--- stderr ---
+告警通道失败: 企业微信: 文本消息发送失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。

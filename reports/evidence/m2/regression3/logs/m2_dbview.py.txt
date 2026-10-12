@@ -1,0 +1,161 @@
+{
+  "db": "D:\\信息收集整理\\aihot\\data\\aihot.db",
+  "items_count": 176,
+  "clusters_count": 101,
+  "digests_count": 0,
+  "runs_count": 5,
+  "enriched": 176,
+  "pending": 0,
+  "by_source": [
+    {
+      "source_id": "hackernews",
+      "n": 105
+    },
+    {
+      "source_id": "infoq_cn",
+      "n": 23
+    },
+    {
+      "source_id": "openai_news",
+      "n": 10
+    },
+    {
+      "source_id": "qbitai",
+      "n": 11
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "n": 27
+    }
+  ],
+  "by_category": [
+    {
+      "category": "过滤",
+      "n": 71
+    },
+    {
+      "category": "行业动态",
+      "n": 34
+    },
+    {
+      "category": "产品更新",
+      "n": 21
+    },
+    {
+      "category": "其他",
+      "n": 13
+    },
+    {
+      "category": "模型发布",
+      "n": 10
+    },
+    {
+      "category": "开源工具",
+      "n": 9
+    },
+    {
+      "category": "研究突破",
+      "n": 8
+    },
+    {
+      "category": "政策监管",
+      "n": 6
+    },
+    {
+      "category": "融资商业",
+      "n": 4
+    }
+  ],
+  "clusters_top": [
+    {
+      "cluster_id": 8,
+      "mention_count": 3,
+      "source_ids": "[\"hackernews\", \"infoq_cn\"]",
+      "canonical_title": "Claude Opus 5.5"
+    },
+    {
+      "cluster_id": 79,
+      "mention_count": 3,
+      "source_ids": "[\"hackernews\", \"openai_news\", \"techcrunch_ai\"]",
+      "canonical_title": "Introducing GPT-6 Sol and Luna"
+    },
+    {
+      "cluster_id": 1,
+      "mention_count": 1,
+      "source_ids": "[\"infoq_cn\"]",
+      "canonical_title": "利用 AI 搭建内部开发者平台"
+    },
+    {
+      "cluster_id": 2,
+      "mention_count": 1,
+      "source_ids": "[\"techcrunch_ai\"]",
+      "canonical_title": "Everything new coming to Meta’s AI agent Muse"
+    },
+    {
+      "cluster_id": 3,
+      "mention_count": 1,
+      "source_ids": "[\"qbitai\"]",
+      "canonical_title": "成立九年，中科类脑把积累装进Token工厂"
+    },
+    {
+      "cluster_id": 4,
+      "mention_count": 1,
+      "source_ids": "[\"techcrunch_ai\"]",
+      "canonical_title": "Meta made a Tamagotchi-like wearable for its Muse AI agent"
+    },
+    {
+      "cluster_id": 5,
+      "mention_count": 1,
+      "source_ids": "[\"techcrunch_ai\"]",
+      "canonical_title": "Meta introduces camera-free AI glasses"
+    },
+    {
+      "cluster_id": 6,
+      "mention_count": 1,
+      "source_ids": "[\"infoq_cn\"]",
+      "canonical_title": "从“单目感知”到“多视角立体对齐”：PrismAlign 重新定义文档结构化提取的精度上限"
+    },
+    {
+      "cluster_id": 7,
+      "mention_count": 1,
+      "source_ids": "[\"hackernews\"]",
+      "canonical_title": "ArXiv receives multiyear commitments to support it as an independent nonprofit"
+    },
+    {
+      "cluster_id": 9,
+      "mention_count": 1,
+      "source_ids": "[\"techcrunch_ai\"]",
+      "canonical_title": "Anthropic says its biology lab has already found something big"
+    },
+    {
+      "cluster_id": 10,
+      "mention_count": 1,
+      "source_ids": "[\"hackernews\"]",
+      "canonical_title": "Mercury 2.5 LLM hits 770 tokens per second"
+    },
+    {
+      "cluster_id": 11,
+      "mention_count": 1,
+      "source_ids": "[\"infoq_cn\"]",
+      "canonical_title": "人人都在造世界模型，HappyWorld‑Bench 试着给出一张统一考卷"
+    },
+    {
+      "cluster_id": 12,
+      "mention_count": 1,
+      "source_ids": "[\"infoq_cn\"]",
+      "canonical_title": "4096 张卡如何成为“一台计算机”？读懂华为的超节点布局"
+    },
+    {
+      "cluster_id": 13,
+      "mention_count": 1,
+      "source_ids": "[\"hackernews\"]",
+      "canonical_title": "Claude's Load-Bearing Seams"
+    },
+    {
+      "cluster_id": 14,
+      "mention_count": 1,
+      "source_ids": "[\"hackernews\"]",
+      "canonical_title": "OpenAI agents hacked Australian Medicare system"
+    }
+  ]
+}

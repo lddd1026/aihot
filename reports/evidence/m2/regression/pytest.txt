@@ -1,0 +1,31 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\信息收集整理\aihot
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collected 323 items
+
+tests\unit\test_cli.py ...................                               [  5%]
+tests\unit\test_compose.py ..............                                [ 10%]
+tests\unit\test_config.py .............................................  [ 24%]
+tests\unit\test_dedup.py ..............................                  [ 33%]
+tests\unit\test_delivery.py ...............                              [ 38%]
+tests\unit\test_enrich.py .........................................      [ 50%]
+tests\unit\test_logging.py .......                                       [ 52%]
+tests\unit\test_m4_fixes.py .........                                    [ 55%]
+tests\unit\test_net.py .........                                         [ 58%]
+tests\unit\test_prefilter.py .............                               [ 62%]
+tests\unit\test_rank.py ..............                                   [ 66%]
+tests\unit\test_registry.py .....                                        [ 68%]
+tests\unit\test_render_image.py ..........                               [ 71%]
+tests\unit\test_render_text.py ..........                                [ 74%]
+tests\unit\test_runner.py ....                                           [ 75%]
+tests\unit\test_sources_base.py ............                             [ 79%]
+tests\unit\test_sources_hackernews.py ...                                [ 80%]
+tests\unit\test_sources_m4.py ............                               [ 84%]
+tests\unit\test_sources_rss.py .....                                     [ 85%]
+tests\unit\test_store.py ...............                                 [ 90%]
+tests\unit\test_utils.py ...............................                 [100%]
+
+============================ 323 passed in 53.80s =============================

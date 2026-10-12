@@ -1,0 +1,12 @@
+PASS         m4_net                     31/31
+PASS         m4_adapters                39/39
+PASS         m4_checks                  13/13
+KNOWN(P1/P2) m4_alert                   13/14  失败项=['4.13 长图降级（partial）是否告警（期望「渲染失败需告警」）']
+PASS         m4_drills                  19/19
+PASS         m4_papers                  11/11
+PASS         m4_bat                     19/19
+PASS         m4_sources_live            14/14
+PASS         m4_probe_storage_error     2/2
+PASS         m4_toolchain               9/9
+
+合计 170 passed / 1 failed；非预期 FAIL 套件=[]

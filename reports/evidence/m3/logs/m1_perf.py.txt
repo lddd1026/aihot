@@ -1,0 +1,9 @@
+  [NOTE] 真实启用源 12 个: ['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews', 'theverge_ai', 'venturebeat_ai', 'deepmind_blog', 'anthropic_news', 'meta_eng', 'reddit_ai', 'arxiv']
+  [FAIL] 4-5源全量采集2分钟内: 实测 32.5s（阈值 120s），源 11/12 OK，抓取 151 条 → 新增 151 条（批内/跨源去重 0）→ 库内 151 条，runs.status=partial
+  [PASS] 5-真实数据字段完整+extra合法JSON: 检查 151 行，问题 0 个
+  [PASS] 5-HN条目extra含points/评论数: HN 抽样 3 条，extra 键包含 points/num_comments/hn_id/hn_url=True
+  [PASS] 2-真实数据二次采集幂等: 二次新增=0 条（期间真实新发布可能>0），唯一键=151 总=151
+  [PASS] 4b-真实config dry-run真实库零写入: rc=0 真实库快照 363/9 → 363/9
+  [PASS] 4c-真实运行输出不含密钥: 扫描 2 个真实密钥：泄漏 无
+
+== perf: 5 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\perf.json

@@ -1,0 +1,8 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check extra
+EXIT CODE: 2
+--- STDOUT ---
+
+--- STDERR ---
+usage: aihot [-h] [--config CONFIG] [--debug] [--version] 命令 ...
+aihot: error: unrecognized arguments: extra
+

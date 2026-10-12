@@ -1,0 +1,13 @@
+  [PASS] 8.1 璁烘枃绮鹃€?鈮?2 绡?澶? papers=2
+  [PASS] 8.2 璁烘枃涓嶅崰 Top 鍚嶉锛圱op 浠?12 鏉′笖鍏ㄦ槸闈炶鏂囷級: top=12 papers_in_top=0
+  [PASS] 8.3 璁烘枃鍦?stats 涓崟鐙鏁? stats.papers=2
+  [PASS] 8.4 绮鹃€?2 绡囦负鎺掑悕鏈€楂樼殑璁烘枃锛堝惈 HF锛? sources=['hf_papers', 'hf_papers']
+  [PASS] 8.5 浼佸井 markdown 鍚€岎煍?璁烘枃绮鹃€夈€嶄笌灏忚妭鏉＄洰: parts=1
+  [PASS] 8.6 浼佸井璁烘枃鏉＄洰鏍囨敞鏉ユ簮锛坅rXiv / Hugging Face锛? note 鏍囨敞瀛樺湪
+  [PASS] 8.7 閭欢 HTML 鍚€岎煍?璁烘枃绮鹃€夈€嶄笌灏忚妭鏉＄洰: html=13880 bytes
+  [PASS] 8.8 瀛樻。 markdown 鍚€?# 璁烘枃绮鹃€夈€嶄笌灏忚妭鏉＄洰: archive md 榻愬叏
+  [PASS] 8.9 闀垮浘 HTML 鍚鏂囩簿閫夋澘鍧? image html 鍚鏂?
+  [PASS] 8.10 闀垮浘瀹為檯娓叉煋鎴愬姛锛圝PEG锛? paths=[WindowsPath('C:/Users/LEGION/AppData/Local/Temp/aihot-m3-tests/work/m4-papers-image/2026-09-25.jpg')]
+  [PASS] 8.11 闀垮浘 OCR 瀹炴祴璇嗗埆鍒般€岃鏂囩簿閫夈€嶆垨璁烘枃鏍囬: ocr_chars=1628锛涘懡涓鏂囩簿閫?True锛涘懡涓爣棰?['璁烘枃绮鹃€夌嫭绔嬮獙璇?Paper', '璁烘枃绮鹃€夌嫭绔嬮獙璇?Paper']
+
+== m4_papers: 11 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_papers.json

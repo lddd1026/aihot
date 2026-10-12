@@ -1,0 +1,67 @@
+[
+  {
+    "name": "redaction-no-plaintext",
+    "ok": true,
+    "detail": "文件+控制台均无明文"
+  },
+  {
+    "name": "noisy-httpx-loggers-suppressed",
+    "ok": true,
+    "detail": "httpx/httpcore INFO/DEBUG 记录数=0"
+  },
+  {
+    "name": "json-lines-valid",
+    "ok": true,
+    "detail": "6 行全部可解析"
+  },
+  {
+    "name": "json-extra-fields-redacted",
+    "ok": true,
+    "detail": "source_id=***"
+  },
+  {
+    "name": "exception-stack-redacted",
+    "ok": true,
+    "detail": "exc 字段长度=200"
+  },
+  {
+    "name": "single-handler-no-duplicate",
+    "ok": true,
+    "detail": "console 记录数=6, file 行数=6"
+  },
+  {
+    "name": "setup-logging-idempotent",
+    "ok": true,
+    "detail": "root.handlers=2, 文件行数=1, 控制台行数=1"
+  },
+  {
+    "name": "rotation-params",
+    "ok": true,
+    "detail": "maxBytes=5242880, backupCount=7, encoding=utf-8"
+  },
+  {
+    "name": "forced-rotation",
+    "ok": true,
+    "detail": "aihot.log.1 存在=True, 当前文件大小=817371"
+  },
+  {
+    "name": "chinese-emoji-json-roundtrip",
+    "ok": true,
+    "detail": "msg='一致'"
+  },
+  {
+    "name": "redact-text-patterns",
+    "ok": true,
+    "detail": "全部命中"
+  },
+  {
+    "name": "observation-extra-handler",
+    "ok": true,
+    "detail": "额外插入的未过滤 handler（顺序最前）会写出明文，属调用方责任，非产品缺陷"
+  },
+  {
+    "name": "probe-error-text-redacted",
+    "ok": true,
+    "detail": "masked=ConnectError: All connection attempts failed for ***"
+  }
+]

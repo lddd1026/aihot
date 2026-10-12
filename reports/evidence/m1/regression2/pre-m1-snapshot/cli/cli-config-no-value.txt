@@ -1,0 +1,8 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config
+EXIT CODE: 2
+--- STDOUT ---
+
+--- STDERR ---
+usage: aihot check [-h] [--net] [--config CONFIG] [--debug]
+aihot check: error: argument --config: expected one argument
+

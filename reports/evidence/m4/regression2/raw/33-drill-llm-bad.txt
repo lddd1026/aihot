@@ -1,0 +1,23 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-llm-bad\config.yaml
+exit=0 (8.4s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-drill-llm-bad\config.yaml
+11:48:09 INFO aihot.sources: 信息源完成: good_feed，12 条（51 ms）
+11:48:11 WARNING aihot.enrich: 批次加工失败（降级为原文）: AuthenticationError: Error code: 401 - {'error': 'invalid api key'}
+11:48:11 WARNING aihot.enrich: 批次加工失败（降级为原文）: AuthenticationError: Error code: 401 - {'error': 'invalid api key'}
+11:48:11 WARNING aihot.enrich: 批次加工失败（降级为原文）: AuthenticationError: Error code: 401 - {'error': 'invalid api key'}
+11:48:11 WARNING aihot.enrich: 综述生成失败: AuthenticationError: Error code: 401 - {'error': 'invalid api key'}
+11:48:11 WARNING aihot.enrich: 综述生成失败: AuthenticationError: Error code: 401 - {'error': 'invalid api key'}
+11:48:16 INFO aihot.delivery.wecom: 图片消息（2026-09-25.jpg）已发送（请求体 399702 字节）
+11:48:16 INFO aihot.delivery.wecom: markdown 消息已发送（请求体 1988 字节）
+
+① 采集: 1/1 源成功，抓取 12 条 → 新增 12 条
+② 加工: 12 条 → 预筛保留 12 → 12 簇；LLM 批次 3（失败 3）· 成本 ¥0.0000
+③ 日报: 2026-09-25 · 精选 12 条 + 简讯 0 条 · 无综述
+④ 渲染: 长图 1 张（2026-09-25.jpg 292 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 企业微信 ✅ · 邮件未启用
+
+状态: ok
+
+--- stderr ---

@@ -1,0 +1,11 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-urledge-z1il_5b_\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:23:18+08:00）
+信息源  : 1 个
+
+21:23:19 INFO aihot.sources: 信息源完成: weird，4 条（22 ms）
+采集结果:
+  [OK ] weird              4 条（22 ms）
+
+合计: 抓取 4 条 → 新增 4 条（去重 0 条）→ 库内共 4 条

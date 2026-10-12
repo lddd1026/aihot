@@ -1,0 +1,177 @@
+{
+  "config.example.yaml": {
+    "mtime": "2026-09-24T20:41:02",
+    "sha256": "87c4239539065eb47d2aa2daa7ba3b4573306aa66ce0b87312c8ae598b7607ec",
+    "size": 5657
+  },
+  "pyproject.toml": {
+    "mtime": "2026-09-23T21:33:44",
+    "sha256": "bd089952d42b4e9e6454ed64eb3a9f88c2b4f937f457becb09e94e85cc2a8265",
+    "size": 968
+  },
+  "src\\aihot\\__init__.py": {
+    "mtime": "2026-09-23T18:36:32",
+    "sha256": "d7e3b66ad8108d123e088252eed2e8af4d9f06961dde09b257c398d5e9066e6b",
+    "size": 63
+  },
+  "src\\aihot\\__main__.py": {
+    "mtime": "2026-09-23T18:36:32",
+    "sha256": "ed50bbd69f7a3981f165a656946d8dd3cff8cd6a55694d14d5e5f8ba8e67a5c4",
+    "size": 117
+  },
+  "src\\aihot\\checks.py": {
+    "mtime": "2026-09-25T11:29:34",
+    "sha256": "60a8888c81c759a1ff51e66f84d63e36b80c4061458bd405e9b140ff7aef939b",
+    "size": 7229
+  },
+  "src\\aihot\\cli.py": {
+    "mtime": "2026-09-24T20:44:31",
+    "sha256": "440540914f83333d9f43d76ab29b62b01b3118224af1031dbb2cff26a2c40c3d",
+    "size": 23349
+  },
+  "src\\aihot\\config.py": {
+    "mtime": "2026-09-24T18:00:30",
+    "sha256": "e163f7c41bab876b206d21eaa5766b1905d5053ce211d58d472f2f7297d6f6a9",
+    "size": 23640
+  },
+  "src\\aihot\\delivery\\__init__.py": {
+    "mtime": "2026-09-24T12:52:32",
+    "sha256": "e66598ae4d164f4588c4dbb22405ad71fee7cf63c1bc13289d74ae7b405f88c1",
+    "size": 252
+  },
+  "src\\aihot\\delivery\\base.py": {
+    "mtime": "2026-09-24T12:51:05",
+    "sha256": "ed701f80f748ca417f7511a6246f558b65d58b4835bc9461333e53b824b88707",
+    "size": 348
+  },
+  "src\\aihot\\delivery\\email.py": {
+    "mtime": "2026-09-24T17:53:16",
+    "sha256": "26cfb214325b3e8bceb35f9ad37b715fc3d59232a26586a82b5d7b3ef3722528",
+    "size": 3250
+  },
+  "src\\aihot\\delivery\\wecom.py": {
+    "mtime": "2026-09-24T12:57:17",
+    "sha256": "77c4398ccab6f64c3a54e0b2610c8a41cd5ccbcd149f7a2d5f6c459ad7890e20",
+    "size": 3232
+  },
+  "src\\aihot\\logging_setup.py": {
+    "mtime": "2026-09-23T18:41:42",
+    "sha256": "8631c471ff048dbce4084374dbc05f884cffc816b3cc36ab77e199c898d51266",
+    "size": 4228
+  },
+  "src\\aihot\\models.py": {
+    "mtime": "2026-09-24T12:53:15",
+    "sha256": "97e4cfc6171bbf81ddcd95141fe5091565d228d579b605c02c609d2e00667736",
+    "size": 3353
+  },
+  "src\\aihot\\net.py": {
+    "mtime": "2026-09-25T09:50:27",
+    "sha256": "623afb3d95fd934e5861ac20bf137b172937fcd0bd48af09fbbcf7b0200fed24",
+    "size": 4642
+  },
+  "src\\aihot\\pipeline\\__init__.py": {
+    "mtime": "2026-09-24T17:46:06",
+    "sha256": "ccf06f4328da3da3ff3e65cf372e259303623f0d659fb0a3d2352c293c90f39b",
+    "size": 987
+  },
+  "src\\aihot\\pipeline\\dedup.py": {
+    "mtime": "2026-09-24T10:31:23",
+    "sha256": "e197e252b8758a925b1d78a34eb55f64e714d7bce47218e4994d47e992290e45",
+    "size": 12559
+  },
+  "src\\aihot\\pipeline\\enrich.py": {
+    "mtime": "2026-09-24T17:51:54",
+    "sha256": "c4c6109f6373caddbd4eca5442504605f82c0ed16c15e7633686268c0b9b5b57",
+    "size": 18639
+  },
+  "src\\aihot\\pipeline\\prefilter.py": {
+    "mtime": "2026-09-24T11:10:12",
+    "sha256": "0fa145378d22231d38907962df182a6fd0eb2890420757acb6bebe473914e37a",
+    "size": 6478
+  },
+  "src\\aihot\\pipeline\\prompts.py": {
+    "mtime": "2026-09-24T10:31:39",
+    "sha256": "5fd8546d6aa70fd0d15b344848ff44c397af5b4ba8886fbcf4108c6407254484",
+    "size": 3889
+  },
+  "src\\aihot\\pipeline\\rank.py": {
+    "mtime": "2026-09-24T09:23:32",
+    "sha256": "ba70125543ef927d1ea1a0d41341dff9afd0d84ededf60242527a1d83cfbd9a9",
+    "size": 3236
+  },
+  "src\\aihot\\presentation\\__init__.py": {
+    "mtime": "2026-09-24T12:49:38",
+    "sha256": "fa3ba9885dc34754ee4896b0ec899742521554155667ac4d8aaa011754790b42",
+    "size": 829
+  },
+  "src\\aihot\\presentation\\compose.py": {
+    "mtime": "2026-09-24T20:39:35",
+    "sha256": "dedd18b9e32fdf73b434824dbce0e3e19cbfeb717ffc19b96121e930c52af78a",
+    "size": 4919
+  },
+  "src\\aihot\\presentation\\render_image.py": {
+    "mtime": "2026-09-24T20:40:01",
+    "sha256": "b10110a1015fd5fac84e3c9d83d559b1ea98455f88ff45ccce8a92321bce3eb8",
+    "size": 6709
+  },
+  "src\\aihot\\presentation\\render_text.py": {
+    "mtime": "2026-09-25T11:29:34",
+    "sha256": "74c84d19d234d60981b7d4752c9222a65a10b073dc01ad5893d98fd2aaf8cdf5",
+    "size": 8493
+  },
+  "src\\aihot\\runner.py": {
+    "mtime": "2026-09-25T11:28:59",
+    "sha256": "2d06eb37f7948d40a663839e2ec194451111aef5fd85e88b4e73dd38b9fb5ee5",
+    "size": 22603
+  },
+  "src\\aihot\\sources\\__init__.py": {
+    "mtime": "2026-09-25T09:56:47",
+    "sha256": "baf5e6611815281ac67c240020342ff563834b82b1605d524373c543c5274df0",
+    "size": 623
+  },
+  "src\\aihot\\sources\\arxiv.py": {
+    "mtime": "2026-09-24T20:39:10",
+    "sha256": "0f245e45880010aaa7326630bd6f0e8c72110c59709cf1634e7b61a13c3210d8",
+    "size": 2659
+  },
+  "src\\aihot\\sources\\base.py": {
+    "mtime": "2026-09-24T20:39:10",
+    "sha256": "70baa00590ecad731cb48ae3c3fb6b001a2eba6ce6d89218f48baa855a0f71d0",
+    "size": 3312
+  },
+  "src\\aihot\\sources\\hackernews.py": {
+    "mtime": "2026-09-23T20:42:16",
+    "sha256": "f01e864a05e0c54f0ce1d64970147e74f22390fc3896a0822b74762937709dbb",
+    "size": 2904
+  },
+  "src\\aihot\\sources\\hf_papers.py": {
+    "mtime": "2026-09-25T09:51:06",
+    "sha256": "52f5c2da78440cbdc2ef942c5bff7b2835c06938d36f142f136e03d1f64317c8",
+    "size": 2746
+  },
+  "src\\aihot\\sources\\html.py": {
+    "mtime": "2026-09-25T11:29:34",
+    "sha256": "9dda63bef54a1c6c67e9a78114cd66202bbc982edeee18876107acd8d231bac5",
+    "size": 4045
+  },
+  "src\\aihot\\sources\\registry.py": {
+    "mtime": "2026-09-25T09:56:47",
+    "sha256": "9451cff5de29ba5862b07f7bacf6e4dba5c436c2df10154cf19710d028d10231",
+    "size": 4261
+  },
+  "src\\aihot\\sources\\rss.py": {
+    "mtime": "2026-09-24T20:39:20",
+    "sha256": "bb91dcd94c4fbb638d8851514e27b5799c77e855e8a36b7fbc622f867b324614",
+    "size": 2162
+  },
+  "src\\aihot\\store.py": {
+    "mtime": "2026-09-24T12:55:00",
+    "sha256": "c35572823323428b14941e1d56d6c0167fd6a51eaafa40bbaa8fcca445699811",
+    "size": 16885
+  },
+  "src\\aihot\\utils.py": {
+    "mtime": "2026-09-23T21:23:45",
+    "sha256": "607fb330762ba99979c7dcb4ec354ed0242c4d0c6e9072092a683df4b268df2c",
+    "size": 4821
+  }
+}

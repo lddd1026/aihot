@@ -1,0 +1,113 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\cost-5a-calc\config.yaml --limit 100 --top 3
+exit=0 (3.1s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\cost-5a-calc\config.yaml
+
+待加工: 10 条（上限 100）
+
+预筛:
+  输入 10 → 保留 10（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 10 条 → 10 簇（多源簇 0 · 最大簇 1 条）
+
+Top 3:
+   1. [ 54.8] (模型发布) 中文标题 1
+      摘要 1
+      提及 1 条 · 来源 1 家
+   2. [ 54.8] (模型发布) 中文标题 2
+      摘要 2
+      提及 1 条 · 来源 1 家
+   3. [ 54.8] (模型发布) 中文标题 3
+      摘要 3
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 2（失败 0）· token 200000+100000 · 成本约 ¥1.2000
+
+已写回: 10 条加工 · 0 条标记为过滤 · 10 个事件簇
+
+--- stderr ---
+
+--- llm requests: 2 ---
+[
+  {
+    "url": "https://example.com/cost/0",
+    "title": "OpenAI ships GPT-6 Sol（第 0 条）",
+    "cn_title": "中文标题 1",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/1",
+    "title": "Anthropic releases Claude Opus 6（第 1 条）",
+    "cn_title": "中文标题 2",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/2",
+    "title": "Meta open-sources Llama-9（第 2 条）",
+    "cn_title": "中文标题 3",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/3",
+    "title": "DeepSeek publishes V5 report（第 3 条）",
+    "cn_title": "中文标题 4",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/4",
+    "title": "Google announces Gemini 8 Ultra（第 4 条）",
+    "cn_title": "中文标题 5",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/5",
+    "title": "Mistral launches Le Chat Enterprise（第 5 条）",
+    "cn_title": "中文标题 1",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/6",
+    "title": "Cohere releases Command R10（第 6 条）",
+    "cn_title": "中文标题 2",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/7",
+    "title": "Perplexity ships Comet 2（第 7 条）",
+    "cn_title": "中文标题 3",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/8",
+    "title": "Hugging Face launches datasets v9（第 8 条）",
+    "cn_title": "中文标题 4",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  },
+  {
+    "url": "https://example.com/cost/9",
+    "title": "arXiv benchmarks multimodal agents（第 9 条）",
+    "cn_title": "中文标题 5",
+    "category": "模型发布",
+    "importance": 70,
+    "enriched_at": "2026-09-24T03:44:00.554833+00:00"
+  }
+]

@@ -1,0 +1,32 @@
+--- m4_net.py
+    exit=0 (27.2s)
+--- m4_adapters.py
+    exit=0 (39.6s)
+--- m4_checks.py
+    exit=0 (53.3s)
+--- m4_alert.py
+    exit=1 (19.7s)
+--- m4_drills.py
+    exit=0 (47.8s)
+--- m4_papers.py
+    exit=0 (8.4s)
+--- m4_bat.py
+    exit=0 (101.4s)
+--- m4_sources_live.py
+    exit=0 (128.8s)
+--- m4_probe_storage_error.py
+    exit=1 (3.6s)
+--- m4_toolchain.py
+    exit=1 (58.2s)
+PASS         m4_net                     31/31
+PASS         m4_adapters                39/39
+PASS         m4_checks                  13/13
+FAIL         m4_alert                   13/14  失败项=['4.13 长图降级（partial）是否告警（期望「渲染失败需告警」）']
+PASS         m4_drills                  19/19
+PASS         m4_papers                  11/11
+PASS         m4_bat                     19/19
+PASS         m4_sources_live            14/14
+FAIL         m4_probe_storage_error     1/2  失败项=['存档目标被文件占用：无裸 traceback']
+FAIL         m4_toolchain               7/9  失败项=['10.1 ruff check . 零告警（rc=0）', '10.6 M0-M3 回归无非预期 FAIL（滞后/漂移项已逐一定位）']
+
+合计 167 passed / 4 failed；非预期 FAIL 套件=['m4_alert', 'm4_probe_storage_error', 'm4_toolchain']

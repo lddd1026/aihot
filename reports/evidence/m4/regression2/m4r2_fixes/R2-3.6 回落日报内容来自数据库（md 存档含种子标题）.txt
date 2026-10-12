@@ -1,0 +1,24 @@
+# AI 热点日报 · 2026年9月25日 星期五
+
+## 今日综述
+
+今日 AI 领域以模型发布与开源工具为主：多家厂商更新了推理模型与端侧方案，开源社区发布了新的推理框架；研究侧出现了关于长上下文与多模态对齐的新进展，产业侧则集中在算力供给与合规落地上。
+
+## 今日必读
+
+1. **[R2 dry-run 回落条目 1](https://example.com/r2dry/1)** — 模型发布 · 单篇报道
+   - 摘要 1
+2. **[R2 dry-run 回落条目 2](https://example.com/r2dry/2)** — 模型发布 · 单篇报道
+   - 摘要 2
+3. **[R2 dry-run 回落条目 3](https://example.com/r2dry/3)** — 模型发布 · 单篇报道
+   - 摘要 3
+
+## 其他值得一看
+
+- [R2 dry-run 回落条目 4](https://example.com/r2dry/4)（模型发布）
+- [R2 dry-run 回落条目 5](https://example.com/r2dry/5)（模型发布）
+- [R2 dry-run 回落条目 6](https://example.com/r2dry/6)（模型发布）
+- [R2 dry-run 回落条目 7](https://example.com/r2dry/7)（模型发布）
+
+---
+共扫描 7 条 · 筛出 7 个事件 · 精选 3 条 · 成本 ¥0.0006

@@ -1,0 +1,6 @@
+  [PASS] socks5-check 配置校验 rc=0 且无导入错误: rc=0（期望 0），ImportError/Traceback=无
+  [PASS] socks5-check --net 代理不可达=干净[ERR]: rc=1（期望 1），含[ERR]代理=True，ImportError/Traceback=无
+  [PASS] socks5-fetch 代理不可达=干净失败: rc=1（期望 1），ImportError/Traceback=无
+  [PASS] socks5-依赖可用（socksio 已安装）: import socksio 成功（pyproject 已声明 socksio>=1.0,<2）
+
+== socks5: 4 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression\m1\socks5.json

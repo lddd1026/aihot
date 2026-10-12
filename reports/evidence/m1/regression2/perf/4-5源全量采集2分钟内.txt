@@ -1,0 +1,46 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-perf-fu3c6j__\config.yaml --limit 10
+exit=0 (4.2s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-perf-fu3c6j__\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:47:41+08:00）
+信息源  : 5 个
+
+21:47:43 INFO aihot.sources: 信息源完成: qbitai，10 条（104 ms）
+21:47:43 INFO aihot.sources: 信息源完成: infoq_cn，17 条（143 ms）
+21:47:43 INFO aihot.sources: 信息源完成: techcrunch_ai，14 条（687 ms）
+21:47:44 INFO aihot.sources: 信息源完成: openai_news，4 条（1297 ms）
+21:47:44 INFO aihot.sources: 信息源完成: hackernews，59 条（1840 ms）
+采集结果:
+  [OK ] hackernews         59 条（1840 ms）
+  [OK ] infoq_cn           17 条（143 ms）
+  [OK ] openai_news        4 条（1297 ms）
+  [OK ] qbitai             10 条（104 ms）
+  [OK ] techcrunch_ai      14 条（687 ms）
+
+合计: 抓取 104 条 → 新增 103 条（去重 1 条）→ 库内共 103 条
+
+最新条目预览（前 10 条）:
+   1. [infoq_cn] 2026 年的云栖，阿里给 AI 行业递了一把新尺子
+      https://www.infoq.cn/article/zSPQbRwmS0AGpeTAhu9r（09-24 03:51）
+   2. [infoq_cn] AI 改变跨平台开发取舍，Shopify 弃用 React Native，改用 Swift 和 Kotlin
+      https://www.infoq.cn/article/2FFH5EHF2SMusaYQhjlX（09-24 01:00）
+   3. [infoq_cn] Dropbox 升级 Riviera 平台，支持 AI 工作负载
+      https://www.infoq.cn/article/jJAcfJO5e0ElPhIxwwxo（09-23 23:47）
+   4. [infoq_cn] 智谱把 ZCode 开源了，然后呢？
+      https://www.infoq.cn/article/qEHi6k5ycwXUiasvfNKH（09-23 22:43）
+   5. [infoq_cn] 大语言模型：下一代 DSL 编写者
+      https://www.infoq.cn/article/fZRdzxQYpaTS2sQSqpVk（09-23 21:22）
+   6. [hackernews] I Don't Want the Details
+      https://michaelheap.com/i-dont-want-the-details（09-23 21:04）
+   7. [techcrunch_ai] Spotify’s is giving you the keys to its recommendation algorithm with …
+      https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile（09-23 21:00）
+   8. [openai_news] OpenAI extends cyber access to Ukraine for civilian defense
+      https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense（09-23 21:00）
+   9. [hackernews] Samsung accidentally freezes its smart fridges with a software update
+      https://www.androidauthority.com/samsung-accidentally-freezes-its-smart-fridges-with-a-software-update-3714472（09-23 20:57）
+  10. [hackernews] OpenAI is enlisting an influencer army to make it look 'good for the w…
+      https://www.businessinsider.com/inside-open-ai-influencer-marketing-strategy-chatgpt-ads-sponsorships-instagram-2026-9（09-23 20:32）
+
+--- stderr ---

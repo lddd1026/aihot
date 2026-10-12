@@ -1,0 +1,78 @@
+{
+  "suite": "m5r_preflight",
+  "passed": 14,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "1.1 代理指向坏端口时 check --quick 退出码=0（不拦截运行）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "1.2 代理项是 [WARN]（可降级），不是 [ERR]",
+      "ok": true,
+      "detail": "[WARN] 代理: 连接失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（将降级为直连，墙外源可能缺失）（2028 ms）"
+    },
+    {
+      "item": "1.2b 代理提示语含「降级」字样（用户可知情）",
+      "ok": true,
+      "detail": "[WARN] 代理: 连接失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（将降级为直连，墙外源可能缺失）（2028 ms）"
+    },
+    {
+      "item": "1.3 输出明确说明可降级失败不阻断",
+      "ok": true,
+      "detail": "[WARN] 1 项可降级失败：代理不可用时自动降级为直连，继续运行"
+    },
+    {
+      "item": "1.4 同一次运行：企业微信 webhook = [OK ]",
+      "ok": true,
+      "detail": "[OK ] 企业微信 webhook: errcode=0（完全正常）（74 ms）"
+    },
+    {
+      "item": "1.5 同一次运行：LLM API = [OK ]",
+      "ok": true,
+      "detail": "[OK ] LLM API: HTTP 200（鉴权通过）（25 ms）"
+    },
+    {
+      "item": "2.1 企微探测确实到达本地假企微（CONNECT+GET 记录）",
+      "ok": true,
+      "detail": "CONNECT=1 GET=1"
+    },
+    {
+      "item": "2.2 LLM 探测确实到达本地假 LLM（/models 探测 ≥1）",
+      "ok": true,
+      "detail": "models_probes=1"
+    },
+    {
+      "item": "2.3 假服务关闭后 check --quick 退出码=1（不是假装成功）",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "2.4 假服务关闭后企微项 [ERR]",
+      "ok": true,
+      "detail": "[ERR] 企业微信 webhook: 请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（2080 ms）"
+    },
+    {
+      "item": "2.5 假服务关闭后 LLM 项 [ERR]",
+      "ok": true,
+      "detail": "[ERR] LLM API: 请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（2047 ms）"
+    },
+    {
+      "item": "C.1（残余风险探针）环境 HTTPS_PROXY 为坏端口时企微探测也失败",
+      "ok": true,
+      "detail": "[ERR] 企业微信 webhook: 请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（2096 ms） → 说明企微探测仅对「配置代理」解耦，仍受环境代理接管（trust_env 未禁用）"
+    },
+    {
+      "item": "C.2 LLM（http 本地地址）不受环境 HTTPS_PROXY 影响（仍 [OK ]）",
+      "ok": true,
+      "detail": "[OK ] LLM API: HTTP 200（鉴权通过）（10 ms）"
+    },
+    {
+      "item": "1.6 真实库/存档未被本套件改动",
+      "ok": true,
+      "detail": "真实库快照一致"
+    }
+  ],
+  "notes": []
+}

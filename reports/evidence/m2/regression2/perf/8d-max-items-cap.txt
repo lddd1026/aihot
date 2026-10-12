@@ -1,0 +1,48 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\perf-maxitems\config.yaml
+exit=0 (0.7s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\perf-maxitems\config.yaml
+
+待加工: 10 条（上限 10）
+
+预筛:
+  输入 10 → 保留 10（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 10 条 → 10 簇（多源簇 0 · 最大簇 1 条）
+
+Top 10:
+   1. [ 27.9] (其他) Amazon launches Nova 3 models #编号9 独家报道
+      摘要 9
+      提及 1 条 · 来源 1 家
+   2. [ 26.5] (其他) DeepSeek publishes V5 report #编号3 独家报道
+      摘要 3
+      提及 1 条 · 来源 1 家
+   3. [ 26.5] (其他) Alibaba releases Qwen 4 #编号8 独家报道
+      摘要 8
+      提及 1 条 · 来源 1 家
+   4. [ 26.5] (其他) Google announces Gemini 8 Ultra #编号4 独家报道
+      摘要 4
+      提及 1 条 · 来源 1 家
+   5. [ 24.8] (其他) OpenAI ships GPT-6 Sol #编号0 独家报道
+      摘要 0
+      提及 1 条 · 来源 1 家
+   6. [ 24.8] (其他) Anthropic releases Claude Opus 6 #编号1 独家报道
+      摘要 1
+      提及 1 条 · 来源 1 家
+   7. [ 24.8] (其他) Meta open-sources Llama-9 #编号2 独家报道
+      摘要 2
+      提及 1 条 · 来源 1 家
+   8. [ 24.8] (其他) Mistral launches Le Chat Enterprise #编号5 独家报道
+      摘要 5
+      提及 1 条 · 来源 1 家
+   9. [ 24.8] (其他) Nvidia unveils Rubin GPU #编号6 独家报道
+      摘要 6
+      提及 1 条 · 来源 1 家
+  10. [ 24.8] (其他) Microsoft adds Copilot agents to Office #编号7 独家报道
+      摘要 7
+      提及 1 条 · 来源 1 家
+
+已写回: 10 条加工 · 0 条标记为过滤 · 10 个事件簇
+
+--- stderr ---

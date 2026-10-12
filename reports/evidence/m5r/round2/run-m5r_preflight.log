@@ -1,0 +1,13 @@
+  [PASS] 1.1 代理指向坏端口时 check --quick 退出码=0（不拦截运行）: rc=0
+  [PASS] 1.2 代理项是 [WARN]（可降级），提示含「降级」: [WARN] 代理: 连接失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（将降级为直连，墙外源可能缺失）（2036 ms）
+  [PASS] 1.3 输出明确说明可降级失败不阻断: [WARN] 1 项可降级失败：代理不可用时自动降级为直连，继续运行
+  [PASS] 1.5 LLM API = [OK ]（环境代理为坏端口时仍直连成功）: [OK ] LLM API: HTTP 200（鉴权通过）（418 ms）
+  [PASS] 1.5b LLM 探测确实到达本地假 LLM（/models 命中）: models_probes=1
+  [PASS] 1.5c 无任何 [ERR]（环境代理未被继承）: 无 ERR 行
+  [PASS] 2.3 假服务关闭后 check --quick 退出码=1（不是假装成功）: rc=1
+  [PASS] 2.5 假服务关闭后 LLM 项 [ERR]: [ERR] LLM API: 请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（2443 ms）
+  [PASS] 1.6 真实库/存档未被本套件改动: 真实库快照一致
+
+== m5r_preflight: 9 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m5r\round2\m5r_preflight.json
+
+--- stderr ---

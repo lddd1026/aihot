@@ -1,0 +1,34 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-perf-kxhry_ff\config.yaml
+12:14:23 INFO aihot.sources: 信息源完成: qbitai，7 条（134 ms）
+12:14:23 INFO aihot.sources: 信息源完成: infoq_cn，15 条（159 ms）
+12:14:24 INFO aihot.sources: 信息源完成: techcrunch_ai，15 条（928 ms）
+12:14:24 INFO aihot.sources: 信息源完成: theverge_ai，10 条（928 ms）
+12:14:24 INFO aihot.sources: 信息源完成: openai_news，0 条（1208 ms）
+12:14:24 INFO aihot.sources: 信息源完成: venturebeat_ai，0 条（1059 ms）
+12:14:25 INFO aihot.sources: 信息源完成: hackernews，52 条（2018 ms）
+12:14:25 INFO aihot.sources: 信息源完成: deepmind_blog，1 条（1142 ms）
+12:14:25 INFO aihot.sources: 信息源完成: meta_eng，0 条（1071 ms）
+12:14:26 INFO aihot.sources: 信息源完成: anthropic_news，0 条（1586 ms）
+12:14:26 INFO aihot.sources: 信息源完成: arxiv，60 条（1169 ms）
+12:14:36 WARNING aihot.net: 请求最终失败: https://www.reddit.com/r/LocalLLaMA+MachineLearning/new/.rss?limit=50（HTTP 429）
+12:14:36 WARNING aihot.sources: 信息源失败: reddit_ai（SourceError: 请求失败: HTTP 429）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:14:21+08:00）
+信息源  : 12 个
+
+采集结果:
+  [OK ] anthropic_news     0 条（1586 ms）
+  [OK ] arxiv              60 条（1169 ms）
+  [OK ] deepmind_blog      1 条（1142 ms）
+  [OK ] hackernews         52 条（2018 ms）
+  [OK ] infoq_cn           15 条（159 ms）
+  [OK ] meta_eng           0 条（1071 ms）
+  [OK ] openai_news        0 条（1208 ms）
+  [OK ] qbitai             7 条（134 ms）
+  [ERR] reddit_ai          SourceError: 请求失败: HTTP 429（12189 ms）
+  [OK ] techcrunch_ai      15 条（928 ms）
+  [OK ] theverge_ai        10 条（928 ms）
+  [OK ] venturebeat_ai     0 条（1059 ms）
+
+合计: 抓取 160 条 → 新增 0 条（去重 160 条）→ 库内共 210 条

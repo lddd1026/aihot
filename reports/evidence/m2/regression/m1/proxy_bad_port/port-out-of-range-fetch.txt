@@ -1,0 +1,10 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-proxy-1j4uxz78\config-port-out-of-range.yaml --dry-run
+exit=3 (1.1s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-proxy-1j4uxz78\config-port-out-of-range.yaml
+
+[ERR] 配置校验未通过（1 个问题）:
+  1. proxy.url 无效: Port out of range 0-65535（示例: http://127.0.0.1:7890）
+
+--- stderr ---

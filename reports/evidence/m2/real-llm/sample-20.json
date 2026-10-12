@@ -1,0 +1,222 @@
+[
+  {
+    "id": 29,
+    "source_id": "techcrunch_ai",
+    "title": "Ema raises $77M as AI starts eating into enterprise software and services",
+    "url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
+    "raw_summary": "Ema has raised $140 million to date and has more than 50 enterprise customers, including Google and Microsoft.",
+    "category": "融资商业",
+    "importance": 55,
+    "cn_title": "Ema 融资 7700 万美元，AI 开始蚕食企业软件与服务",
+    "cn_summary": "AI 企业软件公司 Ema 完成 7700 万美元融资，累计融资 1.4 亿美元，已拥有 Google、微软等 50 多家企业客户。"
+  },
+  {
+    "id": 30,
+    "source_id": "techcrunch_ai",
+    "title": "‘We’re already fighting yesterday’s battle’: Greece’s prime minister gets candid about AI",
+    "url": "https://techcrunch.com/2026/09/22/were-already-fighting-yesterdays-battle-greeces-prime-minister-gets-candid-about-ai",
+    "raw_summary": "Most leaders on a trade mission stick to the pitch, but when I interviewed Greek Prime Minister Kyriakos Mitsotakis this week, he also admitted that no government is ready for what AI is about to do.",
+    "category": "政策监管",
+    "importance": 45,
+    "cn_title": "希腊总理坦言：各国政府尚未准备好应对 AI 冲击",
+    "cn_summary": "希腊总理米佐塔基斯在采访中表示，没有政府已为 AI 即将带来的变化做好准备，呼吁正视监管与适应问题。"
+  },
+  {
+    "id": 32,
+    "source_id": "techcrunch_ai",
+    "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
+    "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
+    "raw_summary": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
+    "category": "融资商业",
+    "importance": 60,
+    "cn_title": "Snorkel AI 估值翻三倍至 35 亿美元，AI 训练数据需求旺盛",
+    "cn_summary": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元，反映 AI 训练数据服务需求持续增长。"
+  },
+  {
+    "id": 33,
+    "source_id": "techcrunch_ai",
+    "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
+    "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai",
+    "raw_summary": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
+    "category": "产品更新",
+    "importance": 68,
+    "cn_title": "高通发布两款新手机芯片，强调 AI 能力",
+    "cn_summary": "高通推出两款新智能手机芯片，其中旗舰芯片可在本地运行 300 亿参数的混合专家模型，强化端侧 AI。"
+  },
+  {
+    "id": 34,
+    "source_id": "techcrunch_ai",
+    "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
+    "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence",
+    "raw_summary": "Meta says Muse was built from scratch, but acknowledges the AI assistant was \"heavily inspired\" by OpenClaw — down to some of its workspace filenames and content.",
+    "category": "行业动态",
+    "importance": 45,
+    "cn_title": "Meta 承认 Muse 与 OpenClaw 相似并非巧合",
+    "cn_summary": "Meta 称 Muse 为从零构建，但承认该 AI 助手“深受”OpenClaw 启发，甚至部分工作区文件名和内容相似。"
+  },
+  {
+    "id": 35,
+    "source_id": "techcrunch_ai",
+    "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
+    "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna",
+    "raw_summary": "OpenAI is launching two new models, which it says are cut from the same cloth as Astra.",
+    "category": "模型发布",
+    "importance": 95,
+    "cn_title": "OpenAI 发布 GPT-6 Sol 与 Luna",
+    "cn_summary": "OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，以不同的能力与成本组合将前沿智能带入日常工作场景。"
+  },
+  {
+    "id": 36,
+    "source_id": "techcrunch_ai",
+    "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
+    "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance",
+    "raw_summary": "Anthropic called it \"the strongest-performing model we've tested to date.\"",
+    "category": "模型发布",
+    "importance": 90,
+    "cn_title": "Anthropic 发布 Opus 5.5，价格更低且性能达 Fable 级别",
+    "cn_summary": "Anthropic 推出 Opus 5.5 模型，价格下调并达到 Fable 级别的性能，官方称其为迄今测试过的最强模型。"
+  },
+  {
+    "id": 37,
+    "source_id": "techcrunch_ai",
+    "title": "AstroForge is putting AI in command of its next spacecraft",
+    "url": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft",
+    "raw_summary": "Autonomy-1 will have a small, transformer-based AI model taking charge of a space probe.",
+    "category": "行业动态",
+    "importance": 50,
+    "cn_title": "AstroForge 让 AI 指挥其下一艘航天器",
+    "cn_summary": "小行星采矿公司 AstroForge 将在其 Autonomy-1 探测器上部署小型 Transformer 模型，由 AI 自主指挥航天器运行。"
+  },
+  {
+    "id": 42,
+    "source_id": "techcrunch_ai",
+    "title": "Everyone can find a reason to dislike data center construction",
+    "url": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction",
+    "raw_summary": "Inside two years of fraught AI data center debates in Pennsylvania.",
+    "category": "行业动态",
+    "importance": 40,
+    "cn_title": "每个人都能找到反对建设数据中心的理由",
+    "cn_summary": "TechCrunch 回顾宾夕法尼亚州两年间围绕 AI 数据中心建设的争议，反映地方社区对能耗、土地与噪音等问题的分歧。"
+  },
+  {
+    "id": 43,
+    "source_id": "openai_news",
+    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+    "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+    "raw_summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+    "category": "政策监管",
+    "importance": 50,
+    "cn_title": "OpenAI 将网络访问权限扩展至乌克兰用于民用防御",
+    "cn_summary": "OpenAI 将其 Daybreak 计划的访问权限扩展至乌克兰政府，以支持民用基础设施的网络防御。"
+  },
+  {
+    "id": 44,
+    "source_id": "openai_news",
+    "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+    "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+    "raw_summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
+    "category": "行业动态",
+    "importance": 40,
+    "cn_title": "Grab 与 OpenAI 合作，在东南亚推广实用 AI 技能",
+    "cn_summary": "OpenAI 与 Grab 推出 GO Forward with AI 区域项目，计划帮助东南亚 3 万名合作伙伴掌握实用 AI 技能。"
+  },
+  {
+    "id": 45,
+    "source_id": "openai_news",
+    "title": "Better prompt caching for GPT-6",
+    "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+    "raw_summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+    "category": "产品更新",
+    "importance": 72,
+    "cn_title": "GPT-6 改进提示缓存",
+    "cn_summary": "OpenAI 介绍 GPT-6 的提示缓存改进，包括更高命中率、新诊断工具、显式断点及降低延迟与成本的控制项。"
+  },
+  {
+    "id": 46,
+    "source_id": "openai_news",
+    "title": "Introducing GPT-6 Sol and Luna",
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "raw_summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+    "category": "模型发布",
+    "importance": 95,
+    "cn_title": "OpenAI 发布 GPT-6 Sol 与 Luna",
+    "cn_summary": "OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，以不同的能力与成本组合将前沿智能带入日常工作场景。"
+  },
+  {
+    "id": 48,
+    "source_id": "hackernews",
+    "title": "The Download: why AI's latest breakthroughs and fears may be more hype than rea",
+    "url": "https://www.technologyreview.com/2026/09/22/1144910/the-download-dont-believe-ai-hype",
+    "raw_summary": "",
+    "category": "行业动态",
+    "importance": 30,
+    "cn_title": "The Download：AI 最新突破与担忧可能更多是炒作而非现实",
+    "cn_summary": "The Download 文章讨论 AI 领域最新突破与担忧，认为其中不少可能被夸大，实际进展与风险或被高估。"
+  },
+  {
+    "id": 1,
+    "source_id": "qbitai",
+    "title": "联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧",
+    "url": "https://www.qbitai.com/2026/09/496609.html",
+    "raw_summary": "联想天禧AI携全场景多端产品矩阵亮相阿里云栖大会",
+    "category": "产品更新",
+    "importance": 40,
+    "cn_title": "联想亮相阿里云栖大会：天禧 AI 将超级组织落地到端侧",
+    "cn_summary": "联想在阿里云栖大会展示天禧 AI 及全场景多端产品矩阵，推动超级组织能力向端侧设备落地。"
+  },
+  {
+    "id": 2,
+    "source_id": "qbitai",
+    "title": "让Token生产更高效：异构混推的关键技术演进与创新实践",
+    "url": "https://www.qbitai.com/2026/09/496578.html",
+    "raw_summary": "商汤大装置异构混推创新实践与技术演进",
+    "category": "行业动态",
+    "importance": 40,
+    "cn_title": "让 Token 生产更高效：异构混推的关键技术演进与创新实践",
+    "cn_summary": "商汤大装置分享异构混推的技术演进与创新实践，旨在提升 Token 生产效率和推理资源利用率。"
+  },
+  {
+    "id": 3,
+    "source_id": "qbitai",
+    "title": "汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”",
+    "url": "https://www.qbitai.com/2026/09/496493.html",
+    "raw_summary": "企业AI服务迎来平台化交付时代",
+    "category": "产品更新",
+    "importance": 45,
+    "cn_title": "汇智智能发布 Hellome：国内首个 FDE 直连智能体服务平台",
+    "cn_summary": "汇智智能发布 Hellome，称其为国内首个 FDE 直连智能体服务平台，目标将企业 AI 交付周期压缩至周级别。"
+  },
+  {
+    "id": 4,
+    "source_id": "qbitai",
+    "title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+    "url": "https://www.qbitai.com/2026/09/496494.html",
+    "raw_summary": "打造算电协同领域“Windows”级操作系统",
+    "category": "融资商业",
+    "importance": 40,
+    "cn_title": "达卯科技完成新一轮融资，聚焦算电协同核心软件层",
+    "cn_summary": "达卯科技完成新一轮融资，定位算电协同核心软件层稀缺标的，目标打造该领域的操作系统级平台。"
+  },
+  {
+    "id": 5,
+    "source_id": "qbitai",
+    "title": "它石智航顶尖团队引领中国具身智能率先迈入规模化落地阶段",
+    "url": "https://www.qbitai.com/2026/09/496481.html",
+    "raw_summary": "它石智航将继续扩大研发团队，加快布局生产基地，全面提升机器人交付能力",
+    "category": "行业动态",
+    "importance": 45,
+    "cn_title": "它石智航团队推动中国具身智能迈入规模化落地阶段",
+    "cn_summary": "它石智航表示将扩大研发团队、加快布局生产基地，提升机器人交付能力，推动具身智能规模化落地。"
+  },
+  {
+    "id": 6,
+    "source_id": "qbitai",
+    "title": "斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”",
+    "url": "https://www.qbitai.com/2026/09/496471.html",
+    "raw_summary": "9月23日云栖大会期间，斑马智能发布新一代全模态端侧大模型AutoOmni 2.0-23B-A3B",
+    "category": "模型发布",
+    "importance": 55,
+    "cn_title": "斑马智能发布端模型 AutoOmni 2.0，让元神 AI 更懂“我的世界”",
+    "cn_summary": "斑马智能在云栖大会期间发布新一代全模态端侧大模型 AutoOmni 2.0-23B-A3B，提升元神 AI 对场景的理解能力。"
+  }
+]

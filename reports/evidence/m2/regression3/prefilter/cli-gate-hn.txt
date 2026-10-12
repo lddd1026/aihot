@@ -1,0 +1,99 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\prefilter-gate-hn\config.yaml --limit 50 --top 8
+exit=0 (0.8s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\prefilter-gate-hn\config.yaml
+
+待加工: 8 条（上限 50）
+
+预筛:
+  输入 8 → 保留 3（垃圾 4 · 与 AI 无关 1 · 批内重复 0）
+    [垃圾内容] Sponsored: rent GPU clusters with promo code S…
+    [垃圾内容] 限时优惠：AI 训练营报名开启，名额有限
+    [与 AI 无关] Rust 1.99 lands with faster incremental builds
+
+聚类: 3 条 → 3 簇（多源簇 0 · 最大簇 1 条）
+
+Top 3:
+   1. [ 26.5] (其他) Introducing GPT-6 Luna, our most efficient model yet
+      Available in the API today.
+      提及 1 条 · 来源 1 家
+   2. [ 24.8] (其他) 国产操作系统发布新版本，性能提升 20%
+      该版本聚焦桌面体验。
+      提及 1 条 · 来源 1 家
+   3. [ 23.2] (其他) OpenAI ships GPT-6 Sol to all ChatGPT users
+      Rollout starts today.
+      提及 1 条 · 来源 1 家
+
+已写回: 3 条加工 · 5 条标记为过滤 · 3 个事件簇
+
+--- stderr ---
+
+
+--- items ---
+[
+  {
+    "source_id": "hackernews",
+    "url": "https://example.com/hn-rust",
+    "title": "Rust 1.99 lands with faster incremental builds",
+    "category": "过滤",
+    "cn_title": "",
+    "enriched_at": "2026-09-24T03:41:27.606360+00:00"
+  },
+  {
+    "source_id": "hackernews",
+    "url": "https://example.com/hn-gpt6",
+    "title": "OpenAI ships GPT-6 Sol to all ChatGPT users",
+    "category": "其他",
+    "cn_title": "OpenAI ships GPT-6 Sol to all ChatGPT users",
+    "enriched_at": "2026-09-24T03:41:27.604239+00:00"
+  },
+  {
+    "source_id": "qbitai",
+    "url": "https://example.com/qbit-os",
+    "title": "国产操作系统发布新版本，性能提升 20%",
+    "category": "其他",
+    "cn_title": "国产操作系统发布新版本，性能提升 20%",
+    "enriched_at": "2026-09-24T03:41:27.604239+00:00"
+  },
+  {
+    "source_id": "qbitai",
+    "url": "https://example.com/qbit-hire",
+    "title": "招聘｜大模型算法工程师（北京，35-60K）",
+    "category": "过滤",
+    "cn_title": "",
+    "enriched_at": "2026-09-24T03:41:27.606360+00:00"
+  },
+  {
+    "source_id": "openai_news",
+    "url": "https://example.com/oa-webinar",
+    "title": "Webinar: register now for the GPT-6 developer day",
+    "category": "过滤",
+    "cn_title": "",
+    "enriched_at": "2026-09-24T03:41:27.606360+00:00"
+  },
+  {
+    "source_id": "qbitai",
+    "url": "https://example.com/qbit-course",
+    "title": "限时优惠：AI 训练营报名开启，名额有限",
+    "category": "过滤",
+    "cn_title": "",
+    "enriched_at": "2026-09-24T03:41:27.606360+00:00"
+  },
+  {
+    "source_id": "openai_news",
+    "url": "https://example.com/oa-luna",
+    "title": "Introducing GPT-6 Luna, our most efficient model yet",
+    "category": "其他",
+    "cn_title": "Introducing GPT-6 Luna, our most efficient model yet",
+    "enriched_at": "2026-09-24T03:41:27.604239+00:00"
+  },
+  {
+    "source_id": "hackernews",
+    "url": "https://example.com/hn-ad",
+    "title": "Sponsored: rent GPU clusters with promo code SAVE20",
+    "category": "过滤",
+    "cn_title": "",
+    "enriched_at": "2026-09-24T03:41:27.606360+00:00"
+  }
+]

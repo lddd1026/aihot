@@ -1,0 +1,40 @@
+ 
+===== 2026-09-25 11:17:43.15 preflight ===== 
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\m4-bat\preflight-fail\config.yaml
+11:17:44 INFO aihot.cli: check 通过: 启用源 1/1, wecom=True, email=False
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-bat-preflight-fail\data-nope
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-bat-preflight-fail\logs
+  代理      : 未启用
+
+信息源（1/1 启用）:
+  [on ] fake_feed          Fake
+
+推送通道:
+  [on ] 企业微信机器人
+  [off] 邮件（example@qq.com）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [OK ] 企业微信 webhook 已配置
+  [OK ] 邮箱 SMTP 授权码 已配置
+
+快速预检（关键依赖）:
+  [OK ] 企业微信 webhook: HTTP 200（接口可达）（258 ms）
+  [ERR] LLM API: 请求失败: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（2065 ms）
+
+[ERR] 预检存在 1 个失败项，今日运行可能受影响
+[2026-09-25 11:17:47.06] PREFLIGHT FAILED - skip today 
+11:17:48 INFO aihot.delivery.wecom: 文本消息已发送（请求体 123 字节）
+[OK] 告警已发送
+
+--- stdout ---
+
+--- stderr ---

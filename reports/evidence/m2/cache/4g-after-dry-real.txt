@@ -1,0 +1,30 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\cache-dry\config.yaml --limit 50 --top 2
+exit=0 (5.2s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\cache-dry\config.yaml
+
+待加工: 12 条（上限 50）
+
+预筛:
+  输入 12 → 保留 10（垃圾 1 · 与 AI 无关 1 · 批内重复 0）
+    [与 AI 无关] Rust 1.99 released with faster builds
+    [垃圾内容] 招聘｜大模型算法工程师
+
+聚类: 10 条 → 10 簇（多源簇 0 · 最大簇 1 条）
+
+Top 2:
+   1. [ 54.8] (模型发布) 中文标题 1
+      摘要 1
+      提及 1 条 · 来源 1 家
+   2. [ 54.8] (模型发布) 中文标题 2
+      摘要 2
+      提及 1 条 · 来源 1 家
+
+今日综述: {"items": []}
+
+LLM: 批次 2（失败 0）· token 300+150 · 成本约 ¥0.0018
+
+已写回: 10 条加工 · 2 条标记为过滤
+
+--- stderr ---

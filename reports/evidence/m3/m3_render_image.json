@@ -1,0 +1,81 @@
+{
+  "suite": "m3_render_image",
+  "passed": 14,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "3.1 常规日报产出 1 张图",
+      "ok": true,
+      "detail": "paths=['2026-09-24.jpg'] (3.2s)"
+    },
+    {
+      "item": "3.2 JPEG 格式与宽度 1080px",
+      "ok": true,
+      "detail": "width=1080 height=3795 bytes=494115"
+    },
+    {
+      "item": "3.3 体积 ≤ 2MB",
+      "ok": true,
+      "detail": "bytes=494115 (483 KB)"
+    },
+    {
+      "item": "3.4 真实 2MB 阈值下：超长日报（50 条）自动拆成 2 张且各张合规",
+      "ok": true,
+      "detail": "paths=['2026-09-24-1.jpg', '2026-09-24-2.jpg'] sizes=[1973468, 1861017] (10.5s)"
+    },
+    {
+      "item": "3.5 拆图内容完整（上/下页并集=全部 50 条，不重不漏）",
+      "ok": true,
+      "detail": "上页=25条 下页=25条 简讯=12 覆盖=50/50"
+    },
+    {
+      "item": "3.6 渲染 HTML 中文无乱码（无 U+FFFD，标题完整）",
+      "ok": true,
+      "detail": "无 U+FFFD 且标题完整"
+    },
+    {
+      "item": "3.7 DOM 徽标配色：1~3 红、4+ 蓝",
+      "ok": true,
+      "detail": "reds=3 blues=9 徽标数=12"
+    },
+    {
+      "item": "3.8 中文字体可用（测量宽度≈全角）",
+      "ok": true,
+      "detail": "cjkWidth=264.0px font=\"Microsoft YaHei\", \"PingFang SC\", \"Hiragino Sans GB\", sans-serif"
+    },
+    {
+      "item": "3.9 强制阈值下自动拆成 2 张且各张 ≤ 阈值（拆图逻辑独立复现）",
+      "ok": true,
+      "detail": "threshold=2971423 sizes=[2735111, 2578427]"
+    },
+    {
+      "item": "3.10 图像非空白（Edge 可解码 + 有效墨迹）",
+      "ok": true,
+      "detail": "ink=0.1016 dark=0.0532"
+    },
+    {
+      "item": "3.11 序号配色：Top3 红 + 其余蓝（像素级）",
+      "ok": true,
+      "detail": "red_px=8500 blue_px=38162"
+    },
+    {
+      "item": "3.12 真实拆图两页均有内容（像素级）",
+      "ok": true,
+      "detail": "ink=[0.1722, 0.1628]"
+    },
+    {
+      "item": "3.13 强制拆图两页均有内容（像素级）",
+      "ok": true,
+      "detail": "ink=[0.1623, 0.154]"
+    },
+    {
+      "item": "3.14 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 258048, 'mtime': 1790244091.1376078, 'items': 176, 'enriched': 176, 'runs': 5, 'clusters': 101, 'digests': 1}"
+    }
+  ],
+  "notes": [
+    "分析用浏览器内核: msedge",
+    "整张体积 {88: 5402348, 76: 3897739, 64: 3207735}；上半张 {88: 2735111, 76: 1973468, 64: 1624322}；下半张 {88: 2578427, 76: 1861017, 64: 1530894}；阈值=2971423"
+  ]
+}

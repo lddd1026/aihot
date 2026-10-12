@@ -1,0 +1,31 @@
+--- dry-run ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t4-25b4pa48\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:59:00+08:00）
+信息源  : 1 个
+
+21:59:01 INFO aihot.sources: 信息源完成: good1，2 条（21 ms）
+采集结果:
+  [OK ] good1              2 条（21 ms）
+
+合计: 抓取 2 条（dry-run，不写库）
+
+最新条目预览（前 2 条）:
+   1. [good1] g1-a
+      https://good.example/a（09-23 21:48）
+   2. [good1] g1-b
+      https://good.example/b（09-23 21:28）
+
+--- 真实运行 ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-t4-25b4pa48\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:59:02+08:00）
+信息源  : 1 个
+
+21:59:03 INFO aihot.sources: 信息源完成: good1，2 条（19 ms）
+采集结果:
+  [OK ] good1              2 条（19 ms）
+
+合计: 抓取 2 条 → 新增 2 条（去重 0 条）→ 库内共 2 条

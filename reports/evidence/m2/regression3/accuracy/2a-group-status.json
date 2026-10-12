@@ -1,0 +1,272 @@
+{
+  "g01": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "DeepSeek 发布 V5 模型，推理成本下降一半",
+      "DeepSeek 发布 V5 模型，推理成本下降一半（更新）",
+      "DeepSeek 发布 V5 模型，推理成本下降一半 | 量子位"
+    ]
+  },
+  "g02": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "Anthropic 发布 Claude Opus 6，价格更低",
+      "Anthropic 发布 Claude Opus 6，价格更低（附评测）",
+      "Anthropic 发布 Claude Opus 6，价格更低 | TechCrunch"
+    ]
+  },
+  "g03": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "马斯克宣布 xAI 完成 200 亿美元融资",
+      "马斯克宣布 xAI 完成 200 亿美元融资（官方公告）",
+      "马斯克宣布 xAI 完成 200 亿美元融资 | Hacker News"
+    ]
+  },
+  "g04": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "华为发布昇腾 920 芯片，算力翻倍",
+      "华为发布昇腾 920 芯片，算力翻倍（含规格）",
+      "华为发布昇腾 920 芯片，算力翻倍｜InfoQ"
+    ]
+  },
+  "g05": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "微软开源 Agent 框架 Magentic 2",
+      "微软开源 Agent 框架 Magentic 2（GitHub 已上线）",
+      "微软开源 Agent 框架 Magentic 2 | 机器之心"
+    ]
+  },
+  "g06": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "阿里云发布通义千问 4，支持 1M 上下文",
+      "阿里云发布通义千问 4，支持 1M 上下文（实测）",
+      "阿里云发布通义千问 4，支持 1M 上下文 | 量子位"
+    ]
+  },
+  "g07": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "百度文心 5 发布，免费开放",
+      "百度文心 5 发布，免费开放（更新）"
+    ]
+  },
+  "g08": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "英伟达发布 Rubin 架构 GPU，性能提升三倍",
+      "英伟达发布 Rubin 架构 GPU，性能提升三倍（附参数）"
+    ]
+  },
+  "g09": {
+    "merged": true,
+    "expected": true,
+    "members": [
+      "腾讯混元 3 开源，权重已上传 Hugging Face",
+      "腾讯混元 3 开源，权重已上传 Hugging Face | 量子位"
+    ]
+  },
+  "p01": {
+    "merged": false,
+    "expected": true,
+    "members": [
+      "GitHub 新推出 Copilot 代码评审功能（公开预览）",
+      "GitHub 上线 Copilot 代码评审功能，进入公开预览阶段"
+    ]
+  },
+  "p02": {
+    "merged": false,
+    "expected": true,
+    "members": [
+      "字节跳动调整 AI 团队架构，成立模型与智能体两个中心",
+      "字节重组 AI 部门：模型中心与智能体中心并行"
+    ]
+  },
+  "p03": {
+    "merged": false,
+    "expected": true,
+    "members": [
+      "美团发布 LongCat-2 长上下文模型，窗口 500 万 token",
+      "Meituan ships LongCat-2 with a 5M token window"
+    ]
+  },
+  "s00": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "OpenAI 发布 GPT-6 Sol"
+    ]
+  },
+  "s01": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "OpenAI 发布 GPT-6 Luna"
+    ]
+  },
+  "s02": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Meta 开源 Llama-4 系列"
+    ]
+  },
+  "s03": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Meta 开源 Llama-5 系列"
+    ]
+  },
+  "s04": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "欧盟通过 AI 责任法案，2027 年生效"
+    ]
+  },
+  "s05": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Redis 8.2 发布，内置向量检索"
+    ]
+  },
+  "s06": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "PostgreSQL 19 发布，逻辑复制延迟下降 90%"
+    ]
+  },
+  "s07": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "商汤发布日日新 6.0 大模型"
+    ]
+  },
+  "s08": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "OpenAI 与沃尔玛合作，AI 导购覆盖 5000 家门店"
+    ]
+  },
+  "s09": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Perplexity 收购短视频搜索公司 Shine"
+    ]
+  },
+  "s10": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "菜鸟开源端到端交付 Agent 框架"
+    ]
+  },
+  "s11": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Linux 6.19 合并 zram 性能优化补丁"
+    ]
+  },
+  "s12": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "智谱发布 GLM-6 并开源权重"
+    ]
+  },
+  "s13": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Stability AI 更换 CEO，聚焦视频生成"
+    ]
+  },
+  "s14": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "快手公布可灵 4.0 视频生成技术细节"
+    ]
+  },
+  "s15": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Cloudflare 推出 AI 爬虫付费抓取通道"
+    ]
+  },
+  "s16": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "上海发布具身智能产业政策，三年投入 300 亿"
+    ]
+  },
+  "s17": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "OpenAI 为 GPT-6 推出企业级审计日志"
+    ]
+  },
+  "s18": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Anthropic 与制药公司合作推进 AI 药物发现"
+    ]
+  },
+  "s19": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "京东发布言犀 5，聚焦客服 Agent"
+    ]
+  },
+  "s20": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Show HN: 我用 Rust 写了一个本地向量数据库"
+    ]
+  },
+  "s21": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "月之暗面发布 Kimi K3，上下文 200 万 token"
+    ]
+  },
+  "s22": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "Google DeepMind 开源 AlphaFold 4 权重"
+    ]
+  },
+  "s23": {
+    "merged": true,
+    "expected": false,
+    "members": [
+      "字节跳动开源分布式训练框架 ByteTrain"
+    ]
+  }
+}

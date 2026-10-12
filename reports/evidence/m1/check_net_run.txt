@@ -1,0 +1,8 @@
+  [PASS] 9a-逐源OK/ERR+失败退出码1: rc=1（期望 1）好源 OK、坏源 ERR、未启用源不进入探测行（探测 3 行）
+  [PASS] 9b-全通过退出码0: rc=0（期望 0）
+  [PASS] 9c-多坏源全部报告: rc=1 [ERR] 行数=3
+  [PASS] 9d-真实配置逐源健康度: rc=0（期望 0）覆盖启用源=['qbitai', 'infoq_cn', 'techcrunch_ai', 'openai_news', 'hackernews'] 共 5 行
+  [PASS] 9e-真实库只读未变: 探测前后 items/runs 快照一致: 106/2
+  [PASS] 9f-check --net 输出不含真实密钥: 扫描 3 个真实密钥字段：泄漏 无
+
+== check_net: 6 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\check_net.json

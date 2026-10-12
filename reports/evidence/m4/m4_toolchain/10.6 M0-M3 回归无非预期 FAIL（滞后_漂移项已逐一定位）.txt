@@ -1,0 +1,373 @@
+[
+  {
+    "script": "m3_infra_probe.py",
+    "verdict": "FAIL",
+    "passed": "8/9",
+    "exit": 1,
+    "expected_reason": "性能阈值受并发干扰；隔离复跑复核"
+  },
+  {
+    "script": "m3_compose.py",
+    "verdict": "PASS",
+    "passed": "19/19",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m3_render_text.py",
+    "verdict": "FAIL",
+    "passed": "22/23",
+    "exit": 1,
+    "expected_reason": "M4 收紧企微分片上限，极端长文尾部链接被丢弃（P2-6）"
+  },
+  {
+    "script": "m3_render_image.py",
+    "verdict": "?",
+    "passed": "?",
+    "exit": 1,
+    "expected_reason": "build_views 改 3 元组（M4 论文节），脚本未适配契约"
+  },
+  {
+    "script": "m3_render_image_edges.py",
+    "verdict": "?",
+    "passed": "?",
+    "exit": 1,
+    "expected_reason": "同上（契约变更，脚本未适配）"
+  },
+  {
+    "script": "m3_wecom.py",
+    "verdict": "PASS",
+    "passed": "24/24",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m3_email.py",
+    "verdict": "PASS",
+    "passed": "16/16",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m3_e2e.py",
+    "verdict": "FAIL",
+    "passed": "21/22",
+    "exit": 1,
+    "expected_reason": "run --dry-run 无待加工条目时预览为空（P2-5）"
+  },
+  {
+    "script": "m3_degrade.py",
+    "verdict": "PASS",
+    "passed": "16/16",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m3_idempotent.py",
+    "verdict": "PASS",
+    "passed": "11/11",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m3_cli.py",
+    "verdict": "FAIL",
+    "passed": "25/27",
+    "exit": 1,
+    "expected_reason": "run --dry-run 无待加工条目时预览为空（P2-5）"
+  },
+  {
+    "script": "m3_toolchain.py",
+    "verdict": "FAIL",
+    "passed": "8/10",
+    "exit": 1,
+    "expected_reason": "硬编码 pytest=293，M4 实际 314"
+  },
+  {
+    "script": "m3_fixes.py",
+    "verdict": "PASS",
+    "passed": "15/15",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m3_dryrun_db.py",
+    "verdict": "FAIL",
+    "passed": "3/4",
+    "exit": 1,
+    "expected_reason": "M4 修复 dry-run 建空库（原 D4 P2）后脚本断言滞后"
+  },
+  {
+    "script": "m0_blackbox.py",
+    "verdict": "PASS",
+    "passed": "105/105",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m0_inprocess.py",
+    "verdict": "PASS",
+    "passed": "13/13",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m0_secret_scan.py",
+    "verdict": "PASS",
+    "passed": "13/13",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m0_yaml_error_probe.py",
+    "verdict": "FAIL",
+    "passed": "5/6",
+    "exit": 1,
+    "expected_reason": "M0 已知 P2（bad_alias）"
+  },
+  {
+    "script": "m0_issue_redaction_probe.py",
+    "verdict": "PASS",
+    "passed": "4/4",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m0_round3_probe.py",
+    "verdict": "PASS",
+    "passed": "10/10",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_revision.py",
+    "verdict": "OBSERVE",
+    "passed": "?",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_real_db_state.py",
+    "verdict": "OBSERVE",
+    "passed": "?",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_recon.py",
+    "verdict": "OBSERVE",
+    "passed": "?",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_acceptance.py",
+    "verdict": "PASS",
+    "passed": "19/19",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_adversarial.py",
+    "verdict": "PASS",
+    "passed": "11/11",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_url_edges.py",
+    "verdict": "PASS",
+    "passed": "4/4",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_net_store_units.py",
+    "verdict": "PASS",
+    "passed": "19/19",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_contracts.py",
+    "verdict": "PASS",
+    "passed": "6/6",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_check_net.py",
+    "verdict": "FAIL",
+    "passed": "5/6",
+    "exit": 1,
+    "expected_reason": "check --net 对 arxiv 无参数探测 400（P2-4）"
+  },
+  {
+    "script": "m1_proxy_bad_port_repro.py",
+    "verdict": "PASS",
+    "passed": "4/4",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_socks_probe.py",
+    "verdict": "PASS",
+    "passed": "4/4",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_slow_source.py",
+    "verdict": "PASS",
+    "passed": "1/1",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_perf.py",
+    "verdict": "PASS",
+    "passed": "6/6",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m1_regression.py",
+    "verdict": "FAIL",
+    "passed": "8/9",
+    "exit": 1,
+    "expected_reason": "大回归首跑被独立 Agent 新增脚本 ruff 告警污染；已修复并隔离复跑"
+  },
+  {
+    "script": "m2_prefilter.py",
+    "verdict": "PASS",
+    "passed": "12/12",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2_dedup.py",
+    "verdict": "FAIL",
+    "passed": "15/16",
+    "exit": 1,
+    "expected_reason": "真实库数据漂移（多条目簇白名单滞后，P2-8）"
+  },
+  {
+    "script": "m2_llm_robust.py",
+    "verdict": "PASS",
+    "passed": "60/60",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2_cache.py",
+    "verdict": "FAIL(P2漂移)",
+    "passed": "7/8",
+    "exit": 1,
+    "expected_reason": "M3 已登记 P2 漂移"
+  },
+  {
+    "script": "m2_cost.py",
+    "verdict": "FAIL(P2漂移)",
+    "passed": "6/9",
+    "exit": 1,
+    "expected_reason": "M3 已登记 P2 漂移"
+  },
+  {
+    "script": "m2_rank.py",
+    "verdict": "PASS",
+    "passed": "17/17",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2_cli.py",
+    "verdict": "PASS",
+    "passed": "26/26",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2_real_llm.py",
+    "verdict": "PASS",
+    "passed": "7/7",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2_perf.py",
+    "verdict": "PASS",
+    "passed": "5/5",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2r2_d1.py",
+    "verdict": "FAIL(P2漂移)",
+    "passed": "14/15",
+    "exit": 1,
+    "expected_reason": "M3 已登记 P2 漂移"
+  },
+  {
+    "script": "m2r2_accuracy.py",
+    "verdict": "FAIL",
+    "passed": "6/7",
+    "exit": 1,
+    "expected_reason": "真实库数据漂移（多条目簇白名单滞后，P2-8）"
+  },
+  {
+    "script": "m2r2_d2.py",
+    "verdict": "FAIL",
+    "passed": "15/16",
+    "exit": 1,
+    "expected_reason": "真实库存在 187 条待加工，脚本假设全部已加工（P2-8）"
+  },
+  {
+    "script": "m2r2_p2.py",
+    "verdict": "FAIL(P2漂移)",
+    "passed": "18/19",
+    "exit": 1,
+    "expected_reason": "M3 已登记 P2 漂移"
+  },
+  {
+    "script": "m2r3_p2.py",
+    "verdict": "PASS",
+    "passed": "10/10",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2r3_real_db.py",
+    "verdict": "FAIL",
+    "passed": "6/7",
+    "exit": 1,
+    "expected_reason": "真实库计数基线 176/176 过时（P2-8）"
+  },
+  {
+    "script": "m2_regression.py",
+    "verdict": "FAIL",
+    "passed": "23/25",
+    "exit": 1,
+    "expected_reason": "级联 m1_check_net（P2-4）与首跑 ruff 污染"
+  },
+  {
+    "script": "m2_translation_sample.py",
+    "verdict": "INFO",
+    "passed": "-",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2_dbview.py",
+    "verdict": "INFO",
+    "passed": "-",
+    "exit": 0,
+    "expected_reason": ""
+  },
+  {
+    "script": "m2_dedup_probe.py",
+    "verdict": "INFO",
+    "passed": "-",
+    "exit": 0,
+    "expected_reason": ""
+  }
+]

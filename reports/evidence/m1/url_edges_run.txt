@@ -1,0 +1,7 @@
+  [PASS] URL边界-实际落库值（观察）: rc=0 4 条异常链接落库 4 条：{'js-scheme': 'javascript:alert(1)', 'mailto': 'mailto:a@b.com', 'plain-text': 'https:not a url', 'relative': 'https:///relative/path'}
+  [NOTE] 非 http(s) 落库条目：{'js-scheme': 'javascript:alert(1)', 'mailto': 'mailto:a@b.com', 'plain-text': 'https:not a url'}
+  [NOTE] js-scheme → 'javascript:alert(1)'（规范化结果为非法 URL，未丢弃）
+  [NOTE] mailto → 'mailto:a@b.com'（规范化结果为非法 URL，未丢弃）
+  [NOTE] plain-text → 'https:not a url'（规范化结果为非法 URL，未丢弃）
+
+== url_edges: 1 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\url_edges.json

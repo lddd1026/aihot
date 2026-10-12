@@ -1,0 +1,16 @@
+$ python -m aihot resend --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\config.yaml --channel wecom
+exit=0 (5.2s)
+--- stdout ---
+aihot resend · 补发某期日报
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\config.yaml
+11:36:46 INFO aihot.delivery.wecom: 图片消息（2026-09-25.jpg）已发送（请求体 397246 字节）
+11:36:46 INFO aihot.delivery.wecom: markdown 消息已发送（请求体 2465 字节）
+
+日报日期: 2026-09-25，渠道: wecom
+  markdown : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.md
+  image    : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.jpg
+  html     : C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\e2e\data\digests\2026-09-25.html
+
+[OK] 补发完成
+
+--- stderr ---

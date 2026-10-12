@@ -1,0 +1,11 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-urledge-kk946_os\config.yaml
+12:10:52 INFO aihot.sources: 信息源完成: weird，3 条（49 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:10:50+08:00）
+信息源  : 1 个
+
+采集结果:
+  [OK ] weird              3 条（49 ms）
+
+合计: 抓取 3 条 → 新增 3 条（去重 0 条）→ 库内共 3 条

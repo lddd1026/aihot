@@ -1,0 +1,20 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-adv-invalid-2npaskz4\config.yaml
+12:10:07 WARNING aihot.sources: 信息源失败: emptybody（SourceError: 响应不是有效的 RSS/Atom 内容）
+12:10:07 WARNING aihot.sources: 信息源失败: html（SourceError: RSS 解析失败: <unknown>:2:0: syntax error）
+12:10:07 INFO aihot.sources: 信息源完成: good，1 条（25 ms）
+12:10:07 WARNING aihot.sources: 信息源失败: notxml（SourceError: RSS 解析失败: <unknown>:2:1: not well-formed (invalid token)）
+12:10:10 WARNING aihot.net: 请求最终失败: http://127.0.0.1:14204/drop（HTTP 502）
+12:10:10 WARNING aihot.sources: 信息源失败: drop（SourceError: 请求失败: HTTP 502）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T12:10:06+08:00）
+信息源  : 5 个
+
+采集结果:
+  [ERR] drop               SourceError: 请求失败: HTTP 502（3043 ms）
+  [ERR] emptybody          SourceError: 响应不是有效的 RSS/Atom 内容（12 ms）
+  [OK ] good               1 条（25 ms）
+  [ERR] html               SourceError: RSS 解析失败: <unknown>:2:0: syntax error（28 ms）
+  [ERR] notxml             SourceError: RSS 解析失败: <unknown>:2:1: not well-formed (invalid token)（31 ms）
+
+合计: 抓取 1 条 → 新增 1 条（去重 0 条）→ 库内共 1 条

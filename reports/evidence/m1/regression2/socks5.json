@@ -1,0 +1,28 @@
+{
+  "suite": "socks5",
+  "passed": 4,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "socks5-check 配置校验 rc=0 且无导入错误",
+      "ok": true,
+      "detail": "rc=0（期望 0），ImportError/Traceback=无"
+    },
+    {
+      "item": "socks5-check --net 代理不可达=干净[ERR]",
+      "ok": true,
+      "detail": "rc=1（期望 1），含[ERR]代理=True，ImportError/Traceback=无"
+    },
+    {
+      "item": "socks5-fetch 代理不可达=干净失败",
+      "ok": true,
+      "detail": "rc=1（期望 1），ImportError/Traceback=无"
+    },
+    {
+      "item": "socks5-依赖可用（socksio 已安装）",
+      "ok": true,
+      "detail": "import socksio 成功（pyproject 已声明 socksio>=1.0,<2）"
+    }
+  ],
+  "notes": []
+}

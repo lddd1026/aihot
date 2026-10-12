@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>AI 热点日报</title></head>
+<body style="margin:0;padding:0;background:#f2f3f5;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f2f3f5;padding:24px 12px;">
+<tr><td align="center">
+  <table role="presentation" width="680" cellpadding="0" cellspacing="0"
+         style="width:680px;max-width:100%;background:#ffffff;border-radius:10px;overflow:hidden;">
+    <tr><td style="padding:28px 32px 12px;font-family:'Microsoft YaHei',Arial,sans-serif;">
+      <div style="font-size:26px;font-weight:bold;color:#1f2329;">🤖 AI 热点日报</div>
+      <div style="font-size:14px;color:#8a9099;margin-top:6px;">2026年9月25日 星期五 · 第 3 期</div>
+      <hr style="border:none;border-top:2px solid #1f2329;margin:16px 0 0;">
+    </td></tr>
+
+
+    <tr><td style="padding:20px 32px 0;font-family:'Microsoft YaHei',Arial,sans-serif;">
+      <div style="font-size:17px;font-weight:bold;color:#1f2329;margin-bottom:10px;">📌 今日综述</div>
+      <div style="font-size:15px;line-height:1.85;color:#2b2f36;background:#f7f8fa;
+                  border-left:4px solid #3370ff;border-radius:6px;padding:14px 16px;">今日综述：用于论文板块验证的独立测试文本。</div>
+    </td></tr>
+
+    <tr><td style="padding:24px 32px 0;font-family:'Microsoft YaHei',Arial,sans-serif;">
+      <div style="font-size:17px;font-weight:bold;color:#1f2329;margin-bottom:6px;">🔥 今日必读</div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          1. 普通新闻标题 20：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 20 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/20" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          2. 普通新闻标题 5：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 5 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/5" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          3. 普通新闻标题 25：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 25 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/25" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          4. 普通新闻标题 10：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 10 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/10" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          5. 普通新闻标题 30：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 30 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/30" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          6. 普通新闻标题 15：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 15 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/15" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          7. 普通新闻标题 1：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 1 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/1" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          8. 普通新闻标题 21：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 21 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/21" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          9. 普通新闻标题 6：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 6 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/6" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          10. 普通新闻标题 26：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 26 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/26" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          11. 普通新闻标题 11：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 11 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/11" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+      <div style="padding:14px 0;border-bottom:1px solid #eef0f3;">
+        <div style="font-size:16px;font-weight:bold;line-height:1.5;color:#1f2329;">
+          12. 普通新闻标题 16：模型与产品更新
+        </div>
+        <div style="font-size:14px;line-height:1.75;color:#4e5969;margin-top:6px;">第 16 条普通条目摘要。</div>
+        <div style="font-size:12px;color:#8a9099;margin-top:8px;">
+          <span style="background:#eef4ff;color:#3370ff;border-radius:4px;padding:2px 8px;">模型发布</span>
+          &nbsp;单篇报道
+          &nbsp;·&nbsp;<a href="https://example.com/news/16" style="color:#3370ff;text-decoration:none;">qbitai</a>
+        </div>
+      </div>
+    </td></tr>
+
+    <tr><td style="padding:20px 32px 0;font-family:'Microsoft YaHei',Arial,sans-serif;">
+      <div style="font-size:17px;font-weight:bold;color:#1f2329;margin-bottom:8px;">🔬 论文精选</div>
+      <div style="padding:10px 0;border-bottom:1px dashed #e5e8ef;">
+        <div style="font-size:15px;font-weight:bold;line-height:1.5;">
+          <a href="https://example.com/news/5" style="color:#1f2329;text-decoration:none;">论文精选独立验证 Paper 5</a>
+        </div>
+        <div style="font-size:13px;line-height:1.7;color:#4e5969;margin-top:6px;">第 5 篇论文摘要：用于验证论文板块渲染。</div>
+        <div style="font-size:12px;color:#7b61ff;margin-top:6px;">Hugging Face</div>
+      </div>
+      <div style="padding:10px 0;border-bottom:1px dashed #e5e8ef;">
+        <div style="font-size:15px;font-weight:bold;line-height:1.5;">
+          <a href="https://example.com/news/6" style="color:#1f2329;text-decoration:none;">论文精选独立验证 Paper 6</a>
+        </div>
+        <div style="font-size:13px;line-height:1.7;color:#4e5969;margin-top:6px;">第 6 篇论文摘要：用于验证论文板块渲染。</div>
+        <div style="font-size:12px;color:#7b61ff;margin-top:6px;">Hugging Face</div>
+      </div>
+    </td></tr>
+
+    <tr><td style="padding:20px 32px 0;font-family:'Microsoft YaHei',Arial,sans-serif;">
+      <div style="font-size:17px;font-weight:bold;color:#1f2329;margin-bottom:8px;">📎 其他值得一看</div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/2" style="color:#1f2329;text-decoration:none;">普通新闻标题 2：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/22" style="color:#1f2329;text-decoration:none;">普通新闻标题 22：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/7" style="color:#1f2329;text-decoration:none;">普通新闻标题 7：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/27" style="color:#1f2329;text-decoration:none;">普通新闻标题 27：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/12" style="color:#1f2329;text-decoration:none;">普通新闻标题 12：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/17" style="color:#1f2329;text-decoration:none;">普通新闻标题 17：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/3" style="color:#1f2329;text-decoration:none;">普通新闻标题 3：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/23" style="color:#1f2329;text-decoration:none;">普通新闻标题 23：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/8" style="color:#1f2329;text-decoration:none;">普通新闻标题 8：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/28" style="color:#1f2329;text-decoration:none;">普通新闻标题 28：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/13" style="color:#1f2329;text-decoration:none;">普通新闻标题 13：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+      <div style="font-size:14px;line-height:1.9;color:#2b2f36;">
+        • <a href="https://example.com/news/18" style="color:#1f2329;text-decoration:none;">普通新闻标题 18：模型与产品更新</a>
+        <span style="color:#8a9099;font-size:12px;">（模型发布）</span>
+      </div>
+    </td></tr>
+
+    <tr><td style="padding:24px 32px 28px;font-family:'Microsoft YaHei',Arial,sans-serif;">
+      <hr style="border:none;border-top:1px solid #eef0f3;margin:0 0 12px;">
+      <div style="font-size:12px;color:#8a9099;">
+        共扫描 0 条 · 筛出 0 个事件 · 精选 12 条 · 由 DeepSeek 加工
+      </div>
+    </td></tr>
+  </table>
+</td></tr>
+</table>
+</body>
+</html>

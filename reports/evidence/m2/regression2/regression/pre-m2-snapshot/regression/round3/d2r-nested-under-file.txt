@@ -1,0 +1,8 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-r3-mpf90bba\d2r-nested-under-file.yaml
+EXIT CODE: 3
+--- STDOUT+STDERR ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-r3-mpf90bba\d2r-nested-under-file.yaml
+
+[ERR] 日志目录不可用: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m0-r3-mpf90bba\\blocker-file'
+

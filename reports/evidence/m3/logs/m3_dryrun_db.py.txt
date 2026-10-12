@@ -1,0 +1,6 @@
+  [PASS] probe.1 dry-run 前 DB 不存在: before={'exists': False}
+  [PASS] probe.2 dry-run 后 DB 文件是否被创建: after={'exists': False}（M1 验收脚本期望 exists=False）
+  [FAIL] probe.3 dry-run 未写入任何行: items=None runs=None
+  [PASS] probe.4 真实 fetch 正常落库: final={'exists': True, 'bytes': 49152, 'tables': ['items', 'sqlite_sequence', 'clusters', 'digests', 'runs'], 'items': 2, 'runs': 1} rc=0
+
+== m3_dryrun_db: 3 passed / 1 failed == summary=D:\信息收集整理\aihot\reports\evidence\m3\m3_dryrun_db.json

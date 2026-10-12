@@ -1,0 +1,20 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4b-false-empty\config.yaml --limit 20 --top 1
+exit=0 (0.7s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\r2-p2-4b-false-empty\config.yaml
+
+待加工: 3 条（上限 20）
+
+预筛:
+  输入 3 → 保留 3（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 3 条 → 3 簇（多源簇 0 · 最大簇 1 条）
+
+Top 1:
+   1. [ 24.8] (其他) 招聘｜大模型算法工程师（北京）
+      提及 1 条 · 来源 1 家
+
+已写回: 3 条加工 · 0 条标记为过滤 · 3 个事件簇
+
+--- stderr ---

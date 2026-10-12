@@ -1,0 +1,222 @@
+[
+  {
+    "id": 29,
+    "source": "techcrunch_ai",
+    "title": "Ema raises $77M as AI starts eating into enterprise software and services",
+    "cn_title": "Ema 融资 7700 万美元，AI 正蚕食企业软件与服务市场",
+    "cn_summary": "AI 企业软件公司 Ema 完成 7700 万美元融资，累计融资 1.4 亿美元，客户超 50 家，包括 Google 和微软。",
+    "category": "融资商业",
+    "importance": 55,
+    "verdict": "通过",
+    "basis": "Ema 融资 7700 万美元，事实与数字准确"
+  },
+  {
+    "id": 30,
+    "source": "techcrunch_ai",
+    "title": "‘We’re already fighting yesterday’s battle’: Greece’s prime minister gets candid about AI",
+    "cn_title": "「我们已在打昨天的仗」：希腊总理坦率谈 AI",
+    "cn_summary": "希腊总理米佐塔基斯在采访中坦言，没有政府为 AI 即将带来的变化做好准备，并谈及欧洲在 AI 竞争中的处境。",
+    "category": "政策监管",
+    "importance": 40,
+    "verdict": "通过",
+    "basis": "希腊总理谈 AI，语义准确"
+  },
+  {
+    "id": 32,
+    "source": "techcrunch_ai",
+    "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
+    "cn_title": "Snorkel AI 估值翻三倍至 35 亿美元，AI 训练数据需求旺盛",
+    "cn_summary": "成立七年的 Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元，用于推进其数据即服务模式。",
+    "category": "融资商业",
+    "importance": 60,
+    "verdict": "通过",
+    "basis": "Snorkel 估值 35 亿美元，数字准确"
+  },
+  {
+    "id": 33,
+    "source": "techcrunch_ai",
+    "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
+    "cn_title": "高通发布两款主打 AI 的新手机芯片",
+    "cn_summary": "高通推出两款强调 AI 能力的新手机芯片，称其旗舰芯片可在本地运行 300 亿参数的 MoE 模型。",
+    "category": "产品更新",
+    "importance": 65,
+    "verdict": "通过",
+    "basis": "高通两款 AI 手机芯片，准确"
+  },
+  {
+    "id": 34,
+    "source": "techcrunch_ai",
+    "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence",
+    "cn_title": "Meta 承认 Muse 与 OpenClaw 相似并非巧合",
+    "cn_summary": "Meta 称 Muse 为从零构建，但承认该 AI 助手「深受」OpenClaw 启发，连部分工作区文件名和内容都相似。",
+    "category": "行业动态",
+    "importance": 45,
+    "verdict": "通过",
+    "basis": "Meta 承认 Muse 与 OpenClaw 相似，准确"
+  },
+  {
+    "id": 35,
+    "source": "techcrunch_ai",
+    "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
+    "cn_title": "OpenAI 发布 GPT-6 Sol 与 Luna",
+    "cn_summary": "OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，在能力与成本之间提供不同取舍，面向日常工作任务。",
+    "category": "模型发布",
+    "importance": 95,
+    "verdict": "通过",
+    "basis": "GPT-6 Sol 与 Luna 发布，准确"
+  },
+  {
+    "id": 36,
+    "source": "techcrunch_ai",
+    "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance",
+    "cn_title": "Anthropic 发布 Opus 5.5，价格更低且性能达 Fable 级",
+    "cn_summary": "Anthropic 发布 Opus 5.5，官方称其为迄今测试过的最强模型，同时下调价格，进一步加剧前沿模型市场竞争。",
+    "category": "模型发布",
+    "importance": 92,
+    "verdict": "通过",
+    "basis": "Opus 5.5 发布，准确"
+  },
+  {
+    "id": 37,
+    "source": "techcrunch_ai",
+    "title": "AstroForge is putting AI in command of its next spacecraft",
+    "cn_title": "AstroForge 让 AI 接管其下一艘航天器",
+    "cn_summary": "小行星采矿公司 AstroForge 将在 Autonomy-1 探测器上部署小型 Transformer 模型，由 AI 自主控制航天器运行。",
+    "category": "行业动态",
+    "importance": 45,
+    "verdict": "通过",
+    "basis": "AstroForge 航天器 AI 控制，准确"
+  },
+  {
+    "id": 42,
+    "source": "techcrunch_ai",
+    "title": "Everyone can find a reason to dislike data center construction",
+    "cn_title": "宾州两年AI数据中心争议：反对声浪从何而来",
+    "cn_summary": "TechCrunch梳理宾夕法尼亚州两年间围绕AI数据中心建设的争论，反映选址、能耗与社区利益冲突正成为行业扩张的现实阻力。",
+    "category": "行业动态",
+    "importance": 35,
+    "verdict": "通过",
+    "basis": "数据中心争议：按摘要补全了「宾州/两年」，属改写但无误导"
+  },
+  {
+    "id": 43,
+    "source": "openai_news",
+    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+    "cn_title": "OpenAI 扩大对乌克兰的网络访问，支持民用防御",
+    "cn_summary": "OpenAI 将 Daybreak 计划访问权限扩展至乌克兰政府，用于支持民用基础设施的网络防御。",
+    "category": "政策监管",
+    "importance": 40,
+    "verdict": "通过",
+    "basis": "OpenAI 支援乌克兰网络防御，准确"
+  },
+  {
+    "id": 44,
+    "source": "openai_news",
+    "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+    "cn_title": "Grab 与 OpenAI 合作，将实用 AI 技能带到东南亚",
+    "cn_summary": "OpenAI 与 Grab 推出 GO Forward with AI 区域项目，计划帮助东南亚 3 万名合作伙伴掌握实用 AI 技能。",
+    "category": "行业动态",
+    "importance": 45,
+    "verdict": "通过",
+    "basis": "Grab 与 OpenAI 合作，准确"
+  },
+  {
+    "id": 45,
+    "source": "openai_news",
+    "title": "Better prompt caching for GPT-6",
+    "cn_title": "OpenAI 发布 GPT-6 Sol 与 Luna",
+    "cn_summary": "OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，在能力与成本之间提供不同取舍，面向日常工作任务。",
+    "category": "模型发布",
+    "importance": 95,
+    "verdict": "不通过",
+    "basis": "原文「Better prompt caching for GPT-6」被写成「GPT-6 Sol 和 Luna 发布」——同簇 10 条共享了别的条目的加工结果（根因见 dedup D-A 过度合并）"
+  },
+  {
+    "id": 46,
+    "source": "openai_news",
+    "title": "Introducing GPT-6 Sol and Luna",
+    "cn_title": "OpenAI 发布 GPT-6 Sol 与 Luna",
+    "cn_summary": "OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，在能力与成本之间提供不同取舍，面向日常工作任务。",
+    "category": "模型发布",
+    "importance": 95,
+    "verdict": "通过",
+    "basis": "Introducing GPT-6 Sol and Luna，准确"
+  },
+  {
+    "id": 48,
+    "source": "hackernews",
+    "title": "The Download: why AI's latest breakthroughs and fears may be more hype than rea",
+    "cn_title": "The Download：AI 最新突破与担忧或言过其实",
+    "cn_summary": "The Download 文章讨论 AI 领域最新突破与相关担忧可能被夸大，呼吁理性看待技术进展与风险。",
+    "category": "行业动态",
+    "importance": 30,
+    "verdict": "通过",
+    "basis": "The Download 讨论 AI 泡沫，准确"
+  },
+  {
+    "id": 1,
+    "source": "qbitai",
+    "title": "联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧",
+    "cn_title": "联想天禧 AI 亮相阿里云栖大会",
+    "cn_summary": "联想在阿里云栖大会展示天禧 AI 及全场景多端产品矩阵，推动超级组织能力落地到端侧设备。",
+    "category": "产品更新",
+    "importance": 40,
+    "verdict": "通过",
+    "basis": "联想天禧 AI 云栖大会，准确"
+  },
+  {
+    "id": 2,
+    "source": "qbitai",
+    "title": "让Token生产更高效：异构混推的关键技术演进与创新实践",
+    "cn_title": "商汤分享异构混推技术演进与实践",
+    "cn_summary": "商汤大装置介绍异构混合推理的关键技术演进与创新实践，目标提升 Token 生产效率。",
+    "category": "行业动态",
+    "importance": 40,
+    "verdict": "通过",
+    "basis": "商汤异构混推，准确"
+  },
+  {
+    "id": 3,
+    "source": "qbitai",
+    "title": "汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”",
+    "cn_title": "汇智智能发布 Hellome 智能体服务平台",
+    "cn_summary": "汇智智能推出国内首个 FDE 直连智能体服务平台 Hellome，主打将企业 AI 交付周期压缩至周级别。",
+    "category": "产品更新",
+    "importance": 45,
+    "verdict": "通过",
+    "basis": "汇智智能 Hellome，准确"
+  },
+  {
+    "id": 4,
+    "source": "qbitai",
+    "title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+    "cn_title": "达卯科技完成新一轮融资，聚焦算电协同",
+    "cn_summary": "达卯科技完成新一轮融资，定位算电协同核心软件层，计划打造该领域的操作系统级平台。",
+    "category": "融资商业",
+    "importance": 40,
+    "verdict": "通过",
+    "basis": "达卯科技融资与算电协同，准确"
+  },
+  {
+    "id": 5,
+    "source": "qbitai",
+    "title": "它石智航顶尖团队引领中国具身智能率先迈入规模化落地阶段",
+    "cn_title": "它石智航推进具身智能规模化落地",
+    "cn_summary": "它石智航宣布扩大研发团队并加快生产基地布局，提升机器人交付能力，推动具身智能进入规模化落地阶段。",
+    "category": "行业动态",
+    "importance": 45,
+    "verdict": "通过",
+    "basis": "它石智航具身智能规模化，准确"
+  },
+  {
+    "id": 6,
+    "source": "qbitai",
+    "title": "斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”",
+    "cn_title": "斑马智能发布端侧全模态模型 AutoOmni 2.0",
+    "cn_summary": "斑马智能在云栖大会期间发布 AutoOmni 2.0-23B-A3B 端侧全模态大模型，用于增强其元神 AI 对场景的理解能力。",
+    "category": "模型发布",
+    "importance": 55,
+    "verdict": "通过",
+    "basis": "新马智能 AutoOmni 2.0 端侧全模态模型，准确"
+  }
+]

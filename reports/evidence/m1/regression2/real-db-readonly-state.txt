@@ -1,0 +1,11 @@
+tables=['clusters', 'digests', 'items', 'runs', 'sqlite_sequence']
+items=106 unique_keys=106 runs=2
+by_source:
+  hackernews: 60 (2026-09-22T12:58:02+00:00 → 2026-09-23T12:15:33+00:00)
+  infoq_cn: 18 (2026-09-22T13:00:00+00:00 → 2026-09-23T19:51:33+00:00)
+  techcrunch_ai: 14 (2026-09-22T13:00:00+00:00 → 2026-09-23T12:00:00+00:00)
+  qbitai: 10 (2026-09-23T06:08:50+00:00 → 2026-09-23T10:35:16+00:00)
+  openai_news: 4 (2026-09-22T18:00:00+00:00 → 2026-09-23T13:00:00+00:00)
+runs_detail:
+  20260923T124051-8449bb ok 2026-09-23T12:40:51.083007+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 105, "skipped": []}
+  20260923T124344-259fe2 ok 2026-09-23T12:43:44.842824+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 107, "saved": 1, "skipped": []}

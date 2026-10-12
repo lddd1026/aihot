@@ -1,0 +1,31 @@
+{
+  "captured_at": "2026-09-24T11:41:25",
+  "files": {
+    "src/aihot/__init__.py": "d7e3b66ad8108d123e088252eed2e8af4d9f06961dde09b257c398d5e9066e6b",
+    "src/aihot/__main__.py": "ed50bbd69f7a3981f165a656946d8dd3cff8cd6a55694d14d5e5f8ba8e67a5c4",
+    "src/aihot/checks.py": "2a49e2d2fc02367cbf32cba9c39fc16ecb4aa7ca2939fe01a42bd152119b5bbe",
+    "src/aihot/cli.py": "43be77ce32a72ea283b3c43d17de7f8d45d959da93a89131124204193a52e7e6",
+    "src/aihot/config.py": "5068c358aebe965539533f41de4ba88de16ceb3c2f78591073a66555c20808fa",
+    "src/aihot/logging_setup.py": "8631c471ff048dbce4084374dbc05f884cffc816b3cc36ab77e199c898d51266",
+    "src/aihot/models.py": "dea9470ccb738411564796b02e8591ea86b4b4a4dd1299b85e491e0cb90b07fc",
+    "src/aihot/net.py": "e2fbc460224264cb83854157ccdaebc7ff97abc5c9edff48dc50b7e6e371da5d",
+    "src/aihot/pipeline/__init__.py": "d67abb1b8a940155808c75ff7c06229901d63159935abdbdbc3de793d5a5765f",
+    "src/aihot/pipeline/dedup.py": "e197e252b8758a925b1d78a34eb55f64e714d7bce47218e4994d47e992290e45",
+    "src/aihot/pipeline/enrich.py": "b7b28bc7bd6e7b0caa6d381d130aff77d920c53eb2382529b60b6b5298cbd13e",
+    "src/aihot/pipeline/prefilter.py": "0fa145378d22231d38907962df182a6fd0eb2890420757acb6bebe473914e37a",
+    "src/aihot/pipeline/prompts.py": "5fd8546d6aa70fd0d15b344848ff44c397af5b4ba8886fbcf4108c6407254484",
+    "src/aihot/pipeline/rank.py": "ba70125543ef927d1ea1a0d41341dff9afd0d84ededf60242527a1d83cfbd9a9",
+    "src/aihot/sources/__init__.py": "7c8e5e9a1c954d0ea7940ffdb8bd0fb8ecfb3e6fd96f3329cb7f4d35da4ba332",
+    "src/aihot/sources/base.py": "f84fd2866e35d92a7e676cd429070ef9380591e333c478cd7311eee1d9596e1a",
+    "src/aihot/sources/hackernews.py": "f01e864a05e0c54f0ce1d64970147e74f22390fc3896a0822b74762937709dbb",
+    "src/aihot/sources/registry.py": "a357578ddfba3079c003b839361e94637de1a9a2ad33f6d8ea5230ca899465ad",
+    "src/aihot/sources/rss.py": "19772345b4f2a3de90a1b3efa78f330ac7ff64f9dbb9e37c2aeb02bd20d4ee26",
+    "src/aihot/store.py": "8576695b226d5f76ad488d8c01e54bdd0409dfef8b901cfae0b1bce6c6931f7b",
+    "src/aihot/utils.py": "607fb330762ba99979c7dcb4ec354ed0242c4d0c6e9072092a683df4b268df2c",
+    "config.yaml": "fdec50cb9caf7d31833e1b50ca160769b259ac93ad7f4a45a7162946f3aac5ce",
+    "config.example.yaml": "31cdcf0786ca702318743ab990ea4552bae28158a31d0336e6c6422d8e87f9a9",
+    "pyproject.toml": "bd089952d42b4e9e6454ed64eb3a9f88c2b4f937f457becb09e94e85cc2a8265"
+  },
+  "count": 24,
+  "overall_sha256": "39efbe26258f7502658fa7faa69078b743954649be72cb7c90163e5be5e9255d"
+}

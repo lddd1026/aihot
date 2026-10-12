@@ -1,0 +1,21 @@
+  [PASS] 1.1 过滤类排除: actual=True
+  [PASS] 1.1 其他-importance10 排除: actual=True
+  [PASS] 1.1 其他-importance15 排除（边界）: actual=True
+  [PASS] 1.1 其他-importance16 保留: actual=True
+  [PASS] 1.1 正常分类保留: actual=True
+  [PASS] 1.1 空标题排除: actual=True
+  [PASS] 1.2 Top N 条数与顺序: top=['正常条目 1', '正常条目 2', '正常条目 3', '正常条目 4', '正常条目 5']
+  [PASS] 1.3 简讯切分紧随 Top N: briefs=['正常条目 6', '正常条目 7', '正常条目 8']
+  [PASS] 1.4 排除项未进入日报: top+briefs=['正常条目 1', '正常条目 2', '正常条目 3', '正常条目 4', '正常条目 5', '正常条目 6', '正常条目 7', '正常条目 8']
+  [PASS] 1.5 统计自洽（selected/briefs）: stats={'scanned': 0, 'kept': 0, 'clusters': 0, 'selected': 5, 'briefs': 3, 'sources': 0, 'cost_cny': 0.0, 'papers': 0}
+  [PASS] 1.6 「其他-16/40」在可发布池中（未被误杀）: publishable=['正常条目 1', '正常条目 2', '正常条目 3', '正常条目 4', '正常条目 5', '正常条目 6', '正常条目 7', '正常条目 8', '其他-40', '其他-16']
+  [PASS] 1.7 top_n 超界 → 全部进 Top、简讯为空: top=10 publishable=10 briefs=0
+  [PASS] 1.8 brief_count=0 → 无简讯: briefs=0
+  [PASS] 1.9 top_n=0 → 无精选、简讯取前 4: top=0 briefs=4
+  [PASS] 1.10 端到端：Top5 来自库内可发布条目（排除过滤/低分其他）: titles=['DB 正常 1', 'DB 正常 2', 'DB 正常 3', 'DB 正常 4', 'DB 正常 5', 'DB 正常 6', 'DB 正常 7', 'DB 正常 8', 'DB 正常 9', 'DB 正常 10', 'DB 正常 11', 'DB 正常 12', 'DB 高分其他']
+  [PASS] 1.11 端到端：高分「其他」进入候选（top 或 brief）: titles=['DB 正常 1', 'DB 正常 2', 'DB 正常 3', 'DB 正常 4', 'DB 正常 5', 'DB 正常 6', 'DB 正常 7', 'DB 正常 8', 'DB 正常 9', 'DB 正常 10', 'DB 正常 11', 'DB 正常 12', 'DB 高分其他']
+  [PASS] 1.12 端到端：统计与库内数据自洽: stats={'scanned': 14, 'kept': 14, 'clusters': 14, 'selected': 5, 'briefs': 8, 'sources': 1, 'cost_cny': 0.0, 'papers': 0} titles=13
+  [PASS] 1.13 端到端：过滤条目未写入日报 payload: db 过滤条数=4
+  [PASS] 1.14 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}
+
+== m3_compose: 19 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m3\m3_compose.json

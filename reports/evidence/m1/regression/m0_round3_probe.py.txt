@@ -1,0 +1,12 @@
+[PASS] d2r-log-dir-is-file :: rc=3, 明确报错=是, traceback=无
+[PASS] d2r-data-dir-is-file :: rc=3, 明确报错=是, traceback=无
+[PASS] d2r-existing-dir-ok :: rc=0（期望 0，正常目录不受影响）
+[PASS] d2r-nonexistent-dir-ok :: rc=0（期望 0，待创建目录不受影响）
+[PASS] d2r-nested-under-file-observation :: rc=3, traceback=无（嵌套路径观察项）
+[PASS] d6r-credentials-and-key-masked :: rc=0, 口令泄漏=否, key 泄漏=否, ***@=在
+[PASS] d6r-webhook-url-in-proxy-masked :: rc=0, key 泄漏=否, key=***=在
+[PASS] d6r-bare-key-invalid-url-observation :: rc=3, 裸密钥回显=是（ConfigError 路径观察项）
+[PASS] d7r-no-llm-section-errors :: rc=3, 提示 base_url=是, model=是
+[PASS] d7r-valid-config-ok :: rc=0（期望 0）
+
+== SUMMARY: 10/10 passed ==

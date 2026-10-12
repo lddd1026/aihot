@@ -1,0 +1,15 @@
+tables=['clusters', 'digests', 'items', 'runs', 'sqlite_sequence']
+items=176 unique_keys=176 runs=4
+by_source:
+  hackernews: 105 (2026-09-22T12:58:02+00:00 → 2026-09-23T23:47:56+00:00)
+  techcrunch_ai: 27 (2026-09-22T13:00:00+00:00 → 2026-09-24T01:13:32+00:00)
+  infoq_cn: 23 (2026-09-22T13:00:00+00:00 → 2026-09-24T09:05:00+00:00)
+  qbitai: 11 (2026-09-23T06:08:50+00:00 → 2026-09-24T00:48:02+00:00)
+  openai_news: 10 (2026-09-22T18:00:00+00:00 → 2026-09-23T16:00:00+00:00)
+runs_detail:
+  20260923T124051-8449bb ok 2026-09-23T12:40:51.083007+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 105, "skipped": []}
+  20260923T124344-259fe2 ok 2026-09-23T12:43:44.842824+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 107, "saved": 1, "skipped": []}
+  20260924T012756-1a7300 ok 2026-09-24T01:27:56.493888+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 70, "skipped": []}
+  20260924T013405-eded6d ok 2026-09-24T01:34:05.009377+00:00 stats={"stage": "fetch", "window_hours": 24, "sources_ok": 5, "sources_failed": 0, "fetched": 106, "saved": 0, "skipped": []}
+
+[evidence] D:\信息收集整理\aihot\reports\evidence\m1\real-db-readonly-state.txt

@@ -1,0 +1,147 @@
+{
+  "config_sources": 14,
+  "enabled": [
+    "qbitai",
+    "infoq_cn",
+    "techcrunch_ai",
+    "openai_news",
+    "hackernews",
+    "theverge_ai",
+    "venturebeat_ai",
+    "deepmind_blog",
+    "anthropic_news",
+    "meta_eng",
+    "reddit_ai",
+    "arxiv"
+  ],
+  "disabled": [
+    "jiqizhixin",
+    "hf_papers"
+  ],
+  "ok_total": 11,
+  "ok_enabled": 11,
+  "results": [
+    {
+      "source_id": "qbitai",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 2.7,
+      "ok": true,
+      "count": "7 条",
+      "detail": "7 条"
+    },
+    {
+      "source_id": "infoq_cn",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 2.6,
+      "ok": true,
+      "count": "15 条",
+      "detail": "15 条"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 4.1,
+      "ok": true,
+      "count": "15 条",
+      "detail": "15 条"
+    },
+    {
+      "source_id": "openai_news",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 15.8,
+      "ok": true,
+      "count": "0 条",
+      "detail": "0 条"
+    },
+    {
+      "source_id": "hackernews",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 4.1,
+      "ok": true,
+      "count": "52 条",
+      "detail": "52 条"
+    },
+    {
+      "source_id": "theverge_ai",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 2.6,
+      "ok": true,
+      "count": "10 条",
+      "detail": "10 条"
+    },
+    {
+      "source_id": "venturebeat_ai",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 3.3,
+      "ok": true,
+      "count": "0 条",
+      "detail": "0 条"
+    },
+    {
+      "source_id": "deepmind_blog",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 2.8,
+      "ok": true,
+      "count": "1 条",
+      "detail": "1 条"
+    },
+    {
+      "source_id": "anthropic_news",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 3.3,
+      "ok": true,
+      "count": "0 条",
+      "detail": "0 条"
+    },
+    {
+      "source_id": "meta_eng",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 3.3,
+      "ok": true,
+      "count": "0 条",
+      "detail": "0 条"
+    },
+    {
+      "source_id": "reddit_ai",
+      "mode": "cli-dry-run",
+      "rc": 0,
+      "seconds": 7.4,
+      "ok": true,
+      "count": "50 条",
+      "detail": "50 条"
+    },
+    {
+      "source_id": "arxiv",
+      "mode": "cli-dry-run",
+      "rc": 1,
+      "seconds": 65.7,
+      "ok": false,
+      "count": 0,
+      "detail": "SourceError: 请求失败: HTTP 429"
+    },
+    {
+      "source_id": "jiqizhixin",
+      "mode": "in-process(disabled)",
+      "ok": false,
+      "count": 0,
+      "detail": "SourceError: 选择器未匹配到任何条目：li, article"
+    },
+    {
+      "source_id": "hf_papers",
+      "mode": "in-process(disabled)",
+      "ok": false,
+      "count": 0,
+      "detail": "SourceError: 请求失败: HTTP 429"
+    }
+  ]
+}

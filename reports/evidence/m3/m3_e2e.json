@@ -1,0 +1,124 @@
+{
+  "suite": "m3_e2e",
+  "passed": 22,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "6.1 run 首次执行 rc=0 且状态 ok",
+      "ok": true,
+      "detail": "rc=0 (8.1s)"
+    },
+    {
+      "item": "6.2 采集：假 RSS 被访问且抓到条目",
+      "ok": true,
+      "detail": "rss_hits=1 输出片段=['① 采集: 1/1 源成功，抓取 18 条 → 新增 18 条']"
+    },
+    {
+      "item": "6.3 加工：假 LLM 被调用（批量+综述）",
+      "ok": true,
+      "detail": "llm_requests=5"
+    },
+    {
+      "item": "6.4 企微：先图后文，图 1 张 + markdown 分片",
+      "ok": true,
+      "detail": "image=1 markdown=1 tls=True"
+    },
+    {
+      "item": "6.5 企微图片 base64+md5 与存档文件一致",
+      "ok": true,
+      "detail": "file=2026-09-25.jpg size=519756"
+    },
+    {
+      "item": "6.6 企微 markdown：≤4096B/条 且含综述与条目链接",
+      "ok": true,
+      "detail": "sizes=[3702] 综述=True"
+    },
+    {
+      "item": "6.7 邮件：1 封、主题/收件人正确、HTML 含综述与链接",
+      "ok": true,
+      "detail": "email=1 subject=AI 热点日报 · 2026-09-25"
+    },
+    {
+      "item": "6.8 邮件：attach_image=false 无内嵌图",
+      "ok": true,
+      "detail": "无 image/* 部件"
+    },
+    {
+      "item": "6.9 存档：三件套文件 + digests 表 + runs 表",
+      "ok": true,
+      "detail": "digest_rows=1"
+    },
+    {
+      "item": "6.10 存档 payload：Top 12 + 简讯 6 + 综述 + 统计",
+      "ok": true,
+      "detail": "top=12 briefs=6 summary_len=93"
+    },
+    {
+      "item": "6.11 存档 md 含综述/条目链接/统计页脚",
+      "ok": true,
+      "detail": "bytes=3700"
+    },
+    {
+      "item": "6.12 同日重复 run：rc=0、无新推送、无新 LLM 调用",
+      "ok": true,
+      "detail": "rc=0 wecom=2(+0) email=1 llm=5"
+    },
+    {
+      "item": "6.13 重复 run 提示无待加工条目",
+      "ok": true,
+      "detail": [
+        "11:36:17 INFO aihot.runner: 没有待加工条目，本轮不生成日报",
+        "  [WARN] 没有待加工条目（先执行 aihot fetch）",
+        "状态: partial"
+      ]
+    },
+    {
+      "item": "6.14 --dry-run：rc=0、不发送、产出三件套",
+      "ok": true,
+      "detail": "rc=0 wecom=2 email=1 files=['2026-09-25.html', '2026-09-25.jpg', '2026-09-25.md']"
+    },
+    {
+      "item": "6.15 --dry-run：不写 runs 记录（LLM 综述补写次数单独记录）",
+      "ok": true,
+      "detail": "runs_before=2 runs_after=2 llm_delta=1（无待加工条目时补写综述）"
+    },
+    {
+      "item": "6.16 preview：rc=0、展示文件与企微预览、不发送",
+      "ok": true,
+      "detail": "rc=0 (5.5s)"
+    },
+    {
+      "item": "6.17 preview --no-image：不产图但 md/html 正常",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "6.18 run --top 3：日报精选 3 条 + 简讯取满 12 条（BRIEF_COUNT 上限）",
+      "ok": true,
+      "detail": [
+        "③ 日报: 2026-09-25 · 精选 3 条 + 简讯 12 条 · 综述 93 字"
+      ]
+    },
+    {
+      "item": "6.19 resend --channel wecom：补发图+文、不发邮件、不调 LLM",
+      "ok": true,
+      "detail": "rc=0 images=2 llm=7"
+    },
+    {
+      "item": "6.20 resend --channel email：补发邮件、不发企微、不调 LLM",
+      "ok": true,
+      "detail": "rc=0 emails=2 llm=7"
+    },
+    {
+      "item": "6.21 resend 无存档日期：rc=1 且提示明确（无 traceback）",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "6.22 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}"
+    }
+  ],
+  "notes": []
+}

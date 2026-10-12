@@ -1,0 +1,80 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --net --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ugu49m0c\net-proxy-bad-port.yaml
+EXIT CODE: 1
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ugu49m0c\net-proxy-bad-port.yaml
+21:00:24 INFO aihot.cli: check 通过: 启用源 1/1, wecom=True, email=False
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ugu49m0c\data
+  日志目录  : C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ugu49m0c\logs
+  代理      : http://127.0.0.1:abc
+
+信息源（1/1 启用）:
+  [on ] qbitai             量子位
+
+推送通道:
+  [on ] 企业微信机器人
+  [off] 邮件（未配置）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [OK ] 企业微信 webhook 已配置
+  [WARN] 邮箱 SMTP 授权码 未配置（邮件推送前需补齐）
+
+网络探测:
+
+--- STDERR ---
+Traceback (most recent call last):
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urlparse.py", line 409, in normalize_port
+    port_as_int = int(port)
+                  ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'abc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\信息收集整理\aihot\src\aihot\__main__.py", line 6, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 82, in main
+    return _cmd_check(args)
+           ^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 137, in _cmd_check
+    results = run_net_checks(cfg)
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\checks.py", line 139, in run_net_checks
+    results.extend(probe_sources(cfg))
+                   ^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\checks.py", line 114, in probe_sources
+    client = HttpClient(proxy=proxy_url(cfg), timeout=TIMEOUT_SECONDS, retries=0)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\net.py", line 55, in __init__
+    self._client = httpx.Client(
+                   ^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 686, in __init__
+    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_client.py", line 250, in _get_proxy_map
+    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy
+            ^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_config.py", line 210, in __init__
+    url = URL(url)
+          ^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urls.py", line 117, in __init__
+    self._uri_reference = urlparse(url, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urlparse.py", line 321, in urlparse
+    parsed_port: int | None = normalize_port(port, scheme)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\.venv\Lib\site-packages\httpx\_urlparse.py", line 411, in normalize_port
+    raise InvalidURL(f"Invalid port: {port!r}")
+httpx.InvalidURL: Invalid port: 'abc'
+

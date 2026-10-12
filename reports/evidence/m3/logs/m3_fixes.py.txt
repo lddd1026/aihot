@@ -1,0 +1,17 @@
+  [PASS] 10.1 综述清洗：type+content 包装: 结果前 30 字='今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进' 残留花括号=False
+  [PASS] 10.1 综述清洗：content 包装: 结果前 30 字='今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进' 残留花括号=False
+  [PASS] 10.1 综述清洗：summary 包装: 结果前 30 字='今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进' 残留花括号=False
+  [PASS] 10.1 综述清洗：中文键包装: 结果前 30 字='今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进' 残留花括号=False
+  [PASS] 10.1 综述清洗：markdown 围栏 JSON: 结果前 30 字='今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进' 残留花括号=False
+  [PASS] 10.1 综述清洗：纯文本: 结果前 30 字='今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进' 残留花括号=False
+  [PASS] 10.2 综述清洗：无已知键时取最长字符串值: 结果前 30 字='今日 AI 领域发生多起重要事件：模型发布、开源工具与算力进'
+  [PASS] 10.3 端到端：JSON 包装综述落盘后为纯正文: rc=0 含 json 残留=False
+  [PASS] 10.4 端到端：企微 markdown 预览中综述同样干净: rc=0 stdout 含残留=False
+  [PASS] 10.5 模板：Top3 红 / 其余蓝 配色规则存在: CSS 规则命中
+  [PASS] 10.6 模板：仅前 3 条套用 top3（loop.index <= 3）: 条件命中
+  [PASS] 10.7 真实配置：push.email.attach_image = false（邮件纯文字）: attach_image=False
+  [PASS] 10.8 邮件 HTML：attach_image=false 渲染结果无内嵌图: 无 cid
+  [PASS] 10.9 编排层：attach_image=false 邮件不含 image/* 部件: content_types=['multipart/alternative', 'text/plain', 'text/html']
+  [PASS] 10.10 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}
+
+== m3_fixes: 15 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m3\m3_fixes.json

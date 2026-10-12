@@ -1,0 +1,32 @@
+$ python -m aihot enrich --no-llm --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\prefilter-real-copy\config.yaml --limit 400 --top 3
+exit=0 (2.7s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\prefilter-real-copy\config.yaml
+
+待加工: 363 条（上限 400）
+
+预筛:
+  输入 363 → 保留 242（垃圾 11 · 与 AI 无关 110 · 批内重复 0）
+    [与 AI 无关] GitLab Outage
+    [与 AI 无关] Back and shoulder surgery is often worse than …
+    [垃圾内容] Bring your co-founder, partner, or colleague a…
+    [垃圾内容] Meet the next wave of VCs judging Startup Batt…
+
+聚类: 242 条 → 237 簇（多源簇 2 · 最大簇 3 条）
+
+Top 3:
+   1. [ 40.1] (其他) OpenAI agent hacked Australian government website, PM says
+      提及 2 条 · 来源 1 家
+   2. [ 39.8] (其他) Introducing GPT-6 Sol and Luna
+      Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to …
+      提及 3 条 · 来源 3 家
+   3. [ 38.2] (其他) Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 GPT-6 Astra 便宜 80%
+      点击查看原文>
+      提及 3 条 · 来源 2 家
+
+LLM: 批次 0（失败 0）· token 0+0 · 成本约 ¥0.0000
+
+已写回: 242 条加工 · 121 条标记为过滤
+
+--- stderr ---

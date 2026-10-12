@@ -1,0 +1,17 @@
+������Կ��=3��ָ��=['<len=35 sha1=88bd34b6>', '<len=89 sha1=ea62b6f6>', '<len=16 sha1=5aa89688>']
+����Ƭ����=3��ָ��=['<len=35 sha1=88bd34b6>', '<len=36 sha1=b78fcc56>', '<len=16 sha1=5aa89688>']
+[PASS] real-cli-plain-no-secret :: rc=0, ����й©=��
+[PASS] real-cli-plain-no-partial-secret :: ����й©(20�ַ�����������)=��
+[PASS] real-cli-debug-no-secret :: rc=0, ����й©=��
+[PASS] real-cli-debug-no-partial-secret :: ����й©(20�ַ�����������)=��
+[PASS] real-cli-net-no-secret :: rc=1, ����й©=��
+[PASS] real-cli-net-no-partial-secret :: ����й©(20�ַ�����������)=��
+[PASS] repo-scan-no-plaintext :: ɨ�� 2351 ���ļ�������: ��
+[PASS] repo-scan-no-partial-plaintext :: ��������: ��
+[PASS] log-file-no-plaintext :: logs/aihot.log ����=578, ��������: ��
+[PASS] log-file-no-partial-plaintext :: ��������: ��
+[PASS] example-config-no-secrets :: ������Կ�ֶξ�Ϊ��
+[PASS] malformed-yaml-console-no-leak :: rc=3, ����й©=��
+[PASS] malformed-yaml-console-no-partial-leak :: ����й©(20�ַ�����������)=��
+
+== SUMMARY: 13/13 passed ==

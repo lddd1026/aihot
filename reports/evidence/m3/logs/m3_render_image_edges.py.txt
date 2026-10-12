@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\信息收集整理\aihot\tests\independent\m3_render_image_edges.py", line 177, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\tests\independent\m3_render_image_edges.py", line 82, in main
+    views_top, views_briefs = build_views(digest)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

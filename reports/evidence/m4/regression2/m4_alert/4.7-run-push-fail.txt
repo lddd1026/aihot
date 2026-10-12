@@ -1,0 +1,20 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-alert-push-fail\config.yaml
+exit=0 (8.6s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\m4-alert-push-fail\config.yaml
+11:57:58 INFO aihot.sources: 信息源完成: fake_feed，12 条（25 ms）
+11:58:06 ERROR aihot.runner: 告警发送失败: 文本消息发送失败: errcode=93000 errmsg=invalid webhook key
+
+① 采集: 1/1 源成功，抓取 12 条 → 新增 12 条
+② 加工: 12 条 → 预筛保留 12 → 12 簇；LLM 批次 3（失败 0）· 成本 ¥0.0024
+③ 日报: 2026-09-25 · 精选 12 条 + 简讯 0 条 · 综述 93 字
+④ 渲染: 长图 1 张（2026-09-25.jpg 447 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 企业微信 ⚠️ · 邮件未启用
+
+  [WARN] 企业微信图片(2026-09-25.jpg): 图片消息（2026-09-25.jpg）发送失败: errcode=93000 errmsg=invalid webhook key
+  [WARN] 企业微信文字第1片: markdown 消息发送失败: errcode=93000 errmsg=invalid webhook key
+
+状态: partial
+
+--- stderr ---

@@ -1,0 +1,43 @@
+{
+  "suite": "m3_render_image_edges",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "3e.1 真实上限（50 条）：产出 1~2 张且均 ≤2MB / 宽度 1080",
+      "ok": true,
+      "detail": "paths=['2026-09-24-1.jpg', '2026-09-24-2.jpg'] sizes=[2007144, 1968029] heights=[11360, 11547]"
+    },
+    {
+      "item": "3e.2 真实上限：图片总高度覆盖整页（无静默截断）",
+      "ok": true,
+      "detail": "image_total_height=22907 scrollHeight=22497（分片自带页头，允许略高）"
+    },
+    {
+      "item": "3e.3 真实上限：页脚位于最后一张图内",
+      "ok": true,
+      "detail": "image_total_height=22907 footerBottom=22457"
+    },
+    {
+      "item": "3e.3b 真实上限：拆图上下页并集 = 全部 50 条（不重不漏）",
+      "ok": true,
+      "detail": "covered=50/50 上页含=25"
+    },
+    {
+      "item": "3e.5 病态超长：页面高度确实超过 Chromium 截图上限（测试前提成立）",
+      "ok": true,
+      "detail": "scrollHeight=47209 clamp=16384"
+    },
+    {
+      "item": "3e.6 病态超长：失败时抛 RenderError（可被编排层降级为纯文字，不崩溃）",
+      "ok": true,
+      "detail": "图片体积超限（降质与拆图后仍失败）: 2026-09-24-1.jpg 超过 2048 KB"
+    },
+    {
+      "item": "3e.7 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 258048, 'mtime': 1790244091.1376078, 'items': 176, 'enriched': 176, 'runs': 5, 'clusters': 101, 'digests': 1}"
+    }
+  ],
+  "notes": []
+}

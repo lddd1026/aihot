@@ -1,0 +1,73 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\llm-robust-index-range\config.yaml --limit 50 --top 2
+exit=1 (3.3s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\llm-robust-index-range\config.yaml
+
+待加工: 5 条（上限 50）
+
+预筛:
+  输入 5 → 保留 5（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 5 条 → 5 簇（多源簇 0 · 最大簇 1 条）
+11:42:13 WARNING aihot.enrich: 批次加工失败（降级为原文）: 返回结构非法
+
+Top 2:
+   1. [ 24.8] (其他) Google announces Gemini 8 Ultra（第 5 条）
+      raw summary 5
+      提及 1 条 · 来源 1 家
+   2. [ 24.8] (其他) DeepSeek publishes V5 technical report（第 4 条）
+      raw summary 4
+      提及 1 条 · 来源 1 家
+
+LLM: 批次 1（失败 1）· token 100+50 · 成本约 ¥0.0006
+  [WARN] 最近错误: 加工失败: 返回结构非法
+
+已写回: 5 条加工 · 0 条标记为过滤 · 5 个事件簇
+[ERR] 全部 LLM 批次失败（条目已按原文降级写入，请检查网络/密钥/额度）
+
+--- stderr ---
+
+--- llm requests: 1 ---
+[
+  {
+    "title": "OpenAI ships GPT-6 Sol to all users（第 1 条）",
+    "cn_title": "OpenAI ships GPT-6 Sol to all users（第 1 条）",
+    "cn_summary": "raw summary 1",
+    "category": "其他",
+    "importance": 30,
+    "enriched_at": "2026-09-24T03:42:13.263931+00:00"
+  },
+  {
+    "title": "Anthropic releases Claude Opus 6（第 2 条）",
+    "cn_title": "Anthropic releases Claude Opus 6（第 2 条）",
+    "cn_summary": "raw summary 2",
+    "category": "其他",
+    "importance": 30,
+    "enriched_at": "2026-09-24T03:42:13.263931+00:00"
+  },
+  {
+    "title": "Meta open-sources Llama-9 family（第 3 条）",
+    "cn_title": "Meta open-sources Llama-9 family（第 3 条）",
+    "cn_summary": "raw summary 3",
+    "category": "其他",
+    "importance": 30,
+    "enriched_at": "2026-09-24T03:42:13.263931+00:00"
+  },
+  {
+    "title": "DeepSeek publishes V5 technical report（第 4 条）",
+    "cn_title": "DeepSeek publishes V5 technical report（第 4 条）",
+    "cn_summary": "raw summary 4",
+    "category": "其他",
+    "importance": 30,
+    "enriched_at": "2026-09-24T03:42:13.263931+00:00"
+  },
+  {
+    "title": "Google announces Gemini 8 Ultra（第 5 条）",
+    "cn_title": "Google announces Gemini 8 Ultra（第 5 条）",
+    "cn_summary": "raw summary 5",
+    "category": "其他",
+    "importance": 30,
+    "enriched_at": "2026-09-24T03:42:13.263931+00:00"
+  }
+]

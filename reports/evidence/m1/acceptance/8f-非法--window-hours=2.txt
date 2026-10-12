@@ -1,0 +1,4 @@
+--window-hours 0 → rc=2
+--window-hours -5 → rc=2
+--window-hours 169 → rc=2
+--window-hours abc → rc=2

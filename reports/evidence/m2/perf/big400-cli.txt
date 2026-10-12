@@ -1,0 +1,37 @@
+$ python -m aihot enrich --config C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\perf-big400\config.yaml --limit 1000 --top 5
+exit=0 (12.1s)
+--- stdout ---
+aihot enrich · AI 加工（预筛 → 聚类 → LLM → 排序）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m2-tests\perf-big400\config.yaml
+
+待加工: 400 条（上限 1000）
+
+预筛:
+  输入 400 → 保留 400（垃圾 0 · 与 AI 无关 0 · 批内重复 0）
+
+聚类: 400 条 → 400 簇（多源簇 0 · 最大簇 1 条）
+
+Top 5:
+   1. [ 59.4] (模型发布) 中文标题 6
+      一句话摘要
+      提及 1 条 · 来源 1 家
+   2. [ 59.3] (模型发布) 中文标题 6
+      一句话摘要
+      提及 1 条 · 来源 1 家
+   3. [ 59.3] (模型发布) 中文标题 6
+      一句话摘要
+      提及 1 条 · 来源 1 家
+   4. [ 59.3] (模型发布) 中文标题 6
+      一句话摘要
+      提及 1 条 · 来源 1 家
+   5. [ 59.2] (模型发布) 中文标题 6
+      一句话摘要
+      提及 1 条 · 来源 1 家
+
+今日综述: {"items": []}
+
+LLM: 批次 27（失败 0）· token 224000+42000 · 成本约 ¥0.7840
+
+已写回: 400 条加工 · 0 条标记为过滤
+
+--- stderr ---

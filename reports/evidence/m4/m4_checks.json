@@ -1,0 +1,73 @@
+{
+  "suite": "m4_checks",
+  "passed": 11,
+  "failed": 2,
+  "checks": [
+    {
+      "item": "3.1 代理/企微/LLM 全健康 → rc=0",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "3.2 配置校验通过且预检只含 3 项关键依赖",
+      "ok": true,
+      "detail": "输出含校验通过与快速预检段"
+    },
+    {
+      "item": "3.3 --quick 不探测信息源（死源仍 rc=0）",
+      "ok": true,
+      "detail": "rc=0"
+    },
+    {
+      "item": "3.3b check --net 会探测源（死源 → rc=1）",
+      "ok": true,
+      "detail": "对比用例"
+    },
+    {
+      "item": "3.4 LLM 401 鉴权失败 → rc=1 且输出指明 LLM",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "3.4b LLM 502 → rc=1",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "3.4c LLM 端口不可连 → rc=1",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "3.5 企微 HTTP 502 → rc=1",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "3.5b 企微请求失败（代理不可用）→ rc=1",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "3.6 代理端口不可连 → rc=1 且输出指明代理",
+      "ok": true,
+      "detail": "rc=1"
+    },
+    {
+      "item": "3.7 企微 errcode=93000（假服务哨兵）→ 期望 rc=1",
+      "ok": false,
+      "detail": "rc=0（HTTP 200 但 errcode=93000；当前实现只看状态码）"
+    },
+    {
+      "item": "3.8 企微 webhook key 无效（真实 qyapi）→ 期望 rc=1",
+      "ok": false,
+      "detail": "rc=0；webhook=<len=89 sha1=5157c92e>（GET 不产生消息）"
+    },
+    {
+      "item": "3.9 check 输出不含密钥明文",
+      "ok": true,
+      "detail": "输出无 sk- 前缀密钥"
+    }
+  ],
+  "notes": []
+}

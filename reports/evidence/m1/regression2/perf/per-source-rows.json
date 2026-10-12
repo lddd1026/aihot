@@ -1,0 +1,27 @@
+[
+  {
+    "source_id": "hackernews",
+    "n": 58,
+    "oldest": "2026-09-22T13:52:15+00:00"
+  },
+  {
+    "source_id": "infoq_cn",
+    "n": 17,
+    "oldest": "2026-09-22T14:17:25+00:00"
+  },
+  {
+    "source_id": "openai_news",
+    "n": 4,
+    "oldest": "2026-09-22T18:00:00+00:00"
+  },
+  {
+    "source_id": "qbitai",
+    "n": 10,
+    "oldest": "2026-09-23T06:08:50+00:00"
+  },
+  {
+    "source_id": "techcrunch_ai",
+    "n": 14,
+    "oldest": "2026-09-22T14:00:00+00:00"
+  }
+]

@@ -1,0 +1,15 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-lqitpxuz\email-missing-creds.yaml
+EXIT CODE: 3
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-lqitpxuz\email-missing-creds.yaml
+
+[ERR] 配置校验未通过（5 个问题）:
+  1. push.email.enabled 为 true 但 smtp_host 未配置
+  2. push.email.enabled 为 true 但 username 未配置
+  3. push.email.enabled 为 true 但未配置 password（SMTP 授权码）
+  4. push.email.from_addr 不是有效邮箱，实际: ''
+  5. push.email.enabled 为 true 但 to_addrs 为空
+
+--- STDERR ---
+

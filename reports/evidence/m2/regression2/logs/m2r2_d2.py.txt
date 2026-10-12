@@ -1,0 +1,23 @@
+== 3a 合成库两轮（--no-llm） ==
+  [PASS] 3a-第二轮新簇编号 > 历史最大值: 第一轮 max_id=6（6 簇）；第二轮 max_id=10，新增簇编号=[7, 8, 9, 10]（期望 4 个）
+  [PASS] 3a-无悬空 cluster_id: 悬空=无
+  [PASS] 3a-mention_count 与实际条目数一致: 不一致=无
+  [PASS] 3a-历史簇未被覆盖: 第一轮 6 簇 → 第二轮后其中 6 簇逐行一致
+  [PASS] 3a-历史条目的 cluster_id 未变: 前 6 条分配保持一致
+
+== 3b 真实库副本（--no-llm） ==
+  [PASS] 3b-真实库副本新簇编号 > 历史最大（64）: 历史 max_id=64，新增 6 簇：[65, 66, 67, 68, 69, 70]
+  [PASS] 3b-无悬空 cluster_id: 悬空=无
+  [PASS] 3b-新增簇 mention_count 与实际一致: 不一致=无
+  [PASS] 3b-历史 64 簇未被覆盖: 历史 64 簇 → 处理后其中 64 簇逐行一致
+
+== 3c 精修路径（llm_refine=true） ==
+  [PASS] 3c-精修确实发生（listing 使用全局编号 7/8）: 提示词含「7. [」=True；相关对同簇=True；新条目分配={'https://example.com/r2d2/7': 2, 'https://example.com/r2d2/8': 1, 'https://example.com/r2d2/rel-1': 3, 'https://example.com/r2d2/rel-2': 3}
+  [FAIL] 3c-精修路径新簇编号 > 历史最大（要求）: 第一轮 max_id=6；本轮新条目簇编号=[1, 2, 3]（期望 3 个且均 > 6）
+  [FAIL] 3c-精修路径无悬空/无不一致: 悬空=无；mention 不一致=[{'cluster_id': 1, 'mention_count': 1, 'items': 2}, {'cluster_id': 2, 'mention_count': 1, 'items': 2}, {'cluster_id': 3, 'mention_count': 2, 'items': 3}]
+  [FAIL] 3c-精修路径历史簇未被覆盖: 历史 6 簇 → 处理后其中 6 簇逐行一致
+  [PASS] 3z-真实库无悬空引用: 悬空引用=无（64 簇）
+  [PASS] 3z-真实库 mention_count 与条目数一致: 不一致簇=无
+  [PASS] 3z-真实库只读守护（items 未变）: items=176（开始时 176）
+
+== regression2/d2: 13 passed / 3 failed == summary=D:\信息收集整理\aihot\reports\evidence\m2\regression2\regression2\d2.json

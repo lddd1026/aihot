@@ -1,0 +1,21 @@
+$ python -m aihot fetch --config C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-bfy2pe7r\config.yaml --dry-run
+exit=1 (10.8s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-socks-bfy2pe7r\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:46:23+08:00）
+信息源  : 1 个
+
+21:46:33 WARNING aihot.net: 请求最终失败: http://127.0.0.1:1090/good（ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+21:46:33 WARNING aihot.sources: 信息源失败: good（SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。）
+采集结果:
+  [ERR] good               SourceError: 请求失败: ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。（9100 ms）
+
+合计: 抓取 0 条（dry-run，不写库）
+
+（没有新条目）
+
+[ERR] 全部信息源采集失败，请检查网络或源可用性
+
+--- stderr ---

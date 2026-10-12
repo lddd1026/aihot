@@ -1,0 +1,28 @@
+{
+  "suite": "m3_dryrun_db",
+  "passed": 3,
+  "failed": 1,
+  "checks": [
+    {
+      "item": "probe.1 dry-run 前 DB 不存在",
+      "ok": true,
+      "detail": "before={'exists': False}"
+    },
+    {
+      "item": "probe.2 dry-run 后 DB 文件是否被创建",
+      "ok": true,
+      "detail": "after={'exists': False}（M1 验收脚本期望 exists=False）"
+    },
+    {
+      "item": "probe.3 dry-run 未写入任何行",
+      "ok": false,
+      "detail": "items=None runs=None"
+    },
+    {
+      "item": "probe.4 真实 fetch 正常落库",
+      "ok": true,
+      "detail": "final={'exists': True, 'bytes': 49152, 'tables': ['items', 'sqlite_sequence', 'clusters', 'digests', 'runs'], 'items': 2, 'runs': 1} rc=0"
+    }
+  ],
+  "notes": []
+}

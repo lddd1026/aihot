@@ -1,0 +1,12 @@
+  [PASS] 10.1 ruff check . 闆跺憡璀︼紙rc=0锛? rc=0锛涜緭鍑?'All checks passed!'
+  [PASS] 10.2 pytest rc=0: rc=0
+  [PASS] 10.3 pytest 鏈熸湜 314 passed / 0 failed / 0 error: tests=314 failures=0 errors=0 skipped=0
+  [PASS] 10.4 瀵嗛挜鎵弿锛堜粨搴?杈撳嚭+鏃ュ織锛夊叏閮ㄩ€氳繃: 13/13
+  [PASS] 10.5 M4 璇佹嵁涓庤剼鏈?0 瀵嗛挜鍛戒腑: 鎵弿 116 涓枃浠讹紝鍛戒腑=[]锛堝瘑閽ユ帺鐮?['<len=35 sha1=88bd34b6>', '<len=89 sha1=ea62b6f6>', '<len=16 sha1=5aa89688>', '<len=36 sha1=b78fcc56>']锛?
+  [PASS] 10.6 M0-M3 鍥炲綊鏃犻潪棰勬湡 FAIL锛堟粸鍚?婕傜Щ椤瑰凡閫愪竴瀹氫綅锛? 鑴氭湰 53 涓紱闈為鏈?[]
+  [PASS] 10.7 鍥炲綊鏈熼棿鐪熷疄搴撳揩鐓т竴鑷? real_db_unchanged=True
+  [NOTE] check --net 瀵?arxiv 鐨勫疄闄呮帰娴嬶細rc=1锛?[ERR] 婧?arxiv: ReadTimeout: The read operation timed out锛?8269 ms锛?锛堥鏈熸簮鍙敤鏃朵负 OK锛涙棤鍙傛暟 GET 瑙﹀彂 arXiv 400锛屽睘 P2-4 璇姤锛?
+  [PASS] 10.9 check --net 瀵?arxiv 璇姤鍝ㄥ叺锛圥2-4锛氱湡瀹炴姄鍙?60 鏉′粛鍒ゅけ璐ワ級: 鎺㈡祴琛?'[ERR] 婧?arxiv: ReadTimeout: The read operation timed out锛?8269 ms锛?锛涚湡瀹炴姄鍙栬瘉鎹 raw/25-live-sources.txt锛坅rxiv 60 鏉★級
+  [PASS] 10.10 鍐欏叆杈圭晫锛氭祴璇曟湭鏀?src/scripts/config/run_daily.bat: 鐢?m4 绯诲垪鑴氭湰鐨勮璁＄害鏉?+ m4_bat sha256 璇佹嵁淇濊瘉
+
+== m4_toolchain: 9 passed / 0 failed == summary=D:\淇℃伅鏀堕泦鏁寸悊\aihot\reports\evidence\m4\m4_toolchain.json

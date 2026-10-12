@@ -1,0 +1,36 @@
+$ python -m aihot fetch --dry-run --limit 5 --config D:\信息收集整理\aihot\config.yaml
+exit=0 (3.7s)
+--- stdout ---
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: D:\信息收集整理\aihot\config.yaml
+
+采集窗口: 最近 24 小时（起始 2026-09-22T21:47:49+08:00）
+信息源  : 5 个
+
+21:47:51 INFO aihot.sources: 信息源完成: qbitai，10 条（128 ms）
+21:47:51 INFO aihot.sources: 信息源完成: infoq_cn，17 条（148 ms）
+21:47:51 INFO aihot.sources: 信息源完成: techcrunch_ai，14 条（466 ms）
+21:47:51 INFO aihot.sources: 信息源完成: hackernews，59 条（972 ms）
+21:47:52 INFO aihot.sources: 信息源完成: openai_news，4 条（1491 ms）
+采集结果:
+  [OK ] hackernews         59 条（972 ms）
+  [OK ] infoq_cn           17 条（148 ms）
+  [OK ] openai_news        4 条（1491 ms）
+  [OK ] qbitai             10 条（128 ms）
+  [OK ] techcrunch_ai      14 条（466 ms）
+
+合计: 抓取 104 条（dry-run，不写库）
+
+最新条目预览（前 5 条）:
+   1. [infoq_cn] 2026 年的云栖，阿里给 AI 行业递了一把新尺子
+      https://www.infoq.cn/article/zSPQbRwmS0AGpeTAhu9r（09-24 03:51）
+   2. [infoq_cn] AI 改变跨平台开发取舍，Shopify 弃用 React Native，改用 Swift 和 Kotlin
+      https://www.infoq.cn/article/2FFH5EHF2SMusaYQhjlX（09-24 01:00）
+   3. [infoq_cn] Dropbox 升级 Riviera 平台，支持 AI 工作负载
+      https://www.infoq.cn/article/jJAcfJO5e0ElPhIxwwxo（09-23 23:47）
+   4. [infoq_cn] 智谱把 ZCode 开源了，然后呢？
+      https://www.infoq.cn/article/qEHi6k5ycwXUiasvfNKH（09-23 22:43）
+   5. [infoq_cn] 大语言模型：下一代 DSL 编写者
+      https://www.infoq.cn/article/fZRdzxQYpaTS2sQSqpVk（09-23 21:22）
+
+--- stderr ---

@@ -1,0 +1,44 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config D:\信息收集整理\aihot\config.yaml
+EXIT CODE: 0
+（以下为脱敏后的原始输出）
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: D:\信息收集整理\aihot\config.yaml
+12:28:24 INFO aihot.cli: check 通过: 启用源 12/14, wecom=True, email=True
+
+[OK] 配置结构校验通过
+
+运行参数:
+  时区      : Asia/Shanghai
+  采集窗口  : 最近 24 小时
+  精选条数  : Top 12
+  数据目录  : D:\信息收集整理\aihot\data
+  日志目录  : D:\信息收集整理\aihot\logs
+  代理      : http://127.0.0.1:7897
+
+信息源（12/14 启用）:
+  [on ] qbitai             量子位
+  [on ] infoq_cn           InfoQ 中文
+  [on ] techcrunch_ai      TechCrunch AI
+  [on ] openai_news        OpenAI News
+  [on ] hackernews         Hacker News
+  [off] jiqizhixin         机器之心
+  [on ] theverge_ai        The Verge AI
+  [on ] venturebeat_ai     VentureBeat AI
+  [on ] deepmind_blog      Google DeepMind
+  [on ] anthropic_news     Anthropic News
+  [on ] meta_eng           Meta 工程博客
+  [on ] reddit_ai          Reddit（LocalLLaMA + MachineLearning）
+  [off] hf_papers          Hugging Face Daily Papers
+  [on ] arxiv              arXiv 论文
+
+推送通道:
+  [on ] 企业微信机器人
+  [on ] 邮件（example@qq.com）
+
+密钥状态:
+  [OK ] LLM API key 已配置
+  [OK ] 企业微信 webhook 已配置
+  [OK ] 邮箱 SMTP 授权码 已配置
+--- STDERR ---
+

@@ -1,0 +1,26 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot --help
+EXIT CODE: 0
+--- STDOUT ---
+usage: aihot [-h] [--config CONFIG] [--debug] [--version] 命令 ...
+
+aihot · AI 每日热点雷达
+
+positional arguments:
+  命令
+    check          校验配置、密钥与连通性
+    fetch          只采集（落库，不推送）
+    enrich         只加工（预筛/聚类/LLM/排序，不推送）
+    run            完整流程：采集 → 加工 → 日报 → 推送
+    preview        重新渲染某期日报（不推送）
+    resend         补发某期日报（重新渲染后推送）
+    version        显示版本
+    alert          发送一条企微告警（运维用）
+
+options:
+  -h, --help       show this help message and exit
+  --config CONFIG  配置文件路径（默认 config.yaml）
+  --debug          输出 DEBUG 日志
+  --version        show program's version number and exit
+
+--- STDERR ---
+

@@ -1,0 +1,36 @@
+[
+  {
+    "case": "webhook_in_timezone",
+    "expect_rc": 3,
+    "rc": 3,
+    "leaks": [],
+    "masked": true,
+    "ok": true
+  },
+  {
+    "case": "sk_key_in_source_url",
+    "expect_rc": 3,
+    "rc": 3,
+    "leaks": [],
+    "masked": true,
+    "ok": true
+  },
+  {
+    "case": "webhook_in_proxy_url",
+    "expect_rc": 3,
+    "rc": 3,
+    "leaks": [
+      "M0WRONGFIELD0123456789abcdef"
+    ],
+    "masked": false,
+    "ok": false
+  },
+  {
+    "case": "webhook_url_in_proxy_url",
+    "expect_rc": 0,
+    "rc": 0,
+    "leaks": [],
+    "masked": true,
+    "ok": true
+  }
+]

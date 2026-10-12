@@ -1,0 +1,16 @@
+$ python -m aihot run --config C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\fixes\config.yaml
+exit=0 (14.8s)
+--- stdout ---
+aihot run · 完整流程（采集 → 加工 → 日报 → 推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m3-tests\work\fixes\config.yaml
+11:41:15 INFO aihot.sources: 信息源完成: fake_feed，6 条（39 ms）
+
+① 采集: 1/1 源成功，抓取 6 条 → 新增 6 条
+② 加工: 6 条 → 预筛保留 6 → 6 簇；LLM 批次 2（失败 0）· 成本 ¥0.0018
+③ 日报: 2026-09-25 · 精选 6 条 + 简讯 0 条 · 综述 36 字
+④ 渲染: 长图 1 张（2026-09-25.jpg 236 KB） · 企微分片 1 · md/html 已存档
+⑤ 推送: 企业微信 ✅ · 邮件未启用
+
+状态: ok
+
+--- stderr ---

@@ -1,0 +1,1444 @@
+{
+  "1": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: Koi.rest – watch some fish and regain your balance"
+    }
+  ],
+  "2": [
+    {
+      "source": "theverge_ai",
+      "title": "Gemini 3.8 Live with Live Avatar gives Google’s AI a face"
+    }
+  ],
+  "3": [
+    {
+      "source": "techcrunch_ai",
+      "title": "PrismML brings its tiny LLMs to Qualcomm-powered smart glasses"
+    }
+  ],
+  "4": [
+    {
+      "source": "infoq_cn",
+      "title": "云栖之后，10+阿里AI实战派将亮相QCon上海站"
+    }
+  ],
+  "5": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Oracle sends force majeure notice on its New Mexico Stargate data center"
+    }
+  ],
+  "6": [
+    {
+      "source": "infoq_cn",
+      "title": "世界人工智能开源大赛（GOAI）总决赛暨颁奖盛典在杭州举行"
+    }
+  ],
+  "7": [
+    {
+      "source": "theverge_ai",
+      "title": "Jensen Huang talks about AI and climate change like a supervillain"
+    }
+  ],
+  "8": [
+    {
+      "source": "theverge_ai",
+      "title": "Meta is going to let you build games with AI right on your phone"
+    }
+  ],
+  "9": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend"
+    }
+  ],
+  "10": [
+    {
+      "source": "infoq_cn",
+      "title": "WSO2 发布 Agent Manager，企业寻求应对日益严重的 AI Agent 泛滥问题"
+    }
+  ],
+  "11": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design"
+    }
+  ],
+  "12": [
+    {
+      "source": "theverge_ai",
+      "title": "Muse will apparently let you download its entire filesystem"
+    }
+  ],
+  "13": [
+    {
+      "source": "theverge_ai",
+      "title": "Muse sure looks a lot like OpenClaw"
+    }
+  ],
+  "14": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Google Photos ‘Clueless’-inspired virtual closet is now available on Android and iOS"
+    }
+  ],
+  "15": [
+    {
+      "source": "theverge_ai",
+      "title": "It’s sinister that Meta’s Muse AI mascot is so cute"
+    }
+  ],
+  "16": [
+    {
+      "source": "techcrunch_ai",
+      "title": "TechCrunch Founder Summit 2026: Everything you need to know"
+    }
+  ],
+  "17": [
+    {
+      "source": "techcrunch_ai",
+      "title": "ElevenLabs’ CEO on margins, IPO timing, and telling customers they’re talking to a bot"
+    }
+  ],
+  "18": [
+    {
+      "source": "infoq_cn",
+      "title": "数据、模型、算力越来越难分开，Data+AI 基础设施怎么进化？"
+    }
+  ],
+  "19": [
+    {
+      "source": "deepmind_blog",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar"
+    }
+  ],
+  "20": [
+    {
+      "source": "theverge_ai",
+      "title": "Gemini can now call businesses for you so you don’t have to wait on hold"
+    }
+  ],
+  "21": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Google tests letting Gemini call businesses for you"
+    }
+  ],
+  "22": [
+    {
+      "source": "infoq_cn",
+      "title": "29 小时攻破浏览器，GPT-6 Astra 成为 OpenAI 首个“严重级”模型"
+    }
+  ],
+  "23": [
+    {
+      "source": "hackernews",
+      "title": "I Have a Confession: I Built This Site with AI – Please Forgive Me"
+    }
+  ],
+  "24": [
+    {
+      "source": "infoq_cn",
+      "title": "代码不再稀缺之后，软件工程还剩下什么？"
+    }
+  ],
+  "25": [
+    {
+      "source": "hackernews",
+      "title": "Tutoring company tells parents to save their money and 'use AI instead'"
+    }
+  ],
+  "26": [
+    {
+      "source": "infoq_cn",
+      "title": "GPU负责算，CPU负责干活：英特尔开始重新出牌"
+    }
+  ],
+  "27": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Lovable’s annualized revenue crosses $600M as vibe coding takes off"
+    }
+  ],
+  "28": [
+    {
+      "source": "hackernews",
+      "title": "AI safety is mostly a sex cult in Berkeley"
+    }
+  ],
+  "29": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Ando wants to take on Slack with a team messaging app that lets humans and agents work together"
+    }
+  ],
+  "30": [
+    {
+      "source": "theverge_ai",
+      "title": "Why can’t we just keep rogue AIs off the internet?"
+    }
+  ],
+  "31": [
+    {
+      "source": "qbitai",
+      "title": "出海Agent“小元AI”入驻腾讯WorkBuddy：找买家写开发信谈生意"
+    }
+  ],
+  "32": [
+    {
+      "source": "qbitai",
+      "title": "PCIe显卡被低估了！内核补齐+通信重构，DeepSeek推理吞吐翻近7倍"
+    }
+  ],
+  "33": [
+    {
+      "source": "theverge_ai",
+      "title": "Google is sending an AI satellite into space next week"
+    }
+  ],
+  "34": [
+    {
+      "source": "theverge_ai",
+      "title": "The vibes are bad for Flock in Washington"
+    }
+  ],
+  "35": [
+    {
+      "source": "hackernews",
+      "title": "Best LLM for every budget, updated daily"
+    }
+  ],
+  "36": [
+    {
+      "source": "infoq_cn",
+      "title": "GPT-6猛砍价，Opus 5.5忙“变好用”：模型价格战，已经不能只看API定价"
+    }
+  ],
+  "37": [
+    {
+      "source": "arxiv",
+      "title": "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution"
+    }
+  ],
+  "38": [
+    {
+      "source": "infoq_cn",
+      "title": "GPT-5.6-Cyber 代理多次突破虚拟机限制，证明虚拟机和操作系统需要更好的维护"
+    }
+  ],
+  "39": [
+    {
+      "source": "arxiv",
+      "title": "CORDIAL: Calibrating Ordinal LLM Outputs from Few Labels"
+    }
+  ],
+  "40": [
+    {
+      "source": "infoq_cn",
+      "title": "显存不够、内存太贵，KV Cache越堆越大：华为给出自己的新解法"
+    }
+  ],
+  "41": [
+    {
+      "source": "arxiv",
+      "title": "SEEK: Skill-Routed Evaluation with Evolvable Knowledge for Industrial Search"
+    }
+  ],
+  "42": [
+    {
+      "source": "arxiv",
+      "title": "Learning to Ideate for Scientific Impact"
+    }
+  ],
+  "43": [
+    {
+      "source": "arxiv",
+      "title": "Adaptive Fisher-Whitened Cross-Covariance for Low-Resource Speech Recognition"
+    }
+  ],
+  "44": [
+    {
+      "source": "arxiv",
+      "title": "Benchmarking and Domain Adaptation of Automatic Speech Recognition (ASR) for Adolescent Health Communication in Ghanaian Languages"
+    }
+  ],
+  "45": [
+    {
+      "source": "arxiv",
+      "title": "TimeBraid: Unifying Time Series and Language for Understanding and Forecasting"
+    }
+  ],
+  "46": [
+    {
+      "source": "arxiv",
+      "title": "Hallucination Neurons and Where to Find Them: An Investigation into the existence of Hallucination Neurons"
+    }
+  ],
+  "47": [
+    {
+      "source": "arxiv",
+      "title": "Prefilling the Reasoning Channel: Output-Prefix Attacks on Reasoning LLMs"
+    }
+  ],
+  "48": [
+    {
+      "source": "arxiv",
+      "title": "An Analytical Theory of Auxiliary Learning"
+    }
+  ],
+  "49": [
+    {
+      "source": "arxiv",
+      "title": "Breaking the Environment Wall: Evolving LLM Agent Environments for Recursive Self-Improvement"
+    }
+  ],
+  "50": [
+    {
+      "source": "arxiv",
+      "title": "WeatherDiagFlow: Evidence-Grounded Radar Nowcasting with Diagnostic Flow Refinement"
+    }
+  ],
+  "51": [
+    {
+      "source": "arxiv",
+      "title": "JEV vs. LLMs as Rubric Judges: Cheaper, Faster, and Wrong in the Same Places"
+    }
+  ],
+  "52": [
+    {
+      "source": "arxiv",
+      "title": "Anatomy-aware cross-speaker adaptation of complete vocal-tract acoustic-to-articulatory inversion"
+    }
+  ],
+  "53": [
+    {
+      "source": "arxiv",
+      "title": "On Growth and Form, and Function: Reusable Regulatory Handles Control Phenotypic Variation"
+    }
+  ],
+  "54": [
+    {
+      "source": "hackernews",
+      "title": "Oracle cites 'force majeure' to shield itself on controversial data center"
+    }
+  ],
+  "55": [
+    {
+      "source": "arxiv",
+      "title": "Between the Commits: Process, Error, and Claim Reliability in a Wholly AI-Authored Codebase"
+    }
+  ],
+  "56": [
+    {
+      "source": "qbitai",
+      "title": "时隔十年，AI大牛署名新论文"
+    }
+  ],
+  "57": [
+    {
+      "source": "arxiv",
+      "title": "AI-based detection of worsening heart failure from low-resolution telemonitoring data"
+    }
+  ],
+  "58": [
+    {
+      "source": "arxiv",
+      "title": "TopU-LBVS: A Realistic Multi Target Benchmark for Ligand Based Virtual Screening"
+    }
+  ],
+  "59": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Australia to investigate if OpenAI hack of government health website broke the law"
+    }
+  ],
+  "60": [
+    {
+      "source": "arxiv",
+      "title": "C3M: Cross-Session Multimodal Memory Maintenance for Long-Horizon Tasks"
+    }
+  ],
+  "61": [
+    {
+      "source": "arxiv",
+      "title": "TTLab at StanceEval-2026: A Cloze-Style Prompting Approach for Arabic-Language Stance Detection (CLASP-Ar)"
+    }
+  ],
+  "62": [
+    {
+      "source": "arxiv",
+      "title": "The Gold in Bias: Maturing the AI Design Process through Verification"
+    }
+  ],
+  "63": [
+    {
+      "source": "arxiv",
+      "title": "A General Framework for Budgeted Threshold Incentives on Request"
+    }
+  ],
+  "64": [
+    {
+      "source": "arxiv",
+      "title": "TTLab at AlexandriaX-2026: A Fine-Tuned Surface Tagger for Arabic Machine-Translation Error-Span Detection and Classification"
+    }
+  ],
+  "65": [
+    {
+      "source": "arxiv",
+      "title": "CodeGraph: Open-Taxonomy Knowledge Graph for Source Code with Wikidata Grounding"
+    }
+  ],
+  "66": [
+    {
+      "source": "arxiv",
+      "title": "Direct Message Approximation (DMA): A Consistency-Based Framework for Tractable Approximate Inference on Factor Graphs"
+    }
+  ],
+  "67": [
+    {
+      "source": "arxiv",
+      "title": "SWE-Prometheus: Measuring Engineering Governance Improvements in Real-World Repositories"
+    }
+  ],
+  "68": [
+    {
+      "source": "hackernews",
+      "title": "'That's so AI ' What gen Alpha's biggest insult tells us"
+    }
+  ],
+  "69": [
+    {
+      "source": "hackernews",
+      "title": "What Is RLCD? The Secret Behind Jev"
+    }
+  ],
+  "70": [
+    {
+      "source": "arxiv",
+      "title": "AgriCountDINO: Parameter-Efficient Exemplar-Guided Counting and Localization in Agriculture"
+    }
+  ],
+  "71": [
+    {
+      "source": "arxiv",
+      "title": "Precise Convergence Speed of Clipped SGD"
+    }
+  ],
+  "72": [
+    {
+      "source": "arxiv",
+      "title": "Decoupled Learning and Selection in Slate Recommendation for Privacy and Stability Under Noisy Scores"
+    }
+  ],
+  "73": [
+    {
+      "source": "arxiv",
+      "title": "YODAS v3: Over 1 Million Hours of High-Bandwidth, Stereophonic, Multilingual Speech"
+    }
+  ],
+  "74": [
+    {
+      "source": "arxiv",
+      "title": "Frame-to-Panorama Localization and Context-Aware Sampling for Scene-Specific Ship Detection in a Smart Marina Testbed"
+    }
+  ],
+  "75": [
+    {
+      "source": "arxiv",
+      "title": "SPADE-DFL: Communication-Efficient Decentralized Federated Learning via Derivative-Free Linearized ADMM"
+    }
+  ],
+  "76": [
+    {
+      "source": "arxiv",
+      "title": "Two Emojis of Difference: What Multilingual Affective Generation Benchmarks Actually Measure"
+    }
+  ],
+  "77": [
+    {
+      "source": "arxiv",
+      "title": "IterSynth: Rethinking Deep Search Agents via Role-Decoupled Iterative Synthesis"
+    }
+  ],
+  "78": [
+    {
+      "source": "hackernews",
+      "title": "Hackers influence ChatGPT and Gemini to direct users to scam centers"
+    }
+  ],
+  "79": [
+    {
+      "source": "theverge_ai",
+      "title": "OpenAI agents hacked an Australian government website in search for data"
+    }
+  ],
+  "80": [
+    {
+      "source": "arxiv",
+      "title": "Detecting Glaucoma Across Multi-ethnic Myopic and Non-Myopic Populations Using an Uncertainty-Aware Vision Transformer: A Multicentre Model Development and Validation Study"
+    }
+  ],
+  "81": [
+    {
+      "source": "arxiv",
+      "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures"
+    }
+  ],
+  "82": [
+    {
+      "source": "arxiv",
+      "title": "agentic-ger: terminology recovery in long-form speech using global context"
+    }
+  ],
+  "83": [
+    {
+      "source": "arxiv",
+      "title": "Rufus-Air: An Open LLM Post-Training Recipe"
+    }
+  ],
+  "84": [
+    {
+      "source": "arxiv",
+      "title": "Controlling Backchannels in Streamable Full-duplex Models"
+    }
+  ],
+  "85": [
+    {
+      "source": "arxiv",
+      "title": "Neural Transport Nested Sampling"
+    }
+  ],
+  "86": [
+    {
+      "source": "arxiv",
+      "title": "Large Language Models for Programming: Actually Fixing or Reimplementing Incorrect Code?"
+    }
+  ],
+  "87": [
+    {
+      "source": "arxiv",
+      "title": "Machine Unlearning for Gibbs Supervised Learning Algorithms"
+    }
+  ],
+  "88": [
+    {
+      "source": "arxiv",
+      "title": "Transcript-Supervised Post-Training of Generative Speech Enhancement on Real Recordings via Reinforce Adjoint Matching"
+    }
+  ],
+  "89": [
+    {
+      "source": "arxiv",
+      "title": "RD-JEPA: Predictive latent pretraining for few-trajectory transfer across reaction--diffusion equations"
+    }
+  ],
+  "90": [
+    {
+      "source": "arxiv",
+      "title": "ICE: Task-Aligned Clifford Latent Fields for Multimodal Graph Foundation Models"
+    }
+  ],
+  "91": [
+    {
+      "source": "arxiv",
+      "title": "Baseline Shape Decides the Verdict: A Controlled Re-Examination of Ternary Language Models at 60K Parameters"
+    }
+  ],
+  "92": [
+    {
+      "source": "arxiv",
+      "title": "Wearable ECG Quality Assessment: A Deep Learning and Ambulatory Context-Awareness Approach"
+    }
+  ],
+  "93": [
+    {
+      "source": "arxiv",
+      "title": "Concurrent Split Learning Through Stable Client Clustering"
+    }
+  ],
+  "94": [
+    {
+      "source": "arxiv",
+      "title": "Likelihood Ranking doesn't Scale Like Prompting in LLMs"
+    }
+  ],
+  "95": [
+    {
+      "source": "arxiv",
+      "title": "MORE-PLR: multi-output regression employed for partial label ranking"
+    }
+  ],
+  "96": [
+    {
+      "source": "arxiv",
+      "title": "Segment-Level Risk Discovery in Online Handwriting for Alzheimer's Disease Detection"
+    }
+  ],
+  "97": [
+    {
+      "source": "arxiv",
+      "title": "Lightweight Probabilistic Downscaling from a Deterministic Base Model"
+    }
+  ],
+  "98": [
+    {
+      "source": "arxiv",
+      "title": "Decoupled Early Exits for Task-Dependent Compute Allocation in Flow-Matching VLAs"
+    }
+  ],
+  "99": [
+    {
+      "source": "arxiv",
+      "title": "An auditable conditional-strategy framework for open-ended decision-making in complex lung cancer"
+    }
+  ],
+  "100": [
+    {
+      "source": "arxiv",
+      "title": "On the second-order optimization for spiking neural networks"
+    }
+  ],
+  "101": [
+    {
+      "source": "infoq_cn",
+      "title": "OpenAI 推出分级处理框架及案例研究，用于报告模型失调问题"
+    }
+  ],
+  "102": [
+    {
+      "source": "arxiv",
+      "title": "WST-Graph: Topology-Preserving Wavelet Scattering Front-End for Speech Deepfake Detection"
+    }
+  ],
+  "103": [
+    {
+      "source": "arxiv",
+      "title": "BanglaTurn: A Benchmark and Whisper-Based Model for End-of-Turn Detection in Bangla Speech"
+    }
+  ],
+  "104": [
+    {
+      "source": "arxiv",
+      "title": "From Policy Documents to Structured Survey Responses: Evaluating Large Language Models for Policy Monitoring"
+    }
+  ],
+  "105": [
+    {
+      "source": "arxiv",
+      "title": "Epistemic-Probabilistic Model for Guarded Multi-Agent LLM Coordination"
+    }
+  ],
+  "106": [
+    {
+      "source": "arxiv",
+      "title": "Beyond Simple Input-Output Assessment Tasks: Leveraging Automated Programming Assessment for Non-Trivial Courses"
+    }
+  ],
+  "107": [
+    {
+      "source": "infoq_cn",
+      "title": "60 万行巨石应用 AI 重构的可验证交付工程｜QCon上海"
+    }
+  ],
+  "108": [
+    {
+      "source": "hackernews",
+      "title": "AI has no intent and no motivation"
+    }
+  ],
+  "109": [
+    {
+      "source": "infoq_cn",
+      "title": "利用 AI 搭建内部开发者平台"
+    }
+  ],
+  "110": [
+    {
+      "source": "theverge_ai",
+      "title": "Gemini 4 is almost ready, says new Google DeepMind chief"
+    }
+  ],
+  "111": [
+    {
+      "source": "hackernews",
+      "title": "Meta takes down a critical video about meta AI Glasses after filming at Meta"
+    }
+  ],
+  "112": [
+    {
+      "source": "qbitai",
+      "title": "GPT-6之后，具身智能走向何方？诺因发布GLOW技术报告，给出机器人“一教就会”的答案"
+    }
+  ],
+  "113": [
+    {
+      "source": "qbitai",
+      "title": "Stripe Tour 中国首秀：构建 AI 经济基础设施，赋能全球商业增长"
+    }
+  ],
+  "114": [
+    {
+      "source": "qbitai",
+      "title": "教机器人干活，光“刷课时”可不够！灵初这次较真数据质量"
+    }
+  ],
+  "115": [
+    {
+      "source": "hackernews",
+      "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net"
+    }
+  ],
+  "116": [
+    {
+      "source": "qbitai",
+      "title": "5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark"
+    }
+  ],
+  "117": [
+    {
+      "source": "hackernews",
+      "title": "Contrastive Language Models"
+    }
+  ],
+  "118": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: How long do I need to work at my salary before I can coast, or retire?"
+    }
+  ],
+  "119": [
+    {
+      "source": "qbitai",
+      "title": "海信新一代性能旗舰E7S Pro+正式发布，原生真彩再进阶"
+    }
+  ],
+  "120": [
+    {
+      "source": "hackernews",
+      "title": "OpenAI agent hacked Australian government website, PM says"
+    },
+    {
+      "source": "hackernews",
+      "title": "Australia says OpenAI agent hacked into government website"
+    }
+  ],
+  "121": [
+    {
+      "source": "qbitai",
+      "title": "Meta靠自研Manus翻身！股价一夜暴涨11%，登顶苹果商店，增速反超ChatGPT"
+    }
+  ],
+  "122": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Everything new coming to Meta’s AI agent Muse"
+    }
+  ],
+  "123": [
+    {
+      "source": "hackernews",
+      "title": "Virtio-nvgpu: Near-native Nvidia GPU access inside a KVM guest"
+    }
+  ],
+  "124": [
+    {
+      "source": "qbitai",
+      "title": "成立九年，中科类脑把积累装进Token工厂"
+    }
+  ],
+  "125": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent"
+    }
+  ],
+  "126": [
+    {
+      "source": "hackernews",
+      "title": "Feds Target AI Critics as \"Foreign Agents\""
+    }
+  ],
+  "127": [
+    {
+      "source": "theverge_ai",
+      "title": "Meta is making a standalone Muse AI gadget"
+    }
+  ],
+  "128": [
+    {
+      "source": "meta_eng",
+      "title": "Bringing Private Processing to Meta AI Glasses"
+    }
+  ],
+  "129": [
+    {
+      "source": "theverge_ai",
+      "title": "Muse is coming to Meta smart glasses"
+    }
+  ],
+  "130": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Meta introduces camera-free AI glasses"
+    }
+  ],
+  "131": [
+    {
+      "source": "theverge_ai",
+      "title": "Meta ditches the camera on its newest smart glasses"
+    }
+  ],
+  "132": [
+    {
+      "source": "hackernews",
+      "title": "Stanford violated AI policy after race-swapping students in ad"
+    }
+  ],
+  "133": [
+    {
+      "source": "theverge_ai",
+      "title": "Meta is making Muse more powerful and will let you video chat with it, too"
+    }
+  ],
+  "134": [
+    {
+      "source": "infoq_cn",
+      "title": "从“单目感知”到“多视角立体对齐”：PrismAlign 重新定义文档结构化提取的精度上限"
+    }
+  ],
+  "135": [
+    {
+      "source": "hackernews",
+      "title": "ArXiv receives multiyear commitments to support it as an independent nonprofit"
+    }
+  ],
+  "136": [
+    {
+      "source": "theverge_ai",
+      "title": "Meta Connect 2026: The biggest news and announcements"
+    }
+  ],
+  "137": [
+    {
+      "source": "hackernews",
+      "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)"
+    },
+    {
+      "source": "hackernews",
+      "title": "Claude Opus 5.5"
+    },
+    {
+      "source": "infoq_cn",
+      "title": "Claude Opus 5.5 发布：一天内迁移 68 万行代码，单任务成本比 GPT-6 Astra 便宜 80%"
+    }
+  ],
+  "138": [
+    {
+      "source": "theverge_ai",
+      "title": "Meta Connect 2026 live blog: On the ground at Mark Zuckerberg’s next big product launch"
+    }
+  ],
+  "139": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Anthropic says its biology lab has already found something big"
+    }
+  ],
+  "140": [
+    {
+      "source": "hackernews",
+      "title": "Mercury 2.5 LLM hits 770 tokens per second"
+    }
+  ],
+  "141": [
+    {
+      "source": "infoq_cn",
+      "title": "人人都在造世界模型，HappyWorld‑Bench 试着给出一张统一考卷"
+    }
+  ],
+  "142": [
+    {
+      "source": "infoq_cn",
+      "title": "4096 张卡如何成为“一台计算机”？读懂华为的超节点布局"
+    }
+  ],
+  "143": [
+    {
+      "source": "hackernews",
+      "title": "Surprise, Meta's latest AI gimmick is just underpaid humans"
+    }
+  ],
+  "144": [
+    {
+      "source": "hackernews",
+      "title": "Claude's Load-Bearing Seams"
+    }
+  ],
+  "145": [
+    {
+      "source": "hackernews",
+      "title": "OpenAI agents hacked Australian Medicare system"
+    }
+  ],
+  "146": [
+    {
+      "source": "hackernews",
+      "title": "VSCode's SSH Agent Is Bananas (2025)"
+    }
+  ],
+  "147": [
+    {
+      "source": "hackernews",
+      "title": "OpenAI breaches Medicare, Albanese reveals"
+    }
+  ],
+  "148": [
+    {
+      "source": "hackernews",
+      "title": "OpenAI hacked Australian Medicare portal"
+    }
+  ],
+  "149": [
+    {
+      "source": "infoq_cn",
+      "title": "2026 年的云栖，阿里给 AI 行业递了一把新尺子"
+    }
+  ],
+  "150": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Enveda secures $311M to bring more nature-derived AI drugs into clinical trials"
+    }
+  ],
+  "151": [
+    {
+      "source": "hackernews",
+      "title": "Once Claude can measure something, it can make it faster"
+    }
+  ],
+  "152": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: I built a post-mortem debugger for native Windows x64/x86 crashes"
+    }
+  ],
+  "153": [
+    {
+      "source": "theverge_ai",
+      "title": "Meta’s AI agent is a cute little guy who’s great at spending my money"
+    }
+  ],
+  "154": [
+    {
+      "source": "theverge_ai",
+      "title": "Data centers are black boxes, but California wants to change that"
+    }
+  ],
+  "155": [
+    {
+      "source": "hackernews",
+      "title": "Cloud Agents Are Inevitable AI Prisons"
+    }
+  ],
+  "156": [
+    {
+      "source": "hackernews",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats"
+    }
+  ],
+  "157": [
+    {
+      "source": "theverge_ai",
+      "title": "Anthropic’s biolab made a discovery it’s comparing to Crispr"
+    }
+  ],
+  "158": [
+    {
+      "source": "techcrunch_ai",
+      "title": "ChatGPT mobile app gets voice-based agentic features"
+    }
+  ],
+  "159": [
+    {
+      "source": "infoq_cn",
+      "title": "AI 改变跨平台开发取舍，Shopify 弃用 React Native，改用 Swift 和 Kotlin"
+    }
+  ],
+  "160": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Even Americans who use AI every day are worried about it"
+    }
+  ],
+  "161": [
+    {
+      "source": "openai_news",
+      "title": "Two years of OpenAI Academy"
+    }
+  ],
+  "162": [
+    {
+      "source": "infoq_cn",
+      "title": "Dropbox 升级 Riviera 平台，支持 AI 工作负载"
+    }
+  ],
+  "163": [
+    {
+      "source": "hackernews",
+      "title": "Gemini 3.8 text-to-speech"
+    }
+  ],
+  "164": [
+    {
+      "source": "techcrunch_ai",
+      "title": "YouTube Music gets more conversational with new AI features"
+    }
+  ],
+  "165": [
+    {
+      "source": "hackernews",
+      "title": "GPT-6 Astra has gained the ability to drive a car"
+    }
+  ],
+  "166": [
+    {
+      "source": "infoq_cn",
+      "title": "智谱把 ZCode 开源了，然后呢？"
+    }
+  ],
+  "167": [
+    {
+      "source": "hackernews",
+      "title": "Jev Can't Be Calibrated"
+    }
+  ],
+  "168": [
+    {
+      "source": "techcrunch_ai",
+      "title": "StrictlyVC at TechCrunch Disrupt 2026: Inside the changing rules of venture capital"
+    }
+  ],
+  "169": [
+    {
+      "source": "techcrunch_ai",
+      "title": "YouTube releases new AI features for creators within its Studio app"
+    }
+  ],
+  "170": [
+    {
+      "source": "techcrunch_ai",
+      "title": "YouTube will let you build your own algorithm with AI"
+    }
+  ],
+  "171": [
+    {
+      "source": "hackernews",
+      "title": "Community condemn Bedminster AI mural as 'insult' to artists"
+    }
+  ],
+  "172": [
+    {
+      "source": "hackernews",
+      "title": "Stripe's Knowledge AI Platform"
+    }
+  ],
+  "173": [
+    {
+      "source": "infoq_cn",
+      "title": "大语言模型：下一代 DSL 编写者"
+    }
+  ],
+  "174": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Spotify is giving you the keys to its recommendation algorithm with US launch of ‘Taste Profile’"
+    }
+  ],
+  "175": [
+    {
+      "source": "openai_news",
+      "title": "OpenAI extends cyber access to Ukraine for civilian defense"
+    }
+  ],
+  "176": [
+    {
+      "source": "hackernews",
+      "title": "OpenAI is enlisting an influencer army to make it look 'good for the world'"
+    }
+  ],
+  "177": [
+    {
+      "source": "hackernews",
+      "title": "Claude Code reads AGENTS.md only when telemetry is on"
+    }
+  ],
+  "178": [
+    {
+      "source": "infoq_cn",
+      "title": "Redis之父质疑Jev狂热！绝大多数开发者其实不需要它"
+    }
+  ],
+  "179": [
+    {
+      "source": "infoq_cn",
+      "title": "Agents成新一代造王者，开发者正在快速失去技术决定权"
+    }
+  ],
+  "180": [
+    {
+      "source": "openai_news",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI"
+    }
+  ],
+  "181": [
+    {
+      "source": "openai_news",
+      "title": "How invideo improves color grading 3x with GPT‑6 Astra"
+    }
+  ],
+  "182": [
+    {
+      "source": "openai_news",
+      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra"
+    }
+  ],
+  "183": [
+    {
+      "source": "openai_news",
+      "title": "Sam Altman’s remarks at the United Nations Security Council"
+    }
+  ],
+  "184": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Ema raises $77M as AI starts eating into enterprise software and services"
+    }
+  ],
+  "185": [
+    {
+      "source": "infoq_cn",
+      "title": "数百亿向量怎么搜？Pinterest 抛弃“内存大户”HNSW，转向量化 SPANN"
+    }
+  ],
+  "186": [
+    {
+      "source": "hackernews",
+      "title": "The Download: why AI's latest breakthroughs and fears may be more hype than rea"
+    }
+  ],
+  "187": [
+    {
+      "source": "qbitai",
+      "title": "联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧"
+    }
+  ],
+  "188": [
+    {
+      "source": "infoq_cn",
+      "title": "阿里 Open Code Review 登顶 GitHub Trending 周榜第一，作者李峥峰将在 QCon 上海站揭秘百万任务验证的 Agent 工程实践"
+    }
+  ],
+  "189": [
+    {
+      "source": "openai_news",
+      "title": "Introducing MentalHealthBench"
+    }
+  ],
+  "190": [
+    {
+      "source": "infoq_cn",
+      "title": "飞猪 AI Native 交付大脑：用超级流程重构需求交付｜QCon上海"
+    }
+  ],
+  "191": [
+    {
+      "source": "qbitai",
+      "title": "让Token生产更高效：异构混推的关键技术演进与创新实践"
+    }
+  ],
+  "192": [
+    {
+      "source": "qbitai",
+      "title": "汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”"
+    }
+  ],
+  "193": [
+    {
+      "source": "qbitai",
+      "title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”"
+    }
+  ],
+  "194": [
+    {
+      "source": "infoq_cn",
+      "title": "Cloudflare 测试通过缓存转码来减少存储需求"
+    }
+  ],
+  "195": [
+    {
+      "source": "qbitai",
+      "title": "它石智航顶尖团队引领中国具身智能率先迈入规模化落地阶段"
+    }
+  ],
+  "196": [
+    {
+      "source": "qbitai",
+      "title": "斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”"
+    }
+  ],
+  "197": [
+    {
+      "source": "qbitai",
+      "title": "DeepSeek新论文公开Agent训练！梁文锋署名"
+    }
+  ],
+  "198": [
+    {
+      "source": "qbitai",
+      "title": "Qwen一号位定了！刘大一恒接棒"
+    }
+  ],
+  "199": [
+    {
+      "source": "hackernews",
+      "title": "Jev in 25 Lines of Python"
+    }
+  ],
+  "200": [
+    {
+      "source": "qbitai",
+      "title": "Jev vs Decitron：同为决策AI，为什么不是一回事？"
+    }
+  ],
+  "201": [
+    {
+      "source": "qbitai",
+      "title": "实时世界模型进入“全科生”阶段，PixVerse R2先交卷！"
+    }
+  ],
+  "202": [
+    {
+      "source": "techcrunch_ai",
+      "title": "‘We’re already fighting yesterday’s battle’: Greece’s prime minister gets candid about AI"
+    }
+  ],
+  "203": [
+    {
+      "source": "openai_news",
+      "title": "Grab and OpenAI bring practical AI skills to Southeast Asia"
+    }
+  ],
+  "204": [
+    {
+      "source": "hackernews",
+      "title": "The new CC, an AI agent built for families"
+    }
+  ],
+  "205": [
+    {
+      "source": "hackernews",
+      "title": "The current balance of power in open models"
+    }
+  ],
+  "206": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms"
+    }
+  ],
+  "207": [
+    {
+      "source": "openai_news",
+      "title": "Better prompt caching for GPT-6"
+    }
+  ],
+  "208": [
+    {
+      "source": "hackernews",
+      "title": "LLM Ass Bench"
+    }
+  ],
+  "209": [
+    {
+      "source": "infoq_cn",
+      "title": "从生成内容到创造体验，多模态大模型如何改变内容生产？"
+    }
+  ],
+  "210": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Qualcomm launches two new smartphone chips with emphasis on AI"
+    }
+  ],
+  "211": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Meta admits Muse’s likeness to OpenClaw isn’t a coincidence"
+    }
+  ],
+  "212": [
+    {
+      "source": "hackernews",
+      "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school"
+    }
+  ],
+  "213": [
+    {
+      "source": "infoq_cn",
+      "title": "不受控的 Agent ，凭什么上生产系统？"
+    }
+  ],
+  "214": [
+    {
+      "source": "hackernews",
+      "title": "Unreal Agent"
+    }
+  ],
+  "215": [
+    {
+      "source": "techcrunch_ai",
+      "title": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes"
+    },
+    {
+      "source": "openai_news",
+      "title": "Introducing GPT-6 Sol and Luna"
+    },
+    {
+      "source": "hackernews",
+      "title": "GPT-6 Sol and Luna"
+    }
+  ],
+  "216": [
+    {
+      "source": "infoq_cn",
+      "title": "Jotai 3.0 带来仅支持 ESM 的现代化包，摒弃旧版构建方式和已弃用 API"
+    }
+  ],
+  "217": [
+    {
+      "source": "hackernews",
+      "title": "Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal agent"
+    }
+  ],
+  "218": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Anthropic releases Opus 5.5 with lower prices and Fable-level performance"
+    }
+  ],
+  "219": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: AI·rete·RAG – a Rete rule engine decides, RAG explains why"
+    }
+  ],
+  "220": [
+    {
+      "source": "hackernews",
+      "title": "16-bit Intel 8088 chip (c. 1985)"
+    }
+  ],
+  "221": [
+    {
+      "source": "hackernews",
+      "title": "Writing Rust code that's fast by asking agents to make the code faster"
+    }
+  ],
+  "222": [
+    {
+      "source": "infoq_cn",
+      "title": "Meta 开源 Astryx：面向 Agent 的 React 设计系统"
+    }
+  ],
+  "223": [
+    {
+      "source": "hackernews",
+      "title": "Vacate a drone restriction that criminalized recording immigration agents"
+    }
+  ],
+  "224": [
+    {
+      "source": "techcrunch_ai",
+      "title": "AstroForge is putting AI in command of its next spacecraft"
+    }
+  ],
+  "225": [
+    {
+      "source": "hackernews",
+      "title": "OpenAI is well positioned to fast-follow Jev"
+    }
+  ],
+  "226": [
+    {
+      "source": "hackernews",
+      "title": "Jev – A curation of Jev demos on X, tools, skills, and integrations"
+    }
+  ],
+  "227": [
+    {
+      "source": "infoq_cn",
+      "title": "从 AI 工具到经营智能体：快手分销增长 Agent 实践"
+    }
+  ],
+  "228": [
+    {
+      "source": "infoq_cn",
+      "title": "AI Coding 贡献率超 90%，需求交付却只快了 10%：菜鸟如何用 Agent 托管端到端交付？"
+    }
+  ],
+  "229": [
+    {
+      "source": "hackernews",
+      "title": "Stanford R&DE Uses AI to Race Swap Students for Advertising"
+    }
+  ],
+  "230": [
+    {
+      "source": "hackernews",
+      "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005"
+    }
+  ],
+  "231": [
+    {
+      "source": "hackernews",
+      "title": "The Economics of Open-Weight Inference"
+    }
+  ],
+  "232": [
+    {
+      "source": "hackernews",
+      "title": "People Training OpenAI's AI Fired for Using AI to Train the AI"
+    }
+  ],
+  "233": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: JevBench, a reproducible benchmark for typed decision models"
+    }
+  ],
+  "234": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: Training a model to identify AI web content from structure alone"
+    }
+  ],
+  "235": [
+    {
+      "source": "techcrunch_ai",
+      "title": "Everyone can find a reason to dislike data center construction"
+    }
+  ],
+  "236": [
+    {
+      "source": "infoq_cn",
+      "title": "Netflix 重构 Conductor，以支持每月 4.2 亿次的工作流执行以及 10 倍规模的工作流"
+    }
+  ],
+  "237": [
+    {
+      "source": "hackernews",
+      "title": "Show HN: Npunlock – Run custom C kernels for Intel NPUs"
+    }
+  ]
+}

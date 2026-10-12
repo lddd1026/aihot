@@ -1,0 +1,103 @@
+英文原文样本 67 条；抽检 20 条 → D:\信息收集整理\aihot\reports\evidence\m2\real-llm\sample-20.json
+
+[29] techcrunch_ai | 融资商业 | imp=55
+  EN : Ema raises $77M as AI starts eating into enterprise software and services
+  CN : Ema 融资 7700 万美元，AI 正蚕食企业软件与服务市场
+  SUM: AI 企业软件公司 Ema 完成 7700 万美元融资，累计融资 1.4 亿美元，客户超 50 家，包括 Google 和微软。
+
+[30] techcrunch_ai | 政策监管 | imp=40
+  EN : ‘We’re already fighting yesterday’s battle’: Greece’s prime minister gets candid about AI
+  CN : 「我们已在打昨天的仗」：希腊总理坦率谈 AI
+  SUM: 希腊总理米佐塔基斯在采访中坦言，没有政府为 AI 即将带来的变化做好准备，并谈及欧洲在 AI 竞争中的处境。
+
+[32] techcrunch_ai | 融资商业 | imp=60
+  EN : Snorkel AI triples valuation to $3.5B as demand for AI training data booms
+  CN : Snorkel AI 估值翻三倍至 35 亿美元，AI 训练数据需求旺盛
+  SUM: 成立七年的 Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元，用于推进其数据即服务模式。
+
+[33] techcrunch_ai | 产品更新 | imp=65
+  EN : Qualcomm launches two new smartphone chips with emphasis on AI
+  CN : 高通发布两款主打 AI 的新手机芯片
+  SUM: 高通推出两款强调 AI 能力的新手机芯片，称其旗舰芯片可在本地运行 300 亿参数的 MoE 模型。
+
+[34] techcrunch_ai | 行业动态 | imp=45
+  EN : Meta admits Muse’s likeness to OpenClaw isn’t a coincidence
+  CN : Meta 承认 Muse 与 OpenClaw 相似并非巧合
+  SUM: Meta 称 Muse 为从零构建，但承认该 AI 助手「深受」OpenClaw 启发，连部分工作区文件名和内容都相似。
+
+[35] techcrunch_ai | 模型发布 | imp=95
+  EN : OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes
+  CN : OpenAI 发布 GPT-6 Sol 与 Luna
+  SUM: OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，在能力与成本之间提供不同取舍，面向日常工作任务。
+
+[36] techcrunch_ai | 模型发布 | imp=92
+  EN : Anthropic releases Opus 5.5 with lower prices and Fable-level performance
+  CN : Anthropic 发布 Opus 5.5，价格更低且性能达 Fable 级
+  SUM: Anthropic 发布 Opus 5.5，官方称其为迄今测试过的最强模型，同时下调价格，进一步加剧前沿模型市场竞争。
+
+[37] techcrunch_ai | 行业动态 | imp=45
+  EN : AstroForge is putting AI in command of its next spacecraft
+  CN : AstroForge 让 AI 接管其下一艘航天器
+  SUM: 小行星采矿公司 AstroForge 将在 Autonomy-1 探测器上部署小型 Transformer 模型，由 AI 自主控制航天器运行。
+
+[42] techcrunch_ai | 行业动态 | imp=35
+  EN : Everyone can find a reason to dislike data center construction
+  CN : 宾州两年AI数据中心争议：反对声浪从何而来
+  SUM: TechCrunch梳理宾夕法尼亚州两年间围绕AI数据中心建设的争论，反映选址、能耗与社区利益冲突正成为行业扩张的现实阻力。
+
+[43] openai_news | 政策监管 | imp=40
+  EN : OpenAI extends cyber access to Ukraine for civilian defense
+  CN : OpenAI 扩大对乌克兰的网络访问，支持民用防御
+  SUM: OpenAI 将 Daybreak 计划访问权限扩展至乌克兰政府，用于支持民用基础设施的网络防御。
+
+[44] openai_news | 行业动态 | imp=45
+  EN : Grab and OpenAI bring practical AI skills to Southeast Asia
+  CN : Grab 与 OpenAI 合作，将实用 AI 技能带到东南亚
+  SUM: OpenAI 与 Grab 推出 GO Forward with AI 区域项目，计划帮助东南亚 3 万名合作伙伴掌握实用 AI 技能。
+
+[45] openai_news | 模型发布 | imp=95
+  EN : Better prompt caching for GPT-6
+  CN : OpenAI 发布 GPT-6 Sol 与 Luna
+  SUM: OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，在能力与成本之间提供不同取舍，面向日常工作任务。
+
+[46] openai_news | 模型发布 | imp=95
+  EN : Introducing GPT-6 Sol and Luna
+  CN : OpenAI 发布 GPT-6 Sol 与 Luna
+  SUM: OpenAI 推出 GPT-6 Sol 和 Luna 两款模型，在能力与成本之间提供不同取舍，面向日常工作任务。
+
+[48] hackernews | 行业动态 | imp=30
+  EN : The Download: why AI's latest breakthroughs and fears may be more hype than rea
+  CN : The Download：AI 最新突破与担忧或言过其实
+  SUM: The Download 文章讨论 AI 领域最新突破与相关担忧可能被夸大，呼吁理性看待技术进展与风险。
+
+[1] qbitai | 产品更新 | imp=40
+  EN : 联想亮相阿里云栖大会：联想天禧AI把超级组织落地到端侧
+  CN : 联想天禧 AI 亮相阿里云栖大会
+  SUM: 联想在阿里云栖大会展示天禧 AI 及全场景多端产品矩阵，推动超级组织能力落地到端侧设备。
+
+[2] qbitai | 行业动态 | imp=40
+  EN : 让Token生产更高效：异构混推的关键技术演进与创新实践
+  CN : 商汤分享异构混推技术演进与实践
+  SUM: 商汤大装置介绍异构混合推理的关键技术演进与创新实践，目标提升 Token 生产效率。
+
+[3] qbitai | 产品更新 | imp=45
+  EN : 汇智智能发布Hellome：国内首个FDE直连智能体服务平台，把AI交付周期压进“周”
+  CN : 汇智智能发布 Hellome 智能体服务平台
+  SUM: 汇智智能推出国内首个 FDE 直连智能体服务平台 Hellome，主打将企业 AI 交付周期压缩至周级别。
+
+[4] qbitai | 融资商业 | imp=40
+  EN : 达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”
+  CN : 达卯科技完成新一轮融资，聚焦算电协同
+  SUM: 达卯科技完成新一轮融资，定位算电协同核心软件层，计划打造该领域的操作系统级平台。
+
+[5] qbitai | 行业动态 | imp=45
+  EN : 它石智航顶尖团队引领中国具身智能率先迈入规模化落地阶段
+  CN : 它石智航推进具身智能规模化落地
+  SUM: 它石智航宣布扩大研发团队并加快生产基地布局，提升机器人交付能力，推动具身智能进入规模化落地阶段。
+
+[6] qbitai | 模型发布 | imp=55
+  EN : 斑马智能发布端模型AutoOmni2.0，让元神AI更懂“我的世界”
+  CN : 斑马智能发布端侧全模态模型 AutoOmni 2.0
+  SUM: 斑马智能在云栖大会期间发布 AutoOmni 2.0-23B-A3B 端侧全模态大模型，用于增强其元神 AI 对场景的理解能力。
+
+真实调用候选 6 条 → D:\信息收集整理\aihot\reports\evidence\m2\real-llm\real-call-candidates.json

@@ -1,0 +1,21 @@
+{
+  "all_inconsistencies": [
+    {
+      "cluster_id": 7,
+      "mention_count": 11,
+      "item_hashes": 10,
+      "actual_items": 11,
+      "canonical_title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005"
+    }
+  ],
+  "mention_mismatch": [],
+  "item_hashes_stale_only": [
+    {
+      "cluster_id": 7,
+      "mention_count": 11,
+      "item_hashes": 10,
+      "actual_items": 11,
+      "canonical_title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005"
+    }
+  ]
+}

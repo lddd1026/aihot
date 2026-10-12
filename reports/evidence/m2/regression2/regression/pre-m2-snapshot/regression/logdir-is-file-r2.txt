@@ -1,0 +1,21 @@
+COMMAND: python -m aihot check --config <log_dir=file config>
+EXIT CODE: 1
+--- STDOUT+STDERR ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-logdir-r2-qa9fm5zx\config.yaml
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\信息收集整理\aihot\src\aihot\__main__.py", line 6, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 65, in main
+    return _cmd_check(args)
+           ^^^^^^^^^^^^^^^^
+  File "D:\信息收集整理\aihot\src\aihot\cli.py", line 86, in _cmd_check
+    setup_logging(cfg.app.log_dir, "DEBUG" if args.debug else cfg.app.log_level, cfg.secrets())
+  File "D:\信息收集整理\aihot\src\aihot\logging_setup.py", line 91, in setup_logging
+    log_dir.mkdir(parents=True, exist_ok=True)
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-logdir-r2-qa9fm5zx\\blocker'

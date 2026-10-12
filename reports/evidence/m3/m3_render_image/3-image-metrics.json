@@ -1,0 +1,130 @@
+{
+  "normal": {
+    "path": "C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m3-tests\\work\\render-image\\digests\\normal\\2026-09-24.jpg",
+    "bytes": 494115,
+    "soi": true,
+    "eoi": true,
+    "width": 1080,
+    "height": 3795,
+    "progressive": false,
+    "pixels": {
+      "ok": true,
+      "width": 1080,
+      "height": 3795,
+      "dark_ratio": 0.053180110281559556,
+      "ink_ratio": 0.10159273898404333,
+      "red_px": 8500,
+      "blue_px": 38162
+    }
+  },
+  "mega_real_limit": {
+    "paths": [
+      "C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m3-tests\\work\\render-image\\digests\\mega\\2026-09-24-1.jpg",
+      "C:\\Users\\LEGION\\AppData\\Local\\Temp\\aihot-m3-tests\\work\\render-image\\digests\\mega\\2026-09-24-2.jpg"
+    ],
+    "infos": [
+      {
+        "bytes": 1973468,
+        "soi": true,
+        "eoi": true,
+        "width": 1080,
+        "height": 11691,
+        "progressive": false
+      },
+      {
+        "bytes": 1861017,
+        "soi": true,
+        "eoi": true,
+        "width": 1080,
+        "height": 11547,
+        "progressive": false
+      }
+    ],
+    "pixels": [
+      {
+        "ok": true,
+        "width": 1080,
+        "height": 11691,
+        "dark_ratio": 0.08759808906502944,
+        "ink_ratio": 0.17219917505393512,
+        "red_px": 8509,
+        "blue_px": 75423
+      },
+      {
+        "ok": true,
+        "width": 1080,
+        "height": 11547,
+        "dark_ratio": 0.08374196921438629,
+        "ink_ratio": 0.16280258781341314,
+        "red_px": 8330,
+        "blue_px": 74426
+      }
+    ]
+  },
+  "mega_forced_split": {
+    "threshold": 2971423,
+    "full_sizes_by_quality": {
+      "88": 5402348,
+      "76": 3897739,
+      "64": 3207735
+    },
+    "part_sizes_by_quality": [
+      {
+        "88": 2735111,
+        "76": 1973468,
+        "64": 1624322
+      },
+      {
+        "88": 2578427,
+        "76": 1861017,
+        "64": 1530894
+      }
+    ],
+    "parts": [
+      {
+        "bytes": 2735111,
+        "soi": true,
+        "eoi": true,
+        "width": 1080,
+        "height": 11691,
+        "progressive": false
+      },
+      {
+        "bytes": 2578427,
+        "soi": true,
+        "eoi": true,
+        "width": 1080,
+        "height": 11547,
+        "progressive": false
+      }
+    ],
+    "pixels": [
+      {
+        "ok": true,
+        "width": 1080,
+        "height": 11691,
+        "dark_ratio": 0.08794728138454082,
+        "ink_ratio": 0.16230370307010458,
+        "red_px": 8600,
+        "blue_px": 77813
+      },
+      {
+        "ok": true,
+        "width": 1080,
+        "height": 11547,
+        "dark_ratio": 0.08407466746212741,
+        "ink_ratio": 0.1539968694770808,
+        "red_px": 8433,
+        "blue_px": 77641
+      }
+    ]
+  },
+  "timings": {
+    "normal_seconds": 3.2,
+    "mega_seconds": 10.47
+  },
+  "font": {
+    "titleFont": "\"Microsoft YaHei\", \"PingFang SC\", \"Hiragino Sans GB\", sans-serif",
+    "cjkWidth": 264
+  }
+}

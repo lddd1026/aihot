@@ -1,0 +1,11 @@
+COMMAND: D:\信息收集整理\aihot\.venv\Scripts\python.exe -m aihot check --config C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ugu49m0c\bad-yaml.yaml
+EXIT CODE: 3
+--- STDOUT ---
+aihot check · 配置与连通性自检
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m0-ugu49m0c\bad-yaml.yaml
+
+[ERR] 配置校验未通过（1 个问题）:
+  1. YAML 解析失败: expected ',' or ']', but got '<stream end>'（第 2 行，第 1 列，已隐藏原文以防泄露密钥）
+
+--- STDERR ---
+

@@ -1,0 +1,6 @@
+  [PASS] 复现-非法端口代理导致 check --net traceback（M0 回归）: proxy=http://127.0.0.1:abc check_net_rc=1 含[ERR]代理=False 含traceback=True
+  [PASS] 复现-非法端口代理导致 fetch traceback: proxy=http://127.0.0.1:abc fetch_rc=1 含traceback=True
+  [PASS] 复现-同一配置 check（不带 --net）却判为合法: check 普通模式 rc=0（配置校验未拦截非法端口）
+  [NOTE] 其他非法变体影响面: ['http://[::1(net_tb=True,fetch_tb=True)', 'http://:7890(net_tb=False,fetch_tb=True)', 'http://127.0.0.1:99999(net_tb=True,fetch_tb=True)', 'socks5://127.0.0.1:abc(net_tb=True,fetch_tb=True)']
+
+== proxy_bad_port: 3 passed / 0 failed == summary=D:\信息收集整理\aihot\reports\evidence\m1\proxy_bad_port.json

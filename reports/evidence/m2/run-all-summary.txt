@@ -1,0 +1,13 @@
+PASS   m2_prefilter.py          exit=0 12/12    2.7s
+FAIL   m2_dedup.py              exit=1 13/15    9.6s
+PASS   m2_llm_robust.py         exit=0 60/60    106.4s
+PASS   m2_cache.py              exit=0 8/8      9.1s
+PASS   m2_cost.py               exit=0 9/9      8.6s
+PASS   m2_rank.py               exit=0 17/17    3.2s
+PASS   m2_cli.py                exit=0 26/26    16.2s
+PASS   m2_real_llm.py           exit=0 7/7      5.3s
+PASS   m2_perf.py               exit=0 5/5      14.2s
+PASS   m2_regression.py         exit=0 25/25    300.5s
+INFO   m2_translation_sample.py exit=0 -        0.1s
+INFO   m2_dbview.py             exit=0 -        0.1s
+INFO   m2_dedup_probe.py        exit=0 -        1.2s

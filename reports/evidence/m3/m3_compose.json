@@ -1,0 +1,103 @@
+{
+  "suite": "m3_compose",
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "1.1 过滤类排除",
+      "ok": true,
+      "detail": "actual=True"
+    },
+    {
+      "item": "1.1 其他-importance10 排除",
+      "ok": true,
+      "detail": "actual=True"
+    },
+    {
+      "item": "1.1 其他-importance15 排除（边界）",
+      "ok": true,
+      "detail": "actual=True"
+    },
+    {
+      "item": "1.1 其他-importance16 保留",
+      "ok": true,
+      "detail": "actual=True"
+    },
+    {
+      "item": "1.1 正常分类保留",
+      "ok": true,
+      "detail": "actual=True"
+    },
+    {
+      "item": "1.1 空标题排除",
+      "ok": true,
+      "detail": "actual=True"
+    },
+    {
+      "item": "1.2 Top N 条数与顺序",
+      "ok": true,
+      "detail": "top=['正常条目 1', '正常条目 2', '正常条目 3', '正常条目 4', '正常条目 5']"
+    },
+    {
+      "item": "1.3 简讯切分紧随 Top N",
+      "ok": true,
+      "detail": "briefs=['正常条目 6', '正常条目 7', '正常条目 8']"
+    },
+    {
+      "item": "1.4 排除项未进入日报",
+      "ok": true,
+      "detail": "top+briefs=['正常条目 1', '正常条目 2', '正常条目 3', '正常条目 4', '正常条目 5', '正常条目 6', '正常条目 7', '正常条目 8']"
+    },
+    {
+      "item": "1.5 统计自洽（selected/briefs）",
+      "ok": true,
+      "detail": "stats={'scanned': 0, 'kept': 0, 'clusters': 0, 'selected': 5, 'briefs': 3, 'sources': 0, 'cost_cny': 0.0, 'papers': 0}"
+    },
+    {
+      "item": "1.6 「其他-16/40」在可发布池中（未被误杀）",
+      "ok": true,
+      "detail": "publishable=['正常条目 1', '正常条目 2', '正常条目 3', '正常条目 4', '正常条目 5', '正常条目 6', '正常条目 7', '正常条目 8', '其他-40', '其他-16']"
+    },
+    {
+      "item": "1.7 top_n 超界 → 全部进 Top、简讯为空",
+      "ok": true,
+      "detail": "top=10 publishable=10 briefs=0"
+    },
+    {
+      "item": "1.8 brief_count=0 → 无简讯",
+      "ok": true,
+      "detail": "briefs=0"
+    },
+    {
+      "item": "1.9 top_n=0 → 无精选、简讯取前 4",
+      "ok": true,
+      "detail": "top=0 briefs=4"
+    },
+    {
+      "item": "1.10 端到端：Top5 来自库内可发布条目（排除过滤/低分其他）",
+      "ok": true,
+      "detail": "titles=['DB 正常 1', 'DB 正常 2', 'DB 正常 3', 'DB 正常 4', 'DB 正常 5', 'DB 正常 6', 'DB 正常 7', 'DB 正常 8', 'DB 正常 9', 'DB 正常 10', 'DB 正常 11', 'DB 正常 12', 'DB 高分其他']"
+    },
+    {
+      "item": "1.11 端到端：高分「其他」进入候选（top 或 brief）",
+      "ok": true,
+      "detail": "titles=['DB 正常 1', 'DB 正常 2', 'DB 正常 3', 'DB 正常 4', 'DB 正常 5', 'DB 正常 6', 'DB 正常 7', 'DB 正常 8', 'DB 正常 9', 'DB 正常 10', 'DB 正常 11', 'DB 正常 12', 'DB 高分其他']"
+    },
+    {
+      "item": "1.12 端到端：统计与库内数据自洽",
+      "ok": true,
+      "detail": "stats={'scanned': 14, 'kept': 14, 'clusters': 14, 'selected': 5, 'briefs': 8, 'sources': 1, 'cost_cny': 0.0, 'papers': 0} titles=13"
+    },
+    {
+      "item": "1.13 端到端：过滤条目未写入日报 payload",
+      "ok": true,
+      "detail": "db 过滤条数=4"
+    },
+    {
+      "item": "1.14 真实库/存档未改动",
+      "ok": true,
+      "detail": "db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,13 @@
+aihot fetch · 采集一次（只落库，不推送）
+配置文件: C:\Users\LEGION\AppData\Local\Temp\aihot-m1-tests\aihot-m1-adv-empty-qjn4s13p\config.yaml
+11:47:49 INFO aihot.sources: 信息源完成: empty，0 条（40 ms）
+11:47:49 INFO aihot.sources: 信息源完成: good，1 条（41 ms）
+
+采集窗口: 最近 24 小时（起始 2026-09-24T11:47:46+08:00）
+信息源  : 2 个
+
+采集结果:
+  [OK ] empty              0 条（40 ms）
+  [OK ] good               1 条（41 ms）
+
+合计: 抓取 1 条 → 新增 1 条（去重 0 条）→ 库内共 1 条

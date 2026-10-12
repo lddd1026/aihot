@@ -1,0 +1,50 @@
+[
+  {
+    "proxy_url": "http://127.0.0.1:abc",
+    "check_rc": 3,
+    "check_net_rc": 3,
+    "fetch_rc": 3,
+    "any_traceback": false,
+    "mentions_proxy_url": true
+  },
+  {
+    "proxy_url": "http://[::1",
+    "check_rc": 3,
+    "check_net_rc": 3,
+    "fetch_rc": 3,
+    "any_traceback": false,
+    "mentions_proxy_url": true
+  },
+  {
+    "proxy_url": "http://:7890",
+    "check_rc": 3,
+    "check_net_rc": 3,
+    "fetch_rc": 3,
+    "any_traceback": false,
+    "mentions_proxy_url": true
+  },
+  {
+    "proxy_url": "http://127.0.0.1:99999",
+    "check_rc": 3,
+    "check_net_rc": 3,
+    "fetch_rc": 3,
+    "any_traceback": false,
+    "mentions_proxy_url": true
+  },
+  {
+    "proxy_url": "socks5://127.0.0.1:abc",
+    "check_rc": 3,
+    "check_net_rc": 3,
+    "fetch_rc": 3,
+    "any_traceback": false,
+    "mentions_proxy_url": true
+  },
+  {
+    "proxy_url": "ftp://127.0.0.1:7890",
+    "check_rc": 3,
+    "check_net_rc": 3,
+    "fetch_rc": 3,
+    "any_traceback": false,
+    "mentions_proxy_url": true
+  }
+]

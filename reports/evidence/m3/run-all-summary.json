@@ -1,0 +1,557 @@
+{
+  "generated": "2026-09-25 12:15:13",
+  "real_db_before": {
+    "db": {
+      "bytes": 475136,
+      "mtime": 1790301963.7560847,
+      "items": 363,
+      "enriched": 176,
+      "runs": 9,
+      "clusters": 101,
+      "digests": 2
+    },
+    "digests": {
+      "2026-09-24.html": {
+        "bytes": 17568,
+        "mtime": 1790254027.2243528
+      },
+      "2026-09-24.jpg": {
+        "bytes": 764268,
+        "mtime": 1790254025.4947867
+      },
+      "2026-09-24.md": {
+        "bytes": 6443,
+        "mtime": 1790254027.223354
+      },
+      "2026-09-25.html": {
+        "bytes": 19872,
+        "mtime": 1790301963.7474189
+      },
+      "2026-09-25.jpg": {
+        "bytes": 933921,
+        "mtime": 1790301963.235982
+      },
+      "2026-09-25.md": {
+        "bytes": 7608,
+        "mtime": 1790301963.746426
+      }
+    }
+  },
+  "real_db_after": {
+    "db": {
+      "bytes": 475136,
+      "mtime": 1790301963.7560847,
+      "items": 363,
+      "enriched": 176,
+      "runs": 9,
+      "clusters": 101,
+      "digests": 2
+    },
+    "digests": {
+      "2026-09-24.html": {
+        "bytes": 17568,
+        "mtime": 1790254027.2243528
+      },
+      "2026-09-24.jpg": {
+        "bytes": 764268,
+        "mtime": 1790254025.4947867
+      },
+      "2026-09-24.md": {
+        "bytes": 6443,
+        "mtime": 1790254027.223354
+      },
+      "2026-09-25.html": {
+        "bytes": 19872,
+        "mtime": 1790301963.7474189
+      },
+      "2026-09-25.jpg": {
+        "bytes": 933921,
+        "mtime": 1790301963.235982
+      },
+      "2026-09-25.md": {
+        "bytes": 7608,
+        "mtime": 1790301963.746426
+      }
+    }
+  },
+  "real_db_unchanged": true,
+  "results": [
+    {
+      "script": "m3_infra_probe.py",
+      "exit": 1,
+      "passed": "8/9",
+      "verdict": "FAIL",
+      "seconds": 16.0,
+      "tail": "  [PASS] fake-smtp-reject-auth: SMTPAuthenticationError raised\n  [FAIL] fake-service-churn: 6.85s\n\n== m3_infra: 8 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_infra.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_compose.py",
+      "exit": 0,
+      "passed": "19/19",
+      "verdict": "PASS",
+      "seconds": 1.5,
+      "tail": "  [PASS] 1.13 端到端：过滤条目未写入日报 payload: db 过滤条数=4\n  [PASS] 1.14 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_compose: 19 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_compose.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_render_text.py",
+      "exit": 1,
+      "passed": "22/23",
+      "verdict": "FAIL",
+      "seconds": 1.1,
+      "tail": "  [PASS] 2.23 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_render_text: 22 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_render_text.json\n企微分片过多（16 片），仅发送前 10 片",
+      "group": "M3"
+    },
+    {
+      "script": "m3_render_image.py",
+      "exit": 1,
+      "passed": "?",
+      "verdict": "?",
+      "seconds": 21.6,
+      "tail": "  File \"D:\\信息收集整理\\aihot\\tests\\independent\\m3_render_image.py\", line 156, in main\n    mega_views_top, mega_views_briefs = build_views(mega_digest)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: too many values to unpack (expected 2)",
+      "group": "M3"
+    },
+    {
+      "script": "m3_render_image_edges.py",
+      "exit": 1,
+      "passed": "?",
+      "verdict": "?",
+      "seconds": 5.7,
+      "tail": "  File \"D:\\信息收集整理\\aihot\\tests\\independent\\m3_render_image_edges.py\", line 82, in main\n    views_top, views_briefs = build_views(digest)\n    ^^^^^^^^^^^^^^^^^^^^^^^\nValueError: too many values to unpack (expected 2)",
+      "group": "M3"
+    },
+    {
+      "script": "m3_wecom.py",
+      "exit": 0,
+      "passed": "24/24",
+      "verdict": "PASS",
+      "seconds": 40.8,
+      "tail": "  [PASS] 4.21 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_wecom: 24 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_wecom.json\n企微分片过多（21 片），仅发送前 10 片",
+      "group": "M3"
+    },
+    {
+      "script": "m3_email.py",
+      "exit": 0,
+      "passed": "16/16",
+      "verdict": "PASS",
+      "seconds": 18.6,
+      "tail": "  [PASS] 5.15 编排层：attach_image=false → 无内嵌图: content_types=['multipart/alternative', 'text/plain', 'text/html']\n  [PASS] 5.16 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_email: 16 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_email.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_e2e.py",
+      "exit": 0,
+      "passed": "22/22",
+      "verdict": "PASS",
+      "seconds": 46.1,
+      "tail": "  [PASS] 6.21 resend 无存档日期：rc=1 且提示明确（无 traceback）: rc=1\n  [PASS] 6.22 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_e2e: 22 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_e2e.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_degrade.py",
+      "exit": 0,
+      "passed": "16/16",
+      "verdict": "PASS",
+      "seconds": 52.4,
+      "tail": "图片体积超限，尝试下一套方案: 2026-09-24.jpg 超过 2048 KB\n图片体积超限，尝试下一套方案: 2026-09-24-1.jpg 超过 2048 KB\n长图渲染失败，降级为纯文字推送: 图片体积超限（降质与拆图后仍失败）: 2026-09-24-1.jpg 超过 2048 KB\n长图渲染失败，降级为纯文字推送: 注入的渲染失败",
+      "group": "M3"
+    },
+    {
+      "script": "m3_idempotent.py",
+      "exit": 0,
+      "passed": "11/11",
+      "verdict": "PASS",
+      "seconds": 52.3,
+      "tail": "  [PASS] 7.10 resend 重复执行：按补发语义每次发送（实测记录）: wecom 2→6 email 1→3\n  [PASS] 7.11 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_idempotent: 11 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_idempotent.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_cli.py",
+      "exit": 0,
+      "passed": "27/27",
+      "verdict": "PASS",
+      "seconds": 111.6,
+      "tail": "  [PASS] 8.12 resend --channel all（无存档）→ rc=1 且提示明确: rc=1\n  [PASS] 8.13 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_cli: 27 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_cli.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_toolchain.py",
+      "exit": 1,
+      "passed": "9/10",
+      "verdict": "FAIL",
+      "seconds": 40.8,
+      "tail": "  [PASS] 9.9 真实库与 data/digests 未改动（快照一致）: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2} digests=6 个文件\n  [PASS] 9.10 check 输出不泄漏假密钥（正向对照）: rc=0\n\n== m3_toolchain: 9 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_toolchain.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_fixes.py",
+      "exit": 0,
+      "passed": "15/15",
+      "verdict": "PASS",
+      "seconds": 25.8,
+      "tail": "  [PASS] 10.9 编排层：attach_image=false 邮件不含 image/* 部件: content_types=['multipart/alternative', 'text/plain', 'text/html']\n  [PASS] 10.10 真实库/存档未改动: db={'bytes': 475136, 'mtime': 1790301963.7560847, 'items': 363, 'enriched': 176, 'runs': 9, 'clusters': 101, 'digests': 2}\n\n== m3_fixes: 15 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_fixes.json",
+      "group": "M3"
+    },
+    {
+      "script": "m3_dryrun_db.py",
+      "exit": 1,
+      "passed": "3/4",
+      "verdict": "FAIL",
+      "seconds": 9.4,
+      "tail": "  [FAIL] probe.3 dry-run 未写入任何行: items=None runs=None\n  [PASS] probe.4 真实 fetch 正常落库: final={'exists': True, 'bytes': 49152, 'tables': ['items', 'sqlite_sequence', 'clusters', 'digests', 'runs'], 'items': 2, 'runs': 1} rc=0\n\n== m3_dryrun_db: 3 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m3\\m3_dryrun_db.json",
+      "group": "M3"
+    },
+    {
+      "script": "m0_blackbox.py",
+      "exit": 1,
+      "passed": "104/105",
+      "verdict": "FAIL",
+      "seconds": 159.9,
+      "tail": "[PASS] fix-d8-example-out-of-box :: rc=0\n\n== SUMMARY: 104/105 passed ==\nFAILED: net-wecom-fake-ok :: 退出码 1 != 期望 0",
+      "group": "M0"
+    },
+    {
+      "script": "m0_inprocess.py",
+      "exit": 0,
+      "passed": "13/13",
+      "verdict": "PASS",
+      "seconds": 2.3,
+      "tail": "[PASS] observation-extra-handler :: 额外插入的未过滤 handler（顺序最前）会写出明文，属调用方责任，非产品缺陷\n[PASS] probe-error-text-redacted :: masked=ConnectError: All connection attempts failed for ***\n\n== SUMMARY: 13/13 passed ==",
+      "group": "M0"
+    },
+    {
+      "script": "m0_secret_scan.py",
+      "exit": 0,
+      "passed": "13/13",
+      "verdict": "PASS",
+      "seconds": 59.3,
+      "tail": "[PASS] malformed-yaml-console-no-leak :: rc=3, 完整泄漏=无\n[PASS] malformed-yaml-console-no-partial-leak :: 部分泄漏(20字符窗口命中数)=无\n\n== SUMMARY: 13/13 passed ==",
+      "group": "M0"
+    },
+    {
+      "script": "m0_yaml_error_probe.py",
+      "exit": 1,
+      "passed": "5/6",
+      "verdict": "FAIL",
+      "seconds": 6.4,
+      "tail": "[PASS] bad_anchor: rc=3, leaks=无, partial=无, traceback=False, 隐藏提示=True\n[FAIL] bad_alias: rc=3, leaks=['M0YAMLKEY0123456789abcdef'], partial=无, traceback=False, 隐藏提示=True\n\n== SUMMARY: 5/6 passed ==",
+      "group": "M0"
+    },
+    {
+      "script": "m0_issue_redaction_probe.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 4.6,
+      "tail": "[PASS] webhook_url_in_proxy_url: rc=0（期望 0）, leaks=无, 脱敏标记=True\n     代理      : https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=***\n\n== SUMMARY: 4/4 passed ==",
+      "group": "M0"
+    },
+    {
+      "script": "m0_round3_probe.py",
+      "exit": 0,
+      "passed": "10/10",
+      "verdict": "PASS",
+      "seconds": 12.9,
+      "tail": "[PASS] d7r-no-llm-section-errors :: rc=3, 提示 base_url=是, model=是\n[PASS] d7r-valid-config-ok :: rc=0（期望 0）\n\n== SUMMARY: 10/10 passed ==",
+      "group": "M0"
+    },
+    {
+      "script": "m1_revision.py",
+      "exit": 0,
+      "passed": "?",
+      "verdict": "OBSERVE",
+      "seconds": 1.1,
+      "tail": "  c35572823323   16885  src\\aihot\\store.py\n  607fb330762b    4821  src\\aihot\\utils.py\n  bd089952d42b     968  pyproject.toml\n  87c423953906    5657  config.example.yaml",
+      "group": "M1"
+    },
+    {
+      "script": "m1_real_db_state.py",
+      "exit": 0,
+      "passed": "?",
+      "verdict": "OBSERVE",
+      "seconds": 0.6,
+      "tail": "  20260925T014947-ddc92e ok 2026-09-25T01:49:47.427847+00:00 stats={\"stage\": \"fetch\", \"window_hours\": 24, \"sources_ok\": 8, \"sources_failed\": 0, \"fetched\": 160, \"saved\": 130, \"skipped\": []}\n  20260925T015411-9a0927 partial 2026-09-25T01:54:11.892554+00:00 stats={\"stage\": \"fetch\", \"window_hours\": 24, \"sources_ok\": 11, \"sources_failed\": 3, \"fetched\": 161, \"saved\": 1, \"skipped\": []}\n\n[evidence] D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\real-db-readonly-state.txt",
+      "group": "M1"
+    },
+    {
+      "script": "m1_recon.py",
+      "exit": 0,
+      "passed": "?",
+      "verdict": "OBSERVE",
+      "seconds": 17.8,
+      "tail": "techcrunch_ai   200 18991 bytes 3450 ms\nopenai_news     200 750033 bytes 4589 ms\nhackernews      200 1087 bytes 4160 ms\n[{\"id\": \"qbitai\", \"status\": 200, \"bytes\": 6771, \"ms\": 2667}, {\"id\": \"infoq_cn\", \"status\": 200, \"bytes\": 13595, \"ms\": 2257}, {\"id\": \"techcrunch_ai\", \"status\": 200, \"bytes\": 18991, \"ms\": 3450}, {\"id\": \"openai_news\", \"status\": 200, \"bytes\": 750033, \"ms\": 4589}, {\"id\": \"hackernews\", \"status\": 200, \"bytes\": 1087, \"ms\": 4160}]",
+      "group": "M1"
+    },
+    {
+      "script": "m1_acceptance.py",
+      "exit": 0,
+      "passed": "19/19",
+      "verdict": "PASS",
+      "seconds": 93.5,
+      "tail": "  [PASS] 8g-非法--limit=2: --limit -1 → rc=2（期望 2）\n  [PASS] guard:real-db-untouched: 真实库快照前={'exists': 1, 'items': 363, 'unique_keys': 363, 'runs': 9} 后={'exists': 1, 'items': 363, 'unique_keys': 363, 'runs': 9}\n\n== acceptance: 19 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\acceptance.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_adversarial.py",
+      "exit": 0,
+      "passed": "11/11",
+      "verdict": "PASS",
+      "seconds": 57.5,
+      "tail": "  [PASS] adv-同源内重复条目(尾斜杠/大小写/锚点)去重: 3 条重复链接落库=1 条，保留 URL=https://dups.example/x\n  [PASS] adv-GBK编码源中文不乱码: rc=0 落库标题=['中文标题测试']\n\n== adversarial: 11 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\adversarial.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_url_edges.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 4.9,
+      "tail": "  [PASS] URL边界-协议相对链接补全 scheme: //cdn.example/asset → 'http://cdn.example/asset'\n  [PASS] URL边界-正常链接不受影响: normal → 'https://ok.example/normal'\n\n== url_edges: 4 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\url_edges.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_net_store_units.py",
+      "exit": 0,
+      "passed": "19/19",
+      "verdict": "PASS",
+      "seconds": 17.2,
+      "tail": "== units: 19 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\units.json\n请求最终失败: http://127.0.0.1:1634/slow（ReadTimeout: timed out）\n请求最终失败: http://aihot-m1-invalid-9f3a.invalid/feed（HTTP 502）\n请求最终失败: http://127.0.0.1:1634/json500（HTTP 500）",
+      "group": "M1"
+    },
+    {
+      "script": "m1_contracts.py",
+      "exit": 0,
+      "passed": "6/6",
+      "verdict": "PASS",
+      "seconds": 11.8,
+      "tail": "  [PASS] 契约-dry-run未写库: runs=1（应为 1，仅首次真实运行）\n  [PASS] 契约-采集层不调 LLM: fetch 期间 LLM 端点请求次数=0（应为 0）\n\n== contracts: 6 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\contracts.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_check_net.py",
+      "exit": 1,
+      "passed": "5/6",
+      "verdict": "FAIL",
+      "seconds": 49.0,
+      "tail": "  [PASS] 9e-真实库只读未变: 探测前后 items/runs 快照一致: 363/9\n  [PASS] 9f-check --net 输出不含真实密钥: 扫描 3 个真实密钥字段：泄漏 无\n\n== check_net: 5 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\check_net.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_proxy_bad_port_repro.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 37.0,
+      "tail": "  [PASS] 复验-合法但不可达代理仍走[ERR]代理: check --net rc=1（期望 1，含[ERR]代理=True）；fetch rc=1（期望 1）\n  [PASS] 复验-非法IPv6代理 check 摘要不崩溃(D5): rc=3（期望 3）含 traceback=False\n\n== proxy_bad_port: 4 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\proxy_bad_port.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_socks_probe.py",
+      "exit": 0,
+      "passed": "4/4",
+      "verdict": "PASS",
+      "seconds": 20.2,
+      "tail": "  [PASS] socks5-fetch 代理不可达=干净失败: rc=1（期望 1），ImportError/Traceback=无\n  [PASS] socks5-依赖可用（socksio 已安装）: import socksio 成功（pyproject 已声明 socksio>=1.0,<2）\n\n== socks5: 4 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\socks5.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_slow_source.py",
+      "exit": 0,
+      "passed": "1/1",
+      "verdict": "PASS",
+      "seconds": 66.5,
+      "tail": "[PASS] adv-挂起源超时隔离: rc=0 耗时=65.8s（3 次 20s 超时+退避；未无限等待） 好源落库=1 runs.status=partial\n\n== slow_source: 1 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\slow_source.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_perf.py",
+      "exit": 1,
+      "passed": "5/6",
+      "verdict": "FAIL",
+      "seconds": 112.6,
+      "tail": "  [PASS] 4b-真实config dry-run真实库零写入: rc=0 真实库快照 363/9 → 363/9\n  [PASS] 4c-真实运行输出不含密钥: 扫描 2 个真实密钥：泄漏 无\n\n== perf: 5 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\perf.json",
+      "group": "M1"
+    },
+    {
+      "script": "m1_regression.py",
+      "exit": 1,
+      "passed": "7/9",
+      "verdict": "FAIL",
+      "seconds": 220.6,
+      "tail": "  [PASS] 11c-m0_round3_probe.py: exit=0 SUMMARY=10/10（M0 基线 10/10，10.2s）\n  [PASS] 11d-config.example开箱校验: rc=0（期望 0）\n\n== regression: 7 passed / 2 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m1\\regression.json",
+      "group": "M1"
+    },
+    {
+      "script": "m2_prefilter.py",
+      "exit": 0,
+      "passed": "12/12",
+      "verdict": "PASS",
+      "seconds": 5.9,
+      "tail": "  [PASS] 1i-CLI路径淘汰数与独立复算一致: CLI 标记过滤 121 条（独立复算淘汰 121 条）；enriched_at 非空 363/363\n  [PASS] 1z-真实库只读守护: items=363（测试开始时 363）\n\n== prefilter: 12 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\prefilter.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_dedup.py",
+      "exit": 1,
+      "passed": "15/16",
+      "verdict": "FAIL",
+      "seconds": 22.3,
+      "tail": "== 真实库只读守护 ==\n  [PASS] 2z-真实库只读守护: items=363（开始时 363）\n\n== dedup: 15 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\dedup.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_llm_robust.py",
+      "exit": 0,
+      "passed": "60/60",
+      "verdict": "PASS",
+      "seconds": 150.6,
+      "tail": "  [PASS] 3n-连接拒绝-降级为原文: 全部 category=其他 且 importance=30（原文降级）=True\n  [PASS] 3z-真实库只读守护: items=363（开始时 363）\n\n== llm-robust: 60 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\llm-robust.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_cache.py",
+      "exit": 1,
+      "passed": "7/8",
+      "verdict": "FAIL(P2漂移)",
+      "seconds": 20.2,
+      "tail": "  [PASS] 4g-dry-run 未消耗队列（随后真实运行仍加工 12 条）: rc=0，enriched_at 非空=12/12\n  [PASS] 4z-真实库只读守护: items=363（开始时 363）\n\n== cache: 7 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\cache.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_cost.py",
+      "exit": 1,
+      "passed": "6/9",
+      "verdict": "FAIL(P2漂移)",
+      "seconds": 16.4,
+      "tail": "  [FAIL] 5c-上限小于单批成本：仅首批执行且标记 hit: 批次=1 请求=2 成本=¥0.4（说明：上限检查在批次前，故首批必然执行；剩余条目降级不丢）\n  [PASS] 5z-真实库只读守护: items=363（开始时 363）\n\n== cost: 6 passed / 3 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\cost.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_rank.py",
+      "exit": 0,
+      "passed": "17/17",
+      "verdict": "PASS",
+      "seconds": 5.9,
+      "tail": "  [PASS] 6p-同分时更新的优先: 首位=new\n  [PASS] 6z-真实库只读守护: items=363（开始时 363）\n\n== rank: 17 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\rank.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_cli.py",
+      "exit": 0,
+      "passed": "26/26",
+      "verdict": "PASS",
+      "seconds": 25.6,
+      "tail": "  [PASS] 7d-缺失 pipeline 段可用默认值: rc=0\n  [PASS] 7z-真实库只读守护: items=363（开始时 363）\n\n== cli: 26 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\cli.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_real_llm.py",
+      "exit": 0,
+      "passed": "7/7",
+      "verdict": "PASS",
+      "seconds": 8.5,
+      "tail": "  [PASS] 8g-摘要非空且为中文: 摘要非空且含中文=True\n  [PASS] 8z-真实库只读守护: items=363（开始时 363）\n\n== real-llm: 7 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\real-llm.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_perf.py",
+      "exit": 0,
+      "passed": "5/5",
+      "verdict": "PASS",
+      "seconds": 22.7,
+      "tail": "  [PASS] 8d-max_items 截断保护（25 条库，上限 10）: 输出「待加工: 10 条（上限 10）」，库内仅前 10 条被加工\n  [PASS] 8z-真实库只读守护: items=363（开始时 363）\n\n== perf: 5 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\perf.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2r2_d1.py",
+      "exit": 1,
+      "passed": "14/15",
+      "verdict": "FAIL(P2漂移)",
+      "seconds": 20.0,
+      "tail": "  [PASS] 1e-不相关组被拒（相似度 <55）: 相似度(1,3)=24.6（<55），accepted=[[1], [3]]\n  [PASS] 1z-真实库只读守护: items=363（开始时 363）\n\n== d1: 14 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\d1.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2r2_accuracy.py",
+      "exit": 1,
+      "passed": "6/7",
+      "verdict": "FAIL",
+      "seconds": 4.5,
+      "tail": "  [PASS] 2z-真实库只读守护: items=363（开始时 363）\n  [NOTE] 样本集：54 条 / 1431 对；真实库副本：242 条 → 237 簇\n\n== accuracy: 6 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\accuracy.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2r2_d2.py",
+      "exit": 1,
+      "passed": "15/16",
+      "verdict": "FAIL",
+      "seconds": 9.6,
+      "tail": "  [PASS] 3z-真实库 mention_count 与条目数一致: 不一致簇=无\n  [PASS] 3z-真实库只读守护（items 未变）: items=363（开始时 363）\n\n== d2: 15 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\d2.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2r2_p2.py",
+      "exit": 1,
+      "passed": "18/19",
+      "verdict": "FAIL(P2漂移)",
+      "seconds": 115.0,
+      "tail": "  [PASS] 4d-日志记录停止原因: 日志含「已达加工时间上限」=True\n  [PASS] 4z-真实库只读守护: items=363（开始时 363）\n\n== p2: 18 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\p2.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2r3_p2.py",
+      "exit": 0,
+      "passed": "10/10",
+      "verdict": "PASS",
+      "seconds": 2.9,
+      "tail": "  [PASS] 5b-基础计数正确（enriched=2/filtered=0）: enriched=2 filtered=0 kept=2\n  [PASS] 5z-真实库只读守护: items=363（开始时 363）\n\n== p2-supplement: 10 passed / 0 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\p2-supplement.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2r3_real_db.py",
+      "exit": 1,
+      "passed": "6/7",
+      "verdict": "FAIL",
+      "seconds": 0.8,
+      "tail": "  [PASS] 6c-无超大簇（旧版过度合并残留已清除）: 最大簇=3 条；单条目簇=99 个\n  [PASS] 6z-真实库只读守护: items=363\n\n== real-db: 6 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\real-db.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_regression.py",
+      "exit": 1,
+      "passed": "24/25",
+      "verdict": "FAIL",
+      "seconds": 616.9,
+      "tail": "  [PASS] 9h-ruff/pytest 输出无真实密钥: 命中=无\n  [PASS] 9z-真实库未被测试改动: items=363 runs=9 clusters=101 max_id=363（开始时一致：True）\n\n== regression: 24 passed / 1 failed == summary=D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\regression.json",
+      "group": "M2"
+    },
+    {
+      "script": "m2_translation_sample.py",
+      "exit": 0,
+      "passed": "-",
+      "verdict": "INFO",
+      "seconds": 0.2,
+      "tail": "  CN : 斑马智能发布端模型 AutoOmni 2.0，让元神 AI 更懂“我的世界”\n  SUM: 斑马智能在云栖大会期间发布新一代全模态端侧大模型 AutoOmni 2.0-23B-A3B，提升元神 AI 对场景的理解能力。\n\n真实调用候选 6 条 → D:\\信息收集整理\\aihot\\reports\\evidence\\m2\\real-llm\\real-call-candidates.json",
+      "group": "INFO"
+    },
+    {
+      "script": "m2_dbview.py",
+      "exit": 0,
+      "passed": "-",
+      "verdict": "INFO",
+      "seconds": 0.2,
+      "tail": "      \"canonical_title\": \"OpenAI agents hacked Australian Medicare system\"\n    }\n  ]\n}",
+      "group": "INFO"
+    },
+    {
+      "script": "m2_dedup_probe.py",
+      "exit": 0,
+      "passed": "-",
+      "verdict": "INFO",
+      "seconds": 3.7,
+      "tail": "--- prod cluster 79 (3) ---\n    techcrunch_ai | OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes\n    openai_news | Introducing GPT-6 Sol and Luna\n    hackernews | GPT-6 Sol and Luna",
+      "group": "INFO"
+    }
+  ]
+}

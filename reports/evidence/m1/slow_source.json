@@ -1,0 +1,13 @@
+{
+  "suite": "slow_source",
+  "passed": 1,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "adv-挂起源超时隔离",
+      "ok": true,
+      "detail": "rc=0 耗时=65.8s（3 次 20s 超时+退避；未无限等待） 好源落库=1 runs.status=partial"
+    }
+  ],
+  "notes": []
+}
